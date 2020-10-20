@@ -1,13 +1,13 @@
 baseURL = "https://gohugo.io/"
 paginate = 100
-defaultContentLanguage = "en"
+defaultContentLanguage = "ru"
 enableEmoji = true
 # Set the unicode character used for the "return" link in page footnotes.
 footnotereturnlinkcontents = "↩"
-languageCode = "en-us"
+languageCode = "ru-ru"
 title = "Hugo"
 
-googleAnalytics = "UA-7131036-4"
+googleAnalytics = "G-WW80KFRPG9"
 
 pluralizeListTitles = false
 
