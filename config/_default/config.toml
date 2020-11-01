@@ -1,4 +1,4 @@
-baseURL = "https://gohugo.io/"
+baseURL = "https://gohugo.ru/"
 paginate = 100
 defaultContentLanguage = "ru"
 enableEmoji = true
@@ -7,7 +7,7 @@ footnotereturnlinkcontents = "↩"
 languageCode = "ru-ru"
 title = "Hugo"
 
-googleAnalytics = "G-WW80KFRPG9"
+googleAnalytics = ""
 
 pluralizeListTitles = false
 

@@ -13,7 +13,7 @@ gitter = "https://gitter.im/spf13/hugo"
 ## Discuss Forum URL
 forum = "https://discourse.gohugo.io/"
 ## Google Tag Manager
-gtmid = ""
+gtmid = "G-WW80KFRPG9"
 
 # First one is picked as the Twitter card image if not set on page.
 images = ["images/gohugoio-card.png"]
