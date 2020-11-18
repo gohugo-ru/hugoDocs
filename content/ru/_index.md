@@ -2,48 +2,48 @@
 title: "Самая быстрая в мире платформа для создания веб-сайтов"
 date: 2017-03-02T12:00:00-05:00
 features:
-  - heading: Blistering Speed
+  - heading: Пылающая скорость
     image_path: /images/icon-fast.svg
-    tagline: What's modern about waiting for your site to build?
-    copy: Hugo is the fastest tool of its kind. At <1 ms per page, the average site builds in less than a second.
+    tagline: Что современного в ожидании создания Вашего сайта?
+    copy: Hugo - самый быстрый инструмент в своем роде. При <1мс на страницу в среднем сайт создается менее чем за секунду.
 
-  - heading: Robust Content Management
+  - heading: Надежное управление контентом
     image_path: /images/icon-content-management.svg
-    tagline: Flexibility rules. Hugo is a content strategist's dream.
-    copy: Hugo supports unlimited content types, taxonomies, menus, dynamic API-driven content, and more, all without plugins.
+    tagline: Правила гибкости. Hugo - мечта стратега по контенту.
+    copy: Hugo поддерживает неограниченное количество типов контента, таксономий, меню, динамического контента на основе API и многого другого, и все это без плагинов.
 
-  - heading: Shortcodes
+  - heading: Шорткоды
     image_path: /images/icon-shortcodes.svg
-    tagline: Hugo's shortcodes are Markdown's hidden superpower.
-    copy: We love the beautiful simplicity of markdown’s syntax, but there are times when we want more flexibility. Hugo shortcodes allow for both beauty and flexibility.
+    tagline: Шорткоды Hugo - скрытая суперсила Markdown.
+    copy: Нам нравится красивая простота markdown синтаксиса, но бывают моменты, когда нам нужна большая гибкость. Шорткоды Hugo сочетают в себе красоту и гибкость.
 
-  - heading: Built-in Templates
+  - heading: Встроенные шаблоны
     image_path: /images/icon-built-in-templates.svg
-    tagline: Hugo has common patterns to get your work done quickly.
-    copy: Hugo ships with pre-made templates to make quick work of SEO, commenting, analytics and other functions. One line of code, and you're done.
+    tagline: Hugo имеет общие шаблоны для быстрого выполнения работы.
+    copy: Hugo поставляется с готовыми шаблонами для быстрой работы с SEO, комментированием, аналитикой и другими функциями. Одна строка кода, и все готово.
 
-  - heading: Multilingual and i18n
+  - heading: Многоязычный и i18n
     image_path: /images/icon-multilingual2.svg
-    tagline: Polyglot baked in.
-    copy: Hugo provides full i18n support for multi-language sites with the same straightforward development experience Hugo users love in single-language sites.
+    tagline: Полиглот.
+    copy: Hugo обеспечивает полную поддержку i18n для многоязычных сайтов с тем же простым опытом разработки, который нравится пользователям Hugo на одноязычных сайтах.
 
-  - heading: Custom Outputs
+  - heading: Пользовательские выводы
     image_path: /images/icon-custom-outputs.svg
-    tagline: HTML not enough?
-    copy: Hugo allows you to output your content in multiple formats, including JSON or AMP, and makes it easy to create your own.
+    tagline: HTML недостаточно?
+    copy: Hugo позволяет выводить контент в нескольких форматах, включая JSON или AMP, и позволяет легко создавать свои собственные.
 sections:
-  - heading: "300+ Themes"
-    cta: Check out the Hugo themes.
+  - heading: "300+ тем"
+    cta: Ознакомьтесь с темами Hugo.
     link: https://themes.gohugo.io/
     color_classes: bg-accent-color white
     image: /images/homepage-screenshot-hugo-themes.jpg
-    copy: "Hugo provides a robust theming system that is easy to implement but capable of producing even the most complicated websites."
-  - heading: "Capable Templating"
-    cta: Get Started.
+    copy: "Hugo предлагает надежную систему тематики, которую легко реализовать, но которая способна создавать даже самые сложные веб-сайты."
+  - heading: "Возможность создания шаблонов"
+    cta: Начать.
     link: templates/
     color_classes: bg-primary-color-light black
     image: /images/home-page-templating-example.png
-    copy: "Hugo's Go-based templating provides just the right amount of logic to build anything from the simple to complex."
+    copy: "Шаблоны Hugo на основе Go предоставляют необходимое количество логики для создания чего угодно, от простого до сложного."
 ---
 
-Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+Hugo - один из самых популярных генераторов статических сайтов с открытым исходным кодом. Благодаря своей удивительной скорости и гибкости, Hugo снова делает создание веб-сайтов увлекательным.
