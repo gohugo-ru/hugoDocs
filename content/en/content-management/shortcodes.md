@@ -244,16 +244,9 @@ You also have the option to hide the caption:
 
 By adding the preceding `hidecaption` example, the following HTML will be added to your rendered website's markup:
 
-{{< output file="instagram-hide-caption-output.html" >}}
-{{< instagram BWNjjyYFxVx hidecaption >}}
-{{< /output >}}
-
 #### Example `instagram` Display
 
 Using the preceding `instagram` with `hidecaption` example above, the following simulates the displayed experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup.
-
-{{< instagram BWNjjyYFxVx hidecaption >}}
-
 
 
 {{% note %}}

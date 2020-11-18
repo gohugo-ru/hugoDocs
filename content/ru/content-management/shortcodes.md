@@ -244,16 +244,14 @@ You also have the option to hide the caption:
 
 By adding the preceding `hidecaption` example, the following HTML will be added to your rendered website's markup:
 
-{{< output file="instagram-hide-caption-output.html" >}}
-{{< instagram BWNjjyYFxVx hidecaption >}}
-{{< /output >}}
-
 #### Example `instagram` Display
 
 Using the preceding `instagram` with `hidecaption` example above, the following simulates the displayed experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup.
 
-{{< instagram BWNjjyYFxVx hidecaption >}}
 
+{{% note %}}
+The `instagram`-shortcode refers an endpoint of Instagram's API, that's deprecated since October 24th, 2020. Thus, no images can be fetched from this API endpoint, resulting in an error when the `instagram`-shortcode is used. For more information please have a look at GitHub issue [#7879](https://github.com/gohugoio/hugo/issues/7879).
+{{% /note %}}
 
 ### `param`
 
