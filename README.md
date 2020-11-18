@@ -5,44 +5,44 @@
 
 Сайт документации для [Hugo](https://github.com/rugohugoio/hugo), очень быстрого и гибкого генератора статических сайтов, созданного с любовью на Go
 
-## Contributing
+## Содействие
 
-We welcome contributions to Hugo of any kind including documentation, suggestions, bug reports, pull requests etc. Also check out our [contribution guide](https://gohugo.io/contribute/documentation/). We would love to hear from you. 
+Мы приветствуем вклад в Hugo любого рода, включая документацию, предложения, отчеты об ошибках, ПР и т.д. Также ознакомьтесь с нашим [руководством по вкладу](https://gohugo.io/contribute/documentation/). Мы хотели бы услышать от Вас.
 
-Note that this repository contains solely the documentation for Hugo. For contributions that aren't documentation-related please refer to the [hugo](https://github.com/gohugoio/hugo) repository. 
+Обратите внимание, что этот репозиторий содержит исключительно документацию для Hugo. Для материалов, не связанных с документацией, обратитесь к репозиторию [hugo](https://github.com/gohugoio/hugo).
 
-*Pull requests shall **only** contain changes to the actual documentation. However, changes on the code base of Hugo **and** the documentation shall be a single, atomic pull request in the [hugo](https://github.com/gohugoio/hugo) repository.*
+*ПР должны **только** содержать изменения в фактической документации. Однако изменения в кодовой базе Hugo **и** документации должны быть единым атомарным ПР в репозитории [hugo](https://github.com/gohugoio/hugo).*
 
-Spelling fixes are most welcomed, and if you want to contribute longer sections to the documentation, it would be great if you had the following criteria in mind when writing:
+Мы приветствуем исправления орфографии, и если Вы хотите добавить в документацию более длинные разделы, было бы здорово, если бы Вы при написании учитывали следующие критерии:
 
-* Short is good. People go to the library to read novels. If there is more than one way to _do a thing_ in Hugo, describe the current _best practice_ (avoid "… but you can also do …" and "… in older versions of Hugo you had to …".
-* For example, try to find short snippets that teaches people about the concept. If the example is also useful as-is (copy and paste), then great. Don't list long and similar examples just so people can use them on their sites.
-* Hugo has users from all over the world, so easy to understand and [simple English](https://simple.wikipedia.org/wiki/Basic_English) is good.
+* Коротко - это хорошо. Люди ходят в библиотеку читать романы. Если в Hugo есть несколько способов _сделать что-то_, опишите текущую _лучшую практику_ (избегайте «… но вы также можете…» и «… в более старых версиях Hugo Вам приходилось…».
+* Например, попробуйте найти короткие отрывки, которые рассказывают людям об этой концепции. Если пример также полезен как есть (копирование и вставка), тогда отлично. Не перечисляйте длинные и похожие примеры только для того, чтобы люди могли использовать их на своих сайтах.
+* У Hugo есть пользователи со всего мира, поэтому его легко понять, а [простой английский](https://simple.wikipedia.org/wiki/Basic_English) - это хорошо.
 
-## Branches
+## Ветки
 
-* The `master` branch is where the site is automatically built from, and is the place to put changes relevant to the current Hugo version.
-* The `next` branch is where we store changes that are related to the next Hugo release. This can be previewed here: https://next--gohugoio.netlify.com/
+* Ветка `master` - это то место, откуда автоматически создается сайт, и место для внесения изменений, относящихся к текущей версии Hugo.
+* В ветке `next` мы храним изменения, относящиеся к следующему выпуску Hugo. Это можно просмотреть здесь: https://next--gohugoio.netlify.com/
 
-## Build
+## Сборка
 
-To view the documentation site locally, you need to clone this repository:
+Чтобы просмотреть сайт документации локально, Вам необходимо клонировать этот репозиторий:
 
 ```bash
 git clone https://github.com/gohugoio/hugoDocs.git
 ```
 
-Also note that the documentation version for a given version of Hugo can also be found in the `/docs` sub-folder of the [Hugo source repository](https://github.com/gohugoio/hugo).
+Также обратите внимание, что версию документации для данной версии Hugo также можно найти в подпапке `/docs` [исходного репозитория Hugo](https://github.com/gohugoio/hugo).
 
-Then to view the docs in your browser, run Hugo and open up the link:
+Затем, чтобы просмотреть документы в браузере, запустите Hugo и откройте ссылку:
 
 ```bash
 ▶ hugo server
 
-Started building sites ...
+Начата сборка сайта...
 .
 .
-Serving pages from memory
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+Обслуживание страниц из памяти
+Веб-сервер доступен по адресу http://localhost:1313/ (адрес привязки 127.0.0.1)
+Нажмите Ctrl + C, чтобы остановить
 ```
