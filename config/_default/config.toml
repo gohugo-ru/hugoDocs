@@ -7,7 +7,7 @@ footnotereturnlinkcontents = "↩"
 languageCode = "ru-ru"
 title = "Hugo"
 
-googleAnalytics = ""
+googleAnalytics = "GTM-PT85R6P"
 
 pluralizeListTitles = false
 
