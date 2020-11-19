@@ -118,26 +118,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/about/</loc>
-    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.ru/zh/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/about/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/templates/</loc>
     <lastmod>2020-10-20T22:25:30+03:00</lastmod>
     <xhtml:link
@@ -184,6 +164,26 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/variables/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/about/</loc>
+    <lastmod>2020-11-19T15:18:38+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://gohugo.ru/zh/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/about/"
                 />
   </url>
   

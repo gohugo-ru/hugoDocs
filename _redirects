@@ -10,13 +10,13 @@
 /overview/introduction/            	/getting-started/
 /themes/overview/                  	/hugo-modules/
 /themes/                           	/hugo-modules/
-/about-hugo/                       	/about/
-/docs/                             	/about/
 /templates/overview/               	/templates/
 /templates/content                 	/templates/
 /troubleshooting/faqs/             	/troubleshooting/
 /faqs/                             	/troubleshooting/
 /templates/variables/              	/variables/
+/about-hugo/                       	/about/
+/docs/                             	/about/
 /faq/                              	/troubleshooting/faq/
 /security/                         	/about/security-model/
 /privacy/                          	/about/hugo-and-gdpr/
