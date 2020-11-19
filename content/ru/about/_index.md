@@ -1,6 +1,6 @@
 ---
 title: О Hugo
-linktitle: Overview
+linktitle: Обзор
 description: Особенности, дорожная карта, лицензия и мотивация Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01

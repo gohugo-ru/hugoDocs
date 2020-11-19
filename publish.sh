@@ -1,5 +1,4 @@
-out="public"
-docs="_gh_pages"
+docs="public"
 ghPagesBranch="gh-pages"
 site="gohugo.ru"
 
@@ -9,7 +8,7 @@ mkdir $docs
 git worktree prune
 rm -rf .git/worktrees/$docs/
 
-echo "Checking out gh-pages branch into _gh_pages"
+echo "Checking out gh-pages branch into public"
 git worktree add -B $ghPagesBranch $docs origin/$ghPagesBranch
 
 echo "Removing existing files"
@@ -17,7 +16,6 @@ rm -rf $docs/*
 
 echo "Generating site"
 hugo
-cp $out/* $docs/ -r
 echo $site >> $docs/CNAME
 touch $docs/.nojekyll
 

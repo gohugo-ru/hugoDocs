@@ -15,7 +15,7 @@
         <ul id="{{ .Name | urlize}}" class="list pa0 ma0">
           <li class="ma0 pl3 brand-font">
             <a href="{{.URL}}" class="{{ $.Scratch.Get "listlinkClasses" }}{{if $currentPage.IsMenuCurrent "main" . }} o-50{{end}}">
-              {{ .Name }} Overview
+              {{ .Name }} Обзор
             </a>
           </li>
           {{ range .Children }}
