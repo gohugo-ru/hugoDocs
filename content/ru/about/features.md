@@ -1,7 +1,7 @@
 ---
-title: Hugo Features
-linktitle: Hugo Features
-description: Hugo boasts blistering speed, robust content management, and a powerful templating language making it a great fit for all kinds of static websites.
+title: Функции Hugo
+linktitle: Функции Hugo
+description: Hugo может похвастаться невероятной скоростью, надежным управлением контентом и мощным языком шаблонов, что делает его идеальным для всех видов статических веб-сайтов.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
@@ -15,44 +15,44 @@ draft: false
 toc: true
 ---
 
-## General
+## Общее
 
-* [Extremely fast][] build times (&lt; 1 ms per page)
-* Completely cross platform, with [easy installation][install] on macOS, Linux, Windows, and more
-* Renders changes on the fly with [LiveReload][] as you develop
-* [Powerful theming][]
-* [Host your site anywhere][hostanywhere]
+* [Чрезвычайно быстрое][] время сборки (&lt; 1 мс на страницу)
+* Полностью кроссплатформенный, с [простой установкой][установка] на macOS, Linux, Windows и др
+* Рендеринг изменений на лету с [LiveReload][] по мере разработки
+* [Мощные темы][]
+* [Разместите свой сайт где угодно][hostanywhere]
 
-## Organization
+## Организация
 
-* Straightforward [organization for your projects][], including website sections
-* Customizable [URLs][]
-* Support for configurable [taxonomies][], including categories and tags
-* [Sort content][] as you desire through powerful template [functions][]
-* Automatic [table of contents][] generation
-* [Dynamic menu][] creation
-* [Pretty URLs][] support
-* [Permalink][] pattern support
-* Redirects via [aliases][]
+* Простая [организация Ваших проектов][], включая разделы веб-сайта
+* Настраиваемые [URL-адреса][]
+* Поддержка настраиваемых [таксономий][], включая категории и теги
+* [Сортировка содержимого][] по своему усмотрению с помощью мощных [функций][] шаблона
+* Автоматическая генерация [оглавления][]
+* Создание [Динамического меню][]
+* Поддержка [Красивых URL-адресов][]
+* Поддержка [Постоянной ссылки][]
+* Перенаправления через [псевдонимы][]
 
-## Content
+## Содержимое
 
-* Native Markdown and Emacs Org-Mode support, as well as other languages via *external helpers* (see [supported formats][])
-* TOML, YAML, and JSON metadata support in [front matter][]
-* Customizable [homepage][]
-* Multiple [content types][]
-* Automatic and user defined [content summaries][]
-* [Shortcodes][] to enable rich content inside of Markdown
-* ["Minutes to Read"][pagevars] functionality
-* ["WordCount"][pagevars] functionality
+* Встроенная поддержка Markdown и Emacs Org-Mode, а также других языков через *внешние помощники* (см. [Поддерживаемые форматы][])
+* Поддержка метаданных TOML, YAML и JSON в [вводной части][]
+* Настраиваемая [домашняя страница][]
+* Несколько [типов контента][]
+* Автоматические и определяемые пользователем [резюме содержания][]
+* [Шорткоды][] для включения расширенного содержания внутри Markdown
+* ["Minutes to Read"][pagevars] функциональность
+* ["WordCount"][pagevars] функциональность
 
-## Additional Features
+## Дополнительные возможности
 
-* Integrated [Disqus][] comment support
-* Integrated [Google Analytics][] support
-* Automatic [RSS][] creation
-* Support for [Go][] HTML templates
-* [Syntax highlighting][] powered by [Chroma][]
+* Встроенная поддержка комментариев [Disqus][]
+* Встроенная поддержка [Google Analytics][]
+* Автоматическое создание [RSS][]
+* Поддержка [Go][] HTML-шаблонов
+* [Подсветка синтаксиса][] на основе [Chroma][]
 
 
 [aliases]: /content-management/urls/#aliases

@@ -1,7 +1,7 @@
 ---
-title: The Benefits of Static Site Generators
-linktitle: The Benefits of Static
-description: Improved performance, security and ease of use are just a few of the reasons static site generators are so appealing.
+title: Преимущества генераторов статических сайтов
+linktitle: Преимущества статики
+description: Повышенная производительность, безопасность и простота использования - вот лишь некоторые из причин, по которым генераторы статических сайтов так привлекательны.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
@@ -17,27 +17,27 @@ aliases: []
 toc: false
 ---
 
-The purpose of website generators is to render content into HTML files. Most are "dynamic site generators." That means the HTTP server---i.e., the program that sends files to the browser to be viewed---runs the generator to create a new HTML file every time an end user requests a page.
+Задача генераторов веб-сайтов - преобразовывать контент в файлы HTML. Большинство из них - «генераторы динамических сайтов». Это означает, что HTTP-сервер, то есть программа, которая отправляет файлы в браузер для просмотра, запускает генератор для создания нового HTML-файла каждый раз, когда конечный пользователь запрашивает страницу.
 
-Over time, dynamic site generators were programmed to cache their HTML files to prevent unnecessary delays in delivering pages to end users. A cached page is a static version of a web page.
+Со временем генераторы динамических сайтов были запрограммированы для кэширования своих файлов HTML, чтобы предотвратить ненужные задержки в доставке страниц конечным пользователям. Кэшированная страница - это статическая версия веб-страницы.
 
-Hugo takes caching a step further and all HTML files are rendered on your computer. You can review the files locally before copying them to the computer hosting the HTTP server. Since the HTML files aren't generated dynamically, we say that Hugo is a *static site generator*.
+Hugo делает еще один шаг к кэшированию, и все файлы HTML отображаются на Вашем компьютере. Вы можете просмотреть файлы локально, прежде чем копировать их на компьютер, на котором размещен HTTP-сервер. Поскольку файлы HTML не генерируются динамически, мы говорим, что Hugo - это *генератор статических сайтов*.
 
-This has many benefits. The most noticeable is performance. HTTP servers are *very* good at sending files---so good, in fact, that you can effectively serve the same number of pages with a fraction of the memory and CPU needed for a dynamic site.
+Это дает много преимуществ. Самое заметное - это производительность. HTTP-серверы *очень* хороши при отправке файлов - настолько хороши, что фактически Вы можете эффективно обслуживать такое же количество страниц с небольшой долей памяти и ЦП, необходимых для динамического сайта.
 
-## More on Static Site Generators
+## Подробнее о генераторах статических сайтов
 
-* ["An Introduction to Static Site Generators", David Walsh][]
-* ["Hugo vs. WordPress page load speed comparison: Hugo leaves WordPress in its dust", GettingThingsTech][hugovwordpress]
-* ["Static Site Generators", O'Reilly][]
-* [StaticGen: Top Open-Source Static Site Generators (GitHub Stars)][]
-* ["Top 10 Static Website Generators", Netlify blog][]
-* ["The Resurgence of Static", dotCMS][dotcms]
+* ["Введение в генераторы статических сайтов", David Walsh][]
+* ["Сравнение скорости загрузки страниц Hugo и WordPress: Hugo оставляет WordPress в пыли", GettingThingsTech][hugovwordpress]
+* ["Генераторы статических сайтов", O'Reilly][]
+* [StaticGen: Лучшие генераторы статических сайтов с открытым исходным кодом (GitHub Stars)][]
+* ["10 лучших генераторов статических веб-сайтов", Netlify blog][]
+* ["Возрождение статики", dotCMS][dotcms]
 
 
-["An Introduction to Static Site Generators", David Walsh]: https://davidwalsh.name/introduction-static-site-generators
-["Static Site Generators", O'Reilly]: https://www.oreilly.com/web-platform/free/files/static-site-generators.pdf
-["Top 10 Static Website Generators", Netlify blog]: https://www.netlify.com/blog/2016/05/02/top-ten-static-website-generators/
+["Введение в генераторы статических сайтов", David Walsh]: https://davidwalsh.name/introduction-static-site-generators
+["Генераторы статических сайтов", O'Reilly]: https://www.oreilly.com/web-platform/free/files/static-site-generators.pdf
+["10 лучших генераторов статических веб-сайтов", Netlify blog]: https://www.netlify.com/blog/2016/05/02/top-ten-static-website-generators/
 [hugovwordpress]: https://gettingthingstech.com/hugo-vs.-wordpress-page-load-speed-comparison-hugo-leaves-wordpress-in-its-dust/
-[StaticGen: Top Open-Source Static Site Generators (GitHub Stars)]: https://www.staticgen.com/
+[StaticGen: Лучшие генераторы статических сайтов с открытым исходным кодом (GitHub Stars)]: https://www.staticgen.com/
 [dotcms]: https://dotcms.com/blog/post/the-resurgence-of-static
