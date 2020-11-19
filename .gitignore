@@ -1,5 +1,6 @@
 /.idea
 /public
+/_gh_pages
 nohup.out
 .DS_Store
 trace.out
