@@ -84,7 +84,7 @@
   
   <url>
     <loc>https://gohugo.ru/documentation/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -119,7 +119,7 @@
   
   <url>
     <loc>https://gohugo.ru/about/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -279,7 +279,7 @@
   
   <url>
     <loc>https://gohugo.ru/about/security-model/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -294,7 +294,7 @@
   
   <url>
     <loc>https://gohugo.ru/about/hugo-and-gdpr/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -474,7 +474,7 @@
   
   <url>
     <loc>https://gohugo.ru/about/what-is-hugo/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -613,21 +613,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/about/features/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/about/features/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/about/features/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/variables/page/</loc>
     <lastmod>2020-10-20T22:25:30+03:00</lastmod>
     <xhtml:link
@@ -654,6 +639,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/content-management/syntax-highlighting/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/about/features/</loc>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/about/features/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/about/features/"
                 />
   </url>
   
@@ -763,21 +763,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/about/benefits/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/about/benefits/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/about/benefits/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/contribute/themes/</loc>
     <lastmod>2020-10-20T22:25:30+03:00</lastmod>
     <xhtml:link
@@ -789,6 +774,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/contribute/themes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/about/benefits/</loc>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/about/benefits/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/about/benefits/"
                 />
   </url>
   
@@ -1229,7 +1229,7 @@
   
   <url>
     <loc>https://gohugo.ru/about/license/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1784,7 +1784,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/</loc>
-    <lastmod>2020-11-18T23:28:57+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -7014,7 +7014,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/about-hugo/</loc>
-    <lastmod>2020-10-20T22:25:30+03:00</lastmod>
+    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

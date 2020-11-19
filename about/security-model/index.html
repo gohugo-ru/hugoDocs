@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Hugo&#39;s Security Model | Hugo</title>
+  <title>Модель безопасности Hugo | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.77.0-DEV" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Hugo&#39;s Security Model" />
-<meta property="og:description" content="A summary of Hugo&#39;s security model." />
+<meta property="og:title" content="Модель безопасности Hugo" />
+<meta property="og:description" content="Краткое изложение модели безопасности Hugo." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/about/security-model/" />
 <meta property="og:image" content="https://gohugo.ru/about/security-model/hugo-security-model-featured.png"/>
 <meta property="article:published_time" content="2019-10-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-10-20T22:25:30+03:00" />
-<meta itemprop="name" content="Hugo&#39;s Security Model">
-<meta itemprop="description" content="A summary of Hugo&#39;s security model.">
+<meta property="article:modified_time" content="2020-11-19T12:18:13+03:00" />
+<meta itemprop="name" content="Модель безопасности Hugo">
+<meta itemprop="description" content="Краткое изложение модели безопасности Hugo.">
 <meta itemprop="datePublished" content="2019-10-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-10-20T22:25:30+03:00" />
-<meta itemprop="wordCount" content="395">
+<meta itemprop="dateModified" content="2020-11-19T12:18:13+03:00" />
+<meta itemprop="wordCount" content="350">
 <meta itemprop="image" content="https://gohugo.ru/about/security-model/hugo-security-model-featured.png">
 
 
@@ -74,8 +74,8 @@
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/about/security-model/hugo-security-model-featured.png"/>
-<meta name="twitter:title" content="Hugo&#39;s Security Model"/>
-<meta name="twitter:description" content="A summary of Hugo&#39;s security model."/>
+<meta name="twitter:title" content="Модель безопасности Hugo"/>
+<meta name="twitter:description" content="Краткое изложение модели безопасности Hugo."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -206,9 +206,9 @@
 		<p class="b">What's on this Page</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#runtime-security">Runtime Security</a></li>
-    <li><a href="#dependency-security">Dependency Security</a></li>
-    <li><a href="#web-application-security">Web Application Security</a></li>
+    <li><a href="#безопасность-во-время-выполнения">Безопасность во время выполнения</a></li>
+    <li><a href="#безопасность-зависимостей">Безопасность зависимостей</a></li>
+    <li><a href="#безопасность-веб-приложений">Безопасность веб-приложений</a></li>
   </ul>
 </nav>
 	
@@ -217,7 +217,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/about/hugo-and-gdpr/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Hugo and the  General Data Protection Regulation (GDPR)">
+			<a href="https://gohugo.ru/about/hugo-and-gdpr/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Hugo и Общий регламент по защите данных (GDPR)">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -236,13 +236,13 @@
         </div>
         <header class="flex-none w-100">
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Hugo&#39;s Security Model</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Модель безопасности Hugo</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      A summary of Hugo&rsquo;s security model.
+      Краткое изложение модели безопасности Hugo.
     </div>
   
 
@@ -253,39 +253,39 @@
 
 <div class="prose" id="prose">
 
-<h2 id="runtime-security">Runtime Security <a class="header-link" href="#runtime-security"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo produces static output, so once built, the runtime is the browser (assuming the output is HTML) and any server (API) that you integrate with.</p>
-<p>But when developing and building your site, the runtime is the <code>hugo</code> executable. Securing a runtime can be <a href="https://blog.logrocket.com/how-to-protect-your-node-js-applications-from-malicious-dependencies-5f2e60ea08f9/">a real challenge</a>.</p>
-<p><strong>Hugo&rsquo;s main approach is that of sandboxing:</strong></p>
+<h2 id="безопасность-во-время-выполнения">Безопасность во время выполнения <a class="header-link" href="#%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%b2%d0%be-%d0%b2%d1%80%d0%b5%d0%bc%d1%8f-%d0%b2%d1%8b%d0%bf%d0%be%d0%bb%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Hugo производит статический вывод, поэтому после сборки среда выполнения - это браузер (при условии, что вывод - HTML) и любой сервер (API), с которым Вы интегрируетесь.</p>
+<p>Но при разработке и создании Вашего сайта среда выполнения - это исполняемый файл <code>hugo</code>. Обеспечение безопасности среды выполнения может быть <a href="https://blog.logrocket.com/how-to-protect-your-node-js-applications-from-malicious-dependencies-5f2e60ea08f9/">реальной проблемой</a>.</p>
+<p><strong>Главным подходом Hugo является песочница:</strong></p>
 <ul>
-<li>Hugo has a virtual file system and only the main project (not third-party components) is allowed to mount directories or files outside the project root.</li>
-<li>Only the main project can walk symbolic links.</li>
-<li>User-defined components have only read-access to the filesystem.</li>
-<li>We shell out to some external binaries to support <a href="/content-management/formats/#list-of-content-formats">Asciidoctor</a> and similar, but those binaries and their flags are predefined. General functions to run arbitrary external OS commands have been <a href="https://github.com/gohugoio/hugo/issues/796">discussed</a>, but not implemented because of security concerns.</li>
+<li>Hugo имеет виртуальную файловую систему, и только основной проект (не сторонние компоненты) может монтировать каталоги или файлы вне корня проекта.</li>
+<li>Только основной проект может переходить по символьным ссылкам.</li>
+<li>Пользовательские компоненты имеют доступ только для чтения к файловой системе.</li>
+<li>Мы выделяем некоторые внешние двоичные файлы для поддержки <a href="/content-management/formats/#list-of-content-formats">Asciidoctor</a> и подобных, но эти двоичные файлы и их флаги предопределены. Общие функции для запуска произвольных внешних команд ОС <a href="https://github.com/gohugoio/hugo/issues/796">обсуждались</a>, но не реализованы из соображений безопасности.</li>
 </ul>
-<p>Hugo will soon introduce a concept of <em>Content Source Plugins</em> (AKA <em>Pages from Data</em>), but the above will still hold true.</p>
-<h2 id="dependency-security">Dependency Security <a class="header-link" href="#dependency-security"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo builds as a static binary using <a href="https://github.com/golang/go/wiki/Modules">Go Modules</a> to manage its dependencies. Go Modules have several safeguards, one of them being the <code>go.sum</code> file. This is a database of the expected cryptographic checksums of all of your dependencies, including any transitive.</p>
-<p><a href="/hugo-modules/">Hugo Modules</a> is built on top of Go Modules functionality, and a Hugo project using Hugo Modules will have a <code>go.sum</code> file. We recommend that you commit this file to your version control system. The Hugo build will fail if there is a checksum mismatch, which would be an indication of <a href="https://julienrenaux.fr/2019/12/20/github-actions-security-risk/">dependency tampering</a>.</p>
-<h2 id="web-application-security">Web Application Security <a class="header-link" href="#web-application-security"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>These are the security threats as defined by <a href="https://en.wikipedia.org/wiki/OWASP">OWASP</a>.</p>
-<p>For HTML output, this is the core security model:</p>
+<p>Hugo скоро представит концепцию <em>Content Source Plugins</em> (AKA <em>Pages from Data</em>), но вышеизложенное все равно останется верным.</p>
+<h2 id="безопасность-зависимостей">Безопасность зависимостей <a class="header-link" href="#%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%b7%d0%b0%d0%b2%d0%b8%d1%81%d0%b8%d0%bc%d0%be%d1%81%d1%82%d0%b5%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Hugo строит как статический двоичный файл, используя <a href="https://github.com/golang/go/wiki/Modules">Модули Go</a> для управления своими зависимостями. Модули Go имеют несколько защит, одна из которых - файл <code>go.sum</code>. Это база данных ожидаемых криптографических контрольных сумм всех Ваших зависимостей, включая любые транзитивные.</p>
+<p><a href="/hugo-modules/">Модули Hugo</a> построены на основе функциональности модулей Go, а проект Hugo, использующий модули Hugo, будет иметь файл <code>go.sum</code>. Мы рекомендуем Вам зафиксировать этот файл в своей системе контроля версий. Сборка Hugo завершится ошибкой при несоответствии контрольной суммы, что может указывать на <a href="https://julienrenaux.fr/2019/12/20/github-actions-security-risk/">подделку зависимости</a>.</p>
+<h2 id="безопасность-веб-приложений">Безопасность веб-приложений <a class="header-link" href="#%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%b2%d0%b5%d0%b1-%d0%bf%d1%80%d0%b8%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Это угрозы безопасности согласно определению <a href="https://en.wikipedia.org/wiki/OWASP">OWASP</a>.</p>
+<p>Для вывода HTML это основная модель безопасности:</p>
 <p><a href="https://golang.org/pkg/html/template/#hdr-Security_Model">https://golang.org/pkg/html/template/#hdr-Security_Model</a></p>
-<p>In short:</p>
-<p>Templates authors (you) are trusted, but the data you send in is not.
-This is why you sometimes need to use the <em>safe</em> functions, such as <code>safeHTML</code>, to avoid escaping of data you know is safe.
-There is one exception to the above, as noted in the documentation: If you enable inline shortcodes, you also say that the shortcodes and data handling in content files are trusted, as those macros are treated as pure text.
-It may be worth adding that Hugo is a static site generator with no concept of dynamic user input.</p>
-<p>For content, the default Markdown renderer is <a href="/getting-started/configuration-markup">configured</a> to remove or escape potentially unsafe content. This behavior can be reconfigured if you trust your content.</p>
+<p>Короче говоря:</p>
+<p>Авторам шаблонов (Вам) доверяют, а отправленным Вами данным - нет.
+Вот почему Вам иногда нужно использовать <em>safe</em> функции, такие как <code>safeHTML</code>, чтобы избежать экранирования данных, которые, как Вы знаете, безопасны.
+Как указано в документации, есть одно исключение из вышеизложенного: если Вы включаете встроенные шорткоды, Вы также говорите, что шорткоды и обработка данных в файлах содержимого являются доверенными, поскольку эти макросы обрабатываются как чистый текст.
+Возможно, стоит добавить, что Hugo - это генератор статических сайтов без концепции динамического ввода данных пользователем.</p>
+<p>Для контента по умолчанию средство рендеринга Markdown <a href="/getting-started/configuration-markup">настроено</a> для удаления или исключения потенциально небезопасного контента. Это поведение можно изменить, если Вы доверяете своему контенту.</p>
 
 </div>
 
         
 
-<h2>See Also</h2>
+<h2>Смотрите также</h2>
 <ul>
 	
-	<li><a href="/about/hugo-and-gdpr/">Hugo and the  General Data Protection Regulation (GDPR)</a></li>
+	<li><a href="/about/hugo-and-gdpr/">Hugo и Общий регламент по защите данных (GDPR)</a></li>
 	
 </ul>
 
@@ -307,32 +307,32 @@ It may be worth adding that Hugo is a static site generator with no concept of d
           </li>
           <li class="f6 fw4">
             <a href="/about/security-model/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Hugo&#39;s Security Model
+              Модель безопасности Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/about/hugo-and-gdpr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo and GDPR
+              Hugo и GDPR
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/about/what-is-hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              What is Hugo
+              Что такое Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/about/features/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Features
+              Функции Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/about/benefits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              The Benefits of Static
+              Преимущества статики
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/about/license/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              License
+              Лицензия
             </a>
           </li>
         </ul>
@@ -1610,8 +1610,8 @@ It may be worth adding that Hugo is a static site generator with no concept of d
   <a href="https://gohugo.ru/about/security-model/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Hugo&#39;s Security Model”
-  </a> was last updated: October 20, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/df3c555635cd59de872a875deacff02f7855fe7b">Сделал папку ru для перевода (df3c55563)</a>
+    “Модель безопасности Hugo”
+  </a> was last updated: November 19, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/db4665813b33b3c386a647e5477e25b23b2cd779">Перевод О Хьго (db4665813)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/ru/about%5csecurity-model%5cindex.md" class="
