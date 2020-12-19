@@ -1805,6 +1805,16 @@
   <url>
     <loc>https://gohugo.ru/en/news/0.79.1-relnotes/</loc>
     <lastmod>2020-12-19T17:36:10+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/news/0.79.1-relnotes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/news/0.79.1-relnotes/"
+                />
   </url>
   
   <url>
@@ -1825,11 +1835,31 @@
   <url>
     <loc>https://gohugo.ru/en/news/hugo-macos-intel-vs-arm/</loc>
     <lastmod>2020-12-10T16:56:34+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/news/hugo-macos-intel-vs-arm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/news/hugo-macos-intel-vs-arm/"
+                />
   </url>
   
   <url>
     <loc>https://gohugo.ru/en/news/0.79.0-relnotes/</loc>
     <lastmod>2020-11-27T10:40:57+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/news/0.79.0-relnotes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/news/0.79.0-relnotes/"
+                />
   </url>
   
   <url>

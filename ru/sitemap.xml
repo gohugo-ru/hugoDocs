@@ -1784,7 +1784,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/</loc>
-    <lastmod>2020-11-19T12:18:13+03:00</lastmod>
+    <lastmod>2020-12-19T20:46:18+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1803,6 +1803,66 @@
   </url>
   
   <url>
+    <loc>https://gohugo.ru/news/0.79.1-relnotes/</loc>
+    <lastmod>2020-12-19T20:46:18+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/news/0.79.1-relnotes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/news/0.79.1-relnotes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/categories/releases/</loc>
+    <lastmod>2020-12-19T20:46:18+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/categories/releases/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/categories/releases/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/news/hugo-macos-intel-vs-arm/</loc>
+    <lastmod>2020-12-19T20:46:18+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/news/hugo-macos-intel-vs-arm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/news/hugo-macos-intel-vs-arm/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/news/0.79.0-relnotes/</loc>
+    <lastmod>2020-12-19T20:46:18+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/news/0.79.0-relnotes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/news/0.79.0-relnotes/"
+                />
+  </url>
+  
+  <url>
     <loc>https://gohugo.ru/news/0.78.2-relnotes/</loc>
     <lastmod>2020-11-18T23:28:40+03:00</lastmod>
     <xhtml:link
@@ -1814,21 +1874,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/news/0.78.2-relnotes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://gohugo.ru/categories/releases/</loc>
-    <lastmod>2020-11-18T23:28:40+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/categories/releases/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/categories/releases/"
                 />
   </url>
   

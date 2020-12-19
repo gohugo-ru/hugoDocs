@@ -7,6 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language><atom:link href="https://gohugo.ru/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugo 0.79.1: One Security Patch for Hugo on Windows</title>
+      <link>https://gohugo.ru/news/0.79.1-relnotes/</link>
+      <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.ru/news/0.79.1-relnotes/</guid>
+      <description>Hugo depends on Go&amp;rsquo;s os/exec for certain features, e.g. for rendering of Pandoc documents if these binaries are found in the system %PATH% on Windows. However, if a malicious file with the same name (exe or bat) was found in the current working directory at the time of running hugo, the malicious command would be invoked instead of the system one.
+Windows users who ran hugo inside untrusted Hugo sites was affected.</description>
+    </item>
+    
+    <item>
+      <title>Hugo on Apple M1</title>
+      <link>https://gohugo.ru/news/hugo-macos-intel-vs-arm/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.ru/news/hugo-macos-intel-vs-arm/</guid>
+      <description>By bep
+The table below shows all of Hugo&#39;s benchmarks run on both a MacBook with Intel CPU and a Mac Mini M1 with an ARM CPU.Some notes:The Intel Mac is a 2019 16 inch MacBook with 2,3 GHz 8-Core Intel Core i9 with 32 GB ram.The ARM Mac is a new Mac Mini M1 base model with 8 GB of ramThe benchmarks are run with go test -test.</description>
+    </item>
+    
+    <item>
+      <title>Hugo 0.79.0: Black Friday Edition</title>
+      <link>https://gohugo.ru/news/0.79.0-relnotes/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.ru/news/0.79.0-relnotes/</guid>
+      <description>Hugo 0.79.0 is a small, but useful release. You can now set custom .Params in your menu configuration, and you can now also override deeply nested snake_cased configuration variables with OS environment variables. Other than that we have refreshed all the core upstream dependencies. A special thanks to @alecthomas (some new Chroma lexers and fixes) and @evanw (ESBuild).
+This release represents 33 contributions by 8 contributors to the main Hugo code base.</description>
+    </item>
+    
+    <item>
       <title>Hugo 0.78.2: A couple of Bug Fixes</title>
       <link>https://gohugo.ru/news/0.78.2-relnotes/</link>
       <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>

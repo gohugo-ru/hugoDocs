@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Hugo 0.78.2: A couple of Bug Fixes | Hugo</title>
+  <title>Hugo 0.79.1: One Security Patch for Hugo on Windows | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.77.0-DEV" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Hugo 0.78.2: A couple of Bug Fixes" />
-<meta property="og:description" content="This version fixes a couple of bugs introduced in 0.78.0." />
+<meta property="og:title" content="Hugo 0.79.1: One Security Patch for Hugo on Windows" />
+<meta property="og:description" content="Disallow running of e.g. Pandoc in the current directory." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://gohugo.ru/news/0.78.2-relnotes/" />
+<meta property="og:url" content="https://gohugo.ru/news/0.79.1-relnotes/" />
 <meta property="og:image" content="https://gohugo.ru/images/blog/hugo-bug-poster.png" />
-<meta property="article:published_time" content="2020-11-13T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-11-18T23:28:40+03:00" />
-<meta itemprop="name" content="Hugo 0.78.2: A couple of Bug Fixes">
-<meta itemprop="description" content="This version fixes a couple of bugs introduced in 0.78.0.">
-<meta itemprop="datePublished" content="2020-11-13T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-11-18T23:28:40+03:00" />
-<meta itemprop="wordCount" content="98">
+<meta property="article:published_time" content="2020-12-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-19T20:46:18+03:00" />
+<meta itemprop="name" content="Hugo 0.79.1: One Security Patch for Hugo on Windows">
+<meta itemprop="description" content="Disallow running of e.g. Pandoc in the current directory.">
+<meta itemprop="datePublished" content="2020-12-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-12-19T20:46:18+03:00" />
+<meta itemprop="wordCount" content="110">
 <meta itemprop="image" content="https://gohugo.ru/images/blog/hugo-bug-poster.png">
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/blog/hugo-bug-poster.png"/>
 
-<meta name="twitter:title" content="Hugo 0.78.2: A couple of Bug Fixes"/>
-<meta name="twitter:description" content="This version fixes a couple of bugs introduced in 0.78.0."/>
+<meta name="twitter:title" content="Hugo 0.79.1: One Security Patch for Hugo on Windows"/>
+<meta name="twitter:description" content="Disallow running of e.g. Pandoc in the current directory."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -226,8 +226,8 @@
       
 
       <h1 class="lh-title fw9 mb7 mv0 pt3">
-        <a href="/news/0.78.2-relnotes/" class="link primary-color dim">
-          Hugo 0.78.2: A couple of Bug Fixes
+        <a href="/news/0.79.1-relnotes/" class="link primary-color dim">
+          Hugo 0.79.1: One Security Patch for Hugo on Windows
         </a>
       </h1>
     </header>
@@ -236,11 +236,11 @@
       <aside class="mid-gray fn w-100 w-25-l">
         
           <h2 class="f3 lh-title">
-            This version fixes a couple of bugs introduced in 0.78.0.
+            Disallow running of e.g. Pandoc in the current directory.
           </h2>
         
-        <time class="f6 mt2 db ttu tracked" datetime="2020-11-13T00:00:00Z">
-          November 13, 2020
+        <time class="f6 mt2 db ttu tracked" datetime="2020-12-19T00:00:00Z">
+          December 19, 2020
         </time>
         
         <p>
@@ -253,17 +253,9 @@
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/news/0.79.0-relnotes/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Hugo 0.79.0: Black Friday Edition ">
-				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-
-			</a>
-		
 
 		
-			<a href="https://gohugo.ru/news/0.78.1-relnotes/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Hugo 0.78.1: A couple of Bug Fixes">
+			<a href="https://gohugo.ru/news/hugo-macos-intel-vs-arm/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Hugo on Apple M1">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -282,27 +274,19 @@
           
           
           
-        <p>This is a bug-fix release with a couple of important fixes.</p>
-<ul>
-<li>js: Let ESBuild handle all imports from node_modules <a href="https://github.com/gohugoio/hugo/commit/78f227b664d86c30fbb25f7a953b7ef8f2dacf13">78f227b6</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/7948">#7948</a></li>
-<li>build(deps): bump github.com/evanw/esbuild from 0.8.5 to 0.8.6 <a href="https://github.com/gohugoio/hugo/commit/5e03f644a4507f51bdbcdb42b65ce4e99095374f">5e03f644</a> <a href="https://github.com/apps/dependabot">@dependabot[bot]</a></li>
-<li>build(deps): bump github.com/evanw/esbuild from 0.8.4 to 0.8.5 <a href="https://github.com/gohugoio/hugo/commit/a92ef20ff6e43ba05844539b60782e8190712cdc">a92ef20f</a> <a href="https://github.com/apps/dependabot">@dependabot[bot]</a></li>
-<li>build(deps): bump github.com/getkin/kin-openapi from 0.22.1 to 0.26.0 <a href="https://github.com/gohugoio/hugo/commit/0d54a844061e808dd5b4ff4874b2e4bd9df4d556">0d54a844</a> <a href="https://github.com/apps/dependabot">@dependabot[bot]</a></li>
-<li>Update GH docs to say &ldquo;main&rdquo; as default branch <a href="https://github.com/gohugoio/hugo/commit/943f3c932f5f67ab52bf8e0636e57751dc9b1891">943f3c93</a> <a href="https://github.com/maco">@maco</a></li>
-<li>Updated year in header <a href="https://github.com/gohugoio/hugo/commit/4f20bf29eb246a2e65508175fdd5f25b44e98370">4f20bf29</a> <a href="https://github.com/AdamKorcz">@AdamKorcz</a></li>
-<li>Added first fuzzer <a href="https://github.com/gohugoio/hugo/commit/4c613d5d5d60b80a262e968ae8a4525eba8619a2">4c613d5d</a> <a href="https://github.com/AdamKorcz">@AdamKorcz</a></li>
-<li>build(deps): bump github.com/frankban/quicktest from 1.11.1 to 1.11.2 <a href="https://github.com/gohugoio/hugo/commit/82a182e52c4165b4f51d0cc8ef0f21df5d628c69">82a182e5</a> <a href="https://github.com/apps/dependabot">@dependabot[bot]</a></li>
-<li>build(deps): bump golang.org/x/text from 0.3.3 to 0.3.4 <a href="https://github.com/gohugoio/hugo/commit/dfc662b2086430dde96c18ccb6b92bba4f1be428">dfc662b2</a> <a href="https://github.com/apps/dependabot">@dependabot[bot]</a></li>
-<li>build(deps): bump github.com/evanw/esbuild from 0.8.3 to 0.8.4 <a href="https://github.com/gohugoio/hugo/commit/2f0917cc014557e201a9348664736d608a7fa131">2f0917cc</a> <a href="https://github.com/apps/dependabot">@dependabot[bot]</a></li>
-</ul>
+        <p>Hugo depends on Go&rsquo;s <code>os/exec</code> for certain features, e.g. for rendering of Pandoc documents if these binaries are found in the system <code>%PATH%</code> on Windows. However, if a malicious file with the same name (<code>exe</code> or <code>bat</code>) was found in the current working directory at the time of running <code>hugo</code>, the malicious command would be invoked instead of the system one.</p>
+<p>Windows users who ran <code>hugo</code> inside untrusted Hugo sites was affected.</p>
+<p>The origin of this issue comes from Go, see <a href="https://github.com/golang/go/issues/38736">https://github.com/golang/go/issues/38736</a></p>
+<p>We have fixed this in Hugo by <a href="https://github.com/gohugoio/hugo/commit/4a8267d64a40564aced0695bca05249da17b0eab">using</a> a patched version of <code>exec.LookPath</code> from <a href="https://github.com/cli/safeexec">https://github.com/cli/safeexec</a> (thanks to <a href="https://github.com/mislav">@mislav</a> for the implementation).</p>
+<p>Thanks to <a href="https://github.com/Ry0taK">@Ry0taK</a> for the bug report.</p>
 
       </div>
     </div>
     
 
       <div class="gray f6 mv6">
-        Last Update: November 18, 2020 <br>
-        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/ru/news%5c0.78.2-relnotes%5cindex.md" class="
+        Last Update: December 19, 2020 <br>
+        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/ru/news%5c0.79.1-relnotes%5cindex.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 
