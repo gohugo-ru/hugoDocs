@@ -61,12 +61,12 @@
 <meta property="og:url" content="https://gohugo.ru/en/functions/path.split/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2018-11-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-10-21T10:22:28+02:00" />
+<meta property="article:modified_time" content="2020-11-27T16:08:46+01:00" />
 <meta itemprop="name" content="path.Split">
 <meta itemprop="description" content="Split path immediately following the final slash.">
 <meta itemprop="datePublished" content="2018-11-28T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2019-10-21T10:22:28+02:00" />
-<meta itemprop="wordCount" content="77">
+<meta itemprop="dateModified" content="2020-11-27T16:08:46+01:00" />
+<meta itemprop="wordCount" content="95">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -279,9 +279,9 @@
 <p>The returned values have the property that <code>PATH</code> = <code>DIR</code>+<code>BASE</code>.
 If there is no slash in <code>PATH</code>, it returns an empty directory and the base is set to <code>PATH</code>.</p>
 <p><strong>Note:</strong> On Windows, <code>PATH</code> is converted to slash (<code>/</code>) separators.</p>
-<pre><code>{{ path.Split &quot;a/news.html&quot; }} → &quot;a/&quot;, &quot;news.html&quot;
-{{ path.Split &quot;news.html&quot; }} → &quot;&quot;, &quot;news.html&quot;
-{{ path.Split &quot;a/b/c&quot; }} → &quot;a/b/&quot;, &quot;c&quot;
+<pre><code>{{ $dirFile := path.Split &quot;a/news.html&quot; }} → $dirDile.Dir → &quot;a/&quot;, $dirFile.File → &quot;news.html&quot;
+{{ $dirFile := path.Split &quot;news.html&quot; }} → $dirDile.Dir → &quot;&quot;, $dirDile.File → &quot;news.html&quot;
+{{ $dirFile := path.Split &quot;a/b/c&quot; }} → $dirDile.Dir → &quot;a/b/&quot;, $dirDile.File →  &quot;c&quot;
 </code></pre>
 </div>
 
@@ -1622,7 +1622,7 @@ If there is no slash in <code>PATH</code>, it returns an empty directory and the
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “path.Split”
-  </a> was last updated: October 21, 2019: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/c98bcff07ca6382a30c93ee37789bcafb13efa8c">Merge commit &#39;b9bd35d72e14932fb6588ff62b90cddef0a060fc&#39; as &#39;docs&#39; (c98bcff07)</a>
+  </a> was last updated: November 27, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/e16e57e9a42af612ebe0e3101c07c39683ed3d40">Update path.Split.md (e16e57e9a)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/functions%5cpath.Split.md" class="

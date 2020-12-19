@@ -61,11 +61,11 @@
 <meta property="og:url" content="https://gohugo.ru/en/hugo-pipes/babel/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2019-03-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-09-09T22:31:43+02:00" />
+<meta property="article:modified_time" content="2020-12-17T19:58:41+05:30" />
 <meta itemprop="name" content="Babel">
 <meta itemprop="description" content="Hugo Pipes can process JS files with Babel.">
 <meta itemprop="datePublished" content="2019-03-21T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-09-09T22:31:43+02:00" />
+<meta itemprop="dateModified" content="2020-12-17T19:58:41+05:30" />
 <meta itemprop="wordCount" content="269">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
@@ -293,7 +293,7 @@
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.io/news/0.75.0-relnotes/" target="_blank">New in v0.75.0</a>
 </button>
-<p>In Hugo <code>v0.75</code> we improved the way we resolve JS configuration and dependencies. One of them is that we now adds the main project&rsquo;s <code>node_modules</code> to <code>NODE_PATH</code> when running Babel and similar tools. There are some known <a href="https://github.com/babel/babel/issues/5618">issues</a> with Babel in this area, so if you have a <code>babel.config.js</code> living in a Hugo Module (and not in the project itself), we recommend using <code>require</code> to load the presets/plugins, e.g.:</p>
+<p>In Hugo <code>v0.75</code> we improved the way we resolve JS configuration and dependencies. One of them is that we now add the main project&rsquo;s <code>node_modules</code> to <code>NODE_PATH</code> when running Babel and similar tools. There are some known <a href="https://github.com/babel/babel/issues/5618">issues</a> with Babel in this area, so if you have a <code>babel.config.js</code> living in a Hugo Module (and not in the project itself), we recommend using <code>require</code> to load the presets/plugins, e.g.:</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
         <span class="nx">presets</span><span class="o">:</span> <span class="p">[</span>
                 <span class="p">[</span>
@@ -1650,7 +1650,7 @@
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Babel”
-  </a> was last updated: September 9, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/e201279804f83944ed4ea76bd37d1272288e25d9">Add &#34;hugo mod npm pack&#34; (e20127980)</a>
+  </a> was last updated: December 17, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/0f65d77838eb954dfe66ea82404bf25d5e872ae2">Typo s/adds/add (#1298) (0f65d7783)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/hugo-pipes%5cbabel.md" class="

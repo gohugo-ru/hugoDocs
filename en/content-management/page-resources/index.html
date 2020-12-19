@@ -61,12 +61,12 @@
 <meta property="og:url" content="https://gohugo.ru/en/content-management/page-resources/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2018-01-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-06-02T15:31:07+09:00" />
+<meta property="article:modified_time" content="2020-12-17T09:33:26+01:00" />
 <meta itemprop="name" content="Page Resources">
 <meta itemprop="description" content="Page Resources -- images, other pages, documents etc. -- have page-relative URLs and their own metadata.">
 <meta itemprop="datePublished" content="2018-01-24T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-06-02T15:31:07+09:00" />
-<meta itemprop="wordCount" content="830">
+<meta itemprop="dateModified" content="2020-12-17T09:33:26+01:00" />
+<meta itemprop="wordCount" content="865">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -297,7 +297,15 @@ the lowest page they are bundled with, and simple which names does not contain <
 <h2 id="properties">Properties <a class="header-link" href="#properties"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <dl>
 <dt>ResourceType</dt>
-<dd>The main type of the resource. For example, a file of MIME type <code>image/jpeg</code> has the ResourceType <code>image</code>.</dd>
+<dd>The main type of the resource&rsquo;s <a href="/templates/output-formats/#media-types">Media Type</a>. For example, a file of MIME type <code>image/jpeg</code> has the ResourceType <code>image</code>. A <code>Page</code> will have <code>ResourceType</code> with value <code>page</code>.</dd>
+</dl>
+<p>
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.80.0-relnotes/" target="_blank">New in v0.80.0</a>
+</button> Note that we in Hugo <code>v0.80.0</code> fixed a bug where non-image resources (e.g. video) would return the MIME sub type, e.g. <code>json</code>.</p>
+<dl>
 <dt>Name</dt>
 <dd>Default value is the filename (relative to the owning page). Can be set in front matter.</dd>
 <dt>Title</dt>
@@ -1970,7 +1978,7 @@ the lowest page they are bundled with, and simple which names does not contain <
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Page Resources”
-  </a> was last updated: June 2, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/e9bc5880afb8de2ec9ff9ea047ff1f9f80624c4b">whitespace, typos and HTTPS fixes (e9bc5880a)</a>
+  </a> was last updated: December 17, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/75694d90408df6226d948d48079ea730c09b0469">Fix Resource.ResourceType so it always returns MIME&#39;s main type (75694d904)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management%5cpage-resources.md" class="

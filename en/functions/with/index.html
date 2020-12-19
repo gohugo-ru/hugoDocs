@@ -56,17 +56,17 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="with" />
-<meta property="og:description" content="Rebinds the context (`.`) within its scope and skips the block if the variable is absent." />
+<meta property="og:description" content="Rebinds the context (`.`) within its scope and skips the block if the variable is absent or empty." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/en/functions/with/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-10-21T10:22:28+02:00" />
+<meta property="article:modified_time" content="2020-11-25T21:17:43+00:00" />
 <meta itemprop="name" content="with">
-<meta itemprop="description" content="Rebinds the context (`.`) within its scope and skips the block if the variable is absent.">
+<meta itemprop="description" content="Rebinds the context (`.`) within its scope and skips the block if the variable is absent or empty.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2019-10-21T10:22:28+02:00" />
-<meta itemprop="wordCount" content="74">
+<meta itemprop="dateModified" content="2020-11-25T21:17:43+00:00" />
+<meta itemprop="wordCount" content="131">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -76,7 +76,7 @@
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 <meta name="twitter:title" content="with"/>
-<meta name="twitter:description" content="Rebinds the context (`.`) within its scope and skips the block if the variable is absent."/>
+<meta name="twitter:description" content="Rebinds the context (`.`) within its scope and skips the block if the variable is absent or empty."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -254,7 +254,7 @@
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Rebinds the context (<code>.</code>) within its scope and skips the block if the variable is absent.
+      Rebinds the context (<code>.</code>) within its scope and skips the block if the variable is absent or empty.
     </div>
   
 
@@ -267,7 +267,9 @@
     <h2 class="minor mb1 pt4 primary-color-dark">Syntax</h2>
       <pre class="f5 mb4 ph3 pv2 bg-light-gray" style="border-left:4px solid #0594CB;">with INPUT</pre>
 
-<p>An alternative way of writing an <code>if</code> statement and then referencing the same value is to use <code>with</code> instead. <code>with</code> rebinds the context (<code>.</code>) within its scope and skips the block if the variable is absent or unset.</p>
+<p>An alternative way of writing an <code>if</code> statement and then referencing the same value is to use <code>with</code> instead. <code>with</code> rebinds the context (<code>.</code>) within its scope and skips the block if the variable is absent, unset or empty.</p>
+<p>The set of <em>empty</em> values is defined by <a href="https://golang.org/pkg/text/template/">the Go templates package</a>. Empty values include <code>false</code>, the number zero, and the empty string.</p>
+<p>If you want to render a block if an index or key is present in a slice, array, channel or map, regardless of whether the value is empty, you should use <a href="/functions/isset"><code>isset</code></a> instead.</p>
 <p>The following example checks for a <a href="/variables/site/">user-defined site variable</a> called <code>twitteruser</code>. If the key-value is not set, the following will render nothing:</p>
 
 
@@ -1623,7 +1625,7 @@
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “with”
-  </a> was last updated: October 21, 2019: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/c98bcff07ca6382a30c93ee37789bcafb13efa8c">Merge commit &#39;b9bd35d72e14932fb6588ff62b90cddef0a060fc&#39; as &#39;docs&#39; (c98bcff07)</a>
+  </a> was last updated: November 25, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/1de7a358cac94ac09a513456bdaae65e6ae94859">Clarify that &#34;with&#34; blocks do not render with empty values (#1287) (1de7a358c)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/functions%5cwith.md" class="

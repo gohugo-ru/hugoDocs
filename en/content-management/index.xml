@@ -221,7 +221,7 @@ config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;copyright:Everything is mi
       
       <guid>https://gohugo.ru/en/content-management/page-resources/</guid>
       <description>Page resources are available for page bundles only, i.e. a directory with either a index.md, or _index.md file at its root. Resources are only attached to the lowest page they are bundled with, and simple which names does not contain index.md are not attached any resource.
-Properties  ResourceType The main type of the resource. For example, a file of MIME type image/jpeg has the ResourceType image. Name Default value is the filename (relative to the owning page).</description>
+Properties  ResourceType The main type of the resource&amp;rsquo;s Media Type. For example, a file of MIME type image/jpeg has the ResourceType image. A Page will have ResourceType with value page.</description>
     </item>
     
     <item>

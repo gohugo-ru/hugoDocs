@@ -142,7 +142,7 @@ Note: All path elements on Windows are converted to slash (&#39;/&#39;) separato
       <description>path.Split splits PATH immediately following the final slash, separating it into a directory and a base component.
 The returned values have the property that PATH = DIR+BASE. If there is no slash in PATH, it returns an empty directory and the base is set to PATH.
 Note: On Windows, PATH is converted to slash (/) separators.
-{{ path.Split &amp;quot;a/news.html&amp;quot; }} → &amp;quot;a/&amp;quot;, &amp;quot;news.html&amp;quot;{{ path.Split &amp;quot;news.html&amp;quot; }} → &amp;quot;&amp;quot;, &amp;quot;news.html&amp;quot;{{ path.</description>
+{{ $dirFile := path.Split &amp;quot;a/news.html&amp;quot; }} → $dirDile.Dir → &amp;quot;a/&amp;quot;, $dirFile.File → &amp;quot;news.html&amp;quot;{{ $dirFile := path.</description>
     </item>
     
     <item>
@@ -734,9 +734,10 @@ Remember to pass the output of this to safeHTML if fully un-escaped characters a
       
       <guid>https://gohugo.ru/en/functions/images/</guid>
       <description>Image Filters See images.Filter for how to apply these filters to an image.
-Brightness Brightness creates a filter that changes the brightness of an image. The percentage parameter must be in range (-100, 100).
-ColorBalance ColorBalance creates a filter that changes the color balance of an image. The percentage parameters for each color channel (red, green, blue) must be in range (-100, 500).
-Colorize Colorize creates a filter that produces a colorized version of an image.</description>
+Overlay New in v0.80.0 Overlay creates a filter that overlays the source image at position x y, e.g:
+{{$logoFilter:=(images.Overlay$logo5050)}} {{$img:=$img|images.Filter$logoFilter}} A shorter version of the above, if you only need to apply the filter once:
+{{$img:=$img.Filter(images.Overlay$logo5050)}} The above will overlay $logo in the upper left corner of $img (at position x=50, y=50).
+Brightness Brightness creates a filter that changes the brightness of an image.</description>
     </item>
     
     <item>
@@ -1347,9 +1348,9 @@ It works in a similar manner to the where keyword in SQL.
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/en/functions/with/</guid>
-      <description>An alternative way of writing an if statement and then referencing the same value is to use with instead. with rebinds the context (.) within its scope and skips the block if the variable is absent or unset.
-The following example checks for a user-defined site variable called twitteruser. If the key-value is not set, the following will render nothing:
-layouts/partials/twitter.html{{with.Site.Params.twitteruser}}&amp;lt;span class=&amp;#34;twitter&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;https://twitter.com/{{.}}&amp;#34; rel=&amp;#34;author&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;/images/twitter.png&amp;#34; width=&amp;#34;48&amp;#34; height=&amp;#34;48&amp;#34; title=&amp;#34;Twitter: {{.</description>
+      <description>An alternative way of writing an if statement and then referencing the same value is to use with instead. with rebinds the context (.) within its scope and skips the block if the variable is absent, unset or empty.
+The set of empty values is defined by the Go templates package. Empty values include false, the number zero, and the empty string.
+If you want to render a block if an index or key is present in a slice, array, channel or map, regardless of whether the value is empty, you should use isset instead.</description>
     </item>
     
   </channel>

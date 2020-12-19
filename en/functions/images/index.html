@@ -61,12 +61,12 @@
 <meta property="og:url" content="https://gohugo.ru/en/functions/images/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-10-21T10:22:28+02:00" />
+<meta property="article:modified_time" content="2020-12-16T13:52:47+01:00" />
 <meta itemprop="name" content="Image Functions">
 <meta itemprop="description" content="The images namespace provides a list of filters and other image related functions.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2019-10-21T10:22:28+02:00" />
-<meta itemprop="wordCount" content="424">
+<meta itemprop="dateModified" content="2020-12-16T13:52:47+01:00" />
+<meta itemprop="wordCount" content="476">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -223,6 +223,7 @@
   <ul>
     <li><a href="#image-filters">Image Filters</a>
       <ul>
+        <li><a href="#overlay">Overlay</a></li>
         <li><a href="#brightness">Brightness</a></li>
         <li><a href="#colorbalance">ColorBalance</a></li>
         <li><a href="#colorize">Colorize</a></li>
@@ -305,6 +306,20 @@
 
 <h2 id="image-filters">Image Filters <a class="header-link" href="#image-filters"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>See <a href="#filter">images.Filter</a> for how to apply these filters to an image.</p>
+<h3 id="overlay">Overlay <a class="header-link" href="#overlay"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.80.0-relnotes/" target="_blank">New in v0.80.0</a>
+</button>
+<!-- raw HTML omitted -->
+<p>Overlay creates a filter that overlays the source image at position x y, e.g:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$logoFilter</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Overlay</span><span class="w"> </span><span class="nx">$logo</span><span class="w"> </span><span class="nx">50</span><span class="w"> </span><span class="nx">50</span><span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">images</span><span class="na">.Filter</span><span class="w"> </span><span class="nx">$logoFilter</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><p>A shorter version of the above, if you only need to apply the filter once:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">$img</span><span class="na">.Filter</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Overlay</span><span class="w"> </span><span class="nx">$logo</span><span class="w"> </span><span class="nx">50</span><span class="w"> </span><span class="nx">50</span><span class="w"> </span><span class="o">)</span><span class="cp">}}</span>
+</code></pre></div><p>The above will overlay <code>$logo</code> in the upper left corner of <code>$img</code> (at position <code>x=50, y=50</code>).</p>
 <h3 id="brightness">Brightness <a class="header-link" href="#brightness"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <!-- raw HTML omitted -->
 <p>Brightness creates a filter that changes the brightness of an image.
@@ -1707,7 +1722,7 @@ favicon.ico: <span class="cp">{{</span><span class="na">.Width</span><span class
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Image Functions”
-  </a> was last updated: October 21, 2019: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/c98bcff07ca6382a30c93ee37789bcafb13efa8c">Merge commit &#39;b9bd35d72e14932fb6588ff62b90cddef0a060fc&#39; as &#39;docs&#39; (c98bcff07)</a>
+  </a> was last updated: December 16, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/0b896b2c0d651df3985b0fcdd6bc3ea1e31a7921">images: Add images.Overlay filter (0b896b2c0)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/functions%5cimages%5cindex.md" class="
