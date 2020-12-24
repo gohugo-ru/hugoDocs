@@ -224,37 +224,17 @@ To see even more options for adding syntax-highlighted code blocks to your websi
 
 If you'd like to embed a photo from [Instagram][], you only need the photo's ID. You can discern an Instagram photo ID from the URL:
 
-```
-https://www.instagram.com/p/BWNjjyYFxVx/
-```
-
 #### Example `instagram` Input
 
-{{< code file="instagram-input.md" >}}
-{{</* instagram BWNjjyYFxVx */>}}
-{{< /code >}}
-
 You also have the option to hide the caption:
-
-{{< code file="instagram-input-hide-caption.md" >}}
-{{</* instagram BWNjjyYFxVx hidecaption */>}}
-{{< /code >}}
 
 #### Example `instagram` Output
 
 By adding the preceding `hidecaption` example, the following HTML will be added to your rendered website's markup:
 
-{{< output file="instagram-hide-caption-output.html" >}}
-{{< instagram BWNjjyYFxVx hidecaption >}}
-{{< /output >}}
-
 #### Example `instagram` Display
 
 Using the preceding `instagram` with `hidecaption` example above, the following simulates the displayed experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup.
-
-{{< instagram BWNjjyYFxVx hidecaption >}}
-
-
 
 {{% note %}}
 The `instagram`-shortcode refers an endpoint of Instagram's API, that's deprecated since October 24th, 2020. Thus, no images can be fetched from this API endpoint, resulting in an error when the `instagram`-shortcode is used. For more information please have a look at GitHub issue [#7879](https://github.com/gohugoio/hugo/issues/7879).
@@ -361,7 +341,7 @@ Using the preceding `vimeo` example, the following HTML will be added to your re
 {{< /output >}}
 
 {{% tip %}}
-If you want to further customize the visual styling of the YouTube or Vimeo output, add a `class` named parameter when calling the shortcode. The new `class` will be added to the `<div>` that wraps the `<iframe>` *and* will remove the inline styles. Note that you will need to call the `id` as a named parameter as well. You can also give the vimeo video a descriptive title with `title`. 
+If you want to further customize the visual styling of the YouTube or Vimeo output, add a `class` named parameter when calling the shortcode. The new `class` will be added to the `<div>` that wraps the `<iframe>` *and* will remove the inline styles. Note that you will need to call the `id` as a named parameter as well. You can also give the vimeo video a descriptive title with `title`.
 
 ```
 {{</* vimeo id="146022717" class="my-vimeo-wrapper-class" title="My vimeo video" */>}}
