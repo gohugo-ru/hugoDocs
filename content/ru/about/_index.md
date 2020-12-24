@@ -1,7 +1,7 @@
 ---
-title: About Hugo
-linktitle: Overview
-description: Hugo's features, roadmap, license, and motivation.
+title: О Хьюго
+linktitle: Обзор
+description: Характеристики Хьюго, карта, лицензия и мотивация.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
@@ -17,4 +17,4 @@ aliases: [/about-hugo/,/docs/]
 toc: false
 ---
 
-Hugo is not your average static site generator.
+Hugo - не обычный генератор статических сайтов.
