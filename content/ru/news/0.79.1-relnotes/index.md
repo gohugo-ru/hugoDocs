@@ -1,22 +1,20 @@
 
 ---
 date: 2020-12-19
-title: "Hugo 0.79.1: One Security Patch for Hugo on Windows"
-description: "Disallow running of e.g. Pandoc in the current directory."
+title: "Hugo 0.79.1: Одно исправление безопасности для Hugo в Windows"
+description: "Запретить запуск, например, Pandoc в текущем каталоге."
 categories: ["Releases"]
 images:
 - images/blog/hugo-bug-poster.png
 
 ---
 
-Hugo depends on Go's `os/exec` for certain features, e.g. for rendering of Pandoc documents if these binaries are found in the system `%PATH%` on Windows. However, if a malicious file with the same name (`exe` or `bat`) was found in the current working directory at the time of running `hugo`, the malicious command would be invoked instead of the system one.
+Hugo зависит от `os/exec` Go для определенных функций, например для рендеринга документов Pandoc, если эти двоичные файлы находятся в системе `%PATH%` в Windows. Однако, если вредоносный файл с таким же именем (`exe` или `bat`) был обнаружен в текущем рабочем каталоге во время запуска `hugo`, то вместо системной будет вызвана вредоносная команда.
 
-Windows users who ran `hugo` inside untrusted Hugo sites was affected.
+Это затронуло пользователей Windows, которые запускали `hugo` на ненадежных сайтах Hugo.
 
-The origin of this issue comes from Go, see https://github.com/golang/go/issues/38736
+Причина этой проблемы - Go, смотрите https://github.com/golang/go/issues/38736
 
-We have fixed this in Hugo by [using](https://github.com/gohugoio/hugo/commit/4a8267d64a40564aced0695bca05249da17b0eab) a patched version of `exec.LookPath` from https://github.com/cli/safeexec (thanks to [@mislav](https://github.com/mislav) for the implementation).
+Мы исправили это в Hugo, [используя](https://github.com/gohugoio/hugo/commit/4a8267d64a40564aced0695bca05249da17b0eab) исправленную версию `exec.LookPath` из https://github.com/cli/safeexec (спасибо [@mislav](https://github.com/mislav) за реализацию).
 
-Thanks to [@Ry0taK](https://github.com/Ry0taK) for the bug report.
-
-
+Спасибо [@Ry0taK](https://github.com/Ry0taK) за отчет об ошибке.

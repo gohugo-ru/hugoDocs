@@ -1,4 +1,4 @@
 ---
-title: "Hugo News"
+title: "Новости Хьюго"
 aliases: [/release-notes/]
 ---
