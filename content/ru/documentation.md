@@ -1,7 +1,7 @@
 ---
-title: Hugo Documentation
+title: Документация Хьюго
 linktitle: Hugo
-description: Hugo is the world's fastest static website engine. It's written in Go (aka Golang) and developed by bep, spf13 and friends.
+description: Hugo - самый быстрый в мире движок для статических веб-сайтов. Он написан на Go (он же Golang) и разработан bep, spf13 и друзьями.
 date: 2017-02-01
 publishdate: 2017-02-01
 menu:
@@ -16,6 +16,6 @@ toc: false
 layout: documentation-home
 ---
 
-Hugo is the **world's fastest static website engine.** It's written in Go (aka Golang) and developed by [bep](https://github.com/bep), [spf13](https://github.com/spf13) and [friends](https://github.com/gohugoio/hugo/graphs/contributors).
+Hugo - **самый быстрый движок статических веб-сайтов в мире.** Он написан на Go (он же Golang) и разработан [bep](https://github.com/bep), [spf13](https://github.com/spf13) и [friends](https://github.com/gohugoio/hugo/graphs/contributors).
 
-Below you will find some of the most common and helpful pages from our documentation.
+Ниже Вы найдете некоторые из наиболее распространенных и полезных страниц нашей документации.
