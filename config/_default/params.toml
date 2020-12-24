@@ -4,6 +4,7 @@ description = "Самая быстрая в мире платформа для �
 removefromexternalsearch = false
 ## Gh repo for site footer (include trailing slash)
 ghrepo = "https://github.com/gohugoio/hugoDocs/"
+ghrepo_ru = "https://github.com/gohugo-ru/hugoDocs/"
 ## GH Repo for filing a new issue
 github_repo = "https://github.com/gohugoio/hugo/issues/new"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)

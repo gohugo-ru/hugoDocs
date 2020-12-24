@@ -1,17 +1,17 @@
 [[docs]]
-  name = "About Hugo"
+  name = "О Хьюго"
   weight = 1
   identifier = "about"
   url = "/about/"
 
 [[docs]]
-  name = "Getting Started"
+  name = "Начало"
   weight = 5
   identifier = "getting-started"
   url = "/getting-started/"
 
 [[docs]]
-  name = "Hugo Modules"
+  name = "Модули Хьюго"
   weight = 15
   identifier = "modules"
   post = "break"
@@ -113,32 +113,32 @@
 ######## GLOBAL ITEMS TO BE SHARED WITH THE HUGO SITES
 
 [[global]]
-    name = "News"
+    name = "Новости"
     weight = 1
     identifier = "news"
     url = "/news/"
 
   [[global]]
-    name = "Docs"
+    name = "Документация"
     weight = 5
     identifier = "docs"
     url = "/documentation/"
 
   [[global]]
-    name = "Themes"
+    name = "Темы"
     weight = 10
     identifier = "themes"
     url = "https://themes.gohugo.io/"
 
     [[global]]
-      name = "Showcase"
+      name = "Витрина"
       weight = 20
       identifier = "showcase"
       url = "/showcase/"
 
   # Anything with a weight > 100 gets an external icon
   [[global]]
-    name = "Community"
+    name = "Сообщество"
     weight = 150
     icon = true
     identifier = "community"
@@ -152,3 +152,11 @@
     identifier = "github"
     post = "external"
     url = "https://github.com/gohugoio/hugo"
+
+
+  [[global]]
+    name = "Telegram"
+    weight = 200
+    identifier = "telegram"
+    post = "external"
+    url = "https://t.me/hugo_ru"
