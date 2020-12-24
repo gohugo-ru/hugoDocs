@@ -60,10 +60,10 @@ All the methods below, e.g. `.Site.RegularPages` can also be reached via the glo
 : a boolean to indicate if the site is being served with Hugo's built-in server. See [`hugo server`](/commands/hugo_server/) for more information.
 
 .Site.Language.Lang
-: the language code of the current locale (e.g., `ru`).
+: the language code of the current locale (e.g., `en`).
 
 .Site.Language.LanguageName
-: the full language name (e.g. `Russian`).
+: the full language name (e.g. `English`).
 
 .Site.Language.Weight
 : the weight that defines the order in the `.Site.Languages` list.

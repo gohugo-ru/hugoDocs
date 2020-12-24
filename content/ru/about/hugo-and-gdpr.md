@@ -1,10 +1,10 @@
 ---
-title: Hugo и Общий регламент по защите данных (GDPR)
-linktitle: Hugo и GDPR
-description: О том, как настроить свой сайт Hugo в соответствии с новыми правилами.
+title: Hugo and the  General Data Protection Regulation (GDPR)
+linktitle: Hugo and GDPR
+description: About how to configure your Hugo site to meet the new regulations.
 date: 2018-05-25
 layout: single
-keywords: ["GDPR", "Privacy", "Data Protection", "Конфиденциальность", "Защита данных", "Персональные данные"]
+keywords: ["GDPR", "Privacy", "Data Protection"]
 menu:
   docs:
     parent: "about"
@@ -17,21 +17,21 @@ toc: true
 ---
 
 
- Общие правила защиты данных ([GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)) это положение в законе ЕС о защите данных и конфиденциальности для всех лиц в Европейском союзе и Европейской экономической зоне. Он вступил в силу 25 мая 2018 года.
+ General Data Protection Regulation ([GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)) is a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It became enforceable on 25 May 2018.
 
- **Hugo - генератор статических сайтов. Используя Hugo, Вы уже уверены. Статические HTML-файлы на диске гораздо проще в сравнении с веб-сайтами, управляемыми сервером и базой данных.**
+ **Hugo is a static site generator. By using Hugo you are already standing on very solid ground. Static HTML files on disk are much easier to reason about compared to server and database driven web sites.**
 
- Но даже статические веб-сайты могут интегрироваться с внешними службами, поэтому, начиная с версии `0.41`, Hugo предоставляет **Конфигурацию конфиденциальности**, которая охватывает соответствующие встроенные шаблоны.
+ But even static websites can integrate with external services, so from version `0.41`, Hugo provides a **Privacy Config** that covers the relevant built-in templates.
 
- Обратите внимание, что:
+ Note that:
 
- * Для этих настроек по умолчанию установлено значение _off_, то есть как это работало до Hugo `0.41`. Вы должны провести собственную оценку своего сайта и применить соответствующие настройки.
- * Эти настройки работают с [внутренними шаблонами](/templates/internal/). Некоторые темы могут содержать настраиваемые шаблоны для встраивания таких сервисов, как Google Analytics. В этом случае эти параметры не действуют.
- * Мы продолжим эту работу и улучшим ее в будущих версиях Hugo.
+ * These settings have their defaults setting set to _off_, i.e. how it worked before Hugo `0.41`. You must do your own evaluation of your site and apply the appropriate settings.
+ * These settings work with the [internal templates](/templates/internal/). Some theme may contain custom templates for embedding services like Google Analytics. In that case these options have no effect.
+ * We will continue this work and improve this further in future Hugo versions.
 
-## Все настройки конфиденциальности
+## All Privacy Settings
 
-Ниже приведены все настройки конфиденциальности и их значения по умолчанию. Эти настройки необходимо указать в конфигурации Вашего сайта (например, `config.toml`).
+Below are all privacy settings and their default value. These settings need to be put in your site config (e.g. `config.toml`).
 
  {{< code-toggle file="config">}}
 [privacy]
@@ -59,9 +59,9 @@ privacyEnhanced = false
 {{< /code-toggle >}}
 
 
-## Отключить все службы
+## Disable All Services
 
-Пример конфигурации конфиденциальности, которая отключает все соответствующие службы в Hugo. В этой конфигурации другие настройки не имеют значения.
+An example Privacy Config that disables all the relevant services in Hugo. With this configuration, the other settings will not matter.
 
  {{< code-toggle file="config">}}
 [privacy]
@@ -79,25 +79,25 @@ disable = true
 disable = true
 {{< /code-toggle >}}
 
-## Объяснение настроек конфиденциальности
+## The Privacy Settings Explained
 
 ### GoogleAnalytics
 
 anonymizeIP
-: Включение этого параметра сделает IP-адреса пользователей анонимными в Google Analytics.
+: Enabling this will make it so the users' IP addresses are anonymized within Google Analytics.
 
 respectDoNotTrack
-: Включение этого параметра заставит шаблоны GA уважать HTTP-заголовок «Не отслеживать».
+: Enabling this will make the GA templates respect the "Do Not Track" HTTP header.
 
 useSessionStorage
-: Включение этого отключит использование файлов cookie и будет использовать хранилище сеансов для хранения идентификатора клиента GA.
+: Enabling this will disable the use of Cookies and use Session Storage to Store the GA Client ID.
 
 ### Instagram
 
 simple
-: Если включен простой режим, будет создана статическая версия карты изображения Instagram без JS. Обратите внимание, что это поддерживает только карты изображений, а само изображение будет загружено с серверов Instagram.
+: If simple mode is enabled, a static and no-JS version of the Instagram image card will be built. Note that this only supports image cards and the image itself will be fetched from Instagram's servers.
 
-**Примечание:** Если Вы используете _simple mode_ для Instagram и сайт, стилизованный под Bootstrap 4, Вы можете отключить встроенные стили, предоставляемые Hugo:
+**Note:** If you use the _simple mode_ for Instagram and a site styled with Bootstrap 4, you may want to disable the inline styles provided by Hugo:
 
  {{< code-toggle file="config">}}
 [services]
@@ -108,13 +108,13 @@ disableInlineCSS = true
 ### Twitter
 
 enableDNT
-: Если включить это для шорткода твиттера/твита, твит и его встроенная страница на Вашем сайте не будут использоваться для целей, которые включают персонализированные предложения и персонализированную рекламу.
+: Enabling this for the twitter/tweet shortcode, the tweet and its embedded page on your site are not used for purposes that include personalized suggestions and personalized ads.
 
 simple
-: Если включен простой режим, будет создана статическая версия твита и версия без JS.
+: If simple mode is enabled, a static and no-JS version of a tweet will be built.
 
 
-**Примечание:** Если Вы используете _simple mode_ для Twitter Вы можете отключить встроенные стили, предоставляемые Hugo:
+**Note:** If you use the _simple mode_ for Twitter, you may want to disable the inlines styles provided by Hugo:
 
  {{< code-toggle file="config">}}
 [services]
@@ -125,13 +125,13 @@ disableInlineCSS = true
 ### YouTube
 
 privacyEnhanced
-: Когда Вы включаете режим повышенной конфиденциальности, YouTube не будет хранить информацию о посетителях Вашего веб-сайта, пока пользователь не воспроизведет встроенное видео.
+: When you turn on privacy-enhanced mode, YouTube won’t store information about visitors on your website unless the user plays the embedded video.
 
 ### Vimeo
 
 enableDNT
-: Включив это для шорткода vimeo, проигрыватель Vimeo будет заблокирован от отслеживания любых данных сеанса, включая все файлы cookie и статистику.
+: Enabling this for the vimeo shortcode, the Vimeo player will be blocked from tracking any session data, including all cookies and stats.
 
 simple
-: Если включен простой режим, миниатюра видео загружается с серверов Vimeo и перекрывается кнопкой воспроизведения. Если пользователь щелкнет для воспроизведения видео, оно откроется в новой вкладке прямо на веб-сайте Vimeo.
+: If simple mode is enabled, the video thumbnail is fetched from Vimeo's servers and it is overlayed with a play button. If the user clicks to play the video, it will open in a new tab directly on Vimeo's website.
 

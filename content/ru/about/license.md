@@ -1,12 +1,12 @@
 ---
-title: Лицензия Apache
-linktitle: Лицензия
-description: Hugo v0.15 и более поздние выпускаются под лицензией Apache 2.0.
+title: Apache License
+linktitle: License
+description: Hugo v0.15 and later are released under the Apache 2.0 license.
 date: 2016-02-01
 publishdate: 2016-02-01
 lastmod: 2016-03-02
 categories: ["about hugo"]
-keywords: ["License","apache", "Лицензия"]
+keywords: ["License","apache"]
 menu:
   docs:
     parent: "about"
@@ -18,14 +18,14 @@ toc: true
 ---
 
 {{% note %}}
-Hugo v0.15 и более поздние выпускаются под лицензией Apache 2.0.
-Более ранние версии Hugo были выпущены под [простой общественной лицензией](https://opensource.org/licenses/Simple-2.0).
+Hugo v0.15 and later are released under the Apache 2.0 license.
+Earlier versions of Hugo were released under the [Simple Public License](https://opensource.org/licenses/Simple-2.0).
 {{% /note %}}
 
-_Версия 2.0, январь 2004 г._ <br>
+_Version 2.0, January 2004_ <br>
 <https://www.apache.org/licenses/LICENSE-2.0>
 
-*Условия использования, воспроизведения и распространения*
+*Terms and Conditions for use, reproduction, and distribution*
 
 ## 1. Definitions
 
