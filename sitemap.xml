@@ -2,16 +2,16 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://gohugo.ru/en/sitemap.xml</loc>
+    <loc>https://gohugo.ru/ru/sitemap.xml</loc>
     
-      <lastmod>2020-12-19T17:36:10+01:00</lastmod>
+      <lastmod>2020-12-24T13:44:28+03:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://gohugo.ru/ru/sitemap.xml</loc>
+    <loc>https://gohugo.ru/en/sitemap.xml</loc>
     
-      <lastmod>2020-12-19T20:46:18+03:00</lastmod>
+      <lastmod>2020-12-19T17:36:10+01:00</lastmod>
     
   </sitemap>
   

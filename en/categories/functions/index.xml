@@ -13,7 +13,7 @@
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/en/functions/strings.count/</guid>
-      <description>New in v0.74.0 If SUBSTR is an empty string, this function returns 1 plus the number of Unicode code points in STRING.
+      <description>Новое в v0.74.0 If SUBSTR is an empty string, this function returns 1 plus the number of Unicode code points in STRING.
    Example Result     {{ &amp;quot;aaabaab&amp;quot; | strings.Count &amp;quot;a&amp;quot; }} 5   {{ &amp;quot;aaabaab&amp;quot; | strings.Count &amp;quot;aa&amp;quot; }} 2   {{ &amp;quot;aaabaab&amp;quot; | strings.Count &amp;quot;aaa&amp;quot; }} 1   {{ &amp;quot;aaabaab&amp;quot; | strings.Count &amp;quot;&amp;quot; }} 8    </description>
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/en/functions/renderstring/</guid>
-      <description>New in v0.62.0 .RenderString is a method on Page that renders some markup to HTML using the content renderer defined for that page (if not set in the options).
+      <description>Новое в v0.62.0 .RenderString is a method on Page that renders some markup to HTML using the content renderer defined for that page (if not set in the options).
 Note that this method does not parse and render shortcodes.
 The method takes an optional map argument with these options:
  display (&amp;ldquo;inline&amp;rdquo;) inline or block. If inline (default), surrounding ´` on short snippets will be trimmed. markup (defaults to the Page&amp;rsquo;s markup) See identifiers in List of content formats.</description>
@@ -734,7 +734,7 @@ Remember to pass the output of this to safeHTML if fully un-escaped characters a
       
       <guid>https://gohugo.ru/en/functions/images/</guid>
       <description>Image Filters See images.Filter for how to apply these filters to an image.
-Overlay New in v0.80.0 Overlay creates a filter that overlays the source image at position x y, e.g:
+Overlay Новое в v0.80.0 Overlay creates a filter that overlays the source image at position x y, e.g:
 {{$logoFilter:=(images.Overlay$logo5050)}} {{$img:=$img|images.Filter$logoFilter}} A shorter version of the above, if you only need to apply the filter once:
 {{$img:=$img.Filter(images.Overlay$logo5050)}} The above will overlay $logo in the upper left corner of $img (at position x=50, y=50).
 Brightness Brightness creates a filter that changes the brightness of an image.</description>

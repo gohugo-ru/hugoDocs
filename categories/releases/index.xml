@@ -8,23 +8,25 @@
     <language>ru-ru</language>
     <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.ru/categories/releases/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo 0.79.1: One Security Patch for Hugo on Windows</title>
+      <title>Hugo 0.79.1: Одно исправление безопасности для Hugo в Windows</title>
       <link>https://gohugo.ru/news/0.79.1-relnotes/</link>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/news/0.79.1-relnotes/</guid>
-      <description>Hugo depends on Go&amp;rsquo;s os/exec for certain features, e.g. for rendering of Pandoc documents if these binaries are found in the system %PATH% on Windows. However, if a malicious file with the same name (exe or bat) was found in the current working directory at the time of running hugo, the malicious command would be invoked instead of the system one.
-Windows users who ran hugo inside untrusted Hugo sites was affected.</description>
+      <description>Hugo зависит от os/exec Go для определенных функций, например для рендеринга документов Pandoc, если эти двоичные файлы находятся в системе %PATH% в Windows. Однако, если вредоносный файл с таким же именем (exe или bat) был обнаружен в текущем рабочем каталоге во время запуска hugo, то вместо системной будет вызвана вредоносная команда.
+Это затронуло пользователей Windows, которые запускали hugo на ненадежных сайтах Hugo.
+Причина этой проблемы - Go, смотрите https://github.com/golang/go/issues/38736
+Мы исправили это в Hugo, используя исправленную версию exec.</description>
     </item>
     
     <item>
-      <title>Hugo 0.79.0: Black Friday Edition</title>
+      <title>Hugo 0.79.0: Версия Черная пятница</title>
       <link>https://gohugo.ru/news/0.79.0-relnotes/</link>
       <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/news/0.79.0-relnotes/</guid>
-      <description>Hugo 0.79.0 is a small, but useful release. You can now set custom .Params in your menu configuration, and you can now also override deeply nested snake_cased configuration variables with OS environment variables. Other than that we have refreshed all the core upstream dependencies. A special thanks to @alecthomas (some new Chroma lexers and fixes) and @evanw (ESBuild).
-This release represents 33 contributions by 8 contributors to the main Hugo code base.</description>
+      <description>Hugo 0.79.0 - небольшой, но полезный релиз. Теперь вы можете установить пользовательские .Params в своей конфигурации меню, и теперь вы также можете переопределить глубоко вложенные переменные конфигурации snake_cased с помощью переменных среды ОС. Помимо этого, мы обновили все основные восходящие зависимости. Особая благодарность @alecthomas (некоторые новые Chroma lexers и исправления) и @evanw (ESBuild).
+Этот выпуск представляет собой 33 вклада 8 участников в основную кодовую базу Hugo. @bep возглавляет разработку Hugo, внося значительный вклад, но при этом уделяя большое внимание @AdamKorcz и @davidejones за их постоянный вклад.</description>
     </item>
     
     <item>

@@ -46,7 +46,7 @@ These terms are connected, and you also need to read about Page Resources and Im
       
       <guid>https://gohugo.ru/templates/base/</guid>
       <description>The block keyword allows you to define the outer shell of your pages&#39; one or more master template(s) and then fill in or override portions as necessary.
-  Base Template Lookup Order New in v0.63.0 Since Hugo v0.63, the base template lookup order closely follows that of the template it applies to (e.g. _default/list.html).
+  Base Template Lookup Order Новое в v0.63.0 Since Hugo v0.63, the base template lookup order closely follows that of the template it applies to (e.g. _default/list.html).
 See Template Lookup Order for details and examples.
 Define the Base Template The following defines a simple base template at _default/baseof.</description>
     </item>
@@ -102,7 +102,7 @@ hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlMultiple sit
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/configuration-markup/</guid>
-      <description>Configure Markup New in v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
+      <description>Configure Markup Новое в v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
 Below are all markup related configuration in Hugo with their default settings:
 config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attributes:{}backend:html5extensions:[]failureLevel:fatalnoHeaderOrFooter:truepreserveTOC:falsesafeMode:unsafesectionNumbers:falsetrace:falseverbose:falseworkingFolderCurrent:falseblackFriday:angledQuotes:falseextensions:nullextensionsMask:nullfootnoteAnchorPrefix:&amp;#34;&amp;#34;footnoteReturnLinkContents:&amp;#34;&amp;#34;fractions:truehrefTargetBlank:falselatexDashes:truenofollowLinks:falsenoreferrerLinks:falseplainIDAnchors:trueskipHTML:falsesmartDashes:truesmartypants:truesmartypantsQuotesNBSP:falsetaskLists:truedefaultMarkdownHandler:goldmarkgoldmark:extensions:definitionList:truefootnote:truelinkify:truestrikethrough:truetable:truetaskList:truetypographer:trueparser:attribute:trueautoHeadingID:trueautoHeadingIDType:githubrenderer:hardWraps:falseunsafe:falsexhtml:falsehighlight:anchorLineNos:falsecodeFences:trueguessSyntax:falsehl_Lines:&amp;#34;&amp;#34;lineAnchors:&amp;#34;&amp;#34;lineNoStart:1lineNos:falselineNumbersInTable:truenoClasses:truestyle:monokaitabWidth:4tableOfContents:endLevel:3ordered:falsestartLevel:2[markup] defaultMarkdownHandler = &amp;#34;goldmark&amp;#34; [markup.asciidocExt] backend = &amp;#34;html5&amp;#34; extensions = [] failureLevel = &amp;#34;fatal&amp;#34; noHeaderOrFooter = true preserveTOC = false safeMode = &amp;#34;unsafe&amp;#34; sectionNumbers = false trace = false verbose = false workingFolderCurrent = false [markup.</description>
     </item>

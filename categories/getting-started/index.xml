@@ -8,12 +8,12 @@
     <language>ru-ru</language>
     <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.ru/categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Get Started</title>
+      <title>Начать</title>
       <link>https://gohugo.ru/getting-started/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/</guid>
-      <description>If this is your first time using Hugo and you&amp;rsquo;ve already installed Hugo on your machine, we recommend the quick start. You can also use external learning resources to learn Hugo.</description>
+      <description>Если Вы впервые используете Hugo и уже установили Hugo на свой компьютер, мы рекомендуем быстрый запуск. Вы также можете использовать внешние ресурсы для обучения, чтобы выучить Хьюго.</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlMultiple sit
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/configuration-markup/</guid>
-      <description>Configure Markup New in v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
+      <description>Configure Markup Новое в v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
 Below are all markup related configuration in Hugo with their default settings:
 config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attributes:{}backend:html5extensions:[]failureLevel:fatalnoHeaderOrFooter:truepreserveTOC:falsesafeMode:unsafesectionNumbers:falsetrace:falseverbose:falseworkingFolderCurrent:falseblackFriday:angledQuotes:falseextensions:nullextensionsMask:nullfootnoteAnchorPrefix:&amp;#34;&amp;#34;footnoteReturnLinkContents:&amp;#34;&amp;#34;fractions:truehrefTargetBlank:falselatexDashes:truenofollowLinks:falsenoreferrerLinks:falseplainIDAnchors:trueskipHTML:falsesmartDashes:truesmartypants:truesmartypantsQuotesNBSP:falsetaskLists:truedefaultMarkdownHandler:goldmarkgoldmark:extensions:definitionList:truefootnote:truelinkify:truestrikethrough:truetable:truetaskList:truetypographer:trueparser:attribute:trueautoHeadingID:trueautoHeadingIDType:githubrenderer:hardWraps:falseunsafe:falsexhtml:falsehighlight:anchorLineNos:falsecodeFences:trueguessSyntax:falsehl_Lines:&amp;#34;&amp;#34;lineAnchors:&amp;#34;&amp;#34;lineNoStart:1lineNos:falselineNumbersInTable:truenoClasses:truestyle:monokaitabWidth:4tableOfContents:endLevel:3ordered:falsestartLevel:2[markup] defaultMarkdownHandler = &amp;#34;goldmark&amp;#34; [markup.asciidocExt] backend = &amp;#34;html5&amp;#34; extensions = [] failureLevel = &amp;#34;fatal&amp;#34; noHeaderOrFooter = true preserveTOC = false safeMode = &amp;#34;unsafe&amp;#34; sectionNumbers = false trace = false verbose = false workingFolderCurrent = false [markup.</description>
     </item>

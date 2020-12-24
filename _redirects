@@ -7,7 +7,6 @@
 /community/contributing/           	/contribute/
 /layout/functions/                 	/functions/
 /templates/functions               	/functions/
-/overview/introduction/            	/getting-started/
 /themes/overview/                  	/hugo-modules/
 /themes/                           	/hugo-modules/
 /templates/overview/               	/templates/
@@ -17,6 +16,7 @@
 /templates/variables/              	/variables/
 /about-hugo/                       	/about/
 /docs/                             	/about/
+/overview/introduction/            	/getting-started/
 /faq/                              	/troubleshooting/faq/
 /security/                         	/about/security-model/
 /privacy/                          	/about/hugo-and-gdpr/

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Get Started on Hugo</title>
+    <title>Начать on Hugo</title>
     <link>https://gohugo.ru/getting-started/</link>
-    <description>Recent content in Get Started on Hugo</description>
+    <description>Recent content in Начать on Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.ru/getting-started/index.xml" rel="self" type="application/rss+xml" />
@@ -81,7 +81,7 @@ hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlMultiple sit
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/configuration-markup/</guid>
-      <description>Configure Markup New in v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
+      <description>Configure Markup Новое в v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
 Below are all markup related configuration in Hugo with their default settings:
 config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attributes:{}backend:html5extensions:[]failureLevel:fatalnoHeaderOrFooter:truepreserveTOC:falsesafeMode:unsafesectionNumbers:falsetrace:falseverbose:falseworkingFolderCurrent:falseblackFriday:angledQuotes:falseextensions:nullextensionsMask:nullfootnoteAnchorPrefix:&amp;#34;&amp;#34;footnoteReturnLinkContents:&amp;#34;&amp;#34;fractions:truehrefTargetBlank:falselatexDashes:truenofollowLinks:falsenoreferrerLinks:falseplainIDAnchors:trueskipHTML:falsesmartDashes:truesmartypants:truesmartypantsQuotesNBSP:falsetaskLists:truedefaultMarkdownHandler:goldmarkgoldmark:extensions:definitionList:truefootnote:truelinkify:truestrikethrough:truetable:truetaskList:truetypographer:trueparser:attribute:trueautoHeadingID:trueautoHeadingIDType:githubrenderer:hardWraps:falseunsafe:falsexhtml:falsehighlight:anchorLineNos:falsecodeFences:trueguessSyntax:falsehl_Lines:&amp;#34;&amp;#34;lineAnchors:&amp;#34;&amp;#34;lineNoStart:1lineNos:falselineNumbersInTable:truenoClasses:truestyle:monokaitabWidth:4tableOfContents:endLevel:3ordered:falsestartLevel:2[markup] defaultMarkdownHandler = &amp;#34;goldmark&amp;#34; [markup.asciidocExt] backend = &amp;#34;html5&amp;#34; extensions = [] failureLevel = &amp;#34;fatal&amp;#34; noHeaderOrFooter = true preserveTOC = false safeMode = &amp;#34;unsafe&amp;#34; sectionNumbers = false trace = false verbose = false workingFolderCurrent = false [markup.</description>
     </item>
@@ -95,7 +95,7 @@ config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attribu
       <description>Books Hugo In Action 
 Hugo in Action is a step-by-step guide to using Hugo to create static websites. Working with a complete example website and source code samples, you’ll learn how to build and host a low-maintenance, high-performance site that will wow your users and stay stable without relying on a third-party server.
 Hugo In Action Home Page
-Video tutorials Video Playlist by Mike Dane Mike Dane explains the various features of Hugo via dedicated tutorials on YouTube.</description>
+Build Websites with Hugo Build Websites with Hugo - Fast Web Development with Markdown (2020) by Brian P.</description>
     </item>
     
   </channel>
