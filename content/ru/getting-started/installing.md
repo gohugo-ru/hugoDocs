@@ -1,13 +1,13 @@
 ---
-title: Install Hugo
-linktitle: Install Hugo
-description: Install Hugo on macOS, Windows, Linux, OpenBSD, FreeBSD, and on any machine where the Go compiler tool chain can run.
+title: Установка Хьюго
+linktitle: Установка Хьюго
+description: Установите Hugo на macOS, Windows, Linux, OpenBSD, FreeBSD и на любой компьютер, на котором может работать цепочка инструментов компилятора Go.
 date: 2016-11-01
 publishdate: 2016-11-01
 lastmod: 2018-01-02
 categories: [getting started,fundamentals]
 authors: ["Michael Henderson"]
-keywords: [install,pc,windows,linux,macos,binary,tarball]
+keywords: [install,pc,windows,linux,macos,binary,tarball,установка,пк,виндовс,линукс,макос]
 menu:
   docs:
     parent: "getting-started"
@@ -21,46 +21,46 @@ toc: true
 
 
 {{% note %}}
-There is lots of talk about "Hugo being written in Go", but you don't need to install Go to enjoy Hugo. Just grab a precompiled binary!
+Сейчас много говорят о том, что «Хьюго пишется на Go», но Вам не нужно устанавливать Go, чтобы пользоваться Hugo. Просто возьмите предварительно скомпилированный двоичный файл!
 {{% /note %}}
 
-Hugo is written in [Go](https://golang.org/) with support for multiple platforms. The latest release can be found at [Hugo Releases][releases].
+Hugo написан на [Go](https://golang.org/) с поддержкой нескольких платформ. Последнюю версию можно найти на странице [Релизов Хьюго][releases].
 
-Hugo currently provides pre-built binaries for the following:
+В настоящее время Hugo предоставляет готовые двоичные файлы для следующего:
 
-* macOS (Darwin) for x64, i386, and ARM architectures
+* macOS (Darwin) для x64, i386 и архитектур ARM
 * Windows
 * Linux
 * OpenBSD
 * FreeBSD
 
-Hugo may also be compiled from source wherever the Go toolchain can run; e.g., on other operating systems such as DragonFly BSD, OpenBSD, Plan&nbsp;9, Solaris, and others. See <https://golang.org/doc/install/source> for the full set of supported combinations of target operating systems and compilation architectures.
+Hugo также может быть скомпилирован из исходного кода везде, где может работать цепочка инструментов Go; например, в других операционных системах, таких как DragonFly BSD, OpenBSD, Plan&nbsp;9, Solaris и других. Смотрите <https://golang.org/doc/install/source> для получения полного набора поддерживаемых комбинаций целевых операционных систем и архитектур компиляции.
 
-## Quick Install
+## Быстрая установка
 
-### Binary (Cross-platform)
+### Бинарный (кроссплатформенный)
 
-Download the appropriate version for your platform from [Hugo Releases][releases]. Once downloaded, the binary can be run from anywhere. You don't need to install it into a global location. This works well for shared hosts and other systems where you don't have a privileged account.
+Скачайте версию, подходящую для Вашей платформы на странице [Релизов Hugo][releases]. После загрузки двоичный файл можно запускать из любого места. Вам не нужно устанавливать его в глобальном местоположении. Это хорошо работает для общих хостов и других систем, где у Вас нет привилегированной учетной записи.
 
-Ideally, you should install it somewhere in your `PATH` for easy use. `/usr/local/bin` is the most probable location.
+В идеале Вы должны установить его где-нибудь в Вашем `PATH` для удобства использования. `/usr/local/bin` - наиболее вероятное расположение.
 
 ### Docker
 
-We currently do not offer official Hugo images for Docker, but we do recommend these up to date distributions: https://hub.docker.com/r/klakegg/hugo/
+В настоящее время мы не предлагаем официальные образы Hugo для Docker, но рекомендуем эти актуальные дистрибутивы: https://hub.docker.com/r/klakegg/hugo/
 
 ### Homebrew (macOS)
 
-If you are on macOS and using [Homebrew][brew], you can install Hugo with the following one-liner:
+Если Вы используете macOS и [Homebrew][brew], Вы можете установить Hugo с помощью следующей команды:
 
 {{< code file="install-with-homebrew.sh" >}}
 brew install hugo
 {{< /code >}}
 
-For more detailed explanations, read the installation guides that follow for installing on macOS and Windows.
+Чтобы получить более подробные объяснения, прочитайте руководства по установке, которые следуют для установки в macOS и Windows.
 
 ### MacPorts (macOS)
 
-If you are on macOS and using [MacPorts][macports], you can install Hugo with the following one-liner:
+Если Вы используете macOS и [MacPorts][macports], Вы можете установить Hugo с помощью следующей команды:
 
 {{< code file="install-with-macports.sh" >}}
 port install hugo
@@ -68,23 +68,23 @@ port install hugo
 
 ### Homebrew (Linux)
 
-If you are using [Homebrew][linuxbrew] on Linux, you can install Hugo with the following one-liner:
+Если Вы используете [Homebrew][linuxbrew] на Linux, Вы можете установить Hugo с помощью следующей команды:
 
 {{< code file="install-with-linuxbrew.sh" >}}
 brew install hugo
 {{< /code >}}
 
-Installation guides for Homebrew on Linux are available on their [website][linuxbrew].
+Руководства по установке Homebrew в Linux доступны на их [веб-сайте][linuxbrew].
 
 ### Chocolatey (Windows)
 
-If you are on a Windows machine and use [Chocolatey][] for package management, you can install Hugo with the following one-liner:
+Если Вы работаете на компьютере с Windows и используете [Chocolatey][] для менеджера пакетов, Вы можете установить Hugo с помощью следующей команды:
 
 {{< code file="install-with-chocolatey.ps1" >}}
 choco install hugo -confirm
 {{< /code >}}
 
-Or if you need the “extended” Sass/SCSS version:
+Или, если Вам нужна «расширенная» версия Sass/SCSS:
 
 {{< code file="install-extended-with-chocolatey.ps1" >}}
 choco install hugo-extended -confirm
@@ -92,28 +92,28 @@ choco install hugo-extended -confirm
 
 ### Scoop (Windows)
 
-If you are on a Windows machine and use [Scoop][] for package management, you can install Hugo with the following one-liner:
+Если Вы работаете на компьютере с Windows и используете [Scoop][] для управления пакетами, Вы можете установить Hugo с помощью следующей команды:
 
 ```bash
 scoop install hugo
 ```
 
-Or install the extended version with:
+Или установите расширенную версию с помощью:
 
 ```bash
 scoop install hugo-extended
 ```
 
-### Source
+### Источник
 
-#### Prerequisite Tools
+#### Необходимые инструменты
 
 * [Git][installgit]
-* [Go (at least Go 1.11)](https://golang.org/dl/)
+* [Go (как минимум Go 1.11)](https://golang.org/dl/)
 
-#### Fetch from GitHub
+#### Получить с GitHub
 
-Since Hugo 0.48, Hugo uses the Go Modules support built into Go 1.11 to build. The easiest way to get started is to clone Hugo in a directory outside of the GOPATH, as in the following example:
+Начиная с Hugo 0.48, Hugo использует для сборки поддержку модулей Go, встроенную в Go 1.11. Самый простой способ начать - это клонировать Hugo в каталог за пределами GOPATH, как в следующем примере:
 
 {{< code file="from-gh.sh" >}}
 mkdir $HOME/src
@@ -123,65 +123,65 @@ cd hugo
 go install --tags extended
 {{< /code >}}
 
-Remove `--tags extended` if you do not want/need Sass/SCSS support.
+Удалите `--tags extended`, если Вы не хотите/нуждаетесь в поддержке Sass/SCSS.
 
 {{% note %}}
-If you are a Windows user, substitute the `$HOME` environment variable above with `%USERPROFILE%`.
+Если Вы являетесь пользователем Windows, замените указанную выше переменную среды `$HOME` на `%USERPROFILE%`.
 {{% /note %}}
 
 ## macOS
 
-### Assumptions
+### Предположения
 
-1. You know how to open the macOS terminal.
-2. You're running a modern 64-bit Mac.
-3. You will use `~/Sites` as the starting point for your site. (`~/Sites` is used for example purposes. If you are familiar enough with the command line and file system, you should have no issues following along with the instructions.)
+1. Вы знаете, как открыть терминал macOS.
+2. Вы используете современный 64-битный Mac.
+3. Вы будете использовать `~/Sites` в качестве отправной точки для Вашего сайта. (`~/Sites` используется в качестве примера. Если Вы достаточно знакомы с командной строкой и файловой системой, у Вас не должно возникнуть проблем при выполнении инструкций.).
 
-### Pick Your Method
+### Выберите свой метод
 
-There are three ways to install Hugo on your Mac
+Есть три способа установить Hugo на Ваш Mac
 
-1. A package manager, like [Homebrew][brew] (`brew`) or [MacPorts][macports] (`port`)
-2. Distribution (i.e., tarball)
-3. Building from Source
+1. Менеджер пакетов, например [Homebrew][brew] (`brew`) или [MacPorts][macports] (`port`)
+2. Распространение (например, архив)
+3. Сборка из исходного кода
 
-There is no "best" way to install Hugo on your Mac. You should use the method that works best for your use case.
+Не существует «лучшего» способа установить Hugo на Ваш Mac. Вы должны использовать метод, который лучше всего подходит для Вашего случая использования.
 
-#### Pros and Cons
+#### Плюсы и минусы
 
-There are pros and cons to each of the aforementioned methods:
+У каждого из вышеупомянутых методов есть свои плюсы и минусы:
 
-1. **Package Manager.** Using a package manager is the simplest method and will require the least amount of work to maintain. The drawbacks aren't severe. The default package will be for the most recent release, so it will not have bug fixes until the next release (i.e., unless you install it with the `--HEAD` option in Homebrew). Releases may lag a few days behind because it has to be coordinated with another team. Nevertheless, this is the recommended installation method if you want to work from a stable, widely used source. Package managers work well and they are easy to update.
+1. **Менеджер пакетов.** Использование диспетчера пакетов - самый простой метод, требующий минимума усилий для обслуживания. Недостатки несущественные. Пакет по умолчанию будет для самого последнего выпуска, поэтому в нем не будет исправлений ошибок до следующего выпуска (то есть, если Вы не установите его с параметром `--HEAD` в Homebrew). Релизы могут отставать на несколько дней, потому что это должно быть согласовано с другой командой. Тем не менее, это рекомендуемый метод установки, если Вы хотите работать из стабильного, широко используемого источника. Менеджеры пакетов работают хорошо, и их легко обновлять.
 
-2. **Tarball.** Downloading and installing from the tarball is also easy, although it requires a few more command line skills than does Homebrew. Updates are easy as well: you just repeat the process with the new binary. This gives you the flexibility to have multiple versions on your computer. If you don't want to use `brew`, then the tarball/binary is a good choice.
+2. **Tarball.** Загрузить и установить из tarball также легко, хотя для этого требуется немного больше навыков работы с командной строкой, чем для Homebrew. Обновления тоже просты: Вы просто повторяете процесс с новым двоичным файлом. Это дает Вам возможность иметь несколько версий на Вашем компьютере. Если Вы не хотите использовать `brew`, тогда tarball/binary - хороший выбор.
 
-3. **Building from Source.** Building from source is the most work. The advantage of building from source is that you don't have to wait for a release to add features or bug fixes. The disadvantage is that you need to spend more time managing the setup, which is manageable but requires more time than the preceding two options.
+3. **Сборка из исходного кода.** Сборка из исходного кода - это большая часть работы. Преимущество сборки из исходного кода заключается в том, что Вам не нужно ждать выпуска, чтобы добавить функции или исправления ошибок. Недостатком является то, что Вам нужно тратить больше времени на управление настройкой, что вполне управляемо, но требует больше времени, чем два предыдущих варианта.
 
 {{% note %}}
-Since building from source is appealing to more seasoned command line users, this guide will focus more on installing Hugo via Homebrew and Tarball.
+Поскольку сборка из исходных текстов привлекательна для более опытных пользователей командной строки, это руководство будет больше сосредоточено на установке Hugo с помощью Homebrew и Tarball.
 {{% /note %}}
 
-### Install Hugo with Brew
+### Установить Hugo с Brew
 
 {{< youtube WvhCGlLcrF8 >}}
 
-#### Step 1: Install `brew` if you haven't already
+#### Шаг 1. Установите `brew`, если Вы еще этого не сделали
 
-Go to the `brew` website, <https://brew.sh/>, and follow the directions there. The most important step is the installation from the command line:
+Перейдите на сайт `brew`, <https://brew.sh/>, и следуйте инструкциям там. Самый важный шаг - установка из командной строки:
 
 {{< code file="install-brew.sh" >}}
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {{< /code >}}
 
-#### Step 2: Run the `brew` Command to Install `hugo`
+#### Шаг 2: Запустите команду `brew`, чтобы установить `hugo`
 
-Installing Hugo using `brew` is as easy as the following:
+Установить Hugo с помощью `brew` очень просто:
 
 {{< code file="install-brew.sh" >}}
 brew install hugo
 {{< /code >}}
 
-If Homebrew is working properly, you should see something similar to the following:
+Если Homebrew работает правильно, Вы должны увидеть что-то вроде следующего:
 
 ```
 ==> Downloading https://homebrew.bintray.com/bottles/hugo-0.21.sierra.bottle.tar.gz
@@ -191,52 +191,52 @@ If Homebrew is working properly, you should see something similar to the followi
 ```
 
 {{% note "Installing the Latest Hugo with Brew" %}}
-Replace `brew install hugo` with `brew install hugo --HEAD` if you want the absolute latest in-development version.
+Замените `brew install hugo` на `brew install hugo --HEAD`, если Вам нужна самая последняя версия, находящаяся в разработке.
 {{% /note %}}
 
-`brew` should have updated your path to include Hugo. You can confirm by opening a new terminal window and running a few commands:
+`brew` должен был обновить Ваш путь, чтобы включить Хьюго. Вы можете подтвердить, открыв новое окно терминала и выполнив несколько команд:
 
 ```
-$ # show the location of the hugo executable
+$ # показать расположение исполняемого файла hugo
 which hugo
 /usr/local/bin/hugo
 
-# show the installed version
+# показать установленную версию
 ls -l $( which hugo )
 lrwxr-xr-x  1 mdhender admin  30 Mar 28 22:19 /usr/local/bin/hugo -> ../Cellar/hugo/0.13_1/bin/hugo
 
-# verify that hugo runs correctly
+# убедитесь, что Хьюго работает правильно
 hugo version
 Hugo Static Site Generator v0.13 BuildDate: 2015-03-09T21:34:47-05:00
 ```
 
-### Install Hugo from Tarball
+### Установите Hugo из Tarball
 
-#### Step 1: Decide on the location
+#### Шаг 1. Определитесь с местом
 
-When installing from the tarball, you have to decide if you're going to install the binary in `/usr/local/bin` or in your home directory. There are three camps on this:
+При установке из архива Вы должны решить, собираетесь ли Вы устанавливать двоичный файл в `/usr/local/bin` или в свой домашний каталог. По этому поводу есть три лагеря:
 
-1. Install it in `/usr/local/bin` so that all the users on your system have access to it. This is a good idea because it's a fairly standard place for executables. The downside is that you may need elevated privileges to put software into that location. Also, if there are multiple users on your system, they will all run the same version. Sometimes this can be an issue if you want to try out a new release.
+1. Установите его в `/usr/local/bin`, чтобы все пользователи Вашей системы имели к нему доступ. Это хорошая идея, потому что это довольно стандартное место для исполняемых файлов. Обратной стороной является то, что вам могут потребоваться повышенные привилегии для размещения программного обеспечения в этом месте. Кроме того, если в Вашей системе несколько пользователей, все они будут использовать одну и ту же версию. Иногда это может стать проблемой, если Вы хотите опробовать новую версию.
 
-2. Install it in `~/bin` so that only you can execute it. This is a good idea because it's easy to do, easy to maintain, and doesn't require elevated privileges. The downside is that only you can run Hugo. If there are other users on your site, they have to maintain their own copies. That can lead to people running different versions. Of course, this does make it easier for you to experiment with different releases.
+2. Установите его в `~/bin`, чтобы только Вы могли его выполнить. Это хорошая идея, потому что это легко сделать, легко поддерживать и не требует повышенных привилегий. Обратной стороной является то, что управлять Хьюго можно только тебе. Если на Вашем сайте есть другие пользователи, они должны поддерживать свои собственные копии. Это может привести к тому, что люди будут запускать разные версии. Конечно, это облегчает Вам эксперименты с разными выпусками.
 
-3. Install it in your `Sites` directory. This is not a bad idea if you have only one site that you're building. It keeps every thing in a single place. If you want to try out new releases, you can make a copy of the entire site and update the Hugo executable.
+3. Установите его в каталог `Sites`. Это неплохая идея, если у Вас есть только один сайт, который Вы создаете. Он хранит все в одном месте. Если Вы хотите опробовать новые выпуски, Вы можете сделать копию всего сайта и обновить исполняемый файл Hugo.
 
-All three locations will work for you. In the interest of brevity, this guide focuses on option #2.
+Все три локации подойдут Вам. В интересах краткости в этом руководстве рассматривается вариант №2.
 
-#### Step 2: Download the Tarball
+#### Шаг 2: Загрузите Tarball
 
-1. Open <https://github.com/gohugoio/hugo/releases> in your browser.
+1. Откройте в своем браузере <https://github.com/gohugoio/hugo/releases>.
 
-2. Find the current release by scrolling down and looking for the green tag that reads "Latest Release."
+2. Найдите текущий выпуск, прокрутив страницу вниз и найдите зеленый тег с надписью «Последний выпуск».
 
-3. Download the current tarball for the Mac. The name will be something like `hugo_X.Y_osx-64bit.tgz`, where `X.YY` is the release number.
+3. Загрузите текущий архив для Mac. Имя будет выглядеть примерно так `hugo_X.Y_osx-64bit.tgz`, где `X.YY` номер версии.
 
-4. By default, the tarball will be saved to your `~/Downloads` directory. If you choose to use a different location, you'll need to change that in the following steps.
+4. По умолчанию архив будет сохранен в Вашем каталоге `~/Downloads`. Если Вы решите использовать другое местоположение, Вам нужно будет изменить это в следующих шагах.
 
-#### Step 3: Confirm your download
+#### Шаг 3. Подтвердите загрузку
 
-Verify that the tarball wasn't corrupted during the download:
+Убедитесь, что архив не был поврежден во время загрузки:
 
 ```
 tar tvf ~/Downloads/hugo_X.Y_osx-64bit.tgz
@@ -245,18 +245,18 @@ tar tvf ~/Downloads/hugo_X.Y_osx-64bit.tgz
 -rwxrwxrwx  0 0      0           0 Jan 30 18:48 hugo_X.Y_osx-64bit/LICENSE.md
 ```
 
-The `.md` files are documentation for Hugo. The other file is the executable.
+Файлы `.md` являются документацией для Hugo. Другой файл - исполняемый.
 
-#### Step 4: Install Into Your `bin` Directory
+#### Шаг 4: Установите в каталог `bin`
 
 ```
-# create the directory if needed
+# при необходимости создайте каталог
 mkdir -p ~/bin
 
-# make it the working directory
+# сделать его рабочим каталогом
 cd ~/bin
 
-# extract the tarball
+# распаковать архив
 tar -xvzf ~/Downloads/hugo_X.Y_osx-64bit.tgz
 Archive:  hugo_X.Y_osx-64bit.tgz
   x ./
@@ -264,76 +264,76 @@ Archive:  hugo_X.Y_osx-64bit.tgz
   x ./LICENSE.md
   x ./README.md
 
-# verify that it runs
+# убедитесь, что он работает
 ./hugo version
 Hugo Static Site Generator v0.13 BuildDate: 2015-02-22T04:02:30-06:00
 ```
 
-You may need to add your bin directory to your `PATH` environment variable. The `which` command will check for us. If it can find `hugo`, it will print the full path to it. Otherwise, it will not print anything.
+Возможно, Вам потребуется добавить каталог `bin` в переменную окружения `PATH`. Команда `which` проверит нас. Если он может найти `hugo`он напечатает полный путь к нему. В противном случае он ничего не напечатает.
 
 ```
-# check if hugo is in the path
+# проверьте, есть ли Хьюго в path
 which hugo
 /Users/USERNAME/bin/hugo
 ```
 
-If `hugo` is not in your `PATH`:
+Если `hugo` отсутствует в Вашем `PATH`:
 
-1. Determine your default shell (zsh or bash).
+1. Определите оболочку по умолчанию (zsh или bash).
 
    ```
    echo $SHELL
    ```
 
-2. Edit your profile.
+2. Отредактируйте Ваш профиль.
 
-   If your default shell is zsh:
+   Если ваша оболочка по умолчанию zsh:
 
    ```
    nano ~/.zprofile
    ```
 
-   If your default shell is bash:
+   Если ваша оболочка по умолчанию bash:
 
    ```
    nano ~/.bash_profile
    ```
 
-3. Insert a line to add `$HOME/bin` to your existing `PATH`.
+3. Вставьте строку, чтобы добавить `$HOME/bin` к Вашему существующему `PATH`.
 
    ```
    export PATH=$PATH:$HOME/bin
    ```
 
-4. Save the file by pressing Control-X, then Y.
+4. Сохраните файл, нажав Control-X, затем Y.
 
-5. Close the terminal and open a new terminal to pick up the changes to your profile. Verify the change by running the `which hugo` command again.
+5. Закройте терминал и откройте новый терминал, чтобы принять изменения в Вашем профиле. Проверьте изменение, снова запустив команду `which hugo`.
 
-You've successfully installed Hugo.
+Вы успешно установили Hugo.
 
-### Build from Source on Mac
+### Сборка из исходного кода на Mac
 
-If you want to compile Hugo yourself, you'll need to install Go (aka Golang). You can [install Go directly from the Go website](https://golang.org/dl/) or via Homebrew using the following command:
+Если Вы хотите скомпилировать Hugo самостоятельно, Вам нужно установить Go (он же Golang). Вы можете [установить Go прямо с веб-сайта Go](https://golang.org/dl/) или через Homebrew, используя следующую команду:
 
 ```
 brew install go
 ```
 
-#### Step 1: Get the Source
+#### Шаг 1. Получите исходный код
 
-If you want to compile a specific version of Hugo, go to <https://github.com/gohugoio/hugo/releases> and download the source code for the version of your choice. If you want to compile Hugo with all the latest changes (which might include bugs), clone the Hugo repository:
+Если Вы хотите скомпилировать конкретную версию Hugo, перейдите на <https://github.com/gohugoio/hugo/releases> и загрузите исходный код для выбранной Вами версии. Если Вы хотите скомпилировать Hugo со всеми последними изменениями (которые могут включать ошибки), клонируйте репозиторий Hugo:
 
 ```
 git clone https://github.com/gohugoio/hugo
 ```
 
 {{% warning "Sometimes \"Latest\" = \"Bugs\""%}}
-Cloning the Hugo repository directly means taking the good with the bad. By using the bleeding-edge version of Hugo, you make your development susceptible to the latest features, as well as the latest bugs. Your feedback is appreciated. If you find a bug in the latest release, [please create an issue on GitHub](https://github.com/gohugoio/hugo/issues/new).
+Клонирование репозитория Hugo напрямую означает отказ от хорошего и плохого. Используя новейшую версию Hugo, Вы делаете свою разработку восприимчивой к новейшим функциям, а также к последним ошибкам. Ваш отзыв очень важен. Если Вы обнаружите ошибку в последней версии, [пожалуйста, создайте проблему на GitHub](https://github.com/gohugoio/hugo/issues/new).
 {{% /warning %}}
 
-#### Step 2: Compiling
+#### Шаг 2: Компиляция
 
-Make the directory containing the source your working directory and then fetch Hugo's dependencies:
+Сделайте каталог, содержащий исходный код, Вашим рабочим каталогом, а затем загрузите зависимости Hugo:
 
 ```
 mkdir -p src/github.com/gohugoio
@@ -342,80 +342,81 @@ ln -sf $(pwd) src/github.com/gohugoio/hugo
 go get
 ```
 
-This will fetch the absolute latest version of the dependencies. If Hugo fails to build, it may be the result of a dependency's author introducing a breaking change.
+Это позволит получить самую последнюю версию зависимостей. Если Hugo не может построить, это может быть результатом того, что автор зависимости внес критическое изменение.
 
-Once you have properly configured your directory, you can compile Hugo using the following command:
+После того, как Вы правильно настроили свой каталог, Вы можете скомпилировать Hugo, используя следующую команду:
 
 ```
 go build -o hugo main.go
 ```
 
-Then place the `hugo` executable somewhere in your `$PATH`. You're now ready to start using Hugo.
+Затем поместите исполняемый файл `hugo` где-нибудь в свой `$PATH`. теперь Вы готовы начать использовать Hugo.
 
 ## Windows
 
-The following aims to be a complete guide to installing Hugo on your Windows PC.
+Ниже приводится полное руководство по установке Hugo на ПК с Windows.
 
 {{< youtube G7umPCU-8xc >}}
 
-### Assumptions
+### Предположения
 
-1. You will use `C:\Hugo\Sites` as the starting point for your new project.
-2. You will use `C:\Hugo\bin` to store executable files.
+1. Вы будете использовать `C:\Hugo\Sites` в качестве отправной точки для Вашего нового проекта.
+2. Вы будете использовать `C:\Hugo\bin` для хранения исполняемых файлов.
 
-### Set up Your Directories
+### Настройте свои каталоги
 
-You'll need a place to store the Hugo executable, your [content][], and the generated Hugo website:
+Вам понадобится место для хранения исполняемого файла Hugo, Вашего [контента][content] и созданного веб-сайта Hugo:
 
-1. Open Windows Explorer.
-2. Create a new folder: `C:\Hugo`, assuming you want Hugo on your C drive, although this can go anywhere
-3. Create a subfolder in the Hugo folder: `C:\Hugo\bin`
-4. Create another subfolder in Hugo: `C:\Hugo\Sites`
+1. Откройте проводник Windows.
+2. Создайте новую папку: `C:\Hugo`, при условии, что вы хотите, чтобы Hugo был на вашем диске C, хотя он может быть куда угодно.
+3. Создайте подпапку в папке Hugo: `C:\Hugo\bin`
+4. Создайте еще одну подпапку в Hugo: `C:\Hugo\Sites`
 
-### Technical Users
+### Технические пользователи
 
-1. Download the latest zipped Hugo executable from [Hugo Releases][releases].
-2. Extract all contents to your `..\Hugo\bin` folder.
-3. In PowerShell or your preferred CLI, add the `hugo.exe` executable to your PATH by navigating to `C:\Hugo\bin` (or the location of your hugo.exe file) and use the command `set PATH=%PATH%;C:\Hugo\bin`. If the `hugo` command does not work after a reboot, you may have to run the command prompt as administrator.
+1. Загрузите последний заархивированный исполняемый файл Hugo из [Релизов Hugo][releases].
+2. Распакуйте все содержимое в папку `..\Hugo\bin`.
+3. В PowerShell или предпочитаемом Вами интерфейсе командной строки добавьте исполняемый файл `hugo.exe` в Ваш `PATH`, перейдя в `C:\Hugo\bin` (или в расположение Вашего файла hugo.exe) и используйте команду `set PATH=%PATH%;C:\Hugo\bin`. Если команда `hugo` не работает после перезагрузки, возможно, Вам придется запустить командную строку от имени администратора.
 
-### Less-technical Users
+### Менее технических пользователей
 
-1. Go to the [Hugo Releases][releases] page.
-2. The latest release is announced on top. Scroll to the bottom of the release announcement to see the downloads. They're all ZIP files.
-3. Find the Windows files near the bottom (they're in alphabetical order, so Windows is last) – download either the 32-bit or 64-bit file depending on whether you have 32-bit or 64-bit Windows. (If you don't know, [see here](https://esupport.trendmicro.com/en-us/home/pages/technical-support/1038680.aspx).)
-4. Move the ZIP file into your `C:\Hugo\bin` folder.
-5. Double-click on the ZIP file and extract its contents. Be sure to extract the contents into the same `C:\Hugo\bin` folder – Windows will do this by default unless you tell it to extract somewhere else.
-6. You should now have three new files: The hugo executable (`hugo.exe`), `LICENSE`, and `README.md`.
+1. Перейдите на страницу [релизов Hugo][releases].
+2. Сверху анонсируется последний релиз. Прокрутите до конца объявления о выпуске, чтобы увидеть загрузки. Это все ZIP-файлы.
+3. Найдите файлы Windows внизу (они расположены в алфавитном порядке, поэтому Windows идет последней) - загрузите 32-разрядный или 64-разрядный файл в зависимости от того, какая у Вас Windows - 32-разрядная или 64-разрядная. (Если Вы не знаете, [смотрите здесь](https://esupport.trendmicro.com/en-us/home/pages/technical-support/1038680.aspx).)
+4. Переместите ZIP-файл в папку `C:\Hugo\bin`.
+5. Дважды щелкните ZIP-файл и извлеките его содержимое. Обязательно извлеките содержимое в ту же папку `C:\Hugo\bin` – Windows сделает это по умолчанию, если Вы не укажете, что нужно распаковать куда-нибудь еще.
+6. Теперь у Вас должно быть три новых файла: исполняемый файл hugo (`hugo.exe`), `LICENSE` и `README.md`.
 
-Now you need to add Hugo to your Windows PATH settings:
+Теперь Вам нужно добавить Hugo в настройки Windows PATH:
 
-#### For Windows 10 Users:
+#### Для пользователей Windows 10:
 
-* Right click on the **Start** button.
-* Click on **System**.
-* Click on **Advanced System Settings** on the left.
-* Click on the **Environment Variables...** button on the bottom.
-* In the User variables section, find the row that starts with PATH (PATH will be all caps).
-* Double-click on **PATH**.
-* Click the **New...** button.
-* Type in the folder where `hugo.exe` was extracted, which is `C:\Hugo\bin` if you went by the instructions above. *The PATH entry should be the folder where Hugo lives and not the binary.* Press <kbd>Enter</kbd> when you're done typing.
-* Click OK at every window to exit.
+* Нажмите правой кнопкой мыши кнопку **Пуск**.
+* Нажмите **Система**.
+* Нажмите **Сведения о системе** справа.
+* Нажмите **Дополнительные параметры системы** слева.
+* Нажмите на кнопку  **Переменные среды...** внизу.
+* В разделе **Переменные среды пользователя для** найдите строку, которая начинается с PATH (PATH будет полностью заглавными, но не обязательно).
+* Двойной клик на **PATH** или нажмите один раз на **PATH** и кнопка "Изменить".
+* Нажмите кнопку **Создать...**.
+* Введите папку, в которую был извлечен `hugo.exe`, то есть `C:\Hugo\bin`, если Вы следовали приведенным выше инструкциям. *Запись PATH должна быть папкой, в которой живет Хьюго, а не двоичным файлом.* Нажмите <kbd>Ввод</kbd>, когда закончите вводить текст.
+* Для выхода нажимайте ОК в каждом окне.
 
 {{% note "Path Editor in Windows 10"%}}
-The path editor in Windows 10 was added in the large [November 2015 Update](https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/). You'll need to have that or a later update installed for the above steps to work. You can see what Windows 10 build you have by clicking on the <i class="fa fa-windows"></i>&nbsp;Start button → Settings → System → About. See [here](https://www.howtogeek.com/236195/how-to-find-out-which-build-and-version-of-windows-10-you-have/) for more.)
+Редактор путей в Windows 10 был добавлен в большом [Обновление за ноябрь 2015 г.](https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/). Вам необходимо установить это или более позднее обновление, чтобы описанные выше действия работали. Вы можете увидеть, какая у вас сборка Windows 10, нажав кнопку <i class="fa fa-windows"></i>&nbsp;Пуск → Настройки → Система → О программе. Смотрите [здесь](https://www.howtogeek.com/236195/how-to-find-out-which-build-and-version-of-windows-10-you-have/) для получения дополнительной информации.)
 {{% /note %}}
 
-#### For Windows 7 and 8.x users:
+#### Для пользователей Windows 7 и 8.x:
 
-Windows 7 and 8.1 do not include the easy path editor included in Windows 10, so non-technical users on those platforms are advised to install a free third-party path editor like [Windows Environment Variables Editor][Windows Environment Variables Editor] or [Path Editor](https://patheditor2.codeplex.com/).
+Windows 7 и 8.1 не включают простой редактор путей, включенный в Windows 10, поэтому нетехническим пользователям на этих платформах рекомендуется установить бесплатный сторонний редактор путей, например [Редактор переменных среды Windows][Windows Environment Variables Editor] или [Path Editor](https://patheditor2.codeplex.com/).
 
-### Verify the Executable
+### Проверить исполняемый файл
 
-Run a few commands to verify that the executable is ready to run, and then build a sample site to get started.
+Выполните несколько команд, чтобы убедиться, что исполняемый файл готов к запуску, а затем создайте образец сайта, чтобы начать работу.
 
-#### 1. Open a Command Prompt
+#### 1. Откройте командную строку
 
-At the prompt, type `hugo help` and press the <kbd>Enter</kbd> key. You should see output that starts with:
+В командной строке введите `hugo help` и нажмите клавишу <kbd>Enter</kbd>. Вы должны увидеть результат, который начинается с:
 
 ```
 hugo is the main command, used to build your Hugo site.
@@ -426,24 +427,24 @@ built with love by spf13 and friends in Go.
 Complete documentation is available at https://gohugo.io/.
 ```
 
-If you do, then the installation is complete. If you don't, double-check the path that you placed the `hugo.exe` file in and that you typed that path correctly when you added it to your `PATH` variable. If you're still not getting the output, search the [Hugo discussion forum][forum] to see if others have already figured out our problem. If not, add a note---in the "Support" category---and be sure to include your command and the output.
+Если да, то установка завершена. Если Вы этого не сделаете, дважды проверьте путь, по которому Вы поместили файл `hugo.exe`, и правильно ли Вы ввели этот путь, когда добавляли его в переменную `PATH`. Если Вы по-прежнему не получаете результат, поищите в [форуме обсуждения Hugo][forum], чтобы узнать, поняли ли другие уже нашу проблему. Если нет, добавьте примечание --- в категорию "Поддержка" --- и обязательно укажите свою команду и вывод.
 
-At the prompt, change your directory to the `Sites` directory.
+При появлении запроса смените каталог на каталог `Sites`.
 
 ```
 C:\Program Files> cd C:\Hugo\Sites
 C:\Hugo\Sites>
 ```
 
-#### 2. Run the Command
+#### 2. Запустите команду
 
-Run the command to generate a new site. I'm using `example.com` as the name of the site.
+Запустите команду, чтобы создать новый сайт. Я использую `example.com` в качестве названия сайта.
 
 ```
 C:\Hugo\Sites> hugo new site example.com
 ```
 
-You should now have a directory at `C:\Hugo\Sites\example.com`. Change into that directory and list the contents. You should get output similar to the following:
+Теперь у вас должен быть каталог в `C:\Hugo\Sites\example.com`. Перейдите в этот каталог и перечислите его содержимое. Вы должны получить следующий результат:
 
 ```
 C:\Hugo\Sites> cd example.com
@@ -462,63 +463,63 @@ Directory of C:\hugo\sites\example.com
                7 Dir(s)   6,273,331,200 bytes free
 ```
 
-### Troubleshoot Windows Installation
+### Устранение неполадок при установке Windows
 
-[@dhersam][] has created a nice video on common issues:
+[@dhersam][] создал отличное видео по распространенным проблемам:
 
 {{< youtube c8fJIRNChmU >}}
 
 ## Linux
 
-### Snap Package
+### Пакет Snap
 
-In any of the [Linux distributions that support snaps][snaps], you may install the "extended" Sass/SCSS version with this command:
+В любом из [дистрибутивов Linux, поддерживающих привязки][snaps], вы можете установить «расширенную» версию Sass/SCSS с помощью этой команды:
 
     snap install hugo --channel=extended
 
-To install the non-extended version without Sass/SCSS support:
+Чтобы установить нерасширенную версию без поддержки Sass/SCSS:
 
     snap install hugo
 
-To switch between the two, use either `snap refresh hugo --channel=extended` or `snap refresh hugo --channel=stable`.
+Для переключения между ними используйте либо `snap refresh hugo --channel=extended` или `snap refresh hugo --channel=stable`.
 
 {{% note %}}
-Hugo installed via Snap can write only inside the user’s `$HOME` directory---and gvfs-mounted directories owned by the user---because of Snaps’ confinement and security model. More information is also available [in this related GitHub issue](https://github.com/gohugoio/hugo/issues/3143).
+Hugo, установленный с помощью Snap, может писать только в пользовательский каталог `$HOME` --- и в каталоги, смонтированные с помощью gvfs, принадлежащие пользователю --- из-за ограниченности и модели безопасности Snaps. Дополнительная информация также доступна [в соответствующем выпуске GitHub](https://github.com/gohugoio/hugo/issues/3143).
 {{% /note %}}
 
-### Debian and Ubuntu
+### Debian или Ubuntu
 
-[@anthonyfok](https://github.com/anthonyfok) and friends in the [Debian Go Packaging Team](https://go-team.pages.debian.net/) maintains an official hugo [Debian package](https://packages.debian.org/hugo) which is shared with [Ubuntu](https://packages.ubuntu.com/hugo) and is installable via `apt-get`:
+[@anthonyfok](https://github.com/anthonyfok) и друзья из [Debian Go Packaging Team](https://go-team.pages.debian.net/) поддерживают официальный hugo [Debian package](https://packages.debian.org/hugo), который используется совместно с [Ubuntu](https://packages.ubuntu.com/hugo) и может быть установлен через `apt-get`:
 
     sudo apt-get install hugo
 
-What this installs depends on your Debian/Ubuntu version. On Ubuntu bionic (18.04), this installs the non-extended version without Sass/SCSS support. On Ubuntu disco (19.04), this installs the extended version with Sass/SCSS support.
+То, что будет установлено, зависит от Вашей версии Debian/Ubuntu. В Ubuntu bionic (18.04) устанавливается нерасширенная версия без поддержки Sass/SCSS. На Ubuntu disco (19.04) устанавливается расширенная версия с поддержкой Sass/SCSS.
 
-This option is not recommended because the Hugo in Linux package managers for Debian and Ubuntu is usually a few versions behind as described [here](https://github.com/gcushen/hugo-academic/issues/703)
+Этот вариант не рекомендуется, потому что Hugo в менеджерах пакетов Linux для Debian и Ubuntu обычно на несколько версий отстает, как описано [здесь](https://github.com/gcushen/hugo-academic/issues/703)
 
 ### Arch Linux
 
-You can also install Hugo from the Arch Linux [community](https://www.archlinux.org/packages/community/x86_64/hugo/) repository. Applies also to derivatives such as Manjaro.
+Вы также можете установить Hugo из репозитория [сообщество](https://www.archlinux.org/packages/community/x86_64/hugo/) Arch Linux. Применимо также к производным, таким как Manjaro.
 
 ```
 sudo pacman -Syu hugo
 ```
 
-### Fedora, Red Hat and CentOS
+### Fedora, Red Hat и CentOS
 
-Fedora maintains an [official package for Hugo](https://apps.fedoraproject.org/packages/hugo) which may be installed with:
+Fedora поддерживает [официальный пакет для Hugo](https://apps.fedoraproject.org/packages/hugo), который можно установить с помощью:
 
     sudo dnf install hugo
 
-For the latest version, the Hugo package maintained by [@daftaupe](https://github.com/daftaupe) at Fedora Copr is recommended:
+Для последней версии рекомендуется пакет Hugo, поддерживаемый [@daftaupe](https://github.com/daftaupe) в Fedora Copr:
 
 * <https://copr.fedorainfracloud.org/coprs/daftaupe/hugo/>
 
-See the [related discussion in the Hugo forums][redhatforum].
+Смотрите [соответствующие обсуждения на форумах Hugo][redhatforum].
 
 ### Solus
 
-Solus includes Hugo in its package repository, it may be installed with:
+Solus включает Hugo в свой репозиторий пакетов, его можно установить с помощью:
 
 ```
 sudo eopkg install hugo
@@ -526,18 +527,18 @@ sudo eopkg install hugo
 
 ## OpenBSD
 
-OpenBSD provides a package for Hugo via `pkg_add`:
+OpenBSD предоставляет пакет для Hugo через `pkg_add`:
 
     doas pkg_add hugo
 
 
-## Upgrade Hugo
+## Обновление Хьюго
 
-Upgrading Hugo is as easy as downloading and replacing the executable you’ve placed in your `PATH` or run `brew upgrade hugo` if using Homebrew.
+Обновить Hugo так же просто, как загрузить и заменить исполняемый файл, который Вы поместили в свой `PATH`, или запустить `brew upgrade hugo` при использовании Homebrew.
 
-## Next Steps
+## Следующие шаги
 
-Now that you've installed Hugo, read the [Quick Start guide][quickstart] and explore the rest of the documentation. If you have questions, ask the Hugo community directly by visiting the [Hugo Discussion Forum][forum].
+Теперь, когда вы установили Hugo, прочтите [Краткое руководство][quickstart] и изучите остальную документацию. Если у вас есть вопросы, задавайте их сообществу Hugo напрямую, посетив [Форум обсуждения Hugo][forum] или в чате [Telegram][telegram].
 
 [brew]: https://brew.sh/
 [macports]: https://www.macports.org/
@@ -545,6 +546,7 @@ Now that you've installed Hugo, read the [Quick Start guide][quickstart] and exp
 [content]: /content-management/
 [@dhersam]: https://github.com/dhersam
 [forum]: https://discourse.gohugo.io
+[telegram]: https://t.me/hugo_ru
 [mage]: https://github.com/magefile/mage
 [dep]: https://github.com/golang/dep
 [highlight shortcode]: /content-management/shortcodes/#highlight

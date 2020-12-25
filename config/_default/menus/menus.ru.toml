@@ -5,7 +5,7 @@
   url = "/about/"
 
 [[docs]]
-  name = "Начало"
+  name = "С чего начать"
   weight = 5
   identifier = "getting-started"
   url = "/getting-started/"

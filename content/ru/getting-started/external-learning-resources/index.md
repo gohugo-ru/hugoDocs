@@ -1,11 +1,11 @@
 ---
-title: External Learning Resources
-linktitle: External Learning Resources
-description: A list of tutorials and books on Hugo.
+title: Внешние ресурсы обучения
+linktitle: Внешние ресурсы обучения
+description: Список руководств и книг по Хьюго.
 date: 2019-10-20
 publishdate: 2019-10-20
 lastmod: 2019-10-20
-keywords: [books, tutorials, learning, usage]
+keywords: [books, tutorials, learning, usage, книги, руководства, туториалы, применение, использование, мануалы, обучение]
 menu:
   docs:
     parent: "getting-started"
@@ -16,22 +16,22 @@ draft: false
 toc: false
 ---
 
-## Books
+## Книги
 
-### Hugo In Action
+### Хьюго в действии
 
-[![Hugo In Action](hia.jpg)](https://www.manning.com/books/hugo-in-action)
+[![Хьюго в действии](hia.jpg)](https://www.manning.com/books/hugo-in-action)
 
-Hugo in Action is a step-by-step guide to using Hugo to create static websites. Working with a complete example website and source code samples, you’ll learn how to build and host a low-maintenance, high-performance site that will wow your users and stay stable without relying on a third-party server.
+Hugo in Action - это пошаговое руководство по использованию Hugo для создания статических веб-сайтов. Работая с полным примером веб-сайта и образцами исходного кода, Вы узнаете, как создать и разместить не требующий обслуживания, высокопроизводительный сайт, который поразит Ваших пользователей и будет оставаться стабильным, не полагаясь на сторонний сервер.
 
-[Hugo In Action Home Page](https://www.manning.com/books/hugo-in-action)
+[Домашняя страница Хьюго в действии](https://www.manning.com/books/hugo-in-action)
 
-### Build Websites with Hugo
+### Создавайте сайты с Hugo
 
-[Build Websites with Hugo - Fast Web Development with Markdown (2020)](https://pragprog.com/titles/bhhugo/) by Brian P. Hogan.
+[Создавайте сайты с Hugo - быстрая веб-разработка с Markdown (2020)](https://pragprog.com/titles/bhhugo/) Брайан П. Хоган.
 
-## Video tutorials
+## Видео уроки
 
-### Video Playlist by Mike Dane
+### Видео плейлист Майка Дейна
 
-Mike Dane explains the various features of Hugo via dedicated tutorials on [YouTube](https://www.youtube.com/watch?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&v=qtIqKaDlqXo).
+Майк Дейн объясняет различные особенности Hugo в специальных обучающих материалах на [YouTube](https://www.youtube.com/watch?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&v=qtIqKaDlqXo).

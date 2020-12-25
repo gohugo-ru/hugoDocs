@@ -1,12 +1,12 @@
 ---
-title: Basic Usage
-linktitle: Basic Usage
-description: Hugo's CLI is fully featured but simple to use, even for those who have very limited experience working from the command line.
+title: Основы использования
+linktitle: Основы использования
+description: Интерфейс командной строки Hugo является полнофункциональным, но простым в использовании даже для тех, у кого очень ограниченный опыт работы из командной строки.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
 categories: [getting started]
-keywords: [usage,livereload,command line,flags]
+keywords: [usage,livereload,command line,flags,основы использования,использование,командная строка,флаги,перезагрузка в реальном времени]
 menu:
   docs:
     parent: "getting-started"
@@ -18,17 +18,17 @@ aliases: [/overview/usage/,/extras/livereload/,/doc/usage/,/usage/]
 toc: true
 ---
 
-The following is a description of the most common commands you will use while developing your Hugo project. See the [Command Line Reference][commands] for a comprehensive view of Hugo's CLI.
+Ниже приводится описание наиболее распространенных команд, которые Вы будете использовать при разработке проекта Hugo. Смотрите [справочник по командной строке][commands] для полного обзора интерфейса командной строки Hugo CLI.
 
-## Test Installation
+## Тестирование установки
 
-Once you have [installed Hugo][install], make sure it is in your `PATH`. You can test that Hugo has been installed correctly via the `help` command:
+После того, как Вы [установили Hugo][install], убедитесь, что он находится в Вашем `PATH`. Вы можете проверить правильность установки Hugo с помощью команды `help`:
 
 ```
 hugo help
 ```
 
-The output you see in your console should be similar to the following:
+Вывод, который вы видите в консоли, должен быть похож на следующий:
 
 ```
 hugo is the main command, used to build your Hugo site.
@@ -97,13 +97,13 @@ Flags:
 Use "hugo [command] --help" for more information about a command.
 ```
 
-## The `hugo` Command
+## Команда `hugo`
 
-The most common usage is probably to run `hugo` with your current directory being the input directory.
+Чаще всего используется, вероятно, запуск `hugo` с Вашим текущим каталогом, который является входным каталогом.
 
-This generates your website to the `public/` directory by default, although you can customize the output directory in your [site configuration][config] by changing the `publishDir` field.
+По умолчанию Ваш веб-сайт будет помещен в каталог `public/`, хотя Вы можете настроить выходной каталог в [конфигурации сайта][config], изменив поле `publishDir`.
 
-The command `hugo` renders your site into `public/` dir and is ready to be deployed to your web server:
+Команда `hugo` рендерит Ваш сайт в директорию `public/` и готовит к развертыванию на Вашем веб-сервере:
 
 ```
 hugo
@@ -116,15 +116,15 @@ hugo
 in 90 ms
 ```
 
-## Draft, Future, and Expired Content
+## Черновик, будущий и истекший контент
 
-Hugo allows you to set `draft`, `publishdate`, and even `expirydate` in your content's [front matter][]. By default, Hugo will not publish:
+Hugo позволяет Вам установить `draft`, `publishdate` и даже `expirydate` в [основной части][front matter]. По умолчанию Hugo не публикует:
 
-1. Content with a future `publishdate` value
-2. Content with `draft: true` status
-3. Content with a past `expirydate` value
+1. Контент с будущим значением `publishdate`
+2. Контент со статусом `draft: true`
+3. Контент с прошлым значением `expirydate`
 
-All three of these can be overridden during both local development *and* deployment by adding the following flags to `hugo` and `hugo server`, respectively, or by changing the boolean values assigned to the fields of the same name (without `--`) in your [configuration][config]:
+Все три из них могут быть переопределены как во время локальной разработки, *так и* развертывания путем добавления следующих флагов к `hugo` и `hugo server`, соответственно, или путем изменения логических значений, присвоенных полям с тем же именем (без `--`) в Вашей [конфигурации][config]:
 
 1. `--buildFuture`
 2. `--buildDrafts`
@@ -132,7 +132,7 @@ All three of these can be overridden during both local development *and* deploym
 
 ## LiveReload
 
-Hugo comes with [LiveReload](https://github.com/livereload/livereload-js) built in. There are no additional packages to install. A common way to use Hugo while developing a site is to have Hugo run a server with the `hugo server` command and watch for changes:
+Hugo поставляется со встроенным [LiveReload](https://github.com/livereload/livereload-js). Никаких дополнительных пакетов для установки не требуется. Обычный способ использования Hugo при разработке сайта - это заставить Hugo запустить сервер с помощью команды `hugo server` и следить за изменениями:
 
 ```
 hugo server
@@ -149,7 +149,7 @@ Web Server is available at http://localhost:1313/
 Press Ctrl+C to stop
 ```
 
-This will run a fully functioning web server while simultaneously watching your file system for additions, deletions, or changes within the following areas of your [project organization][dirs]:
+Это запустит полностью функционирующий веб-сервер, одновременно наблюдая за Вашей файловой системой на предмет добавления, удаления или изменений в следующих областях Вашей [организации проекта][dirs]:
 
 * `/static/*`
 * `/content/*`
@@ -159,31 +159,31 @@ This will run a fully functioning web server while simultaneously watching your 
 * `/themes/<CURRENT-THEME>/*`
 * `config`
 
-Whenever you make changes, Hugo will simultaneously rebuild the site and continue to serve content. As soon as the build is finished, LiveReload tells the browser to silently reload the page.
+Каждый раз, когда Вы вносите изменения, Хьюго одновременно перестраивает сайт и продолжает предоставлять контент. Как только сборка будет завершена, LiveReload сообщает браузеру, что нужно перезагрузить страницу.
 
-Most Hugo builds are so fast that you may not notice the change unless looking directly at the site in your browser. This means that keeping the site open on a second monitor (or another half of your current monitor) allows you to see the most up-to-date version of your website without the need to leave your text editor.
+Большинство сборок Hugo настолько быстрые, что Вы можете не заметить изменения, если не посмотрите прямо на сайт в своем браузере. Это означает, что сохранение сайта открытым на втором мониторе (или другой половине Вашего текущего монитора) позволяет Вам видеть самую последнюю версию Вашего сайта, не выходя из текстового редактора.
 
 {{% note "Closing `</body>` Tag"%}}
-Hugo injects the LiveReload `<script>` before the closing `</body>` in your templates and will therefore not work if this tag is not present..
+Hugo вставляет LiveReload `<script>` перед закрывающим `</body>` в Ваши шаблоны и поэтому не будет работать, если этот тег отсутствует.
 {{% /note %}}
 
-### Disable LiveReload
+### Отключение LiveReload
 
-LiveReload works by injecting JavaScript into the pages Hugo generates. The script creates a connection from the browser's web socket client to the Hugo web socket server.
+LiveReload работает путем внедрения JavaScript в страницы, которые создает Hugo. Сценарий создает соединение от клиента веб-сокета браузера к серверу веб-сокета Hugo.
 
-LiveReload is awesome for development. However, some Hugo users may use `hugo server` in production to instantly display updated content. The following methods make it easy to disable LiveReload:
+LiveReload отлично подходит для разработки. Однако некоторые пользователи Hugo могут использовать `hugo server` в производственной среде для мгновенного отображения обновленного контента. Следующие методы позволяют легко отключить LiveReload:
 
 ```
 hugo server --watch=false
 ```
 
-Or...
+Или...
 
 ```
 hugo server --disableLiveReload
 ```
 
-The latter flag can be omitted by adding the following key-value to  your `config.toml` or `config.yml` file, respectively:
+Последний флаг можно опустить, добавив следующую пару "ключ-значение" в Ваш файл `config.toml` или `config.yml`, соответственно:
 
 ```
 disableLiveReload = true
@@ -193,14 +193,14 @@ disableLiveReload = true
 disableLiveReload: true
 ```
 
-## Deploy Your Website
+## Деплой Вашего веб-сайта
 
-After running `hugo server` for local web development, you need to do a final `hugo` run *without the `server` part of the command* to rebuild your site. You may then deploy your site by copying the `public/` directory to your production web server.
+После запуска `hugo server` для локальной веб-разработки Вам необходимо выполнить последний запуск `hugo` *без серверной `server` части команды*, чтобы восстановить Ваш сайт. Затем Вы можете развернуть свой сайт, скопировав каталог `public/` на рабочий веб-сервер.
 
-Since Hugo generates a static website, your site can be hosted *anywhere* using any web server. See [Hosting and Deployment][hosting] for methods for hosting and automating deployments contributed by the Hugo community.
+Поскольку Hugo создает статический веб-сайт, Ваш сайт может быть размещен *где угодно* с помощью любого веб-сервера. Смотрите [хостинг и развертывание][hosting] для получения информации о методах размещения и автоматизации развертываний, предоставленных сообществом Hugo.
 
 {{% warning "Generated Files are **NOT** Removed on Site Build" %}}
-Running `hugo` *does not* remove generated files before building. This means that you should delete your `public/` directory (or the publish directory you specified via flag or configuration file) before running the `hugo` command. If you do not remove these files, you run the risk of the wrong files (e.g., drafts or future posts) being left in the generated site.
+Запуск `hugo` *не* удаляет сгенерированные файлы перед сборкой. Это означает, что Вы должны удалить свой каталог `public/` (или каталог публикации, указанный Вами с помощью флага или файла конфигурации) перед запуском команды `hugo`. Если Вы не удалите эти файлы, Вы рискуете, что на созданном сайте останутся неправильные файлы (например, черновики или будущие сообщения).
 {{% /warning %}}
 
 

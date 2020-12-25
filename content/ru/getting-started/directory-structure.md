@@ -1,12 +1,12 @@
 ---
-title: Directory Structure
-linktitle: Directory Structure
-description: Hugo's CLI scaffolds a project directory structure and then takes that single directory and uses it as the input to create a complete website.
+title: Структура каталогов
+linktitle: Структура каталогов
+description: Интерфейс командной строки Hugo формирует структуру каталогов проекта, а затем берет этот единственный каталог и использует его в качестве входных данных для создания полного веб-сайта.
 date: 2017-01-02
 publishdate: 2017-02-01
 lastmod: 2017-03-09
 categories: [getting started,fundamentals]
-keywords: [source, organization, directories]
+keywords: [source, organization, directories, каталоги, структура папок, структура, организация, исходники]
 menu:
   docs:
     parent: "getting-started"
@@ -18,11 +18,11 @@ aliases: [/overview/source-directory/]
 toc: true
 ---
 
-## New Site Scaffolding
+## Скелет нового сайта
 
 {{< youtube sB0HLHjgQ7E >}}
 
-Running the `hugo new site` generator from the command line will create a directory structure with the following elements:
+Запуск генератора `hugo new site` из командной строки создаст структуру каталогов со следующими элементами:
 
 ```
 .
@@ -36,43 +36,42 @@ Running the `hugo new site` generator from the command line will create a direct
 ```
 
 
-## Directory Structure Explained
+## Объяснение структуры каталогов
 
-The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.
+Ниже приводится общий обзор каждого из каталогов со ссылками на каждый из соответствующих разделов в документации Hugo.
 
 [`archetypes`](/content-management/archetypes/)
-: You can create new content files in Hugo using the `hugo new` command.
-By default, Hugo will create new content files with at least `date`, `title` (inferred from the file name), and `draft = true`. This saves time and promotes consistency for sites using multiple content types. You can create your own [archetypes][] with custom preconfigured front matter fields as well.
+: Вы можете создавать новые файлы содержимого в Hugo, используя команду `hugo new`.
+По умолчанию Hugo будет создавать новые файлы содержимого с как минимум `date`, `title` (выводится из имени файла) и `draft = true`. Это экономит время и обеспечивает единообразие для сайтов, использующих несколько типов контента. Вы также можете создавать свои собственные [архетипы][archetypes] с настраиваемыми предварительно настроенными полями вступительного документа.
 
 [`assets`][]
-: Stores all the files which need be processed by [Hugo Pipes]({{< ref "/hugo-pipes" >}}). Only the files whose `.Permalink` or `.RelPermalink` are used will be published to the `public` directory. Note: assets directory is not created by default.
+: Хранит все файлы, которые необходимо обработать [Hugo Pipes]({{< ref "/hugo-pipes" >}}). В каталог `public` будут опубликованы только те файлы, для которых используются файлы `.Permalink` или `.RelPermalink`. Примечание: каталог ресурсов по умолчанию не создается.
 
 [`config`](/getting-started/configuration/)
-: Hugo ships with a large number of [configuration directives](https://gohugo.io/getting-started/configuration/#all-variables-yaml).
-The [config directory](/getting-started/configuration/#configuration-directory) is where those directives are stored as JSON, YAML, or TOML files. Every root setting object can stand as its own file and structured by environments.
-Projects with minimal settings and no need for environment awareness can use a single `config.toml` file at its root.
+: Hugo поставляется с большим количеством [директив конфигурации](/getting-started/configuration/#all-variables-yaml).
+В [каталоге конфигурации](/getting-started/configuration/#configuration-directory) эти директивы хранятся в виде файлов JSON, YAML или TOML. Каждый объект корневых настроек может быть отдельным файлом и структурирован по средам разработки.
+Проекты с минимальными настройками и не требующими внимания к среде могут использовать один файл `config.toml` в своем корне.
 
-Many sites may need little to no configuration, but Hugo ships with a large number of [configuration directives][] for more granular directions on how you want Hugo to build your website. Note: config directory is not created by default.
+Многим сайтам может потребоваться небольшая настройка или вообще ее не нужно, но Hugo поставляется с большим количеством [директив конфигурации][] для более подробных указаний о том, как Вы хотите, чтобы Hugo создавал Ваш сайт. Примечание: по умолчанию каталог `config` не создается.
 
 [`content`][]
-: All content for your website will live inside this directory. Each top-level folder in Hugo is considered a [content section][]. For example, if your site has three main sections---`blog`, `articles`, and `tutorials`---you will have three directories at `content/blog`, `content/articles`, and `content/tutorials`. Hugo uses sections to assign default [content types][].
+: Весь контент Вашего сайта будет находиться внутри этого каталога. Каждая папка верхнего уровня в Hugo считается [раздел содержимого][content section]. Например, если на Вашем сайте три основных раздела --- `blog`, `articles` и `tutorials` --- у Вас будет три каталога в `content/blog`, `content/articles` и `content/tutorials`. Хьюго использует разделы для назначения по умолчанию [типов контента][content types].
 
 [`data`](/templates/data-templates/)
-: This directory is used to store configuration files that can be
-used by Hugo when generating your website. You can write these files in YAML, JSON, or TOML format. In addition to the files you add to this folder, you can also create [data templates][] that pull from dynamic content.
+: Этот каталог используется для хранения файлов конфигурации, которые могут быть использованы Хьюго при создании Вашего сайта. Вы можете записать эти файлы в формате YAML, JSON или TOML. В дополнение к файлам, которые Вы добавляете в эту папку, Вы также можете создавать [шаблоны данных][data templates], которые извлекаются из динамического содержимого.
 
 [`layouts`][]
-: Stores templates in the form of `.html` files that specify how views of your content will be rendered into a static website. Templates include [list pages][lists], your [homepage][], [taxonomy templates][], [partials][], [single page templates][singles], and more.
+: Сохраняет шаблоны в виде файлов `.html`, которые определяют, как представления Вашего контента будут отображаться на статическом веб-сайте. Шаблоны включают [страницы списков][lists], Вашу [домашнюю страницу][homepage], [шаблоны таксономии][taxonomy templates], [частичные][partials], [одностраничные шаблоны][singles] и многое другое.
 
 [`static`][]
-: Stores all the static content: images, CSS, JavaScript, etc. When Hugo builds your site, all assets inside your static directory are copied over as-is. A good example of using the `static` folder is for [verifying site ownership on Google Search Console][searchconsole], where you want Hugo to copy over a complete HTML file without modifying its content.
+: Хранит весь статический контент: изображения, CSS, JavaScript и т.д. Когда Hugo создает Ваш сайт, все ресурсы внутри Вашего статического каталога копируются как есть. Хороший пример использования папки `static` для [подтверждения права собственности на сайт в Google Search Console][searchconsole], где Вы хотите, чтобы Хьюго скопировал полный HTML-файл без изменения его содержимого.
 
 {{% note %}}
-From **Hugo 0.31** you can have multiple static directories.
+Начиная с **Hugo 0.31** у Вас может быть несколько статических каталогов.
 {{% /note %}}
 
 resources
-: Caches some files to speed up generation. Can be also used by template authors to distribute built SASS files, so you don't have to have the preprocessor installed. Note: resources directory is not created by default.
+: Кеширует некоторые файлы для ускорения генерации. Может также использоваться авторами шаблонов для распространения встроенных файлов SASS, поэтому Вам не нужно устанавливать препроцессор. Примечание: каталог ресурсов по умолчанию не создается.
 
 
 [archetypes]: /content-management/archetypes/

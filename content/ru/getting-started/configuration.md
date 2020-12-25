@@ -1,12 +1,12 @@
 ---
-title: Configure Hugo
-linktitle: Configuration
-description: How to configure your Hugo site.
+title: Настройка Хьюго
+linktitle: Настройка
+description: Как настроить свой сайт Hugo.
 date: 2013-07-01
 publishdate: 2017-01-02
 lastmod: 2017-03-05
 categories: [getting started,fundamentals]
-keywords: [configuration,toml,yaml,json]
+keywords: [configuration,toml,yaml,json,настройка,конфигурация]
 menu:
   docs:
     parent: "getting-started"
@@ -19,15 +19,13 @@ toc: true
 ---
 
 
-## Configuration File
+## Конфигурационный файл
 
-Hugo uses the `config.toml`, `config.yaml`, or `config.json` (if found in the
-site root) as the default site config file.
+Хьюго использует файлы `config.toml`, `config.yaml` или `config.json` (если он находится в корне сайта) в качестве файла конфигурации сайта по умолчанию.
 
-The user can choose to override that default with one or more site config files
-using the command line `--config` switch.
+Пользователь может выбрать переопределение этого значения по умолчанию с помощью одного или нескольких файлов конфигурации сайта, используя переключатель командной строки `--config`.
 
-Examples:
+Примеры:
 
 ```
 hugo --config debugconfig.toml
@@ -35,29 +33,29 @@ hugo --config a.toml,b.toml,c.toml
 ```
 
 {{% note %}}
-Multiple site config files can be specified as a comma-separated string to the `--config` switch.
+Несколько файлов конфигурации сайта могут быть указаны в виде строки, разделенной запятыми, в параметре `--config`.
 {{% /note %}}
 
-{{< todo >}}TODO: distinct config.toml and others (the root object files){{< /todo >}}
+{{< todo >}}TODO: отдельный config.toml и другие (корневые объектные файлы){{< /todo >}}
 
-## Configuration Directory
+## Каталог конфигурации
 
-In addition to using a single site config file, one can use the `configDir` directory (default to `config/`) to maintain easier organization and environment specific settings.
+В дополнение к использованию одного файла конфигурации сайта, можно использовать каталог `configDir` (по умолчанию `config/`), чтобы упростить организацию и настройки, специфичные для среды.
 
-- Each file represents a configuration root object, such as `params.toml` for `[Params]`, `menu(s).toml` for `[Menu]`, `languages.toml` for `[Languages]` etc...
-- Each file's content must be top-level, for example:
-  
-  In `config.toml` is:
+- Каждый файл представляет собой корневой объект конфигурации, такой как `params.toml` для `[Params]`, `menu(s).toml` для `[Menu]`, `languages.toml` для `[Languages]` и т.д...
+- Содержимое каждого файла должно быть верхнего уровня, например:
+
+  В `config.toml` находится:
   ```toml
   [Params]
     foo = "bar"
   ```
-  In `params.toml` is:
+  В `params.toml` находится:
   ```
   foo = "bar"
   ```
-- Each directory holds a group of files containing settings unique to an environment.
-- Files can be localized to become language specific.
+- Каждый каталог содержит группу файлов, содержащих настройки, уникальные для конкретной среды.
+- Файлы могут быть локализованы для соответствия языку.
 
 
 ```
@@ -76,240 +74,237 @@ In addition to using a single site config file, one can use the `configDir` dire
 │       └── params.toml
 ```
 
-Considering the structure above, when running `hugo --environment staging`, Hugo will use every settings from `config/_default` and merge `staging`'s on top of those.
+Учитывая приведенную выше структуру, при запуске `hugo --environment staging`, Hugo будет использовать все настройки из `config/_default` и объединить `staging` поверх них.
 {{% note %}}
-Default environments are __development__ with `hugo server` and __production__ with `hugo`.
+Среды по умолчанию: __development__ с `hugo server` и __production__ с `hugo`.
 {{%/ note %}}
-## All Configuration Settings
+## Все настройки конфигурации
 
-The following is the full list of Hugo-defined variables with their default
-value in parentheses. Users may choose to override those values in their site
-config file(s).
+Ниже приводится полный список переменных, определенных Hugo, со значениями по умолчанию в скобках. Пользователи могут выбрать переопределение этих значений в файлах конфигурации своего сайта.
 
 archetypeDir ("archetypes")
-: The directory where Hugo finds archetype files (content templates). {{% module-mounts-note %}}
+: Каталог, в котором Хьюго находит файлы архетипов (шаблоны содержимого). {{% module-mounts-note %}}
 
 assetDir ("assets")
-: The directory where Hugo finds asset files used in [Hugo Pipes](/hugo-pipes/). {{% module-mounts-note %}}
+: Каталог, в котором Хьюго находит файлы ресурсов, используемые в [Hugo Pipes](/hugo-pipes/). {{% module-mounts-note %}}
 
 baseURL
-: Hostname (and path) to the root, e.g. https://bep.is/
+: Имя хоста (и путь) к корню, например, https://bep.is/
 
 blackfriday
-: See [Configure Blackfriday](/getting-started/configuration-markup#blackfriday)
+: Смотрите [Настройка Blackfriday](/getting-started/configuration-markup#blackfriday)
 
 build
-: See [Configure Build](#configure-build)
+: Смотрите [Настройка сборки](#configure-build)
 
 buildDrafts (false)
-: Include drafts when building.
+: Учитывать черновики при сборке.
 
 buildExpired  (false)
-: Include content already expired.
+: Включить контент, срок действия которого уже истек.
 
 buildFuture (false)
-: Include content with publishdate in the future.
+: Включите контент с датой публикации в будущем.
 
 caches
-: See [Configure File Caches](#configure-file-caches)
+: Смотрите [Настройка кеша файлов](#configure-file-caches)
 
 canonifyURLs (false)
-: Enable to turn relative URLs into absolute.
+: Включите, чтобы превратить относительные URL-адреса в абсолютные.
 
 contentDir ("content")
-: The directory from where Hugo reads content files. {{% module-mounts-note %}}
+: Каталог, из которого Хьюго читает файлы контента. {{% module-mounts-note %}}
 
 dataDir ("data")
-: The directory from where Hugo reads data files. {{% module-mounts-note %}}
+: Каталог, из которого Хьюго читает файлы данных. {{% module-mounts-note %}}
 
 defaultContentLanguage ("en")
-: Content without language indicator will default to this language.
+: Контент без индикатора языка по умолчанию будет использовать этот язык.
 
 defaultContentLanguageInSubdir (false)
-: Render the default content language in subdir, e.g. `content/en/`. The site root `/` will then redirect to `/en/`.
+: Отобразите язык содержимого по умолчанию в подкаталоге, например, `content/en/`. Затем корень сайта `/` будет перенаправлен на `/en/`.
 
 disableAliases (false)
-: Will disable generation of alias redirects. Note that even if `disableAliases` is set, the aliases themselves are preserved on the page. The motivation with this is to be able to generate 301 redirects in an `.htaccess`, a Netlify `_redirects` file or similar using a custom output format.
+: Отключит генерацию переадресации псевдонимов. Обратите внимание, что даже если установлен `disableAliases`, сами псевдонимы сохраняются на странице. Мотивация при этом состоит в том, чтобы иметь возможность генерировать 301 редирект в файле `.htaccess`, Netlify `_redirects` или подобном с использованием настраиваемого формата вывода.
 
 disableHugoGeneratorInject (false)
-: Hugo will, by default, inject a generator meta tag in the HTML head on the _home page only_. You can turn it off, but we would really appreciate if you don't, as this is a good way to watch Hugo's popularity on the rise.
+: По умолчанию Hugo вставляет метатег генератора в заголовок HTML на _только домашнюю страницу_. Вы можете отключить его, но мы будем очень признательны, если Вы этого не сделаете, так как это хороший способ наблюдать за ростом популярности Хьюго.
 
 disableKinds ([])
-: Enable disabling of all pages of the specified *Kinds*. Allowed values in this list: `"page"`, `"home"`, `"section"`, `"taxonomy"`, `"term"`, `"RSS"`, `"sitemap"`, `"robotsTXT"`, `"404"`.
+: Разрешить отключение всех страниц указанного *Вида*. Допустимые значения в этом списке: `"page"`, `"home"`, `"section"`, `"taxonomy"`, `"term"`, `"RSS"`, `"sitemap"`, `"robotsTXT"`, `"404"`.
 
 disableLiveReload (false)
-: Disable automatic live reloading of browser window.
+: Отключить автоматическую перезагрузку окна браузера в реальном времени.
 
 disablePathToLower (false)
-: Do not convert the url/path to lowercase.
+: Не переводить URL/path в нижний регистр.
 
 enableEmoji (false)
-: Enable Emoji emoticons support for page content; see the [Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
+: Включить поддержку смайлов Emoji для содержимого страницы; смотрите [Памятку по эмодзи](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
 enableGitInfo (false)
-: Enable `.GitInfo` object for each page (if the Hugo site is versioned by Git). This will then update the `Lastmod` parameter for each page using the last git commit date for that content file.
+: Включите объект `.GitInfo` для каждой страницы (если версия сайта Hugo поддерживается Git). Затем это обновит параметр `Lastmod` для каждой страницы, используя дату последней фиксации git для этого файла содержимого.
 
 enableInlineShortcodes (false)
-: Enable inline shortcode support. See [Inline Shortcodes](/templates/shortcode-templates/#inline-shortcodes).
+: Включите встроенную поддержку шорткода. Смотрите [Встроенные шорткоды](/templates/shortcode-templates/#inline-shortcodes).
 
 enableMissingTranslationPlaceholders (false)
-: Show a placeholder instead of the default value or an empty string if a translation is missing.
+: Показать заполнитель вместо значения по умолчанию или пустой строки, если перевод отсутствует.
 
 enableRobotsTXT (false)
-: Enable generation of `robots.txt` file.
+: Включите создание файла `robots.txt`.
 
 frontmatter
-
-: See [Front matter Configuration](#configure-front-matter).
+: Смотрите [Конфигурация основного материала](#configure-front-matter).
 
 footnoteAnchorPrefix ("")
-: Prefix for footnote anchors.
+: Префикс для якорей сноски.
 
 footnoteReturnLinkContents ("")
-: Text to display for footnote return links.
+: Текст, отображаемый для обратных ссылок сноски.
 
 googleAnalytics ("")
-: Google Analytics tracking ID.
+: Идентификатор отслеживания Google Analytics.
 
 hasCJKLanguage (false)
-: If true, auto-detect Chinese/Japanese/Korean Languages in the content. This will make `.Summary` and `.WordCount` behave correctly for CJK languages.
+: Если true, автоматически определять китайский/японский/корейский языки в содержимом. Это заставит `.Summary` и `.WordCount` вести себя правильно для CJK языков.
 
 imaging
-: See [Image Processing Config](/content-management/image-processing/#image-processing-config).
+: Смотрите [Конфигурация обработки изображений](/content-management/image-processing/#image-processing-config).
 
 languages
-: See [Configure Languages](/content-management/multilingual/#configure-languages).
+: Смотрите [Конфигурация языков](/content-management/multilingual/#configure-languages).
 
 languageCode ("")
-: The site's language code. It is used in the default [RSS template](/templates/rss/#configure-rss) and can be useful for [multi-lingual sites](/content-management/multilingual/#configure-multilingual-multihost).
+: Код языка сайта. Он используется в [шаблоне RSS по умолчанию](/templates/rss/#configure-rss) и может быть полезен для [многоязычных сайтов](/content-management/multilingual/#configure-multilingual-multihost).
 
 languageName ("")
-: The site's language name.
+: Название языка сайта.
 
 disableLanguages
-: See [Disable a Language](/content-management/multilingual/#disable-a-language)
+: Смотрите [Отключение языка](/content-management/multilingual/#disable-a-language)
 
 layoutDir ("layouts")
-: The directory from where Hugo reads layouts (templates).
+: Каталог, из которого Хьюго читает макеты (шаблоны).
 
 log (false)
-: Enable logging.
+: Включить ведение журнала.
 
 logFile ("")
-: Log File path (if set, logging enabled automatically).
+: Путь к файлу журнала (если задан, ведение журнала включается автоматически).
 
 markup
-: See [Configure Markup](/getting-started/configuration-markup).{{< new-in "0.60.0" >}}
+: Смотрите [Настройку разметки](/getting-started/configuration-markup).{{< new-in "0.60.0" >}}
 
 menu
-: See [Add Non-content Entries to a Menu](/content-management/menus/#add-non-content-entries-to-a-menu).
+: Смотрите [Добавление записей, не относящихся к содержанию, в меню](/content-management/menus/#add-non-content-entries-to-a-menu).
 
 minify
-: See [Configure Minify](#configure-minify)
+: Смотрите [Настройку Minify](#configure-minify)
 
 module
-: Module config see [Module Config](/hugo-modules/configuration/).{{< new-in "0.56.0" >}}
+: Смотрите настройку модуля [Конфигурация модуля](/hugo-modules/configuration/).{{< new-in "0.56.0" >}}
 
 newContentEditor ("")
-: The editor to use when creating new content.
+: Редактор для использования при создании нового контента.
 
 noChmod (false)
-: Don't sync permission mode of files.
+: Не синхронизировать режим разрешений файлов.
 
 noTimes (false)
-: Don't sync modification time of files.
+: Не синхронизировать время модификации файлов.
 
 paginate (10)
-: Default number of elements per page in [pagination](/templates/pagination/).
+: Количество элементов на странице по умолчанию в [пагинации](/templates/pagination/).
 
 paginatePath ("page")
-: The path element used during pagination (https://example.com/page/2).
+: Элемент пути, используемый при разбивке на страницы (https://example.com/page/2).
 
 permalinks
-: See [Content Management](/content-management/urls/#permalinks).
+: Смотрите [Управление содержанием](/content-management/urls/#permalinks).
 
 pluralizeListTitles (true)
-: Pluralize titles in lists.
+: Множественное число заголовков в списках.
 
 publishDir ("public")
-: The directory to where Hugo will write the final static site (the HTML files etc.).
+: Каталог, в который Хьюго запишет окончательный статический сайт (файлы HTML и т.д.).
 
 related
-: See [Related Content](/content-management/related/#configure-related-content).{{< new-in "0.27" >}}
+: Смотрите [Связанный контент](/content-management/related/#configure-related-content).{{< new-in "0.27" >}}
 
 relativeURLs (false)
-: Enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+: Включите это, чтобы сделать все относительные URL-адреса относительно корня содержимого. Обратите внимание, что это не влияет на абсолютные URL-адреса.
 
 refLinksErrorLevel ("ERROR")
-: When using `ref` or `relref` to resolve page links and a link cannot resolved, it will be logged with this logg level. Valid values are `ERROR` (default) or `WARNING`. Any `ERROR` will fail the build (`exit -1`).
+: При использовании `ref` или `relref` для разрешения ссылок на страницы и ссылка не может быть разрешена, она будет регистрироваться с этим уровнем журнала. Допустимые значения `ERROR` (по умолчанию) или `WARNING`. Любая `ERROR` приведет к сбою сборки (`exit -1`).
 
 refLinksNotFoundURL
-: URL to be used as a placeholder when a page reference cannot be found in `ref` or `relref`. Is used as-is.
+: URL-адрес, который будет использоваться в качестве заполнителя, когда ссылка на страницу не может быть найдена в `ref` или` relref`. Используется как есть.
 
 rssLimit (unlimited)
-: Maximum number of items in the RSS feed.
+: Максимальное количество элементов в RSS-ленте.
 
 sectionPagesMenu ("")
-: See ["Section Menu for Lazy Bloggers"](/templates/menu-templates/#section-menu-for-lazy-bloggers).
+: Смотрите ["Меню раздела для отложенных блогеров"](/templates/menu-templates/#section-menu-for-lazy-bloggers).
 
 sitemap
-: Default [sitemap configuration](/templates/sitemap-template/#configure-sitemap-xml).
+: По умолчанию [конфигурация карты сайта](/templates/sitemap-template/#configure-sitemap-xml).
 
 staticDir ("static")
-: A directory or a list of directories from where Hugo reads [static files][static-files]. {{% module-mounts-note %}}
+: Каталог или список каталогов, из которых Хьюго читает [статические файлы][static-files]. {{% module-mounts-note %}}
 
 summaryLength (70)
-: The length of text in words to show in a [`.Summary`](/content-management/summaries/#hugo-defined-automatic-summary-splitting).
+: Длина текста в словах, отображаемого в [`.Summary`](/content-management/summaries/#hugo-defined-automatic-summary-splitting).
 
 taxonomies
-: See [Configure Taxonomies](/content-management/taxonomies#configure-taxonomies).
+: Смотрите [конфигурацию таксономии](/content-management/taxonomies#configure-taxonomies).
 
 theme ("")
-: Theme to use (located by default in `/themes/THEMENAME/`).
+: Тема для использования (по умолчанию находится в `/themes/THEMENAME/`).
 
 themesDir ("themes")
-: The directory where Hugo reads the themes from.
+: Каталог, из которого Хьюго читает темы.
 
 timeout (10000)
-: Timeout for generating page contents, in milliseconds (defaults to 10&nbsp;seconds). *Note:* this is used to bail out of recursive content generation, if your pages are slow to generate (e.g., because they require large image processing or depend on remote contents) you might need to raise this limit.
+: Тайм-аут для создания содержимого страницы в миллисекундах (по умолчанию 10&nbsp;секунд). *Примечание:* это используется для отказа от создания рекурсивного контента, если Ваши страницы генерируются медленно (например, потому что они требуют обработки больших изображений или зависят от удаленного содержимого), Вам может потребоваться увеличить этот предел.
 
 title ("")
-: Site title.
+: Название сайта.
 
 titleCaseStyle ("AP")
-: See [Configure Title Case](#configure-title-case)
+: Смотрите [настройку регистра заголовка](#configure-title-case)
 
 uglyURLs (false)
-: When enabled, creates URL of the form `/filename.html` instead of `/filename/`.
+: Когда этот параметр включен, создает URL-адрес в виде `/filename.html` вместо `/filename/`.
 
 verbose (false)
-: Enable verbose output.
+: Включить подробный вывод.
 
 verboseLog (false)
-: Enable verbose logging.
+: Включить подробное ведение журнала.
 
 watch (false)
-: Watch filesystem for changes and recreate as needed.
+: Следите за изменениями файловой системы и воссоздайте ее по мере необходимости.
 
 {{% note %}}
-If you are developing your site on a \*nix machine, here is a handy shortcut for finding a configuration option from the command line:
+Если Вы разрабатываете свой сайт на  \*nix-машине, вот удобный ярлык для поиска параметра конфигурации из командной строки:
 ```
 cd ~/sites/yourhugosite
 hugo config | grep emoji
 ```
 
-which shows output like
+который показывает вывод как
 
 ```
 enableemoji: true
 ```
 {{% /note %}}
 
-## Configure Build
+## Настройка сборки
 
 {{< new-in "0.66.0" >}}
 
-The `build` configuration section contains global build-related configuration options.
+Раздел конфигурации `build` содержит глобальные параметры конфигурации, связанные со сборкой.
 
 {{< code-toggle file="config">}}
 [build]
@@ -320,19 +315,19 @@ noJSConfigInAssets = false
 
 
 useResourceCacheWhen
-: When to use the cached resources in `/resources/_gen` for PostCSS and ToCSS. Valid values are `never`, `always` and `fallback`. The last value means that the cache will be tried if PostCSS/extended version is not available.
+: Когда использовать кэшированные ресурсы в `/resources/_gen` для PostCSS и ToCSS. Допустимые значения `never`, `always` и `fallback`. Последнее значение означает, что кеш будет проверяться, если PostCSS/расширенная версия недоступна.
 
 writeStats {{< new-in "0.69.0" >}}
-: When enabled, a file named `hugo_stats.json` will be written to your project root with some aggregated data about the build, e.g. list of HTML entities published to be used to do [CSS pruning](/hugo-pipes/postprocess/#css-purging-with-postcss). If you're only using this for the production build, you should consider placing it below [config/production](/getting-started/configuration/#configuration-directory). It's also worth mentioning that, due to the nature of the partial server builds, new HTML entities will be added when you add or change them while the server is running, but the old values will not be removed until you restart the server or run a regular `hugo` build.
+: Если этот параметр включен, в корень Вашего проекта будет записан файл с именем `hugo_stats.json` с некоторыми агрегированными данными о сборке, например список объектов HTML, опубликованных для использования для [сокращения CSS](/hugo-pipes/postprocess/#css-purging-with-postcss). Если Вы используете его только для производственной сборки, Вам следует подумать о том, чтобы разместить его ниже [config/production](/getting-started/configuration/#configuration-directory). Также стоит упомянуть, что из-за характера частичных сборок сервера новые HTML-объекты будут добавляться, когда Вы добавляете или изменяете их во время работы сервера, но старые значения не будут удалены, пока Вы не перезапустите сервер или не запустите обычную сборку `hugo`.
 
 noJSConfigInAssets {{< new-in "0.78.0" >}}
-: Turn off writing a `jsconfig.js` into your `/assets` folder with mapping of imports from running [js.Build](https://gohugo.io/hugo-pipes/js). This file is intended to help with intellisense/navigation inside code editors such as [VS Code](https://code.visualstudio.com/). Note that if you do not use `js.Build`, no file will be written.
+: Отключите запись `jsconfig.js` в папку `/assets` с отображением импорта из запущенного [js.Build](https://gohugo.io/hugo-pipes/js). Этот файл предназначен для помощи с intellisense / навигацией внутри редакторов кода, таких как [VS Code](https://code.visualstudio.com/). Обратите внимание, что если Вы не используете `js.Build`, файл не будет записан.
 
-## Configure Server
+## Настройка сервера
 
 {{< new-in "0.67.0" >}}
 
-This is only relevant when running `hugo server`, and it allows to set HTTP headers during development, which allows you to test out your Content Security Policy and similar. The configuration format matches [Netlify's](https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file) with slighly more powerful [Glob matching](https://github.com/gobwas/glob):
+Это актуально только при запуске `hugo server` и позволяет устанавливать заголовки HTTP во время разработки, что позволяет Вам протестировать свою Политику безопасности контента и тому подобное. Формат конфигурации соответствует [Netlify's](https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file) с чуть более мощным [Glob matching](https://github.com/gobwas/glob):
 
 
 {{< code-toggle file="config">}}
@@ -348,7 +343,7 @@ Referrer-Policy = "strict-origin-when-cross-origin"
 Content-Security-Policy = "script-src localhost:1313"
 {{< /code-toggle >}}
 
-Since this is is "development only", it may make sense to put it below the `development` environment:
+Поскольку это "только разработка", возможно, имеет смысл поместить его под средой `development`:
 
 
 {{< code-toggle file="config/development/server">}}
@@ -366,9 +361,9 @@ Content-Security-Policy = "script-src localhost:1313"
 
 {{< new-in "0.72.0" >}}
 
-You can also specify simple redirects rules for the server. The syntax is again similar to Netlify's. 
+Вы также можете указать простые правила перенаправления для сервера. Синтаксис снова аналогичен синтаксису Netlify.
 
-Note that a `status` code of 200 will trigger a [URL rewrite](https://docs.netlify.com/routing/redirects/rewrites-proxies/), which is what you want in SPA situations, e.g:
+Обратите внимание, что код статуса `status` 200 вызовет [перезапись URL](https://docs.netlify.com/routing/redirects/rewrites-proxies/), что Вы и хотите в ситуациях SPA, например:
 
 {{< code-toggle file="config/development/server">}}
 [[redirects]]
@@ -378,31 +373,32 @@ status = 200
 force = false
 {{< /code-toggle >}}
 
-{{< new-in "0.76.0" >}} Setting `force=true` will make a redirect even if there is existing content in the path. Note that before Hugo 0.76  `force` was the default behaviour, but this is inline with how Netlify does it.
+{{< new-in "0.76.0" >}}
 
-## Configure Title Case
+Установка `force=true` приведет к перенаправлению, даже если в пути уже есть контент. Обратите внимание, что до Hugo 0.76 `force` был поведением по умолчанию, но это соответствует тому, как это делает Netlify.
 
-Set `titleCaseStyle` to specify the title style used by the [title](/functions/title/) template function and the automatic section titles in Hugo. It defaults to [AP Stylebook](https://www.apstylebook.com/) for title casing, but you can also set it to `Chicago` or `Go` (every word starts with a capital letter).
+## Настройка регистра заголовка
 
-## Configuration Environment Variables
+Установите `titleCaseStyle`, чтобы указать стиль заголовка, используемый функцией шаблона [заголовка](/functions/title/), и автоматические заголовки разделов в Hugo. По умолчанию для заголовка используется [AP Stylebook](https://www.apstylebook.com/), но Вы также можете установить его на `Chicago` или `Go` (каждое слово начинается с заглавной буквы).
+
+## Настройка переменных среды разработки
 
 HUGO_NUMWORKERMULTIPLIER
-: Can be set to increase or reduce the number of workers used in parallel processing in Hugo. If not set, the number of logical CPUs will be used.
+: Можно настроить на увеличение или уменьшение количества рабочих процессов, используемых при параллельной обработке в Hugo. Если не установлен, будет использовано количество логических ЦП.
 
-## Configuration Lookup Order
+## Настройка порядка поиска
 
-Similar to the template [lookup order][], Hugo has a default set of rules for searching for a configuration file in the root of your website's source directory as a default behavior:
+Подобно шаблону [порядка поиска][lookup order], Hugo имеет стандартный набор правил для поиска файла конфигурации в корне исходного каталога Вашего веб-сайта в качестве поведения по умолчанию:
 
 1. `./config.toml`
 2. `./config.yaml`
 3. `./config.json`
 
-In your `config` file, you can direct Hugo as to how you want your website rendered, control your website's menus, and arbitrarily define site-wide parameters specific to your project.
+В Вашем файле `config` Вы можете указать Хьюго, как Вы хотите отображать свой веб-сайт, управлять меню своего веб-сайта и произвольно определять параметры сайта, специфичные для Вашего проекта.
 
+## Пример конфигурации
 
-## Example Configuration
-
-The following is a typical example of a configuration file. The values nested under `params:` will populate the [`.Site.Params`][] variable for use in [templates][]:
+Ниже приведен типичный пример файла конфигурации. Значения, вложенные в `params:`, будут заполнять переменную [`.Site.Params`][] для использования в [шаблонах][templates]:
 
 {{< code-toggle file="config">}}
 baseURL: "https://yoursite.example.com/"
@@ -420,48 +416,47 @@ params:
   SidebarRecentLimit: 5
 {{< /code-toggle >}}
 
-## Configure with Environment Variables
+## Настройка с помощью переменных среды разработки
 
-In addition to the 3 config options already mentioned, configuration key-values can be defined through operating system environment variables.
+В дополнение к 3 уже упомянутым параметрам конфигурации, пары "ключ-значение" конфигурации могут быть определены через переменные среды операционной системы.
 
-For example, the following command will effectively set a website's title on Unix-like systems:
+Например, следующая команда эффективно устанавливает заголовок веб-сайта в Unix-подобных системах:
 
 ```
 $ env HUGO_TITLE="Some Title" hugo
 ```
 
-This is really useful if you use a service such as Netlify to deploy your site. Look at the Hugo docs [Netlify configuration file](https://github.com/gohugoio/hugoDocs/blob/master/netlify.toml) for an example.
+Это действительно полезно, если Вы используете такую службу, как Netlify, для развертывания своего сайта. Посмотрите в качестве примера документацию Hugo [файл конфигурации Netlify](https://github.com/gohugoio/hugoDocs/blob/master/netlify.toml).
 
 {{% note "Setting Environment Variables" %}}
-Names must be prefixed with `HUGO_` and the configuration key must be set in uppercase when setting operating system environment variables.
+Имена должны начинаться с префикса `HUGO_`, а ключ конфигурации должен быть указан в верхнем регистре при установке переменных среды операционной системы.
 
-To set config params, prefix the name with `HUGO_PARAMS_`
+Чтобы установить параметры конфигурации, добавьте к имени префикс `HUGO_PARAMS_`
 {{% /note %}}
 
-{{< new-in "0.79.0" >}} If you are using snake_cased variable names, the above will not work, so since Hugo 0.79.0 Hugo determines the delimiter to use by the first character after `HUGO`. This allows you to define environment variables on the form `HUGOxPARAMSxAPI_KEY=abcdefgh`, using any [allowed](https://stackoverflow.com/questions/2821043/allowed-characters-in-linux-environment-variable-names#:~:text=So%20names%20may%20contain%20any,not%20begin%20with%20a%20digit.) delimiter.
+{{< new-in "0.79.0" >}} Если Вы используете имена переменных snake_cased, приведенное выше не будет работать, поэтому, поскольку Hugo 0.79.0, Hugo определяет разделитель, который будет использоваться первым символом после `HUGO`. Это позволяет Вам определять переменные среды в форме `HUGOxPARAMSxAPI_KEY=abcdefgh`, используя любой [разрешенный](https://stackoverflow.com/questions/2821043/allowed-characters-in-linux-environment-variable-names#:~:text=So%20names%20may%20contain%20any,not%20begin%20with%20a%20digit.) разделитель.
 
 {{< todo >}}
-Test and document setting params via JSON env var.
+Параметры настройки теста и документа через JSON env var.
 {{< /todo >}}
 
-## Ignore Content Files When Rendering
+## Игнорировать файлы содержимого при рендеринге
 
-The following statement inside `./config.toml` will cause Hugo to ignore content files ending with `.foo` and `.boo` when rendering:
+Следующий оператор внутри `./config.toml` заставит Hugo игнорировать файлы содержимого, заканчивающиеся на `.foo` и `.boo` при рендеринге:
 
 ```
 ignoreFiles = [ "\\.foo$", "\\.boo$" ]
 ```
 
-The above is a list of regular expressions. Note that the backslash (`\`) character is escaped in this example to keep TOML happy.
+Выше приведен список регулярных выражений. Обратите внимание, что символ обратной косой черты (`\`) в этом примере экранирован, чтобы сохранить TOML счастливым.
 
-## Configure Front Matter
+## Настройка переднего плана
 
-### Configure Dates
+### Настройка даты
 
-Dates are important in Hugo, and you can configure how Hugo assigns dates to your content pages. You do this by adding a `frontmatter` section to your `config.toml`.
+Даты важны в Hugo, и Вы можете настроить, как Hugo назначает даты Вашим информационным страницам. Вы делаете это, добавляя раздел `frontmatter` в Ваш `config.toml`.
 
-
-The default configuration is:
+Конфигурация по умолчанию:
 
 ```toml
 [frontmatter]
@@ -471,65 +466,61 @@ publishDate = ["publishDate", "date"]
 expiryDate = ["expiryDate"]
 ```
 
-If you, as an example, have a non-standard date parameter in some of your content, you can override the setting for `date`:
+Если у Вас, например, есть нестандартный параметр даты в каком-либо из Ваших материалов, Вы можете переопределить настройку для `date`:
 
  ```toml
 [frontmatter]
 date = ["myDate", ":default"]
 ```
 
-The `:default` is a shortcut to the default settings. The above will set `.Date` to the date value in `myDate` if present, if not we will look in `date`,`publishDate`, `lastmod` and pick the first valid date.
+`:default` - это ярлык для настроек по умолчанию. Вышеупомянутое установит `.Date` в значение даты в `myDate`, если оно присутствует, в противном случае мы посмотрим на `date`,`publishDate`, `lastmod` и выберем первую действительную дату.
 
-In the list to the right, values starting with ":" are date handlers with a special meaning (see below). The others are just names of date parameters (case insensitive) in your front matter configuration.  Also note that Hugo have some built-in aliases to the above: `lastmod` => `modified`, `publishDate` => `pubdate`, `published` and `expiryDate` => `unpublishdate`. With that, as an example, using `pubDate` as a date in front matter, will, by default, be assigned to `.PublishDate`.
+В списке справа значения, начинающиеся с ":", являются обработчиками дат со специальным значением (см. ниже). Остальные - это просто имена параметров даты (без учета регистра) в Вашей конфигурации. Также обратите внимание, что у Hugo есть несколько встроенных псевдонимов для вышеуказанного: `lastmod` => `modified`, `publishDate` => `pubdate`, `published` и `expiryDate` => `unpublishdate`. При этом, в качестве примера, использование `pubDate` в качестве даты перед публикацией по умолчанию будет присвоено `.PublishDate`.
 
-The special date handlers are:
-
+К специальным обработчикам дат относятся:
 
 `:fileModTime`
-: Fetches the date from the content file's last modification timestamp.
+: Получает дату из метки времени последнего изменения файла содержимого.
 
-An example:
+Пример:
 
  ```toml
 [frontmatter]
 lastmod = ["lastmod", ":fileModTime", ":default"]
 ```
 
-
-The above will try first to extract the value for `.Lastmod` starting with the `lastmod` front matter parameter, then the content file's modification timestamp. The last, `:default` should not be needed here, but Hugo will finally look for a valid date in `:git`, `date` and then `publishDate`.
-
+Вышеупомянутое сначала попытается извлечь значение для `.Lastmod` , начиная с переднего параметра `lastmod`, а затем отметку времени модификации файла содержимого. Последний, `:default`, здесь не нужен, но Хьюго наконец будет искать действительную дату в `:git`, `date`, а затем в `publishDate`.
 
 `:filename`
-: Fetches the date from the content file's filename. For example, `2018-02-22-mypage.md` will extract the date `2018-02-22`. Also, if `slug` is not set, `mypage` will be used as the value for `.Slug`.
+: Получает дату из имени файла файла содержимого. Например, `2018-02-22-mypage.md` извлечет дату `2018-02-22`. Кроме того, если `slug` не установлен, `mypage` будет использоваться как значение для `.Slug`.
 
-An example:
+Пример:
 
 ```toml
 [frontmatter]
 date  = [":filename", ":default"]
 ```
 
-The above will try first to extract the value for `.Date` from the filename, then it will look in front matter parameters `date`, `publishDate` and lastly `lastmod`.
-
+Вышеупомянутое сначала попытается извлечь значение для `.Date` из имени файла, затем оно будет смотреть в параметрах `date`, `publishDate` и, наконец, `lastmod`.
 
 `:git`
-: This is the Git author date for the last revision of this content file. This will only be set if `--enableGitInfo` is set or `enableGitInfo = true` is set in site config.
+: Это дата создания Git последней редакции этого файла содержимого. Это будет установлено, только если установлен параметр `--enableGitInfo` или `enableGitInfo = true` в конфигурации сайта.
 
-## Configure Additional Output Formats
+## Настройка дополнительных форматов вывода
 
-Hugo v0.20 introduced the ability to render your content to multiple output formats (e.g., to JSON, AMP html, or CSV). See [Output Formats][] for information on how to add these values to your Hugo project's configuration file.
+В Hugo v0.20 появилась возможность отображать Ваш контент в нескольких форматах вывода (например, в JSON, AMP html или CSV). Смотрите [Форматы вывода][Output Formats] для получения информации о том, как добавить эти значения в файл конфигурации Вашего проекта Hugo.
 
-## Configure Minify
+## Настройка Minify
 
 {{< new-in "0.68.0" >}}
 
-Default configuration:
+Конфигурация по умолчанию:
 
 {{< code-toggle config="minify" />}}
 
-## Configure File Caches
+## Настройка кеши файлов
 
-Since Hugo 0.52 you can configure more than just the `cacheDir`. This is the default configuration:
+Начиная с Hugo 0.52 Вы можете настраивать не только `cacheDir`. Это конфигурация по умолчанию:
 
 {{< code-toggle >}}
 [caches]
@@ -550,30 +541,30 @@ dir = ":cacheDir/modules"
 maxAge = -1
 {{< /code-toggle >}}
 
-You can override any of these cache settings in your own `config.toml`.
+Вы можете переопределить любую из этих настроек кеша в Вашем собственном файле `config.toml`.
 
-### The keywords explained
+### Объяснение ключевых слов
 
 `:cacheDir`
-: This is the value of the `cacheDir` config option if set (can also be set via OS env variable `HUGO_CACHEDIR`). It will fall back to `/opt/build/cache/hugo_cache/` on Netlify, or a `hugo_cache` directory below the OS temp dir for the others. This means that if you run your builds on Netlify, all caches configured with `:cacheDir` will be saved and restored on the next build. For other CI vendors, please read their documentation. For an CircleCI example, see [this configuration](https://github.com/bep/hugo-sass-test/blob/6c3960a8f4b90e8938228688bc49bdcdd6b2d99e/.circleci/config.yml).
+: Это значение параметра конфигурации `cacheDir`, если оно установлено (также может быть установлено через переменную env ОС `HUGO_CACHEDIR`). Он вернется к `/opt/build/cache/hugo_cache/` на Netlify или к каталогу `hugo_cache` ниже временного каталога ОС для остальных. Это означает, что если Вы запустите свои сборки на Netlify, все кеши, настроенные с помощью `:cacheDir`, будут сохранены и восстановлены при следующей сборке. Для других поставщиков CI, пожалуйста, прочтите их документацию. Смотрите пример CircleCI [этой конфигурации](https://github.com/bep/hugo-sass-test/blob/6c3960a8f4b90e8938228688bc49bdcdd6b2d99e/.circleci/config.yml).
 
 `:project`
-: The base directory name of the current Hugo project. This means that, in its default setting, every project will have separated file caches, which means that when you do `hugo --gc` you will not touch files related to other Hugo projects running on the same PC.
+: Имя базового каталога текущего проекта Hugo. Это означает, что в настройках по умолчанию каждый проект будет иметь отдельные кеши файлов, а это значит, что когда Вы выполняете `hugo --gc`, Вы не будете касаться файлов, связанных с другими проектами Hugo, запущенными на том же ПК.
 
 `:resourceDir`
-: This is the value of the `resourceDir` config option.
+: Это значение параметра конфигурации `resourceDir`.
 
 maxAge
-: This is the duration before a cache entry will be evicted, -1 means forever and 0 effectively turns that particular cache off. Uses Go's `time.Duration`, so valid values are `"10s"` (10 seconds), `"10m"` (10 minutes) and `"10h"` (10 hours).
+: Это время до того, как запись в кэше будет удалена, -1 означает навсегда, а 0 эффективно отключает этот конкретный кеш. Использует Go `time.Duration`, поэтому допустимые значения: `"10s"` (10 секунд), `"10m"` (10 минут) и `"10h"` (10 часов).
 
 dir
-: The absolute path to where the files for this cache will be stored. Allowed starting placeholders are `:cacheDir` and `:resourceDir` (see above).
+: Абсолютный путь к месту хранения файлов этого кеша. Допустимые начальные заполнители: `:cacheDir` и `:resourceDir` (смотрите выше).
 
-## Configuration Format Specs
+## Спецификации формата конфигурации
 
-* [TOML Spec][toml]
-* [YAML Spec][yaml]
-* [JSON Spec][json]
+* [Спецификация формата TOML][toml]
+* [Спецификация формата YAML][yaml]
+* [Спецификация формата JSON][json]
 
 [`.Site.Params`]: /variables/site/
 [directory structure]: /getting-started/directory-structure
