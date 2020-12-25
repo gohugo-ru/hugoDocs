@@ -75,12 +75,13 @@ Define the Base Template The following defines a simple base template at _defau
     </item>
     
     <item>
-      <title>Code Toggle</title>
+      <title>Переключение кода</title>
       <link>https://gohugo.ru/getting-started/code-toggle/</link>
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/code-toggle/</guid>
-      <description>The Config Toggler! This is an example for the Config Toggle shortcode. Its purpose is to let users choose a Config language by clicking on its corresponding tab. Upon doing so, every Code toggler on the page will be switched to the target language. Also, target language will be saved in user&amp;rsquo;s localStorage so when they go to a different pages, Code Toggler display their last &amp;ldquo;toggled&amp;rdquo; config language.</description>
+      <description>Конфигурация переключателя Это пример шорткода переключателя конфигурации. Его цель - позволить пользователям выбрать язык конфигурации, щелкнув соответствующую вкладку. После этого каждый переключатель кода на странице будет переключен на целевой язык. Кроме того, целевой язык будет сохранен в localStorage пользователя, поэтому, когда они переходят на другие страницы, переключатель кода отображает их последний «переключенный» язык конфигурации.
+Шорткод code-toggler не является внутренним шорткодом Hugo. Цель этой страницы - протестировать настраиваемую функцию, которую мы используем на этом сайте.</description>
     </item>
     
     <item>
@@ -97,13 +98,13 @@ hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlНескол
     </item>
     
     <item>
-      <title>Configure Markup</title>
+      <title>Конфигурация разметки</title>
       <link>https://gohugo.ru/getting-started/configuration-markup/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/configuration-markup/</guid>
-      <description>Configure Markup Новое в v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
-Below are all markup related configuration in Hugo with their default settings:
+      <description>Конфигурация разметки Новое в v0.60.0 Смотрите Goldmark для настроек, связанных с обработчиком Markdown по умолчанию в Hugo.
+Ниже приведены все конфигурации, связанные с разметкой в Hugo, с настройками по умолчанию:
 config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attributes:{}backend:html5extensions:[]failureLevel:fatalnoHeaderOrFooter:truepreserveTOC:falsesafeMode:unsafesectionNumbers:falsetrace:falseverbose:falseworkingFolderCurrent:falseblackFriday:angledQuotes:falseextensions:nullextensionsMask:nullfootnoteAnchorPrefix:&amp;#34;&amp;#34;footnoteReturnLinkContents:&amp;#34;&amp;#34;fractions:truehrefTargetBlank:falselatexDashes:truenofollowLinks:falsenoreferrerLinks:falseplainIDAnchors:trueskipHTML:falsesmartDashes:truesmartypants:truesmartypantsQuotesNBSP:falsetaskLists:truedefaultMarkdownHandler:goldmarkgoldmark:extensions:definitionList:truefootnote:truelinkify:truestrikethrough:truetable:truetaskList:truetypographer:trueparser:attribute:trueautoHeadingID:trueautoHeadingIDType:githubrenderer:hardWraps:falseunsafe:falsexhtml:falsehighlight:anchorLineNos:falsecodeFences:trueguessSyntax:falsehl_Lines:&amp;#34;&amp;#34;lineAnchors:&amp;#34;&amp;#34;lineNoStart:1lineNos:falselineNumbersInTable:truenoClasses:truestyle:monokaitabWidth:4tableOfContents:endLevel:3ordered:falsestartLevel:2[markup] defaultMarkdownHandler = &amp;#34;goldmark&amp;#34; [markup.asciidocExt] backend = &amp;#34;html5&amp;#34; extensions = [] failureLevel = &amp;#34;fatal&amp;#34; noHeaderOrFooter = true preserveTOC = false safeMode = &amp;#34;unsafe&amp;#34; sectionNumbers = false trace = false verbose = false workingFolderCurrent = false [markup.</description>
     </item>
     
