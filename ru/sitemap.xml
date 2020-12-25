@@ -88,21 +88,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/hugo-modules/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/hugo-modules/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/hugo-modules/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/templates/</loc>
     <lastmod>2020-12-24T11:02:26+03:00</lastmod>
     <xhtml:link
@@ -169,6 +154,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/hugo-modules/</loc>
+    <lastmod>2020-12-25T14:04:55+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/hugo-modules/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/hugo-modules/"
                 />
   </url>
   
@@ -324,7 +324,7 @@
   
   <url>
     <loc>https://gohugo.ru/hugo-modules/configuration/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T14:04:55+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -534,7 +534,7 @@
   
   <url>
     <loc>https://gohugo.ru/hugo-modules/use-modules/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T14:04:55+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1094,7 +1094,7 @@
   
   <url>
     <loc>https://gohugo.ru/hugo-modules/theme-components/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T14:04:55+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1784,7 +1784,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/</loc>
-    <lastmod>2020-12-25T12:01:47+03:00</lastmod>
+    <lastmod>2020-12-25T14:04:55+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -3584,7 +3584,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/hugo-modules/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T14:04:55+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

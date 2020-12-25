@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Theme Components | Hugo</title>
+  <title>Компоненты темы | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Theme Components" />
-<meta property="og:description" content="Hugo provides advanced theming support with Theme Components." />
+<meta property="og:title" content="Компоненты темы" />
+<meta property="og:description" content="Hugo обеспечивает расширенную поддержку тем с помощью компонентов темы." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/hugo-modules/theme-components/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Theme Components">
-<meta itemprop="description" content="Hugo provides advanced theming support with Theme Components.">
+<meta property="article:modified_time" content="2020-12-25T14:04:55+03:00" />
+<meta itemprop="name" content="Компоненты темы">
+<meta itemprop="description" content="Hugo обеспечивает расширенную поддержку тем с помощью компонентов темы.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="320">
+<meta itemprop="dateModified" content="2020-12-25T14:04:55+03:00" />
+<meta itemprop="wordCount" content="299">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Theme Components"/>
-<meta name="twitter:description" content="Hugo provides advanced theming support with Theme Components."/>
+<meta name="twitter:title" content="Компоненты темы"/>
+<meta name="twitter:description" content="Hugo обеспечивает расширенную поддержку тем с помощью компонентов темы."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -241,7 +241,7 @@
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/hugo-modules/use-modules/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Use Hugo Modules ">
+			<a href="https://gohugo.ru/hugo-modules/use-modules/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Использование модулей Hugo ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -268,13 +268,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Theme Components</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Компоненты темы</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Hugo provides advanced theming support with Theme Components.
+      Hugo обеспечивает расширенную поддержку тем с помощью компонентов темы.
     </div>
   
 
@@ -292,11 +292,11 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>This section contain information that may be outdated and is in the process of being rewritten.</p>
+	<div class="admonition-content"><p>В этом разделе содержится информация, которая может быть устаревшей и находится в процессе перезаписи.</p>
 </div>
 </aside>
 
-Since Hugo <code>0.42</code> a project can configure a theme as a composite of as many theme components you need:</p>
+Начиная с Hugo <code>0.42</code>, проект может сконфигурировать тему как композицию из любого количества необходимых вам компонентов:</p>
 
 
 
@@ -357,27 +357,27 @@ Since Hugo <code>0.42</code> a project can configure a theme as a composite of a
 
 </div>
 
-<p>You can even nest this, and have the theme component itself include theme components in its own <code>config.toml</code> (theme inheritance).<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p>The theme definition example above in <code>config.toml</code> creates a theme with 3 theme components with precedence from left to right.</p>
-<p>For any given file, data entry, etc., Hugo will look first in the project and then in <code>my-shortcode</code>, <code>base-theme</code>, and lastly <code>hyde</code>.</p>
-<p>Hugo uses two different algorithms to merge the filesystems, depending on the file type:</p>
+<p>Вы даже можете вложить это, и чтобы сам компонент темы включал компоненты темы в свой собственный файл <code>config.toml</code> (наследование темы).<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>В приведенном выше примере определения темы в <code>config.toml</code> создается тема с 3 компонентами темы с приоритетом слева направо.</p>
+<p>Для любого заданного файла, ввода данных и т.д., Хьюго сначала будет искать в проекте, а затем в <code>my-shortcode</code>, <code>base-theme</code> и, наконец, в <code>hyde</code>.</p>
+<p>Hugo использует два разных алгоритма для объединения файловых систем в зависимости от типа файла:</p>
 <ul>
-<li>For <code>i18n</code> and <code>data</code> files, Hugo merges deeply using the translation id and data key inside the files.</li>
-<li>For <code>static</code>, <code>layouts</code> (templates), and <code>archetypes</code> files, these are merged on file level. So the left-most file will be chosen.</li>
+<li>Для файлов <code>i18n</code> и <code>data</code> Hugo выполняет глубокое слияние, используя идентификатор перевода и ключ данных внутри файлов.</li>
+<li>Для файлов <code>static</code>, <code>layouts</code> (шаблоны) и <code>archetypes</code> они объединяются на уровне файла. Таким образом, будет выбран самый левый файл.</li>
 </ul>
-<p>The name used in the <code>theme</code> definition above must match a folder in <code>/your-site/themes</code>, e.g. <code>/your-site/themes/my-shortcodes</code>. There are plans to improve on this and get a URL scheme so this can be resolved automatically.</p>
-<p>Also note that a component that is part of a theme can have its own configuration file, e.g. <code>config.toml</code>. There are currently some restrictions to what a theme component can configure:</p>
+<p>Имя, используемое в определении темы <code>theme</code> выше, должно соответствовать папке в <code>/your-site/themes</code>, например: <code>/your-site/themes/my-shortcodes</code>. Есть планы улучшить это и получить схему URL, чтобы это можно было разрешить автоматически.</p>
+<p>Также обратите внимание, что компонент, являющийся частью темы, может иметь собственный файл конфигурации, например <code>config.toml</code>. В настоящее время существуют некоторые ограничения на то, что компонент темы может настраивать:</p>
 <ul>
-<li><code>params</code> (global and per language)</li>
-<li><code>menu</code> (global and per language)</li>
-<li><code>outputformats</code> and <code>mediatypes</code></li>
+<li><code>params</code> (глобальный и для каждого языка)</li>
+<li><code>menu</code> (глобальный и для каждого языка)</li>
+<li><code>outputformats</code> и <code>mediatypes</code></li>
 </ul>
-<p>The same rules apply here: The left-most param/menu etc. with the same ID will win. There are some hidden and experimental namespace support in the above, which we will work to improve in the future, but theme authors are encouraged to create their own namespaces to avoid naming conflicts.</p>
+<p>Здесь применяются те же правила: самый левый параметр/меню и т.д. С тем же идентификатором побеждает. В приведенном выше описании есть некоторая поддержка скрытых и экспериментальных пространств имен, над которой мы будем работать в будущем, но авторам тем рекомендуется создавать свои собственные пространства имен, чтобы избежать конфликтов имен.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>For themes hosted on the <a href="https://themes.gohugo.io/">Hugo Themes Showcase</a> components need to be added as git submodules that point to the directory <code>exampleSite/themes</code> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Для тем, размещенных на <a href="https://themes.gohugo.io/">Витрине тем хьюго</a>, необходимо добавить компоненты как подмодули git, которые указывают на каталог <code>exampleSite/themes</code> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -389,9 +389,9 @@ Since Hugo <code>0.42</code> a project can configure a theme as a composite of a
 <h2>Смотрите также</h2>
 <ul>
 	
-	<li><a href="/hugo-modules/configuration/">Configure Modules</a></li>
+	<li><a href="/hugo-modules/use-modules/">Использование модулей Hugo</a></li>
 	
-	<li><a href="/hugo-modules/use-modules/">Use Hugo Modules</a></li>
+	<li><a href="/hugo-modules/configuration/">Настройка модулей</a></li>
 	
 	<li><a href="/getting-started/directory-structure/">Структура каталогов</a></li>
 	
@@ -496,22 +496,22 @@ Since Hugo <code>0.42</code> a project can configure a theme as a composite of a
         <ul class="modules desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/hugo-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Modules Overview
+              Обзор модулей Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Configure Modules
+              Настройка модулей
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Use Hugo Modules
+              Использование модулей Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Theme Components
+              Компоненты темы
             </a>
           </li>
         </ul>
@@ -1722,8 +1722,8 @@ Since Hugo <code>0.42</code> a project can configure a theme as a composite of a
   <a href="https://gohugo.ru/hugo-modules/theme-components/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Theme Components”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Компоненты темы”
+  </a> последнее обновление: December 25, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/6544b840d29b9d1c89eab7414230eef9d3b41774">Перевод hugo-modules (6544b840d)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/hugo-modules%5ctheme-components.md" class="

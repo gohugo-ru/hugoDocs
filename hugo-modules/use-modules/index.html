@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Use Hugo Modules | Hugo</title>
+  <title>Использование модулей Hugo | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Use Hugo Modules" />
-<meta property="og:description" content="How to use Hugo Modules to build and manage your site." />
+<meta property="og:title" content="Использование модулей Hugo" />
+<meta property="og:description" content="Как использовать модули Hugo для создания и управления Вашим сайтом." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/hugo-modules/use-modules/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2019-07-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Use Hugo Modules">
-<meta itemprop="description" content="How to use Hugo Modules to build and manage your site.">
+<meta property="article:modified_time" content="2020-12-25T14:04:55+03:00" />
+<meta itemprop="name" content="Использование модулей Hugo">
+<meta itemprop="description" content="Как использовать модули Hugo для создания и управления Вашим сайтом.">
 <meta itemprop="datePublished" content="2019-07-24T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="486">
+<meta itemprop="dateModified" content="2020-12-25T14:04:55+03:00" />
+<meta itemprop="wordCount" content="445">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Use Hugo Modules"/>
-<meta name="twitter:description" content="How to use Hugo Modules to build and manage your site."/>
+<meta name="twitter:title" content="Использование модулей Hugo"/>
+<meta name="twitter:description" content="Как использовать модули Hugo для создания и управления Вашим сайтом."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,29 +238,29 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisite">Prerequisite</a></li>
-    <li><a href="#initialize-a-new-module">Initialize a New Module</a></li>
-    <li><a href="#use-a-module-for-a-theme">Use a Module for a Theme</a></li>
-    <li><a href="#update-modules">Update Modules</a>
+    <li><a href="#предпосылка">Предпосылка</a></li>
+    <li><a href="#инициализация-нового-модуля">Инициализация нового модуля</a></li>
+    <li><a href="#использование-модуля-для-темы">Использование модуля для темы</a></li>
+    <li><a href="#обновление-модулей">Обновление модулей</a>
       <ul>
-        <li><a href="#update-all-modules">Update All Modules</a></li>
-        <li><a href="#update-all-modules-recursively">Update All Modules Recursively</a></li>
-        <li><a href="#update-one-module">Update One Module</a></li>
-        <li><a href="#get-a-specific-version">Get a Specific Version</a></li>
+        <li><a href="#обновление-всех-модулей">Обновление всех модулей</a></li>
+        <li><a href="#рекурсивное-обновление-всех-модулей">Рекурсивное обновление всех модулей</a></li>
+        <li><a href="#обновление-одного-модуля">Обновление одного модуля</a></li>
+        <li><a href="#получить-конкретную-версию">Получить конкретную версию</a></li>
       </ul>
     </li>
-    <li><a href="#make-and-test-changes-in-a-module">Make and test changes in a module</a></li>
-    <li><a href="#print-dependency-graph">Print Dependency Graph</a></li>
-    <li><a href="#vendor-your-modules">Vendor Your Modules</a></li>
-    <li><a href="#tidy-gomod-gosum">Tidy go.mod, go.sum</a></li>
-    <li><a href="#clean-module-cache">Clean Module Cache</a></li>
+    <li><a href="#внесите-и-протестируйте-изменения-в-модуле">Внесите и протестируйте изменения в модуле</a></li>
+    <li><a href="#печать-графика-зависимостей">Печать графика зависимостей</a></li>
+    <li><a href="#поставщик-ваших-модулей">Поставщик Ваших модулей</a></li>
+    <li><a href="#приведение-в-порядок-gomod-gosum">Приведение в порядок go.mod, go.sum</a></li>
+    <li><a href="#очистка-кеша-модуля">Очистка кеша модуля</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/hugo-modules/configuration/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Configure Modules ">
+			<a href="https://gohugo.ru/hugo-modules/configuration/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Настройка модулей ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -270,7 +270,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/hugo-modules/theme-components/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Theme Components">
+			<a href="https://gohugo.ru/hugo-modules/theme-components/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Компоненты темы">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -295,13 +295,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Use Hugo Modules</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Использование модулей Hugo</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      How to use Hugo Modules to build and manage your site.
+      Как использовать модули Hugo для создания и управления Вашим сайтом.
     </div>
   
 
@@ -312,15 +312,15 @@
 
 <div class="prose" id="prose">
 
-<h2 id="prerequisite">Prerequisite <a class="header-link" href="#prerequisite"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="предпосылка">Предпосылка <a class="header-link" href="#%d0%bf%d1%80%d0%b5%d0%b4%d0%bf%d0%be%d1%81%d1%8b%d0%bb%d0%ba%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 
 <aside class="admonition note">
 	<div class="note-icon">
 		
 	</div>
-	<div class="admonition-content"><p>Most of the commands for <strong>Hugo Modules</strong> requires a newer version of Go installed (see <a href="https://golang.org/dl/">https://golang.org/dl/</a>) and the relevant VCS client (e.g. Git, see <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). If you have an &ldquo;older&rdquo; site running on Netlify, you may have to set GO_VERSION to 1.12 in your Environment settings.</p>
-<p>For more information about Go Modules, see:</p>
+	<div class="admonition-content"><p>Большинство команд для <strong>Модулей Хьюго</strong> требует установки более новой версии Go (смотрите <a href="https://golang.org/dl/">https://golang.org/dl/</a>) и соответствующего VCS клиента (например, Git, смотрите <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). Если у Вас есть «более старый» сайт, работающий на Netlify, Вам, возможно, придется установить GO_VERSION на 1.12 в настройках среды.</p>
+<p>Для получения дополнительной информации о модулях Go, смотрите:</p>
 <ul>
 <li><a href="https://github.com/golang/go/wiki/Modules">https://github.com/golang/go/wiki/Modules</a></li>
 <li><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></li>
@@ -328,26 +328,26 @@
 </div>
 </aside>
 
-<h2 id="initialize-a-new-module">Initialize a New Module <a class="header-link" href="#initialize-a-new-module"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Use <code>hugo mod init</code> to initialize a new Hugo Module. If it fails to guess the module path, you must provide it as an argument, e.g.:</p>
+<h2 id="инициализация-нового-модуля">Инициализация нового модуля <a class="header-link" href="#%d0%b8%d0%bd%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d0%bd%d0%be%d0%b2%d0%be%d0%b3%d0%be-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Используйте <code>hugo mod init</code> для инициализации нового модуля Hugo. Если не удается угадать путь к модулю, Вы должны указать его в качестве аргумента, например:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod init github.com/gohugoio/myShortcodes
-</code></pre></div><p>Also see the <a href="/commands/hugo_mod_init/">CLI Doc</a>.</p>
-<h2 id="use-a-module-for-a-theme">Use a Module for a Theme <a class="header-link" href="#use-a-module-for-a-theme"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The easiest way to use a Module for a theme is to import it in the config.</p>
+</code></pre></div><p>Также смотрите <a href="/commands/hugo_mod_init/">CLI документацию</a>.</p>
+<h2 id="использование-модуля-для-темы">Использование модуля для темы <a class="header-link" href="#%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f-%d0%b4%d0%bb%d1%8f-%d1%82%d0%b5%d0%bc%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Самый простой способ использовать модуль для темы - это импортировать его в <code>config</code>.</p>
 <ol>
-<li>Initialize the hugo module system: <code>hugo mod init github.com/&lt;your_user&gt;/&lt;your_project&gt;</code></li>
-<li>Import the theme in your <code>config.toml</code>:</li>
+<li>Инициализируйте систему модулей hugo: <code>hugo mod init github.com/&lt;your_user&gt;/&lt;your_project&gt;</code></li>
+<li>Импортируйте тему в Ваш <code>config.toml</code>:</li>
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
   <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">imports</span><span class="p">]]</span>
     <span class="nx">path</span> <span class="p">=</span> <span class="s2">&#34;github.com/spf13/hyde&#34;</span>
-</code></pre></div><h2 id="update-modules">Update Modules <a class="header-link" href="#update-modules"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Modules will be downloaded and added when you add them as imports to your configuration, see <a href="/hugo-modules/configuration/#module-config-imports">Module Imports</a>.</p>
-<p>To update or manage versions, you can use <code>hugo mod get</code>.</p>
-<p>Some examples:</p>
-<h3 id="update-all-modules">Update All Modules <a class="header-link" href="#update-all-modules"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+</code></pre></div><h2 id="обновление-модулей">Обновление модулей <a class="header-link" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d0%b5%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Модули будут загружены и добавлены, когда Вы добавите их в качестве импорта в Вашу конфигурацию, смотрите <a href="/hugo-modules/configuration/#module-config-imports">импорт модулей</a>.</p>
+<p>Для обновления или управления версиями Вы можете использовать <code>hugo mod get</code>.</p>
+<p>Несколько примеров:</p>
+<h3 id="обновление-всех-модулей">Обновление всех модулей <a class="header-link" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b2%d1%81%d0%b5%d1%85-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d0%b5%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u
-</code></pre></div><h3 id="update-all-modules-recursively">Update All Modules Recursively <a class="header-link" href="#update-all-modules-recursively"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+</code></pre></div><h3 id="рекурсивное-обновление-всех-модулей">Рекурсивное обновление всех модулей <a class="header-link" href="#%d1%80%d0%b5%d0%ba%d1%83%d1%80%d1%81%d0%b8%d0%b2%d0%bd%d0%be%d0%b5-%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b2%d1%81%d0%b5%d1%85-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d0%b5%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 
 
 
@@ -355,24 +355,24 @@
     <a href="https://gohugo.ru/news/0.65.0-relnotes/" target="_blank">Новое в v0.65.0</a>
 </button>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u ./...
-</code></pre></div><h3 id="update-one-module">Update One Module <a class="header-link" href="#update-one-module"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+</code></pre></div><h3 id="обновление-одного-модуля">Обновление одного модуля <a class="header-link" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%be%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u github.com/gohugoio/myShortcodes
-</code></pre></div><h3 id="get-a-specific-version">Get a Specific Version <a class="header-link" href="#get-a-specific-version"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+</code></pre></div><h3 id="получить-конкретную-версию">Получить конкретную версию <a class="header-link" href="#%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bd%d0%ba%d1%80%d0%b5%d1%82%d0%bd%d1%83%d1%8e-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d1%8e"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get github.com/gohugoio/myShortcodes@v1.0.7
-</code></pre></div><p>Also see the <a href="/commands/hugo_mod_get/">CLI Doc</a>.</p>
-<h2 id="make-and-test-changes-in-a-module">Make and test changes in a module <a class="header-link" href="#make-and-test-changes-in-a-module"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>One way to do local development of a module imported in a project is to add a replace directive to a local directory with the source in <code>go.mod</code>:</p>
+</code></pre></div><p>Также смотрите <a href="/commands/hugo_mod_get/">CLI документацию</a>.</p>
+<h2 id="внесите-и-протестируйте-изменения-в-модуле">Внесите и протестируйте изменения в модуле <a class="header-link" href="#%d0%b2%d0%bd%d0%b5%d1%81%d0%b8%d1%82%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d1%82%d0%b5%d1%81%d1%82%d0%b8%d1%80%d1%83%d0%b9%d1%82%d0%b5-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f-%d0%b2-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d0%b5"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Один из способов выполнить локальную разработку модуля, импортированного в проект, - это добавить директиву replace в локальный каталог с источником в <code>go.mod</code>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">replace github.com/bep/hugotestmods/mypartials <span class="o">=</span>&gt; /Users/bep/hugotestmods/mypartials
-</code></pre></div><p>If you have the <code>hugo server</code> running, the configuration will be reloaded and <code>/Users/bep/hugotestmods/mypartials</code> put on the watch list.</p>
-<p>Note that since v.0.77.0 you can use modules config <a href="https://gohugo.io/hugo-modules/configuration/#module-config-top-level"><code>replacements</code></a> option. 
+</code></pre></div><p>Если у вас запущен <code>hugo server</code>, конфигурация будет перезагружена и <code>/Users/bep/hugotestmods/mypartials</code> будет помещен в список наблюдения.</p>
+<p>Обратите внимание, что начиная с версии v.0.77.0 Вы можете использовать параметр конфигурации модулей <a href="https://gohugo.io/hugo-modules/configuration/#module-config-top-level"><code>replacements</code></a>. 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.77.0-relnotes/" target="_blank">Новое в v0.77.0</a>
 </button></p>
-<h2 id="print-dependency-graph">Print Dependency Graph <a class="header-link" href="#print-dependency-graph"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Use <code>hugo mod graph</code> from the relevant module directory and it will print the dependency graph, including vendoring, module replacement or disabled status.</p>
-<p>E.g.:</p>
+<h2 id="печать-графика-зависимостей">Печать графика зависимостей <a class="header-link" href="#%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d1%8c-%d0%b3%d1%80%d0%b0%d1%84%d0%b8%d0%ba%d0%b0-%d0%b7%d0%b0%d0%b2%d0%b8%d1%81%d0%b8%d0%bc%d0%be%d1%81%d1%82%d0%b5%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Используйте <code>hugo mod graph</code> из соответствующего каталога модуля, и он распечатает граф зависимостей, включая вендор, замену модуля или отключенный статус.</p>
+<p>Например:</p>
 <pre><code>hugo mod graph
 
 github.com/bep/my-modular-site github.com/bep/hugotestmods/mymounts@v1.2.0
@@ -382,29 +382,28 @@ github.com/bep/hugotestmods/mypartials@v1.0.7 github.com/bep/hugotestmods/myv2@v
 DISABLED github.com/bep/my-modular-site github.com/spf13/hyde@v0.0.0-20190427180251-e36f5799b396
 github.com/bep/my-modular-site github.com/bep/hugo-fresh@v1.0.1
 github.com/bep/my-modular-site in-themesdir
-
-</code></pre><p>Also see the <a href="/commands/hugo_mod_graph/">CLI Doc</a>.</p>
-<h2 id="vendor-your-modules">Vendor Your Modules <a class="header-link" href="#vendor-your-modules"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p><code>hugo mod vendor</code> will write all the module dependencies to a <code>_vendor</code> folder, which will then be used for all subsequent builds.</p>
-<p>Note that:</p>
+</code></pre><p>Также смотрите <a href="/commands/hugo_mod_graph/">CLI документацию</a>.</p>
+<h2 id="поставщик-ваших-модулей">Поставщик Ваших модулей <a class="header-link" href="#%d0%bf%d0%be%d1%81%d1%82%d0%b0%d0%b2%d1%89%d0%b8%d0%ba-%d0%b2%d0%b0%d1%88%d0%b8%d1%85-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d0%b5%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p><code>hugo mod vendor</code> запишет все зависимости модуля в папку <code>_vendor</code>, которая затем будет использоваться для всех последующих сборок.</p>
+<p>Обратите внимание, что:</p>
 <ul>
-<li>You can run <code>hugo mod vendor</code> on any level in the module tree.</li>
-<li>Vendoring will not store modules stored in your <code>themes</code> folder.</li>
-<li>Most commands accept a <code>--ignoreVendorPaths</code> flag, which will then not use the vendored modules in <code>_vendor</code> for the module paths matching the <a href="https://github.com/gobwas/glob">Glob</a> pattern given. Note that before Hugo 0.75 this flag was named <code>--ignoreVendor</code> and was a &ldquo;all or nothing&rdquo;. 
+<li>Вы можете запустить <code>hugo mod vendor</code> на любом уровне в дереве модулей.</li>
+<li>Вендоринг не будет хранить модули, хранящиеся в папке <code>themes</code>.</li>
+<li>Большинство команд принимают флаг <code>--ignoreVendorPaths</code>, который затем не будет использовать поставленные модули в <code>_vendor</code> для путей модулей, соответствующих заданному шаблону <a href="https://github.com/gobwas/glob">Glob</a>. Обратите внимание, что до Hugo 0.75 этот флаг назывался <code>--ignoreVendor</code> и был «все или ничего». 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.75.0-relnotes/" target="_blank">Новое в v0.75.0</a>
 </button></li>
 </ul>
-<p>Also see the <a href="/commands/hugo_mod_vendor/">CLI Doc</a>.</p>
-<h2 id="tidy-gomod-gosum">Tidy go.mod, go.sum <a class="header-link" href="#tidy-gomod-gosum"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Run <code>hugo mod tidy</code> to remove unused entries in <code>go.mod</code> and <code>go.sum</code>.</p>
-<p>Also see the <a href="/commands/hugo_mod_clean/">CLI Doc</a>.</p>
-<h2 id="clean-module-cache">Clean Module Cache <a class="header-link" href="#clean-module-cache"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Run <code>hugo mod clean</code> to delete the entire modules cache.</p>
-<p>Note that you can also configure the <code>modules</code> cache with a <code>maxAge</code>, see <a href="/hugo-modules/configuration/#configure-file-caches">File Caches</a>.</p>
-<p>Also see the <a href="/commands/hugo_mod_clean/">CLI Doc</a>.</p>
+<p>Также смотрите <a href="/commands/hugo_mod_vendor/">CLI документацию</a>.</p>
+<h2 id="приведение-в-порядок-gomod-gosum">Приведение в порядок go.mod, go.sum <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b2-%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%be%d0%ba-gomod-gosum"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Запустите <code>hugo mod tidy</code>, чтобы удалить неиспользуемые записи в <code>go.mod</code> и <code>go.sum</code>.</p>
+<p>Также смотрите <a href="/commands/hugo_mod_clean/">CLI документацию</a>.</p>
+<h2 id="очистка-кеша-модуля">Очистка кеша модуля <a class="header-link" href="#%d0%be%d1%87%d0%b8%d1%81%d1%82%d0%ba%d0%b0-%d0%ba%d0%b5%d1%88%d0%b0-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Запустите <code>hugo mod clean</code>, чтобы удалить весь кеш модулей.</p>
+<p>Обратите внимание, что вы также можете настроить кеш <code>modules</code> с помощью <code>maxAge</code>, смотрите <a href="/hugo-modules/configuration/#configure-file-caches">кеш файлов</a>.</p>
+<p>Также смотрите <a href="/commands/hugo_mod_clean/">CLI документацию</a>.</p>
 
 </div>
 
@@ -413,9 +412,9 @@ github.com/bep/my-modular-site in-themesdir
 <h2>Смотрите также</h2>
 <ul>
 	
-	<li><a href="/hugo-modules/configuration/">Configure Modules</a></li>
+	<li><a href="/hugo-modules/configuration/">Настройка модулей</a></li>
 	
-	<li><a href="/hugo-modules/theme-components/">Theme Components</a></li>
+	<li><a href="/hugo-modules/theme-components/">Компоненты темы</a></li>
 	
 	<li><a href="/getting-started/directory-structure/">Структура каталогов</a></li>
 	
@@ -520,22 +519,22 @@ github.com/bep/my-modular-site in-themesdir
         <ul class="modules desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/hugo-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Modules Overview
+              Обзор модулей Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Configure Modules
+              Настройка модулей
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Use Hugo Modules
+              Использование модулей Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Theme Components
+              Компоненты темы
             </a>
           </li>
         </ul>
@@ -1746,8 +1745,8 @@ github.com/bep/my-modular-site in-themesdir
   <a href="https://gohugo.ru/hugo-modules/use-modules/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Use Hugo Modules”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Использование модулей Hugo”
+  </a> последнее обновление: December 25, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/6544b840d29b9d1c89eab7414230eef9d3b41774">Перевод hugo-modules (6544b840d)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/hugo-modules%5cuse-modules.md" class="

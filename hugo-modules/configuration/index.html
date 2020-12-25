@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Configure Modules | Hugo</title>
+  <title>Настройка модулей | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Configure Modules" />
-<meta property="og:description" content="This page describes the configuration options for a module." />
+<meta property="og:title" content="Настройка модулей" />
+<meta property="og:description" content="На этой странице описаны параметры конфигурации модуля." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/hugo-modules/configuration/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2019-07-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Configure Modules">
-<meta itemprop="description" content="This page describes the configuration options for a module.">
+<meta property="article:modified_time" content="2020-12-25T14:04:55+03:00" />
+<meta itemprop="name" content="Настройка модулей">
+<meta itemprop="description" content="На этой странице описаны параметры конфигурации модуля.">
 <meta itemprop="datePublished" content="2019-07-24T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="795">
+<meta itemprop="dateModified" content="2020-12-25T14:04:55+03:00" />
+<meta itemprop="wordCount" content="739">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Configure Modules"/>
-<meta name="twitter:description" content="This page describes the configuration options for a module."/>
+<meta name="twitter:title" content="Настройка модулей"/>
+<meta name="twitter:description" content="На этой странице описаны параметры конфигурации модуля."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,10 +238,10 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#module-config-top-level">Module Config: Top level</a></li>
-    <li><a href="#module-config-hugoversion">Module Config: hugoVersion</a></li>
-    <li><a href="#module-config-imports">Module Config: imports</a></li>
-    <li><a href="#module-config-mounts">Module Config: mounts</a></li>
+    <li><a href="#конфигурация-модуля-верхний-уровень">Конфигурация модуля: Верхний уровень</a></li>
+    <li><a href="#конфигурация-модуля-hugoversion">Конфигурация модуля: hugoVersion</a></li>
+    <li><a href="#конфигурация-модуля-imports">Конфигурация модуля: imports</a></li>
+    <li><a href="#конфигурация-модуля-mounts">Конфигурация модуля: mounts</a></li>
   </ul>
 </nav>
 	
@@ -250,7 +250,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/hugo-modules/use-modules/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Use Hugo Modules">
+			<a href="https://gohugo.ru/hugo-modules/use-modules/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Использование модулей Hugo">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -275,13 +275,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Configure Modules</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Настройка модулей</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      This page describes the configuration options for a module.
+      На этой странице описаны параметры конфигурации модуля.
     </div>
   
 
@@ -292,7 +292,7 @@
 
 <div class="prose" id="prose">
 
-<h2 id="module-config-top-level">Module Config: Top level <a class="header-link" href="#module-config-top-level"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="конфигурация-модуля-верхний-уровень">Конфигурация модуля: Верхний уровень <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f-%d0%b2%d0%b5%d1%80%d1%85%d0%bd%d0%b8%d0%b9-%d1%83%d1%80%d0%be%d0%b2%d0%b5%d0%bd%d1%8c"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 
 
@@ -369,22 +369,22 @@
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.75.0-relnotes/" target="_blank">Новое в v0.75.0</a>
 </button></dt>
-<dd>A optional Glob pattern matching module paths to skip when vendoring, e.g. &ldquo;github.com/**&rdquo;</dd>
+<dd>Необязательные пути модуля сопоставления с шаблоном Glob, которые следует пропустить при продаже, например, &ldquo;github.com/**&rdquo;</dd>
 <dt>proxy</dt>
-<dd>Defines the proxy server to use to download remote modules. Default is <code>direct</code>, which means &ldquo;git clone&rdquo; and similar.</dd>
+<dd>Определяет прокси-сервер для загрузки удаленных модулей. По умолчанию это <code>direct</code>, что означает &ldquo;git clone&rdquo; и т.п.</dd>
 <dt>noProxy</dt>
-<dd>Comma separated glob list matching paths that should not use the proxy configured above.</dd>
+<dd>Пути соответствия глобальных списков, разделенных запятыми, которые не должны использовать настроенный выше прокси.</dd>
 <dt>private</dt>
-<dd>Comma separated glob list matching paths that should be treated as private.</dd>
+<dd>Пути соответствия глобальных списков, разделенных запятыми, которые следует рассматривать как частные.</dd>
 <dt>replacements 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.77.0-relnotes/" target="_blank">Новое в v0.77.0</a>
 </button></dt>
-<dd>A comma separated (or a slice) list of module path to directory replacement mapping, e.g. <code>&quot;github.com/bep/myprettytheme -&gt; ../..,github.com/bep/shortcodes -&gt; /some/path</code>. This is mostly useful for temporary locally development of a module, and then it makes sense to set it as an OS environment variable, e.g: <code>env HUGO_MODULE_REPLACEMENTS=&quot;github.com/bep/myprettytheme -&gt; ../..&quot;</code>. Any relative path is relate to <a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">themesDir</a>, and absolute paths are allowed.</dd>
+<dd>Разделенный запятыми (или фрагмент) список пути модуля к сопоставлению замены каталога, например, <code>&quot;github.com/bep/myprettytheme -&gt; ../..,github.com/bep/shortcodes -&gt; /some/path</code>. Это в основном полезно для временной локальной разработки модуля, а затем имеет смысл установите его как переменную среды ОС, например: <code>env HUGO_MODULE_REPLACEMENTS=&quot;github.com/bep/myprettytheme -&gt; ../..&quot;</code>. Любой относительный путь относится к <a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">themesDir</a>, и абсолютные пути разрешены.</dd>
 </dl>
-<p>Note that the above terms maps directly to their counterparts in Go Modules. Some of these setting may be natural to set as OS environment variables. To set the proxy server to use, as an example:</p>
+<p>Обратите внимание, что приведенные выше термины напрямую соответствуют своим аналогам в модулях Go. Некоторые из этих параметров могут быть естественными для установки в качестве переменных среды ОС. Чтобы настроить прокси-сервер для использования, например:</p>
 <pre><code>env HUGO_MODULE_PROXY=https://proxy.example.org hugo
 </code></pre>
 
@@ -392,8 +392,8 @@
 	<div class="note-icon">
 		
 	</div>
-	<div class="admonition-content"><p>Most of the commands for <strong>Hugo Modules</strong> requires a newer version of Go installed (see <a href="https://golang.org/dl/">https://golang.org/dl/</a>) and the relevant VCS client (e.g. Git, see <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). If you have an &ldquo;older&rdquo; site running on Netlify, you may have to set GO_VERSION to 1.12 in your Environment settings.</p>
-<p>For more information about Go Modules, see:</p>
+	<div class="admonition-content"><p>Большинство команд для <strong>Модулей Хьюго</strong> требует установки более новой версии Go (смотрите <a href="https://golang.org/dl/">https://golang.org/dl/</a>) и соответствующего VCS клиента (например, Git, смотрите <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). Если у Вас есть «более старый» сайт, работающий на Netlify, Вам, возможно, придется установить GO_VERSION на 1.12 в настройках среды.</p>
+<p>Для получения дополнительной информации о модулях Go, смотрите:</p>
 <ul>
 <li><a href="https://github.com/golang/go/wiki/Modules">https://github.com/golang/go/wiki/Modules</a></li>
 <li><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></li>
@@ -401,8 +401,8 @@
 </div>
 </aside>
 
-<h2 id="module-config-hugoversion">Module Config: hugoVersion <a class="header-link" href="#module-config-hugoversion"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>If your module requires a particular version of Hugo to work, you can indicate that in the <code>module</code> section and the user will be warned if using a too old/new version.</p>
+<h2 id="конфигурация-модуля-hugoversion">Конфигурация модуля: hugoVersion <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f-hugoversion"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Если Вашему модулю для работы требуется определенная версия Hugo, Вы можете указать это в разделе <code>module</code>, и пользователь будет предупрежден, если будет использовать слишком старую/новую версию.</p>
 
 
 
@@ -470,16 +470,16 @@
 
 </div>
 
-<p>Any of the above can be omitted.</p>
+<p>Любое из вышеперечисленного можно опустить.</p>
 <dl>
 <dt>min</dt>
-<dd>The minimum Hugo version supported, e.g. <code>0.55.0</code></dd>
+<dd>Минимальная поддерживаемая версия Hugo, например: <code>0.55.0</code></dd>
 <dt>max</dt>
-<dd>The maximum Hugo version supported, e.g. <code>0.55.0</code></dd>
+<dd>Максимальная поддерживаемая версия Hugo, например: <code>0.55.0</code></dd>
 <dt>extended</dt>
-<dd>Whether the extended version of Hugo is required.</dd>
+<dd>Требуется ли расширенная версия Hugo.</dd>
 </dl>
-<h2 id="module-config-imports">Module Config: imports <a class="header-link" href="#module-config-imports"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="конфигурация-модуля-imports">Конфигурация модуля: imports <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f-imports"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 
 
@@ -559,11 +559,11 @@
 
 <dl>
 <dt>path</dt>
-<dd>Can be either a valid Go Module module path, e.g. <code>github.com/gohugoio/myShortcodes</code>, or the directory name for the module as stored in your themes folder.</dd>
+<dd>Может быть действительным путем к модулю модуля Go, например: <code>github.com/gohugoio/myShortcodes</code> или имя каталога для модуля, хранящегося в папке Ваших тем.</dd>
 <dt>ignoreConfig</dt>
-<dd>If enabled, any module configuration file, e.g. <code>config.toml</code>, will not be loaded. Note that this will also stop the loading of any transitive module dependencies.</dd>
+<dd>Если включено, любой файл конфигурации модуля, например <code>config.toml</code> не загружается. Обратите внимание, что это также остановит загрузку любых транзитивных зависимостей модуля.</dd>
 <dt>disable</dt>
-<dd>Set to <code>true</code> to disable the module while keeping any version info in the <code>go.*</code> files.</dd>
+<dd>Установите значение <code>true</code>, чтобы отключить модуль, сохраняя при этом любую информацию о версии в файлах <code>go.*</code>.</dd>
 </dl>
 
 
@@ -571,8 +571,8 @@
 	<div class="note-icon">
 		
 	</div>
-	<div class="admonition-content"><p>Most of the commands for <strong>Hugo Modules</strong> requires a newer version of Go installed (see <a href="https://golang.org/dl/">https://golang.org/dl/</a>) and the relevant VCS client (e.g. Git, see <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). If you have an &ldquo;older&rdquo; site running on Netlify, you may have to set GO_VERSION to 1.12 in your Environment settings.</p>
-<p>For more information about Go Modules, see:</p>
+	<div class="admonition-content"><p>Большинство команд для <strong>Модулей Хьюго</strong> требует установки более новой версии Go (смотрите <a href="https://golang.org/dl/">https://golang.org/dl/</a>) и соответствующего VCS клиента (например, Git, смотрите <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). Если у Вас есть «более старый» сайт, работающий на Netlify, Вам, возможно, придется установить GO_VERSION на 1.12 в настройках среды.</p>
+<p>Для получения дополнительной информации о модулях Go, смотрите:</p>
 <ul>
 <li><a href="https://github.com/golang/go/wiki/Modules">https://github.com/golang/go/wiki/Modules</a></li>
 <li><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></li>
@@ -580,7 +580,7 @@
 </div>
 </aside>
 
-<h2 id="module-config-mounts">Module Config: mounts <a class="header-link" href="#module-config-mounts"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="конфигурация-модуля-mounts">Конфигурация модуля: mounts <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8f-mounts"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -588,7 +588,7 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>When the <code>mounts</code> config was introduced in Hugo 0.56.0, we were careful to preserve the existing <code>staticDir</code> and similar configuration to make sure all existing sites just continued to work. But you should not have both: if you add a <code>mounts</code> section you should remove the old <code>staticDir</code> etc. settings.</p>
+	<div class="admonition-content"><p>Когда конфигурация <code>mounts</code> была представлена в Hugo 0.56.0, мы старались сохранить существующую конфигурацию <code>staticDir</code> и аналогичную конфигурацию, чтобы все существующие сайты продолжали работать. Но у Вас не должно быть обоих: если Вы добавляете раздел <code>mounts</code>, Вы должны удалить старые настройки <code>staticDir</code> и т.д.</p>
 </div>
 </aside>
 
@@ -599,11 +599,11 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>When you add a mount, the default mount for the concerned target root is ignored: be sure to explicitly add it.</p>
+	<div class="admonition-content"><p>Когда Вы добавляете монтирование, монтирование по умолчанию для соответствующего целевого корня игнорируется: обязательно добавьте его явно.</p>
 </div>
 </aside>
 
-<p><strong>Default mounts</strong>
+<p><strong>mounts по умолчанию</strong>
 
 
 
@@ -733,11 +733,11 @@
 </p>
 <dl>
 <dt>source</dt>
-<dd>The source directory of the mount. For the main project, this can be either project-relative or absolute and even a symbolic link. For other modules it must be project-relative.</dd>
+<dd>Исходный каталог монтирования. Для основного проекта это может быть как относительная к проекту, так и абсолютная и даже символическая ссылка. Для других модулей он должен относиться к проекту.</dd>
 <dt>target</dt>
-<dd>Where it should be mounted into Hugo&rsquo;s virtual filesystem. It must start with one of Hugo&rsquo;s component folders: <code>static</code>, <code>content</code>, <code>layouts</code>, <code>data</code>, <code>assets</code>, <code>i18n</code>, or <code>archetypes</code>. E.g. <code>content/blog</code>.</dd>
+<dd>Где он должен быть смонтирован в виртуальной файловой системе Хьюго. Он должен начинаться с одной из папок компонентов Хьюго: <code>static</code>, <code>content</code>, <code>layouts</code>, <code>data</code>, <code>assets</code>, <code>i18n</code> или <code>archetypes</code>. Например: <code>content/blog</code>.</dd>
 <dt>lang</dt>
-<dd>The language code, e.g. &ldquo;en&rdquo;. Only relevant for <code>content</code> mounts, and <code>static</code> mounts when in multihost mode.</dd>
+<dd>Код языка, например: &ldquo;en&rdquo;. Применимо только для монтирования контента <code>content</code> и <code>static</code> статического монтирования в режиме мультихоста.</dd>
 </dl>
 
 </div>
@@ -747,9 +747,9 @@
 <h2>Смотрите также</h2>
 <ul>
 	
-	<li><a href="/hugo-modules/use-modules/">Use Hugo Modules</a></li>
+	<li><a href="/hugo-modules/use-modules/">Использование модулей Hugo</a></li>
 	
-	<li><a href="/hugo-modules/theme-components/">Theme Components</a></li>
+	<li><a href="/hugo-modules/theme-components/">Компоненты темы</a></li>
 	
 	<li><a href="/getting-started/directory-structure/">Структура каталогов</a></li>
 	
@@ -854,22 +854,22 @@
         <ul class="modules desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/hugo-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Modules Overview
+              Обзор модулей Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Configure Modules
+              Настройка модулей
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Use Hugo Modules
+              Использование модулей Hugo
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/hugo-modules/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Theme Components
+              Компоненты темы
             </a>
           </li>
         </ul>
@@ -2080,8 +2080,8 @@
   <a href="https://gohugo.ru/hugo-modules/configuration/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Configure Modules”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Настройка модулей”
+  </a> последнее обновление: December 25, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/6544b840d29b9d1c89eab7414230eef9d3b41774">Перевод hugo-modules (6544b840d)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/hugo-modules%5cconfiguration.md" class="

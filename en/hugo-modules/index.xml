@@ -22,8 +22,8 @@
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/en/hugo-modules/use-modules/</guid>
-      <description>Prerequisite Most of the commands for Hugo Modules requires a newer version of Go installed (see https://golang.org/dl/) and the relevant VCS client (e.g. Git, see https://git-scm.com/downloads/ ). If you have an &amp;ldquo;older&amp;rdquo; site running on Netlify, you may have to set GO_VERSION to 1.12 in your Environment settings.
-For more information about Go Modules, see:
+      <description>Prerequisite Большинство команд для Модулей Хьюго требует установки более новой версии Go (смотрите https://golang.org/dl/) и соответствующего VCS клиента (например, Git, смотрите https://git-scm.com/downloads/ ). Если у Вас есть «более старый» сайт, работающий на Netlify, Вам, возможно, придется установить GO_VERSION на 1.12 в настройках среды.
+Для получения дополнительной информации о модулях Go, смотрите:
  https://github.com/golang/go/wiki/Modules https://blog.golang.org/using-go-modules  Initialize a New Module Use hugo mod init to initialize a new Hugo Module.</description>
     </item>
     
