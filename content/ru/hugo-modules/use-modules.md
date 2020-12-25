@@ -1,7 +1,7 @@
 ---
-title: Use Hugo Modules
-linktitle: Use Hugo Modules
-description: How to use Hugo Modules to build and manage your site.
+title: Использование модулей Hugo
+linktitle: Использование модулей Hugo
+description: Как использовать модули Hugo для создания и управления Вашим сайтом.
 date: 2019-07-24
 categories: [hugo modules]
 keywords: [install, themes, source, organization, directories,usage,modules]
@@ -16,27 +16,25 @@ aliases: [/themes/usage/,/themes/installing/,/installing-and-using-themes/]
 toc: true
 ---
 
-## Prerequisite
+## Предпосылка
 
 {{< gomodules-info >}}
 
+## Инициализация нового модуля
 
-
-## Initialize a New Module
-
-Use `hugo mod init` to initialize a new Hugo Module. If it fails to guess the module path, you must provide it as an argument, e.g.:
+Используйте `hugo mod init` для инициализации нового модуля Hugo. Если не удается угадать путь к модулю, Вы должны указать его в качестве аргумента, например:
 
 ```bash
 hugo mod init github.com/gohugoio/myShortcodes
 ```
 
-Also see the [CLI Doc](/commands/hugo_mod_init/).
+Также смотрите [CLI документацию](/commands/hugo_mod_init/).
 
-## Use a Module for a Theme
-The easiest way to use a Module for a theme is to import it in the config.
+## Использование модуля для темы
+Самый простой способ использовать модуль для темы - это импортировать его в `config`.
 
-1. Initialize the hugo module system: `hugo mod init github.com/<your_user>/<your_project>`
-2. Import the theme in your `config.toml`:
+1. Инициализируйте систему модулей hugo: `hugo mod init github.com/<your_user>/<your_project>`
+2. Импортируйте тему в Ваш `config.toml`:
 
 ```toml
 [module]
@@ -44,21 +42,21 @@ The easiest way to use a Module for a theme is to import it in the config.
     path = "github.com/spf13/hyde"
 ```
 
-## Update Modules
+## Обновление модулей
 
-Modules will be downloaded and added when you add them as imports to your configuration, see [Module Imports](/hugo-modules/configuration/#module-config-imports).
+Модули будут загружены и добавлены, когда Вы добавите их в качестве импорта в Вашу конфигурацию, смотрите [импорт модулей](/hugo-modules/configuration/#module-config-imports).
 
-To update or manage versions, you can use `hugo mod get`.
+Для обновления или управления версиями Вы можете использовать `hugo mod get`.
 
-Some examples:
+Несколько примеров:
 
-### Update All Modules
+### Обновление всех модулей
 
 ```bash
 hugo mod get -u
 ```
 
-### Update All Modules Recursively
+### Рекурсивное обновление всех модулей
 
 {{< new-in "0.65.0" >}}
 
@@ -66,37 +64,37 @@ hugo mod get -u
 hugo mod get -u ./...
 ```
 
-### Update One Module
+### Обновление одного модуля
 
 ```bash
 hugo mod get -u github.com/gohugoio/myShortcodes
 ```
-### Get a Specific Version
+
+### Получить конкретную версию
 
 ```bash
 hugo mod get github.com/gohugoio/myShortcodes@v1.0.7
 ```
 
-Also see the [CLI Doc](/commands/hugo_mod_get/).
+Также смотрите [CLI документацию](/commands/hugo_mod_get/).
 
-## Make and test changes in a module
+## Внесите и протестируйте изменения в модуле
 
-One way to do local development of a module imported in a project is to add a replace directive to a local directory with the source in `go.mod`:
+Один из способов выполнить локальную разработку модуля, импортированного в проект, - это добавить директиву replace в локальный каталог с источником в `go.mod`:
 
 ```bash
 replace github.com/bep/hugotestmods/mypartials => /Users/bep/hugotestmods/mypartials
 ```
 
-If you have the `hugo server` running, the configuration will be reloaded and `/Users/bep/hugotestmods/mypartials` put on the watch list.
+Если у вас запущен `hugo server`, конфигурация будет перезагружена и `/Users/bep/hugotestmods/mypartials` будет помещен в список наблюдения.
 
-Note that since v.0.77.0 you can use modules config [`replacements`](https://gohugo.io/hugo-modules/configuration/#module-config-top-level) option. {{< new-in "0.77.0" >}}
+Обратите внимание, что начиная с версии v.0.77.0 Вы можете использовать параметр конфигурации модулей [`replacements`](https://gohugo.io/hugo-modules/configuration/#module-config-top-level). {{< new-in "0.77.0" >}}
 
-## Print Dependency Graph
+## Печать графика зависимостей
 
+Используйте `hugo mod graph` из соответствующего каталога модуля, и он распечатает граф зависимостей, включая вендор, замену модуля или отключенный статус.
 
-Use `hugo mod graph` from the relevant module directory and it will print the dependency graph, including vendoring, module replacement or disabled status.
-
-E.g.:
+Например:
 
 ```
 hugo mod graph
@@ -108,36 +106,32 @@ github.com/bep/hugotestmods/mypartials@v1.0.7 github.com/bep/hugotestmods/myv2@v
 DISABLED github.com/bep/my-modular-site github.com/spf13/hyde@v0.0.0-20190427180251-e36f5799b396
 github.com/bep/my-modular-site github.com/bep/hugo-fresh@v1.0.1
 github.com/bep/my-modular-site in-themesdir
-
 ```
 
-Also see the [CLI Doc](/commands/hugo_mod_graph/).
+Также смотрите [CLI документацию](/commands/hugo_mod_graph/).
 
-## Vendor Your Modules
+## Поставщик Ваших модулей
 
-`hugo mod vendor` will write all the module dependencies to a `_vendor` folder, which will then be used for all subsequent builds.
+`hugo mod vendor` запишет все зависимости модуля в папку `_vendor`, которая затем будет использоваться для всех последующих сборок.
 
-Note that:
+Обратите внимание, что:
 
-* You can run `hugo mod vendor` on any level in the module tree.
-* Vendoring will not store modules stored in your `themes` folder.
-* Most commands accept a `--ignoreVendorPaths` flag, which will then not use the vendored modules in `_vendor` for the module paths matching the [Glob](https://github.com/gobwas/glob) pattern given. Note that before Hugo 0.75 this flag was named `--ignoreVendor` and was a "all or nothing". {{< new-in "0.75.0" >}}
+* Вы можете запустить `hugo mod vendor` на любом уровне в дереве модулей.
+* Вендоринг не будет хранить модули, хранящиеся в папке `themes`.
+* Большинство команд принимают флаг `--ignoreVendorPaths`, который затем не будет использовать поставленные модули в `_vendor` для путей модулей, соответствующих заданному шаблону [Glob](https://github.com/gobwas/glob). Обратите внимание, что до Hugo 0.75 этот флаг назывался `--ignoreVendor` и был «все или ничего». {{< new-in "0.75.0" >}}
 
-Also see the [CLI Doc](/commands/hugo_mod_vendor/).
+Также смотрите [CLI документацию](/commands/hugo_mod_vendor/).
 
+## Приведение в порядок go.mod, go.sum
 
-## Tidy go.mod, go.sum
+Запустите `hugo mod tidy`, чтобы удалить неиспользуемые записи в `go.mod` и `go.sum`.
 
-Run `hugo mod tidy` to remove unused entries in `go.mod` and `go.sum`.
+Также смотрите [CLI документацию](/commands/hugo_mod_clean/).
 
-Also see the [CLI Doc](/commands/hugo_mod_clean/).
+## Очистка кеша модуля
 
-## Clean Module Cache
+Запустите `hugo mod clean`, чтобы удалить весь кеш модулей.
 
-Run `hugo mod clean` to delete the entire modules cache.
+Обратите внимание, что вы также можете настроить кеш `modules` с помощью `maxAge`, смотрите [кеш файлов](/hugo-modules/configuration/#configure-file-caches).
 
-Note that you can also configure the `modules` cache with a `maxAge`, see [File Caches](/hugo-modules/configuration/#configure-file-caches).
-
-
-
-Also see the [CLI Doc](/commands/hugo_mod_clean/).
+Также смотрите [CLI документацию](/commands/hugo_mod_clean/).

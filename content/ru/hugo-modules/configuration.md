@@ -1,7 +1,7 @@
 ---
-title: Configure Modules
-linktitle: Configure Modules
-description: This page describes the configuration options for a module.
+title: Настройка модулей
+linktitle: Настройка модулей
+description: На этой странице описаны параметры конфигурации модуля.
 date: 2019-07-24
 categories: [hugo modules]
 keywords: [themes, source, organization, directories]
@@ -14,7 +14,7 @@ sections_weight: 10
 toc: true
 ---
 
-## Module Config: Top level
+## Конфигурация модуля: Верхний уровень
 
 {{< code-toggle file="config">}}
 [module]
@@ -25,23 +25,22 @@ private = "*.*"
 replacements = ""
 {{< /code-toggle >}}
 
-
 noVendor {{< new-in "0.75.0" >}}
-: A optional Glob pattern matching module paths to skip when vendoring, e.g. "github.com/**"
+: Необязательные пути модуля сопоставления с шаблоном Glob, которые следует пропустить при продаже, например, "github.com/**"
 
 proxy
-: Defines the proxy server to use to download remote modules. Default is `direct`, which means "git clone" and similar.
+: Определяет прокси-сервер для загрузки удаленных модулей. По умолчанию это `direct`, что означает "git clone" и т.п.
 
 noProxy
-: Comma separated glob list matching paths that should not use the proxy configured above.
+: Пути соответствия глобальных списков, разделенных запятыми, которые не должны использовать настроенный выше прокси.
 
 private
-: Comma separated glob list matching paths that should be treated as private.
+: Пути соответствия глобальных списков, разделенных запятыми, которые следует рассматривать как частные.
 
 replacements {{< new-in "0.77.0" >}}
-: A comma separated (or a slice) list of module path to directory replacement mapping, e.g. `"github.com/bep/myprettytheme -> ../..,github.com/bep/shortcodes -> /some/path`. This is mostly useful for temporary locally development of a module, and then it makes sense to set it as an OS environment variable, e.g: `env HUGO_MODULE_REPLACEMENTS="github.com/bep/myprettytheme -> ../.."`. Any relative path is relate to [themesDir](https://gohugo.io/getting-started/configuration/#all-configuration-settings), and absolute paths are allowed.
+: Разделенный запятыми (или фрагмент) список пути модуля к сопоставлению замены каталога, например, `"github.com/bep/myprettytheme -> ../..,github.com/bep/shortcodes -> /some/path`. Это в основном полезно для временной локальной разработки модуля, а затем имеет смысл установите его как переменную среды ОС, например: `env HUGO_MODULE_REPLACEMENTS="github.com/bep/myprettytheme -> ../.."`. Любой относительный путь относится к [themesDir](https://gohugo.io/getting-started/configuration/#all-configuration-settings), и абсолютные пути разрешены.
 
-Note that the above terms maps directly to their counterparts in Go Modules. Some of these setting may be natural to set as OS environment variables. To set the proxy server to use, as an example:
+Обратите внимание, что приведенные выше термины напрямую соответствуют своим аналогам в модулях Go. Некоторые из этих параметров могут быть естественными для установки в качестве переменных среды ОС. Чтобы настроить прокси-сервер для использования, например:
 
 ```
 env HUGO_MODULE_PROXY=https://proxy.example.org hugo
@@ -49,9 +48,9 @@ env HUGO_MODULE_PROXY=https://proxy.example.org hugo
 
 {{< gomodules-info >}}
 
-## Module Config: hugoVersion
+## Конфигурация модуля: hugoVersion
 
-If your module requires a particular version of Hugo to work, you can indicate that in the `module` section and the user will be warned if using a too old/new version.
+Если Вашему модулю для работы требуется определенная версия Hugo, Вы можете указать это в разделе `module`, и пользователь будет предупрежден, если будет использовать слишком старую/новую версию.
 
 {{< code-toggle file="config">}}
 [module]
@@ -62,18 +61,18 @@ If your module requires a particular version of Hugo to work, you can indicate t
 
 {{< /code-toggle >}}
 
-Any of the above can be omitted.
+Любое из вышеперечисленного можно опустить.
 
 min
-: The minimum Hugo version supported, e.g. `0.55.0`
+: Минимальная поддерживаемая версия Hugo, например: `0.55.0`
 
 max
-: The maximum Hugo version supported, e.g. `0.55.0`
+: Максимальная поддерживаемая версия Hugo, например: `0.55.0`
 
 extended
-: Whether the extended version of Hugo is required.
+: Требуется ли расширенная версия Hugo.
 
-## Module Config: imports
+## Конфигурация модуля: imports
 
 {{< code-toggle file="config">}}
 [module]
@@ -86,28 +85,28 @@ extended
 {{< /code-toggle >}}
 
 path
-: Can be either a valid Go Module module path, e.g. `github.com/gohugoio/myShortcodes`, or the directory name for the module as stored in your themes folder.
+: Может быть действительным путем к модулю модуля Go, например: `github.com/gohugoio/myShortcodes` или имя каталога для модуля, хранящегося в папке Ваших тем.
 
 ignoreConfig
-: If enabled, any module configuration file, e.g. `config.toml`, will not be loaded. Note that this will also stop the loading of any transitive module dependencies.
+: Если включено, любой файл конфигурации модуля, например `config.toml` не загружается. Обратите внимание, что это также остановит загрузку любых транзитивных зависимостей модуля.
 
 disable
-: Set to `true` to disable the module while keeping any version info in the `go.*` files.
+: Установите значение `true`, чтобы отключить модуль, сохраняя при этом любую информацию о версии в файлах `go.*`.
 
 {{< gomodules-info >}}
 
 
-## Module Config: mounts
+## Конфигурация модуля: mounts
 
 {{% note %}}
-When the `mounts` config was introduced in Hugo 0.56.0, we were careful to preserve the existing `staticDir` and similar configuration to make sure all existing sites just continued to work. But you should not have both: if you add a `mounts` section you should remove the old `staticDir` etc. settings.
+Когда конфигурация `mounts` была представлена в Hugo 0.56.0, мы старались сохранить существующую конфигурацию `staticDir` и аналогичную конфигурацию, чтобы все существующие сайты продолжали работать. Но у Вас не должно быть обоих: если Вы добавляете раздел `mounts`, Вы должны удалить старые настройки `staticDir` и т.д.
 {{% /note %}}
 
 {{% warning %}}
-When you add a mount, the default mount for the concerned target root is ignored: be sure to explicitly add it.
+Когда Вы добавляете монтирование, монтирование по умолчанию для соответствующего целевого корня игнорируется: обязательно добавьте его явно.
 {{% /warning %}}
 
-**Default mounts**
+**mounts по умолчанию**
 {{< code-toggle file="config">}}
 [module]
 [[module.mounts]]
@@ -134,11 +133,10 @@ When you add a mount, the default mount for the concerned target root is ignored
 {{< /code-toggle >}}
 
 source
-: The source directory of the mount. For the main project, this can be either project-relative or absolute and even a symbolic link. For other modules it must be project-relative.
+: Исходный каталог монтирования. Для основного проекта это может быть как относительная к проекту, так и абсолютная и даже символическая ссылка. Для других модулей он должен относиться к проекту.
 
 target
-: Where it should be mounted into Hugo's virtual filesystem. It must start with one of Hugo's component folders: `static`, `content`, `layouts`, `data`, `assets`, `i18n`, or `archetypes`. E.g. `content/blog`.
+: Где он должен быть смонтирован в виртуальной файловой системе Хьюго. Он должен начинаться с одной из папок компонентов Хьюго: `static`, `content`, `layouts`, `data`, `assets`, `i18n` или `archetypes`. Например: `content/blog`.
 
 lang
-: The language code, e.g. "en". Only relevant for `content` mounts, and `static` mounts when in multihost mode.
-
+: Код языка, например: "en". Применимо только для монтирования контента `content` и `static` статического монтирования в режиме мультихоста.
