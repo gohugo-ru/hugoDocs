@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Install Hugo | Hugo</title>
+  <title>Установка Хьюго | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Install Hugo" />
-<meta property="og:description" content="Install Hugo on macOS, Windows, Linux, OpenBSD, FreeBSD, and on any machine where the Go compiler tool chain can run." />
+<meta property="og:title" content="Установка Хьюго" />
+<meta property="og:description" content="Установите Hugo на macOS, Windows, Linux, OpenBSD, FreeBSD и на любой компьютер, на котором может работать цепочка инструментов компилятора Go." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/getting-started/installing/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2016-11-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Install Hugo">
-<meta itemprop="description" content="Install Hugo on macOS, Windows, Linux, OpenBSD, FreeBSD, and on any machine where the Go compiler tool chain can run.">
+<meta property="article:modified_time" content="2020-12-25T11:23:57+03:00" />
+<meta itemprop="name" content="Установка Хьюго">
+<meta itemprop="description" content="Установите Hugo на macOS, Windows, Linux, OpenBSD, FreeBSD и на любой компьютер, на котором может работать цепочка инструментов компилятора Go.">
 <meta itemprop="datePublished" content="2016-11-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="2924">
+<meta itemprop="dateModified" content="2020-12-25T11:23:57+03:00" />
+<meta itemprop="wordCount" content="2687">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Install Hugo"/>
-<meta name="twitter:description" content="Install Hugo on macOS, Windows, Linux, OpenBSD, FreeBSD, and on any machine where the Go compiler tool chain can run."/>
+<meta name="twitter:title" content="Установка Хьюго"/>
+<meta name="twitter:description" content="Установите Hugo на macOS, Windows, Linux, OpenBSD, FreeBSD и на любой компьютер, на котором может работать цепочка инструментов компилятора Go."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,56 +238,56 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#quick-install">Quick Install</a>
+    <li><a href="#быстрая-установка">Быстрая установка</a>
       <ul>
-        <li><a href="#binary-cross-platform">Binary (Cross-platform)</a></li>
+        <li><a href="#бинарный-кроссплатформенный">Бинарный (кроссплатформенный)</a></li>
         <li><a href="#docker">Docker</a></li>
         <li><a href="#homebrew-macos">Homebrew (macOS)</a></li>
         <li><a href="#macports-macos">MacPorts (macOS)</a></li>
         <li><a href="#homebrew-linux">Homebrew (Linux)</a></li>
         <li><a href="#chocolatey-windows">Chocolatey (Windows)</a></li>
         <li><a href="#scoop-windows">Scoop (Windows)</a></li>
-        <li><a href="#source">Source</a></li>
+        <li><a href="#источник">Источник</a></li>
       </ul>
     </li>
     <li><a href="#macos">macOS</a>
       <ul>
-        <li><a href="#assumptions">Assumptions</a></li>
-        <li><a href="#pick-your-method">Pick Your Method</a></li>
-        <li><a href="#install-hugo-with-brew">Install Hugo with Brew</a></li>
-        <li><a href="#install-hugo-from-tarball">Install Hugo from Tarball</a></li>
-        <li><a href="#build-from-source-on-mac">Build from Source on Mac</a></li>
+        <li><a href="#предположения">Предположения</a></li>
+        <li><a href="#выберите-свой-метод">Выберите свой метод</a></li>
+        <li><a href="#установить-hugo-с-brew">Установить Hugo с Brew</a></li>
+        <li><a href="#установите-hugo-из-tarball">Установите Hugo из Tarball</a></li>
+        <li><a href="#сборка-из-исходного-кода-на-mac">Сборка из исходного кода на Mac</a></li>
       </ul>
     </li>
     <li><a href="#windows">Windows</a>
       <ul>
-        <li><a href="#assumptions-1">Assumptions</a></li>
-        <li><a href="#set-up-your-directories">Set up Your Directories</a></li>
-        <li><a href="#technical-users">Technical Users</a></li>
-        <li><a href="#less-technical-users">Less-technical Users</a></li>
-        <li><a href="#verify-the-executable">Verify the Executable</a></li>
-        <li><a href="#troubleshoot-windows-installation">Troubleshoot Windows Installation</a></li>
+        <li><a href="#предположения-1">Предположения</a></li>
+        <li><a href="#настройте-свои-каталоги">Настройте свои каталоги</a></li>
+        <li><a href="#технические-пользователи">Технические пользователи</a></li>
+        <li><a href="#менее-технических-пользователей">Менее технических пользователей</a></li>
+        <li><a href="#проверить-исполняемый-файл">Проверить исполняемый файл</a></li>
+        <li><a href="#устранение-неполадок-при-установке-windows">Устранение неполадок при установке Windows</a></li>
       </ul>
     </li>
     <li><a href="#linux">Linux</a>
       <ul>
-        <li><a href="#snap-package">Snap Package</a></li>
-        <li><a href="#debian-and-ubuntu">Debian and Ubuntu</a></li>
+        <li><a href="#пакет-snap">Пакет Snap</a></li>
+        <li><a href="#debian-или-ubuntu">Debian или Ubuntu</a></li>
         <li><a href="#arch-linux">Arch Linux</a></li>
-        <li><a href="#fedora-red-hat-and-centos">Fedora, Red Hat and CentOS</a></li>
+        <li><a href="#fedora-red-hat-и-centos">Fedora, Red Hat и CentOS</a></li>
         <li><a href="#solus">Solus</a></li>
       </ul>
     </li>
     <li><a href="#openbsd">OpenBSD</a></li>
-    <li><a href="#upgrade-hugo">Upgrade Hugo</a></li>
-    <li><a href="#next-steps">Next Steps</a></li>
+    <li><a href="#обновление-хьюго">Обновление Хьюго</a></li>
+    <li><a href="#следующие-шаги">Следующие шаги</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/getting-started/quick-start/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Quick Start ">
+			<a href="https://gohugo.ru/getting-started/quick-start/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Быстрый старт ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -297,7 +297,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/getting-started/usage/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Basic Usage">
+			<a href="https://gohugo.ru/getting-started/usage/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Основы использования">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -326,13 +326,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Install Hugo</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Установка Хьюго</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Install Hugo on macOS, Windows, Linux, OpenBSD, FreeBSD, and on any machine where the Go compiler tool chain can run.
+      Установите Hugo на macOS, Windows, Linux, OpenBSD, FreeBSD и на любой компьютер, на котором может работать цепочка инструментов компилятора Go.
     </div>
   
 
@@ -350,28 +350,28 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>There is lots of talk about &ldquo;Hugo being written in Go&rdquo;, but you don&rsquo;t need to install Go to enjoy Hugo. Just grab a precompiled binary!</p>
+	<div class="admonition-content"><p>Сейчас много говорят о том, что «Хьюго пишется на Go», но Вам не нужно устанавливать Go, чтобы пользоваться Hugo. Просто возьмите предварительно скомпилированный двоичный файл!</p>
 </div>
 </aside>
 
-<p>Hugo is written in <a href="https://golang.org/">Go</a> with support for multiple platforms. The latest release can be found at <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a>.</p>
-<p>Hugo currently provides pre-built binaries for the following:</p>
+<p>Hugo написан на <a href="https://golang.org/">Go</a> с поддержкой нескольких платформ. Последнюю версию можно найти на странице <a href="https://github.com/gohugoio/hugo/releases">Релизов Хьюго</a>.</p>
+<p>В настоящее время Hugo предоставляет готовые двоичные файлы для следующего:</p>
 <ul>
-<li>macOS (Darwin) for x64, i386, and ARM architectures</li>
+<li>macOS (Darwin) для x64, i386 и архитектур ARM</li>
 <li>Windows</li>
 <li>Linux</li>
 <li>OpenBSD</li>
 <li>FreeBSD</li>
 </ul>
-<p>Hugo may also be compiled from source wherever the Go toolchain can run; e.g., on other operating systems such as DragonFly BSD, OpenBSD, Plan 9, Solaris, and others. See <a href="https://golang.org/doc/install/source">https://golang.org/doc/install/source</a> for the full set of supported combinations of target operating systems and compilation architectures.</p>
-<h2 id="quick-install">Quick Install <a class="header-link" href="#quick-install"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<h3 id="binary-cross-platform">Binary (Cross-platform) <a class="header-link" href="#binary-cross-platform"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Download the appropriate version for your platform from <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a>. Once downloaded, the binary can be run from anywhere. You don&rsquo;t need to install it into a global location. This works well for shared hosts and other systems where you don&rsquo;t have a privileged account.</p>
-<p>Ideally, you should install it somewhere in your <code>PATH</code> for easy use. <code>/usr/local/bin</code> is the most probable location.</p>
+<p>Hugo также может быть скомпилирован из исходного кода везде, где может работать цепочка инструментов Go; например, в других операционных системах, таких как DragonFly BSD, OpenBSD, Plan 9, Solaris и других. Смотрите <a href="https://golang.org/doc/install/source">https://golang.org/doc/install/source</a> для получения полного набора поддерживаемых комбинаций целевых операционных систем и архитектур компиляции.</p>
+<h2 id="быстрая-установка">Быстрая установка <a class="header-link" href="#%d0%b1%d1%8b%d1%81%d1%82%d1%80%d0%b0%d1%8f-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h3 id="бинарный-кроссплатформенный">Бинарный (кроссплатформенный) <a class="header-link" href="#%d0%b1%d0%b8%d0%bd%d0%b0%d1%80%d0%bd%d1%8b%d0%b9-%d0%ba%d1%80%d0%be%d1%81%d1%81%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Скачайте версию, подходящую для Вашей платформы на странице <a href="https://github.com/gohugoio/hugo/releases">Релизов Hugo</a>. После загрузки двоичный файл можно запускать из любого места. Вам не нужно устанавливать его в глобальном местоположении. Это хорошо работает для общих хостов и других систем, где у Вас нет привилегированной учетной записи.</p>
+<p>В идеале Вы должны установить его где-нибудь в Вашем <code>PATH</code> для удобства использования. <code>/usr/local/bin</code> - наиболее вероятное расположение.</p>
 <h3 id="docker">Docker <a class="header-link" href="#docker"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>We currently do not offer official Hugo images for Docker, but we do recommend these up to date distributions: <a href="https://hub.docker.com/r/klakegg/hugo/">https://hub.docker.com/r/klakegg/hugo/</a></p>
+<p>В настоящее время мы не предлагаем официальные образы Hugo для Docker, но рекомендуем эти актуальные дистрибутивы: <a href="https://hub.docker.com/r/klakegg/hugo/">https://hub.docker.com/r/klakegg/hugo/</a></p>
 <h3 id="homebrew-macos">Homebrew (macOS) <a class="header-link" href="#homebrew-macos"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>If you are on macOS and using <a href="https://brew.sh/">Homebrew</a>, you can install Hugo with the following one-liner:</p>
+<p>Если Вы используете macOS и <a href="https://brew.sh/">Homebrew</a>, Вы можете установить Hugo с помощью следующей команды:</p>
 
 
 
@@ -393,9 +393,9 @@ brew install hugo
 
 </div>
 
-<p>For more detailed explanations, read the installation guides that follow for installing on macOS and Windows.</p>
+<p>Чтобы получить более подробные объяснения, прочитайте руководства по установке, которые следуют для установки в macOS и Windows.</p>
 <h3 id="macports-macos">MacPorts (macOS) <a class="header-link" href="#macports-macos"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>If you are on macOS and using <a href="https://www.macports.org/">MacPorts</a>, you can install Hugo with the following one-liner:</p>
+<p>Если Вы используете macOS и <a href="https://www.macports.org/">MacPorts</a>, Вы можете установить Hugo с помощью следующей команды:</p>
 
 
 
@@ -418,7 +418,7 @@ port install hugo
 </div>
 
 <h3 id="homebrew-linux">Homebrew (Linux) <a class="header-link" href="#homebrew-linux"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>If you are using <a href="https://docs.brew.sh/Homebrew-on-Linux">Homebrew</a> on Linux, you can install Hugo with the following one-liner:</p>
+<p>Если Вы используете <a href="https://docs.brew.sh/Homebrew-on-Linux">Homebrew</a> на Linux, Вы можете установить Hugo с помощью следующей команды:</p>
 
 
 
@@ -440,9 +440,9 @@ brew install hugo
 
 </div>
 
-<p>Installation guides for Homebrew on Linux are available on their <a href="https://docs.brew.sh/Homebrew-on-Linux">website</a>.</p>
+<p>Руководства по установке Homebrew в Linux доступны на их <a href="https://docs.brew.sh/Homebrew-on-Linux">веб-сайте</a>.</p>
 <h3 id="chocolatey-windows">Chocolatey (Windows) <a class="header-link" href="#chocolatey-windows"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>If you are on a Windows machine and use <a href="https://chocolatey.org/">Chocolatey</a> for package management, you can install Hugo with the following one-liner:</p>
+<p>Если Вы работаете на компьютере с Windows и используете <a href="https://chocolatey.org/">Chocolatey</a> для менеджера пакетов, Вы можете установить Hugo с помощью следующей команды:</p>
 
 
 
@@ -464,7 +464,7 @@ brew install hugo
 
 </div>
 
-<p>Or if you need the “extended” Sass/SCSS version:</p>
+<p>Или, если Вам нужна «расширенная» версия Sass/SCSS:</p>
 
 
 
@@ -487,18 +487,18 @@ brew install hugo
 </div>
 
 <h3 id="scoop-windows">Scoop (Windows) <a class="header-link" href="#scoop-windows"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>If you are on a Windows machine and use <a href="https://scoop.sh/">Scoop</a> for package management, you can install Hugo with the following one-liner:</p>
+<p>Если Вы работаете на компьютере с Windows и используете <a href="https://scoop.sh/">Scoop</a> для управления пакетами, Вы можете установить Hugo с помощью следующей команды:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">scoop install hugo
-</code></pre></div><p>Or install the extended version with:</p>
+</code></pre></div><p>Или установите расширенную версию с помощью:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">scoop install hugo-extended
-</code></pre></div><h3 id="source">Source <a class="header-link" href="#source"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<h4 id="prerequisite-tools">Prerequisite Tools <a class="header-link" href="#prerequisite-tools"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+</code></pre></div><h3 id="источник">Источник <a class="header-link" href="#%d0%b8%d1%81%d1%82%d0%be%d1%87%d0%bd%d0%b8%d0%ba"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h4 id="необходимые-инструменты">Необходимые инструменты <a class="header-link" href="#%d0%bd%d0%b5%d0%be%d0%b1%d1%85%d0%be%d0%b4%d0%b8%d0%bc%d1%8b%d0%b5-%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 <ul>
 <li><a href="https://git-scm.com/">Git</a></li>
-<li><a href="https://golang.org/dl/">Go (at least Go 1.11)</a></li>
+<li><a href="https://golang.org/dl/">Go (как минимум Go 1.11)</a></li>
 </ul>
-<h4 id="fetch-from-github">Fetch from GitHub <a class="header-link" href="#fetch-from-github"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Since Hugo 0.48, Hugo uses the Go Modules support built into Go 1.11 to build. The easiest way to get started is to clone Hugo in a directory outside of the GOPATH, as in the following example:</p>
+<h4 id="получить-с-github">Получить с GitHub <a class="header-link" href="#%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b8%d1%82%d1%8c-%d1%81-github"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Начиная с Hugo 0.48, Hugo использует для сборки поддержку модулей Go, встроенную в Go 1.11. Самый простой способ начать - это клонировать Hugo в каталог за пределами GOPATH, как в следующем примере:</p>
 
 
 
@@ -524,7 +524,7 @@ go install --tags extended
 
 </div>
 
-<p>Remove <code>--tags extended</code> if you do not want/need Sass/SCSS support.</p>
+<p>Удалите <code>--tags extended</code>, если Вы не хотите/нуждаетесь в поддержке Sass/SCSS.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -532,36 +532,36 @@ go install --tags extended
 	</div>
 	
 	
-	<div class="admonition-content"><p>If you are a Windows user, substitute the <code>$HOME</code> environment variable above with <code>%USERPROFILE%</code>.</p>
+	<div class="admonition-content"><p>Если Вы являетесь пользователем Windows, замените указанную выше переменную среды <code>$HOME</code> на <code>%USERPROFILE%</code>.</p>
 </div>
 </aside>
 
 <h2 id="macos">macOS <a class="header-link" href="#macos"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<h3 id="assumptions">Assumptions <a class="header-link" href="#assumptions"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="предположения">Предположения <a class="header-link" href="#%d0%bf%d1%80%d0%b5%d0%b4%d0%bf%d0%be%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <ol>
-<li>You know how to open the macOS terminal.</li>
-<li>You&rsquo;re running a modern 64-bit Mac.</li>
-<li>You will use <code>~/Sites</code> as the starting point for your site. (<code>~/Sites</code> is used for example purposes. If you are familiar enough with the command line and file system, you should have no issues following along with the instructions.)</li>
+<li>Вы знаете, как открыть терминал macOS.</li>
+<li>Вы используете современный 64-битный Mac.</li>
+<li>Вы будете использовать <code>~/Sites</code> в качестве отправной точки для Вашего сайта. (<code>~/Sites</code> используется в качестве примера. Если Вы достаточно знакомы с командной строкой и файловой системой, у Вас не должно возникнуть проблем при выполнении инструкций.).</li>
 </ol>
-<h3 id="pick-your-method">Pick Your Method <a class="header-link" href="#pick-your-method"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>There are three ways to install Hugo on your Mac</p>
+<h3 id="выберите-свой-метод">Выберите свой метод <a class="header-link" href="#%d0%b2%d1%8b%d0%b1%d0%b5%d1%80%d0%b8%d1%82%d0%b5-%d1%81%d0%b2%d0%be%d0%b9-%d0%bc%d0%b5%d1%82%d0%be%d0%b4"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Есть три способа установить Hugo на Ваш Mac</p>
 <ol>
-<li>A package manager, like <a href="https://brew.sh/">Homebrew</a> (<code>brew</code>) or <a href="https://www.macports.org/">MacPorts</a> (<code>port</code>)</li>
-<li>Distribution (i.e., tarball)</li>
-<li>Building from Source</li>
+<li>Менеджер пакетов, например <a href="https://brew.sh/">Homebrew</a> (<code>brew</code>) или <a href="https://www.macports.org/">MacPorts</a> (<code>port</code>)</li>
+<li>Распространение (например, архив)</li>
+<li>Сборка из исходного кода</li>
 </ol>
-<p>There is no &ldquo;best&rdquo; way to install Hugo on your Mac. You should use the method that works best for your use case.</p>
-<h4 id="pros-and-cons">Pros and Cons <a class="header-link" href="#pros-and-cons"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>There are pros and cons to each of the aforementioned methods:</p>
+<p>Не существует «лучшего» способа установить Hugo на Ваш Mac. Вы должны использовать метод, который лучше всего подходит для Вашего случая использования.</p>
+<h4 id="плюсы-и-минусы">Плюсы и минусы <a class="header-link" href="#%d0%bf%d0%bb%d1%8e%d1%81%d1%8b-%d0%b8-%d0%bc%d0%b8%d0%bd%d1%83%d1%81%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>У каждого из вышеупомянутых методов есть свои плюсы и минусы:</p>
 <ol>
 <li>
-<p><strong>Package Manager.</strong> Using a package manager is the simplest method and will require the least amount of work to maintain. The drawbacks aren&rsquo;t severe. The default package will be for the most recent release, so it will not have bug fixes until the next release (i.e., unless you install it with the <code>--HEAD</code> option in Homebrew). Releases may lag a few days behind because it has to be coordinated with another team. Nevertheless, this is the recommended installation method if you want to work from a stable, widely used source. Package managers work well and they are easy to update.</p>
+<p><strong>Менеджер пакетов.</strong> Использование диспетчера пакетов - самый простой метод, требующий минимума усилий для обслуживания. Недостатки несущественные. Пакет по умолчанию будет для самого последнего выпуска, поэтому в нем не будет исправлений ошибок до следующего выпуска (то есть, если Вы не установите его с параметром <code>--HEAD</code> в Homebrew). Релизы могут отставать на несколько дней, потому что это должно быть согласовано с другой командой. Тем не менее, это рекомендуемый метод установки, если Вы хотите работать из стабильного, широко используемого источника. Менеджеры пакетов работают хорошо, и их легко обновлять.</p>
 </li>
 <li>
-<p><strong>Tarball.</strong> Downloading and installing from the tarball is also easy, although it requires a few more command line skills than does Homebrew. Updates are easy as well: you just repeat the process with the new binary. This gives you the flexibility to have multiple versions on your computer. If you don&rsquo;t want to use <code>brew</code>, then the tarball/binary is a good choice.</p>
+<p><strong>Tarball.</strong> Загрузить и установить из tarball также легко, хотя для этого требуется немного больше навыков работы с командной строкой, чем для Homebrew. Обновления тоже просты: Вы просто повторяете процесс с новым двоичным файлом. Это дает Вам возможность иметь несколько версий на Вашем компьютере. Если Вы не хотите использовать <code>brew</code>, тогда tarball/binary - хороший выбор.</p>
 </li>
 <li>
-<p><strong>Building from Source.</strong> Building from source is the most work. The advantage of building from source is that you don&rsquo;t have to wait for a release to add features or bug fixes. The disadvantage is that you need to spend more time managing the setup, which is manageable but requires more time than the preceding two options.</p>
+<p><strong>Сборка из исходного кода.</strong> Сборка из исходного кода - это большая часть работы. Преимущество сборки из исходного кода заключается в том, что Вам не нужно ждать выпуска, чтобы добавить функции или исправления ошибок. Недостатком является то, что Вам нужно тратить больше времени на управление настройкой, что вполне управляемо, но требует больше времени, чем два предыдущих варианта.</p>
 </li>
 </ol>
 
@@ -571,18 +571,18 @@ go install --tags extended
 	</div>
 	
 	
-	<div class="admonition-content"><p>Since building from source is appealing to more seasoned command line users, this guide will focus more on installing Hugo via Homebrew and Tarball.</p>
+	<div class="admonition-content"><p>Поскольку сборка из исходных текстов привлекательна для более опытных пользователей командной строки, это руководство будет больше сосредоточено на установке Hugo с помощью Homebrew и Tarball.</p>
 </div>
 </aside>
 
-<h3 id="install-hugo-with-brew">Install Hugo with Brew <a class="header-link" href="#install-hugo-with-brew"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="установить-hugo-с-brew">Установить Hugo с Brew <a class="header-link" href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c-hugo-%d1%81-brew"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/WvhCGlLcrF8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h4 id="step-1-install-brew-if-you-havent-already">Step 1: Install <code>brew</code> if you haven&rsquo;t already <a class="header-link" href="#step-1-install-brew-if-you-havent-already"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Go to the <code>brew</code> website, <a href="https://brew.sh/">https://brew.sh/</a>, and follow the directions there. The most important step is the installation from the command line:</p>
+<h4 id="шаг-1-установите-brew-если-вы-еще-этого-не-сделали">Шаг 1. Установите <code>brew</code>, если Вы еще этого не сделали <a class="header-link" href="#%d1%88%d0%b0%d0%b3-1-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d0%b5-brew-%d0%b5%d1%81%d0%bb%d0%b8-%d0%b2%d1%8b-%d0%b5%d1%89%d0%b5-%d1%8d%d1%82%d0%be%d0%b3%d0%be-%d0%bd%d0%b5-%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d0%bb%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Перейдите на сайт <code>brew</code>, <a href="https://brew.sh/">https://brew.sh/</a>, и следуйте инструкциям там. Самый важный шаг - установка из командной строки:</p>
 
 
 
@@ -604,8 +604,8 @@ ruby -e <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https:/
 
 </div>
 
-<h4 id="step-2-run-the-brew-command-to-install-hugo">Step 2: Run the <code>brew</code> Command to Install <code>hugo</code> <a class="header-link" href="#step-2-run-the-brew-command-to-install-hugo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Installing Hugo using <code>brew</code> is as easy as the following:</p>
+<h4 id="шаг-2-запустите-команду-brew-чтобы-установить-hugo">Шаг 2: Запустите команду <code>brew</code>, чтобы установить <code>hugo</code> <a class="header-link" href="#%d1%88%d0%b0%d0%b3-2-%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d0%b5-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d1%83-brew-%d1%87%d1%82%d0%be%d0%b1%d1%8b-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c-hugo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Установить Hugo с помощью <code>brew</code> очень просто:</p>
 
 
 
@@ -627,7 +627,7 @@ brew install hugo
 
 </div>
 
-<p>If Homebrew is working properly, you should see something similar to the following:</p>
+<p>Если Homebrew работает правильно, Вы должны увидеть что-то вроде следующего:</p>
 <pre><code>==&gt; Downloading https://homebrew.bintray.com/bottles/hugo-0.21.sierra.bottle.tar.gz
 ######################################################################### 100.0%
 ==&gt; Pouring hugo-0.21.sierra.bottle.tar.gz
@@ -639,67 +639,67 @@ brew install hugo
 	</div>
 	
 	
-	<div class="admonition-content"><p>Replace <code>brew install hugo</code> with <code>brew install hugo --HEAD</code> if you want the absolute latest in-development version.</p>
+	<div class="admonition-content"><p>Замените <code>brew install hugo</code> на <code>brew install hugo --HEAD</code>, если Вам нужна самая последняя версия, находящаяся в разработке.</p>
 </div>
 </aside>
 
-<p><code>brew</code> should have updated your path to include Hugo. You can confirm by opening a new terminal window and running a few commands:</p>
-<pre><code>$ # show the location of the hugo executable
+<p><code>brew</code> должен был обновить Ваш путь, чтобы включить Хьюго. Вы можете подтвердить, открыв новое окно терминала и выполнив несколько команд:</p>
+<pre><code>$ # показать расположение исполняемого файла hugo
 which hugo
 /usr/local/bin/hugo
 
-# show the installed version
+# показать установленную версию
 ls -l $( which hugo )
 lrwxr-xr-x  1 mdhender admin  30 Mar 28 22:19 /usr/local/bin/hugo -&gt; ../Cellar/hugo/0.13_1/bin/hugo
 
-# verify that hugo runs correctly
+# убедитесь, что Хьюго работает правильно
 hugo version
 Hugo Static Site Generator v0.13 BuildDate: 2015-03-09T21:34:47-05:00
-</code></pre><h3 id="install-hugo-from-tarball">Install Hugo from Tarball <a class="header-link" href="#install-hugo-from-tarball"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<h4 id="step-1-decide-on-the-location">Step 1: Decide on the location <a class="header-link" href="#step-1-decide-on-the-location"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>When installing from the tarball, you have to decide if you&rsquo;re going to install the binary in <code>/usr/local/bin</code> or in your home directory. There are three camps on this:</p>
+</code></pre><h3 id="установите-hugo-из-tarball">Установите Hugo из Tarball <a class="header-link" href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d0%b5-hugo-%d0%b8%d0%b7-tarball"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h4 id="шаг-1-определитесь-с-местом">Шаг 1. Определитесь с местом <a class="header-link" href="#%d1%88%d0%b0%d0%b3-1-%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b8%d1%82%d0%b5%d1%81%d1%8c-%d1%81-%d0%bc%d0%b5%d1%81%d1%82%d0%be%d0%bc"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>При установке из архива Вы должны решить, собираетесь ли Вы устанавливать двоичный файл в <code>/usr/local/bin</code> или в свой домашний каталог. По этому поводу есть три лагеря:</p>
 <ol>
 <li>
-<p>Install it in <code>/usr/local/bin</code> so that all the users on your system have access to it. This is a good idea because it&rsquo;s a fairly standard place for executables. The downside is that you may need elevated privileges to put software into that location. Also, if there are multiple users on your system, they will all run the same version. Sometimes this can be an issue if you want to try out a new release.</p>
+<p>Установите его в <code>/usr/local/bin</code>, чтобы все пользователи Вашей системы имели к нему доступ. Это хорошая идея, потому что это довольно стандартное место для исполняемых файлов. Обратной стороной является то, что вам могут потребоваться повышенные привилегии для размещения программного обеспечения в этом месте. Кроме того, если в Вашей системе несколько пользователей, все они будут использовать одну и ту же версию. Иногда это может стать проблемой, если Вы хотите опробовать новую версию.</p>
 </li>
 <li>
-<p>Install it in <code>~/bin</code> so that only you can execute it. This is a good idea because it&rsquo;s easy to do, easy to maintain, and doesn&rsquo;t require elevated privileges. The downside is that only you can run Hugo. If there are other users on your site, they have to maintain their own copies. That can lead to people running different versions. Of course, this does make it easier for you to experiment with different releases.</p>
+<p>Установите его в <code>~/bin</code>, чтобы только Вы могли его выполнить. Это хорошая идея, потому что это легко сделать, легко поддерживать и не требует повышенных привилегий. Обратной стороной является то, что управлять Хьюго можно только тебе. Если на Вашем сайте есть другие пользователи, они должны поддерживать свои собственные копии. Это может привести к тому, что люди будут запускать разные версии. Конечно, это облегчает Вам эксперименты с разными выпусками.</p>
 </li>
 <li>
-<p>Install it in your <code>Sites</code> directory. This is not a bad idea if you have only one site that you&rsquo;re building. It keeps every thing in a single place. If you want to try out new releases, you can make a copy of the entire site and update the Hugo executable.</p>
+<p>Установите его в каталог <code>Sites</code>. Это неплохая идея, если у Вас есть только один сайт, который Вы создаете. Он хранит все в одном месте. Если Вы хотите опробовать новые выпуски, Вы можете сделать копию всего сайта и обновить исполняемый файл Hugo.</p>
 </li>
 </ol>
-<p>All three locations will work for you. In the interest of brevity, this guide focuses on option #2.</p>
-<h4 id="step-2-download-the-tarball">Step 2: Download the Tarball <a class="header-link" href="#step-2-download-the-tarball"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Все три локации подойдут Вам. В интересах краткости в этом руководстве рассматривается вариант №2.</p>
+<h4 id="шаг-2-загрузите-tarball">Шаг 2: Загрузите Tarball <a class="header-link" href="#%d1%88%d0%b0%d0%b3-2-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%b8%d1%82%d0%b5-tarball"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 <ol>
 <li>
-<p>Open <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> in your browser.</p>
+<p>Откройте в своем браузере <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>.</p>
 </li>
 <li>
-<p>Find the current release by scrolling down and looking for the green tag that reads &ldquo;Latest Release.&rdquo;</p>
+<p>Найдите текущий выпуск, прокрутив страницу вниз и найдите зеленый тег с надписью «Последний выпуск».</p>
 </li>
 <li>
-<p>Download the current tarball for the Mac. The name will be something like <code>hugo_X.Y_osx-64bit.tgz</code>, where <code>X.YY</code> is the release number.</p>
+<p>Загрузите текущий архив для Mac. Имя будет выглядеть примерно так <code>hugo_X.Y_osx-64bit.tgz</code>, где <code>X.YY</code> номер версии.</p>
 </li>
 <li>
-<p>By default, the tarball will be saved to your <code>~/Downloads</code> directory. If you choose to use a different location, you&rsquo;ll need to change that in the following steps.</p>
+<p>По умолчанию архив будет сохранен в Вашем каталоге <code>~/Downloads</code>. Если Вы решите использовать другое местоположение, Вам нужно будет изменить это в следующих шагах.</p>
 </li>
 </ol>
-<h4 id="step-3-confirm-your-download">Step 3: Confirm your download <a class="header-link" href="#step-3-confirm-your-download"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Verify that the tarball wasn&rsquo;t corrupted during the download:</p>
+<h4 id="шаг-3-подтвердите-загрузку">Шаг 3. Подтвердите загрузку <a class="header-link" href="#%d1%88%d0%b0%d0%b3-3-%d0%bf%d0%be%d0%b4%d1%82%d0%b2%d0%b5%d1%80%d0%b4%d0%b8%d1%82%d0%b5-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d1%83"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Убедитесь, что архив не был поврежден во время загрузки:</p>
 <pre><code>tar tvf ~/Downloads/hugo_X.Y_osx-64bit.tgz
 -rwxrwxrwx  0 0      0           0 Feb 22 04:02 hugo_X.Y_osx-64bit/hugo_X.Y_osx-64bit.tgz
 -rwxrwxrwx  0 0      0           0 Feb 22 03:24 hugo_X.Y_osx-64bit/README.md
 -rwxrwxrwx  0 0      0           0 Jan 30 18:48 hugo_X.Y_osx-64bit/LICENSE.md
-</code></pre><p>The <code>.md</code> files are documentation for Hugo. The other file is the executable.</p>
-<h4 id="step-4-install-into-your-bin-directory">Step 4: Install Into Your <code>bin</code> Directory <a class="header-link" href="#step-4-install-into-your-bin-directory"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<pre><code># create the directory if needed
+</code></pre><p>Файлы <code>.md</code> являются документацией для Hugo. Другой файл - исполняемый.</p>
+<h4 id="шаг-4-установите-в-каталог-bin">Шаг 4: Установите в каталог <code>bin</code> <a class="header-link" href="#%d1%88%d0%b0%d0%b3-4-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d0%b5-%d0%b2-%d0%ba%d0%b0%d1%82%d0%b0%d0%bb%d0%be%d0%b3-bin"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<pre><code># при необходимости создайте каталог
 mkdir -p ~/bin
 
-# make it the working directory
+# сделать его рабочим каталогом
 cd ~/bin
 
-# extract the tarball
+# распаковать архив
 tar -xvzf ~/Downloads/hugo_X.Y_osx-64bit.tgz
 Archive:  hugo_X.Y_osx-64bit.tgz
   x ./
@@ -707,43 +707,43 @@ Archive:  hugo_X.Y_osx-64bit.tgz
   x ./LICENSE.md
   x ./README.md
 
-# verify that it runs
+# убедитесь, что он работает
 ./hugo version
 Hugo Static Site Generator v0.13 BuildDate: 2015-02-22T04:02:30-06:00
-</code></pre><p>You may need to add your bin directory to your <code>PATH</code> environment variable. The <code>which</code> command will check for us. If it can find <code>hugo</code>, it will print the full path to it. Otherwise, it will not print anything.</p>
-<pre><code># check if hugo is in the path
+</code></pre><p>Возможно, Вам потребуется добавить каталог <code>bin</code> в переменную окружения <code>PATH</code>. Команда <code>which</code> проверит нас. Если он может найти <code>hugo</code>он напечатает полный путь к нему. В противном случае он ничего не напечатает.</p>
+<pre><code># проверьте, есть ли Хьюго в path
 which hugo
 /Users/USERNAME/bin/hugo
-</code></pre><p>If <code>hugo</code> is not in your <code>PATH</code>:</p>
+</code></pre><p>Если <code>hugo</code> отсутствует в Вашем <code>PATH</code>:</p>
 <ol>
 <li>
-<p>Determine your default shell (zsh or bash).</p>
+<p>Определите оболочку по умолчанию (zsh или bash).</p>
 <pre><code>echo $SHELL
 </code></pre></li>
 <li>
-<p>Edit your profile.</p>
-<p>If your default shell is zsh:</p>
+<p>Отредактируйте Ваш профиль.</p>
+<p>Если ваша оболочка по умолчанию zsh:</p>
 <pre><code>nano ~/.zprofile
-</code></pre><p>If your default shell is bash:</p>
+</code></pre><p>Если ваша оболочка по умолчанию bash:</p>
 <pre><code>nano ~/.bash_profile
 </code></pre></li>
 <li>
-<p>Insert a line to add <code>$HOME/bin</code> to your existing <code>PATH</code>.</p>
+<p>Вставьте строку, чтобы добавить <code>$HOME/bin</code> к Вашему существующему <code>PATH</code>.</p>
 <pre><code>export PATH=$PATH:$HOME/bin
 </code></pre></li>
 <li>
-<p>Save the file by pressing Control-X, then Y.</p>
+<p>Сохраните файл, нажав Control-X, затем Y.</p>
 </li>
 <li>
-<p>Close the terminal and open a new terminal to pick up the changes to your profile. Verify the change by running the <code>which hugo</code> command again.</p>
+<p>Закройте терминал и откройте новый терминал, чтобы принять изменения в Вашем профиле. Проверьте изменение, снова запустив команду <code>which hugo</code>.</p>
 </li>
 </ol>
-<p>You&rsquo;ve successfully installed Hugo.</p>
-<h3 id="build-from-source-on-mac">Build from Source on Mac <a class="header-link" href="#build-from-source-on-mac"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>If you want to compile Hugo yourself, you&rsquo;ll need to install Go (aka Golang). You can <a href="https://golang.org/dl/">install Go directly from the Go website</a> or via Homebrew using the following command:</p>
+<p>Вы успешно установили Hugo.</p>
+<h3 id="сборка-из-исходного-кода-на-mac">Сборка из исходного кода на Mac <a class="header-link" href="#%d1%81%d0%b1%d0%be%d1%80%d0%ba%d0%b0-%d0%b8%d0%b7-%d0%b8%d1%81%d1%85%d0%be%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%ba%d0%be%d0%b4%d0%b0-%d0%bd%d0%b0-mac"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Если Вы хотите скомпилировать Hugo самостоятельно, Вам нужно установить Go (он же Golang). Вы можете <a href="https://golang.org/dl/">установить Go прямо с веб-сайта Go</a> или через Homebrew, используя следующую команду:</p>
 <pre><code>brew install go
-</code></pre><h4 id="step-1-get-the-source">Step 1: Get the Source <a class="header-link" href="#step-1-get-the-source"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>If you want to compile a specific version of Hugo, go to <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> and download the source code for the version of your choice. If you want to compile Hugo with all the latest changes (which might include bugs), clone the Hugo repository:</p>
+</code></pre><h4 id="шаг-1-получите-исходный-код">Шаг 1. Получите исходный код <a class="header-link" href="#%d1%88%d0%b0%d0%b3-1-%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b8%d1%82%d0%b5-%d0%b8%d1%81%d1%85%d0%be%d0%b4%d0%bd%d1%8b%d0%b9-%d0%ba%d0%be%d0%b4"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Если Вы хотите скомпилировать конкретную версию Hugo, перейдите на <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> и загрузите исходный код для выбранной Вами версии. Если Вы хотите скомпилировать Hugo со всеми последними изменениями (которые могут включать ошибки), клонируйте репозиторий Hugo:</p>
 <pre><code>git clone https://github.com/gohugoio/hugo
 </code></pre>
 <aside class="admonition warning">
@@ -752,67 +752,68 @@ which hugo
 	</div>
 	
 	
-	<div class="admonition-content"><p>Cloning the Hugo repository directly means taking the good with the bad. By using the bleeding-edge version of Hugo, you make your development susceptible to the latest features, as well as the latest bugs. Your feedback is appreciated. If you find a bug in the latest release, <a href="https://github.com/gohugoio/hugo/issues/new">please create an issue on GitHub</a>.</p>
+	<div class="admonition-content"><p>Клонирование репозитория Hugo напрямую означает отказ от хорошего и плохого. Используя новейшую версию Hugo, Вы делаете свою разработку восприимчивой к новейшим функциям, а также к последним ошибкам. Ваш отзыв очень важен. Если Вы обнаружите ошибку в последней версии, <a href="https://github.com/gohugoio/hugo/issues/new">пожалуйста, создайте проблему на GitHub</a>.</p>
 </div>
 </aside>
 
-<h4 id="step-2-compiling">Step 2: Compiling <a class="header-link" href="#step-2-compiling"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Make the directory containing the source your working directory and then fetch Hugo&rsquo;s dependencies:</p>
+<h4 id="шаг-2-компиляция">Шаг 2: Компиляция <a class="header-link" href="#%d1%88%d0%b0%d0%b3-2-%d0%ba%d0%be%d0%bc%d0%bf%d0%b8%d0%bb%d1%8f%d1%86%d0%b8%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Сделайте каталог, содержащий исходный код, Вашим рабочим каталогом, а затем загрузите зависимости Hugo:</p>
 <pre><code>mkdir -p src/github.com/gohugoio
 ln -sf $(pwd) src/github.com/gohugoio/hugo
 
 go get
-</code></pre><p>This will fetch the absolute latest version of the dependencies. If Hugo fails to build, it may be the result of a dependency&rsquo;s author introducing a breaking change.</p>
-<p>Once you have properly configured your directory, you can compile Hugo using the following command:</p>
+</code></pre><p>Это позволит получить самую последнюю версию зависимостей. Если Hugo не может построить, это может быть результатом того, что автор зависимости внес критическое изменение.</p>
+<p>После того, как Вы правильно настроили свой каталог, Вы можете скомпилировать Hugo, используя следующую команду:</p>
 <pre><code>go build -o hugo main.go
-</code></pre><p>Then place the <code>hugo</code> executable somewhere in your <code>$PATH</code>. You&rsquo;re now ready to start using Hugo.</p>
+</code></pre><p>Затем поместите исполняемый файл <code>hugo</code> где-нибудь в свой <code>$PATH</code>. теперь Вы готовы начать использовать Hugo.</p>
 <h2 id="windows">Windows <a class="header-link" href="#windows"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The following aims to be a complete guide to installing Hugo on your Windows PC.</p>
+<p>Ниже приводится полное руководство по установке Hugo на ПК с Windows.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/G7umPCU-8xc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h3 id="assumptions-1">Assumptions <a class="header-link" href="#assumptions-1"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="предположения-1">Предположения <a class="header-link" href="#%d0%bf%d1%80%d0%b5%d0%b4%d0%bf%d0%be%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-1"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <ol>
-<li>You will use <code>C:\Hugo\Sites</code> as the starting point for your new project.</li>
-<li>You will use <code>C:\Hugo\bin</code> to store executable files.</li>
+<li>Вы будете использовать <code>C:\Hugo\Sites</code> в качестве отправной точки для Вашего нового проекта.</li>
+<li>Вы будете использовать <code>C:\Hugo\bin</code> для хранения исполняемых файлов.</li>
 </ol>
-<h3 id="set-up-your-directories">Set up Your Directories <a class="header-link" href="#set-up-your-directories"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You&rsquo;ll need a place to store the Hugo executable, your <a href="/content-management/">content</a>, and the generated Hugo website:</p>
+<h3 id="настройте-свои-каталоги">Настройте свои каталоги <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%82%d0%b5-%d1%81%d0%b2%d0%be%d0%b8-%d0%ba%d0%b0%d1%82%d0%b0%d0%bb%d0%be%d0%b3%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Вам понадобится место для хранения исполняемого файла Hugo, Вашего <a href="/content-management/">контента</a> и созданного веб-сайта Hugo:</p>
 <ol>
-<li>Open Windows Explorer.</li>
-<li>Create a new folder: <code>C:\Hugo</code>, assuming you want Hugo on your C drive, although this can go anywhere</li>
-<li>Create a subfolder in the Hugo folder: <code>C:\Hugo\bin</code></li>
-<li>Create another subfolder in Hugo: <code>C:\Hugo\Sites</code></li>
+<li>Откройте проводник Windows.</li>
+<li>Создайте новую папку: <code>C:\Hugo</code>, при условии, что вы хотите, чтобы Hugo был на вашем диске C, хотя он может быть куда угодно.</li>
+<li>Создайте подпапку в папке Hugo: <code>C:\Hugo\bin</code></li>
+<li>Создайте еще одну подпапку в Hugo: <code>C:\Hugo\Sites</code></li>
 </ol>
-<h3 id="technical-users">Technical Users <a class="header-link" href="#technical-users"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="технические-пользователи">Технические пользователи <a class="header-link" href="#%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b5-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <ol>
-<li>Download the latest zipped Hugo executable from <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a>.</li>
-<li>Extract all contents to your <code>..\Hugo\bin</code> folder.</li>
-<li>In PowerShell or your preferred CLI, add the <code>hugo.exe</code> executable to your PATH by navigating to <code>C:\Hugo\bin</code> (or the location of your hugo.exe file) and use the command <code>set PATH=%PATH%;C:\Hugo\bin</code>. If the <code>hugo</code> command does not work after a reboot, you may have to run the command prompt as administrator.</li>
+<li>Загрузите последний заархивированный исполняемый файл Hugo из <a href="https://github.com/gohugoio/hugo/releases">Релизов Hugo</a>.</li>
+<li>Распакуйте все содержимое в папку <code>..\Hugo\bin</code>.</li>
+<li>В PowerShell или предпочитаемом Вами интерфейсе командной строки добавьте исполняемый файл <code>hugo.exe</code> в Ваш <code>PATH</code>, перейдя в <code>C:\Hugo\bin</code> (или в расположение Вашего файла hugo.exe) и используйте команду <code>set PATH=%PATH%;C:\Hugo\bin</code>. Если команда <code>hugo</code> не работает после перезагрузки, возможно, Вам придется запустить командную строку от имени администратора.</li>
 </ol>
-<h3 id="less-technical-users">Less-technical Users <a class="header-link" href="#less-technical-users"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="менее-технических-пользователей">Менее технических пользователей <a class="header-link" href="#%d0%bc%d0%b5%d0%bd%d0%b5%d0%b5-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d1%85-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <ol>
-<li>Go to the <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a> page.</li>
-<li>The latest release is announced on top. Scroll to the bottom of the release announcement to see the downloads. They&rsquo;re all ZIP files.</li>
-<li>Find the Windows files near the bottom (they&rsquo;re in alphabetical order, so Windows is last) – download either the 32-bit or 64-bit file depending on whether you have 32-bit or 64-bit Windows. (If you don&rsquo;t know, <a href="https://esupport.trendmicro.com/en-us/home/pages/technical-support/1038680.aspx">see here</a>.)</li>
-<li>Move the ZIP file into your <code>C:\Hugo\bin</code> folder.</li>
-<li>Double-click on the ZIP file and extract its contents. Be sure to extract the contents into the same <code>C:\Hugo\bin</code> folder – Windows will do this by default unless you tell it to extract somewhere else.</li>
-<li>You should now have three new files: The hugo executable (<code>hugo.exe</code>), <code>LICENSE</code>, and <code>README.md</code>.</li>
+<li>Перейдите на страницу <a href="https://github.com/gohugoio/hugo/releases">релизов Hugo</a>.</li>
+<li>Сверху анонсируется последний релиз. Прокрутите до конца объявления о выпуске, чтобы увидеть загрузки. Это все ZIP-файлы.</li>
+<li>Найдите файлы Windows внизу (они расположены в алфавитном порядке, поэтому Windows идет последней) - загрузите 32-разрядный или 64-разрядный файл в зависимости от того, какая у Вас Windows - 32-разрядная или 64-разрядная. (Если Вы не знаете, <a href="https://esupport.trendmicro.com/en-us/home/pages/technical-support/1038680.aspx">смотрите здесь</a>.)</li>
+<li>Переместите ZIP-файл в папку <code>C:\Hugo\bin</code>.</li>
+<li>Дважды щелкните ZIP-файл и извлеките его содержимое. Обязательно извлеките содержимое в ту же папку <code>C:\Hugo\bin</code> – Windows сделает это по умолчанию, если Вы не укажете, что нужно распаковать куда-нибудь еще.</li>
+<li>Теперь у Вас должно быть три новых файла: исполняемый файл hugo (<code>hugo.exe</code>), <code>LICENSE</code> и <code>README.md</code>.</li>
 </ol>
-<p>Now you need to add Hugo to your Windows PATH settings:</p>
-<h4 id="for-windows-10-users">For Windows 10 Users: <a class="header-link" href="#for-windows-10-users"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Теперь Вам нужно добавить Hugo в настройки Windows PATH:</p>
+<h4 id="для-пользователей-windows-10">Для пользователей Windows 10: <a class="header-link" href="#%d0%b4%d0%bb%d1%8f-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%b9-windows-10"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 <ul>
-<li>Right click on the <strong>Start</strong> button.</li>
-<li>Click on <strong>System</strong>.</li>
-<li>Click on <strong>Advanced System Settings</strong> on the left.</li>
-<li>Click on the <strong>Environment Variables&hellip;</strong> button on the bottom.</li>
-<li>In the User variables section, find the row that starts with PATH (PATH will be all caps).</li>
-<li>Double-click on <strong>PATH</strong>.</li>
-<li>Click the <strong>New&hellip;</strong> button.</li>
-<li>Type in the folder where <code>hugo.exe</code> was extracted, which is <code>C:\Hugo\bin</code> if you went by the instructions above. <em>The PATH entry should be the folder where Hugo lives and not the binary.</em> Press <!-- raw HTML omitted -->Enter<!-- raw HTML omitted --> when you&rsquo;re done typing.</li>
-<li>Click OK at every window to exit.</li>
+<li>Нажмите правой кнопкой мыши кнопку <strong>Пуск</strong>.</li>
+<li>Нажмите <strong>Система</strong>.</li>
+<li>Нажмите <strong>Сведения о системе</strong> справа.</li>
+<li>Нажмите <strong>Дополнительные параметры системы</strong> слева.</li>
+<li>Нажмите на кнопку  <strong>Переменные среды&hellip;</strong> внизу.</li>
+<li>В разделе <strong>Переменные среды пользователя для</strong> найдите строку, которая начинается с PATH (PATH будет полностью заглавными, но не обязательно).</li>
+<li>Двойной клик на <strong>PATH</strong> или нажмите один раз на <strong>PATH</strong> и кнопка &ldquo;Изменить&rdquo;.</li>
+<li>Нажмите кнопку <strong>Создать&hellip;</strong>.</li>
+<li>Введите папку, в которую был извлечен <code>hugo.exe</code>, то есть <code>C:\Hugo\bin</code>, если Вы следовали приведенным выше инструкциям. <em>Запись PATH должна быть папкой, в которой живет Хьюго, а не двоичным файлом.</em> Нажмите <!-- raw HTML omitted -->Ввод<!-- raw HTML omitted -->, когда закончите вводить текст.</li>
+<li>Для выхода нажимайте ОК в каждом окне.</li>
 </ul>
 
 <aside class="admonition note">
@@ -821,30 +822,30 @@ go get
 	</div>
 	
 	
-	<div class="admonition-content"><p>The path editor in Windows 10 was added in the large <a href="https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/">November 2015 Update</a>. You&rsquo;ll need to have that or a later update installed for the above steps to work. You can see what Windows 10 build you have by clicking on the <!-- raw HTML omitted --><!-- raw HTML omitted --> Start button → Settings → System → About. See <a href="https://www.howtogeek.com/236195/how-to-find-out-which-build-and-version-of-windows-10-you-have/">here</a> for more.)</p>
+	<div class="admonition-content"><p>Редактор путей в Windows 10 был добавлен в большом <a href="https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/">Обновление за ноябрь 2015 г.</a>. Вам необходимо установить это или более позднее обновление, чтобы описанные выше действия работали. Вы можете увидеть, какая у вас сборка Windows 10, нажав кнопку <!-- raw HTML omitted --><!-- raw HTML omitted --> Пуск → Настройки → Система → О программе. Смотрите <a href="https://www.howtogeek.com/236195/how-to-find-out-which-build-and-version-of-windows-10-you-have/">здесь</a> для получения дополнительной информации.)</p>
 </div>
 </aside>
 
-<h4 id="for-windows-7-and-8x-users">For Windows 7 and 8.x users: <a class="header-link" href="#for-windows-7-and-8x-users"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Windows 7 and 8.1 do not include the easy path editor included in Windows 10, so non-technical users on those platforms are advised to install a free third-party path editor like <a href="http://eveditor.com/">Windows Environment Variables Editor</a> or <a href="https://patheditor2.codeplex.com/">Path Editor</a>.</p>
-<h3 id="verify-the-executable">Verify the Executable <a class="header-link" href="#verify-the-executable"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Run a few commands to verify that the executable is ready to run, and then build a sample site to get started.</p>
-<h4 id="1-open-a-command-prompt">1. Open a Command Prompt <a class="header-link" href="#1-open-a-command-prompt"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>At the prompt, type <code>hugo help</code> and press the <!-- raw HTML omitted -->Enter<!-- raw HTML omitted --> key. You should see output that starts with:</p>
+<h4 id="для-пользователей-windows-7-и-8x">Для пользователей Windows 7 и 8.x: <a class="header-link" href="#%d0%b4%d0%bb%d1%8f-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%b9-windows-7-%d0%b8-8x"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Windows 7 и 8.1 не включают простой редактор путей, включенный в Windows 10, поэтому нетехническим пользователям на этих платформах рекомендуется установить бесплатный сторонний редактор путей, например <a href="http://eveditor.com/">Редактор переменных среды Windows</a> или <a href="https://patheditor2.codeplex.com/">Path Editor</a>.</p>
+<h3 id="проверить-исполняемый-файл">Проверить исполняемый файл <a class="header-link" href="#%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d0%b8%d1%82%d1%8c-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d0%bd%d1%8f%d0%b5%d0%bc%d1%8b%d0%b9-%d1%84%d0%b0%d0%b9%d0%bb"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Выполните несколько команд, чтобы убедиться, что исполняемый файл готов к запуску, а затем создайте образец сайта, чтобы начать работу.</p>
+<h4 id="1-откройте-командную-строку">1. Откройте командную строку <a class="header-link" href="#1-%d0%be%d1%82%d0%ba%d1%80%d0%be%d0%b9%d1%82%d0%b5-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%bd%d1%83%d1%8e-%d1%81%d1%82%d1%80%d0%be%d0%ba%d1%83"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>В командной строке введите <code>hugo help</code> и нажмите клавишу <!-- raw HTML omitted -->Enter<!-- raw HTML omitted -->. Вы должны увидеть результат, который начинается с:</p>
 <pre><code>hugo is the main command, used to build your Hugo site.
 
 Hugo is a Fast and Flexible Static Site Generator
 built with love by spf13 and friends in Go.
 
 Complete documentation is available at https://gohugo.io/.
-</code></pre><p>If you do, then the installation is complete. If you don&rsquo;t, double-check the path that you placed the <code>hugo.exe</code> file in and that you typed that path correctly when you added it to your <code>PATH</code> variable. If you&rsquo;re still not getting the output, search the <a href="https://discourse.gohugo.io">Hugo discussion forum</a> to see if others have already figured out our problem. If not, add a note&mdash;in the &ldquo;Support&rdquo; category&mdash;and be sure to include your command and the output.</p>
-<p>At the prompt, change your directory to the <code>Sites</code> directory.</p>
+</code></pre><p>Если да, то установка завершена. Если Вы этого не сделаете, дважды проверьте путь, по которому Вы поместили файл <code>hugo.exe</code>, и правильно ли Вы ввели этот путь, когда добавляли его в переменную <code>PATH</code>. Если Вы по-прежнему не получаете результат, поищите в <a href="https://discourse.gohugo.io">форуме обсуждения Hugo</a>, чтобы узнать, поняли ли другие уже нашу проблему. Если нет, добавьте примечание &mdash; в категорию &ldquo;Поддержка&rdquo; &mdash; и обязательно укажите свою команду и вывод.</p>
+<p>При появлении запроса смените каталог на каталог <code>Sites</code>.</p>
 <pre><code>C:\Program Files&gt; cd C:\Hugo\Sites
 C:\Hugo\Sites&gt;
-</code></pre><h4 id="2-run-the-command">2. Run the Command <a class="header-link" href="#2-run-the-command"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Run the command to generate a new site. I&rsquo;m using <code>example.com</code> as the name of the site.</p>
+</code></pre><h4 id="2-запустите-команду">2. Запустите команду <a class="header-link" href="#2-%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d0%b5-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d1%83"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Запустите команду, чтобы создать новый сайт. Я использую <code>example.com</code> в качестве названия сайта.</p>
 <pre><code>C:\Hugo\Sites&gt; hugo new site example.com
-</code></pre><p>You should now have a directory at <code>C:\Hugo\Sites\example.com</code>. Change into that directory and list the contents. You should get output similar to the following:</p>
+</code></pre><p>Теперь у вас должен быть каталог в <code>C:\Hugo\Sites\example.com</code>. Перейдите в этот каталог и перечислите его содержимое. Вы должны получить следующий результат:</p>
 <pre><code>C:\Hugo\Sites&gt; cd example.com
 C:\Hugo\Sites\example.com&gt; dir
 Directory of C:\hugo\sites\example.com
@@ -859,22 +860,22 @@ Directory of C:\hugo\sites\example.com
 04/13/2015  10:44 PM    &lt;DIR&gt;          static
                1 File(s)             83 bytes
                7 Dir(s)   6,273,331,200 bytes free
-</code></pre><h3 id="troubleshoot-windows-installation">Troubleshoot Windows Installation <a class="header-link" href="#troubleshoot-windows-installation"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p><a href="https://github.com/dhersam">@dhersam</a> has created a nice video on common issues:</p>
+</code></pre><h3 id="устранение-неполадок-при-установке-windows">Устранение неполадок при установке Windows <a class="header-link" href="#%d1%83%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bd%d0%b5%d0%bf%d0%be%d0%bb%d0%b0%d0%b4%d0%be%d0%ba-%d0%bf%d1%80%d0%b8-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b5-windows"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p><a href="https://github.com/dhersam">@dhersam</a> создал отличное видео по распространенным проблемам:</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/c8fJIRNChmU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <h2 id="linux">Linux <a class="header-link" href="#linux"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<h3 id="snap-package">Snap Package <a class="header-link" href="#snap-package"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>In any of the <a href="https://snapcraft.io/docs/installing-snapd">Linux distributions that support snaps</a>, you may install the &ldquo;extended&rdquo; Sass/SCSS version with this command:</p>
+<h3 id="пакет-snap">Пакет Snap <a class="header-link" href="#%d0%bf%d0%b0%d0%ba%d0%b5%d1%82-snap"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>В любом из <a href="https://snapcraft.io/docs/installing-snapd">дистрибутивов Linux, поддерживающих привязки</a>, вы можете установить «расширенную» версию Sass/SCSS с помощью этой команды:</p>
 <pre><code>snap install hugo --channel=extended
 </code></pre>
-<p>To install the non-extended version without Sass/SCSS support:</p>
+<p>Чтобы установить нерасширенную версию без поддержки Sass/SCSS:</p>
 <pre><code>snap install hugo
 </code></pre>
-<p>To switch between the two, use either <code>snap refresh hugo --channel=extended</code> or <code>snap refresh hugo --channel=stable</code>.</p>
+<p>Для переключения между ними используйте либо <code>snap refresh hugo --channel=extended</code> или <code>snap refresh hugo --channel=stable</code>.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -882,39 +883,39 @@ Directory of C:\hugo\sites\example.com
 	</div>
 	
 	
-	<div class="admonition-content"><p>Hugo installed via Snap can write only inside the user’s <code>$HOME</code> directory&mdash;and gvfs-mounted directories owned by the user&mdash;because of Snaps’ confinement and security model. More information is also available <a href="https://github.com/gohugoio/hugo/issues/3143">in this related GitHub issue</a>.</p>
+	<div class="admonition-content"><p>Hugo, установленный с помощью Snap, может писать только в пользовательский каталог <code>$HOME</code> &mdash; и в каталоги, смонтированные с помощью gvfs, принадлежащие пользователю &mdash; из-за ограниченности и модели безопасности Snaps. Дополнительная информация также доступна <a href="https://github.com/gohugoio/hugo/issues/3143">в соответствующем выпуске GitHub</a>.</p>
 </div>
 </aside>
 
-<h3 id="debian-and-ubuntu">Debian and Ubuntu <a class="header-link" href="#debian-and-ubuntu"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p><a href="https://github.com/anthonyfok">@anthonyfok</a> and friends in the <a href="https://go-team.pages.debian.net/">Debian Go Packaging Team</a> maintains an official hugo <a href="https://packages.debian.org/hugo">Debian package</a> which is shared with <a href="https://packages.ubuntu.com/hugo">Ubuntu</a> and is installable via <code>apt-get</code>:</p>
+<h3 id="debian-или-ubuntu">Debian или Ubuntu <a class="header-link" href="#debian-%d0%b8%d0%bb%d0%b8-ubuntu"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p><a href="https://github.com/anthonyfok">@anthonyfok</a> и друзья из <a href="https://go-team.pages.debian.net/">Debian Go Packaging Team</a> поддерживают официальный hugo <a href="https://packages.debian.org/hugo">Debian package</a>, который используется совместно с <a href="https://packages.ubuntu.com/hugo">Ubuntu</a> и может быть установлен через <code>apt-get</code>:</p>
 <pre><code>sudo apt-get install hugo
 </code></pre>
-<p>What this installs depends on your Debian/Ubuntu version. On Ubuntu bionic (18.04), this installs the non-extended version without Sass/SCSS support. On Ubuntu disco (19.04), this installs the extended version with Sass/SCSS support.</p>
-<p>This option is not recommended because the Hugo in Linux package managers for Debian and Ubuntu is usually a few versions behind as described <a href="https://github.com/gcushen/hugo-academic/issues/703">here</a></p>
+<p>То, что будет установлено, зависит от Вашей версии Debian/Ubuntu. В Ubuntu bionic (18.04) устанавливается нерасширенная версия без поддержки Sass/SCSS. На Ubuntu disco (19.04) устанавливается расширенная версия с поддержкой Sass/SCSS.</p>
+<p>Этот вариант не рекомендуется, потому что Hugo в менеджерах пакетов Linux для Debian и Ubuntu обычно на несколько версий отстает, как описано <a href="https://github.com/gcushen/hugo-academic/issues/703">здесь</a></p>
 <h3 id="arch-linux">Arch Linux <a class="header-link" href="#arch-linux"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You can also install Hugo from the Arch Linux <a href="https://www.archlinux.org/packages/community/x86_64/hugo/">community</a> repository. Applies also to derivatives such as Manjaro.</p>
+<p>Вы также можете установить Hugo из репозитория <a href="https://www.archlinux.org/packages/community/x86_64/hugo/">сообщество</a> Arch Linux. Применимо также к производным, таким как Manjaro.</p>
 <pre><code>sudo pacman -Syu hugo
-</code></pre><h3 id="fedora-red-hat-and-centos">Fedora, Red Hat and CentOS <a class="header-link" href="#fedora-red-hat-and-centos"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Fedora maintains an <a href="https://apps.fedoraproject.org/packages/hugo">official package for Hugo</a> which may be installed with:</p>
+</code></pre><h3 id="fedora-red-hat-и-centos">Fedora, Red Hat и CentOS <a class="header-link" href="#fedora-red-hat-%d0%b8-centos"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Fedora поддерживает <a href="https://apps.fedoraproject.org/packages/hugo">официальный пакет для Hugo</a>, который можно установить с помощью:</p>
 <pre><code>sudo dnf install hugo
 </code></pre>
-<p>For the latest version, the Hugo package maintained by <a href="https://github.com/daftaupe">@daftaupe</a> at Fedora Copr is recommended:</p>
+<p>Для последней версии рекомендуется пакет Hugo, поддерживаемый <a href="https://github.com/daftaupe">@daftaupe</a> в Fedora Copr:</p>
 <ul>
 <li><a href="https://copr.fedorainfracloud.org/coprs/daftaupe/hugo/">https://copr.fedorainfracloud.org/coprs/daftaupe/hugo/</a></li>
 </ul>
-<p>See the <a href="https://discourse.gohugo.io/t/solved-fedora-copr-repository-out-of-service/2491">related discussion in the Hugo forums</a>.</p>
+<p>Смотрите <a href="https://discourse.gohugo.io/t/solved-fedora-copr-repository-out-of-service/2491">соответствующие обсуждения на форумах Hugo</a>.</p>
 <h3 id="solus">Solus <a class="header-link" href="#solus"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Solus includes Hugo in its package repository, it may be installed with:</p>
+<p>Solus включает Hugo в свой репозиторий пакетов, его можно установить с помощью:</p>
 <pre><code>sudo eopkg install hugo
 </code></pre><h2 id="openbsd">OpenBSD <a class="header-link" href="#openbsd"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>OpenBSD provides a package for Hugo via <code>pkg_add</code>:</p>
+<p>OpenBSD предоставляет пакет для Hugo через <code>pkg_add</code>:</p>
 <pre><code>doas pkg_add hugo
 </code></pre>
-<h2 id="upgrade-hugo">Upgrade Hugo <a class="header-link" href="#upgrade-hugo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Upgrading Hugo is as easy as downloading and replacing the executable you’ve placed in your <code>PATH</code> or run <code>brew upgrade hugo</code> if using Homebrew.</p>
-<h2 id="next-steps">Next Steps <a class="header-link" href="#next-steps"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Now that you&rsquo;ve installed Hugo, read the <a href="/getting-started/quick-start/">Quick Start guide</a> and explore the rest of the documentation. If you have questions, ask the Hugo community directly by visiting the <a href="https://discourse.gohugo.io">Hugo Discussion Forum</a>.</p>
+<h2 id="обновление-хьюго">Обновление Хьюго <a class="header-link" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d1%85%d1%8c%d1%8e%d0%b3%d0%be"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Обновить Hugo так же просто, как загрузить и заменить исполняемый файл, который Вы поместили в свой <code>PATH</code>, или запустить <code>brew upgrade hugo</code> при использовании Homebrew.</p>
+<h2 id="следующие-шаги">Следующие шаги <a class="header-link" href="#%d1%81%d0%bb%d0%b5%d0%b4%d1%83%d1%8e%d1%89%d0%b8%d0%b5-%d1%88%d0%b0%d0%b3%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Теперь, когда вы установили Hugo, прочтите <a href="/getting-started/quick-start/">Краткое руководство</a> и изучите остальную документацию. Если у вас есть вопросы, задавайте их сообществу Hugo напрямую, посетив <a href="https://discourse.gohugo.io">Форум обсуждения Hugo</a> или в чате <a href="https://t.me/hugo_ru">Telegram</a>.</p>
 
 </div>
 
@@ -977,7 +978,7 @@ Directory of C:\hugo\sites\example.com
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".getting-started">Начало</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".getting-started">С чего начать</a>
         <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
@@ -986,32 +987,32 @@ Directory of C:\hugo\sites\example.com
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/quick-start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Quick Start
+              Быстрый старт
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/installing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Install Hugo
+              Установка Хьюго
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/usage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Basic Usage
+              Основы использования
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/directory-structure/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Directory Structure
+              Структура каталогов
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Configuration
+              Настройка
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/external-learning-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              External Learning Resources
+              Внешние ресурсы обучения
             </a>
           </li>
         </ul>
@@ -2248,8 +2249,8 @@ Directory of C:\hugo\sites\example.com
   <a href="https://gohugo.ru/getting-started/installing/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Install Hugo”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Установка Хьюго”
+  </a> последнее обновление: December 25, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/7e0cbc34cbf2ab3028528c967bbcd47d979a40ad">Перевод getting-started (7e0cbc34c)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/getting-started%5cinstalling.md" class="
@@ -2415,7 +2416,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Начало
+          С чего начать
         </a>
     </li>
   

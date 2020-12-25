@@ -52,26 +52,26 @@ Define the Base Template The following defines a simple base template at _defau
     </item>
     
     <item>
-      <title>Install Hugo</title>
+      <title>Установка Хьюго</title>
       <link>https://gohugo.ru/getting-started/installing/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/installing/</guid>
-      <description>There is lots of talk about &amp;ldquo;Hugo being written in Go&amp;rdquo;, but you don&amp;rsquo;t need to install Go to enjoy Hugo. Just grab a precompiled binary!
-Hugo is written in Go with support for multiple platforms. The latest release can be found at Hugo Releases.
-Hugo currently provides pre-built binaries for the following:
- macOS (Darwin) for x64, i386, and ARM architectures Windows Linux OpenBSD FreeBSD  Hugo may also be compiled from source wherever the Go toolchain can run; e.</description>
+      <description>Сейчас много говорят о том, что «Хьюго пишется на Go», но Вам не нужно устанавливать Go, чтобы пользоваться Hugo. Просто возьмите предварительно скомпилированный двоичный файл!
+Hugo написан на Go с поддержкой нескольких платформ. Последнюю версию можно найти на странице Релизов Хьюго.
+В настоящее время Hugo предоставляет готовые двоичные файлы для следующего:
+ macOS (Darwin) для x64, i386 и архитектур ARM Windows Linux OpenBSD FreeBSD  Hugo также может быть скомпилирован из исходного кода везде, где может работать цепочка инструментов Go; например, в других операционных системах, таких как DragonFly BSD, OpenBSD, Plan 9, Solaris и других.</description>
     </item>
     
     <item>
-      <title>Directory Structure</title>
+      <title>Структура каталогов</title>
       <link>https://gohugo.ru/getting-started/directory-structure/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/directory-structure/</guid>
-      <description>New Site Scaffolding   Running the hugo new site generator from the command line will create a directory structure with the following elements:
-.├── archetypes├── config.toml├── content├── data├── layouts├── static└── themesDirectory Structure Explained The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.
- archetypes You can create new content files in Hugo using the hugo new command.</description>
+      <description>Скелет нового сайта   Запуск генератора hugo new site из командной строки создаст структуру каталогов со следующими элементами:
+.├── archetypes├── config.toml├── content├── data├── layouts├── static└── themesОбъяснение структуры каталогов Ниже приводится общий обзор каждого из каталогов со ссылками на каждый из соответствующих разделов в документации Hugo.
+ archetypes Вы можете создавать новые файлы содержимого в Hugo, используя команду hugo new. По умолчанию Hugo будет создавать новые файлы содержимого с как минимум date, title (выводится из имени файла) и draft = true.</description>
     </item>
     
     <item>
@@ -84,16 +84,16 @@ Hugo currently provides pre-built binaries for the following:
     </item>
     
     <item>
-      <title>Configure Hugo</title>
+      <title>Настройка Хьюго</title>
       <link>https://gohugo.ru/getting-started/configuration/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/getting-started/configuration/</guid>
-      <description>Configuration File Hugo uses the config.toml, config.yaml, or config.json (if found in the site root) as the default site config file.
-The user can choose to override that default with one or more site config files using the command line --config switch.
-Examples:
-hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlMultiple site config files can be specified as a comma-separated string to the --config switch.
-Configuration Directory In addition to using a single site config file, one can use the configDir directory (default to config/) to maintain easier organization and environment specific settings.</description>
+      <description>Конфигурационный файл Хьюго использует файлы config.toml, config.yaml или config.json (если он находится в корне сайта) в качестве файла конфигурации сайта по умолчанию.
+Пользователь может выбрать переопределение этого значения по умолчанию с помощью одного или нескольких файлов конфигурации сайта, используя переключатель командной строки --config.
+Примеры:
+hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlНесколько файлов конфигурации сайта могут быть указаны в виде строки, разделенной запятыми, в параметре --config.
+Каталог конфигурации В дополнение к использованию одного файла конфигурации сайта, можно использовать каталог configDir (по умолчанию config/), чтобы упростить организацию и настройки, специфичные для среды.</description>
     </item>
     
     <item>

@@ -174,7 +174,7 @@
   
   <url>
     <loc>https://gohugo.ru/getting-started/</loc>
-    <lastmod>2020-12-24T13:44:28+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -489,7 +489,7 @@
   
   <url>
     <loc>https://gohugo.ru/getting-started/quick-start/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -809,7 +809,7 @@
   
   <url>
     <loc>https://gohugo.ru/getting-started/installing/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -898,21 +898,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/getting-started/usage/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/getting-started/usage/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/getting-started/usage/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/variables/files/</loc>
     <lastmod>2020-12-24T11:02:26+03:00</lastmod>
     <xhtml:link
@@ -954,6 +939,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/templates/section-templates/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/getting-started/usage/</loc>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/getting-started/usage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/getting-started/usage/"
                 />
   </url>
   
@@ -1109,7 +1109,7 @@
   
   <url>
     <loc>https://gohugo.ru/getting-started/directory-structure/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1244,7 +1244,7 @@
   
   <url>
     <loc>https://gohugo.ru/getting-started/configuration/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1274,7 +1274,7 @@
   
   <url>
     <loc>https://gohugo.ru/getting-started/external-learning-resources/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1784,7 +1784,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/</loc>
-    <lastmod>2020-12-24T13:44:28+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -3294,7 +3294,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/fundamentals/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -3314,7 +3314,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/getting-started/</loc>
-    <lastmod>2020-12-24T13:44:28+03:00</lastmod>
+    <lastmod>2020-12-25T11:23:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

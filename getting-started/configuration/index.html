@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Configure Hugo | Hugo</title>
+  <title>Настройка Хьюго | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Configure Hugo" />
-<meta property="og:description" content="How to configure your Hugo site." />
+<meta property="og:title" content="Настройка Хьюго" />
+<meta property="og:description" content="Как настроить свой сайт Hugo." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/getting-started/configuration/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-01-02T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Configure Hugo">
-<meta itemprop="description" content="How to configure your Hugo site.">
+<meta property="article:modified_time" content="2020-12-25T11:23:57+03:00" />
+<meta itemprop="name" content="Настройка Хьюго">
+<meta itemprop="description" content="Как настроить свой сайт Hugo.">
 <meta itemprop="datePublished" content="2017-01-02T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="3022">
+<meta itemprop="dateModified" content="2020-12-25T11:23:57+03:00" />
+<meta itemprop="wordCount" content="2811">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Configure Hugo"/>
-<meta name="twitter:description" content="How to configure your Hugo site."/>
+<meta name="twitter:title" content="Настройка Хьюго"/>
+<meta name="twitter:description" content="Как настроить свой сайт Hugo."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,30 +238,30 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#configuration-file">Configuration File</a></li>
-    <li><a href="#configuration-directory">Configuration Directory</a></li>
-    <li><a href="#all-configuration-settings">All Configuration Settings</a></li>
-    <li><a href="#configure-build">Configure Build</a></li>
-    <li><a href="#configure-server">Configure Server</a></li>
-    <li><a href="#configure-title-case">Configure Title Case</a></li>
-    <li><a href="#configuration-environment-variables">Configuration Environment Variables</a></li>
-    <li><a href="#configuration-lookup-order">Configuration Lookup Order</a></li>
-    <li><a href="#example-configuration">Example Configuration</a></li>
-    <li><a href="#configure-with-environment-variables">Configure with Environment Variables</a></li>
-    <li><a href="#ignore-content-files-when-rendering">Ignore Content Files When Rendering</a></li>
-    <li><a href="#configure-front-matter">Configure Front Matter</a>
+    <li><a href="#конфигурационный-файл">Конфигурационный файл</a></li>
+    <li><a href="#каталог-конфигурации">Каталог конфигурации</a></li>
+    <li><a href="#все-настройки-конфигурации">Все настройки конфигурации</a></li>
+    <li><a href="#настройка-сборки">Настройка сборки</a></li>
+    <li><a href="#настройка-сервера">Настройка сервера</a></li>
+    <li><a href="#настройка-регистра-заголовка">Настройка регистра заголовка</a></li>
+    <li><a href="#настройка-переменных-среды-разработки">Настройка переменных среды разработки</a></li>
+    <li><a href="#настройка-порядка-поиска">Настройка порядка поиска</a></li>
+    <li><a href="#пример-конфигурации">Пример конфигурации</a></li>
+    <li><a href="#настройка-с-помощью-переменных-среды-разработки">Настройка с помощью переменных среды разработки</a></li>
+    <li><a href="#игнорировать-файлы-содержимого-при-рендеринге">Игнорировать файлы содержимого при рендеринге</a></li>
+    <li><a href="#настройка-переднего-плана">Настройка переднего плана</a>
       <ul>
-        <li><a href="#configure-dates">Configure Dates</a></li>
+        <li><a href="#настройка-даты">Настройка даты</a></li>
       </ul>
     </li>
-    <li><a href="#configure-additional-output-formats">Configure Additional Output Formats</a></li>
-    <li><a href="#configure-minify">Configure Minify</a></li>
-    <li><a href="#configure-file-caches">Configure File Caches</a>
+    <li><a href="#настройка-дополнительных-форматов-вывода">Настройка дополнительных форматов вывода</a></li>
+    <li><a href="#настройка-minify">Настройка Minify</a></li>
+    <li><a href="#настройка-кеши-файлов">Настройка кеши файлов</a>
       <ul>
-        <li><a href="#the-keywords-explained">The keywords explained</a></li>
+        <li><a href="#объяснение-ключевых-слов">Объяснение ключевых слов</a></li>
       </ul>
     </li>
-    <li><a href="#configuration-format-specs">Configuration Format Specs</a></li>
+    <li><a href="#спецификации-формата-конфигурации">Спецификации формата конфигурации</a></li>
   </ul>
 </nav>
 	
@@ -307,13 +307,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Configure Hugo</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Настройка Хьюго</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      How to configure your Hugo site.
+      Как настроить свой сайт Hugo.
     </div>
   
 
@@ -324,12 +324,10 @@
 
 <div class="prose" id="prose">
 
-<h2 id="configuration-file">Configuration File <a class="header-link" href="#configuration-file"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo uses the <code>config.toml</code>, <code>config.yaml</code>, or <code>config.json</code> (if found in the
-site root) as the default site config file.</p>
-<p>The user can choose to override that default with one or more site config files
-using the command line <code>--config</code> switch.</p>
-<p>Examples:</p>
+<h2 id="конфигурационный-файл">Конфигурационный файл <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%be%d0%bd%d0%bd%d1%8b%d0%b9-%d1%84%d0%b0%d0%b9%d0%bb"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Хьюго использует файлы <code>config.toml</code>, <code>config.yaml</code> или <code>config.json</code> (если он находится в корне сайта) в качестве файла конфигурации сайта по умолчанию.</p>
+<p>Пользователь может выбрать переопределение этого значения по умолчанию с помощью одного или нескольких файлов конфигурации сайта, используя переключатель командной строки <code>--config</code>.</p>
+<p>Примеры:</p>
 <pre><code>hugo --config debugconfig.toml
 hugo --config a.toml,b.toml,c.toml
 </code></pre>
@@ -339,30 +337,30 @@ hugo --config a.toml,b.toml,c.toml
 	</div>
 	
 	
-	<div class="admonition-content"><p>Multiple site config files can be specified as a comma-separated string to the <code>--config</code> switch.</p>
+	<div class="admonition-content"><p>Несколько файлов конфигурации сайта могут быть указаны в виде строки, разделенной запятыми, в параметре <code>--config</code>.</p>
 </div>
 </aside>
 
 
-<h2 id="configuration-directory">Configuration Directory <a class="header-link" href="#configuration-directory"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>In addition to using a single site config file, one can use the <code>configDir</code> directory (default to <code>config/</code>) to maintain easier organization and environment specific settings.</p>
+<h2 id="каталог-конфигурации">Каталог конфигурации <a class="header-link" href="#%d0%ba%d0%b0%d1%82%d0%b0%d0%bb%d0%be%d0%b3-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>В дополнение к использованию одного файла конфигурации сайта, можно использовать каталог <code>configDir</code> (по умолчанию <code>config/</code>), чтобы упростить организацию и настройки, специфичные для среды.</p>
 <ul>
 <li>
-<p>Each file represents a configuration root object, such as <code>params.toml</code> for <code>[Params]</code>, <code>menu(s).toml</code> for <code>[Menu]</code>, <code>languages.toml</code> for <code>[Languages]</code> etc&hellip;</p>
+<p>Каждый файл представляет собой корневой объект конфигурации, такой как <code>params.toml</code> для <code>[Params]</code>, <code>menu(s).toml</code> для <code>[Menu]</code>, <code>languages.toml</code> для <code>[Languages]</code> и т.д&hellip;</p>
 </li>
 <li>
-<p>Each file&rsquo;s content must be top-level, for example:</p>
-<p>In <code>config.toml</code> is:</p>
+<p>Содержимое каждого файла должно быть верхнего уровня, например:</p>
+<p>В <code>config.toml</code> находится:</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
   <span class="nx">foo</span> <span class="p">=</span> <span class="s2">&#34;bar&#34;</span>
-</code></pre></div><p>In <code>params.toml</code> is:</p>
+</code></pre></div><p>В <code>params.toml</code> находится:</p>
 <pre><code>foo = &quot;bar&quot;
 </code></pre></li>
 <li>
-<p>Each directory holds a group of files containing settings unique to an environment.</p>
+<p>Каждый каталог содержит группу файлов, содержащих настройки, уникальные для конкретной среды.</p>
 </li>
 <li>
-<p>Files can be localized to become language specific.</p>
+<p>Файлы могут быть локализованы для соответствия языку.</p>
 </li>
 </ul>
 <pre><code>├── config
@@ -378,7 +376,7 @@ hugo --config a.toml,b.toml,c.toml
 │   └── staging
 │       ├── config.toml
 │       └── params.toml
-</code></pre><p>Considering the structure above, when running <code>hugo --environment staging</code>, Hugo will use every settings from <code>config/_default</code> and merge <code>staging</code>&rsquo;s on top of those.
+</code></pre><p>Учитывая приведенную выше структуру, при запуске <code>hugo --environment staging</code>, Hugo будет использовать все настройки из <code>config/_default</code> и объединить <code>staging</code> поверх них.
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -386,168 +384,164 @@ hugo --config a.toml,b.toml,c.toml
 	</div>
 	
 	
-	<div class="admonition-content"><p>Default environments are <strong>development</strong> with <code>hugo server</code> and <strong>production</strong> with <code>hugo</code>.</p>
+	<div class="admonition-content"><p>Среды по умолчанию: <strong>development</strong> с <code>hugo server</code> и <strong>production</strong> с <code>hugo</code>.</p>
 </div>
 </aside>
 </p>
-<h2 id="all-configuration-settings">All Configuration Settings <a class="header-link" href="#all-configuration-settings"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The following is the full list of Hugo-defined variables with their default
-value in parentheses. Users may choose to override those values in their site
-config file(s).</p>
+<h2 id="все-настройки-конфигурации">Все настройки конфигурации <a class="header-link" href="#%d0%b2%d1%81%d0%b5-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Ниже приводится полный список переменных, определенных Hugo, со значениями по умолчанию в скобках. Пользователи могут выбрать переопределение этих значений в файлах конфигурации своего сайта.</p>
 <dl>
 <dt>archetypeDir (&ldquo;archetypes&rdquo;)</dt>
-<dd>The directory where Hugo finds archetype files (content templates). Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
+<dd>Каталог, в котором Хьюго находит файлы архетипов (шаблоны содержимого). Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
 <dt>assetDir (&ldquo;assets&rdquo;)</dt>
-<dd>The directory where Hugo finds asset files used in <a href="/hugo-pipes/">Hugo Pipes</a>. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
+<dd>Каталог, в котором Хьюго находит файлы ресурсов, используемые в <a href="/hugo-pipes/">Hugo Pipes</a>. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
 <dt>baseURL</dt>
-<dd>Hostname (and path) to the root, e.g. <a href="https://bep.is/">https://bep.is/</a></dd>
+<dd>Имя хоста (и путь) к корню, например, <a href="https://bep.is/">https://bep.is/</a></dd>
 <dt>blackfriday</dt>
-<dd>See <a href="/getting-started/configuration-markup#blackfriday">Configure Blackfriday</a></dd>
+<dd>Смотрите <a href="/getting-started/configuration-markup#blackfriday">Настройка Blackfriday</a></dd>
 <dt>build</dt>
-<dd>See <a href="#configure-build">Configure Build</a></dd>
+<dd>Смотрите <a href="#configure-build">Настройка сборки</a></dd>
 <dt>buildDrafts (false)</dt>
-<dd>Include drafts when building.</dd>
+<dd>Учитывать черновики при сборке.</dd>
 <dt>buildExpired  (false)</dt>
-<dd>Include content already expired.</dd>
+<dd>Включить контент, срок действия которого уже истек.</dd>
 <dt>buildFuture (false)</dt>
-<dd>Include content with publishdate in the future.</dd>
+<dd>Включите контент с датой публикации в будущем.</dd>
 <dt>caches</dt>
-<dd>See <a href="#configure-file-caches">Configure File Caches</a></dd>
+<dd>Смотрите <a href="#configure-file-caches">Настройка кеша файлов</a></dd>
 <dt>canonifyURLs (false)</dt>
-<dd>Enable to turn relative URLs into absolute.</dd>
+<dd>Включите, чтобы превратить относительные URL-адреса в абсолютные.</dd>
 <dt>contentDir (&ldquo;content&rdquo;)</dt>
-<dd>The directory from where Hugo reads content files. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
+<dd>Каталог, из которого Хьюго читает файлы контента. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
 <dt>dataDir (&ldquo;data&rdquo;)</dt>
-<dd>The directory from where Hugo reads data files. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
+<dd>Каталог, из которого Хьюго читает файлы данных. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
 <dt>defaultContentLanguage (&ldquo;en&rdquo;)</dt>
-<dd>Content without language indicator will default to this language.</dd>
+<dd>Контент без индикатора языка по умолчанию будет использовать этот язык.</dd>
 <dt>defaultContentLanguageInSubdir (false)</dt>
-<dd>Render the default content language in subdir, e.g. <code>content/en/</code>. The site root <code>/</code> will then redirect to <code>/en/</code>.</dd>
+<dd>Отобразите язык содержимого по умолчанию в подкаталоге, например, <code>content/en/</code>. Затем корень сайта <code>/</code> будет перенаправлен на <code>/en/</code>.</dd>
 <dt>disableAliases (false)</dt>
-<dd>Will disable generation of alias redirects. Note that even if <code>disableAliases</code> is set, the aliases themselves are preserved on the page. The motivation with this is to be able to generate 301 redirects in an <code>.htaccess</code>, a Netlify <code>_redirects</code> file or similar using a custom output format.</dd>
+<dd>Отключит генерацию переадресации псевдонимов. Обратите внимание, что даже если установлен <code>disableAliases</code>, сами псевдонимы сохраняются на странице. Мотивация при этом состоит в том, чтобы иметь возможность генерировать 301 редирект в файле <code>.htaccess</code>, Netlify <code>_redirects</code> или подобном с использованием настраиваемого формата вывода.</dd>
 <dt>disableHugoGeneratorInject (false)</dt>
-<dd>Hugo will, by default, inject a generator meta tag in the HTML head on the <em>home page only</em>. You can turn it off, but we would really appreciate if you don&rsquo;t, as this is a good way to watch Hugo&rsquo;s popularity on the rise.</dd>
+<dd>По умолчанию Hugo вставляет метатег генератора в заголовок HTML на <em>только домашнюю страницу</em>. Вы можете отключить его, но мы будем очень признательны, если Вы этого не сделаете, так как это хороший способ наблюдать за ростом популярности Хьюго.</dd>
 <dt>disableKinds ([])</dt>
-<dd>Enable disabling of all pages of the specified <em>Kinds</em>. Allowed values in this list: <code>&quot;page&quot;</code>, <code>&quot;home&quot;</code>, <code>&quot;section&quot;</code>, <code>&quot;taxonomy&quot;</code>, <code>&quot;term&quot;</code>, <code>&quot;RSS&quot;</code>, <code>&quot;sitemap&quot;</code>, <code>&quot;robotsTXT&quot;</code>, <code>&quot;404&quot;</code>.</dd>
+<dd>Разрешить отключение всех страниц указанного <em>Вида</em>. Допустимые значения в этом списке: <code>&quot;page&quot;</code>, <code>&quot;home&quot;</code>, <code>&quot;section&quot;</code>, <code>&quot;taxonomy&quot;</code>, <code>&quot;term&quot;</code>, <code>&quot;RSS&quot;</code>, <code>&quot;sitemap&quot;</code>, <code>&quot;robotsTXT&quot;</code>, <code>&quot;404&quot;</code>.</dd>
 <dt>disableLiveReload (false)</dt>
-<dd>Disable automatic live reloading of browser window.</dd>
+<dd>Отключить автоматическую перезагрузку окна браузера в реальном времени.</dd>
 <dt>disablePathToLower (false)</dt>
-<dd>Do not convert the url/path to lowercase.</dd>
+<dd>Не переводить URL/path в нижний регистр.</dd>
 <dt>enableEmoji (false)</dt>
-<dd>Enable Emoji emoticons support for page content; see the <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">Emoji Cheat Sheet</a>.</dd>
+<dd>Включить поддержку смайлов Emoji для содержимого страницы; смотрите <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">Памятку по эмодзи</a>.</dd>
 <dt>enableGitInfo (false)</dt>
-<dd>Enable <code>.GitInfo</code> object for each page (if the Hugo site is versioned by Git). This will then update the <code>Lastmod</code> parameter for each page using the last git commit date for that content file.</dd>
+<dd>Включите объект <code>.GitInfo</code> для каждой страницы (если версия сайта Hugo поддерживается Git). Затем это обновит параметр <code>Lastmod</code> для каждой страницы, используя дату последней фиксации git для этого файла содержимого.</dd>
 <dt>enableInlineShortcodes (false)</dt>
-<dd>Enable inline shortcode support. See <a href="/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</dd>
+<dd>Включите встроенную поддержку шорткода. Смотрите <a href="/templates/shortcode-templates/#inline-shortcodes">Встроенные шорткоды</a>.</dd>
 <dt>enableMissingTranslationPlaceholders (false)</dt>
-<dd>Show a placeholder instead of the default value or an empty string if a translation is missing.</dd>
+<dd>Показать заполнитель вместо значения по умолчанию или пустой строки, если перевод отсутствует.</dd>
 <dt>enableRobotsTXT (false)</dt>
-<dd>Enable generation of <code>robots.txt</code> file.</dd>
+<dd>Включите создание файла <code>robots.txt</code>.</dd>
 <dt>frontmatter</dt>
-<dd>
-<p>See <a href="#configure-front-matter">Front matter Configuration</a>.</p>
-</dd>
+<dd>Смотрите <a href="#configure-front-matter">Конфигурация основного материала</a>.</dd>
 <dt>footnoteAnchorPrefix (&quot;&quot;)</dt>
-<dd>Prefix for footnote anchors.</dd>
+<dd>Префикс для якорей сноски.</dd>
 <dt>footnoteReturnLinkContents (&quot;&quot;)</dt>
-<dd>Text to display for footnote return links.</dd>
+<dd>Текст, отображаемый для обратных ссылок сноски.</dd>
 <dt>googleAnalytics (&quot;&quot;)</dt>
-<dd>Google Analytics tracking ID.</dd>
+<dd>Идентификатор отслеживания Google Analytics.</dd>
 <dt>hasCJKLanguage (false)</dt>
-<dd>If true, auto-detect Chinese/Japanese/Korean Languages in the content. This will make <code>.Summary</code> and <code>.WordCount</code> behave correctly for CJK languages.</dd>
+<dd>Если true, автоматически определять китайский/японский/корейский языки в содержимом. Это заставит <code>.Summary</code> и <code>.WordCount</code> вести себя правильно для CJK языков.</dd>
 <dt>imaging</dt>
-<dd>See <a href="/content-management/image-processing/#image-processing-config">Image Processing Config</a>.</dd>
+<dd>Смотрите <a href="/content-management/image-processing/#image-processing-config">Конфигурация обработки изображений</a>.</dd>
 <dt>languages</dt>
-<dd>See <a href="/content-management/multilingual/#configure-languages">Configure Languages</a>.</dd>
+<dd>Смотрите <a href="/content-management/multilingual/#configure-languages">Конфигурация языков</a>.</dd>
 <dt>languageCode (&quot;&quot;)</dt>
-<dd>The site&rsquo;s language code. It is used in the default <a href="/templates/rss/#configure-rss">RSS template</a> and can be useful for <a href="/content-management/multilingual/#configure-multilingual-multihost">multi-lingual sites</a>.</dd>
+<dd>Код языка сайта. Он используется в <a href="/templates/rss/#configure-rss">шаблоне RSS по умолчанию</a> и может быть полезен для <a href="/content-management/multilingual/#configure-multilingual-multihost">многоязычных сайтов</a>.</dd>
 <dt>languageName (&quot;&quot;)</dt>
-<dd>The site&rsquo;s language name.</dd>
+<dd>Название языка сайта.</dd>
 <dt>disableLanguages</dt>
-<dd>See <a href="/content-management/multilingual/#disable-a-language">Disable a Language</a></dd>
+<dd>Смотрите <a href="/content-management/multilingual/#disable-a-language">Отключение языка</a></dd>
 <dt>layoutDir (&ldquo;layouts&rdquo;)</dt>
-<dd>The directory from where Hugo reads layouts (templates).</dd>
+<dd>Каталог, из которого Хьюго читает макеты (шаблоны).</dd>
 <dt>log (false)</dt>
-<dd>Enable logging.</dd>
+<dd>Включить ведение журнала.</dd>
 <dt>logFile (&quot;&quot;)</dt>
-<dd>Log File path (if set, logging enabled automatically).</dd>
+<dd>Путь к файлу журнала (если задан, ведение журнала включается автоматически).</dd>
 <dt>markup</dt>
-<dd>See <a href="/getting-started/configuration-markup">Configure Markup</a>.
+<dd>Смотрите <a href="/getting-started/configuration-markup">Настройку разметки</a>.
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.60.0-relnotes/" target="_blank">Новое в v0.60.0</a>
 </button></dd>
 <dt>menu</dt>
-<dd>See <a href="/content-management/menus/#add-non-content-entries-to-a-menu">Add Non-content Entries to a Menu</a>.</dd>
+<dd>Смотрите <a href="/content-management/menus/#add-non-content-entries-to-a-menu">Добавление записей, не относящихся к содержанию, в меню</a>.</dd>
 <dt>minify</dt>
-<dd>See <a href="#configure-minify">Configure Minify</a></dd>
+<dd>Смотрите <a href="#configure-minify">Настройку Minify</a></dd>
 <dt>module</dt>
-<dd>Module config see <a href="/hugo-modules/configuration/">Module Config</a>.
+<dd>Смотрите настройку модуля <a href="/hugo-modules/configuration/">Конфигурация модуля</a>.
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.56.0-relnotes/" target="_blank">Новое в v0.56.0</a>
 </button></dd>
 <dt>newContentEditor (&quot;&quot;)</dt>
-<dd>The editor to use when creating new content.</dd>
+<dd>Редактор для использования при создании нового контента.</dd>
 <dt>noChmod (false)</dt>
-<dd>Don&rsquo;t sync permission mode of files.</dd>
+<dd>Не синхронизировать режим разрешений файлов.</dd>
 <dt>noTimes (false)</dt>
-<dd>Don&rsquo;t sync modification time of files.</dd>
+<dd>Не синхронизировать время модификации файлов.</dd>
 <dt>paginate (10)</dt>
-<dd>Default number of elements per page in <a href="/templates/pagination/">pagination</a>.</dd>
+<dd>Количество элементов на странице по умолчанию в <a href="/templates/pagination/">пагинации</a>.</dd>
 <dt>paginatePath (&ldquo;page&rdquo;)</dt>
-<dd>The path element used during pagination (<a href="https://example.com/page/2)">https://example.com/page/2)</a>.</dd>
+<dd>Элемент пути, используемый при разбивке на страницы (<a href="https://example.com/page/2)">https://example.com/page/2)</a>.</dd>
 <dt>permalinks</dt>
-<dd>See <a href="/content-management/urls/#permalinks">Content Management</a>.</dd>
+<dd>Смотрите <a href="/content-management/urls/#permalinks">Управление содержанием</a>.</dd>
 <dt>pluralizeListTitles (true)</dt>
-<dd>Pluralize titles in lists.</dd>
+<dd>Множественное число заголовков в списках.</dd>
 <dt>publishDir (&ldquo;public&rdquo;)</dt>
-<dd>The directory to where Hugo will write the final static site (the HTML files etc.).</dd>
+<dd>Каталог, в который Хьюго запишет окончательный статический сайт (файлы HTML и т.д.).</dd>
 <dt>related</dt>
-<dd>See <a href="/content-management/related/#configure-related-content">Related Content</a>.
+<dd>Смотрите <a href="/content-management/related/#configure-related-content">Связанный контент</a>.
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.27-relnotes/" target="_blank">Новое в v0.27</a>
 </button></dd>
 <dt>relativeURLs (false)</dt>
-<dd>Enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.</dd>
+<dd>Включите это, чтобы сделать все относительные URL-адреса относительно корня содержимого. Обратите внимание, что это не влияет на абсолютные URL-адреса.</dd>
 <dt>refLinksErrorLevel (&ldquo;ERROR&rdquo;)</dt>
-<dd>When using <code>ref</code> or <code>relref</code> to resolve page links and a link cannot resolved, it will be logged with this logg level. Valid values are <code>ERROR</code> (default) or <code>WARNING</code>. Any <code>ERROR</code> will fail the build (<code>exit -1</code>).</dd>
+<dd>При использовании <code>ref</code> или <code>relref</code> для разрешения ссылок на страницы и ссылка не может быть разрешена, она будет регистрироваться с этим уровнем журнала. Допустимые значения <code>ERROR</code> (по умолчанию) или <code>WARNING</code>. Любая <code>ERROR</code> приведет к сбою сборки (<code>exit -1</code>).</dd>
 <dt>refLinksNotFoundURL</dt>
-<dd>URL to be used as a placeholder when a page reference cannot be found in <code>ref</code> or <code>relref</code>. Is used as-is.</dd>
+<dd>URL-адрес, который будет использоваться в качестве заполнителя, когда ссылка на страницу не может быть найдена в <code>ref</code> или<code> relref</code>. Используется как есть.</dd>
 <dt>rssLimit (unlimited)</dt>
-<dd>Maximum number of items in the RSS feed.</dd>
+<dd>Максимальное количество элементов в RSS-ленте.</dd>
 <dt>sectionPagesMenu (&quot;&quot;)</dt>
-<dd>See <a href="/templates/menu-templates/#section-menu-for-lazy-bloggers">&ldquo;Section Menu for Lazy Bloggers&rdquo;</a>.</dd>
+<dd>Смотрите <a href="/templates/menu-templates/#section-menu-for-lazy-bloggers">&ldquo;Меню раздела для отложенных блогеров&rdquo;</a>.</dd>
 <dt>sitemap</dt>
-<dd>Default <a href="/templates/sitemap-template/#configure-sitemap-xml">sitemap configuration</a>.</dd>
+<dd>По умолчанию <a href="/templates/sitemap-template/#configure-sitemap-xml">конфигурация карты сайта</a>.</dd>
 <dt>staticDir (&ldquo;static&rdquo;)</dt>
-<dd>A directory or a list of directories from where Hugo reads <a href="/content-management/static-files/">static files</a>. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
+<dd>Каталог или список каталогов, из которых Хьюго читает <a href="/content-management/static-files/">статические файлы</a>. Also see <a href="/hugo-modules/configuration/#module-config-mounts">Module Mounts Config</a> for an alternative way to configure this directory (from Hugo 0.56).</dd>
 <dt>summaryLength (70)</dt>
-<dd>The length of text in words to show in a <a href="/content-management/summaries/#hugo-defined-automatic-summary-splitting"><code>.Summary</code></a>.</dd>
+<dd>Длина текста в словах, отображаемого в <a href="/content-management/summaries/#hugo-defined-automatic-summary-splitting"><code>.Summary</code></a>.</dd>
 <dt>taxonomies</dt>
-<dd>See <a href="/content-management/taxonomies#configure-taxonomies">Configure Taxonomies</a>.</dd>
+<dd>Смотрите <a href="/content-management/taxonomies#configure-taxonomies">конфигурацию таксономии</a>.</dd>
 <dt>theme (&quot;&quot;)</dt>
-<dd>Theme to use (located by default in <code>/themes/THEMENAME/</code>).</dd>
+<dd>Тема для использования (по умолчанию находится в <code>/themes/THEMENAME/</code>).</dd>
 <dt>themesDir (&ldquo;themes&rdquo;)</dt>
-<dd>The directory where Hugo reads the themes from.</dd>
+<dd>Каталог, из которого Хьюго читает темы.</dd>
 <dt>timeout (10000)</dt>
-<dd>Timeout for generating page contents, in milliseconds (defaults to 10 seconds). <em>Note:</em> this is used to bail out of recursive content generation, if your pages are slow to generate (e.g., because they require large image processing or depend on remote contents) you might need to raise this limit.</dd>
+<dd>Тайм-аут для создания содержимого страницы в миллисекундах (по умолчанию 10 секунд). <em>Примечание:</em> это используется для отказа от создания рекурсивного контента, если Ваши страницы генерируются медленно (например, потому что они требуют обработки больших изображений или зависят от удаленного содержимого), Вам может потребоваться увеличить этот предел.</dd>
 <dt>title (&quot;&quot;)</dt>
-<dd>Site title.</dd>
+<dd>Название сайта.</dd>
 <dt>titleCaseStyle (&ldquo;AP&rdquo;)</dt>
-<dd>See <a href="#configure-title-case">Configure Title Case</a></dd>
+<dd>Смотрите <a href="#configure-title-case">настройку регистра заголовка</a></dd>
 <dt>uglyURLs (false)</dt>
-<dd>When enabled, creates URL of the form <code>/filename.html</code> instead of <code>/filename/</code>.</dd>
+<dd>Когда этот параметр включен, создает URL-адрес в виде <code>/filename.html</code> вместо <code>/filename/</code>.</dd>
 <dt>verbose (false)</dt>
-<dd>Enable verbose output.</dd>
+<dd>Включить подробный вывод.</dd>
 <dt>verboseLog (false)</dt>
-<dd>Enable verbose logging.</dd>
+<dd>Включить подробное ведение журнала.</dd>
 <dt>watch (false)</dt>
-<dd>Watch filesystem for changes and recreate as needed.</dd>
+<dd>Следите за изменениями файловой системы и воссоздайте ее по мере необходимости.</dd>
 </dl>
 
 <aside class="admonition note">
@@ -556,22 +550,22 @@ config file(s).</p>
 	</div>
 	
 	
-	<div class="admonition-content"><p>If you are developing your site on a *nix machine, here is a handy shortcut for finding a configuration option from the command line:</p>
+	<div class="admonition-content"><p>Если Вы разрабатываете свой сайт на  *nix-машине, вот удобный ярлык для поиска параметра конфигурации из командной строки:</p>
 <pre><code>cd ~/sites/yourhugosite
 hugo config | grep emoji
-</code></pre><p>which shows output like</p>
+</code></pre><p>который показывает вывод как</p>
 <pre><code>enableemoji: true
 </code></pre></div>
 </aside>
 
-<h2 id="configure-build">Configure Build <a class="header-link" href="#configure-build"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="настройка-сборки">Настройка сборки <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d1%81%d0%b1%d0%be%d1%80%d0%ba%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.66.0-relnotes/" target="_blank">Новое в v0.66.0</a>
 </button>
-<p>The <code>build</code> configuration section contains global build-related configuration options.</p>
+<p>Раздел конфигурации <code>build</code> содержит глобальные параметры конфигурации, связанные со сборкой.</p>
 
 
 
@@ -637,30 +631,30 @@ hugo config | grep emoji
 
 <dl>
 <dt>useResourceCacheWhen</dt>
-<dd>When to use the cached resources in <code>/resources/_gen</code> for PostCSS and ToCSS. Valid values are <code>never</code>, <code>always</code> and <code>fallback</code>. The last value means that the cache will be tried if PostCSS/extended version is not available.</dd>
+<dd>Когда использовать кэшированные ресурсы в <code>/resources/_gen</code> для PostCSS и ToCSS. Допустимые значения <code>never</code>, <code>always</code> и <code>fallback</code>. Последнее значение означает, что кеш будет проверяться, если PostCSS/расширенная версия недоступна.</dd>
 <dt>writeStats 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.69.0-relnotes/" target="_blank">Новое в v0.69.0</a>
 </button></dt>
-<dd>When enabled, a file named <code>hugo_stats.json</code> will be written to your project root with some aggregated data about the build, e.g. list of HTML entities published to be used to do <a href="/hugo-pipes/postprocess/#css-purging-with-postcss">CSS pruning</a>. If you&rsquo;re only using this for the production build, you should consider placing it below <a href="/getting-started/configuration/#configuration-directory">config/production</a>. It&rsquo;s also worth mentioning that, due to the nature of the partial server builds, new HTML entities will be added when you add or change them while the server is running, but the old values will not be removed until you restart the server or run a regular <code>hugo</code> build.</dd>
+<dd>Если этот параметр включен, в корень Вашего проекта будет записан файл с именем <code>hugo_stats.json</code> с некоторыми агрегированными данными о сборке, например список объектов HTML, опубликованных для использования для <a href="/hugo-pipes/postprocess/#css-purging-with-postcss">сокращения CSS</a>. Если Вы используете его только для производственной сборки, Вам следует подумать о том, чтобы разместить его ниже <a href="/getting-started/configuration/#configuration-directory">config/production</a>. Также стоит упомянуть, что из-за характера частичных сборок сервера новые HTML-объекты будут добавляться, когда Вы добавляете или изменяете их во время работы сервера, но старые значения не будут удалены, пока Вы не перезапустите сервер или не запустите обычную сборку <code>hugo</code>.</dd>
 <dt>noJSConfigInAssets 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.78.0-relnotes/" target="_blank">Новое в v0.78.0</a>
 </button></dt>
-<dd>Turn off writing a <code>jsconfig.js</code> into your <code>/assets</code> folder with mapping of imports from running <a href="https://gohugo.io/hugo-pipes/js">js.Build</a>. This file is intended to help with intellisense/navigation inside code editors such as <a href="https://code.visualstudio.com/">VS Code</a>. Note that if you do not use <code>js.Build</code>, no file will be written.</dd>
+<dd>Отключите запись <code>jsconfig.js</code> в папку <code>/assets</code> с отображением импорта из запущенного <a href="https://gohugo.io/hugo-pipes/js">js.Build</a>. Этот файл предназначен для помощи с intellisense / навигацией внутри редакторов кода, таких как <a href="https://code.visualstudio.com/">VS Code</a>. Обратите внимание, что если Вы не используете <code>js.Build</code>, файл не будет записан.</dd>
 </dl>
-<h2 id="configure-server">Configure Server <a class="header-link" href="#configure-server"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="настройка-сервера">Настройка сервера <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.67.0-relnotes/" target="_blank">Новое в v0.67.0</a>
 </button>
-<p>This is only relevant when running <code>hugo server</code>, and it allows to set HTTP headers during development, which allows you to test out your Content Security Policy and similar. The configuration format matches <a href="https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file">Netlify&rsquo;s</a> with slighly more powerful <a href="https://github.com/gobwas/glob">Glob matching</a>:</p>
+<p>Это актуально только при запуске <code>hugo server</code> и позволяет устанавливать заголовки HTTP во время разработки, что позволяет Вам протестировать свою Политику безопасности контента и тому подобное. Формат конфигурации соответствует <a href="https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file">Netlify&rsquo;s</a> с чуть более мощным <a href="https://github.com/gobwas/glob">Glob matching</a>:</p>
 
 
 
@@ -744,7 +738,7 @@ hugo config | grep emoji
 
 </div>
 
-<p>Since this is is &ldquo;development only&rdquo;, it may make sense to put it below the <code>development</code> environment:</p>
+<p>Поскольку это &ldquo;только разработка&rdquo;, возможно, имеет смысл поместить его под средой <code>development</code>:</p>
 
 
 
@@ -829,8 +823,8 @@ hugo config | grep emoji
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.72.0-relnotes/" target="_blank">Новое в v0.72.0</a>
 </button>
-<p>You can also specify simple redirects rules for the server. The syntax is again similar to Netlify&rsquo;s.</p>
-<p>Note that a <code>status</code> code of 200 will trigger a <a href="https://docs.netlify.com/routing/redirects/rewrites-proxies/">URL rewrite</a>, which is what you want in SPA situations, e.g:</p>
+<p>Вы также можете указать простые правила перенаправления для сервера. Синтаксис снова аналогичен синтаксису Netlify.</p>
+<p>Обратите внимание, что код статуса <code>status</code> 200 вызовет <a href="https://docs.netlify.com/routing/redirects/rewrites-proxies/">перезапись URL</a>, что Вы и хотите в ситуациях SPA, например:</p>
 
 
 
@@ -899,29 +893,30 @@ hugo config | grep emoji
 
 </div>
 
-<p>
+
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.76.0-relnotes/" target="_blank">Новое в v0.76.0</a>
-</button> Setting <code>force=true</code> will make a redirect even if there is existing content in the path. Note that before Hugo 0.76  <code>force</code> was the default behaviour, but this is inline with how Netlify does it.</p>
-<h2 id="configure-title-case">Configure Title Case <a class="header-link" href="#configure-title-case"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Set <code>titleCaseStyle</code> to specify the title style used by the <a href="/functions/title/">title</a> template function and the automatic section titles in Hugo. It defaults to <a href="https://www.apstylebook.com/">AP Stylebook</a> for title casing, but you can also set it to <code>Chicago</code> or <code>Go</code> (every word starts with a capital letter).</p>
-<h2 id="configuration-environment-variables">Configuration Environment Variables <a class="header-link" href="#configuration-environment-variables"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+</button>
+<p>Установка <code>force=true</code> приведет к перенаправлению, даже если в пути уже есть контент. Обратите внимание, что до Hugo 0.76 <code>force</code> был поведением по умолчанию, но это соответствует тому, как это делает Netlify.</p>
+<h2 id="настройка-регистра-заголовка">Настройка регистра заголовка <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0-%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%ba%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Установите <code>titleCaseStyle</code>, чтобы указать стиль заголовка, используемый функцией шаблона <a href="/functions/title/">заголовка</a>, и автоматические заголовки разделов в Hugo. По умолчанию для заголовка используется <a href="https://www.apstylebook.com/">AP Stylebook</a>, но Вы также можете установить его на <code>Chicago</code> или <code>Go</code> (каждое слово начинается с заглавной буквы).</p>
+<h2 id="настройка-переменных-среды-разработки">Настройка переменных среды разработки <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d1%85-%d1%81%d1%80%d0%b5%d0%b4%d1%8b-%d1%80%d0%b0%d0%b7%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <dl>
 <dt>HUGO_NUMWORKERMULTIPLIER</dt>
-<dd>Can be set to increase or reduce the number of workers used in parallel processing in Hugo. If not set, the number of logical CPUs will be used.</dd>
+<dd>Можно настроить на увеличение или уменьшение количества рабочих процессов, используемых при параллельной обработке в Hugo. Если не установлен, будет использовано количество логических ЦП.</dd>
 </dl>
-<h2 id="configuration-lookup-order">Configuration Lookup Order <a class="header-link" href="#configuration-lookup-order"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Similar to the template <a href="/templates/lookup-order/">lookup order</a>, Hugo has a default set of rules for searching for a configuration file in the root of your website&rsquo;s source directory as a default behavior:</p>
+<h2 id="настройка-порядка-поиска">Настройка порядка поиска <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%ba%d0%b0-%d0%bf%d0%be%d0%b8%d1%81%d0%ba%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Подобно шаблону <a href="/templates/lookup-order/">порядка поиска</a>, Hugo имеет стандартный набор правил для поиска файла конфигурации в корне исходного каталога Вашего веб-сайта в качестве поведения по умолчанию:</p>
 <ol>
 <li><code>./config.toml</code></li>
 <li><code>./config.yaml</code></li>
 <li><code>./config.json</code></li>
 </ol>
-<p>In your <code>config</code> file, you can direct Hugo as to how you want your website rendered, control your website&rsquo;s menus, and arbitrarily define site-wide parameters specific to your project.</p>
-<h2 id="example-configuration">Example Configuration <a class="header-link" href="#example-configuration"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The following is a typical example of a configuration file. The values nested under <code>params:</code> will populate the <a href="/variables/site/"><code>.Site.Params</code></a> variable for use in <a href="/templates/">templates</a>:</p>
+<p>В Вашем файле <code>config</code> Вы можете указать Хьюго, как Вы хотите отображать свой веб-сайт, управлять меню своего веб-сайта и произвольно определять параметры сайта, специфичные для Вашего проекта.</p>
+<h2 id="пример-конфигурации">Пример конфигурации <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Ниже приведен типичный пример файла конфигурации. Значения, вложенные в <code>params:</code>, будут заполнять переменную <a href="/variables/site/"><code>.Site.Params</code></a> для использования в <a href="/templates/">шаблонах</a>:</p>
 
 
 
@@ -1014,11 +1009,11 @@ hugo config | grep emoji
 
 </div>
 
-<h2 id="configure-with-environment-variables">Configure with Environment Variables <a class="header-link" href="#configure-with-environment-variables"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>In addition to the 3 config options already mentioned, configuration key-values can be defined through operating system environment variables.</p>
-<p>For example, the following command will effectively set a website&rsquo;s title on Unix-like systems:</p>
+<h2 id="настройка-с-помощью-переменных-среды-разработки">Настройка с помощью переменных среды разработки <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d1%81-%d0%bf%d0%be%d0%bc%d0%be%d1%89%d1%8c%d1%8e-%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d1%85-%d1%81%d1%80%d0%b5%d0%b4%d1%8b-%d1%80%d0%b0%d0%b7%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>В дополнение к 3 уже упомянутым параметрам конфигурации, пары &ldquo;ключ-значение&rdquo; конфигурации могут быть определены через переменные среды операционной системы.</p>
+<p>Например, следующая команда эффективно устанавливает заголовок веб-сайта в Unix-подобных системах:</p>
 <pre><code>$ env HUGO_TITLE=&quot;Some Title&quot; hugo
-</code></pre><p>This is really useful if you use a service such as Netlify to deploy your site. Look at the Hugo docs <a href="https://github.com/gohugoio/hugoDocs/blob/master/netlify.toml">Netlify configuration file</a> for an example.</p>
+</code></pre><p>Это действительно полезно, если Вы используете такую службу, как Netlify, для развертывания своего сайта. Посмотрите в качестве примера документацию Hugo <a href="https://github.com/gohugoio/hugoDocs/blob/master/netlify.toml">файл конфигурации Netlify</a>.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -1026,8 +1021,8 @@ hugo config | grep emoji
 	</div>
 	
 	
-	<div class="admonition-content"><p>Names must be prefixed with <code>HUGO_</code> and the configuration key must be set in uppercase when setting operating system environment variables.</p>
-<p>To set config params, prefix the name with <code>HUGO_PARAMS_</code></p>
+	<div class="admonition-content"><p>Имена должны начинаться с префикса <code>HUGO_</code>, а ключ конфигурации должен быть указан в верхнем регистре при установке переменных среды операционной системы.</p>
+<p>Чтобы установить параметры конфигурации, добавьте к имени префикс <code>HUGO_PARAMS_</code></p>
 </div>
 </aside>
 
@@ -1036,57 +1031,57 @@ hugo config | grep emoji
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.79.0-relnotes/" target="_blank">Новое в v0.79.0</a>
-</button> If you are using snake_cased variable names, the above will not work, so since Hugo 0.79.0 Hugo determines the delimiter to use by the first character after <code>HUGO</code>. This allows you to define environment variables on the form <code>HUGOxPARAMSxAPI_KEY=abcdefgh</code>, using any <a href="https://stackoverflow.com/questions/2821043/allowed-characters-in-linux-environment-variable-names#:~:text=So%20names%20may%20contain%20any,not%20begin%20with%20a%20digit.">allowed</a> delimiter.</p>
+</button> Если Вы используете имена переменных snake_cased, приведенное выше не будет работать, поэтому, поскольку Hugo 0.79.0, Hugo определяет разделитель, который будет использоваться первым символом после <code>HUGO</code>. Это позволяет Вам определять переменные среды в форме <code>HUGOxPARAMSxAPI_KEY=abcdefgh</code>, используя любой <a href="https://stackoverflow.com/questions/2821043/allowed-characters-in-linux-environment-variable-names#:~:text=So%20names%20may%20contain%20any,not%20begin%20with%20a%20digit.">разрешенный</a> разделитель.</p>
 
-<h2 id="ignore-content-files-when-rendering">Ignore Content Files When Rendering <a class="header-link" href="#ignore-content-files-when-rendering"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The following statement inside <code>./config.toml</code> will cause Hugo to ignore content files ending with <code>.foo</code> and <code>.boo</code> when rendering:</p>
+<h2 id="игнорировать-файлы-содержимого-при-рендеринге">Игнорировать файлы содержимого при рендеринге <a class="header-link" href="#%d0%b8%d0%b3%d0%bd%d0%be%d1%80%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d1%82%d1%8c-%d1%84%d0%b0%d0%b9%d0%bb%d1%8b-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b3%d0%be-%d0%bf%d1%80%d0%b8-%d1%80%d0%b5%d0%bd%d0%b4%d0%b5%d1%80%d0%b8%d0%bd%d0%b3%d0%b5"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Следующий оператор внутри <code>./config.toml</code> заставит Hugo игнорировать файлы содержимого, заканчивающиеся на <code>.foo</code> и <code>.boo</code> при рендеринге:</p>
 <pre><code>ignoreFiles = [ &quot;\\.foo$&quot;, &quot;\\.boo$&quot; ]
-</code></pre><p>The above is a list of regular expressions. Note that the backslash (<code>\</code>) character is escaped in this example to keep TOML happy.</p>
-<h2 id="configure-front-matter">Configure Front Matter <a class="header-link" href="#configure-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<h3 id="configure-dates">Configure Dates <a class="header-link" href="#configure-dates"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Dates are important in Hugo, and you can configure how Hugo assigns dates to your content pages. You do this by adding a <code>frontmatter</code> section to your <code>config.toml</code>.</p>
-<p>The default configuration is:</p>
+</code></pre><p>Выше приведен список регулярных выражений. Обратите внимание, что символ обратной косой черты (<code>\</code>) в этом примере экранирован, чтобы сохранить TOML счастливым.</p>
+<h2 id="настройка-переднего-плана">Настройка переднего плана <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%bf%d0%b5%d1%80%d0%b5%d0%b4%d0%bd%d0%b5%d0%b3%d0%be-%d0%bf%d0%bb%d0%b0%d0%bd%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h3 id="настройка-даты">Настройка даты <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b4%d0%b0%d1%82%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Даты важны в Hugo, и Вы можете настроить, как Hugo назначает даты Вашим информационным страницам. Вы делаете это, добавляя раздел <code>frontmatter</code> в Ваш <code>config.toml</code>.</p>
+<p>Конфигурация по умолчанию:</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
 <span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;date&#34;</span><span class="p">,</span> <span class="s2">&#34;publishDate&#34;</span><span class="p">,</span> <span class="s2">&#34;lastmod&#34;</span><span class="p">]</span>
 <span class="nx">lastmod</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;:git&#34;</span><span class="p">,</span> <span class="s2">&#34;lastmod&#34;</span><span class="p">,</span> <span class="s2">&#34;date&#34;</span><span class="p">,</span> <span class="s2">&#34;publishDate&#34;</span><span class="p">]</span>
 <span class="nx">publishDate</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;publishDate&#34;</span><span class="p">,</span> <span class="s2">&#34;date&#34;</span><span class="p">]</span>
 <span class="nx">expiryDate</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;expiryDate&#34;</span><span class="p">]</span>
-</code></pre></div><p>If you, as an example, have a non-standard date parameter in some of your content, you can override the setting for <code>date</code>:</p>
+</code></pre></div><p>Если у Вас, например, есть нестандартный параметр даты в каком-либо из Ваших материалов, Вы можете переопределить настройку для <code>date</code>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
 <span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;myDate&#34;</span><span class="p">,</span> <span class="s2">&#34;:default&#34;</span><span class="p">]</span>
-</code></pre></div><p>The <code>:default</code> is a shortcut to the default settings. The above will set <code>.Date</code> to the date value in <code>myDate</code> if present, if not we will look in <code>date</code>,<code>publishDate</code>, <code>lastmod</code> and pick the first valid date.</p>
-<p>In the list to the right, values starting with &ldquo;:&rdquo; are date handlers with a special meaning (see below). The others are just names of date parameters (case insensitive) in your front matter configuration.  Also note that Hugo have some built-in aliases to the above: <code>lastmod</code> =&gt; <code>modified</code>, <code>publishDate</code> =&gt; <code>pubdate</code>, <code>published</code> and <code>expiryDate</code> =&gt; <code>unpublishdate</code>. With that, as an example, using <code>pubDate</code> as a date in front matter, will, by default, be assigned to <code>.PublishDate</code>.</p>
-<p>The special date handlers are:</p>
+</code></pre></div><p><code>:default</code> - это ярлык для настроек по умолчанию. Вышеупомянутое установит <code>.Date</code> в значение даты в <code>myDate</code>, если оно присутствует, в противном случае мы посмотрим на <code>date</code>,<code>publishDate</code>, <code>lastmod</code> и выберем первую действительную дату.</p>
+<p>В списке справа значения, начинающиеся с &ldquo;:&rdquo;, являются обработчиками дат со специальным значением (см. ниже). Остальные - это просто имена параметров даты (без учета регистра) в Вашей конфигурации. Также обратите внимание, что у Hugo есть несколько встроенных псевдонимов для вышеуказанного: <code>lastmod</code> =&gt; <code>modified</code>, <code>publishDate</code> =&gt; <code>pubdate</code>, <code>published</code> и <code>expiryDate</code> =&gt; <code>unpublishdate</code>. При этом, в качестве примера, использование <code>pubDate</code> в качестве даты перед публикацией по умолчанию будет присвоено <code>.PublishDate</code>.</p>
+<p>К специальным обработчикам дат относятся:</p>
 <dl>
 <dt><code>:fileModTime</code></dt>
-<dd>Fetches the date from the content file&rsquo;s last modification timestamp.</dd>
+<dd>Получает дату из метки времени последнего изменения файла содержимого.</dd>
 </dl>
-<p>An example:</p>
+<p>Пример:</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
 <span class="nx">lastmod</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;lastmod&#34;</span><span class="p">,</span> <span class="s2">&#34;:fileModTime&#34;</span><span class="p">,</span> <span class="s2">&#34;:default&#34;</span><span class="p">]</span>
-</code></pre></div><p>The above will try first to extract the value for <code>.Lastmod</code> starting with the <code>lastmod</code> front matter parameter, then the content file&rsquo;s modification timestamp. The last, <code>:default</code> should not be needed here, but Hugo will finally look for a valid date in <code>:git</code>, <code>date</code> and then <code>publishDate</code>.</p>
+</code></pre></div><p>Вышеупомянутое сначала попытается извлечь значение для <code>.Lastmod</code> , начиная с переднего параметра <code>lastmod</code>, а затем отметку времени модификации файла содержимого. Последний, <code>:default</code>, здесь не нужен, но Хьюго наконец будет искать действительную дату в <code>:git</code>, <code>date</code>, а затем в <code>publishDate</code>.</p>
 <dl>
 <dt><code>:filename</code></dt>
-<dd>Fetches the date from the content file&rsquo;s filename. For example, <code>2018-02-22-mypage.md</code> will extract the date <code>2018-02-22</code>. Also, if <code>slug</code> is not set, <code>mypage</code> will be used as the value for <code>.Slug</code>.</dd>
+<dd>Получает дату из имени файла файла содержимого. Например, <code>2018-02-22-mypage.md</code> извлечет дату <code>2018-02-22</code>. Кроме того, если <code>slug</code> не установлен, <code>mypage</code> будет использоваться как значение для <code>.Slug</code>.</dd>
 </dl>
-<p>An example:</p>
+<p>Пример:</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
 <span class="nx">date</span>  <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;:filename&#34;</span><span class="p">,</span> <span class="s2">&#34;:default&#34;</span><span class="p">]</span>
-</code></pre></div><p>The above will try first to extract the value for <code>.Date</code> from the filename, then it will look in front matter parameters <code>date</code>, <code>publishDate</code> and lastly <code>lastmod</code>.</p>
+</code></pre></div><p>Вышеупомянутое сначала попытается извлечь значение для <code>.Date</code> из имени файла, затем оно будет смотреть в параметрах <code>date</code>, <code>publishDate</code> и, наконец, <code>lastmod</code>.</p>
 <dl>
 <dt><code>:git</code></dt>
-<dd>This is the Git author date for the last revision of this content file. This will only be set if <code>--enableGitInfo</code> is set or <code>enableGitInfo = true</code> is set in site config.</dd>
+<dd>Это дата создания Git последней редакции этого файла содержимого. Это будет установлено, только если установлен параметр <code>--enableGitInfo</code> или <code>enableGitInfo = true</code> в конфигурации сайта.</dd>
 </dl>
-<h2 id="configure-additional-output-formats">Configure Additional Output Formats <a class="header-link" href="#configure-additional-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo v0.20 introduced the ability to render your content to multiple output formats (e.g., to JSON, AMP html, or CSV). See <a href="/templates/output-formats/">Output Formats</a> for information on how to add these values to your Hugo project&rsquo;s configuration file.</p>
-<h2 id="configure-minify">Configure Minify <a class="header-link" href="#configure-minify"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="настройка-дополнительных-форматов-вывода">Настройка дополнительных форматов вывода <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d1%85-%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82%d0%be%d0%b2-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>В Hugo v0.20 появилась возможность отображать Ваш контент в нескольких форматах вывода (например, в JSON, AMP html или CSV). Смотрите <a href="/templates/output-formats/">Форматы вывода</a> для получения информации о том, как добавить эти значения в файл конфигурации Вашего проекта Hugo.</p>
+<h2 id="настройка-minify">Настройка Minify <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-minify"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.68.0-relnotes/" target="_blank">Новое в v0.68.0</a>
 </button>
-<p>Default configuration:</p>
+<p>Конфигурация по умолчанию:</p>
 
 
 
@@ -1221,8 +1216,8 @@ hugo config | grep emoji
 
 </div>
 
-<h2 id="configure-file-caches">Configure File Caches <a class="header-link" href="#configure-file-caches"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Since Hugo 0.52 you can configure more than just the <code>cacheDir</code>. This is the default configuration:</p>
+<h2 id="настройка-кеши-файлов">Настройка кеши файлов <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%ba%d0%b5%d1%88%d0%b8-%d1%84%d0%b0%d0%b9%d0%bb%d0%be%d0%b2"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Начиная с Hugo 0.52 Вы можете настраивать не только <code>cacheDir</code>. Это конфигурация по умолчанию:</p>
 
 
 
@@ -1327,25 +1322,25 @@ hugo config | grep emoji
 
 </div>
 
-<p>You can override any of these cache settings in your own <code>config.toml</code>.</p>
-<h3 id="the-keywords-explained">The keywords explained <a class="header-link" href="#the-keywords-explained"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Вы можете переопределить любую из этих настроек кеша в Вашем собственном файле <code>config.toml</code>.</p>
+<h3 id="объяснение-ключевых-слов">Объяснение ключевых слов <a class="header-link" href="#%d0%be%d0%b1%d1%8a%d1%8f%d1%81%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%b2%d1%8b%d1%85-%d1%81%d0%bb%d0%be%d0%b2"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <dl>
 <dt><code>:cacheDir</code></dt>
-<dd>This is the value of the <code>cacheDir</code> config option if set (can also be set via OS env variable <code>HUGO_CACHEDIR</code>). It will fall back to <code>/opt/build/cache/hugo_cache/</code> on Netlify, or a <code>hugo_cache</code> directory below the OS temp dir for the others. This means that if you run your builds on Netlify, all caches configured with <code>:cacheDir</code> will be saved and restored on the next build. For other CI vendors, please read their documentation. For an CircleCI example, see <a href="https://github.com/bep/hugo-sass-test/blob/6c3960a8f4b90e8938228688bc49bdcdd6b2d99e/.circleci/config.yml">this configuration</a>.</dd>
+<dd>Это значение параметра конфигурации <code>cacheDir</code>, если оно установлено (также может быть установлено через переменную env ОС <code>HUGO_CACHEDIR</code>). Он вернется к <code>/opt/build/cache/hugo_cache/</code> на Netlify или к каталогу <code>hugo_cache</code> ниже временного каталога ОС для остальных. Это означает, что если Вы запустите свои сборки на Netlify, все кеши, настроенные с помощью <code>:cacheDir</code>, будут сохранены и восстановлены при следующей сборке. Для других поставщиков CI, пожалуйста, прочтите их документацию. Смотрите пример CircleCI <a href="https://github.com/bep/hugo-sass-test/blob/6c3960a8f4b90e8938228688bc49bdcdd6b2d99e/.circleci/config.yml">этой конфигурации</a>.</dd>
 <dt><code>:project</code></dt>
-<dd>The base directory name of the current Hugo project. This means that, in its default setting, every project will have separated file caches, which means that when you do <code>hugo --gc</code> you will not touch files related to other Hugo projects running on the same PC.</dd>
+<dd>Имя базового каталога текущего проекта Hugo. Это означает, что в настройках по умолчанию каждый проект будет иметь отдельные кеши файлов, а это значит, что когда Вы выполняете <code>hugo --gc</code>, Вы не будете касаться файлов, связанных с другими проектами Hugo, запущенными на том же ПК.</dd>
 <dt><code>:resourceDir</code></dt>
-<dd>This is the value of the <code>resourceDir</code> config option.</dd>
+<dd>Это значение параметра конфигурации <code>resourceDir</code>.</dd>
 <dt>maxAge</dt>
-<dd>This is the duration before a cache entry will be evicted, -1 means forever and 0 effectively turns that particular cache off. Uses Go&rsquo;s <code>time.Duration</code>, so valid values are <code>&quot;10s&quot;</code> (10 seconds), <code>&quot;10m&quot;</code> (10 minutes) and <code>&quot;10h&quot;</code> (10 hours).</dd>
+<dd>Это время до того, как запись в кэше будет удалена, -1 означает навсегда, а 0 эффективно отключает этот конкретный кеш. Использует Go <code>time.Duration</code>, поэтому допустимые значения: <code>&quot;10s&quot;</code> (10 секунд), <code>&quot;10m&quot;</code> (10 минут) и <code>&quot;10h&quot;</code> (10 часов).</dd>
 <dt>dir</dt>
-<dd>The absolute path to where the files for this cache will be stored. Allowed starting placeholders are <code>:cacheDir</code> and <code>:resourceDir</code> (see above).</dd>
+<dd>Абсолютный путь к месту хранения файлов этого кеша. Допустимые начальные заполнители: <code>:cacheDir</code> и <code>:resourceDir</code> (смотрите выше).</dd>
 </dl>
-<h2 id="configuration-format-specs">Configuration Format Specs <a class="header-link" href="#configuration-format-specs"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="спецификации-формата-конфигурации">Спецификации формата конфигурации <a class="header-link" href="#%d1%81%d0%bf%d0%b5%d1%86%d0%b8%d1%84%d0%b8%d0%ba%d0%b0%d1%86%d0%b8%d0%b8-%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82%d0%b0-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <ul>
-<li><a href="https://github.com/toml-lang/toml">TOML Spec</a></li>
-<li><a href="https://yaml.org/spec/">YAML Spec</a></li>
-<li><a href="https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf" title="Specification for JSON, JavaScript Object Notation">JSON Spec</a></li>
+<li><a href="https://github.com/toml-lang/toml">Спецификация формата TOML</a></li>
+<li><a href="https://yaml.org/spec/">Спецификация формата YAML</a></li>
+<li><a href="https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf" title="Specification for JSON, JavaScript Object Notation">Спецификация формата JSON</a></li>
 </ul>
 
 </div>
@@ -1417,7 +1412,7 @@ hugo config | grep emoji
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".getting-started">Начало</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".getting-started">С чего начать</a>
         <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
@@ -1426,32 +1421,32 @@ hugo config | grep emoji
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/quick-start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Quick Start
+              Быстрый старт
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/installing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Install Hugo
+              Установка Хьюго
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/usage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Basic Usage
+              Основы использования
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/directory-structure/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Directory Structure
+              Структура каталогов
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Configuration
+              Настройка
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/getting-started/external-learning-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              External Learning Resources
+              Внешние ресурсы обучения
             </a>
           </li>
         </ul>
@@ -2688,8 +2683,8 @@ hugo config | grep emoji
   <a href="https://gohugo.ru/getting-started/configuration/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Configure Hugo”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Настройка Хьюго”
+  </a> последнее обновление: December 25, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/7e0cbc34cbf2ab3028528c967bbcd47d979a40ad">Перевод getting-started (7e0cbc34c)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/getting-started%5cconfiguration.md" class="
@@ -2855,7 +2850,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Начало
+          С чего начать
         </a>
     </li>
   

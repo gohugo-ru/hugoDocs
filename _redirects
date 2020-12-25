@@ -68,12 +68,12 @@
 /tutorials/github-pages-blog/      	/hosting-and-deployment/hosting-on-github/
 /content/build-options/            	/content-management/build-options/
 /extras/shortcodes/                	/content-management/shortcodes/
+/variables/file-variables/         	/variables/files/
+/templates/sections/               	/templates/section-templates/
 /overview/usage/                   	/getting-started/usage/
 /extras/livereload/                	/getting-started/usage/
 /doc/usage/                        	/getting-started/usage/
 /usage/                            	/getting-started/usage/
-/variables/file-variables/         	/variables/files/
-/templates/sections/               	/templates/section-templates/
 /tutorials/hosting-on-gitlab/      	/hosting-and-deployment/hosting-on-gitlab/
 /variables/menu/                   	/variables/menus/
 /tutorials/hosting-on-bitbucket/   	/hosting-and-deployment/hosting-on-bitbucket/
