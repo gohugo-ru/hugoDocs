@@ -1,6 +1,6 @@
 ---
-title: Code Toggle
-description: Code Toggle tryout and showcase.
+title: Переключение кода
+description: Переключение кода - опробование и демонстрация.
 date: 2018-03-16
 categories: [getting started,fundamentals]
 keywords: [configuration,toml,yaml,json]
@@ -10,16 +10,16 @@ draft: false
 toc: true
 ---
 
-## The Config Toggler!
+## Конфигурация переключателя
 
-This is an example for the Config Toggle shortcode.
-Its purpose is to let users choose a Config language by clicking on its corresponding tab. Upon doing so, every Code toggler on the page will be switched to the target language. Also, target language will be saved in user's `localStorage` so when they go to a different pages, Code Toggler display their last "toggled" config language.
+Это пример шорткода переключателя конфигурации.
+Его цель - позволить пользователям выбрать язык конфигурации, щелкнув соответствующую вкладку. После этого каждый переключатель кода на странице будет переключен на целевой язык. Кроме того, целевой язык будет сохранен в `localStorage` пользователя, поэтому, когда они переходят на другие страницы, переключатель кода отображает их последний «переключенный» язык конфигурации.
 
 {{% note %}}
-The `code-toggler` shortcode is not an internal Hugo shortcode. This page's purpose is to test out a custom feature that we use throughout this site. See: https://github.com/gohugoio/gohugoioTheme/blob/master/layouts/shortcodes/code-toggle.html
+Шорткод `code-toggler` не является внутренним шорткодом Hugo. Цель этой страницы - протестировать настраиваемую функцию, которую мы используем на этом сайте. Смотрите: https://github.com/gohugoio/gohugoioTheme/blob/master/layouts/shortcodes/code-toggle.html
 {{% /note %}}
 
-## That Config Toggler
+## Этот переключатель конфигурации
 
 {{< code-toggle file="config">}}
 
@@ -38,11 +38,11 @@ params:
   SidebarRecentLimit: 5
 {{< /code-toggle >}}
 
-## Another Config Toggler!
+## Другой переключатель конфигурации
 
 {{< code-toggle file="theme">}}
 
-# theme.toml template for a Hugo theme
+# Шаблон theme.toml для темы Hugo
 
 name = "Hugo Theme"
 license = "MIT"
@@ -59,7 +59,7 @@ min_version = 0.18
 
 {{< /code-toggle >}}
 
-## Two regular code blocks
+## Два обычных блока кода
 
 {{< code file="bf-config.toml" >}}
 [blackfriday]

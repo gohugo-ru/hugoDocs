@@ -1,6 +1,6 @@
 ---
-title: Configure Markup
-description: How to handle Markdown and other markup related configuration.
+title: Конфигурация разметки
+description: Как обрабатывать Markdown и другую конфигурацию, связанную с разметкой.
 date: 2019-11-15
 categories: [getting started,fundamentals]
 keywords: [configuration,highlighting]
@@ -10,94 +10,92 @@ slug: configuration-markup
 toc: true
 ---
 
-## Configure Markup
+## Конфигурация разметки
 
 {{< new-in "0.60.0" >}}
 
-See [Goldmark](#goldmark) for settings related to the default Markdown handler in Hugo.
+Смотрите [Goldmark](#goldmark) для настроек, связанных с обработчиком Markdown по умолчанию в Hugo.
 
-Below are all markup related configuration in Hugo with their default settings:
+Ниже приведены все конфигурации, связанные с разметкой в Hugo, с настройками по умолчанию:
 
 {{< code-toggle config="markup" />}}
 
-**See each section below for details.**
+**Смотрите подробности в каждом разделе ниже.**
 
 ### Goldmark
 
-[Goldmark](https://github.com/yuin/goldmark/) is from Hugo 0.60 the default library used for Markdown. It's fast, it's [CommonMark](https://spec.commonmark.org/0.29/) compliant and it's very flexible. Note that the feature set of Goldmark vs Blackfriday isn't the same; you gain a lot but also lose some, but we will work to bridge any gap in the upcoming Hugo versions.
+[Goldmark](https://github.com/yuin/goldmark/) взят из Hugo 0.60 - библиотеки по умолчанию, используемой для Markdown. Это быстро, совместимо с [CommonMark](https://spec.commonmark.org/0.29/) и очень гибко. Обратите внимание, что набор функций Goldmark vs Blackfriday отличается; Вы много приобретаете, но и теряете что-то, но мы будем работать над устранением пробелов в следующих версиях Hugo.
 
-This is the default configuration:
+Это конфигурация по умолчанию:
 
 {{< code-toggle config="markup.goldmark" />}}
 
-For details on the extensions, refer to [this section](https://github.com/yuin/goldmark/#built-in-extensions) of the Goldmark documentation
+Подробнее о расширениях смотрите [этот раздел](https://github.com/yuin/goldmark/#built-in-extensions) документации Goldmark.
 
-Some settings explained:
+Пояснения к некоторым настройкам:
 
 unsafe
-: By default, Goldmark does not render raw HTMLs and potentially dangerous links. If you have lots of inline HTML and/or JavaScript, you may need to turn this on.
+: По умолчанию Goldmark не отображает необработанный HTML и потенциально опасные ссылки. Если у Вас много встроенного HTML и/или JavaScript, Вам может потребоваться включить это.
 
 typographer
-: This extension substitutes punctuations with typographic entities like [smartypants](https://daringfireball.net/projects/smartypants/).
+: Это расширение заменяет знаки препинания типографскими объектами, такими как [smartypants](https://daringfireball.net/projects/smartypants/).
 
 autoHeadingIDType ("github") {{< new-in "0.62.2" >}}
-: The strategy used for creating auto IDs (anchor names). Available types are `github`, `github-ascii` and `blackfriday`. `github` produces GitHub-compatible IDs, `github-ascii` will drop any non-Ascii characters after accent normalization, and `blackfriday` will make the IDs work as with [Blackfriday](#blackfriday), the default Markdown engine before Hugo 0.60. Note that if Goldmark is your default Markdown engine, this is also the strategy used in the [anchorize](/functions/anchorize/) template func.
+: Стратегия, используемая для создания автоматических идентификаторов (имен привязок). Доступные типы: `github`, `github-ascii` и `blackfriday`. `github` создает идентификаторы, совместимые с GitHub, `github-ascii` удаляет все символы, отличные от Ascii, после нормализации акцента, а `blackfriday` заставляет идентификаторы работать так же, как с [Blackfriday](#blackfriday), движком Markdown по умолчанию до Hugo 0,60. Обратите внимание: если Goldmark является Вашим механизмом Markdown по умолчанию, эта же стратегия используется в функции шаблона [anchorize](/functions/anchorize/).
 
 ### Blackfriday
 
+[Blackfriday](https://github.com/russross/blackfriday) был механизмом рендеринга Markdown по умолчанию для Hugo, теперь замененным на Goldmark. Но Вы все равно можете использовать его: просто установите для `defaultMarkdownHandler` значение `blackfriday` в конфигурации разметки верхнего уровня `markup`.
 
-[Blackfriday](https://github.com/russross/blackfriday) was Hugo's default Markdown rendering engine, now replaced with Goldmark. But you can still use it: Just set `defaultMarkdownHandler` to `blackfriday` in your top level `markup` config.
-
-This is the default config:
+Это конфигурация по умолчанию:
 
 {{< code-toggle config="markup.blackFriday" />}}
 
 ### Highlight
 
-This is the default `highlight` configuration. Note that some of these settings can be set per code block, see [Syntax Highlighting](/content-management/syntax-highlighting/).
+Это конфигурация подсветки `highlight` по умолчанию. Обратите внимание, что некоторые из этих настроек могут быть установлены для каждого блока кода, смотрите [подсветку синтаксиса](/content-management/syntax-highlighting/).
 
 {{< code-toggle config="markup.highlight" />}}
 
-For `style`, see these galleries:
+Для стилей `style`, смотрите эти галереи:
 
 * [Short snippets](https://xyproto.github.io/splash/docs/all.html)
 * [Long snippets](https://xyproto.github.io/splash/docs/longer/all.html)
 
-For CSS, see [Generate Syntax Highlighter CSS](/content-management/syntax-highlighting/#generate-syntax-highlighter-css).
+Для CSS смотрите [создание CSS-выделения синтаксиса](/content-management/syntax-highlighting/#generate-syntax-highlighter-css).
 
-### Table Of Contents
+### Содержание
 
 {{< code-toggle config="markup.tableOfContents" />}}
 
-These settings only works for the Goldmark renderer:
+Эти настройки работают только для средства визуализации Goldmark:
 
 startLevel
-: The heading level, values starting at 1 (`h1`), to start render the table of contents.
+: Уровень заголовка, значения начинаются с 1 (`h1`), чтобы начать рендеринг оглавления.
 
 endLevel
-: The heading level, inclusive, to stop render the table of contents.
+: Уровень заголовка включительно для остановки отображения оглавления.
 
 ordered
-: Whether or not to generate an ordered list instead of an unordered list.
+: Следует ли создавать упорядоченный список вместо неупорядоченного списка.
 
-
-## Markdown Render Hooks
+## Хуки рендеринга разметки
 
 {{< new-in "0.62.0" >}}
 
-Note that this is only supported with the [Goldmark](#goldmark) renderer.
+Обратите внимание, что это поддерживается только средством визуализации [Goldmark](#goldmark).
 
-Render Hooks allow custom templates to override markdown rendering functionality. You can do this by creating templates with base names `render-{feature}` in `layouts/_default/_markup`.
+Хуки рендеринга позволяют настраиваемым шаблонам переопределять функциональность рендеринга уценки. Вы можете сделать это, создав шаблоны с базовыми именами `render-{feature}` в `layouts/_default/_markup`.
 
-You can also create type/section specific hooks in `layouts/[type/section]/_markup`, e.g.: `layouts/blog/_markup`.{{< new-in "0.71.0" >}}
+Вы также можете создать хуки для конкретного типа/раздела в `layouts/[type/section]/_markup`, например: `layouts/blog/_markup`.{{< new-in "0.71.0" >}}
 
-The features currently supported are:
+В настоящее время поддерживаются следующие функции:
 
 * `image`
 * `link`
 * `heading` {{< new-in "0.71.0" >}}
 
-You can define [Output-Format-](/templates/output-formats) and [language-](/content-management/multilingual/)specific templates if needed. Your `layouts` folder may look like this:
+При необходимости вы можете определить специальные шаблоны [Формат вывода](/templates/output-formats) и [язык](/content-management/multilingual/). Ваша папка `layout` может выглядеть так:
 
 ```bash
 layouts
@@ -108,68 +106,68 @@ layouts
         └── render-link.html
 ```
 
-Some use cases for the above:
+Некоторые варианты использования для вышеуказанного:
 
-* Resolve link references using `.GetPage`. This would make links portable as you could translate `./my-post.md` (and similar constructs that would work on GitHub) into `/blog/2019/01/01/my-post/` etc.
-* Add `target=_blank` to external links.
-* Resolve and [process](/content-management/image-processing/) images.
-* Add [header links](https://remysharp.com/2014/08/08/automatic-permalinks-for-blog-posts).
+* Разрешение ссылки на ссылки с помощью `.GetPage`. Это сделало бы ссылки переносимыми, поскольку вы могли бы перевести `./my-post.md` (и аналогичные конструкции, которые будут работать на GitHub) в `/blog/2019/01/01/my-post/` и т.д.
+* Добавление `target=_blank` к внешним ссылкам.
+* Решение и [обработка](/content-management/image-processing/) изображения.
+* Добавление [ссылок заголовка](https://remysharp.com/2014/08/08/automatic-permalinks-for-blog-posts).
 
-### Render Hook Templates
+### Шаблоны хуков рендеринга
 
-The `render-link` and `render-image` templates will receive this context:
+Шаблоны `render-link` и `render-image` получат этот контекст:
 
 Page
-: The [Page](/variables/page/) being rendered.
+: Отображаемая [Страница](/variables/page/).
 
 Destination
-: The URL.
+: URL-адрес.
 
 Title
-: The title attribute.
+: Атрибут title.
 
 Text
-: The rendered (HTML) link text.
+: Отображаемый текст ссылки (HTML).
 
 PlainText
-: The plain variant of the above.
+: Простой вариант вышеперечисленного.
 
-The `render-heading` template will receive this context:
+Шаблон `render-heading` получит этот контекст:
 
 Page
-: The [Page](/variables/page/) being rendered.
+: Отображаемая [Страница](/variables/page/).
 
 Level
-: The header level (1--6)
+: Уровень заголовка (1--6).
 
 Anchor
-: An auto-generated html id unique to the header within the page
+: Автоматически сгенерированный html-идентификатор, уникальный для заголовка на странице.
 
 Text
-: The rendered (HTML) text.
+: Отображаемый текст (HTML).
 
 PlainText
-: The plain variant of the above.
+: Простой вариант вышеперечисленного.
 
-#### Link with title Markdown example:
+#### Ссылка с заголовком примера разметки
 
 ```md
 [Text](https://www.gohugo.io "Title")
 ```
 
-Here is a code example for how the render-link.html template could look:
+Вот пример кода, как может выглядеть шаблон render-link.html:
 
 {{< code file="layouts/_default/_markup/render-link.html" >}}
 <a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
 {{< /code >}}
 
-#### Image Markdown example:
+#### Пример разметки изображения
 
 ```md
 ![Text](https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg "Title")
 ```
 
-Here is a code example for how the render-image.html template could look:
+Вот пример кода, как может выглядеть шаблон render-image.html:
 
 {{< code file="layouts/_default/_markup/render-image.html" >}}
 <p class="md__image">
@@ -177,22 +175,22 @@ Here is a code example for how the render-image.html template could look:
 </p>
 {{< /code >}}
 
-#### Heading link example
+#### Пример ссылки заголовка
 
-Given this template file
+Учитывая этот файл шаблона
 
 {{< code file="layouts/_default/_markup/render-heading.html" >}}
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }} <a href="#{{ .Anchor | safeURL }}">¶</a></h{{ .Level }}>
 {{< /code >}}
 
-And this markdown
+и эта разметка
 
 ```md
-### Section A
+### Секция А
 ```
 
-The rendered html will be
+Визуализированный html будет
 
 ```html
-<h3 id="section-a">Section A <a href="#section-a">¶</a></h3>
+<h3 id="section-a">Секция А <a href="#section-a">¶</a></h3>
 ```
