@@ -1,8 +1,8 @@
 ---
-title : "Page Bundles"
-description : "Content organization using Page Bundles"
+title : "Пакеты страниц"
+description : "Организация содержимого с использованием пакетов страниц"
 date : 2018-01-24T13:09:00-05:00
-linktitle : "Page Bundles"
+linktitle : "Пакеты страниц"
 keywords : ["page", "bundle", "leaf", "branch"]
 categories : ["content management"]
 toc : true
@@ -13,31 +13,29 @@ menu :
     weight : 11
 ---
 
-Page Bundles are a way to group [Page Resources](/content-management/page-resources/).
+Пакеты страниц - это способ группировки [ресурсов страницы](/content-management/page-resources/).
 
-A Page Bundle can be one of:
+Пакет страниц может быть одним из:
 
-- Leaf Bundle (leaf means it has no children)
-- Branch Bundle (home page, section, taxonomy terms, taxonomy list)
+- Leaf Bundle (лист означает, что у него нет детей)
+- Branch Bundle (домашняя страница, раздел, термины таксономии, список таксономии)
 
-|                                     | Leaf Bundle                                              | Branch Bundle                                                                                                                                                                                                      |
-|-------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
-| Usage                               | Collection of content and attachments for single pages   | Collection of attachments for section pages (home page, section, taxonomy terms, taxonomy list)                                                                                                                    |
-| Index file name                     | `index.md` [^fn:1]                                       | `_index.md` [^fn:1]                                                                                                                                                                                                |
-| Allowed Resources                   | Page and non-page (like images, pdf, etc.) types         | Only non-page (like images, pdf, etc.) types                                                                                                                                                                       |
-| Where can the Resources live?       | At any directory level within the leaf bundle directory. | Only in the directory level **of** the branch bundle directory i.e. the directory containing the `_index.md` ([ref](https://discourse.gohugo.io/t/question-about-content-folder-structure/11822/4?u=kaushalmodi)). |
-| Layout type                         | `single`                                                 | `list`                                                                                                                                                                                                             |
-| Nesting                             | Does not allow nesting of more bundles under it          | Allows nesting of leaf or branch bundles under it                                                                                                                                                                  |
-| Example                             | `content/posts/my-post/index.md`                         | `content/posts/_index.md`                                                                                                                                                                                          |
-| Content from non-index page files... | Accessed only as page resources                          | Accessed only as regular pages                                                                                                                                                                                     |
-
+|    | Leaf Bundle | Branch Bundle |
+| -- | ----------- | ------------- |
+| Применение | Сборник контента и вложений для отдельных страниц | Сборник вложений для страниц раздела (домашняя страница, раздел, термины таксономии, список таксономии) |
+| Имя индексного файла | `index.md` [^fn:1] | `_index.md` [^fn:1] |
+| Разрешенные ресурсы | Страничные и нестраничные (например, изображения, pdf и т.д.) типы | Только нестраничные (например, изображения, pdf и т.д.) типы |
+| Где могут жить Ресурсы? | На любом уровне каталога в каталоге конечного пакета. | Только на уровне каталога **для** каталога пакета ветки, т.е. каталога, содержащего `_index.md` ([ref](https://discourse.gohugo.io/t/question-about-content-folder-structure/11822/4?u=kaushalmodi)). |
+| Тип макета | `single` | `list` |
+| Вложенность | Не допускает вложения под ним большего количества связок | Позволяет класть под себя пакеты leaf или branch |
+| Пример | `content/posts/my-post/index.md` | `content/posts/_index.md` |
+| Контент из файлов неиндексных страниц ... | Доступно только как ресурсы страницы | Доступно только как обычные страницы |
 
 ## Leaf Bundles {#leaf-bundles}
 
-A _Leaf Bundle_ is a directory at any hierarchy within the `content/`
-directory, that contains an **`index.md`** file.
+_Leaf Bundle_ - это каталог любой иерархии в каталоге `content/`, содержащий файл **`index.md`**.
 
-### Examples of Leaf Bundle organization {#examples-of-leaf-bundle-organization}
+### Примеры организации Leaf Bundle {#examples-of-leaf-bundle-organization}
 
 ```text
 content/
@@ -61,47 +59,38 @@ content/
             └── index.md
 ```
 
-In the above example `content/` directory, there are four leaf
-bundles:
+В приведенном выше примере каталога `content/` есть четыре leaf bundles:
 
 about
-: This leaf bundle is at the root level (directly under
-    `content` directory) and has only the `index.md`.
+: Этот листовой пакет находится на корневом уровне (непосредственно в каталоге `content`) и имеет только `index.md`.
 
 my-post
-: This leaf bundle has the `index.md`, two other content
-    Markdown files and two image files.
+: Этот листовой пакет содержит `index.md`, два других файла разметки содержимого и два файла изображений.
 
 image1
-: This image is a page resource of `my-post`
-    and only available in `my-post/index.md` resources.
+: Это изображение является ресурсом страницы `my-post` и доступно только в ресурсах `my-post/index.md`.
 
 image2
-: This image is a page resource of `my-post`
-    and only available in `my-post/index.md` resources.
+: Это изображение является ресурсом страницы `my-post` и доступно только в ресурсах `my-post/index.md`.
 
 my-other-post
-: This leaf bundle has only the `index.md`.
+: Этот листовой пакет содержит только файл `index.md`.
 
 another-leaf-bundle
-: This leaf bundle is nested under couple of
-    directories. This bundle also has only the `index.md`.
+: Этот листовой пакет вложен в несколько каталогов. В этом комплекте также есть только `index.md`.
 
 {{% note %}}
-The hierarchy depth at which a leaf bundle is created does not matter,
-as long as it is not inside another **leaf** bundle.
+Глубина иерархии, на которой создается листовой пакет, не имеет значения, если он не находится внутри другого **листового** пакета.
 {{% /note %}}
-
 
 ### Headless Bundle {#headless-bundle}
 
-A headless bundle is a bundle that is configured to not get published
-anywhere:
+Безголовый пакет - это пакет, который настроен так, чтобы нигде не публиковаться:
 
--   It will have no `Permalink` and no rendered HTML in `public/`.
--   It will not be part of `.Site.RegularPages`, etc.
+- В нем не будет `Permalink` и обработанного HTML в `public/`.
+- Он не будет частью `.Site.RegularPages` и т.д.
 
-But you can get it by `.Site.GetPage`. Here is an example:
+Но Вы можете получить его с помощью `.Site.GetPage`. Вот пример:
 
 ```go-html-template
 {{ $headless := .Site.GetPage "/some-headless-bundle" }}
@@ -113,47 +102,38 @@ But you can get it by `.Site.GetPage`. Here is an example:
 {{ end }}
 ```
 
-_In this example, we are assuming the `some-headless-bundle` to be a headless
-   bundle containing one or more **page** resources whose `.Name` matches
-   `"author*"`._
+_В этом примере мы предполагаем, что `some-headless-bundle` представляет собой комплект без заголовка, содержащий один или несколько ресурсов **страницы**, чей `.Name` совпадает с `"author*"`._
 
-Explanation of the above example:
+Пояснение к приведенному выше примеру:
 
-1. Get the `some-headless-bundle` Page "object".
-2. Collect a *slice* of resources in this *Page Bundle* that matches
-   `"author*"` using `.Resources.Match`.
-3. Loop through that *slice* of nested pages, and output their `.Title` and
-   `.Content`.
+1. Получите "объект" страницы `some-headless-bundle`.
+2. Соберите *кусок* ресурсов в этом *Пакете страницы*, который соответствует `"author*"`, используя `.Resources.Match`.
+3. Прокрутите этот *кусок* вложенных страниц и выведите их `.Title` и `.Content`.
 
 ---
 
-A leaf bundle can be made headless by adding below in the Front Matter
-(in the `index.md`):
+Связку листьев можно сделать безголовой, добавив ниже во Front Matter (в `index.md`):
 
 ```toml
 headless = true
 ```
 
-There are many use cases of such headless page bundles:
+Есть много вариантов использования таких пакетов страниц без заголовка:
 
--   Shared media galleries
--   Reusable page content "snippets"
-
+- Общие медиа-галереи
+- Многоразовые "снипеты" содержания страницы
 
 ## Branch Bundles {#branch-bundles}
 
-A _Branch Bundle_ is any directory at any hierarchy within the
-`content/` directory, that contains at least an **`_index.md`** file.
+_Branch Bundle_ - это любой каталог в любой иерархии внутри каталога `content/`, который содержит как минимум файл **`_index.md`**.
 
-This `_index.md` can also be directly under the `content/` directory.
+Этот `_index.md` также может находиться непосредственно в каталоге `content/`.
 
 {{% note %}}
-Here `md` (markdown) is used just as an example. You can use any file
-type as a content resource as long as it is a content type recognized by Hugo.
+Здесь `md` (разметка) используется просто в качестве примера. Вы можете использовать любой тип файла в качестве ресурса контента, если это тип контента, распознаваемый Hugo.
 {{% /note %}}
 
-
-### Examples of Branch Bundle organization {#examples-of-branch-bundle-organization}
+### Примеры организации Branch Bundle {#examples-of-branch-bundle-organization}
 
 ```text
 content/
@@ -169,20 +149,16 @@ content/
         └── index.md
 ```
 
-In the above example `content/` directory, there are two branch
-bundles (and a leaf bundle):
+В приведенном выше примере каталога `content/` есть два пакета ветвей (и пакет листьев):
 
 `branch-bundle-1`
-: This branch bundle has the `_index.md`, two
-    other content Markdown files and two image files.
+: В этом пакете веток есть `_index.md`, два других файла разметки с контентом и два файла изображений.
 
 `branch-bundle-2`
-: This branch bundle has the `_index.md` and a
-    nested leaf bundle.
+: В этом пакете веток есть `_index.md` и вложенный листовой комплект.
 
 {{% note %}}
-The hierarchy depth at which a branch bundle is created does not
-matter.
+Глубина иерархии, на которой создается пакет ветвей, не имеет значения.
 {{% /note %}}
 
-[^fn:1]: The `.md` extension is just an example. The extension can be `.html`, `.json` or any valid MIME type.
+[^fn:1]: Расширение `.md` - это просто пример. Расширением может быть `.html`, `.json` или любой допустимый тип MIME.

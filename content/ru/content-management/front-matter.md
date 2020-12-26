@@ -1,7 +1,7 @@
 ---
 title: Front Matter
 linktitle:
-description: Hugo allows you to add front matter in yaml, toml, or json to your content files.
+description: Hugo позволяет добавлять front matter в файлы содержимого на языках yaml, toml или json.
 date: 2017-01-09
 publishdate: 2017-01-09
 lastmod: 2017-02-24
@@ -17,28 +17,28 @@ aliases: [/content/front-matter/]
 toc: true
 ---
 
-**Front matter** allows you to keep metadata attached to an instance of a [content type][]---i.e., embedded inside a content file---and is one of the many features that gives Hugo its strength.
+**Front matter** позволяет хранить метаданные, прикрепленные к экземпляру [типов контента][content type], т.е. встроенные в файл контента, и это одна из многих функций, которые придают Hugo его силу.
 
 {{< youtube Yh2xKRJGff4 >}}
 
-## Front Matter Formats
+## Форматы Front Matter
 
-Hugo supports four formats for front matter, each with their own identifying tokens.
+Hugo поддерживает четыре формата для front matter, каждый со своими собственными идентификационными токенами.
 
 TOML
-: identified by opening and closing `+++`.
+: определяется открытием и закрытием `+++`.
 
 YAML
-: identified by opening and closing `---`.
+: определяется открытием и закрытием `---`.
 
 JSON
-: a single JSON object surrounded by '`{`' and '`}`', followed by a new line.
+: один объект JSON, окруженный символами '`{`' и '`}`', за которым следует новая строка.
 
 ORG
-: a group of Org mode keywords in the format '`#+KEY: VALUE`'. Any line that does not start with `#+` ends the front matter section.
-  Keyword values can be either strings (`#+KEY: VALUE`) or a whitespace separated list of strings (`#+KEY[]: VALUE_1 VALUE_2`).
+: группа ключевых слов Org  режима в формате '`#+KEY: VALUE`'. Любая строка, которая не начинается с `#+`, завершает раздел вводной части.
+  Значения ключевых слов могут быть строками (`#+KEY: VALUE`) или списком строк, разделенных пробелами (`#+KEY[]: VALUE_1 VALUE_2`).
 
-### Example
+### Пример
 
 {{< code-toggle >}}
 title = "spf13-vim 3.0 release and new website"
@@ -52,118 +52,117 @@ categories = [
 slug = "spf13-vim-3-0-release-and-new-website"
 {{< /code-toggle >}}
 
-## Front Matter Variables
+## Переменные Front Matter
 
-### Predefined
+### Предопределенный
 
-There are a few predefined variables that Hugo is aware of. See [Page Variables][pagevars] for how to call many of these predefined variables in your templates.
+Есть несколько предопределенных переменных, о которых Хьюго знает. Смотрите [Переменные страницы][pagevars], чтобы узнать, как вызывать многие из этих предопределенных переменных в Ваших шаблонах.
 
 aliases
-: an array of one or more aliases (e.g., old published paths of renamed content) that will be created in the output directory structure . See [Aliases][aliases] for details.
+: массив из одного или нескольких псевдонимов (например, старых опубликованных путей переименованного контента), которые будут созданы в структуре выходного каталога. Подробнее смотрите [псевдонимы][aliases].
 
 audio
-: an array of paths to audio files related to the page; used by the `opengraph` [internal template](/templates/internal) to populate `og:audio`.
+: массив путей к аудиофайлам, относящимся к странице; используется `opengraph` [внутренний шаблон](/templates/internal) для заполнения `og:audio`.
 
 cascade
-: a map of Front Matter keys whose values are passed down to the page's descendents unless overwritten by self or a closer ancestor's cascade. See [Front Matter Cascade](#front-matter-cascade) for details.
+: карта ключей Front Matter, значения которых передаются потомкам страницы, если они не перезаписываются самим собой или каскадом более близких предков. Смотрите [Front Matter Cascade](#front-matter-cascade) для получения подробной информации.
 
 date
-: the datetime assigned to this page. This is usually fetched from the `date` field in front matter, but this behaviour is configurable.
+: дата и время, назначенное этой странице. Обычно это выбирается из поля `date` в начале сообщения, но это поведение можно настроить.
 
 description
-: the description for the content.
+: описание для контента.
 
 draft
-: if `true`, the content will not be rendered unless the `--buildDrafts` flag is passed to the `hugo` command.
+: если `true`, контент не будет отображаться, если флаг `--buildDrafts` не передан команде `hugo`.
 
 expiryDate
-: the datetime at which the content should no longer be published by Hugo; expired content will not be rendered unless the `--buildExpired` flag is passed to the `hugo` command.
+: дата и время, при которых контент больше не должен публиковаться Hugo; Просроченный контент не будет отображаться, если флаг `--buildExpired` не передан команде `hugo`.
 
 headless
-: if `true`, sets a leaf bundle to be [headless][headless-bundle].
+: если `true`, устанавливает для leaf bundle значение [headless][headless-bundle].
 
 images
-: an array of paths to images related to the page; used by [internal templates](/templates/internal) such as `_internal/twitter_cards.html`.
+: массив путей к изображениям, относящимся к странице; используется [внутренними шаблонами](/templates/internal), такими как `_internal/twitter_cards.html`.
 
 isCJKLanguage
-: if `true`, Hugo will explicitly treat the content as a CJK language; both `.Summary` and `.WordCount` work properly in CJK languages.
+: если `true`, Hugo будет явно рассматривать контент как язык CJK; как `.Summary` так и `.WordCount` корректно работают на CJK языках.
 
 keywords
-: the meta keywords for the content.
+: мета-ключевые слова для содержания.
 
 layout
-: the layout Hugo should select from the [lookup order][lookup] when rendering the content. If a `type` is not specified in the front matter, Hugo will look for the layout of the same name in the layout directory that corresponds with a content's section. See ["Defining a Content Type"][definetype]
+: макет Хьюго должен выбирать из [порядок поиска][lookup] при рендеринге содержимого. Если `type` не указан во вступительной части, Hugo будет искать макет с тем же именем в каталоге макета, который соответствует разделу содержимого. Смотрите ["Определение типа контента"][definetype]
 
 lastmod
-: the datetime at which the content was last modified.
+: дата и время последнего изменения содержимого.
 
 linkTitle
-: used for creating links to content; if set, Hugo defaults to using the `linktitle` before the `title`. Hugo can also [order lists of content by `linktitle`][bylinktitle].
+: используется для создания ссылок на контент; если установлено, Хьюго по умолчанию использует `linktitle` перед `title`. Хьюго также может [упорядочить списки контента по `linktitle`][bylinktitle].
 
 markup
-: **experimental**; specify `"rst"` for reStructuredText (requires`rst2html`) or `"md"` (default) for Markdown.
+: **экспериментальный**; укажите `"rst"` для reStructuredText (требуется `rst2html`) или `"md"` (по умолчанию) для Markdown.
 
 outputs
-: allows you to specify output formats specific to the content. See [output formats][outputs].
+: позволяет указать форматы вывода, специфичные для содержимого. Смотрите [форматы вывода][outputs].
 
 publishDate
-: if in the future, content will not be rendered unless the `--buildFuture` flag is passed to `hugo`.
+: если в будущем контент не будет отображаться, если флаг `--buildFuture` не передан в `hugo`.
 
 resources
-: used for configuring page bundle resources. See [Page Resources][page-resources].
+: используется для настройки ресурсов пакета страниц. Смотрите [Ресурсы страницы][page-resources].
 
 series
-: an array of series this page belongs to, as a subset of the `series` [taxonomy](/content-management/taxonomies/); used by the `opengraph` [internal template](/templates/internal) to populate `og:see_also`.
+: массив серий, к которым принадлежит эта страница, как подмножество `series` [таксономия](/content-management/taxonomies/); используется `opengraph` [внутренний шаблон](/templates/internal) для заполнения `og:see_also`.
 
 slug
-: appears as the tail of the output URL. A value specified in front matter will override the segment of the URL based on the filename.
+: отображается в конце выходного URL. Значение, указанное в заголовке, переопределит сегмент URL-адреса на основе имени файла.
 
 summary
-: text used when providing a summary of the article in the `.Summary` page variable; details available in the [content-summaries](/content-management/summaries/) section.
+: текст, используемый при предоставлении резюме статьи в переменной страницы `.Summary`; подробности доступны в разделе [резюме содержания](/content-management/summaries/).
 
 title
-: the title for the content.
+: название содержания.
 
 type
-: the type of the content; this value will be automatically derived from the directory (i.e., the [section][]) if not specified in front matter.
+: тип контента; это значение будет автоматически получено из каталога (т. е., [раздел][section]), если не указано в предварительном сообщении.
 
 url
-: the full path to the content from the web root. It makes no assumptions about the path of the content file. It also ignores any language prefixes of
-the multilingual feature.
+: полный путь к содержимому из корня сети. Он не делает никаких предположений о пути к файлу содержимого. Он также игнорирует любые языковые префиксы многоязычной функции.
 
 videos
-: an array of paths to videos related to the page; used by the `opengraph` [internal template](/templates/internal) to populate `og:video`.
+: массив путей к видео, относящимся к странице; используется в `opengraph` [внутреннего шаблона](/templates/internal) для заполнения `og:video`.
 
 weight
-: used for [ordering your content in lists][ordering]. Lower weight gets higher precedence. So content with lower weight will come first. If set, weights should be non-zero, as 0 is interpreted as an *unset* weight.
+: используется для [упорядочивания вашего контента в списках][ordering]. Меньший вес имеет более высокий приоритет. Так что довольство меньшим весом будет на первом месте. Если установлено, веса должны быть ненулевыми, поскольку 0 интерпретируется как *неустановленный* вес.
 
 \<taxonomies\>
-: field name of the *plural* form of the index. See `tags` and `categories` in the above front matter examples. _Note that the plural form of user-defined taxonomies cannot be the same as any of the predefined front matter variables._
+: имя поля в форме *множественного числа* индекса. Смотрите `tags` и `categories` в примерах выше. _Обратите внимание, что форма множественного числа определяемых пользователем таксономий не может совпадать с любой из предопределенных первичных переменных._
 
 {{% note "Hugo's Default URL Destinations" %}}
-If neither `slug` nor `url` is present and [permalinks are not configured otherwise in your site `config` file](/content-management/urls/#permalinks), Hugo will use the filename of your content to create the output URL. See [Content Organization](/content-management/organization) for an explanation of paths in Hugo and [URL Management](/content-management/urls/) for ways to customize Hugo's default behaviors.
+Если ни `slug`, ни `url` отсутствуют и [постоянные ссылки не настроены иначе в файле `config` конфигурации Вашего сайта](/content-management/urls/#permalinks), Hugo будет использовать имя файла вашего контента для создания вывода URL-адреса. Смотрите [организация контента](/content-management/organization) для объяснения путей в Hugo и [Управление URL-адресами](/content-management/urls/) для получения информации о способах настройки поведения Hugo по умолчанию.
 {{% /note %}}
 
-### User-Defined
+### Определяемые пользователем
 
-You can add fields to your front matter arbitrarily to meet your needs. These user-defined key-values are placed into a single `.Params` variable for use in your templates.
+Вы можете произвольно добавлять поля в свой вступительный документ в соответствии со своими потребностями. Эти определяемые пользователем пары "ключ-значение" помещаются в одну переменную `.Params` для использования в Ваших шаблонах.
 
-The following fields can be accessed via `.Params.include_toc` and `.Params.show_comments`, respectively. The [Variables][] section provides more information on using Hugo's page- and site-level variables in your templates.
+Доступ к следующим полям можно получить через `.Params.include_toc` и `.Params.show_comments` соответственно. В разделе [Переменные][Variables] представлена дополнительная информация об использовании переменных уровня страницы и сайта Hugo в Ваших шаблонах.
 
 {{< code-toggle copy="false" >}}
 include_toc: true
 show_comments: false
 {{</ code-toggle >}}
 
-## Front Matter Cascade
+## Каскад Front Matter
 
-Any node or section can pass down to descendents a set of Front Matter values as long as defined underneath the reserved `cascade` Front Matter key.
+Любой узел или раздел может передать потомкам набор значений Front Matter, если они определены под зарезервированным ключом Front Matter `cascade`.
 
-### Target Specific Pages
+### Целевые определенные страницы
 
 {{< new-in "0.76.0" >}}
 
-Since Hugo 0.76 the `cascade` block can be a slice with a optional `_target` keyword, allowing for multiple `cascade` values targeting different page sets.
+Начиная с Hugo 0.76, блок `cascade` может быть срезом с необязательным ключевым словом `_target`, что позволяет использовать несколько значений `cascade` для разных наборов страниц.
 
 {{< code-toggle copy="false" >}}
 title ="Blog"
@@ -179,22 +178,22 @@ background = "goldenbridge.jpg"
 kind="section"
 {{</ code-toggle >}}
 
-Keywords available for `_target`:
+Ключевые слова, доступные для `_target`:
 
 path
-: A [Glob](https://github.com/gobwas/glob) pattern matching the content path below /content. Expects Unix-styled slashes. Note that this is the virtual path, so it starts at the mount root. The matching support double-asterisks so you can match for patterns like `/blog/*/**` to match anything from the third level and down.
+: Шаблон [Glob](https://github.com/gobwas/glob) , соответствующий пути к содержимому ниже `/content`. Ожидает косые черты в стиле Unix. Обратите внимание, что это виртуальный путь, поэтому он начинается с корня монтирования. Сопоставление поддерживает двойные звездочки, поэтому Вы можете сопоставить шаблоны вроде `/blog/*/**`, чтобы сопоставить все, начиная с третьего уровня и ниже.
 
 kind
-: A Glob pattern matching the Page's Kind(s), e.g. "{home,section}".
+: Шаблон Glob, соответствующий типу страницы, например: "{home,section}".
 
 lang
-: A Glob pattern matching the Page's language, e.g. "{en,sv}".
+: Шаблон Glob, соответствующий языку страницы, например: "{en,sv}".
 
-Any of the above can be omitted. 
+Любое из вышеперечисленного можно опустить.
 
-### Example
+### Пример
 
-In `content/blog/_index.md`
+В `content/blog/_index.md`
 
 {{< code-toggle copy="false" >}}
 title: Blog
@@ -202,22 +201,20 @@ cascade:
   banner: images/typewriter.jpg
 {{</ code-toggle >}}
 
-With the above example the Blog section page and its descendents will return `images/typewriter.jpg` when `.Params.banner` is invoked unless:
+В приведенном выше примере страница раздела блога и ее потомки будут возвращать `images/typewriter.jpg` при вызове `.Params.banner`, если:
 
-- Said descendent has its own `banner` value set 
-- Or a closer ancestor node has its own `cascade.banner` value set.
+- Указанный потомок имеет собственное установленное значение `banner`.
+- Или для более близкого узла-предка установлено собственное значение `cascade.banner`.
 
+## Порядок контента через Front Matter
 
+Вы можете назначить `weight` , зависящий от контента, в начале Вашего контента. Эти значения особенно полезны для [упорядочивания][ordering] в представлениях списка. Вы можете использовать `weight` для упорядочивания контента и соглашение [`<TAXONOMY>_weight`][taxweight] для упорядочивания контента в таксономии. Смотрите [Упорядочивание и группировка списков Hugo][lists], чтобы увидеть, как `weight` можно использовать для организации Вашего контента в представлениях списков.
 
-## Order Content Through Front Matter
+## Переопределить глобальную конфигурацию разметки
 
-You can assign content-specific `weight` in the front matter of your content. These values are especially useful for [ordering][ordering] in list views. You can use `weight` for ordering of content and the convention of [`<TAXONOMY>_weight`][taxweight] for ordering content within a taxonomy. See [Ordering and Grouping Hugo Lists][lists] to see how `weight` can be used to organize your content in list views.
+Можно установить некоторые параметры для рендеринга Markdown в заголовке контента в качестве замены [параметров рендеринга BlackFriday, заданных в конфигурации Вашего проекта][config].
 
-## Override Global Markdown Configuration
-
-It's possible to set some options for Markdown rendering in a content's front matter as an override to the [BlackFriday rendering options set in your project configuration][config].
-
-## Front Matter Format Specs
+## Технические характеристики формата Front Matter
 
 * [TOML Spec][toml]
 * [YAML Spec][yaml]

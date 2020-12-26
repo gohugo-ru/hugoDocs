@@ -1,8 +1,8 @@
 ---
-title: "Image Processing"
-description: "Image Page resources can be resized and cropped."
+title: "Обработка изображений"
+description: "Ресурсы страницы изображения можно изменять и обрезать."
 date: 2018-01-24T13:10:00-05:00
-linktitle: "Image Processing"
+linktitle: "Обработка изображений"
 categories: ["content management"]
 keywords: [resources, images]
 weight: 4004
@@ -14,11 +14,11 @@ menu:
     weight: 32
 ---
 
-## The Image Page Resource
+## Ресурс страницы изображения
 
-The `image` is a [Page Resource]({{< relref "/content-management/page-resources" >}}), and the processing methods listed below do not work on images inside your `/static` folder.
+`image` это [ресурс страницы]({{< relref "/content-management/page-resources" >}}), и методы обработки, перечисленные ниже, не работают с изображениями внутри Вашей папки `/static`.
 
-To print all images paths in a [Page Bundle]({{< relref "/content-management/organization#page-bundles" >}}):
+Чтобы напечатать все пути к изображениям в [пакете страниц]({{< relref "/content-management/organization#page-bundles" >}}):
 
 ```go-html-template
 {{ with .Resources.ByType "image" }}
@@ -29,64 +29,64 @@ To print all images paths in a [Page Bundle]({{< relref "/content-management/org
 
 ```
 
-## The Image Resource
+## Ресурс изображения
 
-The `image` resource can also be retrieved from a [global resource]({{< relref "/hugo-pipes/introduction#from-file-to-resource" >}})
+Ресурс `image` также может быть получен из [глобального ресурса]({{< relref "/hugo-pipes/introduction#from-file-to-resource" >}})
 
 {{- $image := resources.Get "images/logo.jpg" -}}
 
-## Image Processing Methods
+## Методы обработки изображений
 
-The `image` resource implements the methods `Resize`, `Fit` and `Fill`, each returning the transformed image using the specified dimensions and processing options. The `image` resource also, since Hugo 0.58, implements the method `Exif` and `Filter`.
+Ресурс `image` реализует методы `Resize`, `Fit` и `Fill`, каждый из которых возвращает преобразованное изображение с использованием указанных размеров и параметров обработки. Ресурс `image` также, начиная с Hugo 0.58, реализует методы `Exif` и `Filter`.
 
-### Resize
+### Изменение размера
 
-Resizes the image to the specified width and height.
+Изменяет размер изображения до указанной ширины и высоты.
 
 ```go
-// Resize to a width of 600px and preserve ratio
+// Измените размер до 600 пикселей и сохраните пропорции
 {{ $image := $resource.Resize "600x" }}
 
-// Resize to a height of 400px and preserve ratio
+// Измените размер до 400 пикселей и сохраните пропорции
 {{ $image := $resource.Resize "x400" }}
 
-// Resize to a width 600px and a height of 400px
+// Измените размер до ширины 600 пикселей и высоты 400 пикселей
 {{ $image := $resource.Resize "600x400" }}
 ```
 
-### Fit
+### Соответствие
 
-Scale down the image to fit the given dimensions while maintaining aspect ratio. Both height and width are required.
+Уменьшите масштаб изображения до заданных размеров, сохранив соотношение сторон. Требуются как высота, так и ширина.
 
 ```go
 {{ $image := $resource.Fit "600x400" }}
 ```
 
-### Fill
+### Заполнение
 
-Resize and crop the image to match the given dimensions. Both height and width are required.
+Измените размер и обрежьте изображение, чтобы оно соответствовало заданным размерам. Требуются как высота, так и ширина.
 
 ```go
 {{ $image := $resource.Fill "600x400" }}
 ```
 
-### Filter
+### Фильтр
 
-Apply one or more filters to your image. See [Image Filters](/functions/images/#image-filters) for a full list.
+Примените к изображению один или несколько фильтров. Смотрите полный список [фильтров изображений](/functions/images/#image-filters).
 
 ```go-html-template
 {{ $img = $img.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
 ```
 
-The above can also be written in a more functional style using pipes:
+Вышеупомянутое также можно написать в более функциональном стиле с помощью каналов:
 
 ```go-html-template
 {{ $img = $img | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
 ```
 
-The filters will be applied in the given order.
+Фильтры будут применяться в указанном порядке.
 
-Sometimes it can be useful to create the filter chain once and then reuse it:
+Иногда бывает полезно создать цепочку фильтров один раз, а затем использовать ее повторно:
 
 ```go-html-template
 {{ $filters := slice  (images.GaussianBlur 6) (images.Pixelate 8) }}
@@ -96,9 +96,9 @@ Sometimes it can be useful to create the filter chain once and then reuse it:
 
 ### Exif
 
-Provides an [Exif](https://en.wikipedia.org/wiki/Exif) object with metadata about the image.
+Предоставляет объект [Exif](https://en.wikipedia.org/wiki/Exif) с метаданными об изображении.
 
-Note that this is only supported for JPEG and TIFF images, so it's recommended to wrap the access with a `with`, e.g.:
+Обратите внимание, что это поддерживается только для изображений JPEG и TIFF, поэтому рекомендуется заключить доступ с помощью `with`, например:
 
 ```go-html-template
 {{ with $img.Exif }}
@@ -111,7 +111,7 @@ TAG: {{ $k }}: {{ $v }}
 {{ end }}
 ```
 
-Or individually access EXIF data with dot access, e.g.:
+Или индивидуальный доступ к данным EXIF с помощью точки, например:
 
 ```go-html-template
 {{ with $src.Exif }}
@@ -128,92 +128,92 @@ Or individually access EXIF data with dot access, e.g.:
 {{ end }}
 ```
 
-Some fields may need to be formatted with [`lang.NumFmt`]({{< relref "functions/numfmt" >}}) function to prevent display like `Aperture: 2.278934289` instead of `Aperture: 2.28`.
+Некоторые поля, возможно, потребуется отформатировать с помощью функции [`lang.NumFmt`]({{< relref "functions/numfmt" >}}), чтобы предотвратить отображение типа `Aperture: 2.278934289` вместо `Aperture: 2.28`.
 
-#### Exif fields
+#### Поля Exif
 
 Date
-: "photo taken" date/time
+: "фото принято" дата/время
 
 Lat
-: "photo taken where", GPS latitude
+: "фото принято где", широта GPS
 
 Long
-: "photo taken where", GPS longitude
+: "фото принято где", долгота GPS
 
-See [Image Processing Config](#image-processing-config) for how to configure what gets included in Exif.
+Смотрите [конфигурацию обработки изображений](#image-processing-config), чтобы узнать, как настроить то, что включается в Exif.
 
-## Image Processing Options
+## Параметры обработки изображений
 
-In addition to the dimensions (e.g. `600x400`), Hugo supports a set of additional image options.
+Помимо размеров (например, `600x400`), Hugo поддерживает набор дополнительных параметров изображения.
 
-### Background Color
+### Фоновый цвет
 
-The background color to fill into the transparency layer. This is mostly useful when converting to a format that does not support transparency, e.g. `JPEG`.
+Цвет фона для заливки слоя прозрачности. Это в основном полезно при преобразовании в формат, который не поддерживает прозрачность, например `JPEG`.
 
-You can set the background color to use with a 3 or 6 digit hex code starting with `#`.
+Вы можете установить цвет фона для использования с 3- или 6-значным шестнадцатеричным кодом, начинающимся с `#`.
 
 ```go
 {{ $image.Resize "600x jpg #b31280" }}
 ```
 
-For color codes, see https://www.google.com/search?q=color+picker
+Цветовые коды смотрите на странице https://www.google.com/search?q=color+picker
 
-**Note** that you also set a default background color to use, see [Image Processing Config](#image-processing-config).
+**Обратите внимание**, что для использования также задан цвет фона по умолчанию, смотрите [Конфигурацию обработки изображений](#image-processing-config).
 
-### JPEG Quality
+### Качество JPEG
 
-Only relevant for JPEG images, values 1 to 100 inclusive, higher is better. Default is 75.
+Актуально только для изображений JPEG, значения от 1 до 100 включительно, чем выше, тем лучше. По умолчанию 75.
 
 ```go
 {{ $image.Resize "600x q50" }}
 ```
 
-### Rotate
+### Поворот
 
-Rotates an image by the given angle counter-clockwise. The rotation will be performed first to get the dimensions correct. The main use of this is to be able to manually correct for [EXIF orientation](https://github.com/golang/go/issues/4341) of JPEG images.
+Поворачивает изображение на заданный угол против часовой стрелки. Сначала будет выполнено вращение, чтобы получить правильные размеры. Основное использование этого - возможность вручную корректировать [ориентацию EXIF](https://github.com/golang/go/issues/4341) изображений JPEG.
 
 ```go
 {{ $image.Resize "600x r90" }}
 ```
 
-### Anchor
+### Якорь
 
-Only relevant for the `Fill` method. This is useful for thumbnail generation where the main motive is located in, say, the left corner.
+Актуально только для метода `Fill`. Это полезно для создания миниатюр, когда основной мотив расположен, скажем, в левом углу.
 
-Valid values are `Smart`, `Center`, `TopLeft`, `Top`, `TopRight`, `Left`, `Right`, `BottomLeft`, `Bottom`, `BottomRight`.
+Допустимые значения: `Smart`, `Center`, `TopLeft`, `Top`, `TopRight`, `Left`, `Right`, `BottomLeft`, `Bottom`, `BottomRight`.
 
-Default value is `Smart`, which uses [Smartcrop](https://github.com/muesli/smartcrop) to determine the best crop.
+Значение по умолчанию - `Smart`, которое использует [Smartcrop](https://github.com/muesli/smartcrop) для определения наилучшей обрезки.
 
 ```go
 {{ $image.Fill "300x200 BottomLeft" }}
 ```
 
-### Resample Filter
+### Фильтр передискретизации
 
-Filter used in resizing. Default is `Box`, a simple and fast resampling filter appropriate for downscaling.
+Фильтр, используемый при изменении размера. По умолчанию используется `Box`, простой и быстрый фильтр передискретизации, подходящий для уменьшения масштаба.
 
-Examples are: `Box`, `NearestNeighbor`, `Linear`, `Gaussian`.
+Примеры: `Box`, `NearestNeighbor`, `Linear`, `Gaussian`.
 
-See https://github.com/disintegration/imaging for more. If you want to trade quality for faster processing, this may be a option to test.
+Смотрите https://github.com/disintegration/imaging для получения дополнительной информации. Если Вы хотите обменять качество на более быструю обработку, это может быть вариантом для тестирования.
 
 ```go
 {{ $image.Resize "600x400 Gaussian" }}
 ```
 
-### Target Format
+### Целевой формат
 
-By default the images is encoded in the source format, but you can set the target format as an option.
+По умолчанию изображения кодируются в исходном формате, но Вы можете установить целевой формат в качестве опции.
 
-Valid values are `jpg`, `png`, `tif`, `bmp`, and `gif`.
+Допустимые значения: `jpg`, `png`, `tif`, `bmp` и `gif`.
 
 ```go
 {{ $image.Resize "600x jpg" }}
 ```
 
-## Image Processing Examples
+## Примеры обработки изображений
 
-_The photo of the sunset used in the examples below is Copyright [Bjørn Erik Pedersen](https://commons.wikimedia.org/wiki/User:Bep) (Creative Commons Attribution-Share Alike 4.0 International license)_
+_Фотография заката, используемая в приведенных ниже примерах, принадлежит авторскому праву [Bjørn Erik Pedersen](https://commons.wikimedia.org/wiki/User:Bep) (Creative Commons Attribution-Share Alike 4.0 Международная лицензия)_
 
 {{< imgproc sunset Resize "300x" />}}
 
@@ -225,93 +225,91 @@ _The photo of the sunset used in the examples below is Copyright [Bjørn Erik Pe
 
 {{< imgproc sunset Resize "300x q10" />}}
 
-This is the shortcode used in the examples above:
+Это шорткод, использованный в приведенных выше примерах:
 
 {{< code file="layouts/shortcodes/imgproc.html" >}}
-{{< readfile file="layouts/shortcodes/imgproc.html" >}}  
+{{< readfile file="layouts/shortcodes/imgproc.html" >}}
 {{< /code >}}
 
-And it is used like this:
+И используется он так:
 
 ```go-html-template
 {{</* imgproc sunset Resize "300x" /*/>}}
 ```
 
 {{% note %}}
-**Tip:** Note the self-closing shortcode syntax above. The `imgproc` shortcode can be called both with and without **inner content**.
+**Совет:** Обратите внимание на синтаксис самозакрывающегося короткого кода выше. Шорткод `imgproc` может вызываться как с **внутренним содержимым**, так и без него.
 {{% /note %}}
 
-## Image Processing Config
+## Конфигурация обработки изображений
 
-You can configure an `imaging` section in `config.toml` with default image processing options:
+Вы можете настроить раздел `imaging` в `config.toml` с параметрами обработки изображений по умолчанию:
 
 ```toml
 [imaging]
-# Default resample filter used for resizing. Default is Box,
-# a simple and fast averaging filter appropriate for downscaling.
-# See https://github.com/disintegration/imaging
+# Фильтр передискретизации по умолчанию, используемый для изменения размера.
+# По умолчанию это Box, простой и быстрый фильтр усреднения, подходящий для уменьшения масштаба.
+# Смотрите https://github.com/disintegration/imaging
 resampleFilter = "box"
 
-# Default JPEG quality setting. Default is 75.
+# Настройка качества JPEG по умолчанию. По умолчанию 75.
 quality = 75
 
-# Anchor used when cropping pictures.
-# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
-# Smart Cropping is content aware and tries to find the best crop for each image.
-# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+# Якорь, используемый при обрезке изображений.
+# По умолчанию - "smart", который выполняет Smart Cropping, используя https://github.com/muesli/smartcrop
+# Smart Cropping учитывает контент и пытается найти лучший урожай для каждого изображения.
+# Допустимые значения: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 anchor = "smart"
 
-# Default background color.
-# Hugo will preserve transparency for target formats that supports it,
-# but will fall back to this color for JPEG.
-# Expects a standard HEX color string with 3 or 6 digits.
-# See https://www.google.com/search?q=color+picker
+# Цвет фона по умолчанию.
+# Hugo сохранит прозрачность для целевых форматов, которые ее поддерживают,
+# но вернется к этому цвету для JPEG.
+# Ожидает стандартную цветовую строку HEX из 3 или 6 цифр.
+# Смотрите https://www.google.com/search?q=color+picker
 bgColor = "#ffffff"
 
 [imaging.exif]
- # Regexp matching the fields you want to Exclude from the (massive) set of Exif info
-# available. As we cache this info to disk, this is for performance and
-# disk space reasons more than anything.
-# If you want it all, put ".*" in this config setting.
-# Note that if neither this or ExcludeFields is set, Hugo will return a small
-# default set.
+# Регулярное выражение, соответствующее полям, которые Вы хотите исключить из
+# (огромного) набора доступной информации Exif. Поскольку мы кэшируем эту информацию
+# на диск, это больше всего связано с производительностью и дисковым пространством.
+# Если Вы хотите все это, поместите ".*" В эту настройку конфигурации.
+# Обратите внимание, что если ни this, ни ExcludeFields не установлены,
+# Hugo вернет небольшой набор по умолчанию.
 includeFields = ""
 
-# Regexp matching the Exif fields you want to exclude. This may be easier to use
-# than IncludeFields above, depending on what you want.
+# Регулярное выражение, соответствующее полям Exif, которые Вы хотите исключить.
+# Это может быть проще использовать, чем Включить поля выше, в зависимости от того, что Вы хотите.
 excludeFields = ""
 
-# Hugo extracts the "photo taken" date/time into .Date by default.
-# Set this to true to turn it off.
+# Hugo по умолчанию извлекает дату/время "сделанной фотографии" в .Date.
+# Установите значение true, чтобы выключить его.
 disableDate = false
 
-# Hugo extracts the "photo taken where" (GPS latitude and longitude) into
-# .Long and .Lat. Set this to true to turn it off.
+# Hugo извлекает "фото, где было сделано" (широта и долгота GPS)
+# в .Long и .Lat. Установите значение true, чтобы выключить его.
 disableLatLong = false
-
-
 ```
 
-## Smart Cropping of Images
+## Умная обрезка изображений
 
-By default, Hugo will use [Smartcrop](https://github.com/muesli/smartcrop), a library created by [muesli](https://github.com/muesli), when cropping images with `.Fill`. You can set the anchor point manually, but in most cases the smart option will make a good choice. And we will work with the library author to improve this in the future.
+По умолчанию Хьюго будет использовать [Smartcrop](https://github.com/muesli/smartcrop), библиотеку, созданную [muesli](https://github.com/muesli), при кадрировании изображений с помощью `.Fill`. Вы можете установить точку привязки вручную, но в большинстве случаев разумный вариант будет хорошим выбором. И мы будем работать с автором библиотеки, чтобы улучшить это в будущем.
 
-An example using the sunset image from above:
+Пример использования изображения заката сверху:
 
 {{< imgproc sunset Fill "200x200 smart" />}}
 
-## Image Processing Performance Consideration
+## Рассмотрение производительности обработки изображений
 
-Processed images are stored below `<project-dir>/resources` (can be set with `resourceDir` config setting). This folder is deliberately placed in the project, as it is recommended to check these into source control as part of the project. These images are not "Hugo fast" to generate, but once generated they can be reused.
+Обработанные изображения хранятся в каталоге `<project-dir>/resources` (можно установить с помощью параметра конфигурации `resourceDir`). Эта папка намеренно помещена в проект, так как рекомендуется регистрировать их в системе управления версиями как часть проекта. Эти изображения не создаются "очень быстро", но после создания их можно использовать повторно.
 
-If you change your image settings (e.g. size), remove or rename images etc., you will end up with unused images taking up space and cluttering your project.
+Если Вы измените настройки изображения (например, размер), удалите или переименуете изображения и т.д., Вы получите неиспользуемые изображения, занимающие место и загромождающие Ваш проект.
 
-To clean up, run:
+Чтобы очистить, запустите:
 
 ```bash
 hugo --gc
 ```
 
 {{% note %}}
-**GC** is short for **Garbage Collection**.
+**GC** это сокращение от **Garbage Collection**.
 {{% /note %}}

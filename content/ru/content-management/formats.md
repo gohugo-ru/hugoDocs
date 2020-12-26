@@ -1,7 +1,7 @@
 ---
-title: Content Formats
-linktitle: Content Formats
-description: Both HTML and Markdown are supported content formats.
+title: Форматы контента
+linktitle: Форматы контента
+description: И HTML, и Markdown являются поддерживаемыми форматами контента.
 date: 2017-01-10
 publishdate: 2017-01-10
 lastmod: 2017-04-06
@@ -17,90 +17,86 @@ aliases: [/content/markdown-extras/,/content/supported-formats/,/doc/supported-f
 toc: true
 ---
 
-You can put any file type into your `/content` directories, but Hugo uses the `markup` front matter value if set or the file extension (see `Markup identifiers` in the table below) to determine if the markup needs to be processed, e.g.:
+Вы можете поместить файлы любого типа в каталоги `/content`, но Hugo использует начальное значение `markup`, если установлено, или расширение файла (смотрите `Markup identifiers` в таблице ниже), чтобы определить, нужно ли обрабатывать разметку, например:
 
-* Markdown converted to HTML
-* [Shortcodes](/content-management/shortcodes/) processed
-* Layout applied
+* Markdown преобразован в HTML
+* Обработка [Шорткодов](/content-management/shortcodes/)
+* Примененный макет
 
-## List of content formats
+## Список форматов контента
 
-The current list of content formats in Hugo:
+Текущий список форматов контента в хьюго:
 
-| Name  | Markup identifiers | Comment | 
+| Название | Идентификаторы разметки | Комментарий |
 | ------------- | ------------- |-------------|
-| Goldmark  | md, markdown, goldmark  |Note that you can set the default handler of `md` and `markdown` to something else, see [Configure Markup](/getting-started/configuration-markup/).{{< new-in "0.60.0" >}} |
-| Blackfriday | blackfriday  |Blackfriday will eventually be deprecated.|
-|MMark|mmark|Mmark is deprecated and will be removed in a future release.|
-|Emacs Org-Mode|org|See [go-org](https://github.com/niklasfasching/go-org).|
-|AsciiDoc|asciidocext, adoc, ad|Needs [Asciidoctor][ascii] installed.|
-|RST|rst|Needs [RST](http://docutils.sourceforge.net/rst.html) installed.|
-|Pandoc|pandoc, pdc|Needs [Pandoc](https://www.pandoc.org/) installed.|
-|HTML|html, htm|To be treated as a content file, with layout, shortcodes etc., it must have front matter. If not, it will be copied as-is.|
+| Goldmark | md, markdown, goldmark | Обратите внимание, что Вы можете установить обработчик по умолчанию для `md` и` markdown` на что-нибудь другое, смотрите [настройку разметки](/getting-started/configuration-markup/).{{< new-in "0.60.0" >}} |
+| Blackfriday | blackfriday | Поддержка Blackfriday в со временем будет прекращена. |
+| MMark | mmark | Mmark устарел и будет удален в следующем выпуске. |
+| Emacs Org-Mode | org | Смотрите [go-org](https://github.com/niklasfasching/go-org). |
+| AsciiDoc | asciidocext, adoc, ad | Необходим установленный [Asciidoctor][ascii]. |
+| RST | rst | Необходим установленный [RST](http://docutils.sourceforge.net/rst.html). |
+| Pandoc | pandoc, pdc | Необходим установленный [Pandoc](https://www.pandoc.org/). |
+| HTML | html, htm | Чтобы его можно было рассматривать как файл содержимого с макетом, шорткодами и т.д., он должен иметь предварительную информацию. В противном случае он будет скопирован как есть. |
 
-The `markup identifier` is fetched from either the `markup` variable in front matter or from the file extension. For markup-related configuration, see [Configure Markup](/getting-started/configuration-markup/).
+`markup identifier` извлекается либо из переменной `markup` в начале, либо из расширения файла. Для конфигурации, связанной с разметкой, смотрите [Настройка разметки](/getting-started/configuration-markup/).
 
+## Внешние помощники
 
-## External Helpers
+Для некоторых форматов, указанных в таблице выше, на Вашем компьютере должны быть установлены внешние помощники. Например, для файлов AsciiDoc Хьюго попытается вызвать команду `asciidoctor`. Это означает, что Вам необходимо установить соответствующий инструмент на свой компьютер, чтобы использовать эти форматы.
 
-Some of the formats in the table above need external helpers installed on your PC. For example, for AsciiDoc files,
-Hugo will try to call the `asciidoctor` command. This means that you will have to install the associated
-tool on your machine to be able to use these formats.
-
-Hugo passes reasonable default arguments to these external helpers by default:
+По умолчанию Хьюго передает этим внешним помощникам разумные аргументы по умолчанию:
 
 - `asciidoctor`: `--no-header-footer -`
 - `rst2html`: `--leave-comments --initial-header-level=2`
 - `pandoc`: `--mathjax`
 
 {{% warning "Performance of External Helpers" %}}
-Because additional formats are external commands, generation performance will rely heavily on the performance of the external tool you are using. As this feature is still in its infancy, feedback is welcome.
+Поскольку дополнительные форматы являются внешними командами, производительность генерации будет в значительной степени зависеть от производительности внешнего инструмента, который Вы используете. Поскольку эта функция все еще находится в зачаточном состоянии, отзывы приветствуются.
 {{% /warning %}}
 
-### External Helper AsciiDoc
+### Внешний помощник AsciiDoc
 
-[AsciiDoc](https://github.com/asciidoc/asciidoc) implementation EOLs in Jan 2020 and is no longer supported. 
-AsciiDoc development is being continued under [Asciidoctor](https://github.com/asciidoctor). The format AsciiDoc 
-remains of course. Please continue with the implementation Asciidoctor.
+[AsciiDoc](https://github.com/asciidoc/asciidoc) реализация EOLs в январе 2020 г. и больше не поддерживается.
+Разработка AsciiDoc продолжается в [Asciidoctor](https://github.com/asciidoctor). Формат AsciiDoc
+остается конечно. Продолжайте реализацию Asciidoctor.
 
-### External Helper Asciidoctor
+### Внешний помощник Asciidoctor
 
-The Asciidoctor community offers a wide set of tools for the AsciiDoc format that can be installed additionally to Hugo. 
-[See the Asciidoctor docs for installation instructions](https://asciidoctor.org/docs/install-toolchain/). Make sure that also all
-optional extensions like `asciidoctor-diagram` or `asciidoctor-html5s` are installed if required.
+Сообщество Asciidoctor предлагает широкий набор инструментов для формата AsciiDoc, которые можно установить дополнительно к Hugo.
+[Смотрите инструкции по установке в документации Asciidoctor](https://asciidoctor.org/docs/install-toolchain/). Убедитесь, что при необходимости установлены все дополнительные расширения, такие как `asciidoctor-diagram` или `asciidoctor-html5s`.
 
 {{% note %}}
-External `asciidoctor` command requires Hugo rendering to _disk_ to a specific destination directory. It is required to run Hugo with the command option `--destination`.
+Внешняя команда `asciidoctor` требует рендеринга Hugo на _диск_ в конкретный целевой каталог. Требуется запустить Hugo с параметром команды `--destination`.
 {{% /note %}}
 
-Some [Asciidoctor](https://asciidoctor.org/man/asciidoctor/) parameters can be customized in Hugo:
+Некоторые параметры [Asciidoctor](https://asciidoctor.org/man/asciidoctor/) можно настроить в Hugo:
 
-Parameter | Comment
+Параметр | Комментарий
 --- | ---
-backend | Don't change this unless you know what you are doing.
-doctype | Currently, the only document type supported in Hugo is `article`.
-extensions | Possible extensions are `asciidoctor-html5s`, `asciidoctor-bibtex`, `asciidoctor-diagram`, `asciidoctor-interdoc-reftext`, `asciidoctor-katex`, `asciidoctor-latex`, `asciidoctor-mathematical`, `asciidoctor-question`, `asciidoctor-rouge`.
-attributes | Variables to be referenced in your AsciiDoc file. This is a list of variable name/value maps. See [Asciidoctor's attributes](https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#attributes-and-substitutions).
-noHeaderOrFooter | Output an embeddable document, which excludes the header, the footer, and everything outside the body of the document. Don't change this unless you know what you are doing.
-safeMode | Safe mode level `unsafe`, `safe`, `server` or `secure`. Don't change this unless you know what you are doing.
-sectionNumbers | Auto-number section titles.
-verbose | Verbosely print processing information and configuration file checks to stderr.
-trace | Include backtrace information on errors.
-failureLevel | The minimum logging level that triggers a non-zero exit code (failure).
+backend | Не меняйте это, если Вы не знаете, что делаете.
+doctype | В настоящее время в Hugo поддерживается только тип документа `article`.
+extensions | Возможные расширения: `asciidoctor-html5s`, `asciidoctor-bibtex`, `asciidoctor-diagram`, `asciidoctor-interdoc-reftext`, `asciidoctor-katex`, `asciidoctor-latex`, `asciidoctor-mathematical`, `asciidoctor-question`, `asciidoctor-rouge`.
+attributes | Переменные, на которые следует ссылаться в Вашем файле AsciiDoc. Это список отображений имен и значений переменных. Смотрите [атрибуты Asciidoctor](https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#attributes-and-substitutions).
+noHeaderOrFooter | Выведите встраиваемый документ, исключая заголовок, нижний колонтитул и все, что находится за пределами тела документа. Не меняйте это, если Вы не знаете, что делаете.
+safeMode | Уровень безопасного режима `unsafe`, `safe`, `server` или `secure`. Не меняйте это, если вы не знаете, что делаете.
+sectionNumbers | Авто-нумерация заголовков разделов.
+verbose | Подробно распечатайте информацию об обработке и проверках файла конфигурации в stderr.
+trace | Включите информацию об ошибках.
+failureLevel | Минимальный уровень ведения журнала, при котором запускается ненулевой код выхода (сбой).
 
-Hugo provides additional settings that don't map directly to Asciidoctor's CLI options:
+Hugo предоставляет дополнительные настройки, которые не сопоставляются напрямую с параметрами интерфейса командной строки Asciidoctor:
 
 workingFolderCurrent
-: Sets the working directory to be the same as that of the AsciiDoc file being processed, so that [include](https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) will work with relative paths. This setting uses the `asciidoctor` cli parameter `--base-dir` and attribute `outdir=`. For rendering diagrams with [asciidoctor-diagram](https://asciidoctor.org/docs/asciidoctor-diagram/), `workingFolderCurrent` must be set to `true`.
+: Устанавливает рабочий каталог таким же, как и у обрабатываемого файла AsciiDoc, так что [включение](https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) будет работать с относительными путями. Этот параметр использует `asciidoctor` cli параметр `--base-dir` и атрибут `outdir=`. Для отображения диаграмм с [asciidoctor-diagram](https://asciidoctor.org/docs/asciidoctor-diagram/), `workingFolderCurrent` должно быть установлено значение `true`.
 
 preserveTOC
-: By default, Hugo removes the table of contents generated by Asciidoctor and provides it through the built-in variable [`.TableOfContents`](/content-management/toc/) to enable further customization and better integration with the various Hugo themes. This option can be set to `true` to preserve Asciidoctor's TOC in the generated page.
+: По умолчанию Hugo удаляет оглавление, созданное Asciidoctor, и предоставляет его с помощью встроенной переменной [`.TableOfContents`](/content-management/toc/), чтобы обеспечить дальнейшую настройку и лучшую интеграцию с различными темами Hugo. Для этой опции можно установить значение `true`, чтобы сохранить содержание Asciidoctor на сгенерированной странице.
 
-Below are all the AsciiDoc related settings in Hugo with their default values:
+Ниже приведены все настройки, связанные с AsciiDoc в Hugo, со значениями по умолчанию:
 
 {{< code-toggle config="markup.asciidocExt" />}}
 
-Example of how to set extensions and attributes:
+Пример того, как установить расширения и атрибуты:
 
 ```
 [markup.asciidocExt]
@@ -111,21 +107,20 @@ Example of how to set extensions and attributes:
         my-attribute-name = "my value"
 ```
 
-In a complex Asciidoctor environment it is sometimes helpful to debug the exact call to your external helper with all 
-parameters. Run Hugo with `-v`. You will get an output like
+В сложной среде Asciidoctor иногда бывает полезно отладить точный вызов Вашего внешнего помощника со всеми параметрами. Запустите Hugo с `-v`. Вы получите результат вроде
 
 ```
 INFO 2019/12/22 09:08:48 Rendering book-as-pdf.adoc with C:\Ruby26-x64\bin\asciidoctor.bat using asciidoc args [--no-header-footer -r asciidoctor-html5s -b html5s -r asciidoctor-diagram --base-dir D:\prototypes\hugo_asciidoc_ddd\docs -a outdir=D:\prototypes\hugo_asciidoc_ddd\build -] ...
 ```
 
-## Learn Markdown
+## Изучение разметки
 
-Markdown syntax is simple enough to learn in a single sitting. The following are excellent resources to get you up and running:
+Синтаксис Markdown достаточно прост, чтобы изучить его за один присест. Ниже приведены отличные ресурсы, которые помогут Вам начать работу:
 
-* [Daring Fireball: Markdown, John Gruber (Creator of Markdown)][fireball]
-* [Markdown Cheatsheet, Adam Pritchard][mdcheatsheet]
-* [Markdown Tutorial (Interactive), Garen Torikian][mdtutorial]
-* [The Markdown Guide, Matt Cone][mdguide]
+* [Дерзкий огненный шар: Markdown, Джон Грубер (создатель Markdown)][fireball]
+* [Шпаргалка по Markdown, Адам Притчард][mdcheatsheet]
+* [Учебное пособие по Markdown (интерактивное), Гарен Торикян][mdtutorial]
+* [Руководство по Markdown, Мэтт Коун][mdguide]
 
 [`emojify` function]: /functions/emojify/
 [ascii]: https://asciidoctor.org/

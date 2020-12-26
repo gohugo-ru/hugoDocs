@@ -1,7 +1,7 @@
 ---
-title: Content Organization
-linktitle: Organization
-description: Hugo assumes that the same structure that works to organize your source content is used to organize the rendered site.
+title: Организация контента
+linktitle: Организация
+description: Хьюго предполагает, что та же структура, которая работает для организации исходного контента, используется для организации визуализированного сайта.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
@@ -17,30 +17,28 @@ aliases: [/content/sections/]
 toc: true
 ---
 
-## Page Bundles
+## Группы страниц
 
-Hugo `0.32` announced page-relative images and other resources packaged into `Page Bundles`.
+Hugo `0.32` анонсировал изображения, относящиеся к страницам, и другие ресурсы, упакованные в `Page Bundles`.
 
-These terms are connected, and you also need to read about [Page Resources]({{< relref "/content-management/page-resources" >}}) and [Image Processing]({{< relref "/content-management/image-processing" >}}) to get the full picture.
+Эти условия взаимосвязаны, и Вам также необходимо прочитать о [Ресурсе страницы]({{< relref "/content-management/page-resources" >}}) и [Обработке изображений]({{< relref "/content-management/image-processing" >}}), чтобы получить полную картину.
 
 {{< imgproc 1-featured Resize "300x" >}}
-The illustration shows 3 bundles. Note that the home page bundle cannot contain other content pages, but other files (images etc.) are fine.
+На иллюстрации показаны 3 комплекта. Обратите внимание, что пакет домашней страницы не может содержать другие страницы содержимого, но другие файлы (изображения и т.д.) подойдут.
 {{< /imgproc >}}
 
 
 {{% note %}}
-The bundle documentation is **work in progress**. We will publish more comprehensive docs about this soon.
+Документация пакета **в разработке**. Вскоре мы опубликуем более подробные документы по этому поводу.
 {{% /note %}}
 
+# Организация источника контента
 
-# Organization of Content Source
+В Hugo Ваш контент должен быть организован таким образом, чтобы отражать отрендеренный веб-сайт.
 
+Хотя Hugo поддерживает вложенный контент на любом уровне, верхние уровни (например, `content/<DIRECTORIES>`) являются специальными в Hugo и считаются типом контента, используемым для определения макетов и т.д. Чтобы узнать больше о разделах, в том числе о том, как их вкладывать, см. [разделы][sections].
 
-In Hugo, your content should be organized in a manner that reflects the rendered website.
-
-While Hugo supports content nested at any level, the top levels (i.e. `content/<DIRECTORIES>`) are special in Hugo and are considered the content type used to determine layouts etc. To read more about sections, including how to nest them, see [sections][].
-
-Without any additional configuration, the following will just work:
+Без дополнительной настройки будет работать следующее:
 
 ```
 .
@@ -57,21 +55,19 @@ Without any additional configuration, the following will just work:
         └── second.md      // <- https://example.com/quote/second/
 ```
 
-## Path Breakdown in Hugo
+## Разбивка пути в Хьюго
 
+Ниже показаны отношения между Вашей организацией контента и структурой выходных URL-адресов Вашего веб-сайта Hugo при его отображении. В этих примерах предполагается, что Вы [используете красивые URL-адреса][pretty], то является поведением по умолчанию для Hugo. В примерах также предполагается наличие пары "ключ-значение" `baseURL = "https://example.com"` в [файле конфигурации Вашего сайта][config].
 
-The following demonstrates the relationships between your content organization and the output URL structure for your Hugo website when it renders. These examples assume you are [using pretty URLs][pretty], which is the default behavior for Hugo. The examples also assume a key-value of `baseURL = "https://example.com"` in your [site's configuration file][config].
+### Индексные страницы: `_index.md`
 
-### Index Pages: `_index.md`
-
-`_index.md` has a special role in Hugo. It allows you to add front matter and content to your [list templates][lists]. These templates include those for [section templates][], [taxonomy templates][], [taxonomy terms templates][], and your [homepage template][].
+`_index.md` играет в Хьюго особую роль. Это позволяет Вам добавлять главные темы и контент в Ваши [список шаблонов][lists]. Эти шаблоны включают шаблоны для [раздел шаблонов][section templates], [шаблоны таксономии][taxonomy templates], [шаблоны терминов таксономии][taxonomy terms templates], и [][шаблон домашней страницы].
 
 {{% note %}}
-**Tip:** You can get a reference to the content and metadata in `_index.md` using the [`.Site.GetPage` function](/functions/getpage/).
+**Совет:** Вы можете получить ссылку на содержимое и метаданные в `_index.md`, используя [функцию `.Site.GetPage`](/functions/getpage/).
 {{% /note %}}
 
-You can keep one `_index.md` for your homepage and one in each of your content sections, taxonomies, and taxonomy terms. The following shows typical placement of an `_index.md` that would contain content and front matter for a `posts` section list page on a Hugo website:
-
+Вы можете сохранить по одному `_index.md` для своей домашней страницы и по одному в каждом из разделов Вашего контента, таксономий и терминов таксономии. Ниже показано типичное размещение `_index.md`, который будет содержать контент и заставку для страницы списка разделов `posts` на веб-сайте Hugo:
 
 ```
 .         url
@@ -83,10 +79,9 @@ You can keep one `_index.md` for your homepage and one in each of your content s
 content/posts/_index.md
 ```
 
-At build, this will output to the following destination with the associated values:
+При сборке это будет выводиться по следующему адресу со связанными значениями:
 
 ```
-
                      url ("/posts/")
                     ⊢-^-⊣
        baseurl      section ("posts")
@@ -96,13 +91,11 @@ At build, this will output to the following destination with the associated valu
 https://example.com/posts/index.html
 ```
 
-The [sections][] can be nested as deeply as you need. The important part to understand is, that to make the section tree fully navigational, at least the lower-most section needs a content file. (i.e. `_index.md`).
+[Разделы][sections] могут быть вложены настолько глубоко, насколько Вам нужно. Важно понимать, что для того, чтобы дерево разделов было полностью навигационным, по крайней мере, для самого нижнего раздела нужен файл содержимого. (например, `_index.md`).
 
+### Отдельные страницы в разделах
 
-### Single Pages in Sections
-
-Single content files in each of your sections are going to be rendered as [single page templates][singles]. Here is an example of a single `post` within `posts`:
-
+Отдельные файлы содержимого в каждом из Ваших разделов будут отображаться как [одностраничные шаблоны][singles]. Вот пример одиночного `post` внутри `posts`:
 
 ```
                    path ("posts/my-first-hugo-post.md")
@@ -112,7 +105,7 @@ Single content files in each of your sections are going to be rendered as [singl
 content/posts/my-first-hugo-post.md
 ```
 
-When Hugo builds your site, the content will be outputted to the following destination:
+Когда Hugo создаст Ваш сайт, контент будет выводиться по следующему адресу:
 
 ```
 
@@ -125,51 +118,50 @@ When Hugo builds your site, the content will be outputted to the following desti
 https://example.com/posts/my-first-hugo-post/index.html
 ```
 
+## Объяснение путей
 
-## Paths Explained
-
-The following concepts will provide more insight into the relationship between your project's organization and the default behaviors of Hugo when building the output website.
+Следующие концепции помогут лучше понять взаимосвязь между организацией Вашего проекта и поведением Hugo по умолчанию при создании выходного веб-сайта.
 
 ### `section`
 
-A default content type is determined by a piece of content's section. `section` is determined by the location within the project's `content` directory. `section` *cannot* be specified or overridden in front matter.
+Тип содержимого по умолчанию определяется частью раздела содержимого. Раздел `section` определяется расположением в каталоге проекта `content`. `section` *не может* быть указан или отменен в начале.
 
 ### `slug`
 
-A content's `slug` is either `name.extension` or `name/`. The value for `slug` is determined by
+`slug` контента - это либо `name.extension`, либо `name/`. Значение `slug` определяется как
 
-* the name of the content file (e.g., `lollapalooza.md`) OR
-* front matter overrides
+* имя файла содержимого (например, `lollapalooza.md`) ИЛИ
+* переопределение front matter
 
 ### `path`
 
-A content's `path` is determined by the section's path to the file. The file `path`
+`path` содержимого определяется путем раздела к файлу. Файл `path`
 
-* is based on the path to the content's location AND
-* does not include the slug
+* основан на пути к местоположению содержимого И
+* не включает слаг
 
 ### `url`
 
-The `url` is the relative URL for the piece of content. The `url`
+`url` - это относительный URL-адрес части контента. `url`
 
-* is based on the content's location within the directory structure OR
-* is defined in front matter and *overrides all the above*
+* зависит от местоположения содержимого в структуре каталогов ИЛИ
+* определяется во вступительной части и *переопределяет все вышеперечисленное*
 
-## Override Destination Paths via Front Matter
+## Переопределение путей назначения через Front Matter
 
-Hugo believes that you organize your content with a purpose. The same structure that works to organize your source content is used to organize the rendered site. As displayed above, the organization of the source content will be mirrored in the destination.
+Хьюго считает, что Вы организовываете свой контент с определенной целью. Та же структура, которая работает для организации исходного контента, используется для организации отображаемого сайта. Как показано выше, организация исходного контента будет отражена в месте назначения.
 
-There are times where you may need more control over your content. In these cases, there are fields that can be specified in the front matter to determine the destination of a specific piece of content.
+Бывают случаи, когда Вам может потребоваться больший контроль над своим контентом. В этих случаях есть поля, которые можно указать во вступительной части, чтобы определить место назначения конкретной части контента.
 
-The following items are defined in this order for a specific reason: items explained further down in the list will override earlier items, and not all of these items can be defined in front matter:
+Следующие элементы определены в этом порядке по определенной причине: элементы, описанные ниже в списке, будут иметь приоритет над более ранними элементами, и не все из этих элементов могут быть определены в начале:
 
 ### `filename`
 
-This isn't in the front matter, but is the actual name of the file minus the extension. This will be the name of the file in the destination (e.g., `content/posts/my-post.md` becomes `example.com/posts/my-post/`).
+Это не главное, это настоящее имя файла без расширения. Это будет имя файла в месте назначения (например, `content/posts/my-post.md` превратится в `example.com/posts/my-post/`).
 
 ### `slug`
 
-When defined in the front matter, the `slug` can take the place of the filename for the destination.
+Когда он определен во вступительной части, `slug` может занимать место имени файла для места назначения.
 
 {{< code file="content/posts/old-post.md" >}}
 ---
@@ -178,7 +170,7 @@ slug: "new-post"
 ---
 {{< /code >}}
 
-This will render to the following destination according to Hugo's default behavior:
+Это будет отображаться в следующем месте назначения в соответствии с поведением Хьюго по умолчанию:
 
 ```
 example.com/posts/new-post/
@@ -186,11 +178,11 @@ example.com/posts/new-post/
 
 ### `section`
 
-`section` is determined by a content's location on disk and *cannot* be specified in the front matter. See [sections][] for more information.
+`section` определяется местоположением содержимого на диске и *не может* быть указан в начале. Смотрите [разделы][sections] для получения дополнительной информации.
 
 ### `type`
 
-A content's `type` is also determined by its location on disk but, unlike `section`, it *can* be specified in the front matter. See [types][]. This can come in especially handy when you want a piece of content to render using a different layout. In the following example, you can create a layout at `layouts/new/mylayout.html` that Hugo will use to render this piece of content, even in the midst of many other posts.
+`type` контента также определяется его местоположением на диске, но, в отличие от `section`, он *может* быть указан в начале. Смотрите [типы][types]. Это может быть особенно удобно, если Вы хотите, чтобы часть контента отображалась с использованием другого макета. В следующем примере Вы можете создать макет в `layouts/new/mylayout.html`, который Хьюго будет использовать для рендеринга этого фрагмента контента, даже среди множества других сообщений.
 
 {{< code file="content/posts/my-post.md" >}}
 ---
@@ -206,7 +198,7 @@ layout: mylayout
 
 ### `url`
 
-A complete URL can be provided. This will override all the above as it pertains to the end destination. This must be the path from the baseURL (starting with a `/`). `url` will be used exactly as it provided in the front matter and will ignore the `--uglyURLs` setting in your site configuration:
+Может быть предоставлен полный URL-адрес. Это отменит все вышеперечисленное, поскольку оно относится к конечному пункту назначения. Это должен быть путь от baseURL (начиная с `/`). `url` будет использоваться точно так же, как он был указан в начале статьи, и игнорировать параметр `--uglyURLs` в конфигурации Вашего сайта:
 
 {{< code file="content/posts/old-url.md" >}}
 ---
@@ -215,13 +207,13 @@ url: /blog/new-url/
 ---
 {{< /code >}}
 
-Assuming your `baseURL` is [configured][config] to `https://example.com`, the addition of `url` to the front matter will make `old-url.md` render to the following destination:
+Предполагая, что ваш `baseURL` [сконфигурирован][config] на `https://example.com`, добавление `url` к началу приведет к рендерингу `old-url.md` в следующем месте:
 
 ```
 https://example.com/blog/new-url/
 ```
 
-You can see more information on how to control output paths in [URL Management][urls].
+Дополнительную информацию о том, как управлять путями вывода, можно найти в [Управление URL-адресами][urls].
 
 [config]: /getting-started/configuration/
 [formats]: /content-management/formats/

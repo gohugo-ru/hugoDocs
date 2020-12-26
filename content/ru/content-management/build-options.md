@@ -1,7 +1,7 @@
 ---
-title: Build Options
-linktitle: Build Options
-description: Build options help define how Hugo must treat a given page when building the site.
+title: Параметры сборки
+linktitle: Параметры сборки
+description: Параметры сборки помогают определить, как Хьюго должен относиться к данной странице при создании сайта.
 date: 2020-03-02
 publishdate: 2020-03-02
 keywords: [build,content,front matter, page resources]
@@ -16,7 +16,7 @@ aliases: [/content/build-options/]
 toc: true
 ---
 
-They are stored in a reserved Front Matter object named `_build` with the following defaults:
+Они хранятся в зарезервированном объекте Front Matter с именем `_build` со следующими значениями по умолчанию:
 
 ```yaml
 _build:
@@ -26,51 +26,52 @@ _build:
 ```
 
 #### render
-If `always`, the page will be treated as a published page, holding its dedicated output files (`index.html`, etc...) and permalink.
+Если `always`, страница будет рассматриваться как опубликованная, содержащая свои выделенные выходные файлы (`index.html`, и т.д.) и постоянную ссылку.
 
-{{< new-in "0.76.0" >}} We extended this property from a boolean to an enum in Hugo 0.76.0. Valid values are:
+{{< new-in "0.76.0" >}} Мы расширили это свойство с логического до перечисления в Hugo 0.76.0. Допустимые значения:
 
 never
-: The page will not be included in any page collection.
+: Страница не будет включена ни в одну коллекцию страниц.
 
 always (default)
-: The page will be rendered to disk and get a `RelPermalink` etc.
+: Страница будет отображена на диск и получит ссылку `RelPermalink` и т.д.
 
 link
-: The page will be not be rendered to disk, but will get a `RelPermalink`.
+: Страница не будет отображаться на диск, но получит ссылку `RelPermalink`.
 
 #### list
 
-Note that we extended this property from a boolean to an enum in Hugo 0.68.0.
+Обратите внимание, что в Hugo 0.68.0 мы расширили это свойство с логического до перечисления.
 
-Valid values are:
+Допустимые значения:
 
 never
-: The page will not be included in any page collection.
+: Страница не будет включена ни в одну коллекцию страниц.
 
 always (default)
-: The page will be included in all page collections, e.g. `site.RegularPages`, `$page.Pages`.
+: Страница будет включена во все коллекции страниц, например: `site.RegularPages`, `$page.Pages`.
 
 local
-: The page will be included in any _local_ page collection, e.g. `$page.RegularPages`, `$page.Pages`. One use case for this would be to create fully navigable, but headless content sections. {{< new-in "0.68.0" >}}
+: Страница будет включена в любую коллекцию _локальных_ страниц, например: `$page.RegularPages`, `$page.Pages`. Одним из вариантов использования этого может быть создание разделов с полностью управляемым, но без заголовка содержимого. {{< new-in "0.68.0" >}}
 
-If true, the page will be treated as part of the project's collections and, when appropriate, returned by Hugo's listing methods (`.Pages`, `.RegularPages` etc...).
+Если `true`, страница будет рассматриваться как часть коллекций проекта и, при необходимости, возвращаться методами листинга Hugo (`.Pages`, `.RegularPages` и т.д.).
 
 #### publishResources
 
-If set to true the [Bundle's Resources]({{< relref "content-management/page-bundles" >}}) will be published. 
-Setting this to false will still publish Resources on demand (when a resource's `.Permalink` or `.RelPermalink` is invoked from the templates) but will skip the others.
+Если задано значение `true`, будут опубликованы [пакеты ресурсов]({{< relref "content-management/page-bundles" >}}).
+Установка этого значения в false по-прежнему будет публиковать ресурсы по запросу (когда ресурс `.Permalink` или `.RelPermalink` вызывается из шаблонов), но пропускает остальные.
 
 {{% note %}}
-Any page, regardless of their build options, will always be available using the [`.GetPage`]({{< relref "functions/GetPage" >}}) methods.
+Любая страница, независимо от ее параметров сборки, всегда будет доступна с использованием методов [`.GetPage`]({{< relref "functions/GetPage" >}}).
 {{% /note %}}
 
 ------
 
-### Illustrative use cases
+### Иллюстративные варианты использования
 
-#### Not publishing a page
-Project needs a "Who We Are" content file for Front Matter and body to be used by the homepage but nowhere else.
+#### Не публикуемая страница
+
+Проекту нужен файл содержимого «Кто мы» для Front Matter и тела, которые будут использоваться на главной странице, но нигде больше.
 
 ```yaml
 # content/who-we-are.md`
@@ -89,11 +90,11 @@ _build:
 </section>
 ```
 
-#### Listing pages without publishing them
+#### Листинг страниц без их публикации
 
-Website needs to showcase a few of the hundred "testimonials" available as content files without publishing any of them.
+Веб-сайт должен продемонстрировать несколько из сотни «отзывов», доступных в виде файлов содержимого, без публикации каких-либо из них.
 
-To avoid setting the build options on every testimonials, one can use [`cascade`]({{< relref "/content-management/front-matter#front-matter-cascade" >}}) on the testimonial section's content file.
+Чтобы избежать установки параметров сборки для каждой характеристики, можно использовать [`cascade`]({{< relref "/content-management/front-matter#front-matter-cascade" >}}) в файле содержимого раздела отзывов.
 
 ```yaml
 #content/testimonials/_index.md
