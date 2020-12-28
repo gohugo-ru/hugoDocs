@@ -1,6 +1,6 @@
 ---
-title: Related Content
-description: List related content in "See Also" sections.
+title: Связанный контент
+description: Список связанного контента в разделах «Смотрите также».
 date: 2017-09-05
 categories: [content management]
 keywords: [content]
@@ -15,12 +15,11 @@ toc: true
 ---
 
 
-Hugo uses a set of factors to identify a page's related content based on Front Matter parameters. This can be tuned to the desired set of indices and parameters or left to Hugo's default [Related Content configuration](#configure-related-content).
+Hugo использует набор факторов для определения связанного содержания страницы на основе параметров Front Matter. Это может быть настроено на желаемый набор индексов и параметров или оставлено Хьюго по умолчанию [конфигурация связанного содержимого](#configure-related-content).
 
-## List Related Content
+## Список связанного содержимого
 
-
-To list up to 5 related pages (which share the same _date_ or _keyword_ parameters) is as simple as including something similar to this partial in your single page template:
+Чтобы перечислить до 5 связанных страниц (которые имеют одинаковые параметры _date_ или _keyword_), достаточно просто включить что-то похожее на этот фрагмент в свой одностраничный шаблон:
 
 {{< code file="layouts/partials/related.html" >}}
 {{ $related := .Site.RegularPages.Related . | first 5 }}
@@ -34,43 +33,47 @@ To list up to 5 related pages (which share the same _date_ or _keyword_ paramete
 {{ end }}
 {{< /code >}}
 
-### Methods
+### Методы
 
-Here is the list of "Related" methods available on a page collection such `.RegularPages`.
+Вот список «связанных» методов, доступных в коллекции страниц, например `.RegularPages`.
 
-#### .Related PAGE
-Returns a collection of pages related the given one.
+#### СТРАНИЦА .Related
+
+Возвращает коллекцию страниц, связанных с данной.
 
 ```
 {{ $related := .Site.RegularPages.Related . }}
 ```
 
-#### .RelatedIndices PAGE INDICE1 [INDICE2 ...]
-Returns a collection of pages related to a given one restricted to a list of indices.
+#### .RelatedIndices СТРАНИЦА INDICE1 [INDICE2 ...]
+
+Возвращает коллекцию страниц, связанных с заданной страницей, ограниченной списком индексов.
 
 ```
 {{ $related := .Site.RegularPages.RelatedIndices . "tags" "date" }}
 ```
 
 #### .RelatedTo KEYVALS [KEYVALS2 ...]
-Returns a collection of pages related together by a set of indices and their match.
 
-In order to build those set and pass them as argument, one must use the `keyVals` function where the first argument would be the `indice` and the consecutive ones its potential `matches`.
+Возвращает коллекцию страниц, связанных вместе набором индексов и их совпадением.
+
+Чтобы построить этот набор и передать их в качестве аргумента, нужно использовать функцию `keyVals`, где первым аргументом будет `indice`, а последующие - его потенциальные совпадения `matches`.
 
 ```
 {{ $related := .Site.RegularPages.RelatedTo ( keyVals "tags" "hugo" "rocks")  ( keyVals "date" .Date ) }}
 ```
 
 {{% note %}}
-Read [this blog article](https://regisphilibert.com/blog/2018/04/hugo-optmized-relashionships-with-related-content/) for a great explanation of more advanced usage of this feature.
+Прочтите [эту статью в блоге](https://regisphilibert.com/blog/2018/04/hugo-optmized-relashionships-with-related-content/) для подробного объяснения более сложного использования этой функции.
 {{% /note %}}
 
-## Configure Related Content
-Hugo provides a sensible default configuration of Related Content, but you can fine-tune this in your configuration, on the global or language level if needed.
+## Настроить связанный контент
 
-### Default configuration
+Hugo предоставляет разумную конфигурацию связанного содержимого по умолчанию, но Вы можете настроить ее в своей конфигурации на глобальном или языковом уровне, если это необходимо.
 
-Without any `related` configuration set on the project, Hugo's Related Content methods will use the following.
+### Конфигурация по умолчанию
+
+Без какой-либо `related` конфигурации, установленной в проекте, методы связанного содержимого Hugo будут использовать следующее.
 
 {{< code-toggle file="config" >}}
 related:
@@ -84,54 +87,54 @@ related:
     weight: 10
 {{< /code-toggle >}}
 
-Note that if you have configured `tags` as a taxonomy, `tags` will also be added to the default configuration abve with the weight of `80`.
+Обратите внимание, что если Вы настроили теги `tags` в качестве таксономии, теги `tags` также будут добавлены в конфигурацию по умолчанию с весом `80`.
 
-Custom configuration should be set using the same syntax.
+Пользовательская конфигурация должна быть установлена с использованием того же синтаксиса.
 
 {{% note %}}
-If you add a `related` config section, you need to add a complete configuration. It is not possible to just set, say, `includeNewer` and use the rest  from the Hugo defaults.
+Если Вы добавляете раздел конфигурации `related`, Вам необходимо добавить полную конфигурацию. Невозможно просто установить, скажем, `includeNewer` и использовать остальное из значений по умолчанию для Hugo.
 {{% /note %}}
 
-### Top Level Config Options
+### Параметры конфигурации верхнего уровня
 
 threshold
-:  A value between 0-100. Lower value will give more, but maybe not so relevant, matches.
+: Значение от 0 до 100. Меньшее значение даст больше совпадений, но, возможно, не столь актуальных.
 
 includeNewer
-:  Set to true to include **pages newer than the current page** in the related content listing. This will mean that the output for older posts may change as new related content gets added.
+: Установите значение `true`, чтобы включить **страницы более новые, чем текущая страница**, в список связанного содержимого. Это будет означать, что вывод для старых сообщений может измениться по мере добавления нового связанного контента.
 
 toLower
-: Set to true to lower case keywords in both the indexes and the queries. This may give more accurate results at a slight performance penalty. Note that this can also be set per index.
+: Установите значение `true` для ключевых слов в нижнем регистре как в индексах, так и в запросах. Это может дать более точные результаты при небольшом снижении производительности. Обратите внимание, что это также можно установить для каждого индекса.
 
-### Config Options per Index
+### Параметры конфигурации по индексу
 
 name
-:  The index name. This value maps directly to a page param. Hugo supports string values (`author` in the example) and lists (`tags`, `keywords` etc.) and time and date objects.
+: Имя индекса. Это значение отображается непосредственно на параметр страницы. Hugo поддерживает строковые значения (в примере `author`) и списки (`tags`, `keywords` и т.д.) и объекты времени и даты.
 
 weight
-: An integer weight that indicates _how important_ this parameter is relative to the other parameters.  It can be 0, which has the effect of turning this index off, or even negative. Test with different values to see what fits your content best.
+: Целочисленный вес, который указывает _насколько важен_ этот параметр по сравнению с другими параметрами. Это может быть 0, что означает отключение этого индекса, или даже отрицательное значение. Попробуйте использовать разные значения, чтобы узнать, что лучше всего подходит для Вашего контента.
 
 pattern
-: This is currently only relevant for dates. When listing related content, we may want to list content that is also close in time. Setting "2006" (default value for date indexes) as the pattern for a date index will add weight to pages published in the same year. For busier blogs, "200601" (year and month) may be a better default.
+: В настоящее время это актуально только для дат. При перечислении связанного контента мы можем захотеть перечислить контент, который также близок по времени. Установка «2006» (значение по умолчанию для индексов даты) в качестве шаблона для индекса даты добавит веса страницам, опубликованным в том же году. Для более загруженных блогов лучшим вариантом по умолчанию может быть «200601» (год и месяц).
 
 toLower
-: See above.
+: Смотрите выше.
 
-## Performance Considerations
+## Соображения производительности
 
-**Fast is Hugo's middle name** and we would not have released this feature had it not been blistering fast.
+**Быстрота - это второе имя Хьюго**, и мы бы не выпустили эту функцию, если бы она не была быстрой.
 
-This feature has been in the back log and requested by many for a long time. The development got this recent kick start from this Twitter thread:
+Эта функция была в резервном журнале и многие давно просили ее. Эта недавняя разработка началась с этой ветки в Twitter:
 
 {{< tweet 898398437527363585 >}}
 
-Scott S. Lowe removed the "Related Content" section built using the `intersect` template function on tags, and the build time dropped from 30 seconds to less than 2 seconds on his 1700 content page sized blog.
+Скотт С. Лоу удалил раздел «Связанное содержимое», созданный с помощью функции шаблона `intersect` для тегов, и время сборки упало с 30 до менее 2 секунд в его блоге размером 1700 страниц с контентом.
 
-He should now be able to add an improved version of that "Related Content" section without giving up the fast live-reloads. But it's worth noting that:
+Теперь он должен иметь возможность добавить улучшенную версию раздела «Связанное содержимое», не отказываясь от быстрой перезагрузки в реальном времени. Но стоит отметить, что:
 
-* If you don't use any of the `Related` methods, you will not use the Relate Content feature, and performance will be the same as before.
-* Calling `.RegularPages.Related` etc. will create one inverted index, also sometimes named posting list, that will be reused for any lookups in that same page collection. Doing that in addition to, as an example, calling `.Pages.Related` will work as expected, but will create one additional inverted index. This should still be very fast, but worth having in mind, especially for bigger sites.
+* Если Вы не используете какой-либо из `Related` методов, Вы не будете использовать функцию «Связать контент», и производительность будет такой же, как и раньше.
+* Вызов `.RegularPages.Related` и т.д. создаст один инвертированный индекс, также иногда называемый списком публикаций, который будет повторно использоваться для любых поисков в той же самой коллекции страниц. Выполнение этого в дополнение к, например, вызову `.Pages.Related` будет работать, как ожидалось, но создаст один дополнительный инвертированный индекс. Это все равно должно быть очень быстро, но о нем стоит помнить, особенно для крупных сайтов.
 
 {{% note %}}
-We currently do not index **Page content**. We thought we would release something that will make most people happy before we start solving [Sherlock's last case](https://github.com/joearms/sherlock).
+В настоящее время мы не индексируем **содержимое страницы**. Мы думали, что выпустим что-то, что порадует большинство людей, прежде чем мы начнем решать [последнее дело Шерлока](https://github.com/joearms/sherlock).
 {{% /note %}}

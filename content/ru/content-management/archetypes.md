@@ -1,7 +1,7 @@
 ---
-title: Archetypes
-linktitle: Archetypes
-description: Archetypes are templates used when creating new content.
+title: Архетипы
+linktitle: Архетипы
+description: Архетипы - это шаблоны, используемые при создании нового контента.
 date: 2017-02-01
 publishdate: 2017-02-01
 keywords: [archetypes,generators,metadata,front matter]
@@ -17,29 +17,28 @@ aliases: [/content/archetypes/]
 toc: true
 ---
 
-## What are Archetypes?
+## Что такое архетипы?
 
-**Archetypes** are content template files in the [archetypes directory][] of your project that contain preconfigured [front matter][] and possibly also a content disposition for your website's [content types][]. These will be used when you run `hugo new`.
+**Архетипы** - это файлы шаблонов контента в [директории архетипов][archetypes directory] Вашего проекта, которые содержат предварительно сконфигурированный [front matter][] и, возможно, также размещение контента для [типов контента][content types] Вашего веб-сайта. Они будут использоваться, когда Вы запустите `hugo new`.
 
-
-The `hugo new` uses the `content-section` to find the most suitable archetype template in your project. If your project does not contain any archetype files, it will also look in the theme.
+`hugo new` использует раздел `content-section` для поиска наиболее подходящего шаблона архетипа в Вашем проекте. Если Ваш проект не содержит файлов архетипа, он также будет искать в теме.
 
 {{< code file="archetype-example.sh" >}}
 hugo new posts/my-first-post.md
 {{< /code >}}
 
-The above will create a new content file in `content/posts/my-first-post.md` using the first archetype file found of these:
+Вышеупомянутое создаст новый файл содержимого в `content/posts/my-first-post.md`, используя первый найденный файл архетипа:
 
 1. `archetypes/posts.md`
 2. `archetypes/default.md`
 3. `themes/my-theme/archetypes/posts.md`
 4. `themes/my-theme/archetypes/default.md`
 
-The last two list items are only applicable if you use a theme and it uses the `my-theme` theme name as an example.
+Последние два элемента списка применимы только в том случае, если Вы используете тему, и в качестве примера используется имя темы `my-theme`.
 
-## Create a New Archetype Template
+## Создать новый шаблон архетипа
 
-A fictional example for the section `newsletter` and the archetype file `archetypes/newsletter.md`. Create a new file in `archetypes/newsletter.md` and open it in a text editor.
+Вымышленный пример для раздела `newsletter` и архетипа файла `archetypes/newsletter.md`. Создайте новый файл в `archetypes/newsletter.md` и откройте его в текстовом редакторе.
 
 {{< code file="archetypes/newsletter.md" >}}
 ---
@@ -48,31 +47,30 @@ date: {{ .Date }}
 draft: true
 ---
 
-**Insert Lead paragraph here.**
+**Вставьте здесь ведущий абзац.**
 
-## New Cool Posts
+## Новые интересные сообщения
 
 {{ range first 10 ( where .Site.RegularPages "Type" "cool" ) }}
 * {{ .Title }}
 {{ end }}
 {{< /code >}}
 
-When you create a new newsletter with:
+Когда Вы создаете новый информационный бюллетень с:
 
 ```bash
 hugo new newsletter/the-latest-cool.stuff.md
 ```
 
-It will create a new newsletter type of content file based on the archetype template.
+Он создаст новый тип информационного бюллетеня для файла содержимого на основе шаблона архетипа.
 
-**Note:** the site will only be built if the `.Site` is in use in the archetype file, and this can be time consuming for big sites.
+**Примечание:** сайт будет создан только в том случае, если в файле архетипа используется `.Site`, а это может занять много времени для больших сайтов.
 
-The above _newsletter type archetype_ illustrates the possibilities: The full Hugo `.Site` and all of Hugo&#39;s template funcs can be used in the archetype file.
+Приведенный выше _архетип рассылки_ иллюстрирует возможности: в файле архетипа можно использовать полную версию Hugo `.Site` и все функции шаблона Hugo.
 
+## Архетипы на основе каталогов
 
-## Directory based archetypes
-
-Since Hugo `0.49` you can use complete directories as archetype templates. Given this archetype directory:
+Начиная с Hugo `0.49` Вы можете использовать полные каталоги в качестве шаблонов архетипов. Учитывая этот каталог архетипов:
 
 ```bash
 archetypes
@@ -88,9 +86,7 @@ archetypes
 hugo new --kind post-bundle posts/my-post
 ```
 
-Will create a new folder in `/content/posts/my-post` with the same set of files as in the `post-bundle` archetypes folder. All content files (`index.md` etc.) can contain template logic, and will receive the correct `.Site` for the content's language.
-
-
+Создает новую папку в `/content/posts/my-post` с тем же набором файлов, что и в папке архетипов `post-bundle`. Все файлы содержимого (`index.md` и т.д.) могут содержать логику шаблона и будут получать правильный `.Site` для языка содержимого.
 
 [archetypes directory]: /getting-started/directory-structure/
 [content types]: /content-management/types/

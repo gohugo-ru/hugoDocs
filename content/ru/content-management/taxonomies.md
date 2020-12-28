@@ -1,7 +1,7 @@
 ---
-title: Taxonomies
+title: Таксономии
 linktitle:
-description: Hugo includes support for user-defined taxonomies.
+description: Hugo включает поддержку пользовательских таксономий.
 date: 2017-02-01
 publishdate: 2017-02-01
 keywords: [taxonomies,metadata,front matter,terms]
@@ -16,25 +16,24 @@ aliases: [/taxonomies/overview/,/taxonomies/usage/,/indexes/overview/,/doc/index
 toc: true
 ---
 
-## What is a Taxonomy?
+## Что такое таксономия?
 
-Hugo includes support for user-defined groupings of content called **taxonomies**. Taxonomies are classifications of logical relationships between content.
+Hugo включает поддержку определяемых пользователем групп контента, называемых **таксономиями**. Таксономии - это классификации логических отношений между контентом.
 
-### Definitions
+### Определения
 
 Taxonomy
-: a categorization that can be used to classify content
+: категоризация, которая может использоваться для классификации контента
 
 Term
-: a key within the taxonomy
+: ключ в таксономии
 
 Value
-: a piece of content assigned to a term
+: часть содержания, присвоенная термину
 
+## Пример таксономии: веб-сайт фильмов
 
-## Example Taxonomy: Movie Website
-
-Let's assume you are making a website about movies. You may want to include the following taxonomies:
+Предположим, Вы создаете сайт о фильмах. Вы можете включить следующие таксономии:
 
 * Actors
 * Directors
@@ -43,11 +42,11 @@ Let's assume you are making a website about movies. You may want to include the 
 * Year
 * Awards
 
-Then, in each of the movies, you would specify terms for each of these taxonomies (i.e., in the [front matter][] of each of your movie content files). From these terms, Hugo would automatically create pages for each Actor, Director, Studio, Genre, Year, and Award, with each listing all of the Movies that matched that specific Actor, Director, Studio, Genre, Year, and Award.
+Затем в каждом из фильмов вы должны указать термины для каждой из этих таксономий (т.е., в [front matter][] каждого файла с содержанием фильма). Исходя из этих условий, Хьюго будет автоматически создавать страницы для каждого Актера, Режиссера, Студии, Жанра, Года и Премии, в каждом из которых будут перечислены все Фильмы, соответствующие конкретному Актеру, Режиссеру, Студии, Жанру, Году и Награде.
 
-### Movie Taxonomy Organization
+### Организация по классификации фильмов
 
-To continue with the example of a movie site, the following demonstrates content relationships from the perspective of the taxonomy:
+Чтобы продолжить пример сайта с фильмами, следующее демонстрирует отношения контента с точки зрения таксономии:
 
 ```
 Actor                    <- Taxonomy
@@ -61,7 +60,7 @@ Actor                    <- Taxonomy
         xXx              <- Value
 ```
 
-From the perspective of the content, the relationships would appear differently, although the data and labels used are the same:
+С точки зрения контента отношения выглядят иначе, хотя используемые данные и метки одинаковы:
 
 ```
 Unbreakable                 <- Value
@@ -80,11 +79,11 @@ Moonrise Kingdom            <- Value
     ...
 ```
 
-## Hugo Taxonomy Defaults {#default-taxonomies}
+## Значения по умолчанию для таксономии Hugo {#default-taxonomies}
 
-Hugo natively supports taxonomies.
+Hugo изначально поддерживает таксономии.
 
-Without adding a single line to your [site config][config] file, Hugo will automatically create taxonomies for `tags` and `categories`. That would be the same as manually [configuring your taxonomies](#configuring-taxonomies) as below:
+Не добавляя ни одной строчки в Ваш файл [конфигурации сайта][config], Hugo автоматически создаст таксономии для тегов `tags` и категорий `categories`. Это будет то же самое, что вручную [настройка ваших таксономий](#configuring-taxonomies), как показано ниже:
 
 {{< code-toggle copy="false" >}}
 [taxonomies]
@@ -92,31 +91,31 @@ Without adding a single line to your [site config][config] file, Hugo will autom
   category = "categories"
 {{</ code-toggle >}}
 
-If you do not want Hugo to create any taxonomies, set `disableKinds` in your [site config][config] to the following:
+Если Вы не хотите, чтобы Hugo создавал какие-либо таксономии, установите для параметра `disableKinds` в Вашем [конфигурации сайта][config] следующее:
 
 {{< code-toggle copy="false" >}}
 disableKinds = ["taxonomy","term"]
 {{</ code-toggle >}}
 
-{{< new-in "0.73.0" >}} We have fixed the before confusing page kinds used for taxonomies (see the listing below) to be in line with the terms used when we talk about taxonomies. We have been careful to avoid site breakage, and you should get an ERROR in the console if you need to adjust your `disableKinds` section.
+{{< new-in "0.73.0" >}} Мы исправили ранее запутанные типы страниц, используемые для таксономий (см. Список ниже), чтобы они соответствовали терминам, используемым, когда мы говорим о таксономиях. Мы были осторожны, чтобы избежать поломки сайта, и Вы должны получить ОШИБКУ в консоли, если Вам нужно настроить раздел `disableKinds`.
 
 {{% page-kinds %}}
 
-### Default Destinations
+### Назначения по умолчанию
 
-When taxonomies are used---and [taxonomy templates][] are provided---Hugo will automatically create both a page listing all the taxonomy's terms and individual pages with lists of content associated with each term. For example, a `categories` taxonomy declared in your configuration and used in your content front matter will create the following pages:
+Когда используются таксономии --- и предоставляются [шаблоны таксономии][taxonomy templates], Hugo автоматически создает как страницу со списком всех терминов таксономии, так и отдельные страницы со списками контента, связанного с каждым термином. Например, таксономия `categories`, объявленная в Вашей конфигурации и используемая в Вашем информационном фронте, создаст следующие страницы:
 
-* A single page at `example.com/categories/` that lists all the [terms within the taxonomy][]
-* [Individual taxonomy list pages][taxonomy templates] (e.g., `/categories/development/`) for each of the terms that shows a listing of all pages marked as part of that taxonomy within any content file's [front matter][]
+* Одна страница в `example.com/categories/`, на которой перечислены все [термины в таксономии][terms within the taxonomy]
+* [Индивидуальные страницы списка таксономии][taxonomy templates] (например, `/categories/development/`) для каждого из терминов, которые показывают список всех страниц, отмеченных как часть этой таксономии в [front matter][]
 
-## Configure Taxonomies {#configuring-taxonomies}
+## Настройка таксономии {#configuring-taxonomies}
 
-Custom taxonomies other than the [defaults](#default-taxonomies) must be defined in your [site config][config] before they can be used throughout the site. You need to provide both the plural and singular labels for each taxonomy. For example, `singular key = "plural value"` for TOML and `singular key: "plural value"` for YAML.
+Пользовательские таксономии, отличные от [по умолчанию](#default-taxonomies), должны быть определены в Вашей [конфигурации сайта][config], прежде чем их можно будет использовать на всем сайте. Для каждой таксономии необходимо указать метки множественного и единственного числа. Например, `singular key = "plural value"` для TOML и `singular key: "plural value"` для YAML.
 
-### Example: Adding a custom taxonomy named "series"
+### Пример: Добавление настраиваемой таксономии под названием "series"
 
 {{% note %}}
-While adding custom taxonomies, you need to put in the default taxonomies too, _if you want to keep them_.
+При добавлении пользовательских таксономий Вам необходимо также добавить таксономии по умолчанию, _если Вы хотите их сохранить_.
 {{% /note %}}
 
 {{< code-toggle copy="false" >}}
@@ -126,40 +125,40 @@ While adding custom taxonomies, you need to put in the default taxonomies too, _
   series = "series"
 {{</ code-toggle >}}
 
-### Example: Removing default taxonomies
+### Пример: Удаление таксономий по умолчанию
 
-If you want to have just the default `tags` taxonomy, and remove the `categories` taxonomy for your site, you can do so by modifying the `taxonomies` value in your [site config][config].
+Если Вы хотите иметь только стандартную таксономию `tags` и удалить таксономию `categories` для Вашего сайта, Вы можете сделать это, изменив значение `taxonomies` в Вашей [конфигурации сайта][config].
 
 {{< code-toggle copy="false" >}}
 [taxonomies]
   tag = "tags"
 {{</ code-toggle >}}
 
-If you want to disable all taxonomies altogether, see the use of `disableKinds` in [Hugo Taxonomy Defaults](#default-taxonomies).
+Если Вы хотите полностью отключить все таксономии, смотрите использование `disableKinds` в [Значения по умолчанию для таксономии Hugo](#default-taxonomies).
 
 {{% note %}}
-You can add content and front matter to your taxonomy list and taxonomy terms pages. See [Content Organization](/content-management/organization/) for more information on how to add an `_index.md` for this purpose.
+Вы можете добавить содержание и главный вопрос к своему списку таксономии и страницам терминов таксономии. Смотрите [организацию содержимого](/content-management/organization/) для получения дополнительной информации о том, как добавить `_index.md` для этой цели.
 
-Much like regular pages, taxonomy list [permalinks](/content-management/urls/) are configurable, but taxonomy term page permalinks are not.
+Как и обычные страницы, список таксономии [постоянные ссылки](/content-management/urls/) настраивается, а постоянные ссылки на страницу терминов таксономии - нет.
 {{% /note %}}
 
 {{% warning %}}
-The configuration option `preserveTaxonomyNames` was removed in Hugo 0.55.
+Параметр конфигурации `preserveTaxonomyNames` был удален в Hugo 0.55.
 
-You can now use `.Page.Title` on the relevant taxonomy node to get the original value.
+Теперь Вы можете использовать `.Page.Title` в соответствующем узле таксономии, чтобы получить исходное значение.
 {{% /warning %}}
 
-## Add Taxonomies to Content
+## Добавить таксономии к контенту
 
-Once a taxonomy is defined at the site level, any piece of content can be assigned to it, regardless of [content type][] or [content section][].
+Как только таксономия определена на уровне сайта, ей можно назначить любой фрагмент контента, независимо от [типа контента][content type] или [раздела контента][content section].
 
-Assigning content to a taxonomy is done in the [front matter][]. Simply create a variable with the *plural* name of the taxonomy and assign all terms you want to apply to the instance of the content type.
+Присвоение содержания таксономии выполняется в [front matter][]. Просто создайте переменную с *множественным* именем таксономии и назначьте все термины, которые Вы хотите применить к экземпляру типа контента.
 
 {{% note %}}
-If you would like the ability to quickly generate content files with preconfigured taxonomies or terms, read the docs on [Hugo archetypes](/content-management/archetypes/).
+Если Вам нужна возможность быстро создавать файлы содержимого с предварительно настроенными таксономиями или терминами, прочтите документацию на [архетипах Хьюго](/content-management/archetypes/).
 {{% /note %}}
 
-### Example: Front Matter with Taxonomies
+### Пример: Front Matter с таксономиями
 
 {{< code-toggle copy="false">}}
 title = "Hugo: A fast and flexible static site generator"
@@ -170,13 +169,13 @@ slug = "hugo"
 project_url = "https://github.com/gohugoio/hugo"
 {{</ code-toggle >}}
 
-## Order Taxonomies
+## Порядок Таксономии
 
-A content file can assign weight for each of its associate taxonomies. Taxonomic weight can be used for sorting or ordering content in [taxonomy list templates][] and is declared in a content file's [front matter][]. The convention for declaring taxonomic weight is `taxonomyname_weight`.
+Файл содержимого может назначать вес для каждой связанной с ним таксономии. Таксономический вес может использоваться для сортировки или упорядочивания содержимого в [шаблонах списков таксономии][taxonomy list templates] и объявляется в [front matter][] файла содержимого. Таксономический вес объявляется по соглашению `taxonomyname_weight`.
 
-The following TOML and YAML examples show a piece of content that has a weight of 22, which can be used for ordering purposes when rendering the pages assigned to the "a", "b" and "c" values of the `tags` taxonomy. It has also been assigned the weight of 44 when rendering the "d" category page.
+В следующих примерах TOML и YAML показан фрагмент контента с весом 22, который можно использовать для упорядочивания при рендеринге страниц, присвоенных значениям «a», «b» и «c» таксономии `tags`. Ему также был присвоен вес 44 при рендеринге страницы категории «d».
 
-### Example: Taxonomic `weight`
+### Пример: `weight` таксономии
 
 {{< code-toggle copy="false" >}}
 title = "foo"
@@ -186,15 +185,15 @@ categories = ["d"]
 categories_weight = 44
 {{</ code-toggle >}}
 
-By using taxonomic weight, the same piece of content can appear in different positions in different taxonomies.
+Используя таксономический вес, один и тот же фрагмент контента может появляться в разных позициях в разных таксономиях.
 
 {{% note "Limits to Ordering Taxonomies" %}}
-Currently taxonomies only support the [default `weight => date` ordering of list content](/templates/lists/#default-weight-date). For more information, see the documentation on [taxonomy templates](/templates/taxonomy-templates/).
+В настоящее время таксономии поддерживают только [по умолчанию `weight => date` упорядочивание содержимого списка](/templates/lists/#default-weight-date). Для получения дополнительной информации смотрите документацию по [шаблонам таксономии](/templates/taxonomy-templates/).
 {{% /note %}}
 
-## Add custom metadata to a Taxonomy or Term
+## Добавить пользовательские метаданные в таксономию или термин
 
-If you need to add custom metadata to your taxonomy terms, you will need to create a page for that term at `/content/<TAXONOMY>/<TERM>/_index.md` and add your metadata in it's front matter. Continuing with our 'Actors' example, let's say you want to add a Wikipedia page link to each actor. Your terms pages would be something like this:
+Если Вам нужно добавить пользовательские метаданные в термины таксономии, Вам нужно будет создать страницу для этого термина в `/content/<TAXONOMY>/<TERM>/_index.md` и добавить свои метаданные в нее. Продолжая наш пример «Актеры», предположим, Вы хотите добавить ссылку на страницу Википедии для каждого актера. Ваши страницы условий будут примерно такими:
 
 {{< code file="/content/actors/bruce-willis/_index.md" >}}
 ---

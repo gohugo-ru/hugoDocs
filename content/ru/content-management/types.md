@@ -1,6 +1,6 @@
 ---
-title: Content Types
-description: Hugo is built around content organized in sections.
+title: Типы контента
+description: Hugo построен на содержании, организованном по разделам.
 date: 2017-02-01
 categories: [content management]
 keywords: [lists,sections,content types,types,organization]
@@ -14,11 +14,9 @@ aliases: [/content/types]
 toc: true
 ---
 
-A **content type** is a way to organize your content. Hugo resolves the content type from either the `type` in front matter or, if not set, the first directory in the file path. E.g. `content/blog/my-first-event.md` will be of type `blog` if no `type` set.
+**Тип контента** - это способ организации Вашего контента. Hugo определяет тип контента либо из `type` в front matter, либо, если не установлен, из первого каталога в пути к файлу. Например, `content/blog/my-first-event.md` будет контент типа `blog`, если не задан тип `type`.
 
-A content type is used to
+Тип контента используется для
 
-* Determine how the content is rendered. See [Template Lookup Order](/templates/lookup-order/) and [Content Views](https://gohugo.io/templates/views) for more.
-* Determine which [archetype](/content-management/archetypes/) template to use for new content.
-
-
+* Определите, как отображается контент. Смотрите [порядок поиска шаблонов](/templates/lookup-order/) и [представления контента](https://gohugo.io/templates/views) для получения дополнительной информации.
+* Определите, какой [архетип](/content-management/archetypes/) шаблон использовать для нового контента.

@@ -1,7 +1,7 @@
 ---
-title: Content Sections
-linktitle: Sections
-description: "Hugo generates a **section tree** that matches your content."
+title: Разделы контента
+linktitle: Разделы
+description: "Хьюго создает **дерево разделов**, соответствующее Вашему контенту."
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
@@ -17,25 +17,20 @@ aliases: [/content/sections/]
 toc: true
 ---
 
-A **Section** is a collection of pages that gets defined based on the
-organization structure under the `content/` directory.
+**Раздел** - это набор страниц, который определяется на основе организационной структуры в каталоге `content/`.
 
-By default, all the **first-level** directories under `content/` form their own
-sections (**root sections**).
+По умолчанию все **каталоги первого уровня** в разделе `content/` образуют свои собственные разделы (**корневые разделы**).
 
-If a user needs to define a section `foo` at a deeper level, they need to create
-a directory named `foo` with an `_index.md` file (see [Branch Bundles][branch bundles]
-for more information).
+Если пользователю необходимо определить раздел `foo` на более глубоком уровне, ему нужно создать каталог с именем `foo` с файлом `_index.md` (смотрите [связки веток][branch bundles] для получения дополнительной информации).
 
 
 {{% note %}}
-A **section** cannot be defined or overridden by a front matter parameter -- it
-is strictly derived from the content organization structure.
+**Раздел** не может быть определен или переопределен параметром первичного сообщения --- он строго определяется структурой организации контента.
 {{% /note %}}
 
-## Nested Sections
+## Вложенные разделы
 
-The sections can be nested as deeply as you need.
+Разделы могут быть вложены настолько глубоко, насколько Вам нужно.
 
 ```bash
 content
@@ -48,18 +43,17 @@ content
         └── _index.md
 ```
 
-**The important part to understand is, that to make the section tree fully navigational, at least the lower-most section needs a content file. (e.g. `_index.md`).**
+**Важно понимать, что для того, чтобы дерево разделов было полностью навигационным, по крайней мере, для самого нижнего раздела требуется файл содержимого. (например, `_index.md`).**
 
 {{% note %}}
-When we talk about a **section** in correlation with template selection, it is
-currently always the *root section* only (`/blog/funny-cats/mypost/ => blog`).
+Когда мы говорим о **разделе** в корреляции с выбором шаблона, в настоящее время это всегда только *корневой раздел* (`/blog/funny-cats/mypost/ => blog`).
 
-If you need a specific template for a sub-section, you need to adjust either the `type` or `layout` in front matter.
+Если Вам нужен конкретный шаблон для подраздела, Вам нужно настроить либо `type`, либо `layout` во front matter.
 {{% /note %}}
 
-## Example: Breadcrumb Navigation
+## Пример: Навигация по хлебным крошкам
 
-With the available [section variables and methods](#section-page-variables-and-methods) you can build powerful navigation. One common example would be a partial to show Breadcrumb navigation:
+С помощью доступных [переменных и методов раздела](#section-page-variables-and-methods) Вы можете создать мощную навигацию. Одним из распространенных примеров может быть частичное отображение навигации хлебных крошек:
 
 {{< code file="layouts/partials/breadcrumb.html" download="breadcrumb.html" >}}
 <ol  class="nav navbar-nav">
@@ -77,19 +71,19 @@ With the available [section variables and methods](#section-page-variables-and-m
 {{ end }}
 {{< /code >}}
 
-## Section Page Variables and Methods
+## Переменные и методы страницы раздела
 
-Also see [Page Variables](/variables/page/).
+Смотрите также [переменные страницы](/variables/page/).
 
 {{< readfile file="/content/en/readfiles/sectionvars.md" markdown="true" >}}
 
-## Content Section Lists
+## Списки разделов контента
 
-Hugo will automatically create pages for each *root section* that list all of the content in that section. See the documentation on [section templates][] for details on customizing the way these pages are rendered.
+Hugo автоматически создаст страницы для каждого *корневого раздела*, на котором будет перечислено все содержимое этого раздела. Смотрите документацию по [шаблонам раздела][section templates] для получения подробной информации о настройке способа отображения этих страниц.
 
-## Content *Section* vs Content *Type*
+## Контент *Раздел* vs Контент *Тип*
 
-By default, everything created within a section will use the [content `type`][content type] that matches the *root section* name. For example, Hugo will assume that `posts/post-1.md` has a `posts` content `type`. If you are using an [archetype][] for your `posts` section, Hugo will generate front matter according to what it finds in `archetypes/posts.md`.
+По умолчанию все, что создано в разделе, будет использовать [контент `type`][content type], который соответствует имени *корневого раздела*. Например, Хьюго предположит, что `posts/post-1.md` имеет контент `posts` типа `type`. Если Вы используете [архитипы][archetype] для своего раздела `posts`, Hugo сгенерирует главный материал в соответствии с тем, что он находит в `archetypes/posts.md`.
 
 [archetype]: /content-management/archetypes/
 [content type]: /content-management/types/
