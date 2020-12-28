@@ -1,6 +1,6 @@
 ---
-title: Links and Cross References
-description: Shortcodes for creating links to documents.
+title: Ссылки и перекрестные ссылки
+description: Шорткоды для создания ссылок на документы.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-03-31
@@ -15,9 +15,9 @@ aliases: [/extras/crossreferences/]
 toc: true
 ---
 
-The `ref` and `relref` shortcodes display the absolute and relative permalinks to a document, respectively.
+Шорткоды `ref` и `relref` отображают абсолютные и относительные постоянные ссылки на документ соответственно.
 
-## Use `ref` and `relref`
+## Использование `ref` и `relref`
 
 ```go-html-template
 {{</* ref "document" */>}}
@@ -33,70 +33,70 @@ The `ref` and `relref` shortcodes display the absolute and relative permalinks t
 {{</* relref "/blog/my-post.md" */>}}
 ```
 
-To generate a hyperlink using `ref` or `relref` in markdown:
+Чтобы сгенерировать гиперссылку с помощью `ref` или `relref` в разметке:
 
 ```md
 [About]({{</* ref "/page/about" */>}} "About Us")
 ```
 
-The `ref` and `relref` shortcodes require a single parameter: the path to a content document, with or without a file extension, with or without an anchor.
+Для шорткодов `ref` и `relref` требуется один параметр: путь к документу содержимого, с расширением файла или без него, с привязкой или без нее.
 
-**Paths without a leading `/` are first resolved relative to the current page, then to the remainder of the site.
+**Пути без начального символа `/` сначала разрешаются относительно текущей страницы, а затем - относительно остальной части сайта.**
 
-Hugo emits an error or warning if a document cannot be uniquely resolved. The error behavior is configurable; see below.
+Hugo выдает ошибку или предупреждение, если документ не может быть однозначно разрешен. Поведение при ошибке настраивается; Смотри ниже.
 
-### Link to another language version
+### Ссылка на другую языковую версию
 
-To link to another language version of a document, use this syntax:
+Чтобы создать ссылку на версию документа на другом языке, используйте этот синтаксис:
 
 ```go-html-template
 {{</* relref path="document.md" lang="ja" */>}}
 ```
 
-### Get another Output Format
+### Получить другой формат вывода
 
-To link to another Output Format of a document, use this syntax:
+Чтобы создать ссылку на другой формат вывода документа, используйте этот синтаксис:
 
 ```go-html-template
 {{</* relref path="document.md" outputFormat="rss" */>}}
 ```
 
-### Heading IDs
+### Идентификаторы заголовков
 
-When using Markdown document types, Hugo generates element IDs for every heading on a page. For example:
+При использовании типов документов Markdown Hugo генерирует идентификаторы элементов для каждого заголовка на странице. Например:
 
 ```md
-## Reference
+## Отсылка
 ```
 
-produces this HTML:
+создает этот HTML:
 
 ```html
-<h2 id="reference">Reference</h2>
+<h2 id="reference">Отсылка</h2>
 ```
 
-Get the permalink to a heading by appending the ID to the path when using the `ref` or `relref` shortcodes:
+Получите постоянную ссылку на заголовок, добавив идентификатор к пути при использовании коротких кодов `ref` или `relref`:
 
 ```go-html-template
 {{</* ref "document.md#reference" */>}}
 {{</* relref "document.md#reference" */>}}
 ```
 
-Generate a custom heading ID by including an attribute. For example:
+Создайте собственный идентификатор заголовка, включив атрибут. Например:
 
 ```md
 ## Reference A {#foo}
 ## Reference B {id="bar"}
 ```
 
-produces this HTML:
+создает этот HTML:
 
 ```html
 <h2 id="foo">Reference A</h2>
 <h2 id="bar">Reference B</h2>
 ```
 
-Hugo will generate unique element IDs if the same heading appears more than once on a page. For example:
+Hugo сгенерирует уникальные идентификаторы элементов, если один и тот же заголовок появляется на странице более одного раза. Например:
 
 ```md
 ## Reference
@@ -104,7 +104,7 @@ Hugo will generate unique element IDs if the same heading appears more than once
 ## Reference
 ```
 
-produces this HTML:
+создает этот HTML:
 
 ```html
 <h2 id="reference">Reference</h2>
@@ -112,16 +112,15 @@ produces this HTML:
 <h2 id="reference-2">Reference</h2>
 ```
 
-## Ref and RelRef Configuration
+## Конфигурация Ref и RelRef
 
-The behavior can, since Hugo 0.45, be configured in `config.toml`:
+Начиная с Hugo 0.45 поведение можно настроить в `config.toml`:
 
-refLinksErrorLevel ("ERROR") 
-: When using `ref` or `relref` to resolve page links and a link cannot resolved, it will be logged with this log level. Valid values are `ERROR` (default) or `WARNING`. Any `ERROR` will fail the build (`exit -1`).
+refLinksErrorLevel ("ERROR")
+: При использовании `ref` или `relref` для разрешения ссылок на страницы и ссылка не может быть разрешена, она будет занесена в журнал с этим уровнем журнала. Допустимые значения: `ERROR` (по умолчанию) или `WARNING`. Любая `ERROR` приведет к сбою сборки (`exit -1`).
 
 refLinksNotFoundURL
-: URL to be used as a placeholder when a page reference cannot be found in `ref` or `relref`. Is used as-is.
-
+: URL-адрес, который будет использоваться в качестве заполнителя, когда ссылка на страницу не может быть найдена в `ref` или `relref`. Используется как есть.
 
 [lists]: /templates/lists/
 [output formats]: /templates/output-formats/

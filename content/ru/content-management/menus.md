@@ -1,7 +1,7 @@
 ---
-title: Menus
-linktitle: Menus
-description: Hugo has a simple yet powerful menu system.
+title: Меню
+linktitle: Меню
+description: У Хьюго простая, но мощная система меню.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-03-31
@@ -18,35 +18,35 @@ toc: true
 ---
 
 {{% note "Lazy Blogger"%}}
-If all you want is a simple menu for your sections, see the ["Section Menu for Lazy Bloggers" in Menu Templates](/templates/menu-templates/#section-menu-for-lazy-bloggers).
+Если все, что Вам нужно, это простое меню для Ваших разделов, смотрите [«Меню раздела для ленивых блоггеров» в шаблонах меню](/templates/menu-templates/#section-menu-for-lazy-bloggers).
 {{% /note %}}
 
-You can do this:
+Ты можешь это сделать:
 
-* Place content in one or many menus
-* Handle nested menus with unlimited depth
-* Create menu entries without being attached to any content
-* Distinguish active element (and active branch)
+* Размещение контента в одном или нескольких меню
+* Обработка вложенных меню с неограниченной глубиной
+* Создание пунктов меню без привязки к какому-либо контенту
+* Различать активный элемент (и активную ветвь)
 
-## What is a Menu in Hugo?
+## Что такое меню в Hugo?
 
-A **menu** is a named array of menu entries accessible by name via the [`.Site.Menus` site variable][sitevars]. For example, you can access your site's `main` menu via `.Site.Menus.main`.
+**menu** - это именованный массив пунктов меню, доступных по имени через [переменную сайта `.Site.Menus`][sitevars]. Например, Вы можете получить доступ к главному меню `main` Вашего сайта через `.Site.Menus.main`.
 
 {{% note "Menus on Multilingual Sites" %}}
-If you make use of the [multilingual feature](/content-management/multilingual/), you can define language-independent menus.
+Если Вы используете [функцию многоязычности](/content-management/multilingual/), Вы можете определять независимые от языка меню.
 {{% /note %}}
 
-See the [Menu Entry Properties][me-props] for all the variables and functions related to a menu entry.
+Смотрите [свойства элемента меню][me-props] для получения информации обо всех переменных и функциях, связанных с элементом меню.
 
-## Add content to menus
+## Добавить контент в меню
 
-Hugo allows you to add content to a menu via the content's [front matter](/content-management/front-matter/).
+Hugo позволяет Вам добавлять контент в меню через [front matter](/content-management/front-matter/).
 
-### Simple
+### Простое
 
-If all you need to do is add an entry to a menu, the simple form works well.
+Если все, что Вам нужно сделать, это добавить запись в меню, простая форма подойдет.
 
-#### A Single Menu
+#### Одиночное меню
 
 ```
 ---
@@ -54,7 +54,7 @@ menu: "main"
 ---
 ```
 
-#### Multiple Menus
+#### Мультименю
 
 ```
 ---
@@ -62,8 +62,7 @@ menu: ["main", "footer"]
 ---
 ```
 
-#### Advanced
-
+#### Продвинутое
 
 ```
 ---
@@ -74,11 +73,11 @@ menu:
 ---
 ```
 
-## Add Non-content Entries to a Menu
+## Добавление записей, не относящихся к содержанию, в меню
 
-You can also add entries to menus that aren’t attached to a piece of content. This takes place in your Hugo project's [`config` file][config].
+Вы также можете добавлять элементы в меню, которые не связаны с частью контента. Это происходит в файле [`config` file][config] Вашего проекта Hugo.
 
-Here’s an example snippet pulled from a configuration file:
+Вот пример фрагмента, извлеченного из файла конфигурации:
 
 {{< code-toggle file="config" >}}
 [[menu.main]]
@@ -96,28 +95,28 @@ Here’s an example snippet pulled from a configuration file:
 {{< /code-toggle >}}
 
 {{% note %}}
-The URLs must be relative to the context root. If the `baseURL` is `https://example.com/mysite/`, then the URLs in the menu must not include the context root `mysite`. Using an absolute URL will override the baseURL. If the value used for `URL` in the above example is `https://subdomain.example.com/`, the output will be `https://subdomain.example.com`.
+URL-адреса должны быть относительно корня контекста. Если `baseURL` - это `https://example.com/mysite/`, тогда URL-адреса в меню не должны включать корневой контекст `mysite`. Использование абсолютного URL-адреса заменит базовый URL-адрес. Если значение, используемое для `URL` в приведенном выше примере, равно `https://subdomain.example.com/`, вывод будет `https://subdomain.example.com`.
 {{% /note %}}
 
-## Nesting
+## Вложенность
 
-All nesting of content is done via the `parent` field.
+Все вложение контента выполняется через поле `parent`.
 
-The parent of an entry should be the identifier of another entry. The identifier should be unique (within a menu).
+Родительский элемент записи должен быть идентификатором другой записи. Идентификатор должен быть уникальным (в пределах меню).
 
-The following order is used to determine an Identifier:
+Для определения идентификатора используется следующий порядок:
 
 `.Name > .LinkTitle > .Title`
 
-This means that `.Title` will be used unless `.LinkTitle` is present, etc. In practice, `.Name` and `.Identifier` are only used to structure relationships and therefore never displayed.
+Это означает, что `.Title` будет использоваться, если не присутствует `.LinkTitle` и т.д. На практике, `.Name` и `.Identifier` используются только для структурирования отношений и поэтому никогда не отображаются.
 
-In this example, the top level of the menu is defined in your [site `config` file][config]. All content entries are attached to one of these entries via the `.Parent` field.
+В этом примере верхний уровень меню определен в Вашем [файле сайта `config`][config]. Все записи содержимого прикрепляются к одной из этих записей через поле `.Parent`.
 
-## Params
+## Параметры
 
-You can also add user-defined content to menu items via the `params` field. 
+Вы также можете добавить определяемый пользователем контент в пункты меню через поле `params`.
 
-A common use case is to define a custom param to add a css class to a specific menu item.
+Типичным вариантом использования является определение настраиваемого параметра для добавления класса css к определенному пункту меню.
 
 {{< code-toggle file="config" >}}
 [[menu.main]]
@@ -130,10 +129,9 @@ A common use case is to define a custom param to add a css class to a specific m
       class = "highlight-menu-item"
 {{</ code-toggle >}}
 
+## Рендеринг меню
 
-## Render Menus
-
-See [Menu Templates](/templates/menu-templates/) for information on how to render your site menus within your templates.
+Смотрите [шаблоны меню](/templates/menu-templates/) для получения информации о том, как отображать меню Вашего сайта в Ваших шаблонах.
 
 [config]: /getting-started/configuration/
 [multilingual]: /content-management/multilingual/

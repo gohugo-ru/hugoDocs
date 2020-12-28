@@ -1,7 +1,7 @@
 ---
-title: URL Management
-linktitle: URL Management
-description: Hugo supports permalinks, aliases, link canonicalization, and multiple options for handling relative vs absolute URLs.
+title: Управление URL-адресами
+linktitle: Управление URL-адресами
+description: Hugo поддерживает постоянные ссылки, псевдонимы, канонизацию ссылок и несколько вариантов обработки относительных и абсолютных URL-адресов.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-03-09
@@ -17,97 +17,97 @@ aliases: [/extras/permalinks/,/extras/aliases/,/extras/urls/,/doc/redirects/,/do
 toc: true
 ---
 
-## Permalinks
+## Постоянные ссылки
 
-The default Hugo target directory for your built website is `public/`. However, you can change this value by specifying a different `publishDir` in your [site configuration][config]. The directories created at build time for a section reflect the position of the content's directory within the `content` folder and namespace matching its layout within the `contentdir` hierarchy.
+По умолчанию целевой каталог Hugo для Вашего созданного веб-сайта - `public/`. Однако Вы можете изменить это значение, указав другой `publishDir` в Вашей [конфигурации сайта][config]. Каталоги, созданные во время сборки для раздела, отражают положение каталога содержимого в папке `content` и пространство имен, соответствующее его макету в иерархии `contentdir`.
 
-The `permalinks` option in your [site configuration][config] allows you to adjust the directory paths (i.e., the URLs) on a per-section basis. This will change where the files are written to and will change the page's internal "canonical" location, such that template references to `.RelPermalink` will honor the adjustments made as a result of the mappings in this option.
+Параметр `permalinks` в Вашей [конфигурации сайта][config] позволяет Вам настраивать пути к каталогам (то есть URL-адреса) для каждого раздела. Это изменит место записи файлов и изменит внутреннее «каноническое» расположение страницы, так что ссылки шаблона на `.RelPermalink` будут учитывать корректировки, сделанные в результате сопоставлений в этой опции.
 
 {{% note "Default Publish and Content Folders" %}}
-These examples use the default values for `publishDir` and `contentDir`; i.e., `public` and `content`, respectively. You can override the default values in your [site's `config` file](/getting-started/configuration/).
+В этих примерах используются значения по умолчанию для `publishDir` и `contentDir`; т.е. `public` и `content`, соответственно. Вы можете переопределить значения по умолчанию в Вашем [файле `config` Вашего сайта]](/getting-started/configuration/).
 {{% /note %}}
 
-For example, if one of your [sections][] is called `posts` and you want to adjust the canonical path to be hierarchical based on the year, month, and post title, you could set up the following configurations in YAML and TOML, respectively.
+Например, если один из Ваших [разделов][sections] вызывает `posts` и Вы хотите настроить канонический путь так, чтобы он был иерархическим на основе года, месяца и заголовка публикации, Вы можете настроить следующие конфигурации в YAML и TOML соответственно.
 
-### Permalinks Configuration Example
+### Пример конфигурации постоянных ссылок
 
 {{< code-toggle file="config" copy="false" >}}
 permalinks:
   posts: /:year/:month/:title/
 {{< /code-toggle >}}
 
-Only the content under `posts/` will have the new URL structure. For example, the file `content/posts/sample-entry.md` with `date: 2017-02-27T19:20:00-05:00` in its front matter will render to `public/2017/02/sample-entry/index.html` at build time and therefore be reachable at `https://example.com/2017/02/sample-entry/`.
+Только контент в `posts/` будет иметь новую структуру URL-адреса. Например, файл `content/posts/sample-entry.md` с `date: 2017-02-27T19:20:00-05:00` в front matter будет отображаться как `public/2017/02/sample-entry/index.html` во время сборки и, следовательно, доступен по адресу `https://example.com/2017/02/sample-entry/`.
 
-To configure the `permalinks` option for pages in the "root" section, use **/** as the key:
+Чтобы настроить параметр `permalinks` для страниц в «корневом» разделе, используйте **/** в качестве ключа:
 
 {{< code-toggle file="config" copy="false" >}}
 permalinks:
   /: /:year/:month/:filename/
 {{< /code-toggle >}}
 
-If the standard date-based permalink configuration does not meet your needs, you can also format URL segments using [Go time formatting directives](https://golang.org/pkg/time/#Time.Format). For example, a URL structure with two digit years and month and day digits without zero padding can be accomplished with:
+Если стандартная конфигурация постоянной ссылки на основе даты не соответствует Вашим требованиям, Вы также можете отформатировать сегменты URL с помощью [директив форматирования времени Go](https://golang.org/pkg/time/#Time.Format). Например, структура URL-адреса с двумя цифрами года и месяца и дня без заполнения нулями может быть выполнена с помощью:
 
 {{< code-toggle file="config" copy="false" >}}
 permalinks:
   posts: /:06/:1/:2/:title/
 {{< /code-toggle >}}
 
-You can also configure permalinks of taxonomies with the same syntax, by using the plural form of the taxonomy instead of the section. You will probably only want to use the configuration values `:slug` or `:title`.
+Вы также можете настроить постоянные ссылки таксономий с тем же синтаксисом, используя форму множественного числа таксономии вместо раздела. Вероятно, Вы захотите использовать только значения конфигурации `:slug` или `:title`.
 
-### Permalink Configuration Values
+### Значения конфигурации постоянной ссылки
 
-The following is a list of values that can be used in a `permalink` definition in your site `config` file. All references to time are dependent on the content's date.
+Ниже приводится список значений, которые можно использовать в определении `permalink` в файле конфигурации Вашего сайта `config`. Все ссылки на время зависят от даты содержания.
 
 `:year`
-: the 4-digit year
+: 4-значный год
 
 `:month`
-: the 2-digit month
+: 2-значный месяц
 
 `:monthname`
-: the name of the month
+: название месяца
 
 `:day`
-: the 2-digit day
+: 2-значный день
 
 `:weekday`
-: the 1-digit day of the week (Sunday = 0)
+: 1-значный день недели (воскресенье = 0)
 
 `:weekdayname`
-: the name of the day of the week
+: название дня недели
 
 `:yearday`
-: the 1- to 3-digit day of the year
+: день года, состоящий из 1–3 цифр
 
 `:section`
-: the content's section
+: раздел содержимого
 
 `:sections`
-: the content's sections hierarchy
+: иерархия разделов контента
 
 `:title`
-: the content's title
+: заголовок контента
 
 `:slug`
-: the content's slug (or title if no slug is provided in the front matter)
+: заголовок контента (или заголовок, если заголовок не указан во вступительной части)
 
 `:filename`
-: the content's filename (without extension)
+: имя файла содержимого (без расширения)
 
-Additionally, a Go time format string prefixed with `:` may be used.
+Кроме того, может использоваться строка формата времени Go с префиксом `:`.
 
-## Aliases
+## Псевдонимы
 
-Aliases can be used to create redirects to your page from other URLs.
+Псевдонимы могут использоваться для создания перенаправлений на Вашу страницу с других URL-адресов.
 
-Aliases comes in two forms:
+Псевдонимы бывают двух видов:
 
-1. Starting with a `/` meaning they are relative to the `BaseURL`, e.g. `/posts/my-blogpost/`
-2. They are relative to the `Page` they're defined in, e.g. `my-blogpost` or even something like `../blog/my-blogpost` (new in Hugo 0.55).
+1. Начиная с `/`, они относятся к `BaseURL`, например: `/posts/my-blogpost/`
+2. Они относятся к странице `Page`, в которой они определены, например: `my-blogpost` или даже что-то вроде `../blog/my-blogpost` (новое в Hugo 0.55).
 
-### Example: Aliases
+### Пример: Псевдонимы
 
-Let's assume you create a new piece of content at `content/posts/my-awesome-blog-post.md`. The content is a revision of your previous post at `content/posts/my-original-url.md`. You can create an `aliases` field in the front matter of your new `my-awesome-blog-post.md` where you can add previous paths. The following examples show how to create this field in TOML and YAML front matter, respectively.
+Предположим, Вы создаете новый фрагмент контента по адресу `content/posts/my-awesome-blog-post.md`. Контент представляет собой отредактированный вариант Вашей предыдущей публикации по адресу `content/posts/my-original-url.md`. Вы можете создать поле `aliases` в начале Вашего нового `my-awesome-blog-post.md`, куда Вы можете добавить предыдущие пути. В следующих примерах показано, как создать это поле в материалах TOML и YAML соответственно.
 
 #### TOML Front Matter
 
@@ -130,13 +130,13 @@ aliases:
 ---
 {{< /code >}}
 
-Now when you visit any of the locations specified in aliases---i.e., *assuming the same site domain*---you'll be redirected to the page they are specified on. For example, a visitor to `example.com/posts/my-original-url/` will be immediately redirected to `example.com/posts/my-awesome-post/`.
+Теперь, когда Вы посещаете любое из мест, указанных в псевдонимах --- т.е. *при условии, что это тот же домен сайта* --- Вы будете перенаправлены на страницу, на которой они указаны. Например, посетитель на `example.com/posts/my-original-url/` будет немедленно перенаправлен на `example.com/posts/my-awesome-post/`.
 
-### Example: Aliases in Multilingual
+### Пример: псевдонимы в многоязычности
 
-On [multilingual sites][multilingual], each translation of a post can have unique aliases. To use the same alias across multiple languages, prefix it with the language code.
+На [многоязычных сайтах][multilingual] каждый перевод сообщения может иметь уникальные псевдонимы. Чтобы использовать один и тот же псевдоним на нескольких языках, добавьте к нему код языка.
 
-In `/posts/my-new-post.es.md`:
+В `/posts/my-new-post.es.md`:
 
 ```
 ---
@@ -145,13 +145,13 @@ aliases:
 ---
 ```
 
-From Hugo 0.55 you can also have page-relative aliases, so ` /es/posts/my-original-post/` can be simplified to the more portable `my-original-post/`
+Начиная с Hugo 0.55 Вы также можете использовать псевдонимы, относящиеся к странице, поэтому `/es/posts/my-original-post/` можно упростить до более переносимого `my-original-post/`
 
-### How Hugo Aliases Work
+### Как работают псевдонимы Хьюго
 
-When aliases are specified, Hugo creates a directory to match the alias entry. Inside the directory, Hugo creates an `.html` file specifying the canonical URL for the page and the new redirect target.
+Когда псевдонимы указаны, Хьюго создает каталог, соответствующий записи псевдонима. Внутри каталога Хьюго создает файл `.html`, определяющий канонический URL-адрес страницы и новую цель перенаправления.
 
-For example, a content file at `posts/my-intended-url.md` with the following in the front matter:
+Например, файл содержимого по адресу `posts/my-intended-url.md` со следующим текстом в front matter:
 
 ```
 ---
@@ -160,7 +160,7 @@ aliases: [/posts/my-old-url/]
 ---
 ```
 
-Assuming a `baseURL` of `example.com`, the contents of the auto-generated alias `.html` found at `https://example.com/posts/my-old-url/` will contain the following:
+Предполагая, что `baseURL` - это `example.com`, содержимое автоматически сгенерированного псевдонима `.html`, найденного по адресу `https://example.com/posts/my-old-url/`, будет содержать следующее:
 
 ```
 <!DOCTYPE html>
@@ -175,30 +175,27 @@ Assuming a `baseURL` of `example.com`, the contents of the auto-generated alias 
 </html>
 ```
 
-The `http-equiv="refresh"` line is what performs the redirect, in 0 seconds in this case. If an end user of your website goes to `https://example.com/posts/my-old-url`, they will now be automatically redirected to the newer, correct URL. The addition of `<meta name="robots" content="noindex">` lets search engine bots know that they should not crawl and index your new alias page.
+Строка `http-equiv="refresh"` - это то, что выполняет перенаправление, в данном случае за 0 секунд. Если конечный пользователь Вашего веб-сайта перейдет на `https://example.com/posts/my-old-url`, он будет автоматически перенаправлен на более новый правильный URL. Добавление `<meta name="robots" content="noindex">` позволяет роботам поисковых систем знать, что они не должны сканировать и индексировать Вашу страницу с новым псевдонимом.
 
-### Customize
-You may customize this alias page by creating an `alias.html` template in the
-layouts folder of your site (i.e., `layouts/alias.html`). In this case, the data passed to the template is
+### Кастомизация
+Вы можете настроить эту страницу псевдонима, создав шаблон `alias.html` в папке макетов вашего сайта (например, `layouts/alias.html`). В этом случае в шаблон передаются данные
 
 `Permalink`
-: the link to the page being aliased
+: ссылка на страницу с псевдонимом
 
 `Page`
-: the Page data for the page being aliased
+: данные страницы для страницы с псевдонимом
 
-### Important Behaviors of Aliases
+### Важное поведение псевдонимов
 
-1. Hugo makes no assumptions about aliases. They also do not change based
-on your UglyURLs setting. You need to provide absolute paths to your web root
-and the complete filename or directory.
-2. Aliases are rendered *before* any content are rendered and therefore will be overwritten by any content with the same location.
+1. Хьюго не делает никаких предположений относительно псевдонимов. Они также не меняются в зависимости от Ваших настроек `UglyURL`. Вам необходимо указать абсолютные пути к корневому веб-каталогу и полное имя файла или каталог.
+2. Псевдонимы отображаются *до* отображения любого содержимого и поэтому будут перезаписаны любым содержимым с тем же расположением.
 
-## Pretty URLs
+## Красивые URL-адреса
 
-Hugo's default behavior is to render your content with "pretty" URLs. No non-standard server-side configuration is required for these pretty URLs to work.
+По умолчанию Hugo отображает Ваш контент с "красивыми" URL. Для работы этих красивых URL-адресов не требуется нестандартной конфигурации на стороне сервера.
 
-The following demonstrates the concept:
+Следующее демонстрирует концепцию:
 
 ```
 content/posts/_index.md
@@ -207,13 +204,13 @@ content/posts/post-1.md
 => example.com/posts/post-1/
 ```
 
-## Ugly URLs
+## Уродливые URL-адреса
 
-If you would like to have what are often referred to as "ugly URLs" (e.g., example.com/urls.html), set `uglyurls = true` or `uglyurls: true` in your site's `config.toml` or `config.yaml`, respectively. You can also set the `HUGO_UGLYURLS` environment variable to `true` when running `hugo` or `hugo server`.
+Если Вы хотите, чтобы у Вас были так называемые "уродливые URL" (например, example.com/urls.html), установите `uglyurls = true` или `uglyurls: true` в файле `config.toml` или `config.yaml` соответственно. Вы также можете установить для переменной окружения `HUGO_UGLYURLS` значение `true` при запуске `hugo` или `hugo server`.
 
-If you want a specific piece of content to have an exact URL, you can specify this in the [front matter][] under the `url` key. The following are examples of the same content directory and what the eventual URL structure will be when Hugo runs with its default behavior.
+Если Вы хотите, чтобы конкретный фрагмент контента имел точный URL-адрес, Вы можете указать это в [front matter][] под ключом `url`. Ниже приведены примеры того же каталога содержимого и того, какой будет конечная структура URL-адресов, когда Hugo будет работать со своим поведением по умолчанию.
 
-See [Content Organization][contentorg] for more details on paths.
+Смотрите [организацию контента][contentorg] для получения более подробной информации о путях.
 
 ```
 .
@@ -230,7 +227,7 @@ See [Content Organization][contentorg] for more details on paths.
         └── second.md      // <- https://example.com/quote/second/
 ```
 
-Here's the same organization run with `hugo --uglyURLs`:
+Вот та же организация, работающая с `hugo --uglyURLs`:
 
 ```
 .
@@ -247,40 +244,39 @@ Here's the same organization run with `hugo --uglyURLs`:
         └── second.md      // <- https://example.com/quote/second.html
 ```
 
+## Канонизация
 
-## Canonicalization
+По умолчанию все относительные URL-адреса, встречающиеся во входных данных, остаются неизменными, например: `/css/foo.css` останется как `/css/foo.css`. Поле `canonifyURLs` на Вашем сайте `config` имеет значение по умолчанию `false`.
 
-By default, all relative URLs encountered in the input are left unmodified, e.g. `/css/foo.css` would stay as `/css/foo.css`. The `canonifyURLs` field in your site `config` has a default value of `false`.
+Если установить для `canonifyURLs` значение `true`, все относительные URL-адреса будут *канонизированы* с использованием `baseURL`. Например, если у Вас есть `baseURL = https://example.com/`, относительный URL-адрес `/css/foo.css` будет преобразован в абсолютный URL-адрес `https://example.com/css/foo.css`.
 
-By setting `canonifyURLs` to `true`, all relative URLs would instead be *canonicalized* using `baseURL`.  For example, assuming you have `baseURL = https://example.com/`, the relative URL `/css/foo.css` would be turned into the absolute URL `https://example.com/css/foo.css`.
+Преимущества канонизации включают фиксацию всех URL-адресов как абсолютных, что может помочь в некоторых задачах синтаксического анализа. Обратите внимание, однако, что все современные браузеры без проблем справляются с этим на клиенте.
 
-Benefits of canonicalization include fixing all URLs to be absolute, which may aid with some parsing tasks. Note, however, that all modern browsers handle this on the client without issue.
-
-Benefits of non-canonicalization include being able to have scheme-relative resource inclusion; e.g., so that `http` vs `https` can be decided according to how the page was retrieved.
+Преимущества неканонизации включают возможность включения ресурсов в зависимости от схемы; например, чтобы можно было выбрать `http` vs `https` в соответствии с тем, как была получена страница.
 
 {{% note "`canonifyURLs` default change" %}}
-In the May 2014 release of Hugo v0.11, the default value of `canonifyURLs` was switched from `true` to `false`, which we think is the better default and should continue to be the case going forward. Please verify and adjust your website accordingly if you are upgrading from v0.10 or older versions.
+В выпуске Hugo v0.11, выпущенном в мае 2014 года, значение по умолчанию `canonifyURLs` было изменено с `true` на `false`, что, по нашему мнению, является лучшим значением по умолчанию и должно оставаться таковым в будущем. Пожалуйста, проверьте и настройте свой веб-сайт соответствующим образом, если Вы обновляетесь с v0.10 или более старых версий.
 {{% /note %}}
 
-To find out the current value of `canonifyURLs` for your website, you may use the handy `hugo config` command added in v0.13.
+Чтобы узнать текущее значение `canonifyURLs` для Вашего сайта, Вы можете использовать удобную команду `hugo config`, добавленную в v0.13.
 
 ```
 hugo config | grep -i canon
 ```
 
-Or, if you are on Windows and do not have `grep` installed:
+Или, если Вы работаете в Windows и не установили `grep`:
 
 ```
 hugo config | FINDSTR /I canon
 ```
 
-## Set URL in Front Matter
+## Установка URL-адреса в Front Matter
 
-In addition to specifying permalink values in your site configuration for different content sections, Hugo provides even more granular control for individual pieces of content.
+Помимо указания значений постоянных ссылок в конфигурации вашего сайта для различных разделов контента, Hugo обеспечивает еще более детальный контроль над отдельными частями контента.
 
-Both `slug` and `url` can be defined in individual front matter. For more information on content destinations at build time, see [Content Organization][contentorg].
+И `slug` и `url` могут быть определены в индивидуальном первичном документе. Для получения дополнительной информации о местах назначения контента во время сборки смотрите [организацию контента][contentorg].
 
-From Hugo 0.55, you can use URLs relative to the current site context (the language), which makes it simpler to maintain. For a Japanese translation, both of the following examples would get the same URL:
+Начиная с Hugo 0.55, Вы можете использовать URL-адреса относительно текущего контекста сайта (языка), что упрощает обслуживание. Для японского перевода оба следующих примера получат один и тот же URL:
 
 ```markdown
 ---
@@ -296,14 +292,13 @@ url: "custom/foo"
 ---
 ```
 
+## Относительные URL-адреса
 
-## Relative URLs
+По умолчанию все относительные URL-адреса не меняются Hugo, что может быть проблематичным, если Вы хотите сделать свой сайт доступным для просмотра из локальной файловой системы.
 
-By default, all relative URLs are left unchanged by Hugo, which can be problematic when you want to make your site browsable from a local file system.
+Установка для параметра `relativeURLs` значения `true` в Вашей [конфигурации сайта][config] заставит Хьюго переписать все относительные URL-адреса относительно текущего контента.
 
-Setting `relativeURLs` to `true` in your [site configuration][config] will cause Hugo to rewrite all relative URLs to be relative to the current content.
-
-For example, if your `/posts/first/` page contains a link to `/about/`, Hugo will rewrite the URL to `../../about/`.
+Например, если Ваша страница `/posts/first/` содержит ссылку на `/about/`, Хьюго перепишет URL-адрес на `../../about/`.
 
 [config]: /getting-started/configuration/
 [contentorg]: /content-management/organization/
