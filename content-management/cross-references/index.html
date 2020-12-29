@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Links and Cross References | Hugo</title>
+  <title>Ссылки и перекрестные ссылки | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Links and Cross References" />
-<meta property="og:description" content="Shortcodes for creating links to documents." />
+<meta property="og:title" content="Ссылки и перекрестные ссылки" />
+<meta property="og:description" content="Шорткоды для создания ссылок на документы." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/cross-references/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Links and Cross References">
-<meta itemprop="description" content="Shortcodes for creating links to documents.">
+<meta property="article:modified_time" content="2020-12-28T17:50:36+03:00" />
+<meta itemprop="name" content="Ссылки и перекрестные ссылки">
+<meta itemprop="description" content="Шорткоды для создания ссылок на документы.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="332">
+<meta itemprop="dateModified" content="2020-12-28T17:50:36+03:00" />
+<meta itemprop="wordCount" content="313">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Links and Cross References"/>
-<meta name="twitter:description" content="Shortcodes for creating links to documents."/>
+<meta name="twitter:title" content="Ссылки и перекрестные ссылки"/>
+<meta name="twitter:description" content="Шорткоды для создания ссылок на документы."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,21 +238,21 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#use-ref-and-relref">Use <code>ref</code> and <code>relref</code></a>
+    <li><a href="#использование-ref-и-relref">Использование <code>ref</code> и <code>relref</code></a>
       <ul>
-        <li><a href="#link-to-another-language-version">Link to another language version</a></li>
-        <li><a href="#get-another-output-format">Get another Output Format</a></li>
-        <li><a href="#heading-ids">Heading IDs</a></li>
+        <li><a href="#ссылка-на-другую-языковую-версию">Ссылка на другую языковую версию</a></li>
+        <li><a href="#получить-другой-формат-вывода">Получить другой формат вывода</a></li>
+        <li><a href="#идентификаторы-заголовков">Идентификаторы заголовков</a></li>
       </ul>
     </li>
-    <li><a href="#ref-and-relref-configuration">Ref and RelRef Configuration</a></li>
+    <li><a href="#конфигурация-ref-и-relref">Конфигурация Ref и RelRef</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/summaries/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Content Summaries ">
+			<a href="https://gohugo.ru/content-management/summaries/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Резюме содержимого ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -262,7 +262,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/urls/" class="dib f6 pr1 hover-bg-light-gray br-100" title="URL Management">
+			<a href="https://gohugo.ru/content-management/urls/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Управление URL-адресами">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -287,13 +287,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Links and Cross References</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Ссылки и перекрестные ссылки</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Shortcodes for creating links to documents.
+      Шорткоды для создания ссылок на документы.
     </div>
   
 
@@ -304,8 +304,8 @@
 
 <div class="prose" id="prose">
 
-<p>The <code>ref</code> and <code>relref</code> shortcodes display the absolute and relative permalinks to a document, respectively.</p>
-<h2 id="use-ref-and-relref">Use <code>ref</code> and <code>relref</code> <a class="header-link" href="#use-ref-and-relref"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Шорткоды <code>ref</code> и <code>relref</code> отображают абсолютные и относительные постоянные ссылки на документ соответственно.</p>
+<h2 id="использование-ref-и-relref">Использование <code>ref</code> и <code>relref</code> <a class="header-link" href="#%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-ref-%d0%b8-relref"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;document&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;document#anchor&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
@@ -317,46 +317,46 @@
 <span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="s">&#34;#anchor&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="s">&#34;/blog/my-post.md&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
-</code></pre></div><p>To generate a hyperlink using <code>ref</code> or <code>relref</code> in markdown:</p>
+</code></pre></div><p>Чтобы сгенерировать гиперссылку с помощью <code>ref</code> или <code>relref</code> в разметке:</p>
 <div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">[<span class="nt">About</span>](<span class="na">{{&lt; ref &#34;/page/about&#34; &gt;}} &#34;About Us&#34;</span>)
-</code></pre></div><p>The <code>ref</code> and <code>relref</code> shortcodes require a single parameter: the path to a content document, with or without a file extension, with or without an anchor.</p>
-<p>**Paths without a leading <code>/</code> are first resolved relative to the current page, then to the remainder of the site.</p>
-<p>Hugo emits an error or warning if a document cannot be uniquely resolved. The error behavior is configurable; see below.</p>
-<h3 id="link-to-another-language-version">Link to another language version <a class="header-link" href="#link-to-another-language-version"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>To link to another language version of a document, use this syntax:</p>
+</code></pre></div><p>Для шорткодов <code>ref</code> и <code>relref</code> требуется один параметр: путь к документу содержимого, с расширением файла или без него, с привязкой или без нее.</p>
+<p><strong>Пути без начального символа <code>/</code> сначала разрешаются относительно текущей страницы, а затем - относительно остальной части сайта.</strong></p>
+<p>Hugo выдает ошибку или предупреждение, если документ не может быть однозначно разрешен. Поведение при ошибке настраивается; Смотри ниже.</p>
+<h3 id="ссылка-на-другую-языковую-версию">Ссылка на другую языковую версию <a class="header-link" href="#%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b0-%d0%bd%d0%b0-%d0%b4%d1%80%d1%83%d0%b3%d1%83%d1%8e-%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2%d1%83%d1%8e-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d1%8e"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Чтобы создать ссылку на версию документа на другом языке, используйте этот синтаксис:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="nx">path</span><span class="err">=</span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="nx">lang</span><span class="err">=</span><span class="s">&#34;ja&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
-</code></pre></div><h3 id="get-another-output-format">Get another Output Format <a class="header-link" href="#get-another-output-format"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>To link to another Output Format of a document, use this syntax:</p>
+</code></pre></div><h3 id="получить-другой-формат-вывода">Получить другой формат вывода <a class="header-link" href="#%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b8%d1%82%d1%8c-%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b9-%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Чтобы создать ссылку на другой формат вывода документа, используйте этот синтаксис:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="nx">path</span><span class="err">=</span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="nx">outputFormat</span><span class="err">=</span><span class="s">&#34;rss&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
-</code></pre></div><h3 id="heading-ids">Heading IDs <a class="header-link" href="#heading-ids"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>When using Markdown document types, Hugo generates element IDs for every heading on a page. For example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="gu">## Reference
-</span></code></pre></div><p>produces this HTML:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;reference&#34;</span><span class="p">&gt;</span>Reference<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</code></pre></div><p>Get the permalink to a heading by appending the ID to the path when using the <code>ref</code> or <code>relref</code> shortcodes:</p>
+</code></pre></div><h3 id="идентификаторы-заголовков">Идентификаторы заголовков <a class="header-link" href="#%d0%b8%d0%b4%d0%b5%d0%bd%d1%82%d0%b8%d1%84%d0%b8%d0%ba%d0%b0%d1%82%d0%be%d1%80%d1%8b-%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%ba%d0%be%d0%b2"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>При использовании типов документов Markdown Hugo генерирует идентификаторы элементов для каждого заголовка на странице. Например:</p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="gu">## Отсылка
+</span></code></pre></div><p>создает этот HTML:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;reference&#34;</span><span class="p">&gt;</span>Отсылка<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</code></pre></div><p>Получите постоянную ссылку на заголовок, добавив идентификатор к пути при использовании коротких кодов <code>ref</code> или <code>relref</code>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;document.md#reference&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="s">&#34;document.md#reference&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
-</code></pre></div><p>Generate a custom heading ID by including an attribute. For example:</p>
+</code></pre></div><p>Создайте собственный идентификатор заголовка, включив атрибут. Например:</p>
 <div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="gu">## Reference A {#foo}
 </span><span class="gu">## Reference B {id=&#34;bar&#34;}
-</span></code></pre></div><p>produces this HTML:</p>
+</span></code></pre></div><p>создает этот HTML:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;foo&#34;</span><span class="p">&gt;</span>Reference A<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;bar&#34;</span><span class="p">&gt;</span>Reference B<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</code></pre></div><p>Hugo will generate unique element IDs if the same heading appears more than once on a page. For example:</p>
+</code></pre></div><p>Hugo сгенерирует уникальные идентификаторы элементов, если один и тот же заголовок появляется на странице более одного раза. Например:</p>
 <div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="gu">## Reference
 </span><span class="gu">## Reference
 </span><span class="gu">## Reference
-</span></code></pre></div><p>produces this HTML:</p>
+</span></code></pre></div><p>создает этот HTML:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;reference&#34;</span><span class="p">&gt;</span>Reference<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;reference-1&#34;</span><span class="p">&gt;</span>Reference<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;reference-2&#34;</span><span class="p">&gt;</span>Reference<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</code></pre></div><h2 id="ref-and-relref-configuration">Ref and RelRef Configuration <a class="header-link" href="#ref-and-relref-configuration"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The behavior can, since Hugo 0.45, be configured in <code>config.toml</code>:</p>
+</code></pre></div><h2 id="конфигурация-ref-и-relref">Конфигурация Ref и RelRef <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8f-ref-%d0%b8-relref"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Начиная с Hugo 0.45 поведение можно настроить в <code>config.toml</code>:</p>
 <dl>
 <dt>refLinksErrorLevel (&ldquo;ERROR&rdquo;)</dt>
-<dd>When using <code>ref</code> or <code>relref</code> to resolve page links and a link cannot resolved, it will be logged with this log level. Valid values are <code>ERROR</code> (default) or <code>WARNING</code>. Any <code>ERROR</code> will fail the build (<code>exit -1</code>).</dd>
+<dd>При использовании <code>ref</code> или <code>relref</code> для разрешения ссылок на страницы и ссылка не может быть разрешена, она будет занесена в журнал с этим уровнем журнала. Допустимые значения: <code>ERROR</code> (по умолчанию) или <code>WARNING</code>. Любая <code>ERROR</code> приведет к сбою сборки (<code>exit -1</code>).</dd>
 <dt>refLinksNotFoundURL</dt>
-<dd>URL to be used as a placeholder when a page reference cannot be found in <code>ref</code> or <code>relref</code>. Is used as-is.</dd>
+<dd>URL-адрес, который будет использоваться в качестве заполнителя, когда ссылка на страницу не может быть найдена в <code>ref</code> или <code>relref</code>. Используется как есть.</dd>
 </dl>
 
 </div>
@@ -372,9 +372,9 @@
 	
 	<li><a href="/functions/urls.parse/">urls.Parse</a></li>
 	
-	<li><a href="/content-management/urls/">URL Management</a></li>
-	
 	<li><a href="/functions/abslangurl/">absLangURL</a></li>
+	
+	<li><a href="/functions/absurl/">absURL</a></li>
 	
 </ul>
 
@@ -495,26 +495,26 @@
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -523,93 +523,88 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -1699,8 +1694,8 @@
   <a href="https://gohugo.ru/content-management/cross-references/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Links and Cross References”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Ссылки и перекрестные ссылки”
+  </a> последнее обновление: December 28, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/3d537170adadf9150f2da15242e59c92abe9acb8">Перевод части content-management (3d537170a)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5ccross-references.md" class="
@@ -1878,7 +1873,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

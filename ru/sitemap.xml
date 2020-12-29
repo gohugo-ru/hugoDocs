@@ -18,26 +18,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/content-management/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/content-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.ru/zh/content-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/content-management/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/contribute/</loc>
     <lastmod>2020-12-24T11:02:26+03:00</lastmod>
     <xhtml:link
@@ -184,6 +164,26 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/getting-started/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/content-management/</loc>
+    <lastmod>2020-12-26T13:54:27+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/content-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://gohugo.ru/zh/content-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/content-management/"
                 />
   </url>
   
@@ -443,21 +443,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/content-management/organization/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/content-management/organization/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/content-management/organization/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/variables/site/</loc>
     <lastmod>2020-12-24T11:02:26+03:00</lastmod>
     <xhtml:link
@@ -469,6 +454,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/variables/site/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/content-management/organization/</loc>
+    <lastmod>2020-12-26T13:54:27+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/content-management/organization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/content-management/organization/"
                 />
   </url>
   
@@ -629,7 +629,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/syntax-highlighting/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -659,7 +659,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/formats/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-26T13:54:27+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -704,7 +704,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/related/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-28T14:14:51+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -794,7 +794,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/front-matter/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-26T13:54:27+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -839,7 +839,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/build-options/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-26T13:54:27+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -854,7 +854,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/shortcodes/</loc>
-    <lastmod>2020-12-24T11:08:17+03:00</lastmod>
+    <lastmod>2020-12-28T14:14:51+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1063,21 +1063,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/content-management/sections/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/content-management/sections/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/content-management/sections/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/templates/taxonomy-templates/</loc>
     <lastmod>2020-12-24T11:02:26+03:00</lastmod>
     <xhtml:link
@@ -1104,6 +1089,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/hugo-modules/theme-components/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/content-management/sections/</loc>
+    <lastmod>2020-12-28T14:14:51+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/content-management/sections/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/content-management/sections/"
                 />
   </url>
   
@@ -1168,21 +1168,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/content-management/types/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/content-management/types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/content-management/types/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/hosting-and-deployment/deployment-with-wercker/</loc>
     <lastmod>2020-12-24T11:02:26+03:00</lastmod>
     <xhtml:link
@@ -1224,6 +1209,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/templates/single-page-templates/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/content-management/types/</loc>
+    <lastmod>2020-12-28T14:14:51+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/content-management/types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/content-management/types/"
                 />
   </url>
   
@@ -1318,21 +1318,6 @@
   </url>
   
   <url>
-    <loc>https://gohugo.ru/content-management/archetypes/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/content-management/archetypes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/content-management/archetypes/"
-                />
-  </url>
-  
-  <url>
     <loc>https://gohugo.ru/templates/views/</loc>
     <lastmod>2020-12-24T11:02:26+03:00</lastmod>
     <xhtml:link
@@ -1374,6 +1359,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/tools/other/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/content-management/archetypes/</loc>
+    <lastmod>2020-12-28T14:14:51+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/content-management/archetypes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/content-management/archetypes/"
                 />
   </url>
   
@@ -1424,7 +1424,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/taxonomies/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-28T14:14:51+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1469,7 +1469,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/summaries/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-28T14:14:51+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1479,21 +1479,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/content-management/summaries/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://gohugo.ru/content-management/cross-references/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/content-management/cross-references/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/content-management/cross-references/"
                 />
   </url>
   
@@ -1509,6 +1494,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/templates/shortcode-templates/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/content-management/cross-references/</loc>
+    <lastmod>2020-12-28T17:50:36+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/content-management/cross-references/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/content-management/cross-references/"
                 />
   </url>
   
@@ -1529,7 +1529,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/urls/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-28T17:50:36+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1559,7 +1559,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/menus/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-28T17:50:36+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1574,7 +1574,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/static-files/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-28T17:50:36+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1604,7 +1604,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/toc/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1614,21 +1614,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/content-management/toc/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://gohugo.ru/content-management/comments/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.ru/en/content-management/comments/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://gohugo.ru/content-management/comments/"
                 />
   </url>
   
@@ -1644,6 +1629,21 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://gohugo.ru/templates/pagination/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gohugo.ru/content-management/comments/</loc>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.ru/en/content-management/comments/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://gohugo.ru/content-management/comments/"
                 />
   </url>
   
@@ -1664,7 +1664,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/multilingual/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1769,7 +1769,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/image-processing/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-26T13:54:27+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1784,7 +1784,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/</loc>
-    <lastmod>2020-12-25T14:04:55+03:00</lastmod>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -3019,7 +3019,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/content-management/</loc>
-    <lastmod>2020-12-24T11:08:17+03:00</lastmod>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -3294,7 +3294,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/fundamentals/</loc>
-    <lastmod>2020-12-25T12:01:47+03:00</lastmod>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -4814,7 +4814,7 @@
   
   <url>
     <loc>https://gohugo.ru/content-management/page-bundles/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-26T13:54:27+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -6414,7 +6414,7 @@
   
   <url>
     <loc>https://gohugo.ru/categories/project-organization/</loc>
-    <lastmod>2020-12-24T11:02:26+03:00</lastmod>
+    <lastmod>2020-12-29T17:46:48+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

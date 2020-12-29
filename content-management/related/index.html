@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Related Content | Hugo</title>
+  <title>Связанный контент | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Related Content" />
-<meta property="og:description" content="List related content in &#34;See Also&#34; sections." />
+<meta property="og:title" content="Связанный контент" />
+<meta property="og:description" content="Список связанного контента в разделах «Смотрите также»." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/related/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-09-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Related Content">
-<meta itemprop="description" content="List related content in &#34;See Also&#34; sections.">
+<meta property="article:modified_time" content="2020-12-28T14:14:51+03:00" />
+<meta itemprop="name" content="Связанный контент">
+<meta itemprop="description" content="Список связанного контента в разделах «Смотрите также».">
 <meta itemprop="datePublished" content="2017-09-05T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="859">
+<meta itemprop="dateModified" content="2020-12-28T14:14:51+03:00" />
+<meta itemprop="wordCount" content="791">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Related Content"/>
-<meta name="twitter:description" content="List related content in &#34;See Also&#34; sections."/>
+<meta name="twitter:title" content="Связанный контент"/>
+<meta name="twitter:description" content="Список связанного контента в разделах «Смотрите также»."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,26 +238,26 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#list-related-content">List Related Content</a>
+    <li><a href="#список-связанного-содержимого">Список связанного содержимого</a>
       <ul>
-        <li><a href="#methods">Methods</a></li>
+        <li><a href="#методы">Методы</a></li>
       </ul>
     </li>
-    <li><a href="#configure-related-content">Configure Related Content</a>
+    <li><a href="#настроить-связанный-контент">Настроить связанный контент</a>
       <ul>
-        <li><a href="#default-configuration">Default configuration</a></li>
-        <li><a href="#top-level-config-options">Top Level Config Options</a></li>
-        <li><a href="#config-options-per-index">Config Options per Index</a></li>
+        <li><a href="#конфигурация-по-умолчанию">Конфигурация по умолчанию</a></li>
+        <li><a href="#параметры-конфигурации-верхнего-уровня">Параметры конфигурации верхнего уровня</a></li>
+        <li><a href="#параметры-конфигурации-по-индексу">Параметры конфигурации по индексу</a></li>
       </ul>
     </li>
-    <li><a href="#performance-considerations">Performance Considerations</a></li>
+    <li><a href="#соображения-производительности">Соображения производительности</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/formats/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Content Formats ">
+			<a href="https://gohugo.ru/content-management/formats/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Форматы контента ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -292,13 +292,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Related Content</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Связанный контент</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      List related content in &ldquo;See Also&rdquo; sections.
+      Список связанного контента в разделах «Смотрите также».
     </div>
   
 
@@ -309,9 +309,9 @@
 
 <div class="prose" id="prose">
 
-<p>Hugo uses a set of factors to identify a page&rsquo;s related content based on Front Matter parameters. This can be tuned to the desired set of indices and parameters or left to Hugo&rsquo;s default <a href="#configure-related-content">Related Content configuration</a>.</p>
-<h2 id="list-related-content">List Related Content <a class="header-link" href="#list-related-content"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>To list up to 5 related pages (which share the same <em>date</em> or <em>keyword</em> parameters) is as simple as including something similar to this partial in your single page template:</p>
+<p>Hugo использует набор факторов для определения связанного содержания страницы на основе параметров Front Matter. Это может быть настроено на желаемый набор индексов и параметров или оставлено Хьюго по умолчанию <a href="#configure-related-content">конфигурация связанного содержимого</a>.</p>
+<h2 id="список-связанного-содержимого">Список связанного содержимого <a class="header-link" href="#%d1%81%d0%bf%d0%b8%d1%81%d0%be%d0%ba-%d1%81%d0%b2%d1%8f%d0%b7%d0%b0%d0%bd%d0%bd%d0%be%d0%b3%d0%be-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b3%d0%be"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Чтобы перечислить до 5 связанных страниц (которые имеют одинаковые параметры <em>date</em> или <em>keyword</em>), достаточно просто включить что-то похожее на этот фрагмент в свой одностраничный шаблон:</p>
 
 
 
@@ -343,17 +343,17 @@
 
 </div>
 
-<h3 id="methods">Methods <a class="header-link" href="#methods"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Here is the list of &ldquo;Related&rdquo; methods available on a page collection such <code>.RegularPages</code>.</p>
-<h4 id="related-page">.Related PAGE <a class="header-link" href="#related-page"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Returns a collection of pages related the given one.</p>
+<h3 id="методы">Методы <a class="header-link" href="#%d0%bc%d0%b5%d1%82%d0%be%d0%b4%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Вот список «связанных» методов, доступных в коллекции страниц, например <code>.RegularPages</code>.</p>
+<h4 id="страница-related">СТРАНИЦА .Related <a class="header-link" href="#%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0-related"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Возвращает коллекцию страниц, связанных с данной.</p>
 <pre><code>{{ $related := .Site.RegularPages.Related . }}
-</code></pre><h4 id="relatedindices-page-indice1-indice2-">.RelatedIndices PAGE INDICE1 [INDICE2 &hellip;] <a class="header-link" href="#relatedindices-page-indice1-indice2-"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Returns a collection of pages related to a given one restricted to a list of indices.</p>
+</code></pre><h4 id="relatedindices-страница-indice1-indice2-">.RelatedIndices СТРАНИЦА INDICE1 [INDICE2 &hellip;] <a class="header-link" href="#relatedindices-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0-indice1-indice2-"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Возвращает коллекцию страниц, связанных с заданной страницей, ограниченной списком индексов.</p>
 <pre><code>{{ $related := .Site.RegularPages.RelatedIndices . &quot;tags&quot; &quot;date&quot; }}
 </code></pre><h4 id="relatedto-keyvals-keyvals2-">.RelatedTo KEYVALS [KEYVALS2 &hellip;] <a class="header-link" href="#relatedto-keyvals-keyvals2-"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Returns a collection of pages related together by a set of indices and their match.</p>
-<p>In order to build those set and pass them as argument, one must use the <code>keyVals</code> function where the first argument would be the <code>indice</code> and the consecutive ones its potential <code>matches</code>.</p>
+<p>Возвращает коллекцию страниц, связанных вместе набором индексов и их совпадением.</p>
+<p>Чтобы построить этот набор и передать их в качестве аргумента, нужно использовать функцию <code>keyVals</code>, где первым аргументом будет <code>indice</code>, а последующие - его потенциальные совпадения <code>matches</code>.</p>
 <pre><code>{{ $related := .Site.RegularPages.RelatedTo ( keyVals &quot;tags&quot; &quot;hugo&quot; &quot;rocks&quot;)  ( keyVals &quot;date&quot; .Date ) }}
 </code></pre>
 <aside class="admonition note">
@@ -362,14 +362,14 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>Read <a href="https://regisphilibert.com/blog/2018/04/hugo-optmized-relashionships-with-related-content/">this blog article</a> for a great explanation of more advanced usage of this feature.</p>
+	<div class="admonition-content"><p>Прочтите <a href="https://regisphilibert.com/blog/2018/04/hugo-optmized-relashionships-with-related-content/">эту статью в блоге</a> для подробного объяснения более сложного использования этой функции.</p>
 </div>
 </aside>
 
-<h2 id="configure-related-content">Configure Related Content <a class="header-link" href="#configure-related-content"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo provides a sensible default configuration of Related Content, but you can fine-tune this in your configuration, on the global or language level if needed.</p>
-<h3 id="default-configuration">Default configuration <a class="header-link" href="#default-configuration"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Without any <code>related</code> configuration set on the project, Hugo&rsquo;s Related Content methods will use the following.</p>
+<h2 id="настроить-связанный-контент">Настроить связанный контент <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d1%8c-%d1%81%d0%b2%d1%8f%d0%b7%d0%b0%d0%bd%d0%bd%d1%8b%d0%b9-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Hugo предоставляет разумную конфигурацию связанного содержимого по умолчанию, но Вы можете настроить ее в своей конфигурации на глобальном или языковом уровне, если это необходимо.</p>
+<h3 id="конфигурация-по-умолчанию">Конфигурация по умолчанию <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d0%bf%d0%be-%d1%83%d0%bc%d0%be%d0%bb%d1%87%d0%b0%d0%bd%d0%b8%d1%8e"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Без какой-либо <code>related</code> конфигурации, установленной в проекте, методы связанного содержимого Hugo будут использовать следующее.</p>
 
 
 
@@ -456,8 +456,8 @@
 
 </div>
 
-<p>Note that if you have configured <code>tags</code> as a taxonomy, <code>tags</code> will also be added to the default configuration abve with the weight of <code>80</code>.</p>
-<p>Custom configuration should be set using the same syntax.</p>
+<p>Обратите внимание, что если Вы настроили теги <code>tags</code> в качестве таксономии, теги <code>tags</code> также будут добавлены в конфигурацию по умолчанию с весом <code>80</code>.</p>
+<p>Пользовательская конфигурация должна быть установлена с использованием того же синтаксиса.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -465,41 +465,41 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>If you add a <code>related</code> config section, you need to add a complete configuration. It is not possible to just set, say, <code>includeNewer</code> and use the rest  from the Hugo defaults.</p>
+	<div class="admonition-content"><p>Если Вы добавляете раздел конфигурации <code>related</code>, Вам необходимо добавить полную конфигурацию. Невозможно просто установить, скажем, <code>includeNewer</code> и использовать остальное из значений по умолчанию для Hugo.</p>
 </div>
 </aside>
 
-<h3 id="top-level-config-options">Top Level Config Options <a class="header-link" href="#top-level-config-options"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="параметры-конфигурации-верхнего-уровня">Параметры конфигурации верхнего уровня <a class="header-link" href="#%d0%bf%d0%b0%d1%80%d0%b0%d0%bc%d0%b5%d1%82%d1%80%d1%8b-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8-%d0%b2%d0%b5%d1%80%d1%85%d0%bd%d0%b5%d0%b3%d0%be-%d1%83%d1%80%d0%be%d0%b2%d0%bd%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <dl>
 <dt>threshold</dt>
-<dd>A value between 0-100. Lower value will give more, but maybe not so relevant, matches.</dd>
+<dd>Значение от 0 до 100. Меньшее значение даст больше совпадений, но, возможно, не столь актуальных.</dd>
 <dt>includeNewer</dt>
-<dd>Set to true to include <strong>pages newer than the current page</strong> in the related content listing. This will mean that the output for older posts may change as new related content gets added.</dd>
+<dd>Установите значение <code>true</code>, чтобы включить <strong>страницы более новые, чем текущая страница</strong>, в список связанного содержимого. Это будет означать, что вывод для старых сообщений может измениться по мере добавления нового связанного контента.</dd>
 <dt>toLower</dt>
-<dd>Set to true to lower case keywords in both the indexes and the queries. This may give more accurate results at a slight performance penalty. Note that this can also be set per index.</dd>
+<dd>Установите значение <code>true</code> для ключевых слов в нижнем регистре как в индексах, так и в запросах. Это может дать более точные результаты при небольшом снижении производительности. Обратите внимание, что это также можно установить для каждого индекса.</dd>
 </dl>
-<h3 id="config-options-per-index">Config Options per Index <a class="header-link" href="#config-options-per-index"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="параметры-конфигурации-по-индексу">Параметры конфигурации по индексу <a class="header-link" href="#%d0%bf%d0%b0%d1%80%d0%b0%d0%bc%d0%b5%d1%82%d1%80%d1%8b-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8-%d0%bf%d0%be-%d0%b8%d0%bd%d0%b4%d0%b5%d0%ba%d1%81%d1%83"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <dl>
 <dt>name</dt>
-<dd>The index name. This value maps directly to a page param. Hugo supports string values (<code>author</code> in the example) and lists (<code>tags</code>, <code>keywords</code> etc.) and time and date objects.</dd>
+<dd>Имя индекса. Это значение отображается непосредственно на параметр страницы. Hugo поддерживает строковые значения (в примере <code>author</code>) и списки (<code>tags</code>, <code>keywords</code> и т.д.) и объекты времени и даты.</dd>
 <dt>weight</dt>
-<dd>An integer weight that indicates <em>how important</em> this parameter is relative to the other parameters.  It can be 0, which has the effect of turning this index off, or even negative. Test with different values to see what fits your content best.</dd>
+<dd>Целочисленный вес, который указывает <em>насколько важен</em> этот параметр по сравнению с другими параметрами. Это может быть 0, что означает отключение этого индекса, или даже отрицательное значение. Попробуйте использовать разные значения, чтобы узнать, что лучше всего подходит для Вашего контента.</dd>
 <dt>pattern</dt>
-<dd>This is currently only relevant for dates. When listing related content, we may want to list content that is also close in time. Setting &ldquo;2006&rdquo; (default value for date indexes) as the pattern for a date index will add weight to pages published in the same year. For busier blogs, &ldquo;200601&rdquo; (year and month) may be a better default.</dd>
+<dd>В настоящее время это актуально только для дат. При перечислении связанного контента мы можем захотеть перечислить контент, который также близок по времени. Установка «2006» (значение по умолчанию для индексов даты) в качестве шаблона для индекса даты добавит веса страницам, опубликованным в том же году. Для более загруженных блогов лучшим вариантом по умолчанию может быть «200601» (год и месяц).</dd>
 <dt>toLower</dt>
-<dd>See above.</dd>
+<dd>Смотрите выше.</dd>
 </dl>
-<h2 id="performance-considerations">Performance Considerations <a class="header-link" href="#performance-considerations"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p><strong>Fast is Hugo&rsquo;s middle name</strong> and we would not have released this feature had it not been blistering fast.</p>
-<p>This feature has been in the back log and requested by many for a long time. The development got this recent kick start from this Twitter thread:</p>
+<h2 id="соображения-производительности">Соображения производительности <a class="header-link" href="#%d1%81%d0%be%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%b2%d0%be%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p><strong>Быстрота - это второе имя Хьюго</strong>, и мы бы не выпустили эту функцию, если бы она не была быстрой.</p>
+<p>Эта функция была в резервном журнале и многие давно просили ее. Эта недавняя разработка началась с этой ветки в Twitter:</p>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Holy smokes! Build time dropped to 1.2 seconds!</p>&mdash; Scott S. Lowe (@scott_lowe) <a href="https://twitter.com/scott_lowe/status/898398437527363585?ref_src=twsrc%5Etfw">August 18, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>Scott S. Lowe removed the &ldquo;Related Content&rdquo; section built using the <code>intersect</code> template function on tags, and the build time dropped from 30 seconds to less than 2 seconds on his 1700 content page sized blog.</p>
-<p>He should now be able to add an improved version of that &ldquo;Related Content&rdquo; section without giving up the fast live-reloads. But it&rsquo;s worth noting that:</p>
+<p>Скотт С. Лоу удалил раздел «Связанное содержимое», созданный с помощью функции шаблона <code>intersect</code> для тегов, и время сборки упало с 30 до менее 2 секунд в его блоге размером 1700 страниц с контентом.</p>
+<p>Теперь он должен иметь возможность добавить улучшенную версию раздела «Связанное содержимое», не отказываясь от быстрой перезагрузки в реальном времени. Но стоит отметить, что:</p>
 <ul>
-<li>If you don&rsquo;t use any of the <code>Related</code> methods, you will not use the Relate Content feature, and performance will be the same as before.</li>
-<li>Calling <code>.RegularPages.Related</code> etc. will create one inverted index, also sometimes named posting list, that will be reused for any lookups in that same page collection. Doing that in addition to, as an example, calling <code>.Pages.Related</code> will work as expected, but will create one additional inverted index. This should still be very fast, but worth having in mind, especially for bigger sites.</li>
+<li>Если Вы не используете какой-либо из <code>Related</code> методов, Вы не будете использовать функцию «Связать контент», и производительность будет такой же, как и раньше.</li>
+<li>Вызов <code>.RegularPages.Related</code> и т.д. создаст один инвертированный индекс, также иногда называемый списком публикаций, который будет повторно использоваться для любых поисков в той же самой коллекции страниц. Выполнение этого в дополнение к, например, вызову <code>.Pages.Related</code> будет работать, как ожидалось, но создаст один дополнительный инвертированный индекс. Это все равно должно быть очень быстро, но о нем стоит помнить, особенно для крупных сайтов.</li>
 </ul>
 
 <aside class="admonition note">
@@ -508,7 +508,7 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>We currently do not index <strong>Page content</strong>. We thought we would release something that will make most people happy before we start solving <a href="https://github.com/joearms/sherlock">Sherlock&rsquo;s last case</a>.</p>
+	<div class="admonition-content"><p>В настоящее время мы не индексируем <strong>содержимое страницы</strong>. Мы думали, что выпустим что-то, что порадует большинство людей, прежде чем мы начнем решать <a href="https://github.com/joearms/sherlock">последнее дело Шерлока</a>.</p>
 </div>
 </aside>
 
@@ -520,15 +520,15 @@
 <h2>Смотрите также</h2>
 <ul>
 	
-	<li><a href="/content-management/comments/">Comments</a></li>
-	
-	<li><a href="/content-management/organization/">Content Organization</a></li>
-	
-	<li><a href="/content-management/shortcodes/">Shortcodes</a></li>
-	
 	<li><a href="/functions/markdownify/">markdownify</a></li>
 	
-	<li><a href="/content-management/build-options/">Build Options</a></li>
+	<li><a href="/content-management/comments/">Комментарии</a></li>
+	
+	<li><a href="/content-management/organization/">Организация контента</a></li>
+	
+	<li><a href="/content-management/shortcodes/">Шорткоды</a></li>
+	
+	<li><a href="/content-management/build-options/">Параметры сборки</a></li>
 	
 </ul>
 
@@ -649,26 +649,26 @@
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -677,93 +677,88 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -1853,8 +1848,8 @@
   <a href="https://gohugo.ru/content-management/related/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Related Content”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Связанный контент”
+  </a> последнее обновление: December 28, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/295a8fcfc04b6aa4bf4e2045895e2e737108fa5a">Перевод части content-management (295a8fcfc)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5crelated.md" class="
@@ -2032,7 +2027,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

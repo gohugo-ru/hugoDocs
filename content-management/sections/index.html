@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Content Sections | Hugo</title>
+  <title>Разделы контента | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Content Sections" />
-<meta property="og:description" content="Hugo generates a **section tree** that matches your content." />
+<meta property="og:title" content="Разделы контента" />
+<meta property="og:description" content="Хьюго создает **дерево разделов**, соответствующее Вашему контенту." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/sections/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Content Sections">
-<meta itemprop="description" content="Hugo generates a **section tree** that matches your content.">
+<meta property="article:modified_time" content="2020-12-28T14:14:51+03:00" />
+<meta itemprop="name" content="Разделы контента">
+<meta itemprop="description" content="Хьюго создает **дерево разделов**, соответствующее Вашему контенту.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="456">
+<meta itemprop="dateModified" content="2020-12-28T14:14:51+03:00" />
+<meta itemprop="wordCount" content="429">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Content Sections"/>
-<meta name="twitter:description" content="Hugo generates a **section tree** that matches your content."/>
+<meta name="twitter:title" content="Разделы контента"/>
+<meta name="twitter:description" content="Хьюго создает **дерево разделов**, соответствующее Вашему контенту."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,18 +238,18 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#nested-sections">Nested Sections</a></li>
-    <li><a href="#example-breadcrumb-navigation">Example: Breadcrumb Navigation</a></li>
-    <li><a href="#section-page-variables-and-methods">Section Page Variables and Methods</a></li>
-    <li><a href="#content-section-lists">Content Section Lists</a></li>
-    <li><a href="#content-section-vs-content-type">Content <em>Section</em> vs Content <em>Type</em></a></li>
+    <li><a href="#вложенные-разделы">Вложенные разделы</a></li>
+    <li><a href="#пример-навигация-по-хлебным-крошкам">Пример: Навигация по хлебным крошкам</a></li>
+    <li><a href="#переменные-и-методы-страницы-раздела">Переменные и методы страницы раздела</a></li>
+    <li><a href="#списки-разделов-контента">Списки разделов контента</a></li>
+    <li><a href="#контент-раздел-vs-контент-тип">Контент <em>Раздел</em> vs Контент <em>Тип</em></a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/shortcodes/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Shortcodes ">
+			<a href="https://gohugo.ru/content-management/shortcodes/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Шорткоды ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -259,7 +259,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/types/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Content Types">
+			<a href="https://gohugo.ru/content-management/types/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Типы контента">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -284,13 +284,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Content Sections</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Разделы контента</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Hugo generates a <strong>section tree</strong> that matches your content.
+      Хьюго создает <strong>дерево разделов</strong>, соответствующее Вашему контенту.
     </div>
   
 
@@ -301,13 +301,9 @@
 
 <div class="prose" id="prose">
 
-<p>A <strong>Section</strong> is a collection of pages that gets defined based on the
-organization structure under the <code>content/</code> directory.</p>
-<p>By default, all the <strong>first-level</strong> directories under <code>content/</code> form their own
-sections (<strong>root sections</strong>).</p>
-<p>If a user needs to define a section <code>foo</code> at a deeper level, they need to create
-a directory named <code>foo</code> with an <code>_index.md</code> file (see <a href="/content-management/page-bundles/#branch-bundles">Branch Bundles</a>
-for more information).</p>
+<p><strong>Раздел</strong> - это набор страниц, который определяется на основе организационной структуры в каталоге <code>content/</code>.</p>
+<p>По умолчанию все <strong>каталоги первого уровня</strong> в разделе <code>content/</code> образуют свои собственные разделы (<strong>корневые разделы</strong>).</p>
+<p>Если пользователю необходимо определить раздел <code>foo</code> на более глубоком уровне, ему нужно создать каталог с именем <code>foo</code> с файлом <code>_index.md</code> (смотрите <a href="/content-management/page-bundles/#branch-bundles">связки веток</a> для получения дополнительной информации).</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -315,13 +311,12 @@ for more information).</p>
 	</div>
 	
 	
-	<div class="admonition-content"><p>A <strong>section</strong> cannot be defined or overridden by a front matter parameter &ndash; it
-is strictly derived from the content organization structure.</p>
+	<div class="admonition-content"><p><strong>Раздел</strong> не может быть определен или переопределен параметром первичного сообщения &mdash; он строго определяется структурой организации контента.</p>
 </div>
 </aside>
 
-<h2 id="nested-sections">Nested Sections <a class="header-link" href="#nested-sections"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The sections can be nested as deeply as you need.</p>
+<h2 id="вложенные-разделы">Вложенные разделы <a class="header-link" href="#%d0%b2%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Разделы могут быть вложены настолько глубоко, насколько Вам нужно.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">content
 └── blog        &lt;-- Section, because first-level dir under content/
     ├── funny-cats
@@ -330,7 +325,7 @@ is strictly derived from the content organization structure.</p>
     │       └── _index.md
     └── tech                &lt;-- Section, because contains _index.md
         └── _index.md
-</code></pre></div><p><strong>The important part to understand is, that to make the section tree fully navigational, at least the lower-most section needs a content file. (e.g. <code>_index.md</code>).</strong></p>
+</code></pre></div><p><strong>Важно понимать, что для того, чтобы дерево разделов было полностью навигационным, по крайней мере, для самого нижнего раздела требуется файл содержимого. (например, <code>_index.md</code>).</strong></p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -338,14 +333,13 @@ is strictly derived from the content organization structure.</p>
 	</div>
 	
 	
-	<div class="admonition-content"><p>When we talk about a <strong>section</strong> in correlation with template selection, it is
-currently always the <em>root section</em> only (<code>/blog/funny-cats/mypost/ =&gt; blog</code>).</p>
-<p>If you need a specific template for a sub-section, you need to adjust either the <code>type</code> or <code>layout</code> in front matter.</p>
+	<div class="admonition-content"><p>Когда мы говорим о <strong>разделе</strong> в корреляции с выбором шаблона, в настоящее время это всегда только <em>корневой раздел</em> (<code>/blog/funny-cats/mypost/ =&gt; blog</code>).</p>
+<p>Если Вам нужен конкретный шаблон для подраздела, Вам нужно настроить либо <code>type</code>, либо <code>layout</code> во front matter.</p>
 </div>
 </aside>
 
-<h2 id="example-breadcrumb-navigation">Example: Breadcrumb Navigation <a class="header-link" href="#example-breadcrumb-navigation"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>With the available <a href="#section-page-variables-and-methods">section variables and methods</a> you can build powerful navigation. One common example would be a partial to show Breadcrumb navigation:</p>
+<h2 id="пример-навигация-по-хлебным-крошкам">Пример: Навигация по хлебным крошкам <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%bd%d0%b0%d0%b2%d0%b8%d0%b3%d0%b0%d1%86%d0%b8%d1%8f-%d0%bf%d0%be-%d1%85%d0%bb%d0%b5%d0%b1%d0%bd%d1%8b%d0%bc-%d0%ba%d1%80%d0%be%d1%88%d0%ba%d0%b0%d0%bc"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>С помощью доступных <a href="#section-page-variables-and-methods">переменных и методов раздела</a> Вы можете создать мощную навигацию. Одним из распространенных примеров может быть частичное отображение навигации хлебных крошек:</p>
 
 
 
@@ -381,8 +375,8 @@ currently always the <em>root section</em> only (<code>/blog/funny-cats/mypost/ 
 
 </div>
 
-<h2 id="section-page-variables-and-methods">Section Page Variables and Methods <a class="header-link" href="#section-page-variables-and-methods"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Also see <a href="/variables/page/">Page Variables</a>.</p>
+<h2 id="переменные-и-методы-страницы-раздела">Переменные и методы страницы раздела <a class="header-link" href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d0%b8-%d0%bc%d0%b5%d1%82%d0%be%d0%b4%d1%8b-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Смотрите также <a href="/variables/page/">переменные страницы</a>.</p>
 <dl>
 <dt>.CurrentSection</dt>
 <dd>The page&rsquo;s current section. The value can be the page itself if it is a section or the homepage.</dd>
@@ -402,10 +396,10 @@ currently always the <em>root section</em> only (<code>/blog/funny-cats/mypost/ 
 <dd>The <a href="/content-management/sections/">sections</a> below this content.</dd>
 </dl>
 
-<h2 id="content-section-lists">Content Section Lists <a class="header-link" href="#content-section-lists"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo will automatically create pages for each <em>root section</em> that list all of the content in that section. See the documentation on <a href="/templates/section-templates/">section templates</a> for details on customizing the way these pages are rendered.</p>
-<h2 id="content-section-vs-content-type">Content <em>Section</em> vs Content <em>Type</em> <a class="header-link" href="#content-section-vs-content-type"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>By default, everything created within a section will use the <a href="/content-management/types/">content <code>type</code></a> that matches the <em>root section</em> name. For example, Hugo will assume that <code>posts/post-1.md</code> has a <code>posts</code> content <code>type</code>. If you are using an <a href="/content-management/archetypes/">archetype</a> for your <code>posts</code> section, Hugo will generate front matter according to what it finds in <code>archetypes/posts.md</code>.</p>
+<h2 id="списки-разделов-контента">Списки разделов контента <a class="header-link" href="#%d1%81%d0%bf%d0%b8%d1%81%d0%ba%d0%b8-%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%d0%be%d0%b2-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Hugo автоматически создаст страницы для каждого <em>корневого раздела</em>, на котором будет перечислено все содержимое этого раздела. Смотрите документацию по <a href="/templates/section-templates/">шаблонам раздела</a> для получения подробной информации о настройке способа отображения этих страниц.</p>
+<h2 id="контент-раздел-vs-контент-тип">Контент <em>Раздел</em> vs Контент <em>Тип</em> <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82-%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb-vs-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82-%d1%82%d0%b8%d0%bf"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>По умолчанию все, что создано в разделе, будет использовать <a href="/content-management/types/">контент <code>type</code></a>, который соответствует имени <em>корневого раздела</em>. Например, Хьюго предположит, что <code>posts/post-1.md</code> имеет контент <code>posts</code> типа <code>type</code>. Если Вы используете <a href="/content-management/archetypes/">архитипы</a> для своего раздела <code>posts</code>, Hugo сгенерирует главный материал в соответствии с тем, что он находит в <code>archetypes/posts.md</code>.</p>
 
 </div>
 
@@ -414,15 +408,15 @@ currently always the <em>root section</em> only (<code>/blog/funny-cats/mypost/ 
 <h2>Смотрите также</h2>
 <ul>
 	
-	<li><a href="/content-management/types/">Content Types</a></li>
+	<li><a href="/content-management/types/">Типы контента</a></li>
 	
 	<li><a href="/functions/getpage/">.GetPage</a></li>
 	
-	<li><a href="/content-management/comments/">Comments</a></li>
-	
-	<li><a href="/content-management/organization/">Content Organization</a></li>
-	
 	<li><a href="/templates/lists/">Lists of Content in Hugo</a></li>
+	
+	<li><a href="/templates/menu-templates/">Menu Templates</a></li>
+	
+	<li><a href="/templates/pagination/">Pagination</a></li>
 	
 </ul>
 
@@ -543,26 +537,26 @@ currently always the <em>root section</em> only (<code>/blog/funny-cats/mypost/ 
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -571,93 +565,88 @@ currently always the <em>root section</em> only (<code>/blog/funny-cats/mypost/ 
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -1747,8 +1736,8 @@ currently always the <em>root section</em> only (<code>/blog/funny-cats/mypost/ 
   <a href="https://gohugo.ru/content-management/sections/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Content Sections”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Разделы контента”
+  </a> последнее обновление: December 28, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/295a8fcfc04b6aa4bf4e2045895e2e737108fa5a">Перевод части content-management (295a8fcfc)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5csections.md" class="
@@ -1926,7 +1915,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

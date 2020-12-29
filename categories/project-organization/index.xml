@@ -8,14 +8,15 @@
     <language>ru-ru</language>
     <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.ru/categories/project-organization/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Comments</title>
+      <title>Комментарии</title>
       <link>https://gohugo.ru/content-management/comments/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/content-management/comments/</guid>
-      <description>Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to websites via JavaScript.
-Your theme may already support Disqus, but if not, it is easy to add to your templates via Hugo&amp;rsquo;s built-in Disqus partial.
-Add Disqus Hugo comes with all the code you need to load Disqus into your templates. Before adding Disqus to your site, you&amp;rsquo;ll need to set up an account.</description>
+      <description>Hugo поставляется с поддержкой Disqus, сторонней службы, которая предоставляет веб-сайты возможность комментирования и сообщества через JavaScript.
+Ваша тема может уже поддерживать Disqus, но если нет, ее легко добавить в Ваши шаблоны с помощью Частично встроенный Disqus в Хьюго.
+Добавить Disqus Hugo поставляется со всем кодом, необходимым для загрузки Disqus в Ваши шаблоны. Перед добавлением Disqus на свой сайт Вам необходимо создать учетную запись.
+Настроить Disqus Комментарии Disqus требуют, чтобы Вы установили одно значение в файл конфигурации сайта, например:</description>
     </item>
     
   </channel>

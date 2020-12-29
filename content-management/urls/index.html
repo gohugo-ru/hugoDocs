@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>URL Management | Hugo</title>
+  <title>Управление URL-адресами | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="URL Management" />
-<meta property="og:description" content="Hugo supports permalinks, aliases, link canonicalization, and multiple options for handling relative vs absolute URLs." />
+<meta property="og:title" content="Управление URL-адресами" />
+<meta property="og:description" content="Hugo поддерживает постоянные ссылки, псевдонимы, канонизацию ссылок и несколько вариантов обработки относительных и абсолютных URL-адресов." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/urls/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="URL Management">
-<meta itemprop="description" content="Hugo supports permalinks, aliases, link canonicalization, and multiple options for handling relative vs absolute URLs.">
+<meta property="article:modified_time" content="2020-12-28T17:50:36+03:00" />
+<meta itemprop="name" content="Управление URL-адресами">
+<meta itemprop="description" content="Hugo поддерживает постоянные ссылки, псевдонимы, канонизацию ссылок и несколько вариантов обработки относительных и абсолютных URL-адресов.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="1611">
+<meta itemprop="dateModified" content="2020-12-28T17:50:36+03:00" />
+<meta itemprop="wordCount" content="1456">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="URL Management"/>
-<meta name="twitter:description" content="Hugo supports permalinks, aliases, link canonicalization, and multiple options for handling relative vs absolute URLs."/>
+<meta name="twitter:title" content="Управление URL-адресами"/>
+<meta name="twitter:description" content="Hugo поддерживает постоянные ссылки, псевдонимы, канонизацию ссылок и несколько вариантов обработки относительных и абсолютных URL-адресов."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,33 +238,33 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#permalinks">Permalinks</a>
+    <li><a href="#постоянные-ссылки">Постоянные ссылки</a>
       <ul>
-        <li><a href="#permalinks-configuration-example">Permalinks Configuration Example</a></li>
-        <li><a href="#permalink-configuration-values">Permalink Configuration Values</a></li>
+        <li><a href="#пример-конфигурации-постоянных-ссылок">Пример конфигурации постоянных ссылок</a></li>
+        <li><a href="#значения-конфигурации-постоянной-ссылки">Значения конфигурации постоянной ссылки</a></li>
       </ul>
     </li>
-    <li><a href="#aliases">Aliases</a>
+    <li><a href="#псевдонимы">Псевдонимы</a>
       <ul>
-        <li><a href="#example-aliases">Example: Aliases</a></li>
-        <li><a href="#example-aliases-in-multilingual">Example: Aliases in Multilingual</a></li>
-        <li><a href="#how-hugo-aliases-work">How Hugo Aliases Work</a></li>
-        <li><a href="#customize">Customize</a></li>
-        <li><a href="#important-behaviors-of-aliases">Important Behaviors of Aliases</a></li>
+        <li><a href="#пример-псевдонимы">Пример: Псевдонимы</a></li>
+        <li><a href="#пример-псевдонимы-в-многоязычности">Пример: псевдонимы в многоязычности</a></li>
+        <li><a href="#как-работают-псевдонимы-хьюго">Как работают псевдонимы Хьюго</a></li>
+        <li><a href="#кастомизация">Кастомизация</a></li>
+        <li><a href="#важное-поведение-псевдонимов">Важное поведение псевдонимов</a></li>
       </ul>
     </li>
-    <li><a href="#pretty-urls">Pretty URLs</a></li>
-    <li><a href="#ugly-urls">Ugly URLs</a></li>
-    <li><a href="#canonicalization">Canonicalization</a></li>
-    <li><a href="#set-url-in-front-matter">Set URL in Front Matter</a></li>
-    <li><a href="#relative-urls">Relative URLs</a></li>
+    <li><a href="#красивые-url-адреса">Красивые URL-адреса</a></li>
+    <li><a href="#уродливые-url-адреса">Уродливые URL-адреса</a></li>
+    <li><a href="#канонизация">Канонизация</a></li>
+    <li><a href="#установка-url-адреса-в-front-matter">Установка URL-адреса в Front Matter</a></li>
+    <li><a href="#относительные-url-адреса">Относительные URL-адреса</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/cross-references/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Links and Cross References ">
+			<a href="https://gohugo.ru/content-management/cross-references/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Ссылки и перекрестные ссылки ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -274,7 +274,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/menus/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Menus">
+			<a href="https://gohugo.ru/content-management/menus/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Меню">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -299,13 +299,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">URL Management</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Управление URL-адресами</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Hugo supports permalinks, aliases, link canonicalization, and multiple options for handling relative vs absolute URLs.
+      Hugo поддерживает постоянные ссылки, псевдонимы, канонизацию ссылок и несколько вариантов обработки относительных и абсолютных URL-адресов.
     </div>
   
 
@@ -316,9 +316,9 @@
 
 <div class="prose" id="prose">
 
-<h2 id="permalinks">Permalinks <a class="header-link" href="#permalinks"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The default Hugo target directory for your built website is <code>public/</code>. However, you can change this value by specifying a different <code>publishDir</code> in your <a href="/getting-started/configuration/">site configuration</a>. The directories created at build time for a section reflect the position of the content&rsquo;s directory within the <code>content</code> folder and namespace matching its layout within the <code>contentdir</code> hierarchy.</p>
-<p>The <code>permalinks</code> option in your <a href="/getting-started/configuration/">site configuration</a> allows you to adjust the directory paths (i.e., the URLs) on a per-section basis. This will change where the files are written to and will change the page&rsquo;s internal &ldquo;canonical&rdquo; location, such that template references to <code>.RelPermalink</code> will honor the adjustments made as a result of the mappings in this option.</p>
+<h2 id="постоянные-ссылки">Постоянные ссылки <a class="header-link" href="#%d0%bf%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%bd%d1%8b%d0%b5-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>По умолчанию целевой каталог Hugo для Вашего созданного веб-сайта - <code>public/</code>. Однако Вы можете изменить это значение, указав другой <code>publishDir</code> в Вашей <a href="/getting-started/configuration/">конфигурации сайта</a>. Каталоги, созданные во время сборки для раздела, отражают положение каталога содержимого в папке <code>content</code> и пространство имен, соответствующее его макету в иерархии <code>contentdir</code>.</p>
+<p>Параметр <code>permalinks</code> в Вашей <a href="/getting-started/configuration/">конфигурации сайта</a> позволяет Вам настраивать пути к каталогам (то есть URL-адреса) для каждого раздела. Это изменит место записи файлов и изменит внутреннее «каноническое» расположение страницы, так что ссылки шаблона на <code>.RelPermalink</code> будут учитывать корректировки, сделанные в результате сопоставлений в этой опции.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -326,12 +326,12 @@
 	</div>
 	
 	
-	<div class="admonition-content"><p>These examples use the default values for <code>publishDir</code> and <code>contentDir</code>; i.e., <code>public</code> and <code>content</code>, respectively. You can override the default values in your <a href="/getting-started/configuration/">site&rsquo;s <code>config</code> file</a>.</p>
+	<div class="admonition-content"><p>В этих примерах используются значения по умолчанию для <code>publishDir</code> и <code>contentDir</code>; т.е. <code>public</code> и <code>content</code>, соответственно. Вы можете переопределить значения по умолчанию в Вашем [файле <code>config</code> Вашего сайта]](/getting-started/configuration/).</p>
 </div>
 </aside>
 
-<p>For example, if one of your <a href="/content-management/sections/">sections</a> is called <code>posts</code> and you want to adjust the canonical path to be hierarchical based on the year, month, and post title, you could set up the following configurations in YAML and TOML, respectively.</p>
-<h3 id="permalinks-configuration-example">Permalinks Configuration Example <a class="header-link" href="#permalinks-configuration-example"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Например, если один из Ваших <a href="/content-management/sections/">разделов</a> вызывает <code>posts</code> и Вы хотите настроить канонический путь так, чтобы он был иерархическим на основе года, месяца и заголовка публикации, Вы можете настроить следующие конфигурации в YAML и TOML соответственно.</p>
+<h3 id="пример-конфигурации-постоянных-ссылок">Пример конфигурации постоянных ссылок <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8-%d0%bf%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%bd%d1%8b%d1%85-%d1%81%d1%81%d1%8b%d0%bb%d0%be%d0%ba"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 
 
 
@@ -377,8 +377,8 @@
 
 </div>
 
-<p>Only the content under <code>posts/</code> will have the new URL structure. For example, the file <code>content/posts/sample-entry.md</code> with <code>date: 2017-02-27T19:20:00-05:00</code> in its front matter will render to <code>public/2017/02/sample-entry/index.html</code> at build time and therefore be reachable at <code>https://example.com/2017/02/sample-entry/</code>.</p>
-<p>To configure the <code>permalinks</code> option for pages in the &ldquo;root&rdquo; section, use <strong>/</strong> as the key:</p>
+<p>Только контент в <code>posts/</code> будет иметь новую структуру URL-адреса. Например, файл <code>content/posts/sample-entry.md</code> с <code>date: 2017-02-27T19:20:00-05:00</code> в front matter будет отображаться как <code>public/2017/02/sample-entry/index.html</code> во время сборки и, следовательно, доступен по адресу <code>https://example.com/2017/02/sample-entry/</code>.</p>
+<p>Чтобы настроить параметр <code>permalinks</code> для страниц в «корневом» разделе, используйте <strong>/</strong> в качестве ключа:</p>
 
 
 
@@ -424,7 +424,7 @@
 
 </div>
 
-<p>If the standard date-based permalink configuration does not meet your needs, you can also format URL segments using <a href="https://golang.org/pkg/time/#Time.Format">Go time formatting directives</a>. For example, a URL structure with two digit years and month and day digits without zero padding can be accomplished with:</p>
+<p>Если стандартная конфигурация постоянной ссылки на основе даты не соответствует Вашим требованиям, Вы также можете отформатировать сегменты URL с помощью <a href="https://golang.org/pkg/time/#Time.Format">директив форматирования времени Go</a>. Например, структура URL-адреса с двумя цифрами года и месяца и дня без заполнения нулями может быть выполнена с помощью:</p>
 
 
 
@@ -470,45 +470,45 @@
 
 </div>
 
-<p>You can also configure permalinks of taxonomies with the same syntax, by using the plural form of the taxonomy instead of the section. You will probably only want to use the configuration values <code>:slug</code> or <code>:title</code>.</p>
-<h3 id="permalink-configuration-values">Permalink Configuration Values <a class="header-link" href="#permalink-configuration-values"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>The following is a list of values that can be used in a <code>permalink</code> definition in your site <code>config</code> file. All references to time are dependent on the content&rsquo;s date.</p>
+<p>Вы также можете настроить постоянные ссылки таксономий с тем же синтаксисом, используя форму множественного числа таксономии вместо раздела. Вероятно, Вы захотите использовать только значения конфигурации <code>:slug</code> или <code>:title</code>.</p>
+<h3 id="значения-конфигурации-постоянной-ссылки">Значения конфигурации постоянной ссылки <a class="header-link" href="#%d0%b7%d0%bd%d0%b0%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8-%d0%bf%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%bd%d0%be%d0%b9-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Ниже приводится список значений, которые можно использовать в определении <code>permalink</code> в файле конфигурации Вашего сайта <code>config</code>. Все ссылки на время зависят от даты содержания.</p>
 <dl>
 <dt><code>:year</code></dt>
-<dd>the 4-digit year</dd>
+<dd>4-значный год</dd>
 <dt><code>:month</code></dt>
-<dd>the 2-digit month</dd>
+<dd>2-значный месяц</dd>
 <dt><code>:monthname</code></dt>
-<dd>the name of the month</dd>
+<dd>название месяца</dd>
 <dt><code>:day</code></dt>
-<dd>the 2-digit day</dd>
+<dd>2-значный день</dd>
 <dt><code>:weekday</code></dt>
-<dd>the 1-digit day of the week (Sunday = 0)</dd>
+<dd>1-значный день недели (воскресенье = 0)</dd>
 <dt><code>:weekdayname</code></dt>
-<dd>the name of the day of the week</dd>
+<dd>название дня недели</dd>
 <dt><code>:yearday</code></dt>
-<dd>the 1- to 3-digit day of the year</dd>
+<dd>день года, состоящий из 1–3 цифр</dd>
 <dt><code>:section</code></dt>
-<dd>the content&rsquo;s section</dd>
+<dd>раздел содержимого</dd>
 <dt><code>:sections</code></dt>
-<dd>the content&rsquo;s sections hierarchy</dd>
+<dd>иерархия разделов контента</dd>
 <dt><code>:title</code></dt>
-<dd>the content&rsquo;s title</dd>
+<dd>заголовок контента</dd>
 <dt><code>:slug</code></dt>
-<dd>the content&rsquo;s slug (or title if no slug is provided in the front matter)</dd>
+<dd>заголовок контента (или заголовок, если заголовок не указан во вступительной части)</dd>
 <dt><code>:filename</code></dt>
-<dd>the content&rsquo;s filename (without extension)</dd>
+<dd>имя файла содержимого (без расширения)</dd>
 </dl>
-<p>Additionally, a Go time format string prefixed with <code>:</code> may be used.</p>
-<h2 id="aliases">Aliases <a class="header-link" href="#aliases"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Aliases can be used to create redirects to your page from other URLs.</p>
-<p>Aliases comes in two forms:</p>
+<p>Кроме того, может использоваться строка формата времени Go с префиксом <code>:</code>.</p>
+<h2 id="псевдонимы">Псевдонимы <a class="header-link" href="#%d0%bf%d1%81%d0%b5%d0%b2%d0%b4%d0%be%d0%bd%d0%b8%d0%bc%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Псевдонимы могут использоваться для создания перенаправлений на Вашу страницу с других URL-адресов.</p>
+<p>Псевдонимы бывают двух видов:</p>
 <ol>
-<li>Starting with a <code>/</code> meaning they are relative to the <code>BaseURL</code>, e.g. <code>/posts/my-blogpost/</code></li>
-<li>They are relative to the <code>Page</code> they&rsquo;re defined in, e.g. <code>my-blogpost</code> or even something like <code>../blog/my-blogpost</code> (new in Hugo 0.55).</li>
+<li>Начиная с <code>/</code>, они относятся к <code>BaseURL</code>, например: <code>/posts/my-blogpost/</code></li>
+<li>Они относятся к странице <code>Page</code>, в которой они определены, например: <code>my-blogpost</code> или даже что-то вроде <code>../blog/my-blogpost</code> (новое в Hugo 0.55).</li>
 </ol>
-<h3 id="example-aliases">Example: Aliases <a class="header-link" href="#example-aliases"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Let&rsquo;s assume you create a new piece of content at <code>content/posts/my-awesome-blog-post.md</code>. The content is a revision of your previous post at <code>content/posts/my-original-url.md</code>. You can create an <code>aliases</code> field in the front matter of your new <code>my-awesome-blog-post.md</code> where you can add previous paths. The following examples show how to create this field in TOML and YAML front matter, respectively.</p>
+<h3 id="пример-псевдонимы">Пример: Псевдонимы <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%bf%d1%81%d0%b5%d0%b2%d0%b4%d0%be%d0%bd%d0%b8%d0%bc%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Предположим, Вы создаете новый фрагмент контента по адресу <code>content/posts/my-awesome-blog-post.md</code>. Контент представляет собой отредактированный вариант Вашей предыдущей публикации по адресу <code>content/posts/my-original-url.md</code>. Вы можете создать поле <code>aliases</code> в начале Вашего нового <code>my-awesome-blog-post.md</code>, куда Вы можете добавить предыдущие пути. В следующих примерах показано, как создать это поле в материалах TOML и YAML соответственно.</p>
 <h4 id="toml-front-matter">TOML Front Matter <a class="header-link" href="#toml-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 
 
@@ -554,23 +554,23 @@ aliases:
 
 </div>
 
-<p>Now when you visit any of the locations specified in aliases&mdash;i.e., <em>assuming the same site domain</em>&mdash;you&rsquo;ll be redirected to the page they are specified on. For example, a visitor to <code>example.com/posts/my-original-url/</code> will be immediately redirected to <code>example.com/posts/my-awesome-post/</code>.</p>
-<h3 id="example-aliases-in-multilingual">Example: Aliases in Multilingual <a class="header-link" href="#example-aliases-in-multilingual"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>On <a href="/content-management/multilingual/">multilingual sites</a>, each translation of a post can have unique aliases. To use the same alias across multiple languages, prefix it with the language code.</p>
-<p>In <code>/posts/my-new-post.es.md</code>:</p>
+<p>Теперь, когда Вы посещаете любое из мест, указанных в псевдонимах &mdash; т.е. <em>при условии, что это тот же домен сайта</em> &mdash; Вы будете перенаправлены на страницу, на которой они указаны. Например, посетитель на <code>example.com/posts/my-original-url/</code> будет немедленно перенаправлен на <code>example.com/posts/my-awesome-post/</code>.</p>
+<h3 id="пример-псевдонимы-в-многоязычности">Пример: псевдонимы в многоязычности <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%bf%d1%81%d0%b5%d0%b2%d0%b4%d0%be%d0%bd%d0%b8%d0%bc%d1%8b-%d0%b2-%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d1%8f%d0%b7%d1%8b%d1%87%d0%bd%d0%be%d1%81%d1%82%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>На <a href="/content-management/multilingual/">многоязычных сайтах</a> каждый перевод сообщения может иметь уникальные псевдонимы. Чтобы использовать один и тот же псевдоним на нескольких языках, добавьте к нему код языка.</p>
+<p>В <code>/posts/my-new-post.es.md</code>:</p>
 <pre><code>---
 aliases:
     - /es/posts/my-original-post/
 ---
-</code></pre><p>From Hugo 0.55 you can also have page-relative aliases, so <code> /es/posts/my-original-post/</code> can be simplified to the more portable <code>my-original-post/</code></p>
-<h3 id="how-hugo-aliases-work">How Hugo Aliases Work <a class="header-link" href="#how-hugo-aliases-work"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>When aliases are specified, Hugo creates a directory to match the alias entry. Inside the directory, Hugo creates an <code>.html</code> file specifying the canonical URL for the page and the new redirect target.</p>
-<p>For example, a content file at <code>posts/my-intended-url.md</code> with the following in the front matter:</p>
+</code></pre><p>Начиная с Hugo 0.55 Вы также можете использовать псевдонимы, относящиеся к странице, поэтому <code>/es/posts/my-original-post/</code> можно упростить до более переносимого <code>my-original-post/</code></p>
+<h3 id="как-работают-псевдонимы-хьюго">Как работают псевдонимы Хьюго <a class="header-link" href="#%d0%ba%d0%b0%d0%ba-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%8e%d1%82-%d0%bf%d1%81%d0%b5%d0%b2%d0%b4%d0%be%d0%bd%d0%b8%d0%bc%d1%8b-%d1%85%d1%8c%d1%8e%d0%b3%d0%be"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Когда псевдонимы указаны, Хьюго создает каталог, соответствующий записи псевдонима. Внутри каталога Хьюго создает файл <code>.html</code>, определяющий канонический URL-адрес страницы и новую цель перенаправления.</p>
+<p>Например, файл содержимого по адресу <code>posts/my-intended-url.md</code> со следующим текстом в front matter:</p>
 <pre><code>---
 title: My New post
 aliases: [/posts/my-old-url/]
 ---
-</code></pre><p>Assuming a <code>baseURL</code> of <code>example.com</code>, the contents of the auto-generated alias <code>.html</code> found at <code>https://example.com/posts/my-old-url/</code> will contain the following:</p>
+</code></pre><p>Предполагая, что <code>baseURL</code> - это <code>example.com</code>, содержимое автоматически сгенерированного псевдонима <code>.html</code>, найденного по адресу <code>https://example.com/posts/my-old-url/</code>, будет содержать следующее:</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -581,34 +581,31 @@ aliases: [/posts/my-old-url/]
     &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; url=https://example.com/posts/my-intended-url&quot;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;
-</code></pre><p>The <code>http-equiv=&quot;refresh&quot;</code> line is what performs the redirect, in 0 seconds in this case. If an end user of your website goes to <code>https://example.com/posts/my-old-url</code>, they will now be automatically redirected to the newer, correct URL. The addition of <code>&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;</code> lets search engine bots know that they should not crawl and index your new alias page.</p>
-<h3 id="customize">Customize <a class="header-link" href="#customize"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You may customize this alias page by creating an <code>alias.html</code> template in the
-layouts folder of your site (i.e., <code>layouts/alias.html</code>). In this case, the data passed to the template is</p>
+</code></pre><p>Строка <code>http-equiv=&quot;refresh&quot;</code> - это то, что выполняет перенаправление, в данном случае за 0 секунд. Если конечный пользователь Вашего веб-сайта перейдет на <code>https://example.com/posts/my-old-url</code>, он будет автоматически перенаправлен на более новый правильный URL. Добавление <code>&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;</code> позволяет роботам поисковых систем знать, что они не должны сканировать и индексировать Вашу страницу с новым псевдонимом.</p>
+<h3 id="кастомизация">Кастомизация <a class="header-link" href="#%d0%ba%d0%b0%d1%81%d1%82%d0%be%d0%bc%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Вы можете настроить эту страницу псевдонима, создав шаблон <code>alias.html</code> в папке макетов вашего сайта (например, <code>layouts/alias.html</code>). В этом случае в шаблон передаются данные</p>
 <dl>
 <dt><code>Permalink</code></dt>
-<dd>the link to the page being aliased</dd>
+<dd>ссылка на страницу с псевдонимом</dd>
 <dt><code>Page</code></dt>
-<dd>the Page data for the page being aliased</dd>
+<dd>данные страницы для страницы с псевдонимом</dd>
 </dl>
-<h3 id="important-behaviors-of-aliases">Important Behaviors of Aliases <a class="header-link" href="#important-behaviors-of-aliases"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="важное-поведение-псевдонимов">Важное поведение псевдонимов <a class="header-link" href="#%d0%b2%d0%b0%d0%b6%d0%bd%d0%be%d0%b5-%d0%bf%d0%be%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d1%81%d0%b5%d0%b2%d0%b4%d0%be%d0%bd%d0%b8%d0%bc%d0%be%d0%b2"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <ol>
-<li>Hugo makes no assumptions about aliases. They also do not change based
-on your UglyURLs setting. You need to provide absolute paths to your web root
-and the complete filename or directory.</li>
-<li>Aliases are rendered <em>before</em> any content are rendered and therefore will be overwritten by any content with the same location.</li>
+<li>Хьюго не делает никаких предположений относительно псевдонимов. Они также не меняются в зависимости от Ваших настроек <code>UglyURL</code>. Вам необходимо указать абсолютные пути к корневому веб-каталогу и полное имя файла или каталог.</li>
+<li>Псевдонимы отображаются <em>до</em> отображения любого содержимого и поэтому будут перезаписаны любым содержимым с тем же расположением.</li>
 </ol>
-<h2 id="pretty-urls">Pretty URLs <a class="header-link" href="#pretty-urls"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo&rsquo;s default behavior is to render your content with &ldquo;pretty&rdquo; URLs. No non-standard server-side configuration is required for these pretty URLs to work.</p>
-<p>The following demonstrates the concept:</p>
+<h2 id="красивые-url-адреса">Красивые URL-адреса <a class="header-link" href="#%d0%ba%d1%80%d0%b0%d1%81%d0%b8%d0%b2%d1%8b%d0%b5-url-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>По умолчанию Hugo отображает Ваш контент с &ldquo;красивыми&rdquo; URL. Для работы этих красивых URL-адресов не требуется нестандартной конфигурации на стороне сервера.</p>
+<p>Следующее демонстрирует концепцию:</p>
 <pre><code>content/posts/_index.md
 =&gt; example.com/posts/index.html
 content/posts/post-1.md
 =&gt; example.com/posts/post-1/
-</code></pre><h2 id="ugly-urls">Ugly URLs <a class="header-link" href="#ugly-urls"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>If you would like to have what are often referred to as &ldquo;ugly URLs&rdquo; (e.g., example.com/urls.html), set <code>uglyurls = true</code> or <code>uglyurls: true</code> in your site&rsquo;s <code>config.toml</code> or <code>config.yaml</code>, respectively. You can also set the <code>HUGO_UGLYURLS</code> environment variable to <code>true</code> when running <code>hugo</code> or <code>hugo server</code>.</p>
-<p>If you want a specific piece of content to have an exact URL, you can specify this in the <a href="/content-management/front-matter/">front matter</a> under the <code>url</code> key. The following are examples of the same content directory and what the eventual URL structure will be when Hugo runs with its default behavior.</p>
-<p>See <a href="/content-management/organization/">Content Organization</a> for more details on paths.</p>
+</code></pre><h2 id="уродливые-url-адреса">Уродливые URL-адреса <a class="header-link" href="#%d1%83%d1%80%d0%be%d0%b4%d0%bb%d0%b8%d0%b2%d1%8b%d0%b5-url-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Если Вы хотите, чтобы у Вас были так называемые &ldquo;уродливые URL&rdquo; (например, example.com/urls.html), установите <code>uglyurls = true</code> или <code>uglyurls: true</code> в файле <code>config.toml</code> или <code>config.yaml</code> соответственно. Вы также можете установить для переменной окружения <code>HUGO_UGLYURLS</code> значение <code>true</code> при запуске <code>hugo</code> или <code>hugo server</code>.</p>
+<p>Если Вы хотите, чтобы конкретный фрагмент контента имел точный URL-адрес, Вы можете указать это в <a href="/content-management/front-matter/">front matter</a> под ключом <code>url</code>. Ниже приведены примеры того же каталога содержимого и того, какой будет конечная структура URL-адресов, когда Hugo будет работать со своим поведением по умолчанию.</p>
+<p>Смотрите <a href="/content-management/organization/">организацию контента</a> для получения более подробной информации о путях.</p>
 <pre><code>.
 └── content
     └── about
@@ -621,7 +618,7 @@ content/posts/post-1.md
     └── quote
         ├── first.md       // &lt;- https://example.com/quote/first/
         └── second.md      // &lt;- https://example.com/quote/second/
-</code></pre><p>Here&rsquo;s the same organization run with <code>hugo --uglyURLs</code>:</p>
+</code></pre><p>Вот та же организация, работающая с <code>hugo --uglyURLs</code>:</p>
 <pre><code>.
 └── content
     └── about
@@ -634,11 +631,11 @@ content/posts/post-1.md
     └── quote
         ├── first.md       // &lt;- https://example.com/quote/first.html
         └── second.md      // &lt;- https://example.com/quote/second.html
-</code></pre><h2 id="canonicalization">Canonicalization <a class="header-link" href="#canonicalization"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>By default, all relative URLs encountered in the input are left unmodified, e.g. <code>/css/foo.css</code> would stay as <code>/css/foo.css</code>. The <code>canonifyURLs</code> field in your site <code>config</code> has a default value of <code>false</code>.</p>
-<p>By setting <code>canonifyURLs</code> to <code>true</code>, all relative URLs would instead be <em>canonicalized</em> using <code>baseURL</code>.  For example, assuming you have <code>baseURL = https://example.com/</code>, the relative URL <code>/css/foo.css</code> would be turned into the absolute URL <code>https://example.com/css/foo.css</code>.</p>
-<p>Benefits of canonicalization include fixing all URLs to be absolute, which may aid with some parsing tasks. Note, however, that all modern browsers handle this on the client without issue.</p>
-<p>Benefits of non-canonicalization include being able to have scheme-relative resource inclusion; e.g., so that <code>http</code> vs <code>https</code> can be decided according to how the page was retrieved.</p>
+</code></pre><h2 id="канонизация">Канонизация <a class="header-link" href="#%d0%ba%d0%b0%d0%bd%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>По умолчанию все относительные URL-адреса, встречающиеся во входных данных, остаются неизменными, например: <code>/css/foo.css</code> останется как <code>/css/foo.css</code>. Поле <code>canonifyURLs</code> на Вашем сайте <code>config</code> имеет значение по умолчанию <code>false</code>.</p>
+<p>Если установить для <code>canonifyURLs</code> значение <code>true</code>, все относительные URL-адреса будут <em>канонизированы</em> с использованием <code>baseURL</code>. Например, если у Вас есть <code>baseURL = https://example.com/</code>, относительный URL-адрес <code>/css/foo.css</code> будет преобразован в абсолютный URL-адрес <code>https://example.com/css/foo.css</code>.</p>
+<p>Преимущества канонизации включают фиксацию всех URL-адресов как абсолютных, что может помочь в некоторых задачах синтаксического анализа. Обратите внимание, однако, что все современные браузеры без проблем справляются с этим на клиенте.</p>
+<p>Преимущества неканонизации включают возможность включения ресурсов в зависимости от схемы; например, чтобы можно было выбрать <code>http</code> vs <code>https</code> в соответствии с тем, как была получена страница.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -646,18 +643,18 @@ content/posts/post-1.md
 	</div>
 	
 	
-	<div class="admonition-content"><p>In the May 2014 release of Hugo v0.11, the default value of <code>canonifyURLs</code> was switched from <code>true</code> to <code>false</code>, which we think is the better default and should continue to be the case going forward. Please verify and adjust your website accordingly if you are upgrading from v0.10 or older versions.</p>
+	<div class="admonition-content"><p>В выпуске Hugo v0.11, выпущенном в мае 2014 года, значение по умолчанию <code>canonifyURLs</code> было изменено с <code>true</code> на <code>false</code>, что, по нашему мнению, является лучшим значением по умолчанию и должно оставаться таковым в будущем. Пожалуйста, проверьте и настройте свой веб-сайт соответствующим образом, если Вы обновляетесь с v0.10 или более старых версий.</p>
 </div>
 </aside>
 
-<p>To find out the current value of <code>canonifyURLs</code> for your website, you may use the handy <code>hugo config</code> command added in v0.13.</p>
+<p>Чтобы узнать текущее значение <code>canonifyURLs</code> для Вашего сайта, Вы можете использовать удобную команду <code>hugo config</code>, добавленную в v0.13.</p>
 <pre><code>hugo config | grep -i canon
-</code></pre><p>Or, if you are on Windows and do not have <code>grep</code> installed:</p>
+</code></pre><p>Или, если Вы работаете в Windows и не установили <code>grep</code>:</p>
 <pre><code>hugo config | FINDSTR /I canon
-</code></pre><h2 id="set-url-in-front-matter">Set URL in Front Matter <a class="header-link" href="#set-url-in-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>In addition to specifying permalink values in your site configuration for different content sections, Hugo provides even more granular control for individual pieces of content.</p>
-<p>Both <code>slug</code> and <code>url</code> can be defined in individual front matter. For more information on content destinations at build time, see <a href="/content-management/organization/">Content Organization</a>.</p>
-<p>From Hugo 0.55, you can use URLs relative to the current site context (the language), which makes it simpler to maintain. For a Japanese translation, both of the following examples would get the same URL:</p>
+</code></pre><h2 id="установка-url-адреса-в-front-matter">Установка URL-адреса в Front Matter <a class="header-link" href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-url-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%b0-%d0%b2-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Помимо указания значений постоянных ссылок в конфигурации вашего сайта для различных разделов контента, Hugo обеспечивает еще более детальный контроль над отдельными частями контента.</p>
+<p>И <code>slug</code> и <code>url</code> могут быть определены в индивидуальном первичном документе. Для получения дополнительной информации о местах назначения контента во время сборки смотрите <a href="/content-management/organization/">организацию контента</a>.</p>
+<p>Начиная с Hugo 0.55, Вы можете использовать URL-адреса относительно текущего контекста сайта (языка), что упрощает обслуживание. Для японского перевода оба следующих примера получат один и тот же URL:</p>
 <div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">---
 title: &#34;Custom URL!&#34;
 url: &#34;/jp/custom/foo&#34;
@@ -666,10 +663,10 @@ url: &#34;/jp/custom/foo&#34;
 title: &#34;Custom URL!&#34;
 url: &#34;custom/foo&#34;
 ---
-</code></pre></div><h2 id="relative-urls">Relative URLs <a class="header-link" href="#relative-urls"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>By default, all relative URLs are left unchanged by Hugo, which can be problematic when you want to make your site browsable from a local file system.</p>
-<p>Setting <code>relativeURLs</code> to <code>true</code> in your <a href="/getting-started/configuration/">site configuration</a> will cause Hugo to rewrite all relative URLs to be relative to the current content.</p>
-<p>For example, if your <code>/posts/first/</code> page contains a link to <code>/about/</code>, Hugo will rewrite the URL to <code>../../about/</code>.</p>
+</code></pre></div><h2 id="относительные-url-адреса">Относительные URL-адреса <a class="header-link" href="#%d0%be%d1%82%d0%bd%d0%be%d1%81%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-url-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>По умолчанию все относительные URL-адреса не меняются Hugo, что может быть проблематичным, если Вы хотите сделать свой сайт доступным для просмотра из локальной файловой системы.</p>
+<p>Установка для параметра <code>relativeURLs</code> значения <code>true</code> в Вашей <a href="/getting-started/configuration/">конфигурации сайта</a> заставит Хьюго переписать все относительные URL-адреса относительно текущего контента.</p>
+<p>Например, если Ваша страница <code>/posts/first/</code> содержит ссылку на <code>/about/</code>, Хьюго перепишет URL-адрес на <code>../../about/</code>.</p>
 
 </div>
 
@@ -680,13 +677,13 @@ url: &#34;custom/foo&#34;
 	
 	<li><a href="/functions/urls.parse/">urls.Parse</a></li>
 	
-	<li><a href="/content-management/cross-references/">Links and Cross References</a></li>
-	
 	<li><a href="/functions/abslangurl/">absLangURL</a></li>
 	
 	<li><a href="/functions/absurl/">absURL</a></li>
 	
 	<li><a href="/functions/querify/">querify</a></li>
+	
+	<li><a href="/functions/rellangurl/">relLangURL</a></li>
 	
 </ul>
 
@@ -807,26 +804,26 @@ url: &#34;custom/foo&#34;
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -835,93 +832,88 @@ url: &#34;custom/foo&#34;
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -2011,8 +2003,8 @@ url: &#34;custom/foo&#34;
   <a href="https://gohugo.ru/content-management/urls/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “URL Management”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Управление URL-адресами”
+  </a> последнее обновление: December 28, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/3d537170adadf9150f2da15242e59c92abe9acb8">Перевод части content-management (3d537170a)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5curls.md" class="
@@ -2190,7 +2182,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Shortcodes | Hugo</title>
+  <title>Шорткоды | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Shortcodes" />
-<meta property="og:description" content="Shortcodes are simple snippets inside your content files calling built-in or custom templates." />
+<meta property="og:title" content="Шорткоды" />
+<meta property="og:description" content="Короткие коды - это простые фрагменты внутри файлов содержимого, вызывающие встроенные или настраиваемые шаблоны." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/shortcodes/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:08:17+03:00" />
-<meta itemprop="name" content="Shortcodes">
-<meta itemprop="description" content="Shortcodes are simple snippets inside your content files calling built-in or custom templates.">
+<meta property="article:modified_time" content="2020-12-28T14:14:51+03:00" />
+<meta itemprop="name" content="Шорткоды">
+<meta itemprop="description" content="Короткие коды - это простые фрагменты внутри файлов содержимого, вызывающие встроенные или настраиваемые шаблоны.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:08:17+03:00" />
-<meta itemprop="wordCount" content="1921">
+<meta itemprop="dateModified" content="2020-12-28T14:14:51+03:00" />
+<meta itemprop="wordCount" content="1702">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Shortcodes"/>
-<meta name="twitter:description" content="Shortcodes are simple snippets inside your content files calling built-in or custom templates."/>
+<meta name="twitter:title" content="Шорткоды"/>
+<meta name="twitter:description" content="Короткие коды - это простые фрагменты внутри файлов содержимого, вызывающие встроенные или настраиваемые шаблоны."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,37 +238,37 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#what-a-shortcode-is">What a Shortcode is</a></li>
-    <li><a href="#use-shortcodes">Use Shortcodes</a>
+    <li><a href="#что-такое-шорткод">Что такое шорткод</a></li>
+    <li><a href="#используйте-шорткоды">Используйте шорткоды</a>
       <ul>
-        <li><a href="#shortcodes-with-raw-string-parameters">Shortcodes with raw string parameters</a></li>
-        <li><a href="#shortcodes-with-markdown">Shortcodes with Markdown</a></li>
-        <li><a href="#shortcodes-without-markdown">Shortcodes Without Markdown</a></li>
-        <li><a href="#nested-shortcodes">Nested Shortcodes</a></li>
+        <li><a href="#шорткоды-с-необработанными-строковыми-параметрами">Шорткоды с необработанными строковыми параметрами</a></li>
+        <li><a href="#шорткоды-с-разметкой">Шорткоды с Разметкой</a></li>
+        <li><a href="#шорткоды-без-разметки">Шорткоды без Разметки</a></li>
+        <li><a href="#вложенные-шорткоды">Вложенные шорткоды</a></li>
       </ul>
     </li>
-    <li><a href="#use-hugos-built-in-shortcodes">Use Hugo&rsquo;s Built-in Shortcodes</a>
+    <li><a href="#используйте-встроенные-шорткоды-хьюго">Используйте встроенные шорткоды Хьюго</a>
       <ul>
         <li><a href="#figure"><code>figure</code></a></li>
         <li><a href="#gist"><code>gist</code></a></li>
         <li><a href="#highlight"><code>highlight</code></a></li>
         <li><a href="#instagram"><code>instagram</code></a></li>
         <li><a href="#param"><code>param</code></a></li>
-        <li><a href="#ref-and-relref"><code>ref</code> and <code>relref</code></a></li>
+        <li><a href="#ref-и-relref"><code>ref</code> и <code>relref</code></a></li>
         <li><a href="#tweet"><code>tweet</code></a></li>
         <li><a href="#vimeo"><code>vimeo</code></a></li>
         <li><a href="#youtube"><code>youtube</code></a></li>
       </ul>
     </li>
-    <li><a href="#privacy-config">Privacy Config</a></li>
-    <li><a href="#create-custom-shortcodes">Create Custom Shortcodes</a></li>
+    <li><a href="#конфигурация-конфиденциальности">Конфигурация конфиденциальности</a></li>
+    <li><a href="#создавайте-собственные-шорткоды">Создавайте собственные шорткоды</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/build-options/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Build Options ">
+			<a href="https://gohugo.ru/content-management/build-options/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Параметры сборки ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -278,7 +278,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/sections/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Content Sections">
+			<a href="https://gohugo.ru/content-management/sections/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Разделы контента">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -303,13 +303,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Shortcodes</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Шорткоды</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Shortcodes are simple snippets inside your content files calling built-in or custom templates.
+      Короткие коды - это простые фрагменты внутри файлов содержимого, вызывающие встроенные или настраиваемые шаблоны.
     </div>
   
 
@@ -320,75 +320,75 @@
 
 <div class="prose" id="prose">
 
-<h2 id="what-a-shortcode-is">What a Shortcode is <a class="header-link" href="#what-a-shortcode-is"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video <code>&lt;iframe&gt;</code>&rsquo;s) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&rsquo;s syntax.</p>
-<p>Hugo created <strong>shortcodes</strong> to circumvent these limitations.</p>
-<p>A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a <a href="/templates/partials/">partial template</a> instead.</p>
-<p>In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.</p>
-<h2 id="use-shortcodes">Use Shortcodes <a class="header-link" href="#use-shortcodes"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="что-такое-шорткод">Что такое шорткод <a class="header-link" href="#%d1%87%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Хьюго любит Markdown из-за его простого формата контента, но бывают случаи, когда Markdown не оправдывает ожиданий. Часто авторы контента вынуждены добавлять необработанный HTML (например, видео <code>&lt;iframe&gt;</code>) в контент Markdown. Мы думаем, что это противоречит красивой простоте синтаксиса Markdown.</p>
+<p>Хьюго создал <strong>шорткоды</strong>, чтобы обойти эти ограничения.</p>
+<p>Шорткод - это простой фрагмент внутри файла содержимого, который Hugo будет отображать с использованием предопределенного шаблона. Обратите внимание, что шорткоды не работают в файлах шаблонов. Если Вам нужна функция вставки, которую предоставляют короткие коды, но в шаблоне, Вам, скорее всего, понадобится <a href="/templates/partials/">частичный шаблон</a>.</p>
+<p>Помимо более чистого Markdown, шорткоды можно обновлять в любое время, чтобы отразить новые классы, методы или стандарты. В момент создания сайта шорткоды Hugo легко объединятся с Вашими изменениями. Вы избегаете потенциально сложной операции поиска и замены.</p>
+<h2 id="используйте-шорткоды">Используйте шорткоды <a class="header-link" href="#%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d1%83%d0%b9%d1%82%d0%b5-%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/2xkNJL4gJ9E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p>In your content files, a shortcode can be called by calling <code>{{% shortcodename parameters %}}</code>. Shortcode parameters are space delimited, and parameters with internal spaces can be quoted.</p>
-<p>The first word in the shortcode declaration is always the name of the shortcode. Parameters follow the name. Depending upon how the shortcode is defined, the parameters may be named, positional, or both, although you can&rsquo;t mix parameter types in a single call. The format for named parameters models that of HTML with the format <code>name=&quot;value&quot;</code>.</p>
-<p>Some shortcodes use or require closing shortcodes. Again like HTML, the opening and closing shortcodes match (name only) with the closing declaration, which is prepended with a slash.</p>
-<p>Here are two examples of paired shortcodes:</p>
+<p>В Ваших файлах содержимое шорткода может быть вызвано путем вызова <code>{{% shortcodename parameters %}}</code>. Параметры шорткода разделяются пробелами, а параметры с внутренними пробелами могут быть заключены в кавычки.</p>
+<p>Первым словом в объявлении шорткода всегда является имя шорткода. Параметры следуют за названием. В зависимости от того, как определен шорткод, параметры могут быть именованными, позиционными или и тем, и другим, хотя Вы не можете смешивать типы параметров в одном вызове. Формат именованных параметров соответствует формату HTML с форматом <code>name=&quot;value&quot;</code>.</p>
+<p>Некоторые шорткоды используют или требуют закрытия шорткодов. Опять же, как и в HTML, открывающий и закрывающий шорткоды совпадают (только имя) с закрывающим объявлением, перед которым стоит косая черта.</p>
+<p>Вот два примера парных шорткодов:</p>
 <pre><code>{{% mdshortcode %}}Stuff to `process` in the *center*.{{% /mdshortcode %}}
 </code></pre><pre><code>{{&lt; highlight go &gt;}} A bunch of code here {{&lt; /highlight &gt;}}
-</code></pre><p>The examples above use two different delimiters, the difference being the <code>%</code> character in the first and the <code>&lt;&gt;</code> characters in the second.</p>
-<h3 id="shortcodes-with-raw-string-parameters">Shortcodes with raw string parameters <a class="header-link" href="#shortcodes-with-raw-string-parameters"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+</code></pre><p>В приведенных выше примерах используются два разных разделителя, разница состоит в том, что первый символ <code>%</code>, а второй -<code>&lt;&gt;</code>.</p>
+<h3 id="шорткоды-с-необработанными-строковыми-параметрами">Шорткоды с необработанными строковыми параметрами <a class="header-link" href="#%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d1%8b-%d1%81-%d0%bd%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d0%bd%d0%bd%d1%8b%d0%bc%d0%b8-%d1%81%d1%82%d1%80%d0%be%d0%ba%d0%be%d0%b2%d1%8b%d0%bc%d0%b8-%d0%bf%d0%b0%d1%80%d0%b0%d0%bc%d0%b5%d1%82%d1%80%d0%b0%d0%bc%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.64.1-relnotes/" target="_blank">Новое в v0.64.1</a>
 </button>
-<p>You can pass multiple lines as parameters to a shortcode by using raw string literals:</p>
+<p>Вы можете передать несколько строк в качестве параметров в шорткод, используя необработанные строковые литералы:</p>
 <pre><code>{{&lt;  myshortcode `This is some &lt;b&gt;HTML&lt;/b&gt;,
 and a new line with a &quot;quoted string&quot;.` &gt;}}
-</code></pre><h3 id="shortcodes-with-markdown">Shortcodes with Markdown <a class="header-link" href="#shortcodes-with-markdown"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>In Hugo <code>0.55</code> we changed how the <code>%</code> delimiter works. Shortcodes using the <code>%</code> as the outer-most delimiter will now be fully rendered when sent to the content renderer (e.g. Blackfriday for Markdown), meaning they can be part of the generated table of contents, footnotes, etc.</p>
-<p>If you want the old behavior, you can put the following line in the start of your shortcode template:</p>
+</code></pre><h3 id="шорткоды-с-разметкой">Шорткоды с Разметкой <a class="header-link" href="#%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d1%8b-%d1%81-%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%82%d0%ba%d0%be%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>В Hugo <code>0.55</code> мы изменили принцип работы разделителя <code>%</code>. Шорткоды, использующие символ <code>%</code> в качестве крайнего внешнего разделителя, теперь будут полностью отображаться при отправке в средство визуализации контента (например, Blackfriday для Markdown), то есть они могут быть частью сгенерированного оглавления, сносок и т.д.</p>
+<p>Если Вам нужно старое поведение, Вы можете поместить следующую строку в начало вашего шаблона шорткода:</p>
 <pre><code>{{ $_hugo_config := `{ &quot;version&quot;: 1 }` }}
-</code></pre><h3 id="shortcodes-without-markdown">Shortcodes Without Markdown <a class="header-link" href="#shortcodes-without-markdown"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>The <code>&lt;</code> character indicates that the shortcode&rsquo;s inner content does <em>not</em> need further rendering. Often shortcodes without markdown include internal HTML:</p>
+</code></pre><h3 id="шорткоды-без-разметки">Шорткоды без Разметки <a class="header-link" href="#%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d1%8b-%d0%b1%d0%b5%d0%b7-%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%82%d0%ba%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Символ <code>&lt;</code> указывает, что внутреннее содержимое шорткода <em>не</em> нуждается в дальнейшей визуализации. Часто шорткоды без разметки включают внутренний HTML:</p>
 <pre><code>{{&lt; myshortcode &gt;}}&lt;p&gt;Hello &lt;strong&gt;World!&lt;/strong&gt;&lt;/p&gt;{{&lt; /myshortcode &gt;}}
-</code></pre><h3 id="nested-shortcodes">Nested Shortcodes <a class="header-link" href="#nested-shortcodes"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You can call shortcodes within other shortcodes by creating your own templates that leverage the <code>.Parent</code> variable. <code>.Parent</code> allows you to check the context in which the shortcode is being called. See <a href="/templates/shortcode-templates/">Shortcode templates</a>.</p>
-<h2 id="use-hugos-built-in-shortcodes">Use Hugo&rsquo;s Built-in Shortcodes <a class="header-link" href="#use-hugos-built-in-shortcodes"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo ships with a set of predefined shortcodes that represent very common usage. These shortcodes are provided for author convenience and to keep your markdown content clean.</p>
+</code></pre><h3 id="вложенные-шорткоды">Вложенные шорткоды <a class="header-link" href="#%d0%b2%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Вы можете вызывать шорткоды внутри других шорткодов, создавая свои собственные шаблоны, использующие переменную <code>.Parent</code>. .Parent позволяет Вам проверить контекст, в котором вызывается шорткод. Смотрите <a href="/templates/shortcode-templates/">шаблоны шорткодов</a>.</p>
+<h2 id="используйте-встроенные-шорткоды-хьюго">Используйте встроенные шорткоды Хьюго <a class="header-link" href="#%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d1%83%d0%b9%d1%82%d0%b5-%d0%b2%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d1%8b-%d1%85%d1%8c%d1%8e%d0%b3%d0%be"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Hugo поставляется с набором заранее определенных шорткодов, которые используются очень часто. Эти шорткоды предоставляются для удобства авторов и для того, чтобы Ваш контент уценки был чистым.</p>
 <h3 id="figure"><code>figure</code> <a class="header-link" href="#figure"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p><code>figure</code> is an extension of the image syntax in markdown, which does not provide a shorthand for the more semantic <a href="https://html5doctor.com/the-figure-figcaption-elements/" title="An article from HTML5 doctor discussing the fig and figcaption elements.">HTML5 <code>&lt;figure&gt;</code> element</a>.</p>
-<p>The <code>figure</code> shortcode can use the following named parameters:</p>
+<p><code>figure</code>- это расширение синтаксиса изображений в markdown, которое не обеспечивает сокращение для более семантического <a href="https://html5doctor.com/the-figure-figcaption-elements/" title="An article from HTML5 doctor discussing the fig and figcaption elements.">HTML5 элемент <code>&lt;figure&gt;</code></a>.</p>
+<p>Шорткод <code>figure</code> может использовать следующие именованные параметры:</p>
 <dl>
 <dt>src</dt>
-<dd>URL of the image to be displayed.</dd>
+<dd>URL-адрес отображаемого изображения.</dd>
 <dt>link</dt>
-<dd>If the image needs to be hyperlinked, URL of the destination.</dd>
+<dd>Если изображение требует гиперссылки, URL-адрес назначения.</dd>
 <dt>target</dt>
-<dd>Optional <code>target</code> attribute for the URL if <code>link</code> parameter is set.</dd>
+<dd>Необязательный атрибут <code>target</code> для URL-адреса, если установлен параметр <code>link</code>.</dd>
 <dt>rel</dt>
-<dd>Optional <code>rel</code> attribute for the URL if <code>link</code> parameter is set.</dd>
+<dd>Необязательный атрибут <code>rel</code> для URL-адреса, если установлен параметр <code>link</code>.</dd>
 <dt>alt</dt>
-<dd>Alternate text for the image if the image cannot be displayed.</dd>
+<dd>Альтернативный текст для изображения, если изображение не может быть отображено.</dd>
 <dt>title</dt>
-<dd>Image title.</dd>
+<dd>Заголовок изображения.</dd>
 <dt>caption</dt>
-<dd>Image caption.  Markdown within the value of <code>caption</code> will be rendered.</dd>
+<dd>Подпись к изображению. Будет отображена разметка в пределах значения <code>caption</code>.</dd>
 <dt>class</dt>
-<dd><code>class</code> attribute of the HTML <code>figure</code> tag.</dd>
+<dd>Атрибут <code>class</code> HTML-тега <code>figure</code>.</dd>
 <dt>height</dt>
-<dd><code>height</code> attribute of the image.</dd>
+<dd>Атрибут изображения <code>height</code>.</dd>
 <dt>width</dt>
-<dd><code>width</code> attribute of the image.</dd>
+<dd>Атрибут изображения <code>width</code>.</dd>
 <dt>attr</dt>
-<dd>Image attribution text. Markdown within the value of <code>attr</code> will be rendered.</dd>
+<dd>Текст атрибуции изображения. Будет отображена уценка в пределах значения <code>attr</code>.</dd>
 <dt>attrlink</dt>
-<dd>If the attribution text needs to be hyperlinked, URL of the destination.</dd>
+<dd>Если текст атрибуции требует гиперссылки, URL-адрес назначения.</dd>
 </dl>
-<h4 id="example-figure-input">Example <code>figure</code> Input <a class="header-link" href="#example-figure-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<h4 id="пример-ввода-figure">Пример ввода <code>figure</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-figure"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 
 
 
@@ -410,7 +410,7 @@ and a new line with a &quot;quoted string&quot;.` &gt;}}
 
 </div>
 
-<h4 id="example-figure-output">Example <code>figure</code> Output <a class="header-link" href="#example-figure-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<h4 id="пример-вывода-figure">Пример вывода <code>figure</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-figure"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 
 
 <div class="code" id="figure-output-example.html">
@@ -427,12 +427,12 @@ and a new line with a &quot;quoted string&quot;.` &gt;}}
 	</div>
 </div>
 <h3 id="gist"><code>gist</code> <a class="header-link" href="#gist"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Bloggers often want to include GitHub gists when writing posts. Let&rsquo;s suppose we want to use the <a href="https://gist.github.com/spf13/7896402">gist at the following url</a>:</p>
+<p>Блогеры часто хотят включать в сообщения GitHub gists. Предположим, мы хотим использовать <a href="https://gist.github.com/spf13/7896402">суть по следующему URL-адресу</a>:</p>
 <pre><code>https://gist.github.com/spf13/7896402
-</code></pre><p>We can embed the gist in our content via username and gist ID pulled from the URL:</p>
+</code></pre><p>Мы можем встроить суть в наш контент с помощью имени пользователя и идентификатора сущности, извлеченных из URL:</p>
 <pre><code>{{&lt; gist spf13 7896402 &gt;}}
-</code></pre><h4 id="example-gist-input">Example <code>gist</code> Input <a class="header-link" href="#example-gist-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>If the gist contains several files and you want to quote just one of them, you can pass the filename (quoted) as an optional third argument:</p>
+</code></pre><h4 id="пример-ввода-gist">Пример ввода <code>gist</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-gist"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Если суть содержит несколько файлов и Вы хотите указать в кавычках только один из них, Вы можете передать имя файла (в кавычках) в качестве необязательного третьего аргумента:</p>
 
 
 
@@ -454,7 +454,7 @@ and a new line with a &quot;quoted string&quot;.` &gt;}}
 
 </div>
 
-<h4 id="example-gist-output">Example <code>gist</code> Output <a class="header-link" href="#example-gist-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<h4 id="пример-вывода-gist">Пример вывода <code>gist</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-gist"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 
 
 <div class="code" id="gist-output.html">
@@ -466,13 +466,13 @@ and a new line with a &quot;quoted string&quot;.` &gt;}}
 </code></pre>
 	</div>
 </div>
-<h4 id="example-gist-display">Example <code>gist</code> Display <a class="header-link" href="#example-gist-display"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>To demonstrate the remarkably efficiency of Hugo&rsquo;s shortcode feature, we have embedded the <code>spf13</code> <code>gist</code> example in this page. The following simulates the experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup.</p>
+<h4 id="пример-отображения-gist">Пример отображения <code>gist</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-gist"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Чтобы продемонстрировать удивительную эффективность функции шорткода Хьюго, мы встроили на эту страницу пример <code>spf13</code> <code>gist</code>. Следующее моделирует опыт посетителей вашего веб-сайта. Естественно, окончательное отображение будет зависеть от ваших таблиц стилей и окружающей разметки.</p>
 <script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
 
 <h3 id="highlight"><code>highlight</code> <a class="header-link" href="#highlight"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>This shortcode will convert the source code provided into syntax-highlighted HTML. Read more on <a href="/tools/syntax-highlighting/">highlighting</a>. <code>highlight</code> takes exactly one required <code>language</code> parameter and requires a closing shortcode.</p>
-<h4 id="example-highlight-input">Example <code>highlight</code> Input <a class="header-link" href="#example-highlight-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Этот шорткод преобразует предоставленный исходный код в HTML с выделенным синтаксисом. Подробнее о <a href="/tools/syntax-highlighting/">выделении</a>. <code>highlight</code> принимает ровно один обязательный параметр <code>language</code> и требует закрывающего шорткода.</p>
+<h4 id="пример-ввода-highlight">Пример ввода <code>highlight</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-highlight"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 
 
 
@@ -503,8 +503,8 @@ and a new line with a &quot;quoted string&quot;.` &gt;}}
 
 </div>
 
-<h4 id="example-highlight-output">Example <code>highlight</code> Output <a class="header-link" href="#example-highlight-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>The <code>highlight</code> shortcode example above would produce the following HTML when the site is rendered:</p>
+<h4 id="пример-вывода-highlight">Пример вывода <code>highlight</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-highlight"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>В приведенном выше примере шорткода <code>highlight</code> при рендеринге сайта будет создан следующий HTML-код:</p>
 
 
 <div class="code" id="tutorials/learn-html/index.html">
@@ -529,18 +529,18 @@ and a new line with a &quot;quoted string&quot;.` &gt;}}
 	</div>
 	
 	
-	<div class="admonition-content"><p>To see even more options for adding syntax-highlighted code blocks to your website, see <a href="/tools/syntax-highlighting/">Syntax Highlighting in Developer Tools</a>.</p>
+	<div class="admonition-content"><p>Чтобы увидеть еще больше вариантов добавления блоков кода с подсветкой синтаксиса на Ваш веб-сайт, смотрите <a href="/tools/syntax-highlighting/">подсветку синтаксиса в инструментах разработчика</a>.</p>
 </div>
 </aside>
 
 <h3 id="instagram"><code>instagram</code> <a class="header-link" href="#instagram"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>If you&rsquo;d like to embed a photo from <a href="https://www.instagram.com/">Instagram</a>, you only need the photo&rsquo;s ID. You can discern an Instagram photo ID from the URL:</p>
-<h4 id="example-instagram-input">Example <code>instagram</code> Input <a class="header-link" href="#example-instagram-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>You also have the option to hide the caption:</p>
-<h4 id="example-instagram-output">Example <code>instagram</code> Output <a class="header-link" href="#example-instagram-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>By adding the preceding <code>hidecaption</code> example, the following HTML will be added to your rendered website&rsquo;s markup:</p>
-<h4 id="example-instagram-display">Example <code>instagram</code> Display <a class="header-link" href="#example-instagram-display"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Using the preceding <code>instagram</code> with <code>hidecaption</code> example above, the following simulates the displayed experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup.</p>
+<p>Если вы хотите встроить фотографию из <a href="https://www.instagram.com/">инстаграм</a>, вам понадобится только идентификатор фотографии. Вы можете узнать идентификатор фотографии в Instagram по URL-адресу:</p>
+<h4 id="пример-ввода-instagram">Пример ввода <code>instagram</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-instagram"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>У Вас также есть возможность скрыть подпись:</p>
+<h4 id="пример-вывода-instagram">Пример вывода <code>instagram</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-instagram"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Добавив предыдущий пример <code>hidecaption</code>, следующий HTML-код будет добавлен в разметку рендера Вашего веб-сайта:</p>
+<h4 id="пример-отображения-instagram">Пример отображения <code>instagram</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-instagram"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Используя предыдущий пример <code>instagram</code> с <code>hidecaption</code>, приведенный выше, имитирует отображаемый опыт для посетителей Вашего веб-сайта. Естественно, окончательное отображение будет зависеть от Ваших таблиц стилей и окружающей разметки.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -548,20 +548,20 @@ and a new line with a &quot;quoted string&quot;.` &gt;}}
 	</div>
 	
 	
-	<div class="admonition-content"><p>The <code>instagram</code>-shortcode refers an endpoint of Instagram&rsquo;s API, that&rsquo;s deprecated since October 24th, 2020. Thus, no images can be fetched from this API endpoint, resulting in an error when the <code>instagram</code>-shortcode is used. For more information please have a look at GitHub issue <a href="https://github.com/gohugoio/hugo/issues/7879">#7879</a>.</p>
+	<div class="admonition-content"><p>Шорткод <code>instagram</code> относится к конечной точке API Instagram, которая устарела с 24 октября 2020 г. Таким образом, из этой конечной точки API нельзя получить изображения, что приводит к ошибке при использовании шорткода <code>instagram</code>. Дополнительные сведения смотрите в выпуске GitHub <a href="https://github.com/gohugoio/hugo/issues/7879">#7879</a>.</p>
 </div>
 </aside>
 
 <h3 id="param"><code>param</code> <a class="header-link" href="#param"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Gets a value from the current <code>Page's</code> params set in front matter, with a fall back to the site param value. It will log an <code>ERROR</code> if the param with the given key could not be found in either.</p>
+<p>Получает значение из текущих параметров страницы <code>Page</code>, установленных в начале, с возвратом к значению параметра сайта. Будет записана ошибка <code>ERROR</code>, если параметр с данным ключом не может быть найден ни в одном из них.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{{</span>&lt; param testparam &gt;<span class="o">}}</span>
-</code></pre></div><p>Since <code>testparam</code> is a param defined in front matter of this page with the value <code>Hugo Rocks!</code>, the above will print:</p>
+</code></pre></div><p>Так как <code>testparam</code> - это параметр, определенный в начале этой страницы со значением <code>Hugo Rocks!</code>, то приведенное выше выведет:</p>
 Hugo Rocks!
-<p>To access deeply nested params, use &ldquo;dot syntax&rdquo;, e.g:</p>
+<p>Чтобы получить доступ к глубоко вложенным параметрам, используйте &ldquo;точечный синтаксис&rdquo;, например:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{{</span>&lt; param <span class="s2">&#34;my.nested.param&#34;</span> &gt;<span class="o">}}</span>
-</code></pre></div><h3 id="ref-and-relref"><code>ref</code> and <code>relref</code> <a class="header-link" href="#ref-and-relref"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>These shortcodes will look up the pages by their relative path (e.g., <code>blog/post.md</code>) or their logical name (<code>post.md</code>) and return the permalink (<code>ref</code>) or relative permalink (<code>relref</code>) for the found page.</p>
-<p><code>ref</code> and <code>relref</code> also make it possible to make fragmentary links that work for the header links generated by Hugo.</p>
+</code></pre></div><h3 id="ref-и-relref"><code>ref</code> и <code>relref</code> <a class="header-link" href="#ref-%d0%b8-relref"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Эти шорткоды будут искать страницы по их относительному пути (например, <code>blog/post.md</code>) или их логическому имени (<code>post.md</code>) и возвращать постоянную ссылку (<code>ref</code>) или относительную постоянную ссылку (<code>relref</code>) для найденной страницы.</p>
+<p><code>ref</code> и <code>relref</code> также позволяют создавать фрагментарные ссылки, которые работают для ссылок заголовков, созданных Hugo.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -569,23 +569,23 @@ Hugo Rocks!
 	</div>
 	
 	
-	<div class="admonition-content"><p>Read a more extensive description of <code>ref</code> and <code>relref</code> in the <a href="/content-management/cross-references/">cross references</a> documentation.</p>
+	<div class="admonition-content"><p>Прочтите более подробное описание <code>ref</code> и <code>relref</code> в документации <a href="/content-management/cross-references/">перекрестных ссылок</a>.</p>
 </div>
 </aside>
 
-<p><code>ref</code> and <code>relref</code> take exactly one required parameter of <em>reference</em>, quoted and in position <code>0</code>.</p>
-<h4 id="example-ref-and-relref-input">Example <code>ref</code> and <code>relref</code> Input <a class="header-link" href="#example-ref-and-relref-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p><code>ref</code> и <code>relref</code> принимают ровно один обязательный параметр <em>ссылку</em>, заключенный в кавычки и в позиции <code>0</code>.</p>
+<h4 id="пример-ввода-ref-и-relref">Пример ввода <code>ref</code> и <code>relref</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-ref-%d0%b8-relref"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
 <pre><code>[Neat]({{&lt; ref &quot;blog/neat.md&quot; &gt;}})
 [Who]({{&lt; relref &quot;about.md#who&quot; &gt;}})
-</code></pre><h4 id="example-ref-and-relref-output">Example <code>ref</code> and <code>relref</code> Output <a class="header-link" href="#example-ref-and-relref-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Assuming that standard Hugo pretty URLs are turned on.</p>
+</code></pre><h4 id="пример-вывода-ref-и-relref">Пример вывода <code>ref</code> и <code>relref</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-ref-%d0%b8-relref"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Предположим, что включены стандартные URL-адреса Hugo.</p>
 <pre><code>&lt;a href=&quot;/blog/neat&quot;&gt;Neat&lt;/a&gt;
 &lt;a href=&quot;/about/#who:c28654c202e73453784cfd2c5ab356c0&quot;&gt;Who&lt;/a&gt;
 </code></pre><h3 id="tweet"><code>tweet</code> <a class="header-link" href="#tweet"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You want to include a single tweet into your blog post? Everything you need is the URL of the tweet:</p>
+<p>Вы хотите включить один твит в свой блог? Все, что Вам нужно, это URL-адрес твита:</p>
 <pre><code>https://twitter.com/spf13/status/877500564405444608
-</code></pre><h4 id="example-tweet-input">Example <code>tweet</code> Input <a class="header-link" href="#example-tweet-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Pass the tweet&rsquo;s ID from the URL as a parameter to the <code>tweet</code> shortcode:</p>
+</code></pre><h4 id="пример-ввода-tweet">Пример ввода <code>tweet</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-tweet"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Передайте идентификатор твита из URL-адреса в качестве параметра в шорткод <code>tweet</code>:</p>
 
 
 
@@ -607,8 +607,8 @@ Hugo Rocks!
 
 </div>
 
-<h4 id="example-tweet-output">Example <code>tweet</code> Output <a class="header-link" href="#example-tweet-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Using the preceding <code>tweet</code> example, the following HTML will be added to your rendered website&rsquo;s markup:</p>
+<h4 id="пример-вывода-tweet">Пример вывода <code>tweet</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-tweet"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Используя предыдущий пример <code>tweet</code>, следующий HTML-код будет добавлен в разметку Вашего отображаемого веб-сайта:</p>
 
 
 <div class="code" id="example-tweet-output.html">
@@ -621,16 +621,16 @@ Hugo Rocks!
 </code></pre>
 	</div>
 </div>
-<h4 id="example-tweet-display">Example <code>tweet</code> Display <a class="header-link" href="#example-tweet-display"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Using the preceding <code>tweet</code> example, the following simulates the displayed experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup.</p>
+<h4 id="пример-отображения-tweet">Пример отображения <code>tweet</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-tweet"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Используя предыдущий пример <code>tweet</code>, следующее имитирует отображаемый опыт для посетителей Вашего веб-сайта. Естественно, окончательное отображение будет зависеть от Ваших таблиц стилей и окружающей разметки.</p>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hugo 0.24 Released: Big archetype update + <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a> _redirects etc. file support<a href="https://t.co/X94FmYDEZJ">https://t.co/X94FmYDEZJ</a> <a href="https://twitter.com/hashtag/gohugo?src=hash&amp;ref_src=twsrc%5Etfw">#gohugo</a> <a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> <a href="https://twitter.com/spf13?ref_src=twsrc%5Etfw">@spf13</a> <a href="https://twitter.com/bepsays?ref_src=twsrc%5Etfw">@bepsays</a></p>&mdash; GoHugo.io (@GoHugoIO) <a href="https://twitter.com/GoHugoIO/status/877500564405444608?ref_src=twsrc%5Etfw">June 21, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <h3 id="vimeo"><code>vimeo</code> <a class="header-link" href="#vimeo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Adding a video from <a href="https://vimeo.com/">Vimeo</a> is equivalent to the <a href="#youtube">YouTube Input shortcode</a>.</p>
+<p>Добавление видео из <a href="https://vimeo.com/">Vimeo</a> эквивалентно <a href="#youtube">шорткоду ввода YouTube</a>.</p>
 <pre><code>https://vimeo.com/channels/staffpicks/146022717
-</code></pre><h4 id="example-vimeo-input">Example <code>vimeo</code> Input <a class="header-link" href="#example-vimeo-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Extract the ID from the video&rsquo;s URL and pass it to the <code>vimeo</code> shortcode:</p>
+</code></pre><h4 id="пример-ввода-vimeo">Пример ввода <code>vimeo</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-vimeo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Извлеките идентификатор из URL-адреса видео и передайте его шорткоду <code>vimeo</code>:</p>
 
 
 
@@ -652,8 +652,8 @@ Hugo Rocks!
 
 </div>
 
-<h4 id="example-vimeo-output">Example <code>vimeo</code> Output <a class="header-link" href="#example-vimeo-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Using the preceding <code>vimeo</code> example, the following HTML will be added to your rendered website&rsquo;s markup:</p>
+<h4 id="пример-вывода-vimeo">Пример вывода <code>vimeo</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-vimeo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Используя предыдущий пример <code>vimeo</code>, следующий HTML-код будет добавлен в разметку Вашего визуализированного веб-сайта:</p>
 
 
 <div class="code" id="example-vimeo-output.html">
@@ -675,23 +675,23 @@ Hugo Rocks!
 	</div>
 	
 	
-	<div class="admonition-content"><p>If you want to further customize the visual styling of the YouTube or Vimeo output, add a <code>class</code> named parameter when calling the shortcode. The new <code>class</code> will be added to the <code>&lt;div&gt;</code> that wraps the <code>&lt;iframe&gt;</code> <em>and</em> will remove the inline styles. Note that you will need to call the <code>id</code> as a named parameter as well. You can also give the vimeo video a descriptive title with <code>title</code>.</p>
+	<div class="admonition-content"><p>Если Вы хотите дополнительно настроить визуальный стиль вывода YouTube или Vimeo, добавьте именованный параметр <code>class</code> при вызове шорткода. Новый <code>class</code> будет добавлен к <code>&lt;div&gt;</code>, который обертывает <code>&lt;iframe&gt;</code> <em>и</em> удалит встроенные стили. Обратите внимание, что Вам также нужно будет вызвать <code>id</code> как именованный параметр. Вы также можете дать видео vimeo описательный заголовок с помощью <code>title</code>.</p>
 <pre><code>{{&lt; vimeo id=&quot;146022717&quot; class=&quot;my-vimeo-wrapper-class&quot; title=&quot;My vimeo video&quot; &gt;}}
 </code></pre></div>
 </aside>
 
-<h4 id="example-vimeo-display">Example <code>vimeo</code> Display <a class="header-link" href="#example-vimeo-display"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Using the preceding <code>vimeo</code> example, the following simulates the displayed experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup.</p>
+<h4 id="пример-отображения-vimeo">Пример отображения <code>vimeo</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-vimeo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Используя предыдущий пример <code>vimeo</code>, следующее имитирует отображаемый опыт для посетителей Вашего веб-сайта. Естественно, окончательное отображение будет зависеть от Ваших таблиц стилей и окружающей разметки.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  </div>
 
 <h3 id="youtube"><code>youtube</code> <a class="header-link" href="#youtube"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>The <code>youtube</code> shortcode embeds a responsive video player for <a href="https://www.youtube.com/">YouTube videos</a>. Only the ID of the video is required, e.g.:</p>
+<p>Шорткод <code>youtube</code> встраивает адаптивный видеопроигрыватель для <a href="https://www.youtube.com/">YouTube видео</a>. Требуется только идентификатор видео, например:</p>
 <pre><code>https://www.youtube.com/watch?v=w7Ft2ymGmfc
-</code></pre><h4 id="example-youtube-input">Example <code>youtube</code> Input <a class="header-link" href="#example-youtube-input"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Copy the YouTube video ID that follows <code>v=</code> in the video&rsquo;s URL and pass it to the <code>youtube</code> shortcode:</p>
+</code></pre><h4 id="пример-ввода-youtube">Пример ввода <code>youtube</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d0%b2%d0%be%d0%b4%d0%b0-youtube"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Скопируйте идентификатор видео YouTube, который следует за <code>v=</code> в URL-адресе видео, и передайте его шорткоду <code>youtube</code>:</p>
 
 
 
@@ -713,7 +713,7 @@ Hugo Rocks!
 
 </div>
 
-<p>Furthermore, you can automatically start playback of the embedded video by setting the <code>autoplay</code> parameter to <code>true</code>. Remember that you can&rsquo;t mix named and unnamed parameters, so you&rsquo;ll need to assign the yet unnamed video id to the parameter <code>id</code>:</p>
+<p>Более того, Вы можете автоматически запускать воспроизведение встроенного видео, установив для параметра <code>autoplay</code> значение <code>true</code>. Помните, что Вы не можете смешивать именованные и безымянные параметры, поэтому Вам нужно назначить еще безымянный идентификатор видео параметру <code>id</code>:</p>
 
 
 
@@ -735,7 +735,7 @@ Hugo Rocks!
 
 </div>
 
-<p>For <a href="https://dequeuniversity.com/tips/provide-iframe-titles">accessibility reasons</a>, it&rsquo;s best to provide a title for your YouTube video.  You  can do this using the shortcode by providing a <code>title</code> parameter. If no title is provided, a default of &ldquo;YouTube Video&rdquo; will be used.</p>
+<p>По <a href="https://dequeuniversity.com/tips/provide-iframe-titles">причинам доступности</a>, лучше всего указать название для Вашего видео на YouTube. Вы можете сделать это с помощью шорткода, указав параметр <code>title</code>. Если заголовок не указан, будет использоваться значение по умолчанию «Видео YouTube».</p>
 
 
 
@@ -757,8 +757,8 @@ Hugo Rocks!
 
 </div>
 
-<h4 id="example-youtube-output">Example <code>youtube</code> Output <a class="header-link" href="#example-youtube-output"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Using the preceding <code>youtube</code> example, the following HTML will be added to your rendered website&rsquo;s markup:</p>
+<h4 id="пример-вывода-youtube">Пример вывода <code>youtube</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%b2%d1%8b%d0%b2%d0%be%d0%b4%d0%b0-youtube"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Используя предыдущий пример <code>youtube</code>, следующий HTML-код будет добавлен в разметку Вашего отображаемого веб-сайта:</p>
 
 
 
@@ -786,17 +786,17 @@ Hugo Rocks!
 
 </div>
 
-<h4 id="example-youtube-display">Example <code>youtube</code> Display <a class="header-link" href="#example-youtube-display"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Using the preceding <code>youtube</code> example (without <code>autoplay=&quot;true&quot;</code>), the following simulates the displayed experience for visitors to your website. Naturally, the final display will be contingent on your stylesheets and surrounding markup. The video is also include in the <a href="/getting-started/quick-start/">Quick Start of the Hugo documentation</a>.</p>
+<h4 id="пример-отображения-youtube">Пример отображения <code>youtube</code> <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-youtube"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Используя предыдущий пример <code>youtube</code> (без <code>autoplay=&quot;true&quot;</code>), следующий пример имитирует отображаемый опыт для посетителей Вашего веб-сайта. Естественно, окончательное отображение будет зависеть от Ваших таблиц стилей и окружающей разметки. Видео также включено в <a href="/getting-started/quick-start/">быстрый старт к документации Hugo</a>.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="privacy-config">Privacy Config <a class="header-link" href="#privacy-config"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>To learn how to configure your Hugo site to meet the new EU privacy regulation, see <a href="/about/hugo-and-gdpr/">Hugo and the GDPR</a>.</p>
-<h2 id="create-custom-shortcodes">Create Custom Shortcodes <a class="header-link" href="#create-custom-shortcodes"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>To learn more about creating custom shortcodes, see the <a href="/templates/shortcode-templates/">shortcode template documentation</a>.</p>
+<h2 id="конфигурация-конфиденциальности">Конфигурация конфиденциальности <a class="header-link" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b4%d0%b5%d0%bd%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Чтобы узнать, как настроить свой сайт Hugo в соответствии с новыми правилами ЕС о конфиденциальности, см <a href="/about/hugo-and-gdpr/">Hugo и GDPR</a>.</p>
+<h2 id="создавайте-собственные-шорткоды">Создавайте собственные шорткоды <a class="header-link" href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%b2%d0%b0%d0%b9%d1%82%d0%b5-%d1%81%d0%be%d0%b1%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Чтобы узнать больше о создании пользовательских шорткодов, смотрите <a href="/templates/shortcode-templates/">документацию по шаблонам шорткодов</a>.</p>
 
 </div>
 
@@ -807,13 +807,13 @@ Hugo Rocks!
 	
 	<li><a href="/functions/markdownify/">markdownify</a></li>
 	
-	<li><a href="/content-management/related/">Related Content</a></li>
+	<li><a href="/content-management/related/">Связанный контент</a></li>
 	
 	<li><a href="/variables/shortcodes/">Shortcode Variables</a></li>
 	
 	<li><a href="/functions/get/">.Get</a></li>
 	
-	<li><a href="/content-management/comments/">Comments</a></li>
+	<li><a href="/templates/shortcode-templates/">Create Your Own Shortcodes</a></li>
 	
 </ul>
 
@@ -934,26 +934,26 @@ Hugo Rocks!
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -962,93 +962,88 @@ Hugo Rocks!
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -2138,8 +2133,8 @@ Hugo Rocks!
   <a href="https://gohugo.ru/content-management/shortcodes/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Shortcodes”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/9d5f67670aac3087a942bccfadced84007a29ee5">Удалил инстаграм (9d5f67670)</a>
+    “Шорткоды”
+  </a> последнее обновление: December 28, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/295a8fcfc04b6aa4bf4e2045895e2e737108fa5a">Перевод части content-management (295a8fcfc)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5cshortcodes.md" class="
@@ -2317,7 +2312,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

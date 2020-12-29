@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Syntax Highlighting | Hugo</title>
+  <title>Подсветка синтаксиса | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Syntax Highlighting" />
-<meta property="og:description" content="Hugo comes with really fast syntax highlighting from Chroma." />
+<meta property="og:title" content="Подсветка синтаксиса" />
+<meta property="og:description" content="Hugo поставляется с действительно быстрой подсветкой синтаксиса от Chroma." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/syntax-highlighting/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Syntax Highlighting">
-<meta itemprop="description" content="Hugo comes with really fast syntax highlighting from Chroma.">
+<meta property="article:modified_time" content="2020-12-29T17:46:48+03:00" />
+<meta itemprop="name" content="Подсветка синтаксиса">
+<meta itemprop="description" content="Hugo поставляется с действительно быстрой подсветкой синтаксиса от Chroma.">
 <meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="1270">
+<meta itemprop="dateModified" content="2020-12-29T17:46:48+03:00" />
+<meta itemprop="wordCount" content="1242">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Syntax Highlighting"/>
-<meta name="twitter:description" content="Hugo comes with really fast syntax highlighting from Chroma."/>
+<meta name="twitter:title" content="Подсветка синтаксиса"/>
+<meta name="twitter:description" content="Hugo поставляется с действительно быстрой подсветкой синтаксиса от Chroma."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,23 +238,23 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#configure-syntax-highlighter">Configure Syntax Highlighter</a></li>
-    <li><a href="#generate-syntax-highlighter-css">Generate Syntax Highlighter CSS</a></li>
-    <li><a href="#highlight-shortcode">Highlight Shortcode</a>
+    <li><a href="#настройка-выделения-синтаксиса">Настройка выделения синтаксиса</a></li>
+    <li><a href="#генерация-синтаксиса-подсветки-css">Генерация синтаксиса подсветки CSS</a></li>
+    <li><a href="#подсветка-шорткода">Подсветка шорткода</a>
       <ul>
-        <li><a href="#example-highlight-shortcode">Example: Highlight Shortcode</a></li>
+        <li><a href="#пример-подсветка-шорткода">Пример: Подсветка шорткода</a></li>
       </ul>
     </li>
-    <li><a href="#highlight-template-func">Highlight Template Func</a></li>
-    <li><a href="#highlighting-in-code-fences">Highlighting in Code Fences</a></li>
-    <li><a href="#list-of-chroma-highlighting-languages">List of Chroma Highlighting Languages</a></li>
+    <li><a href="#подсветка-шаблона-функции">Подсветка шаблона функции</a></li>
+    <li><a href="#подсветка-в-ограничениях-кода">Подсветка в ограничениях кода</a></li>
+    <li><a href="#список-языков-выделения-цветности">Список языков выделения цветности</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/organization/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Content Organization ">
+			<a href="https://gohugo.ru/content-management/organization/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Организация контента ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -264,7 +264,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/formats/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Content Formats">
+			<a href="https://gohugo.ru/content-management/formats/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Форматы контента">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -289,13 +289,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Syntax Highlighting</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Подсветка синтаксиса</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Hugo comes with really fast syntax highlighting from Chroma.
+      Hugo поставляется с действительно быстрой подсветкой синтаксиса от Chroma.
     </div>
   
 
@@ -306,34 +306,34 @@
 
 <div class="prose" id="prose">
 
-<p>Hugo uses <a href="https://github.com/alecthomas/chroma">Chroma</a> as its code highlighter; it is built in Go and is really, really fast &ndash; and for the most important parts compatible with Pygments we used before.</p>
-<h2 id="configure-syntax-highlighter">Configure Syntax Highlighter <a class="header-link" href="#configure-syntax-highlighter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>See <a href="/getting-started/configuration-markup#highlight">Configure Highlight</a>.</p>
-<h2 id="generate-syntax-highlighter-css">Generate Syntax Highlighter CSS <a class="header-link" href="#generate-syntax-highlighter-css"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>If you run with <code>pygmentsUseClasses=true</code> in your site config, you need a style sheet.</p>
-<p>You can generate one with Hugo:</p>
+<p>Хьюго использует <a href="https://github.com/alecthomas/chroma">Chroma</a> в качестве подсветки кода; он построен на Go и действительно очень быстр - и по наиболее важным частям совместим с Pygments, который мы использовали раньше.</p>
+<h2 id="настройка-выделения-синтаксиса">Настройка выделения синтаксиса <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b2%d1%8b%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f-%d1%81%d0%b8%d0%bd%d1%82%d0%b0%d0%ba%d1%81%d0%b8%d1%81%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Смотрите <a href="/getting-started/configuration-markup#highlight">настройка выделения</a>.</p>
+<h2 id="генерация-синтаксиса-подсветки-css">Генерация синтаксиса подсветки CSS <a class="header-link" href="#%d0%b3%d0%b5%d0%bd%d0%b5%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d1%81%d0%b8%d0%bd%d1%82%d0%b0%d0%ba%d1%81%d0%b8%d1%81%d0%b0-%d0%bf%d0%be%d0%b4%d1%81%d0%b2%d0%b5%d1%82%d0%ba%d0%b8-css"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Если Вы работаете с <code>pygmentsUseClasses=true</code> в конфигурации Вашего сайта, Вам понадобится таблица стилей.</p>
+<p>Вы можете создать ее с помощью Hugo:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo gen chromastyles --style<span class="o">=</span>monokai &gt; syntax.css
-</code></pre></div><p>Run <code>hugo gen chromastyles -h</code> for more options. See <a href="https://xyproto.github.io/splash/docs/">https://xyproto.github.io/splash/docs/</a> for a gallery of available styles.</p>
-<h2 id="highlight-shortcode">Highlight Shortcode <a class="header-link" href="#highlight-shortcode"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Highlighting is carried out via the <a href="/content-management/shortcodes/">built-in shortcode</a> <code>highlight</code>. <code>highlight</code> takes exactly one required parameter for the programming language to be highlighted and requires a closing shortcode. Note that <code>highlight</code> is <em>not</em> used for client-side javascript highlighting.</p>
-<p>Options:</p>
+</code></pre></div><p>Запустите <code>hugo gen chromastyles -h</code> для получения дополнительных опций. Смотрите <a href="https://xyproto.github.io/splash/docs/">https://xyproto.github.io/splash/docs/</a> для галереи доступных стилей.</p>
+<h2 id="подсветка-шорткода">Подсветка шорткода <a class="header-link" href="#%d0%bf%d0%be%d0%b4%d1%81%d0%b2%d0%b5%d1%82%d0%ba%d0%b0-%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Подсветка осуществляется с помощью <a href="/content-management/shortcodes/">встроенного шорткода</a> <code>highlight</code>. <code>highlight</code> принимает ровно один обязательный параметр для выделения языка программирования и требует закрывающего шорткода. Обратите внимание, что <code>highlight</code> <em>не</em> используется для выделения javascript на стороне клиента.</p>
+<p>Параметры:</p>
 <ul>
-<li><code>linenos</code>: configure line numbers. Valid values are <code>true</code>, <code>false</code>, <code>table</code>, or <code>inline</code>. <code>false</code> will turn off line numbers if it&rsquo;s configured to be on in site config. 
+<li><code>linenos</code>: настроить номера строк. Допустимые значения: <code>true</code>, <code>false</code>, <code>table</code> или <code>inline</code>. <code>false</code> отключит номера строк, если он настроен для включения в конфигурации сайта. 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.60.0-relnotes/" target="_blank">Новое в v0.60.0</a>
-</button> <code>table</code> will give copy-and-paste friendly code blocks.</li>
-<li><code>hl_lines</code>: lists a set of line numbers or line number ranges to be highlighted.</li>
-<li><code>linenostart=199</code>: starts the line number count from 199.</li>
-<li><code>anchorlinenos</code>: Configure anchors on line numbers. Valid values are <code>true</code> or <code>false</code>;</li>
-<li><code>lineanchors</code>: Configure a prefix for the anchors on line numbers. Will be suffixed with <code>-</code>, so linking to the line number 1 with the option <code>lineanchors=prefix</code> adds the anchor <code>prefix-1</code> to the page.</li>
+</button> <code>table</code> предоставит блоки кода, удобные для копирования и вставки.</li>
+<li><code>hl_lines</code>: перечисляет набор номеров строк или диапазонов номеров строк, которые необходимо выделить.</li>
+<li><code>linenostart=199</code>: начинает отсчет номеров строк с 199.</li>
+<li><code>anchorlinenos</code>: Настроить якоря для номеров строк. Допустимые значения: <code>true</code> или <code>false</code>;</li>
+<li><code>lineanchors</code>: Настройте префикс для якорей в номерах строк. Будет иметь суффикс <code>-</code>, поэтому ссылка на строку номер 1 с опцией <code>lineanchors=prefix</code> добавляет к странице привязку <code>prefix-1</code>.</li>
 </ul>
-<h3 id="example-highlight-shortcode">Example: Highlight Shortcode <a class="header-link" href="#example-highlight-shortcode"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="пример-подсветка-шорткода">Пример: Подсветка шорткода <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-%d0%bf%d0%be%d0%b4%d1%81%d0%b2%d0%b5%d1%82%d0%ba%d0%b0-%d1%88%d0%be%d1%80%d1%82%d0%ba%d0%be%d0%b4%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <pre><code>{{&lt; highlight go &quot;linenos=table,hl_lines=8 15-17,linenostart=199&quot; &gt;}}
 // ... code
 {{&lt; / highlight &gt;}}
-</code></pre><p>Gives this:</p>
+</code></pre><p>Дает следующее:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">199
@@ -381,10 +381,10 @@
 </code></pre></td></tr></table>
 </div>
 </div>
-<h2 id="highlight-template-func">Highlight Template Func <a class="header-link" href="#highlight-template-func"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>See <a href="/functions/highlight/">Highlight</a>.</p>
-<h2 id="highlighting-in-code-fences">Highlighting in Code Fences <a class="header-link" href="#highlighting-in-code-fences"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Highlighting in code fences is enabled by default.
+<h2 id="подсветка-шаблона-функции">Подсветка шаблона функции <a class="header-link" href="#%d0%bf%d0%be%d0%b4%d1%81%d0%b2%d0%b5%d1%82%d0%ba%d0%b0-%d1%88%d0%b0%d0%b1%d0%bb%d0%be%d0%bd%d0%b0-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Смотрите <a href="/functions/highlight/">подсветка</a>.</p>
+<h2 id="подсветка-в-ограничениях-кода">Подсветка в ограничениях кода <a class="header-link" href="#%d0%bf%d0%be%d0%b4%d1%81%d0%b2%d0%b5%d1%82%d0%ba%d0%b0-%d0%b2-%d0%be%d0%b3%d1%80%d0%b0%d0%bd%d0%b8%d1%87%d0%b5%d0%bd%d0%b8%d1%8f%d1%85-%d0%ba%d0%be%d0%b4%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>По умолчанию выделение в границах кода включено. 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
@@ -393,7 +393,7 @@
 <pre><code>```go {linenos=table,hl_lines=[8,&quot;15-17&quot;],linenostart=199}
 // ... code
 ```
-</code></pre><p>Gives this:</p>
+</code></pre><p>Дает следующее:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">199
@@ -445,10 +445,10 @@
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.60.0-relnotes/" target="_blank">Новое в v0.60.0</a>
-</button>Note that only Goldmark supports passing attributes such as <code>hl_lines</code>, and it&rsquo;s important that it does not contain any spaces. See <a href="https://github.com/yuin/goldmark-highlighting">goldmark-highlighting</a> for more information.</p>
-<p>The options are the same as in the <a href="/content-management/syntax-highlighting/#highlight-shortcode">highlighting shortcode</a>,including <code>linenos=false</code>, but note the slightly different Markdown attribute syntax.</p>
-<h2 id="list-of-chroma-highlighting-languages">List of Chroma Highlighting Languages <a class="header-link" href="#list-of-chroma-highlighting-languages"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The full list of Chroma lexers and their aliases (which is the identifier used in the <code>highlight</code> template func or when doing highlighting in code fences):</p>
+</button> Обратите внимание, что только Goldmark поддерживает передачу атрибутов, таких как <code>hl_lines</code>, и важно, чтобы он не содержал пробелов. Смотрите <a href="https://github.com/yuin/goldmark-highlighting">goldmark-highlighting</a> для получения дополнительной информации.</p>
+<p>Параметры такие же, как и в <a href="/content-management/syntax-highlighting/#highlight-shortcode">highlighting shortcode</a>, включая <code>linenos=false</code>, но обратите внимание на немного другой синтаксис атрибута Markdown.</p>
+<h2 id="список-языков-выделения-цветности">Список языков выделения цветности <a class="header-link" href="#%d1%81%d0%bf%d0%b8%d1%81%d0%be%d0%ba-%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2-%d0%b2%d1%8b%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f-%d1%86%d0%b2%d0%b5%d1%82%d0%bd%d0%be%d1%81%d1%82%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Полный список лексеров Chroma и их псевдонимов (который является идентификатором, используемым в функции шаблона <code>highlight</code> или при выделении в ограждениях кода):</p>
 <dl>
 
 <dt>ABAP</dt>
@@ -1162,26 +1162,26 @@
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -1190,93 +1190,88 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -2366,8 +2361,8 @@
   <a href="https://gohugo.ru/content-management/syntax-highlighting/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Syntax Highlighting”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Подсветка синтаксиса”
+  </a> последнее обновление: December 29, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/f98c73c987c351ce4e30a7380278c6e7247194fd">Перевод content-management (f98c73c98)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5csyntax-highlighting.md" class="
@@ -2545,7 +2540,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

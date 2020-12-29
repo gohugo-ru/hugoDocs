@@ -19,14 +19,14 @@ Basic Syntax Go Templates are HTML files with the addition of variables and fun
     </item>
     
     <item>
-      <title>Content Organization</title>
+      <title>Организация контента</title>
       <link>https://gohugo.ru/content-management/organization/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/content-management/organization/</guid>
-      <description>Page Bundles Hugo 0.32 announced page-relative images and other resources packaged into Page Bundles.
-These terms are connected, and you also need to read about Page Resources and Image Processing to get the full picture.
-The illustration shows 3 bundles. Note that the home page bundle cannot contain other content pages, but other files (images etc.) are fine. The bundle documentation is work in progress.</description>
+      <description>Группы страниц Hugo 0.32 анонсировал изображения, относящиеся к страницам, и другие ресурсы, упакованные в Page Bundles.
+Эти условия взаимосвязаны, и Вам также необходимо прочитать о Ресурсе страницы и Обработке изображений, чтобы получить полную картину.
+На иллюстрации показаны 3 комплекта. Обратите внимание, что пакет домашней страницы не может содержать другие страницы содержимого, но другие файлы (изображения и т.д.) подойдут. Документация пакета в разработке. Вскоре мы опубликуем более подробные документы по этому поводу.</description>
     </item>
     
     <item>
@@ -109,14 +109,15 @@ config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attribu
     </item>
     
     <item>
-      <title>Comments</title>
+      <title>Комментарии</title>
       <link>https://gohugo.ru/content-management/comments/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.ru/content-management/comments/</guid>
-      <description>Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to websites via JavaScript.
-Your theme may already support Disqus, but if not, it is easy to add to your templates via Hugo&amp;rsquo;s built-in Disqus partial.
-Add Disqus Hugo comes with all the code you need to load Disqus into your templates. Before adding Disqus to your site, you&amp;rsquo;ll need to set up an account.</description>
+      <description>Hugo поставляется с поддержкой Disqus, сторонней службы, которая предоставляет веб-сайты возможность комментирования и сообщества через JavaScript.
+Ваша тема может уже поддерживать Disqus, но если нет, ее легко добавить в Ваши шаблоны с помощью Частично встроенный Disqus в Хьюго.
+Добавить Disqus Hugo поставляется со всем кодом, необходимым для загрузки Disqus в Ваши шаблоны. Перед добавлением Disqus на свой сайт Вам необходимо создать учетную запись.
+Настроить Disqus Комментарии Disqus требуют, чтобы Вы установили одно значение в файл конфигурации сайта, например:</description>
     </item>
     
   </channel>

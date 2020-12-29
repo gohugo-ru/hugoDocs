@@ -56,17 +56,17 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="Front Matter" />
-<meta property="og:description" content="Hugo allows you to add front matter in yaml, toml, or json to your content files." />
+<meta property="og:description" content="Hugo позволяет добавлять front matter в файлы содержимого на языках yaml, toml или json." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/front-matter/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-01-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
+<meta property="article:modified_time" content="2020-12-26T13:54:27+03:00" />
 <meta itemprop="name" content="Front Matter">
-<meta itemprop="description" content="Hugo allows you to add front matter in yaml, toml, or json to your content files.">
+<meta itemprop="description" content="Hugo позволяет добавлять front matter в файлы содержимого на языках yaml, toml или json.">
 <meta itemprop="datePublished" content="2017-01-09T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="1329">
+<meta itemprop="dateModified" content="2020-12-26T13:54:27+03:00" />
+<meta itemprop="wordCount" content="1184">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -76,7 +76,7 @@
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 <meta name="twitter:title" content="Front Matter"/>
-<meta name="twitter:description" content="Hugo allows you to add front matter in yaml, toml, or json to your content files."/>
+<meta name="twitter:description" content="Hugo позволяет добавлять front matter в файлы содержимого на языках yaml, toml или json."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,33 +238,33 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#front-matter-formats">Front Matter Formats</a>
+    <li><a href="#форматы-front-matter">Форматы Front Matter</a>
       <ul>
-        <li><a href="#example">Example</a></li>
+        <li><a href="#пример">Пример</a></li>
       </ul>
     </li>
-    <li><a href="#front-matter-variables">Front Matter Variables</a>
+    <li><a href="#переменные-front-matter">Переменные Front Matter</a>
       <ul>
-        <li><a href="#predefined">Predefined</a></li>
-        <li><a href="#user-defined">User-Defined</a></li>
+        <li><a href="#предопределенный">Предопределенный</a></li>
+        <li><a href="#определяемые-пользователем">Определяемые пользователем</a></li>
       </ul>
     </li>
-    <li><a href="#front-matter-cascade">Front Matter Cascade</a>
+    <li><a href="#каскад-front-matter">Каскад Front Matter</a>
       <ul>
-        <li><a href="#target-specific-pages">Target Specific Pages</a></li>
-        <li><a href="#example-1">Example</a></li>
+        <li><a href="#целевые-определенные-страницы">Целевые определенные страницы</a></li>
+        <li><a href="#пример-1">Пример</a></li>
       </ul>
     </li>
-    <li><a href="#order-content-through-front-matter">Order Content Through Front Matter</a></li>
-    <li><a href="#override-global-markdown-configuration">Override Global Markdown Configuration</a></li>
-    <li><a href="#front-matter-format-specs">Front Matter Format Specs</a></li>
+    <li><a href="#порядок-контента-через-front-matter">Порядок контента через Front Matter</a></li>
+    <li><a href="#переопределить-глобальную-конфигурацию-разметки">Переопределить глобальную конфигурацию разметки</a></li>
+    <li><a href="#технические-характеристики-формата-front-matter">Технические характеристики формата Front Matter</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/related/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Related Content ">
+			<a href="https://gohugo.ru/content-management/related/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Связанный контент ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -274,7 +274,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/build-options/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Build Options">
+			<a href="https://gohugo.ru/content-management/build-options/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Параметры сборки">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -305,7 +305,7 @@
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Hugo allows you to add front matter in yaml, toml, or json to your content files.
+      Hugo позволяет добавлять front matter в файлы содержимого на языках yaml, toml или json.
     </div>
   
 
@@ -316,26 +316,26 @@
 
 <div class="prose" id="prose">
 
-<p><strong>Front matter</strong> allows you to keep metadata attached to an instance of a <a href="/content-management/types/">content type</a>&mdash;i.e., embedded inside a content file&mdash;and is one of the many features that gives Hugo its strength.</p>
+<p><strong>Front matter</strong> позволяет хранить метаданные, прикрепленные к экземпляру <a href="/content-management/types/">типов контента</a>, т.е. встроенные в файл контента, и это одна из многих функций, которые придают Hugo его силу.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/Yh2xKRJGff4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="front-matter-formats">Front Matter Formats <a class="header-link" href="#front-matter-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo supports four formats for front matter, each with their own identifying tokens.</p>
+<h2 id="форматы-front-matter">Форматы Front Matter <a class="header-link" href="#%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82%d1%8b-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Hugo поддерживает четыре формата для front matter, каждый со своими собственными идентификационными токенами.</p>
 <dl>
 <dt>TOML</dt>
-<dd>identified by opening and closing <code>+++</code>.</dd>
+<dd>определяется открытием и закрытием <code>+++</code>.</dd>
 <dt>YAML</dt>
-<dd>identified by opening and closing <code>---</code>.</dd>
+<dd>определяется открытием и закрытием <code>---</code>.</dd>
 <dt>JSON</dt>
-<dd>a single JSON object surrounded by &lsquo;<code>{</code>&rsquo; and &lsquo;<code>}</code>&rsquo;, followed by a new line.</dd>
+<dd>один объект JSON, окруженный символами &lsquo;<code>{</code>&rsquo; и &lsquo;<code>}</code>&rsquo;, за которым следует новая строка.</dd>
 <dt>ORG</dt>
-<dd>a group of Org mode keywords in the format &lsquo;<code>#+KEY: VALUE</code>&rsquo;. Any line that does not start with <code>#+</code> ends the front matter section.
-Keyword values can be either strings (<code>#+KEY: VALUE</code>) or a whitespace separated list of strings (<code>#+KEY[]: VALUE_1 VALUE_2</code>).</dd>
+<dd>группа ключевых слов Org  режима в формате &lsquo;<code>#+KEY: VALUE</code>&rsquo;. Любая строка, которая не начинается с <code>#+</code>, завершает раздел вводной части.
+Значения ключевых слов могут быть строками (<code>#+KEY: VALUE</code>) или списком строк, разделенных пробелами (<code>#+KEY[]: VALUE_1 VALUE_2</code>).</dd>
 </dl>
-<h3 id="example">Example <a class="header-link" href="#example"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="пример">Пример <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 
 
 
@@ -418,65 +418,64 @@ Keyword values can be either strings (<code>#+KEY: VALUE</code>) or a whitespace
 
 </div>
 
-<h2 id="front-matter-variables">Front Matter Variables <a class="header-link" href="#front-matter-variables"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<h3 id="predefined">Predefined <a class="header-link" href="#predefined"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>There are a few predefined variables that Hugo is aware of. See <a href="/variables/page/">Page Variables</a> for how to call many of these predefined variables in your templates.</p>
+<h2 id="переменные-front-matter">Переменные Front Matter <a class="header-link" href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h3 id="предопределенный">Предопределенный <a class="header-link" href="#%d0%bf%d1%80%d0%b5%d0%b4%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Есть несколько предопределенных переменных, о которых Хьюго знает. Смотрите <a href="/variables/page/">Переменные страницы</a>, чтобы узнать, как вызывать многие из этих предопределенных переменных в Ваших шаблонах.</p>
 <dl>
 <dt>aliases</dt>
-<dd>an array of one or more aliases (e.g., old published paths of renamed content) that will be created in the output directory structure . See <a href="/content-management/urls/#aliases">Aliases</a> for details.</dd>
+<dd>массив из одного или нескольких псевдонимов (например, старых опубликованных путей переименованного контента), которые будут созданы в структуре выходного каталога. Подробнее смотрите <a href="/content-management/urls/#aliases">псевдонимы</a>.</dd>
 <dt>audio</dt>
-<dd>an array of paths to audio files related to the page; used by the <code>opengraph</code> <a href="/templates/internal">internal template</a> to populate <code>og:audio</code>.</dd>
+<dd>массив путей к аудиофайлам, относящимся к странице; используется <code>opengraph</code> <a href="/templates/internal">внутренний шаблон</a> для заполнения <code>og:audio</code>.</dd>
 <dt>cascade</dt>
-<dd>a map of Front Matter keys whose values are passed down to the page&rsquo;s descendents unless overwritten by self or a closer ancestor&rsquo;s cascade. See <a href="#front-matter-cascade">Front Matter Cascade</a> for details.</dd>
+<dd>карта ключей Front Matter, значения которых передаются потомкам страницы, если они не перезаписываются самим собой или каскадом более близких предков. Смотрите <a href="#front-matter-cascade">Front Matter Cascade</a> для получения подробной информации.</dd>
 <dt>date</dt>
-<dd>the datetime assigned to this page. This is usually fetched from the <code>date</code> field in front matter, but this behaviour is configurable.</dd>
+<dd>дата и время, назначенное этой странице. Обычно это выбирается из поля <code>date</code> в начале сообщения, но это поведение можно настроить.</dd>
 <dt>description</dt>
-<dd>the description for the content.</dd>
+<dd>описание для контента.</dd>
 <dt>draft</dt>
-<dd>if <code>true</code>, the content will not be rendered unless the <code>--buildDrafts</code> flag is passed to the <code>hugo</code> command.</dd>
+<dd>если <code>true</code>, контент не будет отображаться, если флаг <code>--buildDrafts</code> не передан команде <code>hugo</code>.</dd>
 <dt>expiryDate</dt>
-<dd>the datetime at which the content should no longer be published by Hugo; expired content will not be rendered unless the <code>--buildExpired</code> flag is passed to the <code>hugo</code> command.</dd>
+<dd>дата и время, при которых контент больше не должен публиковаться Hugo; Просроченный контент не будет отображаться, если флаг <code>--buildExpired</code> не передан команде <code>hugo</code>.</dd>
 <dt>headless</dt>
-<dd>if <code>true</code>, sets a leaf bundle to be <a href="/content-management/page-bundles/#headless-bundle">headless</a>.</dd>
+<dd>если <code>true</code>, устанавливает для leaf bundle значение <a href="/content-management/page-bundles/#headless-bundle">headless</a>.</dd>
 <dt>images</dt>
-<dd>an array of paths to images related to the page; used by <a href="/templates/internal">internal templates</a> such as <code>_internal/twitter_cards.html</code>.</dd>
+<dd>массив путей к изображениям, относящимся к странице; используется <a href="/templates/internal">внутренними шаблонами</a>, такими как <code>_internal/twitter_cards.html</code>.</dd>
 <dt>isCJKLanguage</dt>
-<dd>if <code>true</code>, Hugo will explicitly treat the content as a CJK language; both <code>.Summary</code> and <code>.WordCount</code> work properly in CJK languages.</dd>
+<dd>если <code>true</code>, Hugo будет явно рассматривать контент как язык CJK; как <code>.Summary</code> так и <code>.WordCount</code> корректно работают на CJK языках.</dd>
 <dt>keywords</dt>
-<dd>the meta keywords for the content.</dd>
+<dd>мета-ключевые слова для содержания.</dd>
 <dt>layout</dt>
-<dd>the layout Hugo should select from the <a href="/templates/lookup-order/" title="Hugo traverses your templates in a specific order when rendering content to allow for DRYer templating.">lookup order</a> when rendering the content. If a <code>type</code> is not specified in the front matter, Hugo will look for the layout of the same name in the layout directory that corresponds with a content&rsquo;s section. See <a href="/content-management/types/#defining-a-content-type" title="Learn how to specify a type and a layout in a content's front matter">&ldquo;Defining a Content Type&rdquo;</a></dd>
+<dd>макет Хьюго должен выбирать из <a href="/templates/lookup-order/" title="Hugo traverses your templates in a specific order when rendering content to allow for DRYer templating.">порядок поиска</a> при рендеринге содержимого. Если <code>type</code> не указан во вступительной части, Hugo будет искать макет с тем же именем в каталоге макета, который соответствует разделу содержимого. Смотрите <a href="/content-management/types/#defining-a-content-type" title="Learn how to specify a type and a layout in a content's front matter">&ldquo;Определение типа контента&rdquo;</a></dd>
 <dt>lastmod</dt>
-<dd>the datetime at which the content was last modified.</dd>
+<dd>дата и время последнего изменения содержимого.</dd>
 <dt>linkTitle</dt>
-<dd>used for creating links to content; if set, Hugo defaults to using the <code>linktitle</code> before the <code>title</code>. Hugo can also <a href="/templates/lists/#by-link-title">order lists of content by <code>linktitle</code></a>.</dd>
+<dd>используется для создания ссылок на контент; если установлено, Хьюго по умолчанию использует <code>linktitle</code> перед <code>title</code>. Хьюго также может <a href="/templates/lists/#by-link-title">упорядочить списки контента по <code>linktitle</code></a>.</dd>
 <dt>markup</dt>
-<dd><strong>experimental</strong>; specify <code>&quot;rst&quot;</code> for reStructuredText (requires<code>rst2html</code>) or <code>&quot;md&quot;</code> (default) for Markdown.</dd>
+<dd><strong>экспериментальный</strong>; укажите <code>&quot;rst&quot;</code> для reStructuredText (требуется <code>rst2html</code>) или <code>&quot;md&quot;</code> (по умолчанию) для Markdown.</dd>
 <dt>outputs</dt>
-<dd>allows you to specify output formats specific to the content. See <a href="/templates/output-formats/" title="With the release of v22, you can output your content to any text format using Hugo's familiar templating">output formats</a>.</dd>
+<dd>позволяет указать форматы вывода, специфичные для содержимого. Смотрите <a href="/templates/output-formats/" title="With the release of v22, you can output your content to any text format using Hugo's familiar templating">форматы вывода</a>.</dd>
 <dt>publishDate</dt>
-<dd>if in the future, content will not be rendered unless the <code>--buildFuture</code> flag is passed to <code>hugo</code>.</dd>
+<dd>если в будущем контент не будет отображаться, если флаг <code>--buildFuture</code> не передан в <code>hugo</code>.</dd>
 <dt>resources</dt>
-<dd>used for configuring page bundle resources. See <a href="/content-management/page-resources/">Page Resources</a>.</dd>
+<dd>используется для настройки ресурсов пакета страниц. Смотрите <a href="/content-management/page-resources/">Ресурсы страницы</a>.</dd>
 <dt>series</dt>
-<dd>an array of series this page belongs to, as a subset of the <code>series</code> <a href="/content-management/taxonomies/">taxonomy</a>; used by the <code>opengraph</code> <a href="/templates/internal">internal template</a> to populate <code>og:see_also</code>.</dd>
+<dd>массив серий, к которым принадлежит эта страница, как подмножество <code>series</code> <a href="/content-management/taxonomies/">таксономия</a>; используется <code>opengraph</code> <a href="/templates/internal">внутренний шаблон</a> для заполнения <code>og:see_also</code>.</dd>
 <dt>slug</dt>
-<dd>appears as the tail of the output URL. A value specified in front matter will override the segment of the URL based on the filename.</dd>
+<dd>отображается в конце выходного URL. Значение, указанное в заголовке, переопределит сегмент URL-адреса на основе имени файла.</dd>
 <dt>summary</dt>
-<dd>text used when providing a summary of the article in the <code>.Summary</code> page variable; details available in the <a href="/content-management/summaries/">content-summaries</a> section.</dd>
+<dd>текст, используемый при предоставлении резюме статьи в переменной страницы <code>.Summary</code>; подробности доступны в разделе <a href="/content-management/summaries/">резюме содержания</a>.</dd>
 <dt>title</dt>
-<dd>the title for the content.</dd>
+<dd>название содержания.</dd>
 <dt>type</dt>
-<dd>the type of the content; this value will be automatically derived from the directory (i.e., the <a href="/content-management/sections/">section</a>) if not specified in front matter.</dd>
+<dd>тип контента; это значение будет автоматически получено из каталога (т. е., <a href="/content-management/sections/">раздел</a>), если не указано в предварительном сообщении.</dd>
 <dt>url</dt>
-<dd>the full path to the content from the web root. It makes no assumptions about the path of the content file. It also ignores any language prefixes of
-the multilingual feature.</dd>
+<dd>полный путь к содержимому из корня сети. Он не делает никаких предположений о пути к файлу содержимого. Он также игнорирует любые языковые префиксы многоязычной функции.</dd>
 <dt>videos</dt>
-<dd>an array of paths to videos related to the page; used by the <code>opengraph</code> <a href="/templates/internal">internal template</a> to populate <code>og:video</code>.</dd>
+<dd>массив путей к видео, относящимся к странице; используется в <code>opengraph</code> <a href="/templates/internal">внутреннего шаблона</a> для заполнения <code>og:video</code>.</dd>
 <dt>weight</dt>
-<dd>used for <a href="/templates/lists/" title="Hugo provides multiple ways to sort and order your content in list templates">ordering your content in lists</a>. Lower weight gets higher precedence. So content with lower weight will come first. If set, weights should be non-zero, as 0 is interpreted as an <em>unset</em> weight.</dd>
+<dd>используется для <a href="/templates/lists/" title="Hugo provides multiple ways to sort and order your content in list templates">упорядочивания вашего контента в списках</a>. Меньший вес имеет более высокий приоритет. Так что довольство меньшим весом будет на первом месте. Если установлено, веса должны быть ненулевыми, поскольку 0 интерпретируется как <em>неустановленный</em> вес.</dd>
 <dt>&lt;taxonomies&gt;</dt>
-<dd>field name of the <em>plural</em> form of the index. See <code>tags</code> and <code>categories</code> in the above front matter examples. <em>Note that the plural form of user-defined taxonomies cannot be the same as any of the predefined front matter variables.</em></dd>
+<dd>имя поля в форме <em>множественного числа</em> индекса. Смотрите <code>tags</code> и <code>categories</code> в примерах выше. <em>Обратите внимание, что форма множественного числа определяемых пользователем таксономий не может совпадать с любой из предопределенных первичных переменных.</em></dd>
 </dl>
 
 <aside class="admonition note">
@@ -485,13 +484,13 @@ the multilingual feature.</dd>
 	</div>
 	
 	
-	<div class="admonition-content"><p>If neither <code>slug</code> nor <code>url</code> is present and <a href="/content-management/urls/#permalinks">permalinks are not configured otherwise in your site <code>config</code> file</a>, Hugo will use the filename of your content to create the output URL. See <a href="/content-management/organization">Content Organization</a> for an explanation of paths in Hugo and <a href="/content-management/urls/">URL Management</a> for ways to customize Hugo&rsquo;s default behaviors.</p>
+	<div class="admonition-content"><p>Если ни <code>slug</code>, ни <code>url</code> отсутствуют и <a href="/content-management/urls/#permalinks">постоянные ссылки не настроены иначе в файле <code>config</code> конфигурации Вашего сайта</a>, Hugo будет использовать имя файла вашего контента для создания вывода URL-адреса. Смотрите <a href="/content-management/organization">организация контента</a> для объяснения путей в Hugo и <a href="/content-management/urls/">Управление URL-адресами</a> для получения информации о способах настройки поведения Hugo по умолчанию.</p>
 </div>
 </aside>
 
-<h3 id="user-defined">User-Defined <a class="header-link" href="#user-defined"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You can add fields to your front matter arbitrarily to meet your needs. These user-defined key-values are placed into a single <code>.Params</code> variable for use in your templates.</p>
-<p>The following fields can be accessed via <code>.Params.include_toc</code> and <code>.Params.show_comments</code>, respectively. The <a href="/variables/">Variables</a> section provides more information on using Hugo&rsquo;s page- and site-level variables in your templates.</p>
+<h3 id="определяемые-пользователем">Определяемые пользователем <a class="header-link" href="#%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d1%8f%d0%b5%d0%bc%d1%8b%d0%b5-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%bc"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Вы можете произвольно добавлять поля в свой вступительный документ в соответствии со своими потребностями. Эти определяемые пользователем пары &ldquo;ключ-значение&rdquo; помещаются в одну переменную <code>.Params</code> для использования в Ваших шаблонах.</p>
+<p>Доступ к следующим полям можно получить через <code>.Params.include_toc</code> и <code>.Params.show_comments</code> соответственно. В разделе <a href="/variables/">Переменные</a> представлена дополнительная информация об использовании переменных уровня страницы и сайта Hugo в Ваших шаблонах.</p>
 
 
 
@@ -536,16 +535,16 @@ the multilingual feature.</dd>
 
 </div>
 
-<h2 id="front-matter-cascade">Front Matter Cascade <a class="header-link" href="#front-matter-cascade"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Any node or section can pass down to descendents a set of Front Matter values as long as defined underneath the reserved <code>cascade</code> Front Matter key.</p>
-<h3 id="target-specific-pages">Target Specific Pages <a class="header-link" href="#target-specific-pages"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h2 id="каскад-front-matter">Каскад Front Matter <a class="header-link" href="#%d0%ba%d0%b0%d1%81%d0%ba%d0%b0%d0%b4-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Любой узел или раздел может передать потомкам набор значений Front Matter, если они определены под зарезервированным ключом Front Matter <code>cascade</code>.</p>
+<h3 id="целевые-определенные-страницы">Целевые определенные страницы <a class="header-link" href="#%d1%86%d0%b5%d0%bb%d0%b5%d0%b2%d1%8b%d0%b5-%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.76.0-relnotes/" target="_blank">Новое в v0.76.0</a>
 </button>
-<p>Since Hugo 0.76 the <code>cascade</code> block can be a slice with a optional <code>_target</code> keyword, allowing for multiple <code>cascade</code> values targeting different page sets.</p>
+<p>Начиная с Hugo 0.76, блок <code>cascade</code> может быть срезом с необязательным ключевым словом <code>_target</code>, что позволяет использовать несколько значений <code>cascade</code> для разных наборов страниц.</p>
 
 
 
@@ -624,18 +623,18 @@ the multilingual feature.</dd>
 
 </div>
 
-<p>Keywords available for <code>_target</code>:</p>
+<p>Ключевые слова, доступные для <code>_target</code>:</p>
 <dl>
 <dt>path</dt>
-<dd>A <a href="https://github.com/gobwas/glob">Glob</a> pattern matching the content path below /content. Expects Unix-styled slashes. Note that this is the virtual path, so it starts at the mount root. The matching support double-asterisks so you can match for patterns like <code>/blog/*/**</code> to match anything from the third level and down.</dd>
+<dd>Шаблон <a href="https://github.com/gobwas/glob">Glob</a> , соответствующий пути к содержимому ниже <code>/content</code>. Ожидает косые черты в стиле Unix. Обратите внимание, что это виртуальный путь, поэтому он начинается с корня монтирования. Сопоставление поддерживает двойные звездочки, поэтому Вы можете сопоставить шаблоны вроде <code>/blog/*/**</code>, чтобы сопоставить все, начиная с третьего уровня и ниже.</dd>
 <dt>kind</dt>
-<dd>A Glob pattern matching the Page&rsquo;s Kind(s), e.g. &ldquo;{home,section}&rdquo;.</dd>
+<dd>Шаблон Glob, соответствующий типу страницы, например: &ldquo;{home,section}&rdquo;.</dd>
 <dt>lang</dt>
-<dd>A Glob pattern matching the Page&rsquo;s language, e.g. &ldquo;{en,sv}&rdquo;.</dd>
+<dd>Шаблон Glob, соответствующий языку страницы, например: &ldquo;{en,sv}&rdquo;.</dd>
 </dl>
-<p>Any of the above can be omitted.</p>
-<h3 id="example-1">Example <a class="header-link" href="#example-1"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>In <code>content/blog/_index.md</code></p>
+<p>Любое из вышеперечисленного можно опустить.</p>
+<h3 id="пример-1">Пример <a class="header-link" href="#%d0%bf%d1%80%d0%b8%d0%bc%d0%b5%d1%80-1"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>В <code>content/blog/_index.md</code></p>
 
 
 
@@ -685,16 +684,16 @@ the multilingual feature.</dd>
 
 </div>
 
-<p>With the above example the Blog section page and its descendents will return <code>images/typewriter.jpg</code> when <code>.Params.banner</code> is invoked unless:</p>
+<p>В приведенном выше примере страница раздела блога и ее потомки будут возвращать <code>images/typewriter.jpg</code> при вызове <code>.Params.banner</code>, если:</p>
 <ul>
-<li>Said descendent has its own <code>banner</code> value set</li>
-<li>Or a closer ancestor node has its own <code>cascade.banner</code> value set.</li>
+<li>Указанный потомок имеет собственное установленное значение <code>banner</code>.</li>
+<li>Или для более близкого узла-предка установлено собственное значение <code>cascade.banner</code>.</li>
 </ul>
-<h2 id="order-content-through-front-matter">Order Content Through Front Matter <a class="header-link" href="#order-content-through-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>You can assign content-specific <code>weight</code> in the front matter of your content. These values are especially useful for <a href="/templates/lists/" title="Hugo provides multiple ways to sort and order your content in list templates">ordering</a> in list views. You can use <code>weight</code> for ordering of content and the convention of <a href="/content-management/taxonomies/"><code>&lt;TAXONOMY&gt;_weight</code></a> for ordering content within a taxonomy. See <a href="/templates/lists/#ordering-content" title="See how to order content in list pages; for example, templates that look to specific _index.md for content and front matter.">Ordering and Grouping Hugo Lists</a> to see how <code>weight</code> can be used to organize your content in list views.</p>
-<h2 id="override-global-markdown-configuration">Override Global Markdown Configuration <a class="header-link" href="#override-global-markdown-configuration"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>It&rsquo;s possible to set some options for Markdown rendering in a content&rsquo;s front matter as an override to the <a href="/getting-started/configuration/" title="Hugo documentation for site configuration">BlackFriday rendering options set in your project configuration</a>.</p>
-<h2 id="front-matter-format-specs">Front Matter Format Specs <a class="header-link" href="#front-matter-format-specs"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<h2 id="порядок-контента-через-front-matter">Порядок контента через Front Matter <a class="header-link" href="#%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%be%d0%ba-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82%d0%b0-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Вы можете назначить <code>weight</code> , зависящий от контента, в начале Вашего контента. Эти значения особенно полезны для <a href="/templates/lists/" title="Hugo provides multiple ways to sort and order your content in list templates">упорядочивания</a> в представлениях списка. Вы можете использовать <code>weight</code> для упорядочивания контента и соглашение <a href="/content-management/taxonomies/"><code>&lt;TAXONOMY&gt;_weight</code></a> для упорядочивания контента в таксономии. Смотрите <a href="/templates/lists/#ordering-content" title="See how to order content in list pages; for example, templates that look to specific _index.md for content and front matter.">Упорядочивание и группировка списков Hugo</a>, чтобы увидеть, как <code>weight</code> можно использовать для организации Вашего контента в представлениях списков.</p>
+<h2 id="переопределить-глобальную-конфигурацию-разметки">Переопределить глобальную конфигурацию разметки <a class="header-link" href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b8%d1%82%d1%8c-%d0%b3%d0%bb%d0%be%d0%b1%d0%b0%d0%bb%d1%8c%d0%bd%d1%83%d1%8e-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8e-%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%82%d0%ba%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Можно установить некоторые параметры для рендеринга Markdown в заголовке контента в качестве замены <a href="/getting-started/configuration/" title="Hugo documentation for site configuration">параметров рендеринга BlackFriday, заданных в конфигурации Вашего проекта</a>.</p>
+<h2 id="технические-характеристики-формата-front-matter">Технические характеристики формата Front Matter <a class="header-link" href="#%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b5-%d1%85%d0%b0%d1%80%d0%b0%d0%ba%d1%82%d0%b5%d1%80%d0%b8%d1%81%d1%82%d0%b8%d0%ba%d0%b8-%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82%d0%b0-front-matter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <ul>
 <li><a href="https://github.com/toml-lang/toml" title="Specification for TOML, Tom's Obvious Minimal Language">TOML Spec</a></li>
 <li><a href="https://yaml.org/spec/" title="Specification for YAML, YAML Ain't Markup Language">YAML Spec</a></li>
@@ -708,15 +707,15 @@ the multilingual feature.</dd>
 <h2>Смотрите также</h2>
 <ul>
 	
-	<li><a href="/content-management/archetypes/">Archetypes</a></li>
-	
 	<li><a href="/templates/data-templates/">Data Templates</a></li>
+	
+	<li><a href="/content-management/archetypes/">Архетипы</a></li>
 	
 	<li><a href="/getting-started/code-toggle/">Переключение кода</a></li>
 	
 	<li><a href="/getting-started/configuration/">Настройка Хьюго</a></li>
 	
-	<li><a href="/content-management/taxonomies/">Taxonomies</a></li>
+	<li><a href="/templates/taxonomy-templates/">Taxonomy Templates</a></li>
 	
 </ul>
 
@@ -837,26 +836,26 @@ the multilingual feature.</dd>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -865,93 +864,88 @@ the multilingual feature.</dd>
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -2042,7 +2036,7 @@ the multilingual feature.</dd>
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Front Matter”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+  </a> последнее обновление: December 26, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/38cdf5e5ea9f18d514816ff7ec66d10cb36088f3">Перевод части content-management (38cdf5e5e)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5cfront-matter.md" class="
@@ -2220,7 +2214,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

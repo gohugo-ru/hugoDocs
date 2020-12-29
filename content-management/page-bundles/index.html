@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Page Bundles | Hugo</title>
+  <title>Пакеты страниц | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Page Bundles" />
-<meta property="og:description" content="Content organization using Page Bundles" />
+<meta property="og:title" content="Пакеты страниц" />
+<meta property="og:description" content="Организация содержимого с использованием пакетов страниц" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/page-bundles/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2018-01-24T13:09:00-05:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Page Bundles">
-<meta itemprop="description" content="Content organization using Page Bundles">
+<meta property="article:modified_time" content="2020-12-26T13:54:27+03:00" />
+<meta itemprop="name" content="Пакеты страниц">
+<meta itemprop="description" content="Организация содержимого с использованием пакетов страниц">
 <meta itemprop="datePublished" content="2018-01-24T13:09:00-05:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="671">
+<meta itemprop="dateModified" content="2020-12-26T13:54:27+03:00" />
+<meta itemprop="wordCount" content="608">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Page Bundles"/>
-<meta name="twitter:description" content="Content organization using Page Bundles"/>
+<meta name="twitter:title" content="Пакеты страниц"/>
+<meta name="twitter:description" content="Организация содержимого с использованием пакетов страниц"/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -240,13 +240,13 @@
   <ul>
     <li><a href="#leaf-bundles">Leaf Bundles</a>
       <ul>
-        <li><a href="#examples-of-leaf-bundle-organization">Examples of Leaf Bundle organization</a></li>
+        <li><a href="#examples-of-leaf-bundle-organization">Примеры организации Leaf Bundle</a></li>
         <li><a href="#headless-bundle">Headless Bundle</a></li>
       </ul>
     </li>
     <li><a href="#branch-bundles">Branch Bundles</a>
       <ul>
-        <li><a href="#examples-of-branch-bundle-organization">Examples of Branch Bundle organization</a></li>
+        <li><a href="#examples-of-branch-bundle-organization">Примеры организации Branch Bundle</a></li>
       </ul>
     </li>
   </ul>
@@ -255,7 +255,7 @@
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/image-processing/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Image Processing ">
+			<a href="https://gohugo.ru/content-management/image-processing/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Обработка изображений ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -282,13 +282,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Page Bundles</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Пакеты страниц</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Content organization using Page Bundles
+      Организация содержимого с использованием пакетов страниц
     </div>
   
 
@@ -299,11 +299,11 @@
 
 <div class="prose" id="prose">
 
-<p>Page Bundles are a way to group <a href="/content-management/page-resources/">Page Resources</a>.</p>
-<p>A Page Bundle can be one of:</p>
+<p>Пакеты страниц - это способ группировки <a href="/content-management/page-resources/">ресурсов страницы</a>.</p>
+<p>Пакет страниц может быть одним из:</p>
 <ul>
-<li>Leaf Bundle (leaf means it has no children)</li>
-<li>Branch Bundle (home page, section, taxonomy terms, taxonomy list)</li>
+<li>Leaf Bundle (лист означает, что у него нет детей)</li>
+<li>Branch Bundle (домашняя страница, раздел, термины таксономии, список таксономии)</li>
 </ul>
 <table>
 <thead>
@@ -315,51 +315,50 @@
 </thead>
 <tbody>
 <tr>
-<td>Usage</td>
-<td>Collection of content and attachments for single pages</td>
-<td>Collection of attachments for section pages (home page, section, taxonomy terms, taxonomy list)</td>
+<td>Применение</td>
+<td>Сборник контента и вложений для отдельных страниц</td>
+<td>Сборник вложений для страниц раздела (домашняя страница, раздел, термины таксономии, список таксономии)</td>
 </tr>
 <tr>
-<td>Index file name</td>
+<td>Имя индексного файла</td>
 <td><code>index.md</code> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
 <td><code>_index.md</code> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
 </tr>
 <tr>
-<td>Allowed Resources</td>
-<td>Page and non-page (like images, pdf, etc.) types</td>
-<td>Only non-page (like images, pdf, etc.) types</td>
+<td>Разрешенные ресурсы</td>
+<td>Страничные и нестраничные (например, изображения, pdf и т.д.) типы</td>
+<td>Только нестраничные (например, изображения, pdf и т.д.) типы</td>
 </tr>
 <tr>
-<td>Where can the Resources live?</td>
-<td>At any directory level within the leaf bundle directory.</td>
-<td>Only in the directory level <strong>of</strong> the branch bundle directory i.e. the directory containing the <code>_index.md</code> (<a href="https://discourse.gohugo.io/t/question-about-content-folder-structure/11822/4?u=kaushalmodi">ref</a>).</td>
+<td>Где могут жить Ресурсы?</td>
+<td>На любом уровне каталога в каталоге конечного пакета.</td>
+<td>Только на уровне каталога <strong>для</strong> каталога пакета ветки, т.е. каталога, содержащего <code>_index.md</code> (<a href="https://discourse.gohugo.io/t/question-about-content-folder-structure/11822/4?u=kaushalmodi">ref</a>).</td>
 </tr>
 <tr>
-<td>Layout type</td>
+<td>Тип макета</td>
 <td><code>single</code></td>
 <td><code>list</code></td>
 </tr>
 <tr>
-<td>Nesting</td>
-<td>Does not allow nesting of more bundles under it</td>
-<td>Allows nesting of leaf or branch bundles under it</td>
+<td>Вложенность</td>
+<td>Не допускает вложения под ним большего количества связок</td>
+<td>Позволяет класть под себя пакеты leaf или branch</td>
 </tr>
 <tr>
-<td>Example</td>
+<td>Пример</td>
 <td><code>content/posts/my-post/index.md</code></td>
 <td><code>content/posts/_index.md</code></td>
 </tr>
 <tr>
-<td>Content from non-index page files&hellip;</td>
-<td>Accessed only as page resources</td>
-<td>Accessed only as regular pages</td>
+<td>Контент из файлов неиндексных страниц &hellip;</td>
+<td>Доступно только как ресурсы страницы</td>
+<td>Доступно только как обычные страницы</td>
 </tr>
 </tbody>
 </table>
 <h2 id="leaf-bundles">Leaf Bundles <a class="header-link" href="#leaf-bundles"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>A <em>Leaf Bundle</em> is a directory at any hierarchy within the <code>content/</code>
-directory, that contains an <strong><code>index.md</code></strong> file.</p>
-<h3 id="examples-of-leaf-bundle-organization">Examples of Leaf Bundle organization <a class="header-link" href="#examples-of-leaf-bundle-organization"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p><em>Leaf Bundle</em> - это каталог любой иерархии в каталоге <code>content/</code>, содержащий файл <strong><code>index.md</code></strong>.</p>
+<h3 id="examples-of-leaf-bundle-organization">Примеры организации Leaf Bundle <a class="header-link" href="#examples-of-leaf-bundle-organization"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">content/
 ├── about
 │   ├── index.md
@@ -379,26 +378,20 @@ directory, that contains an <strong><code>index.md</code></strong> file.</p>
         ├── ..
         └── another-leaf-bundle
             └── index.md
-</code></pre></div><p>In the above example <code>content/</code> directory, there are four leaf
-bundles:</p>
+</code></pre></div><p>В приведенном выше примере каталога <code>content/</code> есть четыре leaf bundles:</p>
 <dl>
 <dt>about</dt>
-<dd>This leaf bundle is at the root level (directly under
-<code>content</code> directory) and has only the <code>index.md</code>.</dd>
+<dd>Этот листовой пакет находится на корневом уровне (непосредственно в каталоге <code>content</code>) и имеет только <code>index.md</code>.</dd>
 <dt>my-post</dt>
-<dd>This leaf bundle has the <code>index.md</code>, two other content
-Markdown files and two image files.</dd>
+<dd>Этот листовой пакет содержит <code>index.md</code>, два других файла разметки содержимого и два файла изображений.</dd>
 <dt>image1</dt>
-<dd>This image is a page resource of <code>my-post</code>
-and only available in <code>my-post/index.md</code> resources.</dd>
+<dd>Это изображение является ресурсом страницы <code>my-post</code> и доступно только в ресурсах <code>my-post/index.md</code>.</dd>
 <dt>image2</dt>
-<dd>This image is a page resource of <code>my-post</code>
-and only available in <code>my-post/index.md</code> resources.</dd>
+<dd>Это изображение является ресурсом страницы <code>my-post</code> и доступно только в ресурсах <code>my-post/index.md</code>.</dd>
 <dt>my-other-post</dt>
-<dd>This leaf bundle has only the <code>index.md</code>.</dd>
+<dd>Этот листовой пакет содержит только файл <code>index.md</code>.</dd>
 <dt>another-leaf-bundle</dt>
-<dd>This leaf bundle is nested under couple of
-directories. This bundle also has only the <code>index.md</code>.</dd>
+<dd>Этот листовой пакет вложен в несколько каталогов. В этом комплекте также есть только <code>index.md</code>.</dd>
 </dl>
 
 <aside class="admonition note">
@@ -407,19 +400,17 @@ directories. This bundle also has only the <code>index.md</code>.</dd>
 	</div>
 	
 	
-	<div class="admonition-content"><p>The hierarchy depth at which a leaf bundle is created does not matter,
-as long as it is not inside another <strong>leaf</strong> bundle.</p>
+	<div class="admonition-content"><p>Глубина иерархии, на которой создается листовой пакет, не имеет значения, если он не находится внутри другого <strong>листового</strong> пакета.</p>
 </div>
 </aside>
 
 <h3 id="headless-bundle">Headless Bundle <a class="header-link" href="#headless-bundle"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>A headless bundle is a bundle that is configured to not get published
-anywhere:</p>
+<p>Безголовый пакет - это пакет, который настроен так, чтобы нигде не публиковаться:</p>
 <ul>
-<li>It will have no <code>Permalink</code> and no rendered HTML in <code>public/</code>.</li>
-<li>It will not be part of <code>.Site.RegularPages</code>, etc.</li>
+<li>В нем не будет <code>Permalink</code> и обработанного HTML в <code>public/</code>.</li>
+<li>Он не будет частью <code>.Site.RegularPages</code> и т.д.</li>
 </ul>
-<p>But you can get it by <code>.Site.GetPage</code>. Here is an example:</p>
+<p>Но Вы можете получить его с помощью <code>.Site.GetPage</code>. Вот пример:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$headless</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Site.GetPage</span><span class="w"> </span><span class="s">&#34;/some-headless-bundle&#34;</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">$reusablePages</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">$headless</span><span class="na">.Resources.Match</span><span class="w"> </span><span class="s">&#34;author*&#34;</span><span class="w"> </span><span class="cp">}}</span>
 <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Authors<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
@@ -427,30 +418,24 @@ anywhere:</p>
     <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
     <span class="cp">{{</span><span class="w"> </span><span class="na">.Content</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
-</code></pre></div><p><em>In this example, we are assuming the <code>some-headless-bundle</code> to be a headless
-bundle containing one or more <strong>page</strong> resources whose <code>.Name</code> matches
-<code>&quot;author*&quot;</code>.</em></p>
-<p>Explanation of the above example:</p>
+</code></pre></div><p><em>В этом примере мы предполагаем, что <code>some-headless-bundle</code> представляет собой комплект без заголовка, содержащий один или несколько ресурсов <strong>страницы</strong>, чей <code>.Name</code> совпадает с <code>&quot;author*&quot;</code>.</em></p>
+<p>Пояснение к приведенному выше примеру:</p>
 <ol>
-<li>Get the <code>some-headless-bundle</code> Page &ldquo;object&rdquo;.</li>
-<li>Collect a <em>slice</em> of resources in this <em>Page Bundle</em> that matches
-<code>&quot;author*&quot;</code> using <code>.Resources.Match</code>.</li>
-<li>Loop through that <em>slice</em> of nested pages, and output their <code>.Title</code> and
-<code>.Content</code>.</li>
+<li>Получите &ldquo;объект&rdquo; страницы <code>some-headless-bundle</code>.</li>
+<li>Соберите <em>кусок</em> ресурсов в этом <em>Пакете страницы</em>, который соответствует <code>&quot;author*&quot;</code>, используя <code>.Resources.Match</code>.</li>
+<li>Прокрутите этот <em>кусок</em> вложенных страниц и выведите их <code>.Title</code> и <code>.Content</code>.</li>
 </ol>
 <hr>
-<p>A leaf bundle can be made headless by adding below in the Front Matter
-(in the <code>index.md</code>):</p>
+<p>Связку листьев можно сделать безголовой, добавив ниже во Front Matter (в <code>index.md</code>):</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">headless</span> <span class="p">=</span> <span class="kc">true</span>
-</code></pre></div><p>There are many use cases of such headless page bundles:</p>
+</code></pre></div><p>Есть много вариантов использования таких пакетов страниц без заголовка:</p>
 <ul>
-<li>Shared media galleries</li>
-<li>Reusable page content &ldquo;snippets&rdquo;</li>
+<li>Общие медиа-галереи</li>
+<li>Многоразовые &ldquo;снипеты&rdquo; содержания страницы</li>
 </ul>
 <h2 id="branch-bundles">Branch Bundles <a class="header-link" href="#branch-bundles"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>A <em>Branch Bundle</em> is any directory at any hierarchy within the
-<code>content/</code> directory, that contains at least an <strong><code>_index.md</code></strong> file.</p>
-<p>This <code>_index.md</code> can also be directly under the <code>content/</code> directory.</p>
+<p><em>Branch Bundle</em> - это любой каталог в любой иерархии внутри каталога <code>content/</code>, который содержит как минимум файл <strong><code>_index.md</code></strong>.</p>
+<p>Этот <code>_index.md</code> также может находиться непосредственно в каталоге <code>content/</code>.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -458,12 +443,11 @@ bundle containing one or more <strong>page</strong> resources whose <code>.Name<
 	</div>
 	
 	
-	<div class="admonition-content"><p>Here <code>md</code> (markdown) is used just as an example. You can use any file
-type as a content resource as long as it is a content type recognized by Hugo.</p>
+	<div class="admonition-content"><p>Здесь <code>md</code> (разметка) используется просто в качестве примера. Вы можете использовать любой тип файла в качестве ресурса контента, если это тип контента, распознаваемый Hugo.</p>
 </div>
 </aside>
 
-<h3 id="examples-of-branch-bundle-organization">Examples of Branch Bundle organization <a class="header-link" href="#examples-of-branch-bundle-organization"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h3 id="examples-of-branch-bundle-organization">Примеры организации Branch Bundle <a class="header-link" href="#examples-of-branch-bundle-organization"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">content/
 ├── branch-bundle-1
 │   ├── branch-content1.md
@@ -475,15 +459,12 @@ type as a content resource as long as it is a content type recognized by Hugo.</
     ├── _index.md
     └── a-leaf-bundle
         └── index.md
-</code></pre></div><p>In the above example <code>content/</code> directory, there are two branch
-bundles (and a leaf bundle):</p>
+</code></pre></div><p>В приведенном выше примере каталога <code>content/</code> есть два пакета ветвей (и пакет листьев):</p>
 <dl>
 <dt><code>branch-bundle-1</code></dt>
-<dd>This branch bundle has the <code>_index.md</code>, two
-other content Markdown files and two image files.</dd>
+<dd>В этом пакете веток есть <code>_index.md</code>, два других файла разметки с контентом и два файла изображений.</dd>
 <dt><code>branch-bundle-2</code></dt>
-<dd>This branch bundle has the <code>_index.md</code> and a
-nested leaf bundle.</dd>
+<dd>В этом пакете веток есть <code>_index.md</code> и вложенный листовой комплект.</dd>
 </dl>
 
 <aside class="admonition note">
@@ -492,8 +473,7 @@ nested leaf bundle.</dd>
 	</div>
 	
 	
-	<div class="admonition-content"><p>The hierarchy depth at which a branch bundle is created does not
-matter.</p>
+	<div class="admonition-content"><p>Глубина иерархии, на которой создается пакет ветвей, не имеет значения.</p>
 </div>
 </aside>
 
@@ -501,7 +481,7 @@ matter.</p>
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>The <code>.md</code> extension is just an example. The extension can be <code>.html</code>, <code>.json</code> or any valid MIME type. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Расширение <code>.md</code> - это просто пример. Расширением может быть <code>.html</code>, <code>.json</code> или любой допустимый тип MIME. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -515,9 +495,9 @@ matter.</p>
 	
 	<li><a href="/content-management/page-resources/">Page Resources</a></li>
 	
-	<li><a href="/content-management/organization/">Content Organization</a></li>
-	
 	<li><a href="/templates/single-page-templates/">Single Page Templates</a></li>
+	
+	<li><a href="/content-management/organization/">Организация контента</a></li>
 	
 </ul>
 
@@ -638,26 +618,26 @@ matter.</p>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -666,93 +646,88 @@ matter.</p>
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -1842,8 +1817,8 @@ matter.</p>
   <a href="https://gohugo.ru/content-management/page-bundles/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Page Bundles”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Пакеты страниц”
+  </a> последнее обновление: December 26, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/38cdf5e5ea9f18d514816ff7ec66d10cb36088f3">Перевод части content-management (38cdf5e5e)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5cpage-bundles.md" class="
@@ -2021,7 +1996,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

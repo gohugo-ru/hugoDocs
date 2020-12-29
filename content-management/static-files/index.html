@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Static Files | Hugo</title>
+  <title>Статические файлы | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Static Files" />
-<meta property="og:description" content="Files that get served **statically** (as-is, no modification) on the site root." />
+<meta property="og:title" content="Статические файлы" />
+<meta property="og:description" content="Файлы, которые обслуживаются **статически** (как есть, без изменений) в корне сайта." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/static-files/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-11-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Static Files">
-<meta itemprop="description" content="Files that get served **statically** (as-is, no modification) on the site root.">
+<meta property="article:modified_time" content="2020-12-28T17:50:36+03:00" />
+<meta itemprop="name" content="Статические файлы">
+<meta itemprop="description" content="Файлы, которые обслуживаются **статически** (как есть, без изменений) в корне сайта.">
 <meta itemprop="datePublished" content="2017-11-18T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="343">
+<meta itemprop="dateModified" content="2020-12-28T17:50:36+03:00" />
+<meta itemprop="wordCount" content="308">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Static Files"/>
-<meta name="twitter:description" content="Files that get served **statically** (as-is, no modification) on the site root."/>
+<meta name="twitter:title" content="Статические файлы"/>
+<meta name="twitter:description" content="Файлы, которые обслуживаются **статически** (как есть, без изменений) в корне сайта."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -241,7 +241,7 @@
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/menus/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Menus ">
+			<a href="https://gohugo.ru/content-management/menus/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Меню ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -251,7 +251,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/toc/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Table of Contents">
+			<a href="https://gohugo.ru/content-management/toc/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Оглавление">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -276,13 +276,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Static Files</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Статические файлы</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Files that get served <strong>statically</strong> (as-is, no modification) on the site root.
+      Файлы, которые обслуживаются <strong>статически</strong> (как есть, без изменений) в корне сайта.
     </div>
   
 
@@ -293,17 +293,10 @@
 
 <div class="prose" id="prose">
 
-<p>By default, the <code>static/</code> directory in the site project is used for
-all <strong>static files</strong> (e.g. stylesheets, JavaScript, images). The static files are served on the site root path (eg. if you have the file <code>static/image.png</code> you can access it using <code>http://{server-url}/image.png</code>, to include it in a document you can use <code>![Example image](/image.png) )</code>.</p>
-<p>Hugo can be configured to look into a different directory, or even
-<strong>multiple directories</strong> for such static files by configuring the
-<code>staticDir</code> parameter in the <a href="/getting-started/configuration/#all-configuration-settings">site config</a>. All the files in all the
-static directories will form a union filesystem.</p>
-<p>This union filesystem will be served from your site root. So a file
-<code>&lt;SITE PROJECT&gt;/static/me.png</code> will be accessible as
-<code>&lt;MY_BASEURL&gt;/me.png</code>.</p>
-<p>Here&rsquo;s an example of setting <code>staticDir</code> and <code>staticDir2</code> for a
-multi-language site:</p>
+<p>По умолчанию каталог <code>static/</code> в проекте сайта используется для всех <strong>статических файлов</strong> (например, таблиц стилей, JavaScript, изображений). Статические файлы обслуживаются по корневому пути сайта (например, если у Вас есть файл <code>static/image.png</code>, Вы можете получить к нему доступ, используя <code>http://{server-url}/image.png</code>, чтобы включить его в документ, который Вы можете использовать <code>![Example image](/image.png) )</code>.</p>
+<p>Hugo можно настроить так, чтобы он просматривал другой каталог или даже <strong>несколько каталогов</strong> для таких статических файлов, настроив параметр <code>staticDir</code> в <a href="/getting-started/configuration/#all-configuration-settings">конфигурации сайта</a>. Все файлы во всех статических каталогах образуют объединенную файловую систему.</p>
+<p>Эта объединенная файловая система будет обслуживаться из корня Вашего сайта. Таким образом, файл <code>&lt;SITE PROJECT&gt;/static/me.png</code> будет доступен как <code>&lt;MY_BASEURL&gt;/me.png</code>.</p>
+<p>Вот пример установки <code>staticDir</code> и <code>staticDir2</code> для многоязычного сайта:</p>
 
 
 
@@ -398,24 +391,16 @@ multi-language site:</p>
 
 </div>
 
-<p>In the above, with no theme used:</p>
+<p>В приведенном выше примере без использования темы:</p>
 <ul>
-<li>The English site will get its static files as a union of &ldquo;static1&rdquo;,
-&ldquo;static2&rdquo; and &ldquo;static_en&rdquo;. On file duplicates, the right-most
-version will win.</li>
-<li>The Norwegian site will get its static files as a union of
-&ldquo;staticDir_override&rdquo; and &ldquo;static_no&rdquo;.</li>
+<li>Сайт на английском языке получит свои статические файлы как объединение «static1», «static2» и «static_en». При дублировании файлов выигрывает самая правая версия.</li>
+<li>Норвежский сайт получит свои статические файлы как объединение &ldquo;staticDir_override&rdquo; и &ldquo;static_no&rdquo;.</li>
 </ul>
 <dl>
-<dt>Note 1</dt>
-<dd>The <strong>2</strong> (can be a number between 0 and 10) in <code>staticDir2</code> is
-added to tell Hugo that you want to <strong>add</strong> this directory to the
-global set of static directories defined using <code>staticDir</code>. Using
-<code>staticDir</code> on the language level would replace the global value (as
-can be seen in the Norwegian site case).</dd>
-<dt>Note 2</dt>
-<dd>The example above is a <a href="/content-management/multilingual/#configure-multilingual-multihost">multihost setup</a>. In a regular setup, all
-the static directories will be available to all sites.</dd>
+<dt>Примечание 1</dt>
+<dd><strong>2</strong> (может быть числом от 0 до 10) в <code>staticDir2</code> добавляется, чтобы сообщить Хьюго, что вы хотите <strong>добавить</strong> этот каталог в глобальный набор статических каталогов, определенных с помощью <code>staticDir</code>. Использование <code>staticDir</code> на уровне языка заменит глобальное значение (как видно на примере норвежского сайта).</dd>
+<dt>Примечание 2</dt>
+<dd>Приведенный выше пример - <a href="/content-management/multilingual/#configure-multilingual-multihost">установка нескольких хостов</a>. При обычной настройке все статические каталоги будут доступны для всех сайтов.</dd>
 </dl>
 
 </div>
@@ -554,26 +539,26 @@ the static directories will be available to all sites.</dd>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -582,93 +567,88 @@ the static directories will be available to all sites.</dd>
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -1758,8 +1738,8 @@ the static directories will be available to all sites.</dd>
   <a href="https://gohugo.ru/content-management/static-files/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Static Files”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Статические файлы”
+  </a> последнее обновление: December 28, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/3d537170adadf9150f2da15242e59c92abe9acb8">Перевод части content-management (3d537170a)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5cstatic-files.md" class="
@@ -1937,7 +1917,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

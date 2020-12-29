@@ -1,8 +1,6 @@
 # Netlify redirects. See https://www.netlify.com/docs/redirects/
 
 /assets/                           	/hugo-pipes/introduction/
-/content/                          	/content-management/
-/content/organization              	/content-management/
 /tutorials/how-to-contribute-to-hugo/	/contribute/
 /community/contributing/           	/contribute/
 /layout/functions/                 	/functions/
@@ -17,6 +15,8 @@
 /themes/overview/                  	/hugo-modules/
 /themes/                           	/hugo-modules/
 /overview/introduction/            	/getting-started/
+/content/                          	/content-management/
+/content/organization              	/content-management/
 /faq/                              	/troubleshooting/faq/
 /security/                         	/about/security-model/
 /privacy/                          	/about/hugo-and-gdpr/
@@ -27,8 +27,8 @@
 /templates/go-templates/           	/templates/introduction/
 /developer-tools/migrations/       	/tools/migrations/
 /developer-tools/migrated/         	/tools/migrations/
-/content/sections/                 	/content-management/organization/
 /variables/site-variables/         	/variables/site/
+/content/sections/                 	/content-management/organization/
 /overview/introduction/            	/about/what-is-hugo/
 /about/why-i-built-hugo/           	/about/what-is-hugo/
 /quickstart/                       	/getting-started/quick-start/
@@ -77,7 +77,6 @@
 /tutorials/hosting-on-gitlab/      	/hosting-and-deployment/hosting-on-gitlab/
 /variables/menu/                   	/variables/menus/
 /tutorials/hosting-on-bitbucket/   	/hosting-and-deployment/hosting-on-bitbucket/
-/content/sections/                 	/content-management/sections/
 /taxonomies/displaying/            	/templates/taxonomy-templates/
 /templates/terms/                  	/templates/taxonomy-templates/
 /indexes/displaying/               	/templates/taxonomy-templates/
@@ -87,16 +86,17 @@
 /templates/taxonomy/               	/templates/taxonomy-templates/
 /themes/customize/                 	/hugo-modules/theme-components/
 /themes/customizing/               	/hugo-modules/theme-components/
+/content/sections/                 	/content-management/sections/
 /overview/source-directory/        	/getting-started/directory-structure/
-/content/types                     	/content-management/types/
 /tutorials/automated-deployments/  	/hosting-and-deployment/deployment-with-wercker/
 /layout/content/                   	/templates/single-page-templates/
+/content/types                     	/content-management/types/
 /meta/license                      	/about/license/
 /overview/source-directory/        	/getting-started/configuration/
 /overview/configuration/           	/getting-started/configuration/
 /extras/gitinfo/                   	/variables/git/
-/content/archetypes/               	/content-management/archetypes/
 /tutorials/deployment-with-rsync/  	/hosting-and-deployment/deployment-with-rsync/
+/content/archetypes/               	/content-management/archetypes/
 /extras/datafiles/                 	/templates/data-templates/
 /extras/datadrivencontent/         	/templates/data-templates/
 /doc/datafiles/                    	/templates/data-templates/
@@ -123,9 +123,9 @@
 /static-files                      	/content-management/static-files/
 /templates/menus/                  	/templates/menu-templates/
 /extras/toc/                       	/content-management/toc/
-/extras/comments/                  	/content-management/comments/
 /extras/pagination                 	/templates/pagination/
 /doc/pagination/                   	/templates/pagination/
+/extras/comments/                  	/content-management/comments/
 /content/multilingual/             	/content-management/multilingual/
 /tutorials/create-a-multilingual-site/	/content-management/multilingual/
 /layout/sitemap/                   	/templates/sitemap-template/

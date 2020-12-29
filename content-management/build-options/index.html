@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Build Options | Hugo</title>
+  <title>Параметры сборки | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Build Options" />
-<meta property="og:description" content="Build options help define how Hugo must treat a given page when building the site." />
+<meta property="og:title" content="Параметры сборки" />
+<meta property="og:description" content="Параметры сборки помогают определить, как Хьюго должен относиться к данной странице при создании сайта." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/build-options/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2020-03-02T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Build Options">
-<meta itemprop="description" content="Build options help define how Hugo must treat a given page when building the site.">
+<meta property="article:modified_time" content="2020-12-26T13:54:27+03:00" />
+<meta itemprop="name" content="Параметры сборки">
+<meta itemprop="description" content="Параметры сборки помогают определить, как Хьюго должен относиться к данной странице при создании сайта.">
 <meta itemprop="datePublished" content="2020-03-02T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="352">
+<meta itemprop="dateModified" content="2020-12-26T13:54:27+03:00" />
+<meta itemprop="wordCount" content="316">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Build Options"/>
-<meta name="twitter:description" content="Build options help define how Hugo must treat a given page when building the site."/>
+<meta name="twitter:title" content="Параметры сборки"/>
+<meta name="twitter:description" content="Параметры сборки помогают определить, как Хьюго должен относиться к данной странице при создании сайта."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -241,7 +241,7 @@
     <li>
       <ul>
         <li></li>
-        <li><a href="#illustrative-use-cases">Illustrative use cases</a></li>
+        <li><a href="#иллюстративные-варианты-использования">Иллюстративные варианты использования</a></li>
       </ul>
     </li>
   </ul>
@@ -260,7 +260,7 @@
 		
 
 		
-			<a href="https://gohugo.ru/content-management/shortcodes/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Shortcodes">
+			<a href="https://gohugo.ru/content-management/shortcodes/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Шорткоды">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -285,13 +285,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Build Options</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Параметры сборки</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Build options help define how Hugo must treat a given page when building the site.
+      Параметры сборки помогают определить, как Хьюго должен относиться к данной странице при создании сайта.
     </div>
   
 
@@ -302,47 +302,47 @@
 
 <div class="prose" id="prose">
 
-<p>They are stored in a reserved Front Matter object named <code>_build</code> with the following defaults:</p>
+<p>Они хранятся в зарезервированном объекте Front Matter с именем <code>_build</code> со следующими значениями по умолчанию:</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">_build</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">render</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
 </span><span class="w">  </span><span class="nt">list</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
 </span><span class="w">  </span><span class="nt">publishResources</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></code></pre></div><h4 id="render">render <a class="header-link" href="#render"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>If <code>always</code>, the page will be treated as a published page, holding its dedicated output files (<code>index.html</code>, etc&hellip;) and permalink.</p>
+<p>Если <code>always</code>, страница будет рассматриваться как опубликованная, содержащая свои выделенные выходные файлы (<code>index.html</code>, и т.д.) и постоянную ссылку.</p>
 <p>
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.76.0-relnotes/" target="_blank">Новое в v0.76.0</a>
-</button> We extended this property from a boolean to an enum in Hugo 0.76.0. Valid values are:</p>
+</button> Мы расширили это свойство с логического до перечисления в Hugo 0.76.0. Допустимые значения:</p>
 <dl>
 <dt>never</dt>
-<dd>The page will not be included in any page collection.</dd>
+<dd>Страница не будет включена ни в одну коллекцию страниц.</dd>
 <dt>always (default)</dt>
-<dd>The page will be rendered to disk and get a <code>RelPermalink</code> etc.</dd>
+<dd>Страница будет отображена на диск и получит ссылку <code>RelPermalink</code> и т.д.</dd>
 <dt>link</dt>
-<dd>The page will be not be rendered to disk, but will get a <code>RelPermalink</code>.</dd>
+<dd>Страница не будет отображаться на диск, но получит ссылку <code>RelPermalink</code>.</dd>
 </dl>
 <h4 id="list">list <a class="header-link" href="#list"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Note that we extended this property from a boolean to an enum in Hugo 0.68.0.</p>
-<p>Valid values are:</p>
+<p>Обратите внимание, что в Hugo 0.68.0 мы расширили это свойство с логического до перечисления.</p>
+<p>Допустимые значения:</p>
 <dl>
 <dt>never</dt>
-<dd>The page will not be included in any page collection.</dd>
+<dd>Страница не будет включена ни в одну коллекцию страниц.</dd>
 <dt>always (default)</dt>
-<dd>The page will be included in all page collections, e.g. <code>site.RegularPages</code>, <code>$page.Pages</code>.</dd>
+<dd>Страница будет включена во все коллекции страниц, например: <code>site.RegularPages</code>, <code>$page.Pages</code>.</dd>
 <dt>local</dt>
-<dd>The page will be included in any <em>local</em> page collection, e.g. <code>$page.RegularPages</code>, <code>$page.Pages</code>. One use case for this would be to create fully navigable, but headless content sections. 
+<dd>Страница будет включена в любую коллекцию <em>локальных</em> страниц, например: <code>$page.RegularPages</code>, <code>$page.Pages</code>. Одним из вариантов использования этого может быть создание разделов с полностью управляемым, но без заголовка содержимого. 
 
 
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.ru/news/0.68.0-relnotes/" target="_blank">Новое в v0.68.0</a>
 </button></dd>
 </dl>
-<p>If true, the page will be treated as part of the project&rsquo;s collections and, when appropriate, returned by Hugo&rsquo;s listing methods (<code>.Pages</code>, <code>.RegularPages</code> etc&hellip;).</p>
+<p>Если <code>true</code>, страница будет рассматриваться как часть коллекций проекта и, при необходимости, возвращаться методами листинга Hugo (<code>.Pages</code>, <code>.RegularPages</code> и т.д.).</p>
 <h4 id="publishresources">publishResources <a class="header-link" href="#publishresources"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>If set to true the <a href="/content-management/page-bundles/">Bundle&rsquo;s Resources</a> will be published. 
-Setting this to false will still publish Resources on demand (when a resource&rsquo;s <code>.Permalink</code> or <code>.RelPermalink</code> is invoked from the templates) but will skip the others.</p>
+<p>Если задано значение <code>true</code>, будут опубликованы <a href="/content-management/page-bundles/">пакеты ресурсов</a>.
+Установка этого значения в false по-прежнему будет публиковать ресурсы по запросу (когда ресурс <code>.Permalink</code> или <code>.RelPermalink</code> вызывается из шаблонов), но пропускает остальные.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -350,14 +350,14 @@ Setting this to false will still publish Resources on demand (when a resource&rs
 	</div>
 	
 	
-	<div class="admonition-content"><p>Any page, regardless of their build options, will always be available using the <a href="/functions/getpage/"><code>.GetPage</code></a> methods.</p>
+	<div class="admonition-content"><p>Любая страница, независимо от ее параметров сборки, всегда будет доступна с использованием методов <a href="/functions/getpage/"><code>.GetPage</code></a>.</p>
 </div>
 </aside>
 
 <hr>
-<h3 id="illustrative-use-cases">Illustrative use cases <a class="header-link" href="#illustrative-use-cases"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<h4 id="not-publishing-a-page">Not publishing a page <a class="header-link" href="#not-publishing-a-page"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Project needs a &ldquo;Who We Are&rdquo; content file for Front Matter and body to be used by the homepage but nowhere else.</p>
+<h3 id="иллюстративные-варианты-использования">Иллюстративные варианты использования <a class="header-link" href="#%d0%b8%d0%bb%d0%bb%d1%8e%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d0%b2%d0%b0%d1%80%d0%b8%d0%b0%d0%bd%d1%82%d1%8b-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d1%8f"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<h4 id="не-публикуемая-страница">Не публикуемая страница <a class="header-link" href="#%d0%bd%d0%b5-%d0%bf%d1%83%d0%b1%d0%bb%d0%b8%d0%ba%d1%83%d0%b5%d0%bc%d0%b0%d1%8f-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Проекту нужен файл содержимого «Кто мы» для Front Matter и тела, которые будут использоваться на главной странице, но нигде больше.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># content/who-we-are.md`</span><span class="w">
 </span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Who we are</span><span class="w">
 </span><span class="w"></span><span class="nt">_build</span><span class="p">:</span><span class="w">
@@ -369,9 +369,9 @@ Setting this to false will still publish Resources on demand (when a resource&rs
   <span class="cp">{{</span><span class="w"> </span><span class="na">.Content</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
-</code></pre></div><h4 id="listing-pages-without-publishing-them">Listing pages without publishing them <a class="header-link" href="#listing-pages-without-publishing-them"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Website needs to showcase a few of the hundred &ldquo;testimonials&rdquo; available as content files without publishing any of them.</p>
-<p>To avoid setting the build options on every testimonials, one can use <a href="/content-management/front-matter/#front-matter-cascade"><code>cascade</code></a> on the testimonial section&rsquo;s content file.</p>
+</code></pre></div><h4 id="листинг-страниц-без-их-публикации">Листинг страниц без их публикации <a class="header-link" href="#%d0%bb%d0%b8%d1%81%d1%82%d0%b8%d0%bd%d0%b3-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86-%d0%b1%d0%b5%d0%b7-%d0%b8%d1%85-%d0%bf%d1%83%d0%b1%d0%bb%d0%b8%d0%ba%d0%b0%d1%86%d0%b8%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<p>Веб-сайт должен продемонстрировать несколько из сотни «отзывов», доступных в виде файлов содержимого, без публикации каких-либо из них.</p>
+<p>Чтобы избежать установки параметров сборки для каждой характеристики, можно использовать <a href="/content-management/front-matter/#front-matter-cascade"><code>cascade</code></a> в файле содержимого раздела отзывов.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c">#content/testimonials/_index.md</span><span class="w">
 </span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Testimonials</span><span class="w">
 </span><span class="w"></span><span class="c"># section build options:</span><span class="w">
@@ -400,13 +400,13 @@ Setting this to false will still publish Resources on demand (when a resource&rs
 	
 	<li><a href="/content-management/page-resources/">Page Resources</a></li>
 	
-	<li><a href="/content-management/related/">Related Content</a></li>
+	<li><a href="/content-management/related/">Связанный контент</a></li>
 	
 	<li><a href="/troubleshooting/build-performance/">Build Performance</a></li>
 	
 	<li><a href="/functions/param/">.Param</a></li>
 	
-	<li><a href="/content-management/archetypes/">Archetypes</a></li>
+	<li><a href="/templates/taxonomy-templates/">Taxonomy Templates</a></li>
 	
 </ul>
 
@@ -527,26 +527,26 @@ Setting this to false will still publish Resources on demand (when a resource&rs
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -555,93 +555,88 @@ Setting this to false will still publish Resources on demand (when a resource&rs
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -1731,8 +1726,8 @@ Setting this to false will still publish Resources on demand (when a resource&rs
   <a href="https://gohugo.ru/content-management/build-options/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Build Options”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Параметры сборки”
+  </a> последнее обновление: December 26, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/38cdf5e5ea9f18d514816ff7ec66d10cb36088f3">Перевод части content-management (38cdf5e5e)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5cbuild-options.md" class="
@@ -1910,7 +1905,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   

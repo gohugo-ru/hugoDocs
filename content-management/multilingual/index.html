@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Multilingual Mode | Hugo</title>
+  <title>Многоязычный режим | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
@@ -55,18 +55,18 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Multilingual Mode" />
-<meta property="og:description" content="Hugo supports the creation of websites with multiple languages side by side." />
+<meta property="og:title" content="Многоязычный режим" />
+<meta property="og:description" content="Hugo поддерживает создание веб-сайтов на нескольких языках одновременно." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.ru/content-management/multilingual/" />
 <meta property="og:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 <meta property="article:published_time" content="2017-01-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="name" content="Multilingual Mode">
-<meta itemprop="description" content="Hugo supports the creation of websites with multiple languages side by side.">
+<meta property="article:modified_time" content="2020-12-29T17:46:48+03:00" />
+<meta itemprop="name" content="Многоязычный режим">
+<meta itemprop="description" content="Hugo поддерживает создание веб-сайтов на нескольких языках одновременно.">
 <meta itemprop="datePublished" content="2017-01-10T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-12-24T11:02:26+03:00" />
-<meta itemprop="wordCount" content="2310">
+<meta itemprop="dateModified" content="2020-12-29T17:46:48+03:00" />
+<meta itemprop="wordCount" content="2124">
 <meta itemprop="image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
 
@@ -75,8 +75,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.ru/images/gohugoio-card.png"/>
 
-<meta name="twitter:title" content="Multilingual Mode"/>
-<meta name="twitter:description" content="Hugo supports the creation of websites with multiple languages side by side."/>
+<meta name="twitter:title" content="Многоязычный режим"/>
+<meta name="twitter:description" content="Hugo поддерживает создание веб-сайтов на нескольких языках одновременно."/>
 <meta name="twitter:site" content="@GoHugoIO"/>
 
 
@@ -238,45 +238,45 @@
 		<p class="b">Что на этой странице</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#configure-languages">Configure Languages</a>
+    <li><a href="#настройка-языков">Настройка языков</a>
       <ul>
-        <li><a href="#disable-a-language">Disable a Language</a></li>
-        <li><a href="#configure-multilingual-multihost">Configure Multilingual Multihost</a></li>
-        <li><a href="#taxonomies-and-blackfriday">Taxonomies and Blackfriday</a></li>
+        <li><a href="#отключить-язык">Отключить язык</a></li>
+        <li><a href="#настроить-многоязычный-мультихост">Настроить многоязычный мультихост</a></li>
+        <li><a href="#таксономии-и-blackfriday">Таксономии и Blackfriday</a></li>
       </ul>
     </li>
-    <li><a href="#translate-your-content">Translate Your Content</a>
+    <li><a href="#переведите-свой-контент">Переведите свой контент</a>
       <ul>
-        <li><a href="#translation-by-filename">Translation by filename</a></li>
-        <li><a href="#translation-by-content-directory">Translation by content directory</a></li>
-        <li><a href="#bypassing-default-linking">Bypassing default linking.</a></li>
-        <li><a href="#localizing-permalinks">Localizing permalinks</a></li>
-        <li><a href="#page-bundles">Page Bundles</a></li>
+        <li><a href="#перевод-по-имени-файла">Перевод по имени файла</a></li>
+        <li><a href="#перевод-по-каталогу-контента">Перевод по каталогу контента</a></li>
+        <li><a href="#обход-ссылки-по-умолчанию">Обход ссылки по умолчанию</a></li>
+        <li><a href="#локализация-постоянных-ссылок">Локализация постоянных ссылок</a></li>
+        <li><a href="#пакеты-страниц">Пакеты страниц</a></li>
       </ul>
     </li>
-    <li><a href="#reference-the-translated-content">Reference the Translated Content</a>
+    <li><a href="#ссылка-на-переведенный-контент">Ссылка на переведенный контент</a>
       <ul>
-        <li><a href="#list-all-available-languages">List All Available Languages</a></li>
+        <li><a href="#список-всех-доступных-языков">Список всех доступных языков</a></li>
       </ul>
     </li>
-    <li><a href="#translation-of-strings">Translation of Strings</a>
+    <li><a href="#перевод-строк">Перевод строк</a>
       <ul>
-        <li><a href="#query-basic-translation">Query basic translation</a></li>
-        <li><a href="#query-a-flexible-translation-with-variables">Query a flexible translation with variables</a></li>
-        <li><a href="#query-a-singularplural-translation">Query a singular/plural translation</a></li>
+        <li><a href="#запрос-базового-перевода">Запрос базового перевода</a></li>
+        <li><a href="#запрос-на-гибкий-перевод-с-переменными">Запрос на гибкий перевод с переменными</a></li>
+        <li><a href="#запрос-на-перевод-в-единственноммножественном-числе">Запрос на перевод в единственном/множественном числе</a></li>
       </ul>
     </li>
-    <li><a href="#customize-dates">Customize Dates</a></li>
-    <li><a href="#menus">Menus</a></li>
-    <li><a href="#missing-translations">Missing Translations</a></li>
-    <li><a href="#multilingual-themes-support">Multilingual Themes support</a></li>
+    <li><a href="#настройка-дат">Настройка дат</a></li>
+    <li><a href="#меню">Меню</a></li>
+    <li><a href="#отсутствующие-переводы">Отсутствующие переводы</a></li>
+    <li><a href="#поддержка-многоязычных-тем">Поддержка многоязычных тем</a></li>
   </ul>
 </nav>
 	
 
 	<div date-pref>
 		
-			<a href="https://gohugo.ru/content-management/comments/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Comments ">
+			<a href="https://gohugo.ru/content-management/comments/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Комментарии ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -311,13 +311,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Multilingual Mode</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Многоязычный режим</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Hugo supports the creation of websites with multiple languages side by side.
+      Hugo поддерживает создание веб-сайтов на нескольких языках одновременно.
     </div>
   
 
@@ -328,12 +328,12 @@
 
 <div class="prose" id="prose">
 
-<p>You should define the available languages in a <code>languages</code> section in your site configuration.</p>
+<p>Вы должны определить доступные языки в разделе <code>languages</code> в конфигурации Вашего сайта.</p>
 <blockquote>
-<p>Also See <a href="https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/">Hugo Multilingual Part 1: Content translation</a></p>
+<p>Смотрите также <a href="https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/">Мультиязычный Хьюго Часть 1: Перевод контента</a></p>
 </blockquote>
-<h2 id="configure-languages">Configure Languages <a class="header-link" href="#configure-languages"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>The following is an example of a site configuration for a multilingual Hugo project:</p>
+<h2 id="настройка-языков">Настройка языков <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Ниже приведен пример конфигурации сайта для многоязычного проекта Hugo:</p>
 
 
 
@@ -471,29 +471,28 @@
 
 </div>
 
-<p>Anything not defined in a <code>languages</code> block will fall back to the global value for that key (e.g., <code>copyright</code> for the English <code>en</code> language). This also works for <code>params</code>, as demonstrated with <code>help</code> above: You will get the value <code>Aide</code> in French and <code>Help</code> in all the languages without this parameter set.</p>
-<p>With the configuration above, all content, sitemap, RSS feeds, paginations,
-and taxonomy pages will be rendered below <code>/</code> in English (your default content language) and then below <code>/fr</code> in French.</p>
-<p>When working with front matter <code>Params</code> in <a href="/templates/single-page-templates/">single page templates</a>, omit the <code>params</code> in the key for the translation.</p>
-<p><code>defaultContentLanguage</code> sets the project&rsquo;s default language. If not set, the default language will be <code>en</code>.</p>
-<p>If the default language needs to be rendered below its own language code (<code>/en</code>) like the others, set <code>defaultContentLanguageInSubdir: true</code>.</p>
-<p>Only the obvious non-global options can be overridden per language. Examples of global options are <code>baseURL</code>, <code>buildDrafts</code>, etc.</p>
-<p><strong>Please note:</strong> use lowercase language codes, even when using regional languages (ie. use pt-pt instead of pt-PT). Currently Hugo language internals lowercase language codes, which can cause conflicts with settings like <code>defaultContentLanguage</code> which are not lowercased. Please track the evolution of this issue in <a href="https://github.com/gohugoio/hugo/issues/7344">Hugo repository issue tracker</a></p>
-<h3 id="disable-a-language">Disable a Language <a class="header-link" href="#disable-a-language"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You can disable one or more languages. This can be useful when working on a new translation.</p>
+<p>Все, что не определено в блоке <code>languages</code>, вернется к глобальному значению для этого ключа (например, <code>copyright</code> для английского языка <code>en</code>). Это также работает для <code>params</code>, как показано выше с помощью <code>help</code>: Вы получите значение <code>Aide</code> на французском языке и <code>Help</code> на всех языках без этого набора параметров.</p>
+<p>С приведенной выше конфигурацией все содержимое, карта сайта, RSS-каналы, пагинации и страницы таксономии будут отображаться под символом <code>/</code> на английском языке (Ваш язык содержимого по умолчанию), а затем под символом <code>/fr</code> на французском языке.</p>
+<p>При работе с заголовком <code>Params</code> в <a href="/templates/single-page-templates/">single page templates</a>, опускайте <code>params</code> в ключе для перевода.</p>
+<p><code>defaultContentLanguage</code> устанавливает язык проекта по умолчанию. Если не установлен, языком по умолчанию будет <code>en</code>.</p>
+<p>Если язык по умолчанию должен отображаться под кодом своего собственного языка (<code>/en</code>), как и другие, установите <code>defaultContentLanguageInSubdir: true</code>.</p>
+<p>Только очевидные неглобальные параметры могут быть переопределены для каждого языка. Примеры глобальных параметров: <code>baseURL</code>, <code>buildDrafts</code> и т.д.</p>
+<p><strong>Обратите внимание:</strong> используйте строчные коды языков даже при использовании региональных языков (например, используйте pt-pt вместо pt-PT). В настоящее время внутренние строчные коды языка Hugo могут вызывать конфликты с такими настройками, как `defaultContentLanguage, которые не в нижнем регистре. Проследите за развитием этой проблемы в <a href="https://github.com/gohugoio/hugo/issues/7344">трекере проблем репозитория Hugo</a></p>
+<h3 id="отключить-язык">Отключить язык <a class="header-link" href="#%d0%be%d1%82%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c-%d1%8f%d0%b7%d1%8b%d0%ba"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Вы можете отключить один или несколько языков. Это может быть полезно при работе над новым переводом.</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">disableLanguages</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;fr&#34;</span><span class="p">,</span> <span class="s2">&#34;ja&#34;</span><span class="p">]</span>
-</code></pre></div><p>Note that you cannot disable the default content language.</p>
-<p>We kept this as a standalone setting to make it easier to set via <a href="/getting-started/configuration/#configure-with-environment-variables">OS environment</a>:</p>
+</code></pre></div><p>Обратите внимание, что Вы не можете отключить язык содержимого по умолчанию.</p>
+<p>Мы сохранили это как отдельную настройку, чтобы упростить настройку с помощью <a href="/getting-started/configuration/#configure-with-environment-variables">OS environment</a>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34;fr ja&#34;</span> hugo
-</code></pre></div><p>If you have already a list of disabled languages in <code>config.toml</code>, you can enable them in development like this:</p>
+</code></pre></div><p>Если у Вас уже есть список отключенных языков в <code>config.toml</code>, Вы можете включить их в процессе разработки следующим образом:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34; &#34;</span> hugo server
-</code></pre></div><h3 id="configure-multilingual-multihost">Configure Multilingual Multihost <a class="header-link" href="#configure-multilingual-multihost"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>From <strong>Hugo 0.31</strong> we support multiple languages in a multihost configuration. See <a href="https://github.com/gohugoio/hugo/issues/4027">this issue</a> for details.</p>
-<p>This means that you can now configure a <code>baseURL</code> per <code>language</code>:</p>
+</code></pre></div><h3 id="настроить-многоязычный-мультихост">Настроить многоязычный мультихост <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d1%8c-%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d1%8f%d0%b7%d1%8b%d1%87%d0%bd%d1%8b%d0%b9-%d0%bc%d1%83%d0%bb%d1%8c%d1%82%d0%b8%d1%85%d0%be%d1%81%d1%82"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Начиная с <strong>Hugo 0.31</strong>, мы поддерживаем несколько языков в многоузловой конфигурации. Смотрите <a href="https://github.com/gohugoio/hugo/issues/4027">эту проблему</a> для получения подробной информации.</p>
+<p>Это означает, что теперь Вы можете настроить <code>baseURL</code> для каждого языка <code>language</code>:</p>
 <blockquote>
-<p>If a <code>baseURL</code> is set on the <code>language</code> level, then all languages must have one and they must all be different.</p>
+<p>Если <code>baseURL</code> установлен на уровне <code>language</code>, тогда он должен быть у всех языков, и все они должны быть разными.</p>
 </blockquote>
-<p>Example:</p>
+<p>Пример:</p>
 
 
 
@@ -580,18 +579,18 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
 
 </div>
 
-<p>With the above, the two sites will be generated into <code>public</code> with their own root:</p>
+<p>С учетом вышеизложенного, два сайта будут сгенерированы как <code>public</code> с их собственным корнем:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">public
 ├── en
 └── fr
-</code></pre></div><p><strong>All URLs (i.e <code>.Permalink</code> etc.) will be generated from that root. So the English home page above will have its <code>.Permalink</code> set to <code>https://example.com/</code>.</strong></p>
-<p>When you run <code>hugo server</code> we will start multiple HTTP servers. You will typically see something like this in the console:</p>
+</code></pre></div><p><strong>Все URL-адреса (например, <code>.Permalink</code> и т.д.) будут созданы из этого корня. Таким образом, на английской домашней странице выше для параметра <code>.Permalink</code> установлено значение <code>https://example.com/</code>.</strong></p>
+<p>Когда Вы запускаете <code>hugo server</code>, мы запускаем несколько HTTP-серверов. Обычно в консоли Вы увидите что-то вроде этого:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Web Server is available at 127.0.0.1:1313 <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
 Web Server is available at 127.0.0.1:1314 <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
 Press Ctrl+C to stop
-</code></pre></div><p>Live reload and <code>--navigateToChanged</code> between the servers work as expected.</p>
-<h3 id="taxonomies-and-blackfriday">Taxonomies and Blackfriday <a class="header-link" href="#taxonomies-and-blackfriday"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Taxonomies and <a href="/getting-started/configuration/">Blackfriday configuration</a> can also be set per language:</p>
+</code></pre></div><p>Живая перезагрузка и <code>--navigateToChanged</code> между серверами работают должным образом.</p>
+<h3 id="таксономии-и-blackfriday">Таксономии и Blackfriday <a class="header-link" href="#%d1%82%d0%b0%d0%ba%d1%81%d0%be%d0%bd%d0%be%d0%bc%d0%b8%d0%b8-%d0%b8-blackfriday"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Таксономии и <a href="/getting-started/configuration/">конфигурация Blackfriday</a> также можно установить для каждого языка:</p>
 
 
 
@@ -699,18 +698,18 @@ Press Ctrl+C to stop
 
 </div>
 
-<h2 id="translate-your-content">Translate Your Content <a class="header-link" href="#translate-your-content"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>There are two ways to manage your content translations. Both ensure each page is assigned a language and is linked to its counterpart translations.</p>
-<h3 id="translation-by-filename">Translation by filename <a class="header-link" href="#translation-by-filename"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Considering the following example:</p>
+<h2 id="переведите-свой-контент">Переведите свой контент <a class="header-link" href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%b5%d0%b4%d0%b8%d1%82%d0%b5-%d1%81%d0%b2%d0%be%d0%b9-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Есть два способа управлять переводами Вашего контента. Оба гарантируют, что каждой странице назначен язык и она связана с соответствующими переводами.</p>
+<h3 id="перевод-по-имени-файла">Перевод по имени файла <a class="header-link" href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4-%d0%bf%d0%be-%d0%b8%d0%bc%d0%b5%d0%bd%d0%b8-%d1%84%d0%b0%d0%b9%d0%bb%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Рассмотрим следующий пример:</p>
 <ol>
 <li><code>/content/about.en.md</code></li>
 <li><code>/content/about.fr.md</code></li>
 </ol>
-<p>The first file is assigned the English language and is linked to the second.
-The second file is assigned the French language and is linked to the first.</p>
-<p>Their language is <strong>assigned</strong> according to the language code added as a <strong>suffix to the filename</strong>.</p>
-<p>By having the same <strong>path and base filename</strong>, the content pieces are <strong>linked</strong> together as translated pages.</p>
+<p>Первому файлу назначается английский язык и он связан со вторым.
+Второму файлу назначен французский язык и он связан с первым.</p>
+<p>Их язык <strong>назначен</strong> в соответствии с кодом языка, добавленным в виде <strong>суффикса к имени файла</strong>.</p>
+<p>Имея одинаковый <strong>путь и базовое имя файла</strong>, части содержимого <strong>связаны</strong> вместе как переведенные страницы.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -719,12 +718,12 @@ The second file is assigned the French language and is linked to the first.</p>
 	
 	
 	<div class="admonition-content">
-If a file has no language code, it will be assigned the default language.
+Если у файла нет кода языка, ему будет назначен язык по умолчанию.
 </div>
 </aside>
 
-<h3 id="translation-by-content-directory">Translation by content directory <a class="header-link" href="#translation-by-content-directory"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>This system uses different content directories for each of the languages. Each language&rsquo;s content directory is set using the <code>contentDir</code> param.</p>
+<h3 id="перевод-по-каталогу-контента">Перевод по каталогу контента <a class="header-link" href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4-%d0%bf%d0%be-%d0%ba%d0%b0%d1%82%d0%b0%d0%bb%d0%be%d0%b3%d1%83-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Эта система использует разные каталоги контента для каждого из языков. Каталог содержимого каждого языка устанавливается с помощью параметра <code>contentDir</code>.</p>
 
 
 
@@ -805,31 +804,31 @@ If a file has no language code, it will be assigned the default language.
 
 </div>
 
-<p>The value of <code>contentDir</code> can be any valid path &ndash; even absolute path references. The only restriction is that the content directories cannot overlap.</p>
-<p>Considering the following example in conjunction with the configuration above:</p>
+<p>Значением <code>contentDir</code> может быть любой допустимый путь - даже абсолютные ссылки на путь. Единственное ограничение - каталоги содержимого не могут перекрываться.</p>
+<p>Рассмотрим следующий пример в сочетании с приведенной выше конфигурацией:</p>
 <ol>
 <li><code>/content/english/about.md</code></li>
 <li><code>/content/french/about.md</code></li>
 </ol>
-<p>The first file is assigned the English language and is linked to the second.
-The second file is assigned the French language and is linked to the first.</p>
-<p>Their language is <strong>assigned</strong> according to the content directory they are <strong>placed</strong> in.</p>
-<p>By having the same <strong>path and basename</strong> (relative to their language content directory), the content pieces are <strong>linked</strong> together as translated pages.</p>
-<h3 id="bypassing-default-linking">Bypassing default linking. <a class="header-link" href="#bypassing-default-linking"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Any pages sharing the same <code>translationKey</code> set in front matter will be linked as translated pages regardless of basename or location.</p>
-<p>Considering the following example:</p>
+<p>Первому файлу назначается английский язык и он связан со вторым.
+Второму файлу назначен французский язык и он связан с первым.</p>
+<p>Их язык <strong>назначен</strong> в соответствии с каталогом контента, в котором они <strong>находятся</strong>.</p>
+<p>Имея одинаковый <strong>путь и базовое имя</strong> (относительно каталога их языкового контента), части контента <strong>связаны</strong> вместе как переведенные страницы.</p>
+<h3 id="обход-ссылки-по-умолчанию">Обход ссылки по умолчанию <a class="header-link" href="#%d0%be%d0%b1%d1%85%d0%be%d0%b4-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8-%d0%bf%d0%be-%d1%83%d0%bc%d0%be%d0%bb%d1%87%d0%b0%d0%bd%d0%b8%d1%8e"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Любые страницы, использующие один и тот же ключ перевода <code>translationKey</code>, установленный в начале, будут связаны как переведенные страницы независимо от базового имени или местоположения.</p>
+<p>Рассмотрим следующий пример:</p>
 <ol>
 <li><code>/content/about-us.en.md</code></li>
 <li><code>/content/om.nn.md</code></li>
 <li><code>/content/presentation/a-propos.fr.md</code></li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># set in all three pages</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># установить на всех трех страницах</span><span class="w">
 </span><span class="w"></span><span class="nt">translationKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;about&#34;</span><span class="w">
-</span></code></pre></div><p>By setting the <code>translationKey</code> front matter param to <code>about</code> in all three pages, they will be <strong>linked</strong> as translated pages.</p>
-<h3 id="localizing-permalinks">Localizing permalinks <a class="header-link" href="#localizing-permalinks"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Because paths and filenames are used to handle linking, all translated pages will share the same URL (apart from the language subdirectory).</p>
-<p>To localize the URLs, the <a href="https://gohugo.ru/content-management/organization/#slug"><code>slug</code></a> or <a href="https://gohugo.ru/content-management/organization/#url"><code>url</code></a> front matter param can be set in any of the non-default language file.</p>
-<p>For example, a French translation (<code>content/about.fr.md</code>) can have its own localized slug.</p>
+</span></code></pre></div><p>Если установить для параметра <code>translationKey</code> значение <code>about</code> на всех трех страницах, они будут <strong>связаны</strong> как переведенные страницы.</p>
+<h3 id="локализация-постоянных-ссылок">Локализация постоянных ссылок <a class="header-link" href="#%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d0%bf%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%bd%d1%8b%d1%85-%d1%81%d1%81%d1%8b%d0%bb%d0%be%d0%ba"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Поскольку для обработки ссылок используются пути и имена файлов, все переведенные страницы будут иметь один и тот же URL-адрес (кроме подкаталога языка).</p>
+<p>Чтобы локализовать URL-адреса, <a href="https://gohugo.ru/content-management/organization/#slug"><code>slug</code></a> или <a href="https://gohugo.ru/content-management/organization/#url"><code>url</code></a> параметр главного сообщения может быть установлен в любом языковом файле, отличном от заданного по умолчанию.</p>
+<p>Например, французский перевод (<code>content/about.fr.md</code>) может иметь свой собственный локализованный слаг.</p>
 
 
 
@@ -886,7 +885,7 @@ The second file is assigned the French language and is linked to the first.</p>
 
 </div>
 
-<p>At render, Hugo will build both <code>/about/</code> and <code>/fr/a-propos/</code> while maintaining their translation linking.</p>
+<p>Во время рендеринга Hugo построит как <code>/about/</code> и <code>/fr/a-propos/</code>, сохраняя при этом их перевод ссылки.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -894,17 +893,17 @@ The second file is assigned the French language and is linked to the first.</p>
 	</div>
 	
 	
-	<div class="admonition-content"><p>If using <code>url</code>, remember to include the language part as well: <code>/fr/compagnie/a-propos/</code>.</p>
+	<div class="admonition-content"><p>Если вы используете <code>url</code>, не забудьте также включить языковую часть: <code>/fr/compagnie/a-propos/</code>.</p>
 </div>
 </aside>
 
-<h3 id="page-bundles">Page Bundles <a class="header-link" href="#page-bundles"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>To avoid the burden of having to duplicate files, each Page Bundle inherits the resources of its linked translated pages' bundles except for the content files (markdown files, html files etc&hellip;).</p>
-<p>Therefore, from within a template, the page will have access to the files from all linked pages' bundles.</p>
-<p>If, across the linked bundles, two or more files share the same basename, only one will be included and chosen as follows:</p>
+<h3 id="пакеты-страниц">Пакеты страниц <a class="header-link" href="#%d0%bf%d0%b0%d0%ba%d0%b5%d1%82%d1%8b-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Чтобы избежать дублирования файлов, каждый пакет страниц наследует ресурсы пакетов связанных переведенных страниц, за исключением файлов содержимого (файлы разметки, файлы HTML и т.д.).</p>
+<p>Следовательно, из шаблона страница будет иметь доступ к файлам из всех пакетов связанных страниц.</p>
+<p>Если в связанных пакетах два или более файла имеют одно и то же базовое имя, только один будет включен и выбран следующим образом:</p>
 <ul>
-<li>File from current language bundle, if present.</li>
-<li>First file found across bundles by order of language <code>Weight</code>.</li>
+<li>Файл из текущего языкового пакета, если он есть.</li>
+<li>Первый файл найден в пакетах в порядке языка <code>Weight</code>.</li>
 </ul>
 
 <aside class="admonition note">
@@ -913,12 +912,12 @@ The second file is assigned the French language and is linked to the first.</p>
 	</div>
 	
 	
-	<div class="admonition-content"><p>Page Bundle resources follow the same language assignment logic as content files, both by filename (<code>image.jpg</code>, <code>image.fr.jpg</code>) and by directory (<code>english/about/header.jpg</code>, <code>french/about/header.jpg</code>).</p>
+	<div class="admonition-content"><p>Ресурсы пакета страниц следуют той же логике назначения языка, что и файлы содержимого, как по имени файла (<code>image.jpg</code>, <code>image.fr.jpg</code>), так и по каталогу (<code>english/about/header.jpg</code>, <code>french/about/header.jpg</code>).</p>
 </div>
 </aside>
 
-<h2 id="reference-the-translated-content">Reference the Translated Content <a class="header-link" href="#reference-the-translated-content"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>To create a list of links to translated content, use a template similar to the following:</p>
+<h2 id="ссылка-на-переведенный-контент">Ссылка на переведенный контент <a class="header-link" href="#%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b0-%d0%bd%d0%b0-%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%bd%d1%82"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Чтобы создать список ссылок на переведенный контент, используйте шаблон, подобный следующему:</p>
 
 
 
@@ -951,10 +950,10 @@ The second file is assigned the French language and is linked to the first.</p>
 
 </div>
 
-<p>The above can be put in a <code>partial</code> (i.e., inside <code>layouts/partials/</code>) and included in any template, whether a <a href="/templates/single-page-templates/">single content page</a> or the <a href="/templates/homepage/">homepage</a>. It will not print anything if there are no translations for a given page.</p>
-<p>The above also uses the <a href="/functions/i18n/"><code>i18n</code> function</a> described in the next section.</p>
-<h3 id="list-all-available-languages">List All Available Languages <a class="header-link" href="#list-all-available-languages"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p><code>.AllTranslations</code> on a <code>Page</code> can be used to list all translations, including the page itself. On the home page it can be used to build a language navigator:</p>
+<p>Вышеупомянутое может быть помещено в <code>partial</code> (т.е. внутри <code>layouts/partials/</code>) и включено в любой шаблон, будь то <a href="/templates/single-page-templates/">отдельная страница содержимого</a> или <a href="/templates/homepage/">домашняя страница</a>. Он не будет ничего печатать, если для данной страницы нет переводов.</p>
+<p>Вышеупомянутое также использует <a href="/functions/i18n/">функцию <code>i18n</code></a>, описанную в следующем разделе.</p>
+<h3 id="список-всех-доступных-языков">Список всех доступных языков <a class="header-link" href="#%d1%81%d0%bf%d0%b8%d1%81%d0%be%d0%ba-%d0%b2%d1%81%d0%b5%d1%85-%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf%d0%bd%d1%8b%d1%85-%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p><code>.AllTranslations</code> на <code>Page</code> может использоваться для вывода списка всех переводов, включая саму страницу. На домашней странице его можно использовать для создания языкового навигатора:</p>
 
 
 
@@ -982,9 +981,9 @@ The second file is assigned the French language and is linked to the first.</p>
 
 </div>
 
-<h2 id="translation-of-strings">Translation of Strings <a class="header-link" href="#translation-of-strings"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>Hugo uses <a href="https://github.com/nicksnyder/go-i18n">go-i18n</a> to support string translations. <a href="https://github.com/nicksnyder/go-i18n">See the project&rsquo;s source repository</a> to find tools that will help you manage your translation workflows.</p>
-<p>Translations are collected from the <code>themes/&lt;THEME&gt;/i18n/</code> folder (built into the theme), as well as translations present in <code>i18n/</code> at the root of your project. In the <code>i18n</code>, the translations will be merged and take precedence over what is in the theme folder. Language files should be named according to <a href="https://tools.ietf.org/html/rfc5646">RFC 5646</a> with names such as <code>en-US.toml</code>, <code>fr.toml</code>, etc.</p>
+<h2 id="перевод-строк">Перевод строк <a class="header-link" href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4-%d1%81%d1%82%d1%80%d0%be%d0%ba"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Хьюго использует <a href="https://github.com/nicksnyder/go-i18n">go-i18n</a> для поддержки строковых переводов. <a href="https://github.com/nicksnyder/go-i18n">Смотрите репозиторий исходного кода проекта</a>, чтобы найти инструменты, которые помогут Вам управлять рабочими процессами перевода.</p>
+<p>Переводы собираются из папки <code>themes/&lt;THEME&gt;/i18n/</code> (встроенной в тему), а также переводов, находящихся в <code>i18n/</code> в корне Вашего проекта. В <code>i18n</code> переводы будут объединены и будут иметь приоритет над тем, что находится в папке темы. Языковые файлы должны быть названы в соответствии с <a href="https://tools.ietf.org/html/rfc5646">RFC 5646</a> такими именами, как <code>en-US.toml</code>, <code>fr.toml</code> и т.д.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -992,42 +991,42 @@ The second file is assigned the French language and is linked to the first.</p>
 	</div>
 	
 	
-	<div class="admonition-content"><p>From <strong>Hugo 0.31</strong> you no longer need to use a valid language code. It can be anything.</p>
-<p>See <a href="https://github.com/gohugoio/hugo/issues/3564">https://github.com/gohugoio/hugo/issues/3564</a></p>
+	<div class="admonition-content"><p>Начиная с <strong>Hugo 0.31</strong> Вам больше не нужно использовать действительный языковой код. Это может быть что угодно.</p>
+<p>Смотрите <a href="https://github.com/gohugoio/hugo/issues/3564">https://github.com/gohugoio/hugo/issues/3564</a></p>
 </div>
 </aside>
 
-<h3 id="query-basic-translation">Query basic translation <a class="header-link" href="#query-basic-translation"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>From within your templates, use the <code>i18n</code> function like this:</p>
+<h3 id="запрос-базового-перевода">Запрос базового перевода <a class="header-link" href="#%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d0%b1%d0%b0%d0%b7%d0%be%d0%b2%d0%be%d0%b3%d0%be-%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4%d0%b0"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Изнутри ваших шаблонов используйте функцию <code>i18n</code> следующим образом:</p>
 <pre><code>{{ i18n &quot;home&quot; }}
-</code></pre><p>The function will search for the <code>&quot;home&quot;</code> id from <code>i18n/en-US.toml</code> file:</p>
+</code></pre><p>Функция будет искать идентификатор <code>&quot;home&quot;</code> в файле <code>i18n/en-US.toml</code>:</p>
 <pre><code>[home]
 other = &quot;Home&quot;
-</code></pre><p>The result will be</p>
+</code></pre><p>Результат будет</p>
 <pre><code>Home
-</code></pre><h3 id="query-a-flexible-translation-with-variables">Query a flexible translation with variables <a class="header-link" href="#query-a-flexible-translation-with-variables"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Often you will want to use to the page variables in the translations strings. To do that, pass on the <code>.</code> context when calling <code>i18n</code>:</p>
+</code></pre><h3 id="запрос-на-гибкий-перевод-с-переменными">Запрос на гибкий перевод с переменными <a class="header-link" href="#%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d0%bd%d0%b0-%d0%b3%d0%b8%d0%b1%d0%ba%d0%b8%d0%b9-%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4-%d1%81-%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d0%bc%d0%b8"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Часто Вы захотите использовать переменные страницы в строках переводов. Для этого передайте контекст <code>.</code> при вызове <code>i18n</code>:</p>
 <pre><code>{{ i18n &quot;wordCount&quot; . }}
-</code></pre><p>The function will pass the <code>.</code> context to the <code>&quot;wordCount&quot;</code> id in <code>i18n/en-US.toml</code> file:</p>
+</code></pre><p>Функция передаст контекст <code>.</code> идентификатору <code>&quot;wordCount&quot;</code> в файле <code>i18n/en-US.toml</code>:</p>
 <pre><code>[wordCount]
 other = &quot;This article has {{ .WordCount }} words.&quot;
-</code></pre><p>Assume <code>.WordCount</code> in the context has value is 101. The result will be:</p>
+</code></pre><p>Предположим, что в контексте <code>.WordCount</code> значение равно 101. Результатом будет:</p>
 <pre><code>This article has 101 words.
-</code></pre><h3 id="query-a-singularplural-translation">Query a singular/plural translation <a class="header-link" href="#query-a-singularplural-translation"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>In order to meet singular/plural requirement, you must pass a dictionary (map) with a numeric <code>.Count</code> property to the <code>i18n</code> function. The below example uses <code>.ReadingTime</code> variable which has a built-in <code>.Count</code> property.</p>
+</code></pre><h3 id="запрос-на-перевод-в-единственноммножественном-числе">Запрос на перевод в единственном/множественном числе <a class="header-link" href="#%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d0%bd%d0%b0-%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4-%d0%b2-%d0%b5%d0%b4%d0%b8%d0%bd%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be%d0%bc%d0%bc%d0%bd%d0%be%d0%b6%d0%b5%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be%d0%bc-%d1%87%d0%b8%d1%81%d0%bb%d0%b5"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Чтобы соответствовать требованиям единственного/множественного числа, Вы должны передать словарь (карту) с числовым свойством <code>.Count</code> в функцию <code>i18n</code>. В приведенном ниже примере используется переменная <code>.ReadingTime</code>, которая имеет встроенное свойство <code>.Count</code>.</p>
 <pre><code>{{ i18n &quot;readingTime&quot; .ReadingTime }}
-</code></pre><p>The function will read <code>.Count</code> from <code>.ReadingTime</code> and evaluate where the number is singular (<code>one</code>) or plural (<code>other</code>). After that, it will pass to <code>readingTime</code> id in <code>i18n/en-US.toml</code> file:</p>
+</code></pre><p>Функция будет читать <code>.Count</code> из <code>.ReadingTime</code> и оценивать, где число является единственным (<code>one</code>) или множественным (<code>other</code>). После этого он перейдет к идентификатору <code>readingTime</code> в файле <code>i18n/en-US.toml</code>:</p>
 <pre><code>[readingTime]
 one = &quot;One minute to read&quot;
 other = &quot;{{.Count}} minutes to read&quot;
-</code></pre><p>Assume <code>.ReadingTime.Count</code> in the context has value of 525600. The result will be:</p>
+</code></pre><p>Предположим, что <code>.ReadingTime.Count</code> в контексте имеет значение 525600. Результат будет:</p>
 <pre><code>525600 minutes to read
-</code></pre><p>If <code>.ReadingTime.Count</code> in the context has value is 1. The result is:</p>
+</code></pre><p>Если <code>.ReadingTime.Count</code> в контексте имеет значение 1. Результат:</p>
 <pre><code>One minutes to read
-</code></pre><p>In case you need to pass custom data: (<code>(dict &quot;Count&quot; 25)</code> is minimum requirement)</p>
+</code></pre><p>Если Вам нужно передать пользовательские данные: (<code>(dict &quot;Count&quot; 25)</code> является минимальным требованием)</p>
 <pre><code>{{ i18n &quot;readingTime&quot; (dict &quot;Count&quot; 25 &quot;FirstArgument&quot; true &quot;SecondArgument&quot; false &quot;Etc&quot; &quot;so on, so far&quot;) }}
-</code></pre><h2 id="customize-dates">Customize Dates <a class="header-link" href="#customize-dates"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>At the time of this writing, Go does not yet have support for internationalized locales for dates, but if you do some work, you can simulate it. For example, if you want to use French month names, you can add a data file like <code>data/mois.yaml</code> with this content:</p>
+</code></pre><h2 id="настройка-дат">Настройка дат <a class="header-link" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b4%d0%b0%d1%82"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>На момент написания этой статьи в Go еще не было поддержки интернационализированных локалей для дат, но если Вы поработаете, Вы можете смоделировать это. Например, если Вы хотите использовать названия месяцев на французском языке, Вы можете добавить файл данных, например <code>data/mois.yaml</code>, с таким содержимым:</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">1</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;janvier&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">2</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;février&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">3</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;mars&#34;</span><span class="w">
@@ -1040,13 +1039,13 @@ other = &quot;{{.Count}} minutes to read&quot;
 </span><span class="w"></span><span class="nt">10</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;octobre&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">11</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;novembre&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">12</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;décembre&#34;</span><span class="w">
-</span></code></pre></div><p>&hellip;then index the non-English date names in your templates like so:</p>
+</span></code></pre></div><p>&hellip;затем проиндексируйте неанглийские имена дат в своих шаблонах следующим образом:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">time</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;post-date&#34;</span> <span class="na">datetime</span><span class="o">=</span><span class="s">&#34;{{ .Date.Format &#39;2006-01-02T15:04:05Z07:00&#39; | safeHTML }}&#34;</span><span class="p">&gt;</span>
   Article publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf &#34;%d&#34; .Date.Month) }} {{ .Date.Year }} (dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf &#34;%d&#34; .Lastmod.Month) }} {{ .Lastmod.Year }})
 <span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
-</code></pre></div><p>This technique extracts the day, month and year by specifying <code>.Date.Day</code>, <code>.Date.Month</code>, and <code>.Date.Year</code>, and uses the month number as a key, when indexing the month name data file.</p>
-<h2 id="menus">Menus <a class="header-link" href="#menus"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>You can define your menus for each language independently. Creating multilingual menus works just like <a href="/content-management/menus/">creating regular menus</a>, except they&rsquo;re defined in language-specific blocks in the configuration file:</p>
+</code></pre></div><p>Этот метод извлекает день, месяц и год, указывая <code>.Date.Day</code>, <code>.Date.Month</code> и <code>.Date.Year</code> и использует номер месяца в качестве ключа при индексировании файл данных названия месяца.</p>
+<h2 id="меню">Меню <a class="header-link" href="#%d0%bc%d0%b5%d0%bd%d1%8e"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Вы можете определять свои меню для каждого языка независимо. Создание многоязычных меню работает так же, как <a href="/content-management/menus/">создание обычных меню</a>, за исключением того, что они определены в специфичных для языка блоках в файле конфигурации:</p>
 <pre><code>defaultContentLanguage = &quot;en&quot;
 
 [languages.en]
@@ -1067,7 +1066,7 @@ languageName = &quot;Deutsch&quot;
 url    = &quot;/&quot;
 name   = &quot;Startseite&quot;
 weight = 0
-</code></pre><p>The rendering of the main navigation works as usual. <code>.Site.Menus</code> will just contain the menu in the current language. Note that <code>absLangURL</code> below will link to the correct locale of your website. Without it, menu entries in all languages would link to the English version, since it&rsquo;s the default content language that resides in the root directory.</p>
+</code></pre><p>Рендеринг основной навигации работает как обычно. <code>.Site.Menus</code> просто будет содержать меню на текущем языке. Обратите внимание, что приведенный ниже <code>absLangURL</code> будет ссылаться на правильный языковой стандарт Вашего веб-сайта. Без него пункты меню на всех языках будут ссылаться на английскую версию, поскольку это язык содержимого по умолчанию, который находится в корневом каталоге.</p>
 <pre><code>&lt;ul&gt;
     {{- $currentPage := . -}}
     {{ range .Site.Menus.main -}}
@@ -1076,10 +1075,9 @@ weight = 0
     &lt;/li&gt;
     {{- end }}
 &lt;/ul&gt;
-
-</code></pre><h2 id="missing-translations">Missing Translations <a class="header-link" href="#missing-translations"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>If a string does not have a translation for the current language, Hugo will use the value from the default language. If no default value is set, an empty string will be shown.</p>
-<p>While translating a Hugo website, it can be handy to have a visual indicator of missing translations. The <a href="/getting-started/configuration/"><code>enableMissingTranslationPlaceholders</code> configuration option</a> will flag all untranslated strings with the placeholder <code>[i18n] identifier</code>, where <code>identifier</code> is the id of the missing translation.</p>
+</code></pre><h2 id="отсутствующие-переводы">Отсутствующие переводы <a class="header-link" href="#%d0%be%d1%82%d1%81%d1%83%d1%82%d1%81%d1%82%d0%b2%d1%83%d1%8e%d1%89%d0%b8%d0%b5-%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4%d1%8b"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Если строка не имеет перевода для текущего языка, Hugo будет использовать значение из языка по умолчанию. Если значение по умолчанию не установлено, будет показана пустая строка.</p>
+<p>При переводе веб-сайта Hugo может быть удобно иметь визуальный индикатор отсутствующих переводов. <a href="/getting-started/configuration/">Параметр конфигурации <code>enableMissingTranslationPlaceholders</code></a> помечает все непереведенные строки меткой-заполнителем <code>[i18n] identifier</code>, где <code>identifier</code> это идентификатор отсутствующего перевода.</p>
 
 <aside class="admonition note">
 	<div class="note-icon">
@@ -1087,21 +1085,21 @@ weight = 0
 	</div>
 	
 	
-	<div class="admonition-content"><p>Hugo will generate your website with these missing translation placeholders. It might not be suitable for production environments.</p>
+	<div class="admonition-content"><p>Hugo сгенерирует Ваш веб-сайт с этими недостающими заполнителями для перевода. Это может не подходить для производственных сред.</p>
 </div>
 </aside>
 
-<p>For merging of content from other languages (i.e. missing content translations), see <a href="/functions/lang.merge/">lang.Merge</a>.</p>
-<p>To track down missing translation strings, run Hugo with the <code>--i18n-warnings</code> flag:</p>
+<p>Для слияния контента с других языков (т.е. отсутствующих переводов контента) смотрите <a href="/functions/lang.merge/">lang.Merge</a>.</p>
+<p>Чтобы отследить недостающие строки перевода, запустите Hugo с флагом <code>--i18n-warnings</code>:</p>
 <pre><code> hugo --i18n-warnings | grep i18n
 i18n|MISSING_TRANSLATION|en|wordCount
-</code></pre><h2 id="multilingual-themes-support">Multilingual Themes support <a class="header-link" href="#multilingual-themes-support"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>To support Multilingual mode in your themes, some considerations must be taken for the URLs in the templates. If there is more than one language, URLs must meet the following criteria:</p>
+</code></pre><h2 id="поддержка-многоязычных-тем">Поддержка многоязычных тем <a class="header-link" href="#%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%ba%d0%b0-%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d1%8f%d0%b7%d1%8b%d1%87%d0%bd%d1%8b%d1%85-%d1%82%d0%b5%d0%bc"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Для поддержки многоязычного режима в Ваших темах необходимо принять во внимание некоторые URL-адреса в шаблонах. Если существует более одного языка, URL-адреса должны соответствовать следующим критериям:</p>
 <ul>
-<li>Come from the built-in <code>.Permalink</code> or <code>.RelPermalink</code></li>
-<li>Be constructed with the <a href="/functions/rellangurl"><code>relLangURL</code> template function</a> or the <a href="/functions/abslangurl"><code>absLangURL</code> template function</a> <strong>OR</strong> be prefixed with <code>{{ .LanguagePrefix }}</code></li>
+<li>Заходите из встроенного <code>.Permalink</code> или <code>.RelPermalink</code></li>
+<li>Быть построенным с помощью <a href="/functions/rellangurl">функции шаблона <code>relLangURL</code></a> или <a href="/functions/abslangurl">функции шаблона <code>absLangURL</code></a> <strong>ИЛИ</strong> иметь префикс <code>{{ .LanguagePrefix }}</code></li>
 </ul>
-<p>If there is more than one language defined, the <code>LanguagePrefix</code> variable will equal <code>/en</code> (or whatever your <code>CurrentLanguage</code> is). If not enabled, it will be an empty string (and is therefore harmless for single-language Hugo websites).</p>
+<p>Если определено более одного языка, переменная <code>LanguagePrefix</code> будет равна <code>/en</code> (или любому другому вашему <code>CurrentLanguage</code>). Если не включен, это будет пустая строка (и поэтому безвредна для одноязычных веб-сайтов Hugo).</p>
 
 </div>
 
@@ -1239,26 +1237,26 @@ i18n|MISSING_TRANSLATION|en|wordCount
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Управление контентом</a>
         <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
+              Обзор управления контентом
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
+              Организация
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
+              Пакеты страниц
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
+              Форматы контента
             </a>
           </li>
           <li class="f6 fw4">
@@ -1267,93 +1265,88 @@ i18n|MISSING_TRANSLATION|en|wordCount
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Resources
             </a>
           </li>
           <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Параметры сборки
+            </a>
+          </li>
+          <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
+              Обработка изображений
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
+              Шорткоды
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
+              Связанный контент
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
+              Разделы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
+              Типы контента
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
+              Архетипы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
+              Таксономии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
+              Содержание
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
+              Ссылки и перекрестные ссылки
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
+              Управление URL-адресами
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
+              Меню
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
+              Статические файлы
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
+              Комментарии
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Multilingual and i18n
+              Многоязычный и i18n
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
+              Подсветка синтаксиса
             </a>
           </li>
         </ul>
@@ -2443,8 +2436,8 @@ i18n|MISSING_TRANSLATION|en|wordCount
   <a href="https://gohugo.ru/content-management/multilingual/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Multilingual Mode”
-  </a> последнее обновление: December 24, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5edbf835988b0e0681a9e467ef5f0cfb728d61cd">Добавил папку для перевода RU (5edbf8359)</a>
+    “Многоязычный режим”
+  </a> последнее обновление: December 29, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/f98c73c987c351ce4e30a7380278c6e7247194fd">Перевод content-management (f98c73c98)</a>
 </h6>
 
     <a href="https://github.com/gohugoio/hugoDocs/edit/master-ru/content/ru/content-management%5cmultilingual.md" class="
@@ -2622,7 +2615,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+          Управление контентом
         </a>
     </li>
   
