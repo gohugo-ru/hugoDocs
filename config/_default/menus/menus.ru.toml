@@ -20,7 +20,7 @@
 # Core Menus
 
 [[docs]]
-  name = "Content Management"
+  name = "Управление контентом"
   weight = 20
   identifier = "content-management"
   post = "expanded"

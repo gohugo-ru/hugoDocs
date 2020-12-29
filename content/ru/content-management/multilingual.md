@@ -1,7 +1,7 @@
 ---
-title: Multilingual Mode
-linktitle: Multilingual and i18n
-description: Hugo supports the creation of websites with multiple languages side by side.
+title: Многоязычный режим
+linktitle: Многоязычный и i18n
+description: Hugo поддерживает создание веб-сайтов на нескольких языках одновременно.
 date: 2017-01-10
 publishdate: 2017-01-10
 lastmod: 2017-01-10
@@ -17,13 +17,13 @@ aliases: [/content/multilingual/,/tutorials/create-a-multilingual-site/]
 toc: true
 ---
 
-You should define the available languages in a `languages` section in your site configuration.
+Вы должны определить доступные языки в разделе `languages` в конфигурации Вашего сайта.
 
-> Also See [Hugo Multilingual Part 1: Content translation](https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/)
+> Смотрите также [Мультиязычный Хьюго Часть 1: Перевод контента](https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/)
 
-## Configure Languages
+## Настройка языков
 
-The following is an example of a site configuration for a multilingual Hugo project:
+Ниже приведен пример конфигурации сайта для многоязычного проекта Hugo:
 
 {{< code-toggle file="config" >}}
 defaultContentLanguage = "en"
@@ -58,53 +58,51 @@ title = "O meu blog"
 weight = 3
 {{< /code-toggle >}}
 
-Anything not defined in a `languages` block will fall back to the global value for that key (e.g., `copyright` for the English `en` language). This also works for `params`, as demonstrated with `help` above: You will get the value `Aide` in French and `Help` in all the languages without this parameter set.
+Все, что не определено в блоке `languages`, вернется к глобальному значению для этого ключа (например, `copyright` для английского языка `en`). Это также работает для `params`, как показано выше с помощью `help`: Вы получите значение `Aide` на французском языке и `Help` на всех языках без этого набора параметров.
 
-With the configuration above, all content, sitemap, RSS feeds, paginations,
-and taxonomy pages will be rendered below `/` in English (your default content language) and then below `/fr` in French.
+С приведенной выше конфигурацией все содержимое, карта сайта, RSS-каналы, пагинации и страницы таксономии будут отображаться под символом `/` на английском языке (Ваш язык содержимого по умолчанию), а затем под символом `/fr` на французском языке.
 
-When working with front matter `Params` in [single page templates][singles], omit the `params` in the key for the translation.
+При работе с заголовком `Params` в [single page templates][singles], опускайте `params` в ключе для перевода.
 
-`defaultContentLanguage` sets the project's default language. If not set, the default language will be `en`.
+`defaultContentLanguage` устанавливает язык проекта по умолчанию. Если не установлен, языком по умолчанию будет `en`.
 
-If the default language needs to be rendered below its own language code (`/en`) like the others, set `defaultContentLanguageInSubdir: true`.
+Если язык по умолчанию должен отображаться под кодом своего собственного языка (`/en`), как и другие, установите `defaultContentLanguageInSubdir: true`.
 
-Only the obvious non-global options can be overridden per language. Examples of global options are `baseURL`, `buildDrafts`, etc.
+Только очевидные неглобальные параметры могут быть переопределены для каждого языка. Примеры глобальных параметров: `baseURL`, `buildDrafts` и т.д.
 
-**Please note:** use lowercase language codes, even when using regional languages (ie. use pt-pt instead of pt-PT). Currently Hugo language internals lowercase language codes, which can cause conflicts with settings like `defaultContentLanguage` which are not lowercased. Please track the evolution of this issue in [Hugo repository issue tracker](https://github.com/gohugoio/hugo/issues/7344)
+**Обратите внимание:** используйте строчные коды языков даже при использовании региональных языков (например, используйте pt-pt вместо pt-PT). В настоящее время внутренние строчные коды языка Hugo могут вызывать конфликты с такими настройками, как `defaultContentLanguage, которые не в нижнем регистре. Проследите за развитием этой проблемы в [трекере проблем репозитория Hugo](https://github.com/gohugoio/hugo/issues/7344)
 
-### Disable a Language
+### Отключить язык
 
-You can disable one or more languages. This can be useful when working on a new translation.
+Вы можете отключить один или несколько языков. Это может быть полезно при работе над новым переводом.
 
 ```toml
 disableLanguages = ["fr", "ja"]
 ```
 
-Note that you cannot disable the default content language.
+Обратите внимание, что Вы не можете отключить язык содержимого по умолчанию.
 
-We kept this as a standalone setting to make it easier to set via [OS environment](/getting-started/configuration/#configure-with-environment-variables):
+Мы сохранили это как отдельную настройку, чтобы упростить настройку с помощью [OS environment](/getting-started/configuration/#configure-with-environment-variables):
 
 ```bash
 HUGO_DISABLELANGUAGES="fr ja" hugo
 ```
-If you have already a list of disabled languages in `config.toml`, you can enable them in development like this:
+
+Если у Вас уже есть список отключенных языков в `config.toml`, Вы можете включить их в процессе разработки следующим образом:
 
 ```bash
 HUGO_DISABLELANGUAGES=" " hugo server
 ```
 
+### Настроить многоязычный мультихост
 
-### Configure Multilingual Multihost
+Начиная с **Hugo 0.31**, мы поддерживаем несколько языков в многоузловой конфигурации. Смотрите [эту проблему](https://github.com/gohugoio/hugo/issues/4027) для получения подробной информации.
 
-From **Hugo 0.31** we support multiple languages in a multihost configuration. See [this issue](https://github.com/gohugoio/hugo/issues/4027) for details.
+Это означает, что теперь Вы можете настроить `baseURL` для каждого языка `language`:
 
-This means that you can now configure a `baseURL` per `language`:
+> Если `baseURL` установлен на уровне `language`, тогда он должен быть у всех языков, и все они должны быть разными.
 
-
-> If a `baseURL` is set on the `language` level, then all languages must have one and they must all be different.
-
-Example:
+Пример:
 
 {{< code-toggle file="config" >}}
 [languages]
@@ -121,7 +119,7 @@ weight = 2
 title = "In English"
 {{</ code-toggle >}}
 
-With the above, the two sites will be generated into `public` with their own root:
+С учетом вышеизложенного, два сайта будут сгенерированы как `public` с их собственным корнем:
 
 ```bash
 public
@@ -129,9 +127,9 @@ public
 └── fr
 ```
 
-**All URLs (i.e `.Permalink` etc.) will be generated from that root. So the English home page above will have its `.Permalink` set to `https://example.com/`.**
+**Все URL-адреса (например, `.Permalink` и т.д.) будут созданы из этого корня. Таким образом, на английской домашней странице выше для параметра `.Permalink` установлено значение `https://example.com/`.**
 
-When you run `hugo server` we will start multiple HTTP servers. You will typically see something like this in the console:
+Когда Вы запускаете `hugo server`, мы запускаем несколько HTTP-серверов. Обычно в консоли Вы увидите что-то вроде этого:
 
 ```bash
 Web Server is available at 127.0.0.1:1313 (bind address 127.0.0.1)
@@ -139,12 +137,11 @@ Web Server is available at 127.0.0.1:1314 (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-Live reload and `--navigateToChanged` between the servers work as expected.
+Живая перезагрузка и `--navigateToChanged` между серверами работают должным образом.
 
-### Taxonomies and Blackfriday
+### Таксономии и Blackfriday
 
-Taxonomies and [Blackfriday configuration][config] can also be set per language:
-
+Таксономии и [конфигурация Blackfriday][config] также можно установить для каждого языка:
 
 {{< code-toggle file="config" >}}
 [Taxonomies]
@@ -168,31 +165,31 @@ title = "Français"
 plaque = "plaques"
 {{</ code-toggle >}}
 
-## Translate Your Content
+## Переведите свой контент
 
-There are two ways to manage your content translations. Both ensure each page is assigned a language and is linked to its counterpart translations.
+Есть два способа управлять переводами Вашего контента. Оба гарантируют, что каждой странице назначен язык и она связана с соответствующими переводами.
 
-### Translation by filename
+### Перевод по имени файла
 
-Considering the following example:
+Рассмотрим следующий пример:
 
 1. `/content/about.en.md`
 2. `/content/about.fr.md`
 
-The first file is assigned the English language and is linked to the second.
-The second file is assigned the French language and is linked to the first.
+Первому файлу назначается английский язык и он связан со вторым.
+Второму файлу назначен французский язык и он связан с первым.
 
-Their language is __assigned__ according to the language code added as a __suffix to the filename__. 
+Их язык __назначен__ в соответствии с кодом языка, добавленным в виде __суффикса к имени файла__.
 
-By having the same **path and base filename**, the content pieces are __linked__ together as translated pages.
+Имея одинаковый **путь и базовое имя файла**, части содержимого __связаны__ вместе как переведенные страницы.
 
 {{< note >}}
-If a file has no language code, it will be assigned the default language.
+Если у файла нет кода языка, ему будет назначен язык по умолчанию.
 {{</ note >}}
 
-### Translation by content directory
+### Перевод по каталогу контента
 
-This system uses different content directories for each of the languages. Each language's content directory is set using the `contentDir` param.
+Эта система использует разные каталоги контента для каждого из языков. Каталог содержимого каждого языка устанавливается с помощью параметра `contentDir`.
 
 {{< code-toggle file="config" >}}
 
@@ -208,76 +205,74 @@ languages:
 
 {{< /code-toggle >}}
 
-The value of `contentDir` can be any valid path -- even absolute path references. The only restriction is that the content directories cannot overlap.
+Значением `contentDir` может быть любой допустимый путь - даже абсолютные ссылки на путь. Единственное ограничение - каталоги содержимого не могут перекрываться.
 
-Considering the following example in conjunction with the configuration above:
+Рассмотрим следующий пример в сочетании с приведенной выше конфигурацией:
 
 1. `/content/english/about.md`
 2. `/content/french/about.md`
 
-The first file is assigned the English language and is linked to the second.
-The second file is assigned the French language and is linked to the first.
+Первому файлу назначается английский язык и он связан со вторым.
+Второму файлу назначен французский язык и он связан с первым.
 
-Their language is __assigned__ according to the content directory they are __placed__ in.
+Их язык __назначен__ в соответствии с каталогом контента, в котором они __находятся__.
 
-By having the same **path and basename** (relative to their language content directory), the content pieces are __linked__ together as translated pages.
+Имея одинаковый **путь и базовое имя** (относительно каталога их языкового контента), части контента __связаны__ вместе как переведенные страницы.
 
-### Bypassing default linking.
+### Обход ссылки по умолчанию
 
-Any pages sharing the same `translationKey` set in front matter will be linked as translated pages regardless of basename or location.
+Любые страницы, использующие один и тот же ключ перевода `translationKey`, установленный в начале, будут связаны как переведенные страницы независимо от базового имени или местоположения.
 
-Considering the following example:
+Рассмотрим следующий пример:
 
 1. `/content/about-us.en.md`
 2. `/content/om.nn.md`
 3. `/content/presentation/a-propos.fr.md`
 
 ```yaml
-# set in all three pages
+# установить на всех трех страницах
 translationKey: "about"
 ```
 
-By setting the `translationKey` front matter param to `about` in all three pages, they will be __linked__ as translated pages.
+Если установить для параметра `translationKey` значение `about` на всех трех страницах, они будут __связаны__ как переведенные страницы.
 
+### Локализация постоянных ссылок
 
-### Localizing permalinks
+Поскольку для обработки ссылок используются пути и имена файлов, все переведенные страницы будут иметь один и тот же URL-адрес (кроме подкаталога языка).
 
-Because paths and filenames are used to handle linking, all translated pages will share the same URL (apart from the language subdirectory).
+Чтобы локализовать URL-адреса, [`slug`]({{< ref "/content-management/organization/index.md#slug" >}}) или [`url`]({{< ref "/content-management/organization/index.md#url" >}}) параметр главного сообщения может быть установлен в любом языковом файле, отличном от заданного по умолчанию.
 
-To localize the URLs, the [`slug`]({{< ref "/content-management/organization/index.md#slug" >}}) or [`url`]({{< ref "/content-management/organization/index.md#url" >}}) front matter param can be set in any of the non-default language file. 
-
-For example, a French translation (`content/about.fr.md`) can have its own localized slug.
+Например, французский перевод (`content/about.fr.md`) может иметь свой собственный локализованный слаг.
 
 {{< code-toggle >}}
 Title: A Propos
 slug: "a-propos"
 {{< /code-toggle >}}
 
-
-At render, Hugo will build both `/about/` and `/fr/a-propos/` while maintaining their translation linking.
-
-{{% note %}}
-If using `url`, remember to include the language part as well: `/fr/compagnie/a-propos/`.
-{{%/ note %}}
-
-### Page Bundles
-
-To avoid the burden of having to duplicate files, each Page Bundle inherits the resources of its linked translated pages' bundles except for the content files (markdown files, html files etc...).
-
-Therefore, from within a template, the page will have access to the files from all linked pages' bundles.
-
-If, across the linked bundles, two or more files share the same basename, only one will be included and chosen as follows:
-
-* File from current language bundle, if present.
-* First file found across bundles by order of language `Weight`.
+Во время рендеринга Hugo построит как `/about/` и `/fr/a-propos/`, сохраняя при этом их перевод ссылки.
 
 {{% note %}}
-Page Bundle resources follow the same language assignment logic as content files, both by filename (`image.jpg`, `image.fr.jpg`) and by directory (`english/about/header.jpg`, `french/about/header.jpg`).
+Если вы используете `url`, не забудьте также включить языковую часть: `/fr/compagnie/a-propos/`.
 {{%/ note %}}
 
-## Reference the Translated Content
+### Пакеты страниц
 
-To create a list of links to translated content, use a template similar to the following:
+Чтобы избежать дублирования файлов, каждый пакет страниц наследует ресурсы пакетов связанных переведенных страниц, за исключением файлов содержимого (файлы разметки, файлы HTML и т.д.).
+
+Следовательно, из шаблона страница будет иметь доступ к файлам из всех пакетов связанных страниц.
+
+Если в связанных пакетах два или более файла имеют одно и то же базовое имя, только один будет включен и выбран следующим образом:
+
+* Файл из текущего языкового пакета, если он есть.
+* Первый файл найден в пакетах в порядке языка `Weight`.
+
+{{% note %}}
+Ресурсы пакета страниц следуют той же логике назначения языка, что и файлы содержимого, как по имени файла (`image.jpg`, `image.fr.jpg`), так и по каталогу (`english/about/header.jpg`, `french/about/header.jpg`).
+{{%/ note %}}
+
+## Ссылка на переведенный контент
+
+Чтобы создать список ссылок на переведенный контент, используйте шаблон, подобный следующему:
 
 {{< code file="layouts/partials/i18nlist.html" >}}
 {{ if .IsTranslated }}
@@ -292,14 +287,13 @@ To create a list of links to translated content, use a template similar to the f
 {{ end }}
 {{< /code >}}
 
-The above can be put in a `partial` (i.e., inside `layouts/partials/`) and included in any template, whether a [single content page][contenttemplate] or the [homepage][]. It will not print anything if there are no translations for a given page.
+Вышеупомянутое может быть помещено в `partial` (т.е. внутри `layouts/partials/`) и включено в любой шаблон, будь то [отдельная страница содержимого][contenttemplate] или [домашняя страница][homepage]. Он не будет ничего печатать, если для данной страницы нет переводов.
 
-The above also uses the [`i18n` function][i18func] described in the next section.
+Вышеупомянутое также использует [функцию `i18n`][i18func], описанную в следующем разделе.
 
-### List All Available Languages
+### Список всех доступных языков
 
-`.AllTranslations` on a `Page` can be used to list all translations, including the page itself. On the home page it can be used to build a language navigator:
-
+`.AllTranslations` на `Page` может использоваться для вывода списка всех переводов, включая саму страницу. На домашней странице его можно использовать для создания языкового навигатора:
 
 {{< code file="layouts/partials/allLanguages.html" >}}
 <ul>
@@ -309,70 +303,70 @@ The above also uses the [`i18n` function][i18func] described in the next section
 </ul>
 {{< /code >}}
 
-## Translation of Strings
+## Перевод строк
 
-Hugo uses [go-i18n][] to support string translations. [See the project's source repository][go-i18n-source] to find tools that will help you manage your translation workflows.
+Хьюго использует [go-i18n][] для поддержки строковых переводов. [Смотрите репозиторий исходного кода проекта][go-i18n-source], чтобы найти инструменты, которые помогут Вам управлять рабочими процессами перевода.
 
-Translations are collected from the `themes/<THEME>/i18n/` folder (built into the theme), as well as translations present in `i18n/` at the root of your project. In the `i18n`, the translations will be merged and take precedence over what is in the theme folder. Language files should be named according to [RFC 5646][] with names such as `en-US.toml`, `fr.toml`, etc.
+Переводы собираются из папки `themes/<THEME>/i18n/` (встроенной в тему), а также переводов, находящихся в `i18n/` в корне Вашего проекта. В `i18n` переводы будут объединены и будут иметь приоритет над тем, что находится в папке темы. Языковые файлы должны быть названы в соответствии с [RFC 5646][] такими именами, как `en-US.toml`, `fr.toml` и т.д.
 
 {{% note %}}
-From **Hugo 0.31** you no longer need to use a valid language code. It can be anything.
+Начиная с **Hugo 0.31** Вам больше не нужно использовать действительный языковой код. Это может быть что угодно.
 
-See https://github.com/gohugoio/hugo/issues/3564
+Смотрите https://github.com/gohugoio/hugo/issues/3564
 
 {{% /note %}}
 
-### Query basic translation
+### Запрос базового перевода
 
-From within your templates, use the `i18n` function like this:
+Изнутри ваших шаблонов используйте функцию `i18n` следующим образом:
 
 ```
 {{ i18n "home" }}
 ```
 
-The function will search for the `"home"` id from `i18n/en-US.toml` file:
+Функция будет искать идентификатор `"home"` в файле `i18n/en-US.toml`:
 
 ```
 [home]
 other = "Home"
 ```
 
-The result will be
+Результат будет
 
 ```
 Home
 ```
 
-### Query a flexible translation with variables
+### Запрос на гибкий перевод с переменными
 
-Often you will want to use to the page variables in the translations strings. To do that, pass on the `.` context when calling `i18n`:
+Часто Вы захотите использовать переменные страницы в строках переводов. Для этого передайте контекст `.` при вызове `i18n`:
 
 ```
 {{ i18n "wordCount" . }}
 ```
 
-The function will pass the `.` context to the `"wordCount"` id in `i18n/en-US.toml` file:
+Функция передаст контекст `.` идентификатору `"wordCount"` в файле `i18n/en-US.toml`:
 
 ```
 [wordCount]
 other = "This article has {{ .WordCount }} words."
 ```
 
-Assume `.WordCount` in the context has value is 101. The result will be:
+Предположим, что в контексте `.WordCount` значение равно 101. Результатом будет:
 
 ```
 This article has 101 words.
 ```
 
-### Query a singular/plural translation
+### Запрос на перевод в единственном/множественном числе
 
-In order to meet singular/plural requirement, you must pass a dictionary (map) with a numeric `.Count` property to the `i18n` function. The below example uses `.ReadingTime` variable which has a built-in `.Count` property.
+Чтобы соответствовать требованиям единственного/множественного числа, Вы должны передать словарь (карту) с числовым свойством `.Count` в функцию `i18n`. В приведенном ниже примере используется переменная `.ReadingTime`, которая имеет встроенное свойство `.Count`.
 
 ```
 {{ i18n "readingTime" .ReadingTime }}
 ```
 
-The function will read `.Count` from `.ReadingTime` and evaluate where the number is singular (`one`) or plural (`other`). After that, it will pass to `readingTime` id in `i18n/en-US.toml` file:
+Функция будет читать `.Count` из `.ReadingTime` и оценивать, где число является единственным (`one`) или множественным (`other`). После этого он перейдет к идентификатору `readingTime` в файле `i18n/en-US.toml`:
 
 ```
 [readingTime]
@@ -380,28 +374,27 @@ one = "One minute to read"
 other = "{{.Count}} minutes to read"
 ```
 
-Assume `.ReadingTime.Count` in the context has value of 525600. The result will be:
+Предположим, что `.ReadingTime.Count` в контексте имеет значение 525600. Результат будет:
 
 ```
 525600 minutes to read
 ```
 
-If `.ReadingTime.Count` in the context has value is 1. The result is:
+Если `.ReadingTime.Count` в контексте имеет значение 1. Результат:
 
 ```
 One minutes to read
 ```
 
-In case you need to pass custom data: (`(dict "Count" 25)` is minimum requirement)
+Если Вам нужно передать пользовательские данные: (`(dict "Count" 25)` является минимальным требованием)
 
 ```
 {{ i18n "readingTime" (dict "Count" 25 "FirstArgument" true "SecondArgument" false "Etc" "so on, so far") }}
 ```
 
+## Настройка дат
 
-## Customize Dates
-
-At the time of this writing, Go does not yet have support for internationalized locales for dates, but if you do some work, you can simulate it. For example, if you want to use French month names, you can add a data file like ``data/mois.yaml`` with this content:
+На момент написания этой статьи в Go еще не было поддержки интернационализированных локалей для дат, но если Вы поработаете, Вы можете смоделировать это. Например, если Вы хотите использовать названия месяцев на французском языке, Вы можете добавить файл данных, например ``data/mois.yaml``, с таким содержимым:
 
 ~~~yaml
 1: "janvier"
@@ -418,7 +411,7 @@ At the time of this writing, Go does not yet have support for internationalized 
 12: "décembre"
 ~~~
 
-...then index the non-English date names in your templates like so:
+...затем проиндексируйте неанглийские имена дат в своих шаблонах следующим образом:
 
 ~~~html
 <time class="post-date" datetime="{{ .Date.Format '2006-01-02T15:04:05Z07:00' | safeHTML }}">
@@ -426,11 +419,11 @@ At the time of this writing, Go does not yet have support for internationalized 
 </time>
 ~~~
 
-This technique extracts the day, month and year by specifying ``.Date.Day``, ``.Date.Month``, and ``.Date.Year``, and uses the month number as a key, when indexing the month name data file.
+Этот метод извлекает день, месяц и год, указывая ``.Date.Day``, ``.Date.Month`` и ``.Date.Year`` и использует номер месяца в качестве ключа при индексировании файл данных названия месяца.
 
-## Menus
+## Меню
 
-You can define your menus for each language independently. Creating multilingual menus works just like [creating regular menus][menus], except they're defined in language-specific blocks in the configuration file:
+Вы можете определять свои меню для каждого языка независимо. Создание многоязычных меню работает так же, как [создание обычных меню][menus], за исключением того, что они определены в специфичных для языка блоках в файле конфигурации:
 
 ```
 defaultContentLanguage = "en"
@@ -455,7 +448,7 @@ name   = "Startseite"
 weight = 0
 ```
 
-The rendering of the main navigation works as usual. `.Site.Menus` will just contain the menu in the current language. Note that `absLangURL` below will link to the correct locale of your website. Without it, menu entries in all languages would link to the English version, since it's the default content language that resides in the root directory.
+Рендеринг основной навигации работает как обычно. `.Site.Menus` просто будет содержать меню на текущем языке. Обратите внимание, что приведенный ниже `absLangURL` будет ссылаться на правильный языковой стандарт Вашего веб-сайта. Без него пункты меню на всех языках будут ссылаться на английскую версию, поскольку это язык содержимого по умолчанию, который находится в корневом каталоге.
 
 ```
 <ul>
@@ -466,36 +459,35 @@ The rendering of the main navigation works as usual. `.Site.Menus` will just con
     </li>
     {{- end }}
 </ul>
-
 ```
 
-## Missing Translations
+## Отсутствующие переводы
 
-If a string does not have a translation for the current language, Hugo will use the value from the default language. If no default value is set, an empty string will be shown.
+Если строка не имеет перевода для текущего языка, Hugo будет использовать значение из языка по умолчанию. Если значение по умолчанию не установлено, будет показана пустая строка.
 
-While translating a Hugo website, it can be handy to have a visual indicator of missing translations. The [`enableMissingTranslationPlaceholders` configuration option][config] will flag all untranslated strings with the placeholder `[i18n] identifier`, where `identifier` is the id of the missing translation.
+При переводе веб-сайта Hugo может быть удобно иметь визуальный индикатор отсутствующих переводов. [Параметр конфигурации `enableMissingTranslationPlaceholders`][config] помечает все непереведенные строки меткой-заполнителем `[i18n] identifier`, где `identifier` это идентификатор отсутствующего перевода.
 
 {{% note %}}
-Hugo will generate your website with these missing translation placeholders. It might not be suitable for production environments.
+Hugo сгенерирует Ваш веб-сайт с этими недостающими заполнителями для перевода. Это может не подходить для производственных сред.
 {{% /note %}}
 
-For merging of content from other languages (i.e. missing content translations), see [lang.Merge](/functions/lang.merge/).
+Для слияния контента с других языков (т.е. отсутствующих переводов контента) смотрите [lang.Merge](/functions/lang.merge/).
 
-To track down missing translation strings, run Hugo with the `--i18n-warnings` flag:
+Чтобы отследить недостающие строки перевода, запустите Hugo с флагом `--i18n-warnings`:
 
 ```
  hugo --i18n-warnings | grep i18n
 i18n|MISSING_TRANSLATION|en|wordCount
 ```
 
-## Multilingual Themes support
+## Поддержка многоязычных тем
 
-To support Multilingual mode in your themes, some considerations must be taken for the URLs in the templates. If there is more than one language, URLs must meet the following criteria:
+Для поддержки многоязычного режима в Ваших темах необходимо принять во внимание некоторые URL-адреса в шаблонах. Если существует более одного языка, URL-адреса должны соответствовать следующим критериям:
 
-* Come from the built-in `.Permalink` or `.RelPermalink`
-* Be constructed with the [`relLangURL` template function][rellangurl] or the [`absLangURL` template function][abslangurl] **OR** be prefixed with `{{ .LanguagePrefix }}`
+* Заходите из встроенного `.Permalink` или `.RelPermalink`
+* Быть построенным с помощью [функции шаблона `relLangURL`][rellangurl] или [функции шаблона `absLangURL`][abslangurl] **ИЛИ** иметь префикс `{{ .LanguagePrefix }}`
 
-If there is more than one language defined, the `LanguagePrefix` variable will equal `/en` (or whatever your `CurrentLanguage` is). If not enabled, it will be an empty string (and is therefore harmless for single-language Hugo websites).
+Если определено более одного языка, переменная `LanguagePrefix` будет равна `/en` (или любому другому вашему `CurrentLanguage`). Если не включен, это будет пустая строка (и поэтому безвредна для одноязычных веб-сайтов Hugo).
 
 [abslangurl]: /functions/abslangurl
 [config]: /getting-started/configuration/

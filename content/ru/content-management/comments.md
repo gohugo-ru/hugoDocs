@@ -1,7 +1,7 @@
 ---
-title: Comments
-linktitle: Comments
-description: Hugo ships with an internal Disqus template, but this isn't the only commenting system that will work with your new Hugo website.
+title: Комментарии
+linktitle: Комментарии
+description: Hugo поставляется с внутренним шаблоном Disqus, но это не единственная система комментариев, которая будет работать с Вашим новым веб-сайтом Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-03-09
@@ -17,52 +17,51 @@ aliases: [/extras/comments/]
 toc: true
 ---
 
-Hugo ships with support for [Disqus](https://disqus.com/), a third-party service that provides comment and community capabilities to websites via JavaScript.
+Hugo поставляется с поддержкой [Disqus](https://disqus.com/), сторонней службы, которая предоставляет веб-сайты возможность комментирования и сообщества через JavaScript.
 
-Your theme may already support Disqus, but if not, it is easy to add to your templates via [Hugo's built-in Disqus partial][disquspartial].
+Ваша тема может уже поддерживать Disqus, но если нет, ее легко добавить в Ваши шаблоны с помощью [Частично встроенный Disqus в Хьюго][disquspartial].
 
-## Add Disqus
+## Добавить Disqus
 
-Hugo comes with all the code you need to load Disqus into your templates. Before adding Disqus to your site, you'll need to [set up an account][disqussetup].
+Hugo поставляется со всем кодом, необходимым для загрузки Disqus в Ваши шаблоны. Перед добавлением Disqus на свой сайт Вам необходимо [создать учетную запись][disqussetup].
 
-### Configure Disqus
+### Настроить Disqus
 
-Disqus comments require you set a single value in your [site's configuration file][configuration] like so:
+Комментарии Disqus требуют, чтобы Вы установили одно значение в [файл конфигурации сайта][configuration], например:
 
 {{< code-toggle copy="false" >}}
 disqusShortname = "yourdiscussshortname"
 {{</ code-toggle >}}
 
-For many websites, this is enough configuration. However, you also have the option to set the following in the [front matter][] of a single content file:
+Для многих сайтов такой конфигурации вполне достаточно. Тем не менее, у Вас также есть возможность установить следующие параметры в [front matter][] одного файла содержимого:
 
 * `disqus_identifier`
 * `disqus_title`
 * `disqus_url`
 
-### Render Hugo's Built-in Disqus Partial Template
+### Отрисовка встроенного частичного шаблона Disqus от Hugo
 
-Disqus has its own [internal template](https://gohugo.io/templates/internal/#disqus) available, to render it add the following code where you want comments to appear:
+У Disqus есть собственный [внутренний шаблон](https://gohugo.io/templates/internal/#disqus), чтобы он отображался, добавьте следующий код там, где Вы хотите, чтобы комментарии отображались:
 
 ```
 {{ template "_internal/disqus.html" . }}
 ```
 
-## Comments Alternatives
+## Альтернативы комментариев
 
 There are a few alternatives to commenting on static sites for those who do not want to use Disqus:
 
 * [Staticman](https://staticman.net/)
-* [Talkyard](https://www.talkyard.io/blog-comments) (Open source, & serverless hosting)
+* [Talkyard](https://www.talkyard.io/blog-comments) (Открытый исходный код и бессерверный хостинг)
 * [IntenseDebate](https://intensedebate.com/)
 * [Graph Comment][]
 * [Muut](https://muut.com/)
-* [Isso](https://posativ.org/isso/) (Self-hosted, Python)
-    * [Tutorial on Implementing Isso with Hugo][issotutorial]
-* [Utterances](https://utteranc.es/) (Open source, GitHub comments widget built on GitHub issues)
-* [Remark](https://github.com/umputun/remark) (Open source, Golang, Easy to run docker)
-* [Commento](https://commento.io/) (Open Source, available as a service, local install, or docker image)
-* [Hyvor Talk](https://talk.hyvor.com/) (Available as a service)
-
+* [Isso](https://posativ.org/isso/) (Самостоятельное размещение, Python)
+  * [Учебник по реализации Isso с Hugo][issotutorial]
+* [Utterances](https://utteranc.es/) (Открытый исходный код, виджет комментариев GitHub, основанный на проблемах GitHub)
+* [Remark](https://github.com/umputun/remark) (Открытый исходный код, Golang, Простой в использовании докер)
+* [Commento](https://commento.io/) (Открытый исходный код, доступный в виде службы, локальной установки или образа докера)
+* [Hyvor Talk](https://talk.hyvor.com/) (Доступно как услуга)
 
 [configuration]: /getting-started/configuration/
 [disquspartial]: /templates/partials/#disqus

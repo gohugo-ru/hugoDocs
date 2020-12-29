@@ -1,7 +1,7 @@
 ---
-title: Table of Contents
-linktitle:
-description: Hugo can automatically parse Markdown content and create a Table of Contents you can use in your templates.
+title: Оглавление
+linktitle: Содержание
+description: Hugo может автоматически анализировать контент Markdown и создавать оглавление, которое Вы можете использовать в своих шаблонах.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
@@ -17,17 +17,17 @@ aliases: [/extras/toc/]
 toc: true
 ---
 
-{{% note "TOC Heading Levels are Fixed" %}}
+{{% note "Уровни заголовков оглавления фиксированы" %}}
 
-Previously, there was no out-of-the-box way to specify which heading levels you want the TOC to render. [See the related GitHub discussion (#1778)](https://github.com/gohugoio/hugo/issues/1778). As such, the resulting `<nav id="TableOfContents"><ul></ul></nav>` was going to start at `<h1>` when pulling from `{{.Content}}`.
+Раньше не было готового способа указать, какие уровни заголовков нужно отображать в оглавлении. [См. Соответствующее обсуждение на GitHub (#1778)](https://github.com/gohugoio/hugo/issues/1778). Таким образом, результирующий `<nav id="TableOfContents"><ul></ul></nav>` должен был начинаться с `<h1>` при извлечении из `{{.Content}}`.
 
-Hugo [v0.60.0](https://github.com/gohugoio/hugo/releases/tag/v0.60.0) made a switch to [Goldmark](https://github.com/yuin/goldmark/) as the default library for Markdown which has improved and configurable implementation of TOC. Take a look at [how to configure TOC](/getting-started/configuration-markup/#table-of-contents) for Goldmark renderer.
+Хьюго [v0.60.0](https://github.com/gohugoio/hugo/releases/tag/v0.60.0) переключился на [Goldmark](https://github.com/yuin/goldmark/) в качестве библиотеки по умолчанию для разметки, в которой улучшена и настраивается реализация оглавления. Взгляните [как настроить оглавление](/getting-started/configuration-markup/#table-of-contents) для средства визуализации Goldmark.
 
 {{% /note %}}
 
-## Usage
+## Применение
 
-Create your markdown the way you normally would with the appropriate headings. Here is some example content:
+Создайте уценку, как обычно, с соответствующими заголовками. Вот пример содержания:
 
 ```
 <!-- Your front matter up here -->
@@ -45,17 +45,17 @@ He lay on his armour-like back, and if he lifted his head a little he could see 
 A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops
 ```
 
-Hugo will take this Markdown and create a table of contents from `## Introduction`, `## My Heading`, and `### My Subheading` and then store it in the [page variable][pagevars]`.TableOfContents`.
+Хьюго возьмет этот Markdown и создаст оглавление из `## Introduction`, `## My Heading` и `### My Subheading`, а затем сохранит его в [переменные страницы][pagevars]`.TableOfContents`.
 
-The built-in `.TableOfContents` variables outputs a `<nav id="TableOfContents">` element with a child `<ul>`, whose child `<li>` elements begin with appropriate HTML headings. See [the available settings](/getting-started/configuration-markup/#table-of-contents) to configure what heading levels you want to include in TOC.
+Встроенные переменные `.TableOfContents` выводят элемент `<nav id="TableOfContents">` с дочерним элементом `<ul>`, чьи дочерние элементы `<li>` начинаются с соответствующих заголовков HTML. Смотрите [доступные настройки](/getting-started/configuration-markup/#table-of-contents), чтобы настроить, какие уровни заголовков Вы хотите включить в оглавление.
 
 {{% note "Table of contents not available for MMark" %}}
-Hugo documents created in the [MMark](/content-management/formats/#mmark) Markdown dialect do not currently display TOCs. TOCs are, however, compatible with all other supported Markdown formats.
+Документы Hugo, созданные на диалекте Markdown [MMark](/content-management/formats/#mmark), в настоящее время не отображают оглавление. Однако оглавления совместимы со всеми другими поддерживаемыми форматами Markdown.
 {{% /note %}}
 
-## Template Example: Basic TOC
+## Пример шаблона: базовое оглавление
 
-The following is an example of a very basic [single page template][]:
+Ниже приводится пример очень простого [одностраничного шаблона][single page template]:
 
 {{< code file="layout/_default/single.html" download="single.html" >}}
 {{ define "main" }}
@@ -73,9 +73,9 @@ The following is an example of a very basic [single page template][]:
 {{ end }}
 {{< /code >}}
 
-## Template Example: TOC Partial
+## Пример шаблона: Частичное содержание оглавления
 
-The following is a [partial template][partials] that adds slightly more logic for page-level control over your table of contents. It assumes you are using a `toc` field in your content's [front matter][] that, unless specifically set to `false`, will add a TOC to any page with a `.WordCount` (see [Page Variables][pagevars]) greater than 400. This example also demonstrates how to use [conditionals][] in your templating:
+Ниже приведен [частичный шаблон][partials], который добавляет немного больше логики для управления оглавлением на уровне страницы. Предполагается, что Вы используете поле `toc` в [front matter][] Вашего контента, которое, если специально не установлено на `false`, добавит оглавление на любую страницу с `.WordCount` (смотрите [переменные страницы][pagevars]) больше 400. Этот пример также демонстрирует, как использовать [условные][conditionals] в Вашем шаблоне:
 
 {{< code file="layouts/partials/toc.html" download="toc.html" >}}
 {{ if and (gt .WordCount 400 ) (.Params.toc) }}
@@ -89,14 +89,14 @@ The following is a [partial template][partials] that adds slightly more logic fo
 {{< /code >}}
 
 {{% note %}}
-With the preceding example, even pages with > 400 words *and* `toc` not set to `false` will not render a table of contents if there are no headings in the page for the `{{.TableOfContents}}` variable to pull from.
+В предыдущем примере даже страницы с > 400 слов *и* `toc`, для которых не установлено значение `false`, не будут отображать оглавление, если на странице нет заголовков для переменной `{{.TableOfContents}}`.
 {{% /note %}}
 
-## Usage with AsciiDoc
+## Использование с AsciiDoc
 
-Hugo supports table of contents with AsciiDoc content format.
+Hugo поддерживает оглавление с форматом содержимого AsciiDoc.
 
-In the header of your content file, specify the AsciiDoc TOC directives necessary to ensure that the table of contents is generated. Hugo will use the generated TOC to populate the page variable `.TableOfContents` in the same way as described for Markdown. See example below:
+В заголовке файла содержимого укажите директивы AsciiDoc TOC, необходимые для создания оглавления. Хьюго будет использовать сгенерированное оглавление для заполнения переменной страницы `.TableOfContents` так же, как описано для разметки. Смотрите пример ниже:
 
 ```asciidoc
 // <!-- Your front matter up here -->
@@ -116,7 +116,8 @@ He lay on his armour-like back, and if he lifted his head a little he could see 
 
 A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops
 ```
-Hugo will take this AsciiDoc and create a table of contents store it in the page variable `.TableOfContents`, in the same as described for Markdown.
+
+Хьюго возьмет этот AsciiDoc и создаст оглавление и сохранит его в переменной страницы `.TableOfContents`, как описано для Markdown.
 
 [conditionals]: /templates/introduction/#conditionals
 [front matter]: /content-management/front-matter/

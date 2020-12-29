@@ -1,6 +1,6 @@
 ---
-title: Syntax Highlighting
-description: Hugo comes with really fast syntax highlighting from Chroma.
+title: Подсветка синтаксиса
+description: Hugo поставляется с действительно быстрой подсветкой синтаксиса от Chroma.
 date: 2017-02-01
 publishdate: 2017-02-01
 keywords: [highlighting,chroma,code blocks,syntax]
@@ -16,37 +16,37 @@ aliases: [/extras/highlighting/,/extras/highlight/,/tools/syntax-highlighting/]
 toc: true
 ---
 
-Hugo uses [Chroma](https://github.com/alecthomas/chroma) as its code highlighter; it is built in Go and is really, really fast -- and for the most important parts compatible with Pygments we used before.
+Хьюго использует [Chroma](https://github.com/alecthomas/chroma) в качестве подсветки кода; он построен на Go и действительно очень быстр - и по наиболее важным частям совместим с Pygments, который мы использовали раньше.
 
-## Configure Syntax Highlighter
+## Настройка выделения синтаксиса
 
-See [Configure Highlight](/getting-started/configuration-markup#highlight).
+Смотрите [настройка выделения](/getting-started/configuration-markup#highlight).
 
-## Generate Syntax Highlighter CSS
+## Генерация синтаксиса подсветки CSS
 
-If you run with `pygmentsUseClasses=true` in your site config, you need a style sheet.
+Если Вы работаете с `pygmentsUseClasses=true` в конфигурации Вашего сайта, Вам понадобится таблица стилей.
 
-You can generate one with Hugo:
+Вы можете создать ее с помощью Hugo:
 
 ```bash
 hugo gen chromastyles --style=monokai > syntax.css
 ```
 
-Run `hugo gen chromastyles -h` for more options. See https://xyproto.github.io/splash/docs/ for a gallery of available styles.
+Запустите `hugo gen chromastyles -h` для получения дополнительных опций. Смотрите https://xyproto.github.io/splash/docs/ для галереи доступных стилей.
 
-## Highlight Shortcode
+## Подсветка шорткода
 
-Highlighting is carried out via the [built-in shortcode](/content-management/shortcodes/) `highlight`. `highlight` takes exactly one required parameter for the programming language to be highlighted and requires a closing shortcode. Note that `highlight` is *not* used for client-side javascript highlighting.
+Подсветка осуществляется с помощью [встроенного шорткода](/content-management/shortcodes/) `highlight`. `highlight` принимает ровно один обязательный параметр для выделения языка программирования и требует закрывающего шорткода. Обратите внимание, что `highlight` *не* используется для выделения javascript на стороне клиента.
 
-Options:
+Параметры:
 
-* `linenos`: configure line numbers. Valid values are `true`, `false`, `table`, or `inline`. `false` will turn off line numbers if it's configured to be on in site config. {{< new-in "0.60.0" >}} `table` will give copy-and-paste friendly code blocks.
-* `hl_lines`: lists a set of line numbers or line number ranges to be highlighted.
-* `linenostart=199`: starts the line number count from 199.
-* `anchorlinenos`: Configure anchors on line numbers. Valid values are `true` or `false`;
-* `lineanchors`: Configure a prefix for the anchors on line numbers. Will be suffixed with `-`, so linking to the line number 1 with the option `lineanchors=prefix` adds the anchor `prefix-1` to the page.  
+* `linenos`: настроить номера строк. Допустимые значения: `true`, `false`, `table` или `inline`. `false` отключит номера строк, если он настроен для включения в конфигурации сайта. {{< new-in "0.60.0" >}} `table` предоставит блоки кода, удобные для копирования и вставки.
+* `hl_lines`: перечисляет набор номеров строк или диапазонов номеров строк, которые необходимо выделить.
+* `linenostart=199`: начинает отсчет номеров строк с 199.
+* `anchorlinenos`: Настроить якоря для номеров строк. Допустимые значения: `true` или `false`;
+* `lineanchors`: Настройте префикс для якорей в номерах строк. Будет иметь суффикс `-`, поэтому ссылка на строку номер 1 с опцией `lineanchors=prefix` добавляет к странице привязку `prefix-1`.
 
-### Example: Highlight Shortcode
+### Пример: Подсветка шорткода
 
 ```
 {{</* highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" */>}}
@@ -54,7 +54,7 @@ Options:
 {{</* / highlight */>}}
 ```
 
-Gives this:
+Дает следующее:
 
 {{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
 // GetTitleFunc returns a func that can be used to transform a string to
@@ -79,13 +79,13 @@ func GetTitleFunc(style string) func(s string) string {
 }
 {{< / highlight >}}
 
-## Highlight Template Func
+## Подсветка шаблона функции
 
-See [Highlight](/functions/highlight/).
+Смотрите [подсветка](/functions/highlight/).
 
-## Highlighting in Code Fences
+## Подсветка в ограничениях кода
 
-Highlighting in code fences is enabled by default.{{< new-in "0.60.0" >}}
+По умолчанию выделение в границах кода включено. {{< new-in "0.60.0" >}}
 
 ````
 ```go {linenos=table,hl_lines=[8,"15-17"],linenostart=199}
@@ -93,8 +93,7 @@ Highlighting in code fences is enabled by default.{{< new-in "0.60.0" >}}
 ```
 ````
 
-
-Gives this:
+Дает следующее:
 
 ```go {linenos=table,hl_lines=[8,"15-17"],linenostart=199}
 // GetTitleFunc returns a func that can be used to transform a string to
@@ -119,13 +118,13 @@ func GetTitleFunc(style string) func(s string) string {
 }
 ```
 
-{{< new-in "0.60.0" >}}Note that only Goldmark supports passing attributes such as `hl_lines`, and it's important that it does not contain any spaces. See [goldmark-highlighting](https://github.com/yuin/goldmark-highlighting) for more information.
+{{< new-in "0.60.0" >}} Обратите внимание, что только Goldmark поддерживает передачу атрибутов, таких как `hl_lines`, и важно, чтобы он не содержал пробелов. Смотрите [goldmark-highlighting](https://github.com/yuin/goldmark-highlighting) для получения дополнительной информации.
 
-The options are the same as in the [highlighting shortcode](/content-management/syntax-highlighting/#highlight-shortcode),including `linenos=false`, but note the slightly different Markdown attribute syntax.
+Параметры такие же, как и в [highlighting shortcode](/content-management/syntax-highlighting/#highlight-shortcode), включая `linenos=false`, но обратите внимание на немного другой синтаксис атрибута Markdown.
 
-## List of Chroma Highlighting Languages
+## Список языков выделения цветности
 
-The full list of Chroma lexers and their aliases (which is the identifier used in the `highlight` template func or when doing highlighting in code fences):
+Полный список лексеров Chroma и их псевдонимов (который является идентификатором, используемым в функции шаблона `highlight` или при выделении в ограждениях кода):
 
 {{< chroma-lexers >}}
 
