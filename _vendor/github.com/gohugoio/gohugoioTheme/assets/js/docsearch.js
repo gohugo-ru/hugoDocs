@@ -1,7 +1,7 @@
 var docsearch = require('docsearch.js/dist/cdn/docsearch.js');
 docsearch({
-  apiKey: '167e7998590aebda7f9fedcf86bc4a55',
-  indexName: 'hugodocs',
+  apiKey: '897a3031d795d0d96b2265b69ef20055',
+  indexName: 'hugodocs-ru',
   inputSelector: '#search-input',
   debug: true // Set debug to true if you want to inspect the dropdown
 });
